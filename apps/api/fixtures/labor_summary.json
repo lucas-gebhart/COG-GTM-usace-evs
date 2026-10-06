@@ -2,1284 +2,1668 @@
  "fiscal_year": 2026,
  "rows": [
   {
-   "district": "LRL",
-   "pay_period": "2026-01",
-   "hours_plan": 7608,
-   "hours_regular": 7829,
-   "hours_overtime": 852,
-   "labor_cost": 622939
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-02",
-   "hours_plan": 6207,
-   "hours_regular": 6412,
-   "hours_overtime": 368,
-   "labor_cost": 476341
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-03",
-   "hours_plan": 8456,
-   "hours_regular": 8199,
-   "hours_overtime": 980,
-   "labor_cost": 661337
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-04",
-   "hours_plan": 10668,
-   "hours_regular": 9974,
-   "hours_overtime": 365,
-   "labor_cost": 719685
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-05",
-   "hours_plan": 5843,
-   "hours_regular": 5049,
-   "hours_overtime": 351,
-   "labor_cost": 381306
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-06",
-   "hours_plan": 5351,
-   "hours_regular": 5229,
-   "hours_overtime": 562,
-   "labor_cost": 415381
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-07",
-   "hours_plan": 10009,
-   "hours_regular": 9318,
-   "hours_overtime": 241,
-   "labor_cost": 662003
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-08",
-   "hours_plan": 10531,
-   "hours_regular": 9120,
-   "hours_overtime": 1045,
-   "labor_cost": 730988
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-09",
-   "hours_plan": 9463,
-   "hours_regular": 9757,
-   "hours_overtime": 704,
-   "labor_cost": 739588
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-10",
-   "hours_plan": 9251,
-   "hours_regular": 8953,
-   "hours_overtime": 636,
-   "labor_cost": 677597
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-11",
-   "hours_plan": 7486,
-   "hours_regular": 7707,
-   "hours_overtime": 872,
-   "labor_cost": 616625
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-12",
-   "hours_plan": 10326,
-   "hours_regular": 9685,
-   "hours_overtime": 868,
-   "labor_cost": 751550
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-13",
-   "hours_plan": 10827,
-   "hours_regular": 10358,
-   "hours_overtime": 1195,
-   "labor_cost": 831090
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-14",
-   "hours_plan": 11497,
-   "hours_regular": 10055,
-   "hours_overtime": 602,
-   "labor_cost": 749548
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-15",
-   "hours_plan": 6313,
-   "hours_regular": 6334,
-   "hours_overtime": 480,
-   "labor_cost": 482509
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-16",
-   "hours_plan": 6402,
-   "hours_regular": 5644,
-   "hours_overtime": 644,
-   "labor_cost": 452090
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-17",
-   "hours_plan": 8635,
-   "hours_regular": 7772,
-   "hours_overtime": 848,
-   "labor_cost": 618577
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-18",
-   "hours_plan": 11446,
-   "hours_regular": 11516,
-   "hours_overtime": 359,
-   "labor_cost": 824557
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-19",
-   "hours_plan": 10660,
-   "hours_regular": 10493,
-   "hours_overtime": 900,
-   "labor_cost": 810098
-  },
-  {
-   "district": "LRL",
-   "pay_period": "2026-20",
-   "hours_plan": 5785,
-   "hours_regular": 5226,
-   "hours_overtime": 579,
-   "labor_cost": 416906
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-01",
-   "hours_plan": 9883,
-   "hours_regular": 8952,
-   "hours_overtime": 1036,
-   "labor_cost": 718618
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-02",
-   "hours_plan": 9524,
-   "hours_regular": 8357,
-   "hours_overtime": 760,
-   "labor_cost": 649558
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-03",
-   "hours_plan": 5936,
-   "hours_regular": 5738,
-   "hours_overtime": 307,
-   "labor_cost": 424005
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-04",
-   "hours_plan": 8671,
-   "hours_regular": 8219,
-   "hours_overtime": 583,
-   "labor_cost": 621981
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-05",
-   "hours_plan": 5471,
-   "hours_regular": 5603,
-   "hours_overtime": 473,
-   "labor_cost": 431810
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-06",
-   "hours_plan": 10484,
-   "hours_regular": 9430,
-   "hours_overtime": 986,
-   "labor_cost": 746161
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-07",
-   "hours_plan": 11180,
-   "hours_regular": 11643,
-   "hours_overtime": 456,
-   "labor_cost": 843178
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-08",
-   "hours_plan": 6100,
-   "hours_regular": 5682,
-   "hours_overtime": 600,
-   "labor_cost": 450240
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-09",
-   "hours_plan": 10715,
-   "hours_regular": 10466,
-   "hours_overtime": 893,
-   "labor_cost": 807532
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-10",
-   "hours_plan": 8264,
-   "hours_regular": 7409,
-   "hours_overtime": 741,
-   "labor_cost": 582826
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-11",
-   "hours_plan": 8889,
-   "hours_regular": 8432,
-   "hours_overtime": 572,
-   "labor_cost": 635383
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-12",
-   "hours_plan": 11028,
-   "hours_regular": 10865,
-   "hours_overtime": 771,
-   "labor_cost": 822291
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-13",
-   "hours_plan": 10234,
-   "hours_regular": 10530,
-   "hours_overtime": 1010,
-   "labor_cost": 823919
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-14",
-   "hours_plan": 9478,
-   "hours_regular": 8074,
-   "hours_overtime": 437,
-   "labor_cost": 597121
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-15",
-   "hours_plan": 6564,
-   "hours_regular": 5880,
-   "hours_overtime": 562,
-   "labor_cost": 459872
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-16",
-   "hours_plan": 9853,
-   "hours_regular": 8993,
-   "hours_overtime": 669,
-   "labor_cost": 683804
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-17",
-   "hours_plan": 7582,
-   "hours_regular": 6927,
-   "hours_overtime": 688,
-   "labor_cost": 544364
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-18",
-   "hours_plan": 10481,
-   "hours_regular": 10817,
-   "hours_overtime": 758,
-   "labor_cost": 817601
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-19",
-   "hours_plan": 11521,
-   "hours_regular": 11872,
-   "hours_overtime": 418,
-   "labor_cost": 854848
-  },
-  {
-   "district": "LRN",
-   "pay_period": "2026-20",
-   "hours_plan": 11661,
-   "hours_regular": 11027,
-   "hours_overtime": 748,
-   "labor_cost": 830943
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-01",
-   "hours_plan": 8774,
-   "hours_regular": 7618,
-   "hours_overtime": 583,
-   "labor_cost": 580916
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-02",
-   "hours_plan": 10047,
-   "hours_regular": 9067,
-   "hours_overtime": 333,
-   "labor_cost": 654353
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-03",
-   "hours_plan": 6014,
-   "hours_regular": 5540,
-   "hours_overtime": 229,
-   "labor_cost": 402391
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-04",
-   "hours_plan": 7941,
-   "hours_regular": 7212,
-   "hours_overtime": 589,
-   "labor_cost": 553698
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-05",
-   "hours_plan": 8228,
-   "hours_regular": 7627,
-   "hours_overtime": 883,
-   "labor_cost": 612350
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-06",
-   "hours_plan": 11094,
-   "hours_regular": 10431,
-   "hours_overtime": 942,
-   "labor_cost": 810167
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-07",
-   "hours_plan": 7207,
-   "hours_regular": 6306,
-   "hours_overtime": 396,
-   "labor_cost": 471930
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-08",
-   "hours_plan": 8901,
-   "hours_regular": 7992,
-   "hours_overtime": 237,
-   "labor_cost": 570972
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-09",
-   "hours_plan": 7836,
-   "hours_regular": 7268,
-   "hours_overtime": 524,
-   "labor_cost": 550919
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-10",
-   "hours_plan": 7117,
-   "hours_regular": 7192,
-   "hours_overtime": 170,
-   "labor_cost": 509411
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-11",
-   "hours_plan": 6656,
-   "hours_regular": 6498,
-   "hours_overtime": 300,
-   "labor_cost": 475178
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-12",
-   "hours_plan": 5401,
-   "hours_regular": 5056,
-   "hours_overtime": 365,
-   "labor_cost": 383277
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-13",
-   "hours_plan": 11506,
-   "hours_regular": 10143,
-   "hours_overtime": 944,
-   "labor_cost": 790565
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-14",
-   "hours_plan": 7632,
-   "hours_regular": 7742,
-   "hours_overtime": 387,
-   "labor_cost": 569256
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-15",
-   "hours_plan": 11182,
-   "hours_regular": 10675,
-   "hours_overtime": 906,
-   "labor_cost": 823171
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-16",
-   "hours_plan": 9128,
-   "hours_regular": 8793,
-   "hours_overtime": 183,
-   "labor_cost": 620268
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-17",
-   "hours_plan": 7762,
-   "hours_regular": 7651,
-   "hours_overtime": 359,
-   "labor_cost": 560144
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-18",
-   "hours_plan": 5032,
-   "hours_regular": 5144,
-   "hours_overtime": 615,
-   "labor_cost": 414951
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-19",
-   "hours_plan": 10821,
-   "hours_regular": 10036,
-   "hours_overtime": 776,
-   "labor_cost": 766092
-  },
-  {
-   "district": "LRP",
-   "pay_period": "2026-20",
-   "hours_plan": 7187,
-   "hours_regular": 7149,
-   "hours_overtime": 779,
-   "labor_cost": 568902
-  },
-  {
    "district": "LRH",
    "pay_period": "2026-01",
-   "hours_plan": 11303,
-   "hours_regular": 11556,
-   "hours_overtime": 1324,
-   "labor_cost": 926314
+   "hours_plan": 1760,
+   "hours_regular": 1760,
+   "hours_overtime": 36.4,
+   "labor_cost": 117385.6
   },
   {
    "district": "LRH",
    "pay_period": "2026-02",
-   "hours_plan": 8888,
-   "hours_regular": 9100,
-   "hours_overtime": 639,
-   "labor_cost": 687986
+   "hours_plan": 1760,
+   "hours_regular": 1760,
+   "hours_overtime": 24.2,
+   "labor_cost": 116271.53
   },
   {
    "district": "LRH",
    "pay_period": "2026-03",
-   "hours_plan": 9872,
-   "hours_regular": 10325,
-   "hours_overtime": 1173,
-   "labor_cost": 826614
+   "hours_plan": 1760,
+   "hours_regular": 1760,
+   "hours_overtime": 44.4,
+   "labor_cost": 118113.61
   },
   {
    "district": "LRH",
    "pay_period": "2026-04",
-   "hours_plan": 10322,
-   "hours_regular": 9342,
-   "hours_overtime": 293,
-   "labor_cost": 669059
+   "hours_plan": 1760,
+   "hours_regular": 1738,
+   "hours_overtime": 24.4,
+   "labor_cost": 115141.84
   },
   {
    "district": "LRH",
    "pay_period": "2026-05",
-   "hours_plan": 11074,
-   "hours_regular": 10485,
-   "hours_overtime": 1062,
-   "labor_cost": 826116
+   "hours_plan": 1760,
+   "hours_regular": 1696.9,
+   "hours_overtime": 26.4,
+   "labor_cost": 111669.61
   },
   {
    "district": "LRH",
    "pay_period": "2026-06",
-   "hours_plan": 11084,
-   "hours_regular": 10507,
-   "hours_overtime": 466,
-   "labor_cost": 766489
+   "hours_plan": 1760,
+   "hours_regular": 1760,
+   "hours_overtime": 54.8,
+   "labor_cost": 119444.37
   },
   {
    "district": "LRH",
    "pay_period": "2026-07",
-   "hours_plan": 10850,
-   "hours_regular": 9499,
-   "hours_overtime": 1028,
-   "labor_cost": 755232
+   "hours_plan": 1760,
+   "hours_regular": 1720.3,
+   "hours_overtime": 8.2,
+   "labor_cost": 112744.91
   },
   {
    "district": "LRH",
    "pay_period": "2026-08",
-   "hours_plan": 8601,
-   "hours_regular": 8198,
-   "hours_overtime": 757,
-   "labor_cost": 638476
+   "hours_plan": 1760,
+   "hours_regular": 1760,
+   "hours_overtime": 15.2,
+   "labor_cost": 115463.29
   },
   {
    "district": "LRH",
    "pay_period": "2026-09",
-   "hours_plan": 6420,
-   "hours_regular": 6074,
-   "hours_overtime": 276,
-   "labor_cost": 443807
+   "hours_plan": 1760,
+   "hours_regular": 1693.2,
+   "hours_overtime": 28.2,
+   "labor_cost": 111512.02
   },
   {
    "district": "LRH",
    "pay_period": "2026-10",
-   "hours_plan": 7967,
-   "hours_regular": 7793,
-   "hours_overtime": 278,
-   "labor_cost": 561514
+   "hours_plan": 1760,
+   "hours_regular": 1730.2,
+   "hours_overtime": 26.9,
+   "labor_cost": 114414.83
   },
   {
    "district": "LRH",
    "pay_period": "2026-11",
-   "hours_plan": 6051,
-   "hours_regular": 5930,
-   "hours_overtime": 502,
-   "labor_cost": 457068
+   "hours_plan": 1760,
+   "hours_regular": 1694.5,
+   "hours_overtime": 42,
+   "labor_cost": 114550.62
   },
   {
    "district": "LRH",
    "pay_period": "2026-12",
-   "hours_plan": 8996,
-   "hours_regular": 8793,
-   "hours_overtime": 865,
-   "labor_cost": 690179
+   "hours_plan": 1760,
+   "hours_regular": 1751.7,
+   "hours_overtime": 27,
+   "labor_cost": 116302.68
   },
   {
    "district": "LRH",
    "pay_period": "2026-13",
-   "hours_plan": 8572,
-   "hours_regular": 8571,
-   "hours_overtime": 678,
-   "labor_cost": 655842
+   "hours_plan": 1760,
+   "hours_regular": 1690.5,
+   "hours_overtime": 33.2,
+   "labor_cost": 113687.06
   },
   {
    "district": "LRH",
    "pay_period": "2026-14",
-   "hours_plan": 7281,
-   "hours_regular": 7244,
-   "hours_overtime": 639,
-   "labor_cost": 561113
+   "hours_plan": 1760,
+   "hours_regular": 1750.7,
+   "hours_overtime": 17.5,
+   "labor_cost": 114918.21
   },
   {
    "district": "LRH",
    "pay_period": "2026-15",
-   "hours_plan": 9086,
-   "hours_regular": 7965,
-   "hours_overtime": 244,
-   "labor_cost": 569853
+   "hours_plan": 1760,
+   "hours_regular": 1739,
+   "hours_overtime": 26.7,
+   "labor_cost": 115224.57
   },
   {
    "district": "LRH",
    "pay_period": "2026-16",
-   "hours_plan": 8667,
-   "hours_regular": 9059,
-   "hours_overtime": 1055,
-   "labor_cost": 727892
+   "hours_plan": 1760,
+   "hours_regular": 1732.4,
+   "hours_overtime": 26.9,
+   "labor_cost": 114522.09
   },
   {
    "district": "LRH",
    "pay_period": "2026-17",
-   "hours_plan": 10883,
-   "hours_regular": 10984,
-   "hours_overtime": 768,
-   "labor_cost": 830052
+   "hours_plan": 1760,
+   "hours_regular": 1760,
+   "hours_overtime": 24,
+   "labor_cost": 116218.49
   },
   {
    "district": "LRH",
    "pay_period": "2026-18",
-   "hours_plan": 10860,
-   "hours_regular": 11120,
-   "hours_overtime": 404,
-   "labor_cost": 802110
+   "hours_plan": 1760,
+   "hours_regular": 1713.6,
+   "hours_overtime": 6.2,
+   "labor_cost": 111750.36
   },
   {
    "district": "LRH",
    "pay_period": "2026-19",
-   "hours_plan": 10877,
-   "hours_regular": 11186,
-   "hours_overtime": 614,
-   "labor_cost": 828175
+   "hours_plan": 1760,
+   "hours_regular": 1760,
+   "hours_overtime": 35.6,
+   "labor_cost": 117360.5
   },
   {
    "district": "LRH",
    "pay_period": "2026-20",
-   "hours_plan": 10305,
-   "hours_regular": 10239,
-   "hours_overtime": 1006,
-   "labor_cost": 803556
+   "hours_plan": 1760,
+   "hours_regular": 1760,
+   "hours_overtime": 23.7,
+   "labor_cost": 115890.75
+  },
+  {
+   "district": "LRH",
+   "pay_period": "2026-21",
+   "hours_plan": 1760,
+   "hours_regular": 1693.1,
+   "hours_overtime": 21.7,
+   "labor_cost": 111477.15
+  },
+  {
+   "district": "LRH",
+   "pay_period": "2026-22",
+   "hours_plan": 1760,
+   "hours_regular": 1728.7,
+   "hours_overtime": 22.6,
+   "labor_cost": 113435.37
+  },
+  {
+   "district": "LRH",
+   "pay_period": "2026-23",
+   "hours_plan": 1760,
+   "hours_regular": 1760,
+   "hours_overtime": 29.2,
+   "labor_cost": 116551.92
+  },
+  {
+   "district": "LRH",
+   "pay_period": "2026-24",
+   "hours_plan": 1760,
+   "hours_regular": 1749,
+   "hours_overtime": 19.6,
+   "labor_cost": 114932.03
+  },
+  {
+   "district": "LRH",
+   "pay_period": "2026-25",
+   "hours_plan": 1760,
+   "hours_regular": 1732.3,
+   "hours_overtime": 11.1,
+   "labor_cost": 112988.57
+  },
+  {
+   "district": "LRH",
+   "pay_period": "2026-26",
+   "hours_plan": 1760,
+   "hours_regular": 1740.5,
+   "hours_overtime": 24,
+   "labor_cost": 114886.63
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-01",
+   "hours_plan": 1600,
+   "hours_regular": 1600,
+   "hours_overtime": 23.4,
+   "labor_cost": 94447.17
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-02",
+   "hours_plan": 1600,
+   "hours_regular": 1586.2,
+   "hours_overtime": 18.7,
+   "labor_cost": 92791.04
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-03",
+   "hours_plan": 1600,
+   "hours_regular": 1600,
+   "hours_overtime": 18.3,
+   "labor_cost": 93902.48
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-04",
+   "hours_plan": 1600,
+   "hours_regular": 1600,
+   "hours_overtime": 32.3,
+   "labor_cost": 94956.7
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-05",
+   "hours_plan": 1600,
+   "hours_regular": 1504.6,
+   "hours_overtime": 23,
+   "labor_cost": 89265.36
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-06",
+   "hours_plan": 1600,
+   "hours_regular": 1567.1,
+   "hours_overtime": 36.2,
+   "labor_cost": 94074.43
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-07",
+   "hours_plan": 1600,
+   "hours_regular": 1600,
+   "hours_overtime": 26.9,
+   "labor_cost": 94591.28
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-08",
+   "hours_plan": 1600,
+   "hours_regular": 1547.5,
+   "hours_overtime": 10.6,
+   "labor_cost": 90511.79
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-09",
+   "hours_plan": 1600,
+   "hours_regular": 1555.8,
+   "hours_overtime": 2,
+   "labor_cost": 89907.62
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-10",
+   "hours_plan": 1600,
+   "hours_regular": 1583.6,
+   "hours_overtime": 21.9,
+   "labor_cost": 93150.76
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-11",
+   "hours_plan": 1600,
+   "hours_regular": 1566.4,
+   "hours_overtime": 20.9,
+   "labor_cost": 92445.93
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-12",
+   "hours_plan": 1600,
+   "hours_regular": 1523.8,
+   "hours_overtime": 24.2,
+   "labor_cost": 89638.48
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-13",
+   "hours_plan": 1600,
+   "hours_regular": 1543.1,
+   "hours_overtime": 34.2,
+   "labor_cost": 91014.35
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-14",
+   "hours_plan": 1600,
+   "hours_regular": 1576.1,
+   "hours_overtime": 19.1,
+   "labor_cost": 92155.05
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-15",
+   "hours_plan": 1600,
+   "hours_regular": 1579.9,
+   "hours_overtime": 34.1,
+   "labor_cost": 93851.63
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-16",
+   "hours_plan": 1600,
+   "hours_regular": 1510.8,
+   "hours_overtime": 21.1,
+   "labor_cost": 89597.9
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-17",
+   "hours_plan": 1600,
+   "hours_regular": 1591.1,
+   "hours_overtime": 27.1,
+   "labor_cost": 94218.28
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-18",
+   "hours_plan": 1600,
+   "hours_regular": 1565.3,
+   "hours_overtime": 32.3,
+   "labor_cost": 93107.29
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-19",
+   "hours_plan": 1600,
+   "hours_regular": 1576.7,
+   "hours_overtime": 42.2,
+   "labor_cost": 95390.67
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-20",
+   "hours_plan": 1600,
+   "hours_regular": 1532.6,
+   "hours_overtime": 25.7,
+   "labor_cost": 89567.43
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-21",
+   "hours_plan": 1600,
+   "hours_regular": 1539.4,
+   "hours_overtime": 19,
+   "labor_cost": 90861.98
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-22",
+   "hours_plan": 1600,
+   "hours_regular": 1600,
+   "hours_overtime": 22.9,
+   "labor_cost": 94371.8
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-23",
+   "hours_plan": 1600,
+   "hours_regular": 1588.2,
+   "hours_overtime": 14.3,
+   "labor_cost": 93121.87
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-24",
+   "hours_plan": 1600,
+   "hours_regular": 1560.6,
+   "hours_overtime": 10.3,
+   "labor_cost": 90682.07
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-25",
+   "hours_plan": 1600,
+   "hours_regular": 1577.9,
+   "hours_overtime": 30.4,
+   "labor_cost": 93800.87
+  },
+  {
+   "district": "LRL",
+   "pay_period": "2026-26",
+   "hours_plan": 1600,
+   "hours_regular": 1600,
+   "hours_overtime": 16.6,
+   "labor_cost": 93652.13
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-01",
+   "hours_plan": 2080,
+   "hours_regular": 2080,
+   "hours_overtime": 35.5,
+   "labor_cost": 128459.53
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-02",
+   "hours_plan": 2080,
+   "hours_regular": 2007.7,
+   "hours_overtime": 32.3,
+   "labor_cost": 123458.91
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-03",
+   "hours_plan": 2080,
+   "hours_regular": 2016.7,
+   "hours_overtime": 23.3,
+   "labor_cost": 122995.51
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-04",
+   "hours_plan": 2080,
+   "hours_regular": 2056.5,
+   "hours_overtime": 32.5,
+   "labor_cost": 126595.76
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-05",
+   "hours_plan": 2080,
+   "hours_regular": 2042,
+   "hours_overtime": 32,
+   "labor_cost": 125115.58
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-06",
+   "hours_plan": 2080,
+   "hours_regular": 1973.9,
+   "hours_overtime": 26,
+   "labor_cost": 120586.96
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-07",
+   "hours_plan": 2080,
+   "hours_regular": 2064,
+   "hours_overtime": 26.4,
+   "labor_cost": 126343.21
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-08",
+   "hours_plan": 2080,
+   "hours_regular": 2044.6,
+   "hours_overtime": 35.3,
+   "labor_cost": 126735.75
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-09",
+   "hours_plan": 2080,
+   "hours_regular": 1981.3,
+   "hours_overtime": 29.1,
+   "labor_cost": 120497.55
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-10",
+   "hours_plan": 2080,
+   "hours_regular": 1951.5,
+   "hours_overtime": 31.2,
+   "labor_cost": 121380.43
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-11",
+   "hours_plan": 2080,
+   "hours_regular": 2022,
+   "hours_overtime": 32.6,
+   "labor_cost": 125019.76
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-12",
+   "hours_plan": 2080,
+   "hours_regular": 2080,
+   "hours_overtime": 37.1,
+   "labor_cost": 128427.54
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-13",
+   "hours_plan": 2080,
+   "hours_regular": 2049.2,
+   "hours_overtime": 40.6,
+   "labor_cost": 126376.73
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-14",
+   "hours_plan": 2080,
+   "hours_regular": 2046.5,
+   "hours_overtime": 25.6,
+   "labor_cost": 124724.12
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-15",
+   "hours_plan": 2080,
+   "hours_regular": 2046.3,
+   "hours_overtime": 39.4,
+   "labor_cost": 126463.84
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-16",
+   "hours_plan": 2080,
+   "hours_regular": 1995,
+   "hours_overtime": 29.1,
+   "labor_cost": 123184.4
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-17",
+   "hours_plan": 2080,
+   "hours_regular": 2024.6,
+   "hours_overtime": 40.1,
+   "labor_cost": 125564.35
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-18",
+   "hours_plan": 2080,
+   "hours_regular": 2000.3,
+   "hours_overtime": 8.9,
+   "labor_cost": 121034.47
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-19",
+   "hours_plan": 2080,
+   "hours_regular": 2070.1,
+   "hours_overtime": 49.6,
+   "labor_cost": 128733.47
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-20",
+   "hours_plan": 2080,
+   "hours_regular": 2046.9,
+   "hours_overtime": 39.8,
+   "labor_cost": 126742.22
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-21",
+   "hours_plan": 2080,
+   "hours_regular": 2065.3,
+   "hours_overtime": 45.4,
+   "labor_cost": 128317.36
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-22",
+   "hours_plan": 2080,
+   "hours_regular": 2050.4,
+   "hours_overtime": 22.1,
+   "labor_cost": 124875.15
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-23",
+   "hours_plan": 2080,
+   "hours_regular": 2032.3,
+   "hours_overtime": 28.6,
+   "labor_cost": 124723.1
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-24",
+   "hours_plan": 2080,
+   "hours_regular": 2017.4,
+   "hours_overtime": 38.3,
+   "labor_cost": 124878.98
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-25",
+   "hours_plan": 2080,
+   "hours_regular": 2044.3,
+   "hours_overtime": 12.4,
+   "labor_cost": 123617.52
+  },
+  {
+   "district": "MVR",
+   "pay_period": "2026-26",
+   "hours_plan": 2080,
+   "hours_regular": 2063.2,
+   "hours_overtime": 25.2,
+   "labor_cost": 126389.55
   },
   {
    "district": "MVS",
    "pay_period": "2026-01",
-   "hours_plan": 5341,
-   "hours_regular": 4710,
-   "hours_overtime": 308,
-   "labor_cost": 353757
+   "hours_plan": 1680,
+   "hours_regular": 1541.8,
+   "hours_overtime": 6.9,
+   "labor_cost": 94148.33
   },
   {
    "district": "MVS",
    "pay_period": "2026-02",
-   "hours_plan": 5626,
-   "hours_regular": 5898,
-   "hours_overtime": 294,
-   "labor_cost": 433553
+   "hours_plan": 1680,
+   "hours_regular": 1616,
+   "hours_overtime": 13.5,
+   "labor_cost": 99781.79
   },
   {
    "district": "MVS",
    "pay_period": "2026-03",
-   "hours_plan": 6132,
-   "hours_regular": 5856,
-   "hours_overtime": 217,
-   "labor_cost": 422790
+   "hours_plan": 1680,
+   "hours_regular": 1649.2,
+   "hours_overtime": 13.4,
+   "labor_cost": 101925.74
   },
   {
    "district": "MVS",
    "pay_period": "2026-04",
-   "hours_plan": 6702,
-   "hours_regular": 6573,
-   "hours_overtime": 748,
-   "labor_cost": 526273
+   "hours_plan": 1680,
+   "hours_regular": 1680,
+   "hours_overtime": 21.9,
+   "labor_cost": 103943.87
   },
   {
    "district": "MVS",
    "pay_period": "2026-05",
-   "hours_plan": 6413,
-   "hours_regular": 6431,
-   "hours_overtime": 647,
-   "labor_cost": 506271
+   "hours_plan": 1680,
+   "hours_regular": 1651.5,
+   "hours_overtime": 8.2,
+   "labor_cost": 101334.12
   },
   {
    "district": "MVS",
    "pay_period": "2026-06",
-   "hours_plan": 9138,
-   "hours_regular": 8176,
-   "hours_overtime": 187,
-   "labor_cost": 578415
+   "hours_plan": 1680,
+   "hours_regular": 1632.8,
+   "hours_overtime": 32.5,
+   "labor_cost": 102440.3
   },
   {
    "district": "MVS",
    "pay_period": "2026-07",
-   "hours_plan": 8928,
-   "hours_regular": 8738,
-   "hours_overtime": 250,
-   "labor_cost": 623363
+   "hours_plan": 1680,
+   "hours_regular": 1627.7,
+   "hours_overtime": 31.9,
+   "labor_cost": 101397.17
   },
   {
    "district": "MVS",
    "pay_period": "2026-08",
-   "hours_plan": 6630,
-   "hours_regular": 6410,
-   "hours_overtime": 317,
-   "labor_cost": 470930
+   "hours_plan": 1680,
+   "hours_regular": 1586.5,
+   "hours_overtime": 19.7,
+   "labor_cost": 98791.9
   },
   {
    "district": "MVS",
    "pay_period": "2026-09",
-   "hours_plan": 11314,
-   "hours_regular": 9672,
-   "hours_overtime": 486,
-   "labor_cost": 711466
+   "hours_plan": 1680,
+   "hours_regular": 1636.7,
+   "hours_overtime": 14.5,
+   "labor_cost": 100358.69
   },
   {
    "district": "MVS",
    "pay_period": "2026-10",
-   "hours_plan": 7878,
-   "hours_regular": 7157,
-   "hours_overtime": 344,
-   "labor_cost": 524814
+   "hours_plan": 1680,
+   "hours_regular": 1645.1,
+   "hours_overtime": 28.2,
+   "labor_cost": 103159.4
   },
   {
    "district": "MVS",
    "pay_period": "2026-11",
-   "hours_plan": 11708,
-   "hours_regular": 11299,
-   "hours_overtime": 664,
-   "labor_cost": 841013
+   "hours_plan": 1680,
+   "hours_regular": 1650.2,
+   "hours_overtime": 5.7,
+   "labor_cost": 100763.54
   },
   {
    "district": "MVS",
    "pay_period": "2026-12",
-   "hours_plan": 11894,
-   "hours_regular": 10405,
-   "hours_overtime": 539,
-   "labor_cost": 766953
+   "hours_plan": 1680,
+   "hours_regular": 1606.7,
+   "hours_overtime": 9.6,
+   "labor_cost": 98372.36
   },
   {
    "district": "MVS",
    "pay_period": "2026-13",
-   "hours_plan": 7798,
-   "hours_regular": 6696,
-   "hours_overtime": 763,
-   "labor_cost": 536356
+   "hours_plan": 1680,
+   "hours_regular": 1565.4,
+   "hours_overtime": 11.8,
+   "labor_cost": 94791.43
   },
   {
    "district": "MVS",
    "pay_period": "2026-14",
-   "hours_plan": 10154,
-   "hours_regular": 10258,
-   "hours_overtime": 602,
-   "labor_cost": 763402
+   "hours_plan": 1680,
+   "hours_regular": 1670.2,
+   "hours_overtime": 31.5,
+   "labor_cost": 104573.05
   },
   {
    "district": "MVS",
    "pay_period": "2026-15",
-   "hours_plan": 10311,
-   "hours_regular": 9901,
-   "hours_overtime": 226,
-   "labor_cost": 700451
+   "hours_plan": 1680,
+   "hours_regular": 1644.9,
+   "hours_overtime": 45.8,
+   "labor_cost": 104544.48
   },
   {
    "district": "MVS",
    "pay_period": "2026-16",
-   "hours_plan": 10880,
-   "hours_regular": 11241,
-   "hours_overtime": 491,
-   "labor_cost": 819292
+   "hours_plan": 1680,
+   "hours_regular": 1661.3,
+   "hours_overtime": 18.4,
+   "labor_cost": 102896.03
   },
   {
    "district": "MVS",
    "pay_period": "2026-17",
-   "hours_plan": 8839,
-   "hours_regular": 9204,
-   "hours_overtime": 375,
-   "labor_cost": 668011
+   "hours_plan": 1680,
+   "hours_regular": 1609.2,
+   "hours_overtime": 11.6,
+   "labor_cost": 98737.42
   },
   {
    "district": "MVS",
    "pay_period": "2026-18",
-   "hours_plan": 5505,
-   "hours_regular": 5497,
-   "hours_overtime": 614,
-   "labor_cost": 438934
+   "hours_plan": 1680,
+   "hours_regular": 1640.8,
+   "hours_overtime": 21.5,
+   "labor_cost": 101135.57
   },
   {
    "district": "MVS",
    "pay_period": "2026-19",
-   "hours_plan": 10830,
-   "hours_regular": 9571,
-   "hours_overtime": 450,
-   "labor_cost": 700858
+   "hours_plan": 1680,
+   "hours_regular": 1666.2,
+   "hours_overtime": 10.9,
+   "labor_cost": 102634.8
   },
   {
    "district": "MVS",
    "pay_period": "2026-20",
-   "hours_plan": 10330,
-   "hours_regular": 10144,
-   "hours_overtime": 919,
-   "labor_cost": 788082
+   "hours_plan": 1680,
+   "hours_regular": 1655,
+   "hours_overtime": 15,
+   "labor_cost": 102464.31
   },
   {
-   "district": "MVR",
+   "district": "MVS",
+   "pay_period": "2026-21",
+   "hours_plan": 1680,
+   "hours_regular": 1680,
+   "hours_overtime": 41.3,
+   "labor_cost": 105900.33
+  },
+  {
+   "district": "MVS",
+   "pay_period": "2026-22",
+   "hours_plan": 1680,
+   "hours_regular": 1657.2,
+   "hours_overtime": 18.6,
+   "labor_cost": 102529.88
+  },
+  {
+   "district": "MVS",
+   "pay_period": "2026-23",
+   "hours_plan": 1680,
+   "hours_regular": 1622.9,
+   "hours_overtime": 34.5,
+   "labor_cost": 101344.28
+  },
+  {
+   "district": "MVS",
+   "pay_period": "2026-24",
+   "hours_plan": 1680,
+   "hours_regular": 1639.9,
+   "hours_overtime": 22.2,
+   "labor_cost": 102093.76
+  },
+  {
+   "district": "MVS",
+   "pay_period": "2026-25",
+   "hours_plan": 1680,
+   "hours_regular": 1680,
+   "hours_overtime": 33,
+   "labor_cost": 105388.28
+  },
+  {
+   "district": "MVS",
+   "pay_period": "2026-26",
+   "hours_plan": 1680,
+   "hours_regular": 1680,
+   "hours_overtime": 45.8,
+   "labor_cost": 106438.02
+  },
+  {
+   "district": "NWP",
    "pay_period": "2026-01",
-   "hours_plan": 11730,
-   "hours_regular": 11226,
-   "hours_overtime": 904,
-   "labor_cost": 860561
+   "hours_plan": 1440,
+   "hours_regular": 1401.2,
+   "hours_overtime": 17.5,
+   "labor_cost": 86368.98
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-02",
-   "hours_plan": 9250,
-   "hours_regular": 8612,
-   "hours_overtime": 286,
-   "labor_cost": 618445
+   "hours_plan": 1440,
+   "hours_regular": 1310.3,
+   "hours_overtime": 12.8,
+   "labor_cost": 78841.43
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-03",
-   "hours_plan": 5843,
-   "hours_regular": 5020,
-   "hours_overtime": 301,
-   "labor_cost": 374247
+   "hours_plan": 1440,
+   "hours_regular": 1440,
+   "hours_overtime": 17.6,
+   "labor_cost": 88460.01
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-04",
-   "hours_plan": 11621,
-   "hours_regular": 10347,
-   "hours_overtime": 879,
-   "labor_cost": 797920
+   "hours_plan": 1440,
+   "hours_regular": 1402,
+   "hours_overtime": 27.7,
+   "labor_cost": 87505.96
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-05",
-   "hours_plan": 6815,
-   "hours_regular": 6923,
-   "hours_overtime": 156,
-   "labor_cost": 489519
+   "hours_plan": 1440,
+   "hours_regular": 1414.4,
+   "hours_overtime": 17,
+   "labor_cost": 87080.31
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-06",
-   "hours_plan": 7977,
-   "hours_regular": 7654,
-   "hours_overtime": 753,
-   "labor_cost": 600756
+   "hours_plan": 1440,
+   "hours_regular": 1440,
+   "hours_overtime": 11.5,
+   "labor_cost": 87909.26
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-07",
-   "hours_plan": 8869,
-   "hours_regular": 9003,
-   "hours_overtime": 440,
-   "labor_cost": 660960
+   "hours_plan": 1440,
+   "hours_regular": 1396.8,
+   "hours_overtime": 22,
+   "labor_cost": 86705.24
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-08",
-   "hours_plan": 7740,
-   "hours_regular": 7003,
-   "hours_overtime": 492,
-   "labor_cost": 529413
+   "hours_plan": 1440,
+   "hours_regular": 1412.4,
+   "hours_overtime": 20.9,
+   "labor_cost": 87325.02
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-09",
-   "hours_plan": 7087,
-   "hours_regular": 6932,
-   "hours_overtime": 508,
-   "labor_cost": 526280
+   "hours_plan": 1440,
+   "hours_regular": 1440,
+   "hours_overtime": 25.4,
+   "labor_cost": 89002.75
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-10",
-   "hours_plan": 5239,
-   "hours_regular": 5247,
-   "hours_overtime": 180,
-   "labor_cost": 377368
+   "hours_plan": 1440,
+   "hours_regular": 1408.4,
+   "hours_overtime": 26,
+   "labor_cost": 87065.77
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-11",
-   "hours_plan": 7290,
-   "hours_regular": 6682,
-   "hours_overtime": 553,
-   "labor_cost": 513817
+   "hours_plan": 1440,
+   "hours_regular": 1394.5,
+   "hours_overtime": 0,
+   "labor_cost": 83646.15
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-12",
-   "hours_plan": 9427,
-   "hours_regular": 9486,
-   "hours_overtime": 586,
-   "labor_cost": 708918
+   "hours_plan": 1440,
+   "hours_regular": 1440,
+   "hours_overtime": 12.8,
+   "labor_cost": 88058
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-13",
-   "hours_plan": 10774,
-   "hours_regular": 11249,
-   "hours_overtime": 823,
-   "labor_cost": 853912
+   "hours_plan": 1440,
+   "hours_regular": 1367.4,
+   "hours_overtime": 27.1,
+   "labor_cost": 83824.05
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-14",
-   "hours_plan": 9406,
-   "hours_regular": 8017,
-   "hours_overtime": 726,
-   "labor_cost": 622845
+   "hours_plan": 1440,
+   "hours_regular": 1440,
+   "hours_overtime": 14.7,
+   "labor_cost": 88050.17
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-15",
-   "hours_plan": 10487,
-   "hours_regular": 10669,
-   "hours_overtime": 876,
-   "labor_cost": 819663
+   "hours_plan": 1440,
+   "hours_regular": 1440,
+   "hours_overtime": 19.1,
+   "labor_cost": 88793.58
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-16",
-   "hours_plan": 11491,
-   "hours_regular": 10839,
-   "hours_overtime": 1242,
-   "labor_cost": 868815
+   "hours_plan": 1440,
+   "hours_regular": 1422.7,
+   "hours_overtime": 35.2,
+   "labor_cost": 89339.97
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-17",
-   "hours_plan": 6784,
-   "hours_regular": 6496,
-   "hours_overtime": 282,
-   "labor_cost": 473277
+   "hours_plan": 1440,
+   "hours_regular": 1440,
+   "hours_overtime": 31.2,
+   "labor_cost": 90013.93
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-18",
-   "hours_plan": 5660,
-   "hours_regular": 5908,
-   "hours_overtime": 355,
-   "labor_cost": 440568
+   "hours_plan": 1440,
+   "hours_regular": 1399.5,
+   "hours_overtime": 6.3,
+   "labor_cost": 84749.47
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-19",
-   "hours_plan": 7423,
-   "hours_regular": 6801,
-   "hours_overtime": 150,
-   "labor_cost": 480621
+   "hours_plan": 1440,
+   "hours_regular": 1387.9,
+   "hours_overtime": 15.5,
+   "labor_cost": 84711.64
   },
   {
-   "district": "MVR",
+   "district": "NWP",
    "pay_period": "2026-20",
-   "hours_plan": 9720,
-   "hours_regular": 8981,
-   "hours_overtime": 357,
-   "labor_cost": 650930
+   "hours_plan": 1440,
+   "hours_regular": 1419,
+   "hours_overtime": 20.3,
+   "labor_cost": 87202.72
   },
   {
-   "district": "MVP",
+   "district": "NWP",
+   "pay_period": "2026-21",
+   "hours_plan": 1440,
+   "hours_regular": 1379.1,
+   "hours_overtime": 35.5,
+   "labor_cost": 86135.74
+  },
+  {
+   "district": "NWP",
+   "pay_period": "2026-22",
+   "hours_plan": 1440,
+   "hours_regular": 1372.5,
+   "hours_overtime": 9.2,
+   "labor_cost": 83322.85
+  },
+  {
+   "district": "NWP",
+   "pay_period": "2026-23",
+   "hours_plan": 1440,
+   "hours_regular": 1416.8,
+   "hours_overtime": 20.2,
+   "labor_cost": 87539.09
+  },
+  {
+   "district": "NWP",
+   "pay_period": "2026-24",
+   "hours_plan": 1440,
+   "hours_regular": 1405.9,
+   "hours_overtime": 19.4,
+   "labor_cost": 86342.17
+  },
+  {
+   "district": "NWP",
+   "pay_period": "2026-25",
+   "hours_plan": 1440,
+   "hours_regular": 1440,
+   "hours_overtime": 20.7,
+   "labor_cost": 88424.06
+  },
+  {
+   "district": "NWP",
+   "pay_period": "2026-26",
+   "hours_plan": 1440,
+   "hours_regular": 1440,
+   "hours_overtime": 13.1,
+   "labor_cost": 88159.23
+  },
+  {
+   "district": "SAM",
    "pay_period": "2026-01",
-   "hours_plan": 7347,
-   "hours_regular": 7137,
-   "hours_overtime": 634,
-   "labor_cost": 553202
+   "hours_plan": 1600,
+   "hours_regular": 1546.9,
+   "hours_overtime": 25,
+   "labor_cost": 95715.58
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-02",
-   "hours_plan": 9821,
-   "hours_regular": 9796,
-   "hours_overtime": 898,
-   "labor_cost": 762210
+   "hours_plan": 1600,
+   "hours_regular": 1545.4,
+   "hours_overtime": 22.4,
+   "labor_cost": 95549.41
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-03",
-   "hours_plan": 6129,
-   "hours_regular": 5543,
-   "hours_overtime": 282,
-   "labor_cost": 408101
+   "hours_plan": 1600,
+   "hours_regular": 1483.6,
+   "hours_overtime": 15.5,
+   "labor_cost": 89744.04
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-04",
-   "hours_plan": 5456,
-   "hours_regular": 4807,
-   "hours_overtime": 489,
-   "labor_cost": 378943
+   "hours_plan": 1600,
+   "hours_regular": 1560.2,
+   "hours_overtime": 44.4,
+   "labor_cost": 98567.31
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-05",
-   "hours_plan": 7775,
-   "hours_regular": 7081,
-   "hours_overtime": 689,
-   "labor_cost": 555003
+   "hours_plan": 1600,
+   "hours_regular": 1586.6,
+   "hours_overtime": 24.5,
+   "labor_cost": 97902.7
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-06",
-   "hours_plan": 8106,
-   "hours_regular": 7943,
-   "hours_overtime": 378,
-   "labor_cost": 582067
+   "hours_plan": 1600,
+   "hours_regular": 1584.4,
+   "hours_overtime": 14.9,
+   "labor_cost": 96853.72
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-07",
-   "hours_plan": 6874,
-   "hours_regular": 6855,
-   "hours_overtime": 763,
-   "labor_cost": 547175
+   "hours_plan": 1600,
+   "hours_regular": 1546.7,
+   "hours_overtime": 20.6,
+   "labor_cost": 95696.84
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-08",
-   "hours_plan": 5886,
-   "hours_regular": 5673,
-   "hours_overtime": 324,
-   "labor_cost": 421281
+   "hours_plan": 1600,
+   "hours_regular": 1563.8,
+   "hours_overtime": 20.4,
+   "labor_cost": 96014.58
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-09",
-   "hours_plan": 5624,
-   "hours_regular": 5672,
-   "hours_overtime": 171,
-   "labor_cost": 405509
+   "hours_plan": 1600,
+   "hours_regular": 1600,
+   "hours_overtime": 27.6,
+   "labor_cost": 99422.41
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-10",
-   "hours_plan": 10051,
-   "hours_regular": 8778,
-   "hours_overtime": 269,
-   "labor_cost": 627951
+   "hours_plan": 1600,
+   "hours_regular": 1579.6,
+   "hours_overtime": 23.6,
+   "labor_cost": 97141.07
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-11",
-   "hours_plan": 9291,
-   "hours_regular": 9314,
-   "hours_overtime": 925,
-   "labor_cost": 732028
+   "hours_plan": 1600,
+   "hours_regular": 1589,
+   "hours_overtime": 18.2,
+   "labor_cost": 97795.05
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-12",
-   "hours_plan": 6961,
-   "hours_regular": 7168,
-   "hours_overtime": 629,
-   "labor_cost": 554796
+   "hours_plan": 1600,
+   "hours_regular": 1586.3,
+   "hours_overtime": 26.6,
+   "labor_cost": 98619.39
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-13",
-   "hours_plan": 7255,
-   "hours_regular": 6488,
-   "hours_overtime": 691,
-   "labor_cost": 514693
+   "hours_plan": 1600,
+   "hours_regular": 1583.2,
+   "hours_overtime": 28.8,
+   "labor_cost": 98326.82
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-14",
-   "hours_plan": 7319,
-   "hours_regular": 6959,
-   "hours_overtime": 434,
-   "labor_cost": 520568
+   "hours_plan": 1600,
+   "hours_regular": 1600,
+   "hours_overtime": 25.9,
+   "labor_cost": 98915.8
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-15",
-   "hours_plan": 6263,
-   "hours_regular": 6317,
-   "hours_overtime": 729,
-   "labor_cost": 506864
+   "hours_plan": 1600,
+   "hours_regular": 1600,
+   "hours_overtime": 40,
+   "labor_cost": 100425.6
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-16",
-   "hours_plan": 11490,
-   "hours_regular": 9945,
-   "hours_overtime": 663,
-   "labor_cost": 748301
+   "hours_plan": 1600,
+   "hours_regular": 1600,
+   "hours_overtime": 20.9,
+   "labor_cost": 98500.35
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-17",
-   "hours_plan": 6429,
-   "hours_regular": 6451,
-   "hours_overtime": 663,
-   "labor_cost": 509286
+   "hours_plan": 1600,
+   "hours_regular": 1600,
+   "hours_overtime": 18.6,
+   "labor_cost": 98464.82
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-18",
-   "hours_plan": 11129,
-   "hours_regular": 9737,
-   "hours_overtime": 799,
-   "labor_cost": 748026
+   "hours_plan": 1600,
+   "hours_regular": 1560.3,
+   "hours_overtime": 32.2,
+   "labor_cost": 96849.89
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-19",
-   "hours_plan": 9191,
-   "hours_regular": 9011,
-   "hours_overtime": 717,
-   "labor_cost": 689932
+   "hours_plan": 1600,
+   "hours_regular": 1576.8,
+   "hours_overtime": 32.6,
+   "labor_cost": 98108.75
   },
   {
-   "district": "MVP",
+   "district": "SAM",
    "pay_period": "2026-20",
-   "hours_plan": 8445,
-   "hours_regular": 8666,
-   "hours_overtime": 259,
-   "labor_cost": 619363
+   "hours_plan": 1600,
+   "hours_regular": 1549.6,
+   "hours_overtime": 28.8,
+   "labor_cost": 95794.81
+  },
+  {
+   "district": "SAM",
+   "pay_period": "2026-21",
+   "hours_plan": 1600,
+   "hours_regular": 1543.3,
+   "hours_overtime": 12.7,
+   "labor_cost": 94835.67
+  },
+  {
+   "district": "SAM",
+   "pay_period": "2026-22",
+   "hours_plan": 1600,
+   "hours_regular": 1551.4,
+   "hours_overtime": 32,
+   "labor_cost": 95830.84
+  },
+  {
+   "district": "SAM",
+   "pay_period": "2026-23",
+   "hours_plan": 1600,
+   "hours_regular": 1567.1,
+   "hours_overtime": 31.7,
+   "labor_cost": 97020.03
+  },
+  {
+   "district": "SAM",
+   "pay_period": "2026-24",
+   "hours_plan": 1600,
+   "hours_regular": 1582.7,
+   "hours_overtime": 21.9,
+   "labor_cost": 97766.82
+  },
+  {
+   "district": "SAM",
+   "pay_period": "2026-25",
+   "hours_plan": 1600,
+   "hours_regular": 1546.8,
+   "hours_overtime": 25.1,
+   "labor_cost": 95283.36
+  },
+  {
+   "district": "SAM",
+   "pay_period": "2026-26",
+   "hours_plan": 1600,
+   "hours_regular": 1568.7,
+   "hours_overtime": 21.6,
+   "labor_cost": 96485.21
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-01",
+   "hours_plan": 1920,
+   "hours_regular": 1856.5,
+   "hours_overtime": 16.6,
+   "labor_cost": 119846.02
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-02",
+   "hours_plan": 1920,
+   "hours_regular": 1851.9,
+   "hours_overtime": 41.2,
+   "labor_cost": 120705.53
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-03",
+   "hours_plan": 1920,
+   "hours_regular": 1870.6,
+   "hours_overtime": 23,
+   "labor_cost": 120625.33
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-04",
+   "hours_plan": 1920,
+   "hours_regular": 1902.1,
+   "hours_overtime": 23.8,
+   "labor_cost": 122339.77
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-05",
+   "hours_plan": 1920,
+   "hours_regular": 1860.4,
+   "hours_overtime": 26.6,
+   "labor_cost": 120549.1
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-06",
+   "hours_plan": 1920,
+   "hours_regular": 1883.2,
+   "hours_overtime": 8.6,
+   "labor_cost": 119794.46
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-07",
+   "hours_plan": 1920,
+   "hours_regular": 1881.2,
+   "hours_overtime": 15.4,
+   "labor_cost": 120188.09
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-08",
+   "hours_plan": 1920,
+   "hours_regular": 1884.8,
+   "hours_overtime": 20.7,
+   "labor_cost": 120397.25
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-09",
+   "hours_plan": 1920,
+   "hours_regular": 1920,
+   "hours_overtime": 25.7,
+   "labor_cost": 123478.25
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-10",
+   "hours_plan": 1920,
+   "hours_regular": 1816.2,
+   "hours_overtime": 23.8,
+   "labor_cost": 116569.07
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-11",
+   "hours_plan": 1920,
+   "hours_regular": 1920,
+   "hours_overtime": 21.1,
+   "labor_cost": 123267.24
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-12",
+   "hours_plan": 1920,
+   "hours_regular": 1881.1,
+   "hours_overtime": 23.7,
+   "labor_cost": 121050.52
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-13",
+   "hours_plan": 1920,
+   "hours_regular": 1847.3,
+   "hours_overtime": 21.1,
+   "labor_cost": 119381.82
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-14",
+   "hours_plan": 1920,
+   "hours_regular": 1887.7,
+   "hours_overtime": 21.5,
+   "labor_cost": 121365.82
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-15",
+   "hours_plan": 1920,
+   "hours_regular": 1920,
+   "hours_overtime": 31.4,
+   "labor_cost": 124245.16
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-16",
+   "hours_plan": 1920,
+   "hours_regular": 1893.5,
+   "hours_overtime": 29.2,
+   "labor_cost": 122104.54
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-17",
+   "hours_plan": 1920,
+   "hours_regular": 1920,
+   "hours_overtime": 14.9,
+   "labor_cost": 122738.01
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-18",
+   "hours_plan": 1920,
+   "hours_regular": 1790.7,
+   "hours_overtime": 27.9,
+   "labor_cost": 115960.46
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-19",
+   "hours_plan": 1920,
+   "hours_regular": 1920,
+   "hours_overtime": 33.4,
+   "labor_cost": 124079.13
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-20",
+   "hours_plan": 1920,
+   "hours_regular": 1885.4,
+   "hours_overtime": 30.8,
+   "labor_cost": 122153.61
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-21",
+   "hours_plan": 1920,
+   "hours_regular": 1869,
+   "hours_overtime": 32.9,
+   "labor_cost": 121109.27
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-22",
+   "hours_plan": 1920,
+   "hours_regular": 1899.5,
+   "hours_overtime": 16.6,
+   "labor_cost": 121616.19
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-23",
+   "hours_plan": 1920,
+   "hours_regular": 1860.9,
+   "hours_overtime": 15.3,
+   "labor_cost": 119226.78
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-24",
+   "hours_plan": 1920,
+   "hours_regular": 1894.8,
+   "hours_overtime": 16.2,
+   "labor_cost": 120966.34
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-25",
+   "hours_plan": 1920,
+   "hours_regular": 1882.3,
+   "hours_overtime": 36.7,
+   "labor_cost": 122020.93
+  },
+  {
+   "district": "SWL",
+   "pay_period": "2026-26",
+   "hours_plan": 1920,
+   "hours_regular": 1828.6,
+   "hours_overtime": 7.7,
+   "labor_cost": 116036.58
   },
   {
    "district": "SWT",
    "pay_period": "2026-01",
-   "hours_plan": 10801,
-   "hours_regular": 9684,
-   "hours_overtime": 840,
-   "labor_cost": 748565
+   "hours_plan": 1920,
+   "hours_regular": 1883.4,
+   "hours_overtime": 26.7,
+   "labor_cost": 113820.86
   },
   {
    "district": "SWT",
    "pay_period": "2026-02",
-   "hours_plan": 7364,
-   "hours_regular": 7263,
-   "hours_overtime": 686,
-   "labor_cost": 567166
+   "hours_plan": 1920,
+   "hours_regular": 1866,
+   "hours_overtime": 20.5,
+   "labor_cost": 112568.84
   },
   {
    "district": "SWT",
    "pay_period": "2026-03",
-   "hours_plan": 9651,
-   "hours_regular": 9276,
-   "hours_overtime": 237,
-   "labor_cost": 658824
+   "hours_plan": 1920,
+   "hours_regular": 1885.7,
+   "hours_overtime": 27.9,
+   "labor_cost": 114062.52
   },
   {
    "district": "SWT",
    "pay_period": "2026-04",
-   "hours_plan": 7315,
-   "hours_regular": 6782,
-   "hours_overtime": 472,
-   "labor_cost": 512370
+   "hours_plan": 1920,
+   "hours_regular": 1904.7,
+   "hours_overtime": 20.5,
+   "labor_cost": 114051.1
   },
   {
    "district": "SWT",
    "pay_period": "2026-05",
-   "hours_plan": 9967,
-   "hours_regular": 9037,
-   "hours_overtime": 214,
-   "labor_cost": 640142
+   "hours_plan": 1920,
+   "hours_regular": 1895.1,
+   "hours_overtime": 20.3,
+   "labor_cost": 114073.92
   },
   {
    "district": "SWT",
    "pay_period": "2026-06",
-   "hours_plan": 11313,
-   "hours_regular": 10392,
-   "hours_overtime": 846,
-   "labor_cost": 797644
+   "hours_plan": 1920,
+   "hours_regular": 1859.2,
+   "hours_overtime": 35.8,
+   "labor_cost": 113479.34
   },
   {
    "district": "SWT",
    "pay_period": "2026-07",
-   "hours_plan": 10462,
-   "hours_regular": 10093,
-   "hours_overtime": 251,
-   "labor_cost": 716050
+   "hours_plan": 1920,
+   "hours_regular": 1841.1,
+   "hours_overtime": 25.5,
+   "labor_cost": 111594.73
   },
   {
    "district": "SWT",
    "pay_period": "2026-08",
-   "hours_plan": 10016,
-   "hours_regular": 8684,
-   "hours_overtime": 840,
-   "labor_cost": 680171
+   "hours_plan": 1920,
+   "hours_regular": 1846.7,
+   "hours_overtime": 40.2,
+   "labor_cost": 112441.1
   },
   {
    "district": "SWT",
    "pay_period": "2026-09",
-   "hours_plan": 9143,
-   "hours_regular": 8237,
-   "hours_overtime": 925,
-   "labor_cost": 658304
+   "hours_plan": 1920,
+   "hours_regular": 1836.2,
+   "hours_overtime": 36.5,
+   "labor_cost": 112272.27
   },
   {
    "district": "SWT",
    "pay_period": "2026-10",
-   "hours_plan": 6070,
-   "hours_regular": 5462,
-   "hours_overtime": 413,
-   "labor_cost": 415940
+   "hours_plan": 1920,
+   "hours_regular": 1887.2,
+   "hours_overtime": 21.1,
+   "labor_cost": 113800.31
   },
   {
    "district": "SWT",
    "pay_period": "2026-11",
-   "hours_plan": 11830,
-   "hours_regular": 11998,
-   "hours_overtime": 489,
-   "labor_cost": 870852
+   "hours_plan": 1920,
+   "hours_regular": 1906.4,
+   "hours_overtime": 30.1,
+   "labor_cost": 115303.23
   },
   {
    "district": "SWT",
    "pay_period": "2026-12",
-   "hours_plan": 6991,
-   "hours_regular": 6949,
-   "hours_overtime": 801,
-   "labor_cost": 557500
+   "hours_plan": 1920,
+   "hours_regular": 1866.3,
+   "hours_overtime": 37,
+   "labor_cost": 113341.5
   },
   {
    "district": "SWT",
    "pay_period": "2026-13",
-   "hours_plan": 10031,
-   "hours_regular": 9357,
-   "hours_overtime": 996,
-   "labor_cost": 742183
+   "hours_plan": 1920,
+   "hours_regular": 1857,
+   "hours_overtime": 29,
+   "labor_cost": 111662.95
   },
   {
    "district": "SWT",
    "pay_period": "2026-14",
-   "hours_plan": 9104,
-   "hours_regular": 8280,
-   "hours_overtime": 738,
-   "labor_cost": 642051
+   "hours_plan": 1920,
+   "hours_regular": 1808.4,
+   "hours_overtime": 421.6,
+   "labor_cost": 145466.72
   },
   {
    "district": "SWT",
    "pay_period": "2026-15",
-   "hours_plan": 9922,
-   "hours_regular": 9395,
-   "hours_overtime": 462,
-   "labor_cost": 689988
+   "hours_plan": 1920,
+   "hours_regular": 1852,
+   "hours_overtime": 472.1,
+   "labor_cost": 150396.07
   },
   {
    "district": "SWT",
    "pay_period": "2026-16",
-   "hours_plan": 7522,
-   "hours_regular": 7535,
-   "hours_overtime": 264,
-   "labor_cost": 542440
+   "hours_plan": 1920,
+   "hours_regular": 1884.6,
+   "hours_overtime": 428.7,
+   "labor_cost": 149006.01
   },
   {
    "district": "SWT",
    "pay_period": "2026-17",
-   "hours_plan": 5908,
-   "hours_regular": 5551,
-   "hours_overtime": 417,
-   "labor_cost": 422521
+   "hours_plan": 1920,
+   "hours_regular": 1907.5,
+   "hours_overtime": 453.5,
+   "labor_cost": 152929.1
   },
   {
    "district": "SWT",
    "pay_period": "2026-18",
-   "hours_plan": 5208,
-   "hours_regular": 5454,
-   "hours_overtime": 110,
-   "labor_cost": 384382
+   "hours_plan": 1920,
+   "hours_regular": 1901.6,
+   "hours_overtime": 446,
+   "labor_cost": 151732.2
   },
   {
    "district": "SWT",
    "pay_period": "2026-19",
-   "hours_plan": 10767,
-   "hours_regular": 10757,
-   "hours_overtime": 430,
-   "labor_cost": 779877
+   "hours_plan": 1920,
+   "hours_regular": 1920,
+   "hours_overtime": 36.6,
+   "labor_cost": 116785.97
   },
   {
    "district": "SWT",
    "pay_period": "2026-20",
-   "hours_plan": 7197,
-   "hours_regular": 6496,
-   "hours_overtime": 547,
-   "labor_cost": 500408
+   "hours_plan": 1920,
+   "hours_regular": 1856.1,
+   "hours_overtime": 27.4,
+   "labor_cost": 111547.23
+  },
+  {
+   "district": "SWT",
+   "pay_period": "2026-21",
+   "hours_plan": 1920,
+   "hours_regular": 1863.9,
+   "hours_overtime": 33.4,
+   "labor_cost": 112721.98
+  },
+  {
+   "district": "SWT",
+   "pay_period": "2026-22",
+   "hours_plan": 1920,
+   "hours_regular": 1872.2,
+   "hours_overtime": 11.9,
+   "labor_cost": 111801.13
+  },
+  {
+   "district": "SWT",
+   "pay_period": "2026-23",
+   "hours_plan": 1920,
+   "hours_regular": 1908.3,
+   "hours_overtime": 33.8,
+   "labor_cost": 116095.7
+  },
+  {
+   "district": "SWT",
+   "pay_period": "2026-24",
+   "hours_plan": 1920,
+   "hours_regular": 1855.4,
+   "hours_overtime": 42,
+   "labor_cost": 113062.15
+  },
+  {
+   "district": "SWT",
+   "pay_period": "2026-25",
+   "hours_plan": 1920,
+   "hours_regular": 1858.6,
+   "hours_overtime": 22.1,
+   "labor_cost": 111864.63
+  },
+  {
+   "district": "SWT",
+   "pay_period": "2026-26",
+   "hours_plan": 1920,
+   "hours_regular": 1884.2,
+   "hours_overtime": 19.8,
+   "labor_cost": 113744.05
   }
  ],
  "as_of": {

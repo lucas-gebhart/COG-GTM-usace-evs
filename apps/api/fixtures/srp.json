@@ -5,6 +5,7 @@
    "river_systems": 8,
    "dams": null,
    "river_miles": null,
+   "floodplain_acres": null,
    "source": "HEC SRP history",
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/history/"
   },
@@ -13,6 +14,7 @@
    "river_systems": 16,
    "dams": 66,
    "river_miles": 5111,
+   "floodplain_acres": null,
    "source": "TNC SRP 2019",
    "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/"
   },
@@ -21,6 +23,7 @@
    "river_systems": 30,
    "dams": null,
    "river_miles": null,
+   "floodplain_acres": null,
    "source": "HEC SRP history",
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/history/"
   },
@@ -29,6 +32,7 @@
    "river_systems": 50,
    "dams": null,
    "river_miles": null,
+   "floodplain_acres": null,
    "source": "HEC SRP history (50+ teams, 27 districts)",
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/history/"
   },
@@ -44,24 +48,13 @@
  ],
  "sites": [
   {
-   "name": "Green River",
-   "river": "Green River",
-   "state": "KY",
-   "district": "LRL",
+   "name": "Big Cypress Bayou",
+   "river": "Big Cypress Bayou",
+   "state": "TX",
+   "district": "SWF",
    "nid_id": null,
-   "latitude": 37.2,
-   "longitude": -86.1,
-   "year_joined": 2002,
-   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
-  },
-  {
-   "name": "Savannah River",
-   "river": "Savannah River",
-   "state": "GA",
-   "district": "SAS",
-   "nid_id": null,
-   "latitude": 33.6,
-   "longitude": -82.2,
+   "latitude": 32.7,
+   "longitude": -94.5,
    "year_joined": 2002,
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   },
@@ -77,24 +70,13 @@
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   },
   {
-   "name": "Willamette River",
-   "river": "Willamette River",
-   "state": "OR",
-   "district": "NWP",
+   "name": "Green River",
+   "river": "Green River",
+   "state": "KY",
+   "district": "LRL",
    "nid_id": null,
-   "latitude": 44.4,
-   "longitude": -122.6,
-   "year_joined": 2002,
-   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
-  },
-  {
-   "name": "Big Cypress Bayou",
-   "river": "Big Cypress Bayou",
-   "state": "TX",
-   "district": "SWF",
-   "nid_id": null,
-   "latitude": 32.7,
-   "longitude": -94.5,
+   "latitude": 37.2,
+   "longitude": -86.1,
    "year_joined": 2002,
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   },
@@ -110,6 +92,28 @@
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   },
   {
+   "name": "Savannah River",
+   "river": "Savannah River",
+   "state": "GA",
+   "district": "SAS",
+   "nid_id": null,
+   "latitude": 33.6,
+   "longitude": -82.2,
+   "year_joined": 2002,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Willamette River",
+   "river": "Willamette River",
+   "state": "OR",
+   "district": "NWP",
+   "nid_id": null,
+   "latitude": 44.4,
+   "longitude": -122.6,
+   "year_joined": 2002,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
    "name": "Connecticut River",
    "river": "Connecticut River",
    "state": "VT",
@@ -117,6 +121,17 @@
    "nid_id": null,
    "latitude": 43.3,
    "longitude": -72.4,
+   "year_joined": 2010,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Middle Fork Willamette",
+   "river": "Willamette River",
+   "state": "OR",
+   "district": "NWP",
+   "nid_id": null,
+   "latitude": 43.9,
+   "longitude": -122.8,
    "year_joined": 2010,
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   },
@@ -143,6 +158,28 @@
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   },
   {
+   "name": "Apalachicola River",
+   "river": "Apalachicola River",
+   "state": "FL",
+   "district": "SAM",
+   "nid_id": null,
+   "latitude": 30.7,
+   "longitude": -84.9,
+   "year_joined": 2018,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Chattahoochee River",
+   "river": "Chattahoochee River",
+   "state": "GA",
+   "district": "SAM",
+   "nid_id": null,
+   "latitude": 34.2,
+   "longitude": -84.0,
+   "year_joined": 2018,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
    "name": "Cumberland River",
    "river": "Cumberland River",
    "state": "TN",
@@ -165,6 +202,17 @@
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   },
   {
+   "name": "Rio Grande",
+   "river": "Rio Grande",
+   "state": "NM",
+   "district": "SPA",
+   "nid_id": null,
+   "latitude": 36.7,
+   "longitude": -106.2,
+   "year_joined": 2018,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
    "name": "Russian River",
    "river": "Russian River",
    "state": "CA",
@@ -173,39 +221,6 @@
    "latitude": 38.6,
    "longitude": -123.0,
    "year_joined": 2018,
-   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
-  },
-  {
-   "name": "Chattahoochee River",
-   "river": "Chattahoochee River",
-   "state": "GA",
-   "district": "SAM",
-   "nid_id": null,
-   "latitude": 34.2,
-   "longitude": -84.0,
-   "year_joined": 2018,
-   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
-  },
-  {
-   "name": "Apalachicola River",
-   "river": "Apalachicola River",
-   "state": "FL",
-   "district": "SAM",
-   "nid_id": null,
-   "latitude": 30.7,
-   "longitude": -84.9,
-   "year_joined": 2018,
-   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
-  },
-  {
-   "name": "Middle Fork Willamette",
-   "river": "Willamette River",
-   "state": "OR",
-   "district": "NWP",
-   "nid_id": null,
-   "latitude": 43.9,
-   "longitude": -122.8,
-   "year_joined": 2010,
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   },
   {
@@ -220,35 +235,13 @@
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   },
   {
-   "name": "Rio Grande",
-   "river": "Rio Grande",
-   "state": "NM",
-   "district": "SPA",
-   "nid_id": null,
-   "latitude": 36.7,
-   "longitude": -106.2,
-   "year_joined": 2018,
-   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
-  },
-  {
-   "name": "Trinity River",
-   "river": "Trinity River",
-   "state": "TX",
-   "district": "SWF",
-   "nid_id": null,
-   "latitude": 32.9,
-   "longitude": -96.8,
-   "year_joined": 2020,
-   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
-  },
-  {
-   "name": "Pearl River",
-   "river": "Pearl River",
-   "state": "MS",
-   "district": "MVK",
+   "name": "Alabama River",
+   "river": "Alabama River",
+   "state": "AL",
+   "district": "SAM",
    "nid_id": null,
    "latitude": 32.3,
-   "longitude": -90.2,
+   "longitude": -86.8,
    "year_joined": 2020,
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   },
@@ -264,25 +257,25 @@
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   },
   {
-   "name": "Alabama River",
-   "river": "Alabama River",
-   "state": "AL",
-   "district": "SAM",
+   "name": "Pearl River",
+   "river": "Pearl River",
+   "state": "MS",
+   "district": "MVK",
    "nid_id": null,
    "latitude": 32.3,
-   "longitude": -86.8,
+   "longitude": -90.2,
    "year_joined": 2020,
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   },
   {
-   "name": "Youghiogheny River",
-   "river": "Youghiogheny River",
-   "state": "PA",
-   "district": "LRP",
+   "name": "Trinity River",
+   "river": "Trinity River",
+   "state": "TX",
+   "district": "SWF",
    "nid_id": null,
-   "latitude": 39.8,
-   "longitude": -79.4,
-   "year_joined": 2022,
+   "latitude": 32.9,
+   "longitude": -96.8,
+   "year_joined": 2020,
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   },
   {
@@ -304,6 +297,17 @@
    "nid_id": null,
    "latitude": 41.6,
    "longitude": -93.6,
+   "year_joined": 2022,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Youghiogheny River",
+   "river": "Youghiogheny River",
+   "state": "PA",
+   "district": "LRP",
+   "nid_id": null,
+   "latitude": 39.8,
+   "longitude": -79.4,
    "year_joined": 2022,
    "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
   }

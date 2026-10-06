@@ -8,7 +8,11 @@ import psycopg
 
 def default_migrations_dir() -> Path:
     """Repo checkout (apps/api/evs/db -> <root>/db/migrations) or container image (/db/migrations)."""
-    for candidate in (Path(__file__).resolve().parents[4] / "db" / "migrations", Path("/db/migrations")):
+    here = Path(__file__).resolve()
+    candidates = [Path("/db/migrations")]
+    if len(here.parents) > 4:
+        candidates.insert(0, here.parents[4] / "db" / "migrations")
+    for candidate in candidates:
         if candidate.is_dir():
             return candidate
     raise FileNotFoundError("db/migrations not found; set EVS_MIGRATIONS_DIR")

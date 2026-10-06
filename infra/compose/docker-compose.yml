@@ -49,7 +49,7 @@ services:
       EVS_S3_ENDPOINT: http://minio:9000
       EVS_CORS_ORIGINS: '["http://localhost:3000","http://localhost:5173"]'
     command: >
-      sh -c "evs migrate && uvicorn evs.main:app --host 0.0.0.0 --port 8000"
+      sh -c "evs migrate && evs seed && uvicorn evs.main:app --host 0.0.0.0 --port 8000"
     ports: ["8000:8000"]
     depends_on:
       db: { condition: service_healthy }

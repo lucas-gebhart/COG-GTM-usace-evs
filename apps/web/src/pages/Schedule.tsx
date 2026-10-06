@@ -74,8 +74,8 @@ export function Schedule() {
   return (
     <PageFrame path="/schedule" intro="Kanban board over percent complete bands (the APEX page 4 columns), with a keyboard move menu on every card. Dragging is optional; the menu is the accessible path.">
       <FilterBar className="evs-leadership-hide" legend="Board filters" fields={fields} values={{ district: values.district ?? "", program_code: values.program_code ?? "", phase: values.phase ?? "" }} onApply={apply} onReset={reset} resultCount={projects.data?.page.total ?? null} resultNoun="projects on the board" />
-      {!canWrite && <Alert type="info" slim className="margin-top-2">Read only: the current role can view the board but not move cards. Choose a project manager role in the header to move cards.</Alert>}
-      {error && <Alert type="error" slim role="alert" className="margin-top-2">{error}</Alert>}
+      {!canWrite && <Alert type="info" slim className="margin-top-2"><p className="usa-alert__text">Read only: the current role can view the board but not move cards. Choose a project manager role in the header to move cards.</p></Alert>}
+      {error && <Alert type="error" slim role="alert" className="margin-top-2"><p className="usa-alert__text">{error}</p></Alert>}
 
       <QueryBoundary query={projects} label="Loading Kanban board" variant="kpi" isEmpty={(d) => d.items.length === 0} emptyMessage="No projects match these filters.">
         {(data) => (

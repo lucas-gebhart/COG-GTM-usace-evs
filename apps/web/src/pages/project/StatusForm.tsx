@@ -130,11 +130,11 @@ export function StatusForm({ project }: { project: Project }) {
       <h2 id={`${id}-title`} className="evs-section__heading">Status update</h2>
       {readOnly && (
         <Alert type="info" slim id={`${id}-readonly`} role="status">
-          {forbidden ? "The server refused the last save (403). Your role cannot edit this project." : `Read only: role ${role} can view but not change project status. Switch to a project manager role in the header to edit.`}
+          <p className="usa-alert__text">{forbidden ? "The server refused the last save (403). Your role cannot edit this project." : `Read only: role ${role} can view but not change project status. Switch to a project manager role in the header to edit.`}</p>
         </Alert>
       )}
-      {saved && !busy && <Alert type="success" slim role="status">{saved}</Alert>}
-      {status.isError && status.error.status !== 403 && status.error.status !== 422 && <Alert type="error" slim role="alert">Saving failed ({status.error.referenceId}). The previous values were restored.</Alert>}
+      {saved && !busy && <Alert type="success" slim role="status"><p className="usa-alert__text">{saved}</p></Alert>}
+      {status.isError && status.error.status !== 403 && status.error.status !== 422 && <Alert type="error" slim role="alert"><p className="usa-alert__text">Saving failed ({status.error.referenceId}). The previous values were restored.</p></Alert>}
       <div className="evs-status-form__grid">
         <FormGroup error={Boolean(phase.error)}>
           <Label htmlFor={phase.id} error={Boolean(phase.error)}>Phase</Label>

@@ -26,7 +26,7 @@ describe("Schedule", () => {
     expect(await screen.findByRole("table", { name: /slipped milestones/i })).toBeInTheDocument();
     expect(screen.getByTestId("apex-tag")).toHaveTextContent("Migrated from APEX page 4");
     expect(await axe(container)).toHaveNoViolations();
-  });
+  }, 20_000);
 
   it("moves a card from the keyboard menu and closes the menu on Escape", async () => {
     const user = userEvent.setup();

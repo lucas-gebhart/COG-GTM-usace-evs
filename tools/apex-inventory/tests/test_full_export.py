@@ -49,9 +49,9 @@ def test_full_export_trace_matches_mapping(full_export):
     rows = build_trace_rows(inv, load_mapping(mapping_path))
     assert len(rows) == inv["summary"]["regions"]
     assert {int(r["apex_page"]) for r in rows if r["status"] != "not_migrated"} == SLICE_PAGES
-    assert all(r["status"] in ("planned", "not_migrated") for r in rows)
+    assert all(r["status"] in ("planned", "migrated", "not_migrated") for r in rows)
     cov = coverage(rows)
-    assert cov["total_regions"] == 917 and cov["coverage_migrated"] == 0.0 and cov["planned_regions"] > 0
+    assert cov["total_regions"] == 917 and cov["coverage_migrated"] > 0.0 and cov["planned_regions"] > 0
 
 
 def test_checked_in_artifacts_are_current(full_export):

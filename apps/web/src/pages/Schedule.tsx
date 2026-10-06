@@ -81,7 +81,7 @@ export function Schedule() {
         {(data) => (
           <section aria-labelledby="board-heading" className="margin-top-3">
             <h2 id="board-heading" className="evs-sr-only">Kanban board</h2>
-            <p className="margin-top-0"><AsOfBadge asOf={data.as_of} tickMs={0} /></p>
+            <div className="margin-top-0"><AsOfBadge asOf={data.as_of} tickMs={0} /></div>
             <ul className="evs-kanban">
               {KANBAN_COLUMNS.map((col) => {
                 const cards = data.items.filter((p) => kanbanColumnId(p.pct_complete) === col.id);

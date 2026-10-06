@@ -91,10 +91,10 @@ export function EnterpriseOverview() {
               <KpiTile label="Locks operating now" value={tileValue(tile("locks_operating"))} deltaPct={null} context={tile("locks_operating")?.delta_label ?? undefined} accent="var(--evs-status-operating)" />
               <KpiTile label="Slipped milestones" value={tileValue(tile("slipped_milestones"))} deltaPct={null} context="P2 milestones past their baseline date" />
             </div>
-            <p className="margin-top-1 margin-bottom-0">
+            <div className="margin-top-1 margin-bottom-0">
               <AsOfBadge asOf={data.as_of} tickMs={0} />
               {tile("locks_operating") && <AsOfBadge asOf={tile("locks_operating")!.as_of} prefix="Locks as of" tickMs={0} className="margin-left-1" />}
-            </p>
+            </div>
           </section>
         )}
       </QueryBoundary>

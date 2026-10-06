@@ -41,6 +41,17 @@ APEX_SCHEME_TO_ROLE = {
 }
 ROLE_IMPLIES = {"evs_admin": {"evs_admin", "evs_pm", "evs_viewer"}, "evs_pm": {"evs_pm", "evs_viewer"}}
 
+# Sent by the web shell's role switcher. Only read when EVS_AUTH_DISABLED=true (local, fixtures, Fly demo);
+# with OIDC on, the bearer token is the sole source of roles.
+DEMO_ROLE_HEADER = "X-Evs-Demo-Role"
+DEMO_ROLES = ("evs_viewer", "evs_pm", "evs_admin")
+
+
+def demo_principal(role_header: str | None) -> Principal:
+    role = role_header if role_header in DEMO_ROLES else "evs_admin"
+    return Principal(subject="dev", name=f"Demo User ({role})", roles=[role])
+
+
 _jwks_clients: dict[str, PyJWKClient] = {}
 
 
@@ -68,7 +79,7 @@ def effective_roles(roles: list[str]) -> set[str]:
 
 def current_principal(request: Request, settings: Annotated[Settings, Depends(get_settings)]) -> Principal:
     if settings.auth_disabled:
-        return Principal(subject="dev", name="Demo User", roles=["evs_admin", "evs_viewer"])
+        return demo_principal(request.headers.get(DEMO_ROLE_HEADER))
     header = request.headers.get("authorization", "")
     if not header.lower().startswith("bearer "):
         raise HTTPException(

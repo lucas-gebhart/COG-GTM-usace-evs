@@ -738,25 +738,25 @@ apex_page,apex_page_name,apex_region_id,apex_region_name,apex_region_type,evs_ro
 4016,Initiative Approval Chain,50489754763320794575,Add New Entry,STATIC,,,,,,not_migrated
 4016,Initiative Approval Chain,85744355980580952544,Initiative Approval Chain,NATIVE_SQL_REPORT,,,,sp_initiative_approval_chain;sp_initiative_approvals;sp_team_members,,not_migrated
 9999,Login Page,176222235942730897825,Our Strategic Planner,STATIC,,,,,,not_migrated
-10000,Administration,176222400883519898498,ACL Information,NATIVE_PLSQL,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,45083553914773703685,Report,NATIVE_SQL_REPORT,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,176222299756145898496,Access Control Content,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,176222442215745898989,Access Control Actions,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,176222298058585898494,Administration,NATIVE_BREADCRUMB,/admin,app/AppLayout (breadcrumb),,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,176222400101962898497,Access Control,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,29014887557242880738,Warning,NATIVE_PLSQL,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,45083553542557703685,Feedback,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,176222401307925898498,User Counts Report,NATIVE_SQL_REPORT,/admin,pages/Admin/FeedTable,GET /api/v1/admin/feeds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,40397379156596202993,Look Up Values,NATIVE_LIST,/admin,pages/Admin/Thresholds,GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,48653980386614826597,Approval Options,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,44914294501856619017,Monitoring,NATIVE_LIST,/admin,pages/Admin/FeedTable,GET /api/v1/admin/feeds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,176229727605146951069,Configuration,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,24797173764233708446,Project Interactions,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,45083578266729704196,Feedback,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,48254040840349570899,Utilities,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,40986351522943013964,Notifications,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,45076796308555940872,Column 1,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
-10000,Administration,45076796404144940873,Column 2,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; api:test_admin,planned
+10000,Administration,176222400883519898498,ACL Information,NATIVE_PLSQL,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,45083553914773703685,Report,NATIVE_SQL_REPORT,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,176222299756145898496,Access Control Content,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,176222442215745898989,Access Control Actions,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,176222298058585898494,Administration,NATIVE_BREADCRUMB,/admin,app/AppLayout (breadcrumb),,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,176222400101962898497,Access Control,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,29014887557242880738,Warning,NATIVE_PLSQL,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,45083553542557703685,Feedback,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,176222401307925898498,User Counts Report,NATIVE_SQL_REPORT,/admin,pages/Admin/FeedTable,GET /api/v1/admin/feeds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,40397379156596202993,Look Up Values,NATIVE_LIST,/admin,pages/Admin/Thresholds,GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,48653980386614826597,Approval Options,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,44914294501856619017,Monitoring,NATIVE_LIST,/admin,pages/Admin/FeedTable,GET /api/v1/admin/feeds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,176229727605146951069,Configuration,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,24797173764233708446,Project Interactions,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,45083578266729704196,Feedback,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,48254040840349570899,Utilities,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,40986351522943013964,Notifications,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,45076796308555940872,Column 1,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,45076796404144940873,Column 2,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
 10010,Configure Access Control,176222241070131897872,Access Control Configuration,STATIC,,,,,,not_migrated
 10010,Configure Access Control,176222241216533897872,Buttons,STATIC,,,,,,not_migrated
 10011,Users,176222245144818897880,Manage User Access,NATIVE_IR,,,,,,not_migrated

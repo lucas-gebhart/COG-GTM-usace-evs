@@ -13,6 +13,7 @@ import { Schedule } from "../pages/Schedule";
 import { Facilities } from "../pages/Facilities";
 import { routes } from "./routes";
 
+const Admin = lazy(() => import("../pages/Admin").then((m) => ({ default: m.Admin })));
 const AccessibilityPage = lazy(() => import("../pages/AccessibilityPage").then((m) => ({ default: m.AccessibilityPage })));
 const LocksPage = lazy(() => import("../pages/locks/LocksPage").then((m) => ({ default: m.LocksPage })));
 const LockDetailPage = lazy(() => import("../pages/locks/LockDetailPage").then((m) => ({ default: m.LockDetailPage })));
@@ -30,6 +31,7 @@ const PAGES: Partial<Record<(typeof routes)[number]["path"], ReactNode>> = {
   "/schedule": <Schedule />,
   "/facilities": <Facilities />,
   "/accessibility": <AccessibilityPage />,
+  "/admin": <Admin />,
   "/public/locks": <LocksPage />,
   "/public/locks/:id": <LockDetailPage />,
   "/public/srp": <SrpPage />,

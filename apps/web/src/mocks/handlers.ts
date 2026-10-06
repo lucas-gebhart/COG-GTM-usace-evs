@@ -27,11 +27,13 @@ type HistoryEvent = Schemas["ProjectHistoryEvent"];
 let projectsState: Project[] = structuredClone(fixtures.projects);
 let historyState: Record<string, HistoryEvent[]> = {};
 let historyId = 1;
+let thresholdsState: Schemas["Thresholds"] = { ...thresholds };
 
 export function resetMockState(): void {
   projectsState = structuredClone(fixtures.projects);
   historyState = {};
   historyId = 1;
+  thresholdsState = { ...thresholds };
 }
 
 function paginate<T>(items: T[], url: URL) {
@@ -100,6 +102,15 @@ function listResponse<T extends object>(rows: T[], url: URL, columns: readonly s
 function forbidden(request: Request) {
   if (request.headers.get(ROLE_HEADER) === "evs_viewer") {
     return HttpResponse.json({ detail: "Role evs_pm required" }, { status: 403 });
+  }
+  return null;
+}
+
+/** The admin router requires evs_admin on reads and writes (APEX "Administration Rights"). */
+function adminOnly(request: Request) {
+  const role = request.headers.get(ROLE_HEADER);
+  if (role && role !== "evs_admin") {
+    return HttpResponse.json({ detail: "Requires role evs_admin" }, { status: 403 });
   }
   return null;
 }
@@ -391,6 +402,23 @@ export const handlers: HttpHandler[] = [
       headers: { "Content-Type": artefact.type, "Content-Disposition": `attachment; filename="${String(params.name)}"` },
     });
   }),
-  http.get(`${BASE}/admin/feeds`, () => HttpResponse.json({ feeds: fixtures.feeds, generated_at: new Date().toISOString() })),
-  http.get(`${BASE}/admin/thresholds`, () => HttpResponse.json(thresholds)),
+  http.get(`${BASE}/admin/feeds`, ({ request }) => adminOnly(request) ?? HttpResponse.json({ feeds: fixtures.feeds, generated_at: new Date().toISOString() })),
+  http.get(`${BASE}/admin/thresholds`, ({ request }) => adminOnly(request) ?? HttpResponse.json(thresholdsState)),
+  http.put(`${BASE}/admin/thresholds`, async ({ request }) => {
+    const denied = adminOnly(request);
+    if (denied) return denied;
+    const body = (await request.json()) as Schemas["ThresholdUpdate"];
+    if (body.delay_red_minutes <= body.delay_yellow_minutes) {
+      return HttpResponse.json({ detail: [{ item: "delay_red_minutes", message: "Red delay must exceed yellow delay." }] }, { status: 422 });
+    }
+    thresholdsState = {
+      ...thresholdsState,
+      ...body,
+      lpms_failover_hours: body.lpms_failover_hours ?? thresholdsState.lpms_failover_hours,
+      source: "fixtures",
+      updated_at: new Date().toISOString(),
+      updated_by: "dev",
+    };
+    return HttpResponse.json(thresholdsState);
+  }),
 ];

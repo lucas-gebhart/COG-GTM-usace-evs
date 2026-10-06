@@ -80,6 +80,7 @@ p { max-width: 75ch; } // 45 to 75 character measure
   .evs-grid--rail { grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); }
 }
 img, svg, video { max-width: 100%; height: auto; }
+.evs-break-anywhere { overflow-wrap: anywhere; word-break: break-word; }
 .evs-scroll-x { overflow-x: auto; max-width: 100%; scrollbar-gutter: stable; }
 .evs-scroll-x:focus-visible { outline-offset: 0; }
 

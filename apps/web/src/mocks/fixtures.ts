@@ -29,9 +29,14 @@ export function syntheticAsOf(source = "synthetic"): Schemas["AsOf"] {
   return { source_as_of: now, fetched_at: now, freshness: "fresh", source } as Schemas["AsOf"];
 }
 
-export const thresholds = {
-  stale_after_minutes: 20,
-  delay_yellow_minutes: 30,
-  delay_red_minutes: 120,
-  queue_yellow_vessels: 5,
+/** Status engine thresholds (evs.settings defaults) as the fixtures-mode API returns them. */
+export const thresholds: Schemas["Thresholds"] = {
+  stale_after_minutes: 120,
+  delay_yellow_minutes: 60,
+  delay_red_minutes: 240,
+  queue_yellow_vessels: 6,
+  lpms_failover_hours: 6,
+  source: "fixtures",
+  updated_at: null,
+  updated_by: null,
 };

@@ -216,6 +216,29 @@ export function useKanbanMove(listKey: readonly unknown[]) {
   });
 }
 
+export type ThresholdUpdate = Schemas["ThresholdUpdate"];
+
+/** Status engine thresholds (APEX page 10000 lookups, role evs_admin): optimistic, rolled back on error. */
+export function useUpdateThresholds() {
+  const qc = useQueryClient();
+  return useMutation<Schemas["Thresholds"], ApiError, ThresholdUpdate, { previous?: Schemas["Thresholds"] }>({
+    mutationFn: async (body) => unwrap(await api.PUT("/api/v1/admin/thresholds", { body })),
+    onMutate: async (body) => {
+      await qc.cancelQueries({ queryKey: ["admin-thresholds"] });
+      const previous = qc.getQueryData<Schemas["Thresholds"]>(["admin-thresholds"]);
+      if (previous) qc.setQueryData<Schemas["Thresholds"]>(["admin-thresholds"], { ...previous, ...body, lpms_failover_hours: body.lpms_failover_hours ?? previous.lpms_failover_hours });
+      return { previous };
+    },
+    onError: (_err, _body, ctx) => {
+      if (ctx?.previous) qc.setQueryData(["admin-thresholds"], ctx.previous);
+    },
+    onSuccess: (result) => qc.setQueryData(["admin-thresholds"], result),
+    onSettled: () => {
+      void qc.invalidateQueries({ queryKey: ["admin-thresholds"] });
+    },
+  });
+}
+
 export type MilestoneUpdate = Schemas["MilestoneUpdate"];
 
 export function useUpdateMilestone(p2ProjectNo: string) {

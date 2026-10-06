@@ -70,6 +70,23 @@ def test_admin_thresholds_round_trip(client):
     assert client.put("/api/v1/admin/thresholds", json=bad).status_code == 422
 
 
+def test_demo_role_header_drives_roles_when_auth_disabled(client):
+    """The web shell's role switcher sends X-Evs-Demo-Role; honoured only with EVS_AUTH_DISABLED."""
+    no = _first_project(client)["p2_project_no"]
+    viewer = {"X-Evs-Demo-Role": "evs_viewer"}
+    pm = {"X-Evs-Demo-Role": "evs_pm"}
+    assert client.get(f"/api/v1/projects/{no}", headers=viewer).status_code == 200
+    denied = client.put(f"/api/v1/projects/{no}/status", json={"pct_complete": 20}, headers=viewer)
+    assert denied.status_code == 403
+    assert client.get("/api/v1/admin/thresholds", headers=viewer).status_code == 403
+    assert client.get("/api/v1/admin/thresholds", headers=pm).status_code == 403
+    moved = client.post(f"/api/v1/projects/{no}/kanban/move", params={"column_id": 1}, headers=pm)
+    assert moved.status_code == 200
+    assert client.get("/api/v1/admin/thresholds", headers={"X-Evs-Demo-Role": "bogus"}).status_code == 200
+    body = client.get("/api/v1/programs", headers=viewer).json()
+    assert body["as_of"]["source_as_of"] is not None and body["as_of"]["source"] in {"synthetic", "fixtures"}
+
+
 def test_openapi_tags_processes_and_schemes(client):
     spec = client.get("/openapi.json").json()
     put = spec["paths"]["/api/v1/projects/{p2_project_no}/status"]["put"]

@@ -7,9 +7,20 @@
     "No JET chart lives on the home page in this export; the `/financial` chart row uses page 161 (Cumulative Flow, JET area chart over sp_project_history), the cumulative chart the plan calls for."
   ],
   "shell_regions": {
-    "NATIVE_BREADCRUMB": {"evs_component": "app/AppLayout (breadcrumb)", "api_endpoint": "", "sql_object": ""},
-    "Menubar": {"evs_component": "app/AppLayout (primary nav)", "api_endpoint": "", "sql_object": ""},
-    "NATIVE_FACETED_SEARCH": {"evs_component": "components/FacetFilters", "api_endpoint": "(query string on list endpoint)"}
+    "NATIVE_BREADCRUMB": {
+      "evs_component": "app/AppLayout (breadcrumb)",
+      "api_endpoint": "",
+      "sql_object": ""
+    },
+    "Menubar": {
+      "evs_component": "app/AppLayout (primary nav)",
+      "api_endpoint": "",
+      "sql_object": ""
+    },
+    "NATIVE_FACETED_SEARCH": {
+      "evs_component": "components/FacetFilters",
+      "api_endpoint": "(query string on list endpoint)"
+    }
   },
   "slice": [
     {
@@ -21,14 +32,38 @@
       "test_id": "web:pages/EnterpriseOverview.test.tsx; e2e:overview.spec.ts",
       "status": "migrated",
       "regions": {
-        "Recently Changed Projects": {"evs_component": "pages/EnterpriseOverview/RecentProjectsTable", "api_endpoint": "GET /api/v1/projects?sort=updated"},
-        "My Projects": {"evs_component": "pages/EnterpriseOverview/KpiTiles", "api_endpoint": "GET /api/v1/projects"},
-        "My Initiatives": {"evs_component": "pages/EnterpriseOverview/KpiTiles", "api_endpoint": "GET /api/v1/programs"},
-        "My Activities": {"evs_component": "pages/EnterpriseOverview/ScheduleHealth", "api_endpoint": "GET /api/v1/workforce/labor"},
-        "My Open Releases": {"evs_component": "pages/EnterpriseOverview/ScheduleHealth", "api_endpoint": "GET /api/v1/projects"},
-        "Notifications": {"evs_component": "pages/EnterpriseOverview/FreshnessStrip", "api_endpoint": "GET /api/v1/admin/feeds"},
-        "Reviews Needed": {"evs_component": "pages/EnterpriseOverview/FreshnessStrip", "api_endpoint": "GET /api/v1/admin/feeds"},
-        "Project Search": {"evs_component": "app/AppLayout (search)", "api_endpoint": "GET /api/v1/projects?q="}
+        "Recently Changed Projects": {
+          "evs_component": "pages/EnterpriseOverview/RecentProjectsTable",
+          "api_endpoint": "GET /api/v1/projects?sort=updated"
+        },
+        "My Projects": {
+          "evs_component": "pages/EnterpriseOverview/KpiTiles",
+          "api_endpoint": "GET /api/v1/projects"
+        },
+        "My Initiatives": {
+          "evs_component": "pages/EnterpriseOverview/KpiTiles",
+          "api_endpoint": "GET /api/v1/programs"
+        },
+        "My Activities": {
+          "evs_component": "pages/EnterpriseOverview/ScheduleHealth",
+          "api_endpoint": "GET /api/v1/workforce/labor"
+        },
+        "My Open Releases": {
+          "evs_component": "pages/EnterpriseOverview/ScheduleHealth",
+          "api_endpoint": "GET /api/v1/projects"
+        },
+        "Notifications": {
+          "evs_component": "pages/EnterpriseOverview/FreshnessStrip",
+          "api_endpoint": "GET /api/v1/admin/feeds"
+        },
+        "Reviews Needed": {
+          "evs_component": "pages/EnterpriseOverview/FreshnessStrip",
+          "api_endpoint": "GET /api/v1/admin/feeds"
+        },
+        "Project Search": {
+          "evs_component": "app/AppLayout (search)",
+          "api_endpoint": "GET /api/v1/projects?q="
+        }
       }
     },
     {
@@ -40,8 +75,13 @@
       "test_id": "web:pages/Programs.test.tsx; api:test_programs",
       "status": "migrated",
       "regions": {
-        "Initiatives": {"evs_component": "pages/Programs/ProgramTable"},
-        "items": {"evs_component": "pages/Programs (filter items)", "api_endpoint": ""}
+        "Initiatives": {
+          "evs_component": "pages/Programs/ProgramTable"
+        },
+        "items": {
+          "evs_component": "pages/Programs (filter items)",
+          "api_endpoint": ""
+        }
       }
     },
     {
@@ -53,14 +93,32 @@
       "test_id": "web:pages/ProjectDetail.test.tsx; api:test_project_detail",
       "status": "migrated",
       "regions": {
-        "Project Details": {"evs_component": "pages/ProjectDetail/Header"},
-        "Milestones": {"evs_component": "pages/ProjectDetail/MilestoneTimeline"},
-        "milestone content": {"evs_component": "pages/ProjectDetail/MilestoneTimeline"},
-        "Tasks": {"evs_component": "pages/ProjectDetail/CmpRecords"},
-        "task content": {"evs_component": "pages/ProjectDetail/CmpRecords"},
-        "Documents": {"evs_component": "pages/ProjectDetail/Documents"},
-        "Activity": {"evs_component": "pages/ProjectDetail/LaborHours", "api_endpoint": "GET /api/v1/workforce/labor?project="},
-        "activity content": {"evs_component": "pages/ProjectDetail/LaborHours", "api_endpoint": "GET /api/v1/workforce/labor?project="}
+        "Project Details": {
+          "evs_component": "pages/ProjectDetail/Header"
+        },
+        "Milestones": {
+          "evs_component": "pages/ProjectDetail/MilestoneTimeline"
+        },
+        "milestone content": {
+          "evs_component": "pages/ProjectDetail/MilestoneTimeline"
+        },
+        "Tasks": {
+          "evs_component": "pages/ProjectDetail/CmpRecords"
+        },
+        "task content": {
+          "evs_component": "pages/ProjectDetail/CmpRecords"
+        },
+        "Documents": {
+          "evs_component": "pages/ProjectDetail/Documents"
+        },
+        "Activity": {
+          "evs_component": "pages/ProjectDetail/LaborHours",
+          "api_endpoint": "GET /api/v1/workforce/labor?project="
+        },
+        "activity content": {
+          "evs_component": "pages/ProjectDetail/LaborHours",
+          "api_endpoint": "GET /api/v1/workforce/labor?project="
+        }
       }
     },
     {
@@ -72,8 +130,13 @@
       "test_id": "web:pages/Workforce.test.tsx; api:test_workforce",
       "status": "migrated",
       "regions": {
-        "Users ": {"evs_component": "pages/Workforce/LaborTable"},
-        "filters": {"evs_component": "components/FacetFilters", "api_endpoint": ""}
+        "Users ": {
+          "evs_component": "pages/Workforce/LaborTable"
+        },
+        "filters": {
+          "evs_component": "components/FacetFilters",
+          "api_endpoint": ""
+        }
       }
     },
     {
@@ -85,8 +148,12 @@
       "test_id": "web:pages/Schedule.test.tsx; e2e:schedule.spec.ts",
       "status": "migrated",
       "regions": {
-        "Kanban Board": {"evs_component": "pages/Schedule (KanbanCard, Move to menu)"},
-        "do not drop - Search Results": {"evs_component": "pages/Schedule (milestone slip list)"}
+        "Kanban Board": {
+          "evs_component": "pages/Schedule (KanbanCard, Move to menu)"
+        },
+        "do not drop - Search Results": {
+          "evs_component": "pages/Schedule (milestone slip list)"
+        }
       }
     },
     {
@@ -95,12 +162,21 @@
       "evs_route": "/admin",
       "evs_component": "pages/Admin",
       "api_endpoint": "GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds",
-      "test_id": "web:pages/Admin.test.tsx; api:test_admin",
-      "status": "planned",
+      "test_id": "web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip",
+      "status": "migrated",
       "regions": {
-        "Look Up Values": {"evs_component": "pages/Admin/Thresholds", "api_endpoint": "GET /api/v1/admin/thresholds"},
-        "Monitoring": {"evs_component": "pages/Admin/FeedTable", "api_endpoint": "GET /api/v1/admin/feeds"},
-        "User Counts Report": {"evs_component": "pages/Admin/FeedTable", "api_endpoint": "GET /api/v1/admin/feeds"}
+        "Look Up Values": {
+          "evs_component": "pages/Admin/Thresholds",
+          "api_endpoint": "GET /api/v1/admin/thresholds"
+        },
+        "Monitoring": {
+          "evs_component": "pages/Admin/FeedTable",
+          "api_endpoint": "GET /api/v1/admin/feeds"
+        },
+        "User Counts Report": {
+          "evs_component": "pages/Admin/FeedTable",
+          "api_endpoint": "GET /api/v1/admin/feeds"
+        }
       }
     },
     {
@@ -112,7 +188,9 @@
       "test_id": "web:pages/Projects.test.tsx; api:test_programs_and_projects_fixtures",
       "status": "planned",
       "regions": {
-        "Projects Interactive Report": {"evs_component": "pages/Projects/ProjectTable"}
+        "Projects Interactive Report": {
+          "evs_component": "pages/Projects/ProjectTable"
+        }
       }
     },
     {
@@ -124,7 +202,10 @@
       "test_id": "web:pages/Financial.test.tsx; api:test_financial",
       "status": "migrated",
       "regions": {
-        "Cumulative Flow": {"evs_component": "pages/Financial/CumulativeChart (table alternative: CumulativeTable)", "status": "planned"}
+        "Cumulative Flow": {
+          "evs_component": "pages/Financial/CumulativeChart (table alternative: CumulativeTable)",
+          "status": "planned"
+        }
       }
     }
   ]

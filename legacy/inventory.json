@@ -97401,13 +97401,13 @@
  "coverage": {
   "total_regions": 917,
   "by_status": {
-   "migrated": 59,
+   "migrated": 78,
    "not_migrated": 835,
-   "planned": 23
+   "planned": 4
   },
-  "migrated_regions": 59,
+  "migrated_regions": 78,
   "planned_regions": 82,
-  "coverage_migrated": 0.0643,
+  "coverage_migrated": 0.0851,
   "coverage_planned": 0.0894,
   "slice_pages": [
    1,

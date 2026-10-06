@@ -9,7 +9,7 @@ RUN pnpm install --frozen-lockfile
 COPY apps/web/ ./
 # MSW mock mode and the mock-mode read-out import the API fixtures and the axe bundle by relative path (../../../api, ../../../../docs).
 COPY apps/api/fixtures/ /api/fixtures/
-COPY docs/a11y/evs-axe-results.json /docs/a11y/evs-axe-results.json
+COPY docs/a11y/ /docs/a11y/
 RUN sed -i 's#../../packages/contract#/packages/contract#' package.json && pnpm gen:api && pnpm build
 
 # Basemap: Protomaps PMTiles extract (continental US, z0-z8, about 56 MB). Cached by Docker as long as the

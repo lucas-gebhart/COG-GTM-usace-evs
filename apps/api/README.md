@@ -44,7 +44,7 @@ admin principal. Roles are read from `realm_access.roles` (Keycloak) or `cognito
 | --- | --- | --- |
 | Authenticated User | `evs_viewer` | every read endpoint outside `/public/*` |
 | Contributor | `evs_pm` | `evs_viewer` plus the project and milestone write endpoints |
-| Administrator | `evs_admin` | everything, including `/admin/*` |
+| Administration Rights (group Administrator) | `evs_admin` | everything, including `/admin/*` |
 | (none) | | `/health`, `/public/*`, `/accessibility/*` |
 
 Missing or invalid token: 401 with `WWW-Authenticate: Bearer`. Valid token without the role: 403.
@@ -53,14 +53,14 @@ Missing or invalid token: 401 with `WWW-Authenticate: Bearer`. Valid token witho
 ## Endpoints and APEX mapping
 
 All paths are under `/api/v1`. The OpenAPI document carries the same mapping as `x-apex-page`,
-`x-apex-process` and `x-apex-authorization` on each operation.
+`x-apex-process` and `x-apex-authorization` on each operation. Page ids follow WP1's measured inventory.
 
 | Method and path | Source (Strategic Planner page / process) | Role | Data |
 | --- | --- | --- | --- |
 | `GET /health` | | none | |
 | `GET /enterprise/kpis` | page 1 Dashboard badges | viewer | synth + lock status |
-| `GET /programs` | page 20 Initiatives IR | viewer | `synth.program` |
-| `GET /projects` | page 30 Projects IR | viewer | `synth.p2_project` |
+| `GET /programs` | page 21 Initiatives IR | viewer | `synth.program` |
+| `GET /projects` | page 86 Projects IR | viewer | `synth.p2_project` |
 | `GET /projects/{no}` | page 3 Project Details (`log` process writes the interaction log) | viewer | `synth.p2_project`, `synth.p2_milestone`, `evs.project_state` |
 | `PUT /projects/{no}/status` | page 24 Project form, `Process form Project`, validations `Link URL and name`, `Target complete`, trigger `sp_projects_biu` | pm | `synth.p2_project`, `evs.project_state`, `evs.project_history` |
 | `POST /projects/{no}/kanban/move?column_id=` | page 4 Kanban Board, dynamic action `Drop Item` | pm | same |
@@ -68,15 +68,15 @@ All paths are under `/api/v1`. The OpenAPI document carries the same mapping as 
 | `PUT /projects/{no}/milestones/{code}` | page 508 Milestone form, validations `Completed milestones need a date / an owner` | pm | `synth.p2_milestone`, `evs.project_history` |
 | `GET /projects/{no}/history` | page 64 Project Change History (`sp_project_history`) | viewer | `evs.project_history` |
 | `GET /schedule/milestones?status=slipped` | page 4 Kanban (late lane) | viewer | `synth.p2_milestone` |
-| `GET /financial/summary` | page 1 chart regions | viewer | `synth.cefms_execution`, `synth.cefms_appropriation` |
-| `GET /financial/variance-by-program` | page 1 chart regions | viewer | `synth.program`, `synth.cefms_execution` |
-| `GET /workforce/labor` | page 40 People IR | viewer | `synth.ems_labor_log` |
+| `GET /financial/summary` | page 161 | viewer | `synth.cefms_execution`, `synth.cefms_appropriation` |
+| `GET /financial/variance-by-program` | page 161 | viewer | `synth.program`, `synth.cefms_execution` |
+| `GET /workforce/labor` | page 74 People IR | viewer | `synth.ems_labor_log` |
 | `GET /facilities/condition` | new in EVS (BUILDER SMS) | viewer | `synth.builder_facility_condition` |
 | `GET /facilities/ci-distribution` | new in EVS | viewer | same |
 | `GET /public/locks`, `GET /public/locks/{id}`, `GET /public/locks/stream/events` | new in EVS (LPMS, NDC, NOAA, USGS) | none | `evs.lock_dim`, `evs.lock_status_fact` |
 | `GET /public/srp/coverage` | new in EVS (cited public figures) | none | `evs.srp_snapshot`, `evs.srp_site` |
-| `GET /admin/feeds` | | admin | `evs.feed_health` |
-| `GET /admin/thresholds`, `PUT /admin/thresholds` | | admin | `evs.threshold` |
+| `GET /admin/feeds` | page 10000 (Administration Rights) | admin | `evs.feed_health` |
+| `GET /admin/thresholds`, `PUT /admin/thresholds` | page 10000 (Administration Rights) | admin | `evs.threshold` |
 
 The PL/SQL ports behind the write endpoints are in `evs/legacy_ports/` (`projects.py`, `milestones.py`,
 `kanban.py`); each function's docstring names the APEX page and process it replaces. They are pure functions

@@ -18,7 +18,7 @@ router = APIRouter(tags=["financial"], dependencies=[Depends(require_viewer)])
 @router.get(
     "/financial/summary",
     response_model=FinancialSummary,
-    openapi_extra={"x-apex-page": "1", "x-apex-authorization": "Authenticated User"},
+    openapi_extra={"x-apex-page": "161", "x-apex-authorization": "Authenticated User"},
 )
 async def financial_summary(
     repos: Annotated[Repositories, Depends(get_repos)], fiscal_year: int = 2026
@@ -38,7 +38,7 @@ async def financial_summary(
     "/financial/variance-by-program",
     response_model=VarianceByProgram,
     summary="Obligation variance against plan to date, by program",
-    openapi_extra={"x-apex-page": "1", "x-apex-authorization": "Authenticated User"},
+    openapi_extra={"x-apex-page": "161", "x-apex-authorization": "Authenticated User"},
 )
 async def variance_by_program(
     repos: Annotated[Repositories, Depends(get_repos)], fiscal_year: int = 2026

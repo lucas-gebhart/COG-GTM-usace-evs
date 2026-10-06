@@ -205,7 +205,7 @@
             }
           }
         },
-        "x-apex-page": "20",
+        "x-apex-page": "21",
         "x-apex-authorization": "Authenticated User"
       }
     },
@@ -428,7 +428,7 @@
             }
           }
         },
-        "x-apex-page": "30",
+        "x-apex-page": "86",
         "x-apex-authorization": "Authenticated User"
       }
     },
@@ -971,7 +971,7 @@
             }
           }
         },
-        "x-apex-page": "1",
+        "x-apex-page": "161",
         "x-apex-authorization": "Authenticated User"
       }
     },
@@ -1017,7 +1017,7 @@
             }
           }
         },
-        "x-apex-page": "1",
+        "x-apex-page": "161",
         "x-apex-authorization": "Authenticated User"
       }
     },
@@ -1168,7 +1168,7 @@
             }
           }
         },
-        "x-apex-page": "40",
+        "x-apex-page": "74",
         "x-apex-authorization": "Authenticated User"
       }
     },
@@ -1545,7 +1545,8 @@
             }
           }
         },
-        "x-apex-authorization": "Administrator"
+        "x-apex-page": "10000",
+        "x-apex-authorization": "Administration Rights"
       }
     },
     "/api/v1/admin/thresholds": {
@@ -1567,7 +1568,8 @@
             }
           }
         },
-        "x-apex-authorization": "Administrator"
+        "x-apex-page": "10000",
+        "x-apex-authorization": "Administration Rights"
       },
       "put": {
         "tags": [
@@ -1607,7 +1609,8 @@
             }
           }
         },
-        "x-apex-authorization": "Administrator"
+        "x-apex-page": "10000",
+        "x-apex-authorization": "Administration Rights"
       }
     }
   },

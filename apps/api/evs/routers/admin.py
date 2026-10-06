@@ -1,4 +1,8 @@
-"""Feed health and thresholds. Requires evs_admin (maps to the APEX Administrator authorization scheme)."""
+"""Feed health and thresholds.
+
+Requires evs_admin, which maps to the APEX "Administration Rights" authorization scheme
+(group Administrator).
+"""
 
 from __future__ import annotations
 
@@ -12,7 +16,7 @@ from evs.repositories import Repositories, get_repos
 from evs.schemas.ops import FeedHealthList, Thresholds, ThresholdUpdate
 
 router = APIRouter(prefix="/admin", tags=["admin"], dependencies=[Depends(require_admin)])
-ADMIN = {"x-apex-authorization": "Administrator"}
+ADMIN = {"x-apex-page": "10000", "x-apex-authorization": "Administration Rights"}
 
 
 @router.get("/feeds", response_model=FeedHealthList, openapi_extra=ADMIN)

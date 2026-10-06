@@ -37,7 +37,7 @@ class Principal:
 APEX_SCHEME_TO_ROLE = {
     "Authenticated User": "evs_viewer",
     "Contributor": "evs_pm",
-    "Administrator": "evs_admin",
+    "Administration Rights": "evs_admin",
 }
 ROLE_IMPLIES = {"evs_admin": {"evs_admin", "evs_pm", "evs_viewer"}, "evs_pm": {"evs_pm", "evs_viewer"}}
 

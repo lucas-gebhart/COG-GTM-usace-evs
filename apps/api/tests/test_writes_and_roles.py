@@ -75,6 +75,6 @@ def test_openapi_tags_processes_and_schemes(client):
     put = spec["paths"]["/api/v1/projects/{p2_project_no}/status"]["put"]
     assert put["x-apex-page"] == "24" and put["x-apex-process"] == "Process form Project"
     assert put["x-apex-authorization"] == "Contributor"
-    assert spec["paths"]["/api/v1/admin/thresholds"]["put"]["x-apex-authorization"] == "Administrator"
+    assert spec["paths"]["/api/v1/admin/thresholds"]["put"]["x-apex-authorization"] == "Administration Rights"
     assert spec["paths"]["/api/v1/public/locks"]["get"]["x-apex-authorization"] == "none"
     assert "text/csv" in spec["paths"]["/api/v1/projects"]["get"]["responses"]["200"]["content"]

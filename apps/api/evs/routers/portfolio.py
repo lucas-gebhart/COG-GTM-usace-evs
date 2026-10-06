@@ -1,4 +1,4 @@
-"""Programs and projects. Replaces APEX Initiatives IR (page 20), Projects IR (page 30),
+"""Programs and projects. Replaces APEX Initiatives IR (page 21), Projects IR (page 86),
 Project Details (page 3) and the Project form (page 24) of the Strategic Planner source app.
 
 List endpoints accept the Interactive Report style parameters documented in
@@ -33,7 +33,7 @@ IR_PARAMS = (
     response_model=ProgramList,
     summary="Programs (APEX Initiatives IR)",
     description=f"{IR_PARAMS} Columns: {', '.join(PROGRAM_COLUMNS.columns)}.",
-    openapi_extra={"x-apex-page": "20", "x-apex-authorization": "Authenticated User"},
+    openapi_extra={"x-apex-page": "21", "x-apex-authorization": "Authenticated User"},
     responses={200: {"content": {"text/csv": {}}}},
 )
 async def list_programs(
@@ -60,7 +60,7 @@ async def list_programs(
     response_model=ProjectList,
     summary="Projects (APEX Projects IR)",
     description=f"{IR_PARAMS} Columns: {', '.join(PROJECT_COLUMNS.columns)}.",
-    openapi_extra={"x-apex-page": "30", "x-apex-authorization": "Authenticated User"},
+    openapi_extra={"x-apex-page": "86", "x-apex-authorization": "Authenticated User"},
     responses={200: {"content": {"text/csv": {}}}},
 )
 async def list_projects(

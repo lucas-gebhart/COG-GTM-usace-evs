@@ -1,4 +1,4 @@
-"""EMS labor views. Replaces the People IR (page 40)."""
+"""EMS labor views. Replaces the People IR (page 74)."""
 
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ router = APIRouter(tags=["workforce"], dependencies=[Depends(require_viewer)])
     description="Interactive Report parameters as on /projects. Columns: "
     + ", ".join(LABOR_COLUMNS.columns)
     + ".",
-    openapi_extra={"x-apex-page": "40", "x-apex-authorization": "Authenticated User"},
+    openapi_extra={"x-apex-page": "74", "x-apex-authorization": "Authenticated User"},
     responses={200: {"content": {"text/csv": {}}}},
 )
 async def labor(

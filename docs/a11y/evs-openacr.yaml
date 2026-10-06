@@ -36,8 +36,8 @@ notes: >-
   (Chapter 5) and Authoring Tools are reported Not Applicable because EVS is a web application evaluated against
   WCAG. Target: WCAG 2.1 Level AA plus Revised Section 508. WCAG 2.2 criteria 2.4.11, 2.5.7 and 2.5.8 are tracked
   as design rules outside this report. EVS is a demonstration system; this report describes the demo build, not
-  a production deployment. Evidence in this build: 192 axe cells, 0 gating violations, 11 Lighthouse runs, 12 keyboard
-  smoke routes, 24 reflow cells, 9 attested rows; commit 97ec213ac054. WCAG 2.1 A/AA rows: 4 supports, 0 partially
+  a production deployment. Evidence in this build: 208 axe cells, 0 gating violations, 12 Lighthouse runs, 13 keyboard
+  smoke routes, 26 reflow cells, 9 attested rows; commit 4d9de46860bb. WCAG 2.1 A/AA rows: 4 supports, 0 partially
   supports, 0 does not support, 5 not applicable, 39 not evaluated.
 evaluation_methods_used: >-
   Automated: axe-core via @axe-core/playwright in CI (every route x 4 viewports x 2 themes x reduced-motion on/off),
@@ -67,8 +67,8 @@ chapters:
           level: not-evaluated
           notes: >-
             AUTOMATED: axe rules [image-alt, svg-img-alt, role-img-alt, input-image-alt, object-alt, aria-meter-name,
-            aria-progressbar-name]; 192 cells (12 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations;
-            axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC. MANUAL: MT-SR-01 (chart names and descriptions,
+            aria-progressbar-name]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations;
+            axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-SR-01 (chart names and descriptions,
             map marker names) not yet attested. Not a conformance claim until every row carries evidence.
       - name: electronic-docs
         adherence:
@@ -143,9 +143,9 @@ chapters:
           level: not-evaluated
           notes: >-
             AUTOMATED: axe rules [list, listitem, definition-list, dlitem, th-has-data-cells, td-headers-attr, td-has-header,
-            table-fake-caption, aria-required-children, aria-required-parent, p-as-heading]; 192 cells (12 routes
-            x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 97ec213ac054; run
-            2026-10-06 17:51 UTC. MANUAL: MT-SR-02 (table header and scope reading, KPI tile semantics, chart "view
+            table-fake-caption, aria-required-children, aria-required-parent, p-as-heading]; 208 cells (13 routes
+            x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run
+            2026-10-06 18:48 UTC. MANUAL: MT-SR-02 (table header and scope reading, KPI tile semantics, chart "view
             as table") not yet attested. Not a conformance claim until every row carries evidence.
       - name: electronic-docs
         adherence:
@@ -207,8 +207,8 @@ chapters:
         adherence:
           level: not-evaluated
           notes: >-
-            AUTOMATED: axe rules [link-in-text-block]; 192 cells (12 routes x 4 viewports x 2 themes x 2 motion
-            settings), 0 violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC. MANUAL: MT-VIS-01
+            AUTOMATED: axe rules [link-in-text-block]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion
+            settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-VIS-01
             (colour-vision simulation on status chips, map markers and chart series) not yet attested. Not a conformance
             claim until every row carries evidence.
       - name: electronic-docs
@@ -248,9 +248,9 @@ chapters:
           level: not-evaluated
           notes: >-
             AUTOMATED: axe rules [scrollable-region-focusable, frame-focusable-content, server-side-image-map];
-            192 cells (12 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit
-            97ec213ac054; run 2026-10-06 17:51 UTC. SMOKE: keyboard smoke (skip link first, nav then main, visible
-            focus, Escape closes popovers): 12/12 cells passed. MANUAL: MT-KBD-01 (keyboard-only pass of every route
+            208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit
+            4d9de46860bb; run 2026-10-06 18:48 UTC. SMOKE: keyboard smoke (skip link first, nav then main, visible
+            focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-01 (keyboard-only pass of every route
             including charts (arrow keys) and map (Tab to markers, Enter opens popover)) not yet attested. Not a
             conformance claim until every row carries evidence.
       - name: electronic-docs
@@ -272,7 +272,7 @@ chapters:
           level: not-evaluated
           notes: >-
             AUTOMATED: no axe-core rule covers this criterion; evidence is manual. SMOKE: keyboard smoke (skip link
-            first, nav then main, visible focus, Escape closes popovers): 12/12 cells passed. MANUAL: MT-KBD-02
+            first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-02
             (no traps in modal, date picker, map canvas) not yet attested. Not a conformance claim until every row
             carries evidence.
       - name: electronic-docs
@@ -314,8 +314,8 @@ chapters:
         adherence:
           level: not-evaluated
           notes: >-
-            AUTOMATED: axe rules [meta-refresh]; 192 cells (12 routes x 4 viewports x 2 themes x 2 motion settings),
-            0 violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC. MANUAL: MT-TIME-01 (session
+            AUTOMATED: axe rules [meta-refresh]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings),
+            0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-TIME-01 (session
             timeout warning with extend; live feed refresh does not move focus) not yet attested. Not a conformance
             claim until every row carries evidence.
       - name: electronic-docs
@@ -336,8 +336,8 @@ chapters:
         adherence:
           level: not-evaluated
           notes: >-
-            AUTOMATED: axe rules [blink, marquee]; 192 cells (12 routes x 4 viewports x 2 themes x 2 motion settings),
-            0 violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC. MANUAL: MT-MOTION-01 (live
+            AUTOMATED: axe rules [blink, marquee]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings),
+            0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-MOTION-01 (live
             table and map updates can be paused; prefers-reduced-motion honoured) not yet attested. Not a conformance
             claim until every row carries evidence.
       - name: electronic-docs
@@ -378,9 +378,9 @@ chapters:
         adherence:
           level: not-evaluated
           notes: >-
-            AUTOMATED: axe rules [bypass]; 192 cells (12 routes x 4 viewports x 2 themes x 2 motion settings), 0
-            violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC. SMOKE: keyboard smoke (skip
-            link first, nav then main, visible focus, Escape closes popovers): 12/12 cells passed. MANUAL: MT-KBD-05
+            AUTOMATED: axe rules [bypass]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0
+            violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. SMOKE: keyboard smoke (skip
+            link first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-05
             (skip link and landmarks (banner, navigation, main, contentinfo)) not yet attested. Not a conformance
             claim until every row carries evidence.
       - name: electronic-docs
@@ -401,8 +401,8 @@ chapters:
         adherence:
           level: supports
           notes: >-
-            AUTOMATED: axe rules [document-title]; 192 cells (12 routes x 4 viewports x 2 themes x 2 motion settings),
-            0 violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC. MANUAL: none required
+            AUTOMATED: axe rules [document-title]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings),
+            0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: none required
             beyond automation. Not a conformance claim until every row carries evidence.
       - name: electronic-docs
         adherence:
@@ -423,7 +423,7 @@ chapters:
           level: not-evaluated
           notes: >-
             AUTOMATED: no axe-core rule covers this criterion; evidence is manual. SMOKE: keyboard smoke (skip link
-            first, nav then main, visible focus, Escape closes popovers): 12/12 cells passed. MANUAL: MT-KBD-06
+            first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-06
             (focus order in filters, dialogs, popovers and after route change) not yet attested. Not a conformance
             claim until every row carries evidence.
       - name: electronic-docs
@@ -444,8 +444,8 @@ chapters:
         adherence:
           level: not-evaluated
           notes: >-
-            AUTOMATED: axe rules [link-name]; 192 cells (12 routes x 4 viewports x 2 themes x 2 motion settings),
-            0 violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC. MANUAL: MT-SR-04 (link
+            AUTOMATED: axe rules [link-name]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings),
+            0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-SR-04 (link
             text understandable in context) not yet attested. Not a conformance claim until every row carries evidence.
       - name: electronic-docs
         adherence:
@@ -507,8 +507,8 @@ chapters:
         adherence:
           level: not-evaluated
           notes: >-
-            AUTOMATED: axe rules [label-content-name-mismatch]; 192 cells (12 routes x 4 viewports x 2 themes x
-            2 motion settings), 0 violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC. MANUAL:
+            AUTOMATED: axe rules [label-content-name-mismatch]; 208 cells (13 routes x 4 viewports x 2 themes x
+            2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL:
             MT-SR-06 (visible label is part of the accessible name) not yet attested. Not a conformance claim until
             every row carries evidence.
       - name: electronic-docs
@@ -547,9 +547,9 @@ chapters:
         adherence:
           level: supports
           notes: >-
-            AUTOMATED: axe rules [html-has-lang, html-lang-valid, html-xml-lang-mismatch]; 192 cells (12 routes
-            x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 97ec213ac054; run
-            2026-10-06 17:51 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row
+            AUTOMATED: axe rules [html-has-lang, html-lang-valid, html-xml-lang-mismatch]; 208 cells (13 routes
+            x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run
+            2026-10-06 18:48 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row
             carries evidence.
       - name: electronic-docs
         adherence:
@@ -631,8 +631,8 @@ chapters:
         adherence:
           level: not-evaluated
           notes: >-
-            AUTOMATED: axe rules [label, form-field-multiple-labels]; 192 cells (12 routes x 4 viewports x 2 themes
-            x 2 motion settings), 0 violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC.
+            AUTOMATED: axe rules [label, form-field-multiple-labels]; 208 cells (13 routes x 4 viewports x 2 themes
+            x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC.
             MANUAL: MT-FORM-04 (labels and hints present) not yet attested. Not a conformance claim until every
             row carries evidence.
       - name: electronic-docs
@@ -653,8 +653,8 @@ chapters:
         adherence:
           level: supports
           notes: >-
-            AUTOMATED: axe rules [duplicate-id, duplicate-id-active]; 192 cells (12 routes x 4 viewports x 2 themes
-            x 2 motion settings), 0 violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC.
+            AUTOMATED: axe rules [duplicate-id, duplicate-id-active]; 208 cells (13 routes x 4 viewports x 2 themes
+            x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC.
             MANUAL: none required beyond automation. Not a conformance claim until every row carries evidence.
       - name: electronic-docs
         adherence:
@@ -676,9 +676,9 @@ chapters:
           notes: >-
             AUTOMATED: axe rules [button-name, aria-allowed-attr, aria-required-attr, aria-valid-attr, aria-valid-attr-value,
             aria-roles, aria-hidden-focus, aria-command-name, aria-input-field-name, aria-toggle-field-name, aria-tooltip-name,
-            aria-tab-name, nested-interactive, select-name, input-button-name, frame-title]; 192 cells (12 routes
-            x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 97ec213ac054; run
-            2026-10-06 17:51 UTC. MANUAL: MT-SR-07 (name, role, value and state for custom widgets (sortable headers,
+            aria-tab-name, nested-interactive, select-name, input-button-name, frame-title]; 208 cells (13 routes
+            x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run
+            2026-10-06 18:48 UTC. MANUAL: MT-SR-07 (name, role, value and state for custom widgets (sortable headers,
             chips, map markers, chart points)) not yet attested. Not a conformance claim until every row carries
             evidence.
       - name: electronic-docs
@@ -738,8 +738,8 @@ chapters:
         adherence:
           level: not-evaluated
           notes: >-
-            AUTOMATED: axe rules [css-orientation-lock]; 192 cells (12 routes x 4 viewports x 2 themes x 2 motion
-            settings), 0 violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC. MANUAL: MT-RESP-01
+            AUTOMATED: axe rules [css-orientation-lock]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion
+            settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-RESP-01
             (portrait and landscape on tablet) not yet attested. Not a conformance claim until every row carries
             evidence.
       - name: electronic-docs
@@ -760,8 +760,8 @@ chapters:
         adherence:
           level: not-evaluated
           notes: >-
-            AUTOMATED: axe rules [autocomplete-valid]; 192 cells (12 routes x 4 viewports x 2 themes x 2 motion
-            settings), 0 violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC. MANUAL: MT-FORM-01
+            AUTOMATED: axe rules [autocomplete-valid]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion
+            settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-FORM-01
             (login and profile fields carry autocomplete tokens) not yet attested. Not a conformance claim until
             every row carries evidence.
       - name: electronic-docs
@@ -782,8 +782,8 @@ chapters:
         adherence:
           level: not-evaluated
           notes: >-
-            AUTOMATED: axe rules [color-contrast]; 192 cells (12 routes x 4 viewports x 2 themes x 2 motion settings),
-            0 violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC. MANUAL: MT-VIS-02 (contrast
+            AUTOMATED: axe rules [color-contrast]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings),
+            0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-VIS-02 (contrast
             spot-check of chart labels drawn in SVG or canvas (axe cannot read canvas text)) not yet attested. Not
             a conformance claim until every row carries evidence.
       - name: electronic-docs
@@ -845,7 +845,7 @@ chapters:
           level: not-evaluated
           notes: >-
             AUTOMATED: no axe-core rule covers this criterion; evidence is manual. SMOKE: 320 px reflow smoke (no
-            horizontal scroll, both themes): 24/24 cells passed. MANUAL: MT-ZOOM-02 (400% zoom / 320 px reflow;
+            horizontal scroll, both themes): 26/26 cells passed. MANUAL: MT-ZOOM-02 (400% zoom / 320 px reflow;
             tables and Gantt may scroll in two dimensions with visible scrollbars) not yet attested. Not a conformance
             claim until every row carries evidence.
       - name: electronic-docs
@@ -887,8 +887,8 @@ chapters:
         adherence:
           level: not-evaluated
           notes: >-
-            AUTOMATED: axe rules [avoid-inline-spacing]; 192 cells (12 routes x 4 viewports x 2 themes x 2 motion
-            settings), 0 violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC. MANUAL: MT-ZOOM-03
+            AUTOMATED: axe rules [avoid-inline-spacing]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion
+            settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-ZOOM-03
             (text-spacing bookmarklet on every route) not yet attested. Not a conformance claim until every row
             carries evidence.
       - name: electronic-docs
@@ -910,7 +910,7 @@ chapters:
           level: not-evaluated
           notes: >-
             AUTOMATED: no axe-core rule covers this criterion; evidence is manual. SMOKE: keyboard smoke (skip link
-            first, nav then main, visible focus, Escape closes popovers): 12/12 cells passed. MANUAL: MT-KBD-04
+            first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-04
             (tooltips and popovers are dismissible with Escape, hoverable and persistent) not yet attested. Not
             a conformance claim until every row carries evidence.
       - name: electronic-docs
@@ -973,7 +973,7 @@ chapters:
           level: not-evaluated
           notes: >-
             AUTOMATED: no axe-core rule covers this criterion; evidence is manual. SMOKE: keyboard smoke (skip link
-            first, nav then main, visible focus, Escape closes popovers): 12/12 cells passed. MANUAL: MT-KBD-07
+            first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-07
             (focus visible on every interactive element including chart points and map markers) not yet attested.
             Not a conformance claim until every row carries evidence.
       - name: electronic-docs
@@ -994,8 +994,8 @@ chapters:
         adherence:
           level: supports
           notes: >-
-            AUTOMATED: axe rules [valid-lang]; 192 cells (12 routes x 4 viewports x 2 themes x 2 motion settings),
-            0 violations; axe-core 4.13.0; commit 97ec213ac054; run 2026-10-06 17:51 UTC. MANUAL: none required
+            AUTOMATED: axe rules [valid-lang]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings),
+            0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: none required
             beyond automation. Not a conformance claim until every row carries evidence.
       - name: electronic-docs
         adherence:

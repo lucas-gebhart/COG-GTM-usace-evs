@@ -22,18 +22,19 @@ MIGRATIONS_DIR = Path(os.environ.get("EVS_MIGRATIONS_DIR") or default_migrations
 
 
 def run(database_url_sync: str, directory: Path = MIGRATIONS_DIR) -> list[str]:
+    """Ledger lives in public: the evs role resolves an unqualified name to schema evs once it exists."""
     applied: list[str] = []
     with psycopg.connect(database_url_sync, autocommit=True) as conn:
         conn.execute(
-            "CREATE TABLE IF NOT EXISTS schema_migration ("
+            "CREATE TABLE IF NOT EXISTS public.schema_migration ("
             "  filename text PRIMARY KEY, applied_at timestamptz NOT NULL DEFAULT now())"
         )
-        done = {r[0] for r in conn.execute("SELECT filename FROM schema_migration")}
+        done = {r[0] for r in conn.execute("SELECT filename FROM public.schema_migration")}
         for path in sorted(directory.glob("*.sql")):
             if path.name in done:
                 continue
             with conn.transaction():
                 conn.execute(path.read_text())
-                conn.execute("INSERT INTO schema_migration(filename) VALUES (%s)", (path.name,))
+                conn.execute("INSERT INTO public.schema_migration(filename) VALUES (%s)", (path.name,))
             applied.append(path.name)
     return applied

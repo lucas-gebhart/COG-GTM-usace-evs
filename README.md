@@ -26,11 +26,11 @@ make legacy-export # re-download the Oracle APEX Strategic Planner zip (ignored 
 apps/api         FastAPI service, ingestion workers, status engine, CLI (uv)
 apps/web         Vite + React 19 + USWDS, Playwright + axe
 db/migrations    plain SQL, applied by `evs migrate` (same files for Docker, Fly, Aurora)
-db/seed          synthetic data generators
+db/seed          public sample loaders, synthetic data generators, `evs seed` and `evs dump-fixtures`
 packages/contract/openapi.json   API contract; web types generated from it
 legacy/          APEX export (strategic-planner/f7150), mapping.json, inventory.json, traceability.csv, data samples
 tools/apex-inventory/  stdlib Python parser for the APEX export (see docs/MIGRATION_PIPELINE.md)
-tools/           apex-inventory parser, fixture builder, ACR generator
+tools/           apex-inventory parser, fixture builder (db/synth), ACR generator
 infra/           compose, fly, terraform-govcloud
 docs/            plan, work packages, research reports, run of show
 ```

@@ -1,0 +1,409 @@
+state,division,project_name,fy26_amount_usd,business_lines,source_url
+AK,POD,"CHENA RIVER LAKES, AK (MOOSE CREEK DAM)",6260000,ENS:447000;FDRR:5449000;REC:364000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AL,SAD,"ALABAMA RIVER LAKES, AL",15661000,ENS:1083000;HYD:8739000;NIL:2303000;REC:3517000;WTR:19000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AL,SAD,"BLACK WARRIOR AND TOMBIGBEE RIVERS, AL",24896000,ENS:926000;NIH:20174000;REC:3796000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AL,SAD,"GULF INTRACOASTAL WATERWAY, AL",7340000,NIH:7340000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AL,SAD,"TENNESSEE - TOMBIGBEE WATERWAY WILDLIFE MITIGATION, AL & MS",1950000,NIH:1950000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AL,SAD,"TENNESSEE - TOMBIGBEE WATERWAY, AL & MS",29063000,ENS:1081000;NIH:23188000;REC:4794000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AL,SAD,"WALTER F. GEORGE LOCK AND DAM, AL & GA",10306000,ENS:1222000;HYD:4766000;NIL:1601000;REC:2717000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,SWD,"BEAVER LAKE, AR",9876000,ENS:1668000;FDRR:2084000;HYD:2544000;REC:3549000;WTR:31000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,MVD,"BLAKELY MOUNTAIN DAM, LAKE OUACHITA, AR",7973000,ENS:202000;FDRR:1423000;HYD:3242000;REC:3106000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,SWD,"BLUE MOUNTAIN LAKE, AR",2305000,ENS:371000;FDRR:1403000;REC:521000;WTR:10000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,SWD,"BULL SHOALS LAKE, AR",9987000,ENS:783000;FDRR:2539000;HYD:4730000;REC:1922000;WTR:13000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,MVD,"DEGRAY LAKE, AR",7988000,ENS:765000;FDRR:1521000;HYD:2626000;REC:3076000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,SWD,"DEQUEEN LAKE, AR",2362000,ENS:128000;FDRR:1681000;REC:539000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,SWD,"DIERKS LAKE, AR",1978000,ENS:140000;FDRR:1271000;REC:553000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,SWD,"GILLHAM LAKE, AR",1947000,ENS:170000;FDRR:1282000;REC:481000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,SWD,"GREERS FERRY LAKE, AR",8918000,ENS:826000;FDRR:1837000;HYD:2510000;REC:3710000;WTR:35000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,SWD,"MCCLELLAN - KERR ARKANSAS RIVER NAVIGATION SYSTEM, AR",60452000,ENS:1492000;HYD:7314000;NIH:43799000;REC:7837000;WTR:10000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,SWD,"MILLWOOD LAKE, AR",3528000,ENS:266000;FDRR:2358000;REC:873000;WTR:31000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,MVD,"NARROWS DAM, LAKE GREESON, AR",6834000,ENS:340000;FDRR:2261000;HYD:2282000;REC:1951000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,SWD,"NIMROD LAKE, AR",2542000,ENS:424000;FDRR:1519000;REC:589000;WTR:10000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,SWD,"NORFORK LAKE, AR",6728000,ENS:527000;FDRR:1943000;HYD:2803000;REC:1441000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,MVD,"OUACHITA AND BLACK RIVERS, AR & LA",10087000,ENS:67000;FDRR:231000;NIL:8200000;REC:1589000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AR,MVD,"WHITE RIVER, AR",28000,NIL:28000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AZ,SPD,"ALAMO LAKE, AZ",1810000,ENS:236000;FDRR:1508000;REC:66000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AZ,SPD,"PAINTED ROCK DAM, AZ",1513000,ENS:80000;FDRR:1433000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+AZ,SPD,"WHITLOW RANCH DAM, AZ",457000,ENS:113000;FDRR:344000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"BLACK BUTTE LAKE, CA",3313000,ENS:277000;FDRR:1897000;REC:1049000;WTR:90000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"BUCHANAN DAM, H.V. EASTMAN LAKE, CA",2732000,ENS:186000;FDRR:1626000;REC:860000;WTR:60000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"COYOTE VALLEY DAM, LAKE MENDOCINO, CA",4694000,ENS:346000;FDRR:2618000;REC:1707000;WTR:23000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"DRY CREEK (WARM SPRINGS) LAKE AND CHANNEL, CA",7256000,ENS:224000;FDRR:4857000;REC:2132000;WTR:43000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"FARMINGTON DAM, CA",595000,FDRR:595000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"HIDDEN DAM, HENSLEY LAKE, CA",2945000,ENS:122000;FDRR:1716000;REC:1047000;WTR:60000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"ISABELLA LAKE, CA",1801000,ENS:128000;FDRR:1618000;WTR:55000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"LOS ANGELES COUNTY DRAINAGE AREA, CA",13891000,ENS:505000;FDRR:12990000;REC:396000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"MERCED COUNTY STREAMS, CA",605000,FDRR:605000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"MOJAVE RIVER DAM, CA",1071000,ENS:196000;FDRR:805000;REC:70000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"NEW HOGAN LAKE, CA",4033000,ENS:240000;FDRR:2471000;REC:1222000;WTR:100000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"NEW MELONES LAKE, DOWNSTREAM CHANNEL, CA",2713000,ENS:682000;FDRR:500000;REC:1531000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"PINE FLAT LAKE, CA",5003000,ENS:218000;FDRR:3572000;REC:1118000;WTR:95000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"SACRAMENTO RIVER AND TRIBUTARIES (DEBRIS CONTROL), CA",1081000,ENS:288000;REC:793000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"SAN FRANCISCO BAY DELTA MODEL STRUCTURE, CA",784000,REC:784000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"SANTA ANA RIVER BASIN, CA",7760000,ENS:348000;FDRR:7215000;REC:197000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"SUCCESS LAKE, CA",3400000,ENS:165000;FDRR:2144000;REC:996000;WTR:95000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"TERMINUS DAM, LAKE KAWEAH, CA",3214000,ENS:229000;FDRR:1910000;REC:980000;WTR:95000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CA,SPD,"YUBA RIVER, CA",229000,ENS:229000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CO,NWD,"BEAR CREEK LAKE, CO",829000,ENS:72000;FDRR:745000;REC:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CO,NWD,"CHATFIELD LAKE, CO",1741000,ENS:117000;FDRR:1406000;REC:218000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CO,NWD,"CHERRY CREEK LAKE, CO",1056000,ENS:61000;FDRR:958000;REC:37000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CO,SPD,"JOHN MARTIN RESERVOIR, CO",3598000,ENS:836000;FDRR:2477000;REC:285000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CO,SPD,"TRINIDAD LAKE, CO",2015000,ENS:96000;FDRR:1705000;REC:214000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CT,NAD,"BLACK ROCK LAKE, CT",718000,ENS:72000;FDRR:594000;REC:52000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CT,NAD,"COLEBROOK RIVER LAKE, CT",935000,ENS:88000;FDRR:760000;REC:77000;WTR:10000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CT,NAD,"HANCOCK BROOK LAKE, CT",839000,ENS:70000;FDRR:705000;REC:64000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CT,NAD,"HOP BROOK LAKE, CT",1447000,ENS:166000;FDRR:930000;REC:351000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CT,NAD,"MANSFIELD HOLLOW LAKE, CT",941000,ENS:62000;FDRR:797000;REC:82000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CT,NAD,"NORTHFIELD BROOK LAKE, CT",683000,ENS:70000;FDRR:502000;REC:111000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CT,NAD,"STAMFORD HURRICANE BARRIER, CT",893000,FDRC:893000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CT,NAD,"THOMASTON DAM, CT",1039000,ENS:108000;FDRR:816000;REC:115000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+CT,NAD,"WEST THOMPSON LAKE, CT",1330000,ENS:67000;FDRR:1167000;REC:96000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+FL,SAD,"CENTRAL & SOUTHERN FLORIDA (C&SF), FL",18105000,ENS:632000;FDRR:16628000;REC:845000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+FL,SAD,"INTRACOASTAL WATERWAY, JACKSONVILLE TO MIAMI, FL",4830000,NIL:4830000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+FL,SAD,"JIM WOODRUFF LOCK AND DAM, LAKE SEMINOLE, FL, AL & GA",8850000,ENS:1036000;HYD:4461000;NIL:1829000;REC:1524000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+FL,SAD,"OKEECHOBEE WATERWAY, FL",1429000,ENS:623000;REC:806000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+FL,SAD,"SOUTH FLORIDA ECOSYSTEM RESTORATION, FL",12744000,AER:12744000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+GA,SAD,"ALLATOONA LAKE, GA",9944000,ENS:1136000;FDRR:961000;HYD:3628000;REC:4195000;WTR:24000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+GA,SAD,"APALACHICOLA, CHATTAHOOCHEE AND FLINT RIVERS, GA, AL & FL",1630000,ENS:277000;NIL:1246000;REC:107000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+GA,SAD,"ATLANTIC INTRACOASTAL WATERWAY, GA",6265000,NIL:6265000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+GA,SAD,"BUFORD DAM AND LAKE SIDNEY LANIER, GA",12213000,ENS:2364000;FDRR:1441000;HYD:3529000;REC:4879000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+GA,SAD,"CARTERS DAM AND LAKE, GA",8873000,ENS:387000;FDRR:1878000;HYD:5045000;REC:1554000;WTR:9000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+GA,SAD,"HARTWELL LAKE, GA & SC",13143000,ENS:1848000;FDRR:1749000;HYD:4857000;REC:4626000;WTR:63000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+GA,SAD,"J. STROM THURMOND LAKE, GA & SC",12927000,ENS:2282000;FDRR:1246000;HYD:5362000;REC:3964000;WTR:73000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+GA,SAD,"RICHARD B. RUSSELL DAM AND LAKE, GA & SC",10799000,ENS:323000;FDRR:2342000;HYD:7717000;REC:356000;WTR:61000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+GA,SAD,"WEST POINT DAM AND LAKE, GA & AL",9149000,ENS:1195000;FDRR:1089000;HYD:4049000;REC:2816000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+HI,POD,"BARBERS POINT HARBOR, HI",341000,REC:341000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IA,MVD,"CORALVILLE LAKE, IA",5232000,ENS:639000;FDRR:3123000;REC:1470000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IA,NWD,"MISSOURI RIVER - SIOUX CITY TO THE MOUTH, IA, KS, MO & NE",17448000,ENS:152000;NIL:17296000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IA,NWD,"RATHBUN LAKE, IA",3755000,ENS:229000;FDRR:2295000;REC:1219000;WTR:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IA,MVD,"RED ROCK DAM AND LAKE RED ROCK, IA",5881000,ENS:638000;FDRR:3701000;REC:1542000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IA,MVD,"SAYLORVILLE LAKE, IA",6907000,ENS:895000;FDRR:3757000;REC:2243000;WTR:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+ID,NWD,"ALBENI FALLS DAM, ID",1332000,ENS:28000;FDRR:98000;REC:1206000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+ID,NWD,"DWORSHAK DAM AND RESERVOIR, ID",3474000,ENS:242000;FDRR:2234000;REC:998000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+ID,NWD,"LUCKY PEAK LAKE, ID",2767000,ENS:176000;FDRR:1730000;REC:861000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IL,MVD,"CARLYLE LAKE, IL",7182000,ENS:949000;FDRR:2846000;REC:3346000;WTR:41000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IL,LRD,"CHICAGO RIVER, IL",682000,FDRR:682000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IL,LRD,"CHICAGO SANITARY AND SHIP CANAL DISPERSAL BARRIERS, IL",12979000,ENR:12979000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IL,MVD,"FARM CREEK RESERVOIRS, IL",751000,ENS:62000;FDRR:689000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IL,"LRD, MVD","ILLINOIS WATERWAY (MVR PORTION), IL & IN",54557000,ENS:136000;NIH:53906000;REC:515000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IL,MVD,"ILLINOIS WATERWAY (MVS PORTION), IL & IN",2749000,ENS:375000;NIH:2374000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IL,MVD,"KASKASKIA RIVER NAVIGATION, IL",6845000,ENS:233000;NIL:6378000;REC:234000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IL,MVD,"LAKE SHELBYVILLE, IL",6956000,ENS:803000;FDRR:2566000;REC:3546000;WTR:41000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IL,MVD,"MISSISSIPPI RIVER BETWEEN MISSOURI RIVER AND MINNEAPOLIS (MVR PORTION), IL",72169000,ENS:1274000;NIH:67877000;REC:3018000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IL,MVD,"MISSISSIPPI RIVER BETWEEN MISSOURI RIVER AND MINNEAPOLIS (MVS PORTION), IL",33068000,ENS:971000;NIH:30531000;REC:1566000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IL,MVD,"REND LAKE, IL",6984000,ENS:868000;FDRR:2785000;REC:3290000;WTR:41000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IN,LRD,"BROOKVILLE LAKE, IN",1912000,ENS:159000;FDRR:1642000;REC:100000;WTR:11000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IN,LRD,"CAGLES MILL LAKE, IN",1732000,ENS:206000;FDRR:1477000;REC:49000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IN,LRD,"CECIL M. HARDEN LAKE, IN",1962000,ENS:330000;FDRR:1587000;REC:45000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IN,LRD,"J. EDWARD ROUSH LAKE, IN",1807000,ENS:135000;FDRR:1606000;REC:66000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IN,LRD,"MISSISSINEWA LAKE, IN",1945000,ENS:226000;FDRR:1652000;REC:67000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IN,LRD,"MONROE LAKE, IN",1646000,ENS:182000;FDRR:1393000;REC:60000;WTR:11000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IN,LRD,"PATOKA LAKE, IN",1621000,ENS:163000;FDRR:1393000;REC:54000;WTR:11000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+IN,LRD,"SALAMONIE LAKE, IN",1888000,ENS:168000;FDRR:1653000;REC:67000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,NWD,"CLINTON LAKE, KS",3070000,ENS:257000;FDRR:1757000;REC:1045000;WTR:11000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,SWD,"COUNCIL GROVE LAKE, KS",2095000,ENS:285000;FDRR:1092000;REC:702000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,SWD,"EL DORADO LAKE, KS",833000,ENS:140000;FDRR:638000;REC:35000;WTR:20000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,SWD,"ELK CITY LAKE, KS",1266000,ENS:263000;FDRR:736000;REC:251000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,SWD,"FALL RIVER LAKE, KS",1527000,ENS:199000;FDRR:980000;REC:348000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,NWD,"HILLSDALE LAKE, KS",1226000,ENS:97000;FDRR:1034000;REC:84000;WTR:11000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,SWD,"JOHN REDMOND DAM AND RESERVOIR, KS",1975000,ENS:320000;FDRR:1267000;REC:372000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,NWD,"KANOPOLIS LAKE, KS",2500000,ENS:221000;FDRR:1704000;REC:563000;WTR:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,SWD,"MARION LAKE, KS",2125000,ENS:230000;FDRR:1039000;REC:840000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,NWD,"MELVERN LAKE, KS",3046000,ENS:225000;FDRR:1771000;REC:1039000;WTR:11000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,NWD,"MILFORD LAKE, KS",3358000,ENS:171000;FDRR:2049000;REC:1126000;WTR:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,SWD,"PEARSON - SKUBITZ BIG HILL LAKE, KS",1592000,ENS:286000;FDRR:600000;REC:690000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,NWD,"PERRY LAKE, KS",3311000,ENS:228000;FDRR:1801000;REC:1270000;WTR:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,NWD,"POMONA LAKE, KS",2877000,ENS:217000;FDRR:1738000;REC:910000;WTR:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,SWD,"TORONTO LAKE, KS",746000,ENS:114000;FDRR:587000;REC:29000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,NWD,"TUTTLE CREEK LAKE, KS",3392000,ENS:196000;FDRR:2605000;REC:579000;WTR:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KS,NWD,"WILSON LAKE, KS",2416000,ENS:203000;FDRR:1554000;REC:659000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"BARKLEY DAM AND LAKE BARKLEY, KY & TN",25815000,ENS:1054000;HYD:4875000;NIH:17845000;REC:2012000;WTR:29000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"BARREN RIVER LAKE, KY",3266000,ENS:405000;FDRR:1790000;REC:1055000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"BUCKHORN LAKE, KY",2744000,ENS:484000;FDRR:1720000;REC:540000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"CARR CREEK LAKE, KY",2703000,ENS:395000;FDRR:1602000;REC:695000;WTR:11000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"CAVE RUN LAKE, KY",1828000,ENS:133000;FDRR:1574000;REC:105000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"DEWEY LAKE, KY",2205000,ENS:74000;FDRR:1899000;REC:232000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"FALLS OF THE OHIO NATIONAL WILDLIFE, KY & IN",65000,ENS:65000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"FISHTRAP LAKE, KY",2572000,ENS:70000;FDRR:2050000;REC:452000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"GRAYSON LAKE, KY",1947000,ENS:83000;FDRR:1650000;REC:169000;WTR:45000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"GREEN AND BARREN RIVERS, KY",3273000,NIL:3273000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"GREEN RIVER LAKE, KY",3376000,ENS:378000;FDRR:2020000;REC:965000;WTR:13000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"LAUREL RIVER LAKE, KY",2913000,ENS:66000;FDRR:883000;HYD:1690000;REC:224000;WTR:50000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"MARTINS FORK LAKE, KY",1633000,ENS:208000;FDRR:1393000;REC:29000;WTR:3000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"MIDDLESBORO CUMBERLAND RIVER BASIN, KY",329000,FDRR:329000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"NOLIN LAKE, KY",3412000,ENS:638000;FDRR:1816000;REC:947000;WTR:11000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"OHIO RIVER LOCKS AND DAMS, KY, IL, IN & OH",42252000,ENS:12000;NIH:42218000;REC:22000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"OHIO RIVER OPEN CHANNEL WORK, KY, IL, IN & OH",11938000,NIH:11938000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"PAINTSVILLE LAKE, KY",1922000,ENS:47000;FDRR:1779000;REC:48000;WTR:48000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"ROUGH RIVER LAKE, KY",3372000,ENS:625000;FDRR:1881000;REC:853000;WTR:13000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"TAYLORSVILLE LAKE, KY",1848000,ENS:255000;FDRR:1493000;REC:100000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"WOLF CREEK DAM, LAKE CUMBERLAND, KY",12260000,ENS:615000;FDRR:3269000;HYD:6390000;REC:1971000;WTR:15000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+KY,LRD,"YATESVILLE LAKE, KY",1575000,ENS:68000;FDRR:1462000;REC:45000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+LA,MVD,"BAYOU BODCAU RESERVOIR, LA",1322000,ENS:255000;FDRR:691000;REC:376000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+LA,MVD,"BAYOU PIERRE, LA",37000,FDRR:37000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+LA,MVD,"CADDO LAKE, LA",263000,FDRR:211000;REC:52000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+LA,MVD,"GULF INTRACOASTAL WATERWAY, LA",18900000,FDRR:305000;NIH:18546000;REC:49000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+LA,MVD,"J. BENNETT JOHNSTON WATERWAY, LA",16039000,ENS:39000;NIL:14831000;REC:1169000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+LA,MVD,"WALLACE LAKE, LA",264000,FDRR:205000;REC:59000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"BARRE FALLS DAM, MA",955000,ENS:67000;FDRR:828000;REC:60000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"BIRCH HILL DAM, MA",1153000,ENS:66000;FDRR:1034000;REC:53000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"BUFFUMVILLE LAKE, MA",934000,ENS:146000;FDRR:703000;REC:85000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"CAPE COD CANAL, MA",2244000,ENS:215000;REC:2029000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"CHARLES RIVER NATURAL VALLEY STORAGE AREA, MA",451000,ENS:187000;FDRR:228000;REC:36000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"CONANT BROOK LAKE, MA",739000,ENS:44000;FDRR:636000;REC:59000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"EAST BRIMFIELD LAKE, MA",800000,ENS:55000;FDRR:680000;REC:65000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"HODGES VILLAGE DAM, MA",913000,ENS:103000;FDRR:723000;REC:87000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"KNIGHTVILLE DAM, MA",996000,ENS:95000;FDRR:841000;REC:60000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"LITTLEVILLE LAKE, MA",949000,ENS:91000;FDRR:803000;REC:48000;WTR:7000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"NEW BEDFORD, FAIRHAVEN AND ACUSHNET HURRICANE BARRIER, MA",601000,FDRC:601000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"TULLY LAKE, MA",1089000,ENS:105000;FDRR:917000;REC:67000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"WEST HILL DAM, MA",1151000,ENS:81000;FDRR:969000;REC:101000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MA,NAD,"WESTVILLE LAKE, MA",872000,ENS:60000;FDRR:747000;REC:65000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MD,NAD,"CUMBERLAND, MD AND RIDGELEY, WV",250000,FDRR:250000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MD,NAD,"JENNINGS RANDOLPH LAKE, MD & WV",2840000,ENS:363000;FDRR:1725000;REC:651000;WTR:101000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MI,LRD,"KEWEENAW WATERWAY, MI",18000,REC:18000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MI,LRD,"SEBEWAING RIVER, MI",72000,FDRR:72000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MI,LRD,"ST. MARYS RIVER, MI",4077000,HYD:3752000;REC:325000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MN,MVD,"BIG STONE LAKE AND WHETSTONE RIVER, MN & SD",446000,ENS:32000;FDRR:414000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MN,LRD,"DULUTH - SUPERIOR HARBOR, MN & WI",545000,REC:545000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MN,MVD,"LAC QUI PARLE LAKES, MINNESOTA RIVER, MN",1829000,ENS:36000;FDRR:1728000;REC:65000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MN,MVD,"MISSISSIPPI RIVER BETWEEN MISSOURI RIVER AND MINNEAPOLIS (MVP PORTION), MN",100576000,ENS:1330000;NIH:98340000;REC:906000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MN,MVD,"ORWELL LAKE, MN",999000,ENS:59000;FDRR:881000;REC:59000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MN,MVD,"RED LAKE RESERVOIR, MN",423000,ENS:87000;FDRR:336000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MN,MVD,"RESERVOIRS AT HEADWATERS OF MISSISSIPPI RIVER, MN",6234000,ENS:771000;FDRR:3665000;REC:1798000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MO,MVD,"CLARENCE CANNON DAM AND MARK TWAIN LAKE, MO",8302000,ENS:1151000;FDRR:2245000;HYD:1989000;REC:2866000;WTR:51000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MO,SWD,"CLEARWATER LAKE, MO",3919000,ENS:216000;FDRR:2464000;REC:1239000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MO,NWD,"HARRY S. TRUMAN DAM AND RESERVOIR, MO",13109000,ENS:904000;FDRR:3357000;HYD:6129000;REC:2707000;WTR:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MO,NWD,"LITTLE BLUE RIVER LAKES, MO",1530000,ENS:112000;FDRR:1385000;REC:33000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MO,NWD,"LONG BRANCH LAKE, MO",1078000,ENS:104000;FDRR:847000;REC:115000;WTR:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MO,MVD,"MISSISSIPPI RIVER BETWEEN THE OHIO AND MISSOURI RIVERS (REG WORKS), MO & IL",33132000,ENS:758000;FDRR:1207000;NIH:30760000;REC:407000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MO,NWD,"POMME DE TERRE LAKE, MO",3329000,ENS:402000;FDRR:1868000;REC:1059000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MO,NWD,"SMITHVILLE LAKE, MO",2255000,ENS:250000;FDRR:1859000;REC:134000;WTR:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MO,NWD,"STOCKTON LAKE, MO",6412000,ENS:243000;FDRR:2117000;HYD:2050000;REC:1990000;WTR:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MO,SWD,"TABLE ROCK LAKE, MO & AR",10768000,ENS:948000;FDRR:2938000;HYD:3580000;REC:3292000;WTR:10000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MS,SAD,"EAST FORK, TOMBIGBEE RIVER, MS",313000,FDRR:313000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MS,SAD,"OKATIBBEE LAKE, MS",2186000,ENS:130000;FDRR:1229000;REC:818000;WTR:9000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MS,MVD,"PEARL RIVER, MS & LA",160000,NIL:160000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MT,NWD,"FT. PECK DAM AND LAKE, MT",6619000,ENS:919000;FDRR:4229000;REC:1436000;WTR:35000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+MT,NWD,"LIBBY DAM, MT",2160000,ENS:272000;FDRR:1460000;REC:428000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NC,SAD,"ATLANTIC INTRACOASTAL WATERWAY, NC",12490000,NIL:12490000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NC,SAD,"B. EVERETT JORDAN DAM AND LAKE, NC",2526000,ENS:365000;FDRR:1700000;REC:452000;WTR:9000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NC,SAD,"CAPE FEAR RIVER ABOVE WILMINGTON, NC",170000,REC:170000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NC,SAD,"FALLS LAKE, NC",2199000,ENS:420000;FDRR:1341000;REC:429000;WTR:9000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NC,SAD,"W. KERR SCOTT DAM AND RESERVOIR, NC",3594000,ENS:382000;FDRR:1330000;REC:1873000;WTR:9000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+ND,NWD,"BOWMAN HALEY LAKE, ND",340000,ENS:55000;FDRR:279000;REC:6000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+ND,NWD,"GARRISON DAM, LAKE SAKAKAWEA, ND",17639000,ENS:3374000;FDRR:6833000;HYD:6424000;REC:973000;WTR:35000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+ND,MVD,"HOMME LAKE, ND",469000,ENS:32000;FDRR:437000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+ND,MVD,"LAKE ASHTABULA AND BALDHILL DAM, ND",1994000,ENS:433000;FDRR:1216000;REC:345000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+ND,NWD,"PIPESTEM LAKE, ND",889000,ENS:151000;FDRR:701000;REC:37000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+ND,MVD,"SOURIS RIVER, ND",548000,FDRR:548000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NE,NWD,"GAVINS POINT DAM, LEWIS AND CLARK LAKE, NE & SD",11329000,ENS:648000;FDRR:5037000;HYD:4670000;REC:969000;WTR:5000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NE,NWD,"HARLAN COUNTY LAKE, NE",2955000,ENS:224000;FDRR:1845000;REC:886000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NE,NWD,"MISSOURI RIVER, KENSLERS BEND, NE TO SIOUX CITY, IA",111000,FDRR:111000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NE,NWD,"PAPILLION CREEK AND TRIBUTARIES LAKES, NE",1119000,ENS:79000;FDRR:1006000;REC:34000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NE,NWD,"SALT CREEK AND TRIBUTARIES, NE",1569000,ENS:173000;FDRR:1362000;REC:34000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NH,NAD,"BLACKWATER DAM, NH",974000,ENS:121000;FDRR:783000;REC:70000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NH,NAD,"EDWARD MACDOWELL LAKE, NH",928000,ENS:70000;FDRR:774000;REC:84000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NH,NAD,"FRANKLIN FALLS DAM, NH",1024000,ENS:126000;FDRR:804000;REC:94000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NH,NAD,"HOPKINTON - EVERETT LAKES, NH",2096000,ENS:302000;FDRR:1571000;REC:223000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NH,NAD,"OTTER BROOK LAKE, NH",1015000,ENS:125000;FDRR:752000;REC:138000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NH,NAD,"SURRY MOUNTAIN LAKE, NH",1113000,ENS:141000;FDRR:828000;REC:144000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NJ,NAD,"PASSAIC RIVER FLOOD WARNING SYSTEMS, NJ",536000,FDRR:536000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NM,SPD,"ABIQUIU DAM, NM",3330000,ENS:230000;FDRR:2276000;REC:712000;WTR:112000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NM,SPD,"COCHITI LAKE, NM",3605000,ENS:290000;FDRR:2677000;REC:638000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NM,SPD,"CONCHAS LAKE, NM",3558000,ENS:375000;FDRR:2479000;REC:704000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NM,SPD,"GALISTEO DAM, NM",874000,ENS:109000;FDRR:709000;REC:56000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NM,SPD,"JEMEZ CANYON DAM, NM",949000,ENS:66000;FDRR:874000;REC:9000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NM,SPD,"SANTA ROSA DAM AND LAKE, NM",1552000,ENS:169000;FDRR:1118000;REC:265000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NM,SPD,"TWO RIVERS DAM, NM",985000,ENS:51000;FDRR:874000;REC:60000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NM,SPD,"UPPER RIO GRANDE WATER OPERATIONS MODEL, NM",1139000,FDRR:1139000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NV,SPD,"MARTIS CREEK LAKE, NV & CA",1461000,ENS:192000;FDRR:1024000;REC:245000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NV,SPD,"PINE AND MATHEWS CANYONS DAMS, NV",330000,FDRR:330000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NY,NAD,"ALMOND LAKE, NY",667000,ENS:16000;FDRR:633000;REC:18000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NY,NAD,"ARKPORT DAM, NY",423000,ENS:9000;FDRR:414000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NY,NAD,"EAST SIDNEY LAKE, NY",957000,ENS:16000;FDRR:919000;REC:22000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NY,LRD,"MOUNT MORRIS DAM, NY",3934000,ENS:103000;FDRR:3549000;REC:282000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NY,NAD,"SOUTHERN NEW YORK FLOOD CONTROL PROJECTS, NY",1224000,FDRR:1224000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+NY,NAD,"WHITNEY POINT LAKE, NY",25137000,ENS:35000;FDRR:25069000;REC:33000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"ALUM CREEK LAKE, OH",2179000,ENS:135000;FDRR:1652000;REC:262000;WTR:130000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"BERLIN LAKE, OH",3902000,ENS:148000;FDRR:2934000;REC:810000;WTR:10000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"CAESAR CREEK LAKE, OH",2084000,ENS:195000;FDRR:1568000;REC:310000;WTR:11000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"CLARENCE J. BROWN DAM AND RESERVOIR, OH",1890000,ENS:140000;FDRR:1645000;REC:105000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"DEER CREEK LAKE, OH",1844000,ENS:80000;FDRR:1545000;REC:219000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"DELAWARE LAKE, OH",2100000,ENS:80000;FDRR:1841000;REC:179000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"DILLON LAKE, OH",1951000,ENS:138000;FDRR:1634000;REC:179000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"MASSILLON LOCAL PROTECTION PROJECT, OH",147000,FDRR:147000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"MICHAEL J. KIRWAN DAM AND RESERVOIR, OH",2201000,ENS:101000;FDRR:2013000;REC:87000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"MOSQUITO CREEK LAKE, OH",1838000,ENS:126000;FDRR:1550000;REC:153000;WTR:9000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"MUSKINGUM RIVER LAKES, OH",13870000,ENS:190000;FDRR:13415000;REC:265000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"NORTH BRANCH KOKOSING RIVER LAKE, OH",603000,ENS:6000;FDRR:579000;REC:18000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"OHIO - MISSISSIPPI FLOOD CONTROL, OH",1655000,FDRR:1655000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"PAINT CREEK LAKE, OH",1920000,ENS:120000;FDRR:1586000;REC:191000;WTR:23000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"TOM JENKINS DAM, OH",1127000,ENS:105000;FDRR:938000;REC:62000;WTR:22000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"WEST FORK OF MILL CREEK LAKE, OH",1158000,ENS:74000;FDRR:1073000;REC:11000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OH,LRD,"WILLIAM H. HARSHA LAKE, OH",1789000,ENS:165000;FDRR:1508000;REC:105000;WTR:11000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"ARCADIA LAKE, OK",637000,ENS:149000;FDRR:430000;REC:42000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"BIRCH LAKE, OK",1101000,ENS:97000;FDRR:669000;REC:335000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"BROKEN BOW LAKE, OK",3314000,ENS:121000;FDRR:895000;HYD:2200000;REC:82000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"CANTON LAKE, OK",2628000,ENS:143000;FDRR:1398000;REC:1071000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"COPAN LAKE, OK",1411000,ENS:168000;FDRR:826000;REC:397000;WTR:20000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"EUFAULA LAKE, OK",8293000,ENS:1543000;FDRR:1856000;HYD:2615000;REC:2221000;WTR:58000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"FORT GIBSON LAKE, OK",6073000,ENS:551000;FDRR:1010000;HYD:2760000;REC:1752000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"FORT SUPPLY LAKE, OK",1216000,ENS:101000;FDRR:591000;REC:524000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"GREAT SALT PLAINS LAKE, OK",516000,ENS:93000;FDRR:389000;REC:34000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"HEYBURN LAKE, OK",1196000,ENS:104000;FDRR:733000;REC:339000;WTR:20000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"HUGO LAKE, OK",2229000,ENS:197000;FDRR:1118000;REC:898000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"HULAH LAKE, OK",843000,ENS:200000;FDRR:567000;REC:60000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"KAW LAKE, OK",2641000,ENS:389000;FDRR:1214000;REC:1018000;WTR:20000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"KEYSTONE LAKE, OK",5706000,ENS:540000;FDRR:1578000;HYD:2310000;REC:1244000;WTR:34000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"MCCLELLAN - KERR ARKANSAS RIVER NAVIGATION SYSTEM, OK",24365000,ENS:522000;HYD:6260000;NIH:15540000;REC:2043000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"OOLOGAH LAKE, OK",2996000,ENS:475000;FDRR:1469000;REC:1032000;WTR:20000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"OPTIMA LAKE, OK",133000,FDRR:133000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"PENSACOLA RESERVOIR, LAKE OF THE CHEROKEES, OK",18000,FDRR:18000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"PINE CREEK LAKE, OK",1551000,ENS:183000;FDRR:723000;REC:605000;WTR:40000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"SARDIS LAKE, OK",1492000,ENS:119000;FDRR:727000;REC:612000;WTR:34000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"SKIATOOK LAKE, OK",1913000,ENS:262000;FDRR:821000;REC:790000;WTR:40000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"TENKILLER FERRY LAKE, OK",5638000,ENS:398000;FDRR:1003000;HYD:2200000;REC:1981000;WTR:56000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"WAURIKA LAKE, OK",2371000,ENS:643000;FDRR:993000;REC:706000;WTR:29000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OK,SWD,"WISTER LAKE, OK",1221000,ENS:364000;FDRR:782000;REC:59000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"APPLEGATE LAKE, OR",1741000,ENS:80000;FDRR:1655000;WTR:6000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"BLUE RIVER LAKE, OR",1433000,ENS:58000;FDRR:1343000;REC:26000;WTR:6000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"BONNEVILLE LOCK AND DAM, OR & WA",2119000,ENS:286000;REC:1833000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"COTTAGE GROVE LAKE, OR",2101000,ENS:188000;FDRR:1390000;REC:517000;WTR:6000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"COUGAR LAKE, OR",4112000,ENS:82000;FDRR:3984000;REC:35000;WTR:11000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"DETROIT LAKE, OR",3003000,ENS:46000;FDRR:2909000;REC:35000;WTR:13000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"DORENA LAKE, OR",1852000,ENS:165000;FDRR:1317000;REC:364000;WTR:6000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"ELK CREEK LAKE, OR",293000,ENS:212000;FDRR:81000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"FALL CREEK LAKE, OR",2265000,ENS:219000;FDRR:1977000;REC:63000;WTR:6000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"FERN RIDGE LAKE, OR",2394000,ENS:372000;FDRR:1865000;REC:151000;WTR:6000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"GREEN PETER - FOSTER LAKES, OR",3746000,ENS:253000;FDRR:3239000;REC:235000;WTR:19000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"HILLS CREEK LAKE, OR",1862000,ENS:130000;FDRR:1689000;REC:30000;WTR:13000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"JOHN DAY LOCK AND DAM, OR & WA",7078000,ENS:415000;NIH:5608000;REC:1055000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"LOOKOUT POINT LAKE, OR",5297000,ENS:178000;FDRR:4874000;REC:232000;WTR:13000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"LOST CREEK LAKE, OR",5920000,ENS:343000;FDRR:5120000;REC:421000;WTR:36000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"MCNARY LOCK AND DAM, OR & WA",8185000,ENS:305000;NIH:6237000;REC:1643000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"WILLAMETTE RIVER AT WILLAMETTE FALLS, OR",72000,NIL:72000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"WILLAMETTE RIVER BANK PROTECTION, OR",233000,FDRR:233000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+OR,NWD,"WILLOW CREEK LAKE, OR",1109000,ENS:52000;FDRR:1052000;WTR:5000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"ALLEGHENY RIVER, PA",14430000,NIL:14430000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"ALVIN R. BUSH DAM, PA",877000,ENS:29000;FDRR:829000;REC:19000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"AYLESWORTH CREEK LAKE, PA",358000,ENS:11000;FDRR:335000;REC:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"BELTZVILLE LAKE, PA",1579000,ENS:56000;FDRR:1511000;WTR:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"BLUE MARSH LAKE, PA",3601000,ENS:525000;FDRR:1222000;REC:1842000;WTR:12000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"CONEMAUGH RIVER LAKE, PA",1982000,ENS:145000;FDRR:1738000;REC:99000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"COWANESQUE LAKE, PA",2444000,ENS:244000;FDRR:1261000;REC:841000;WTR:98000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"CROOKED CREEK LAKE, PA",2474000,ENS:67000;FDRR:1867000;REC:540000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"CURWENSVILLE LAKE, PA",1072000,ENS:56000;FDRR:890000;REC:28000;WTR:98000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"EAST BRANCH CLARION RIVER LAKE, PA",1940000,ENS:52000;FDRR:1663000;REC:225000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"FOSTER JOSEPH SAYERS DAM, PA",1231000,ENS:100000;FDRR:1095000;REC:36000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"FRANCIS E. WALTER DAM, PA",1182000,ENS:93000;FDRR:1089000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"GENERAL EDGAR JADWIN DAM AND RESERVOIR, PA",484000,ENS:6000;FDRR:478000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"JOHNSTOWN, PA",379000,FDRR:379000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"KINZUA DAM AND ALLEGHENY RESERVOIR, PA",2045000,ENS:65000;FDRR:1729000;REC:251000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"LOYALHANNA LAKE, PA",2550000,ENS:144000;FDRR:2204000;REC:202000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"MAHONING CREEK LAKE, PA",2054000,ENS:56000;FDRR:1906000;REC:92000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"MONONGAHELA RIVER, PA & WV",21389000,NIL:21368000;REC:21000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"OHIO RIVER LOCKS AND DAMS, PA, OH & WV",36186000,NIH:36138000;REC:48000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"OHIO RIVER OPEN CHANNEL WORK, PA, OH & WV",985000,NIH:985000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"PROMPTON LAKE, PA",709000,ENS:56000;FDRR:653000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"PUNXSUTAWNEY, PA",77000,FDRR:77000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"RAYSTOWN LAKE, PA",5429000,ENS:1158000;FDRR:1769000;REC:2502000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"SHENANGO RIVER LAKE, PA",3708000,ENS:154000;FDRR:2480000;REC:1074000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"STILLWATER LAKE, PA",584000,ENS:14000;FDRR:561000;REC:9000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"TIOGA - HAMMOND LAKES, PA",3807000,ENS:392000;FDRR:2445000;REC:970000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"TIONESTA LAKE, PA",3110000,ENS:216000;FDRR:2227000;REC:667000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"UNION CITY LAKE, PA",655000,ENS:44000;FDRR:561000;REC:50000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"WOODCOCK CREEK LAKE, PA",1584000,ENS:45000;FDRR:1224000;REC:315000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,NAD,"YORK INDIAN ROCK DAM, PA",1183000,ENS:13000;FDRR:1157000;REC:13000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+PA,LRD,"YOUGHIOGHENY RIVER LAKE, PA & MD",3732000,ENS:175000;FDRR:2925000;REC:623000;WTR:9000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+RI,NAD,"FOX POINT BARRIER, NARRAGANSETT BAY, RI",698000,FDRC:698000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+RI,NAD,"WOONSOCKET, RI",667000,FDRR:667000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+SC,SAD,"ATLANTIC INTRACOASTAL WATERWAY, SC",9213000,NIL:9213000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+SD,NWD,"BIG BEND DAM, LAKE SHARPE, SD",11098000,ENS:872000;FDRR:3894000;HYD:5421000;REC:906000;WTR:5000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+SD,NWD,"COLD BROOK LAKE, SD",510000,ENS:12000;FDRR:403000;REC:95000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+SD,NWD,"COTTONWOOD SPRINGS LAKE, SD",265000,ENS:20000;FDRR:186000;REC:59000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+SD,NWD,"FORT RANDALL DAM, LAKE FRANCIS CASE, SD",12759000,ENS:1403000;FDRR:4437000;HYD:6772000;REC:142000;WTR:5000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+SD,MVD,"LAKE TRAVERSE, SD & MN",1285000,ENS:73000;FDRR:1146000;REC:66000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+SD,NWD,"OAHE DAM, LAKE OAHE, SD & ND",14516000,ENS:1869000;FDRR:5376000;HYD:6654000;REC:612000;WTR:5000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TN,LRD,"CENTER HILL LAKE, TN",9063000,ENS:461000;FDRR:3183000;HYD:3565000;REC:1811000;WTR:43000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TN,LRD,"CHEATHAM LOCK AND DAM, TN",9365000,ENS:268000;HYD:3332000;NIH:4586000;REC:1154000;WTR:25000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TN,LRD,"CORDELL HULL DAM AND RESERVOIR, TN",9290000,ENS:350000;HYD:3990000;NIH:2227000;NIL:675000;REC:2031000;WTR:17000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TN,LRD,"DALE HOLLOW LAKE, TN",9193000,ENS:489000;FDRR:2496000;HYD:4152000;REC:2015000;WTR:41000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TN,LRD,"J. PERCY PRIEST DAM AND RESERVOIR, TN",6591000,ENS:249000;FDRR:2667000;HYD:1050000;REC:2537000;WTR:88000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TN,LRD,"OLD HICKORY LOCK AND DAM, TN",13377000,ENS:1009000;HYD:3956000;NIH:2893000;NIL:3255000;REC:2230000;WTR:34000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TN,LRD,"TENNESSEE RIVER, TN",39154000,NIH:39154000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"AQUILLA LAKE, TX",1720000,ENS:134000;FDRR:1398000;REC:174000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"ARKANSAS - RED RIVER BASINS CHLORIDE CONTROL - AREA VIII, TX",1917000,ENS:1917000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"BARDWELL LAKE, TX",3168000,ENS:190000;FDRR:2152000;REC:812000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"BELTON LAKE, TX",4679000,ENS:374000;FDRR:1988000;REC:2301000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"BENBROOK LAKE, TX",3594000,ENS:208000;FDRR:1759000;REC:1613000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"BUFFALO BAYOU AND TRIBUTARIES, TX",4359000,FDRR:4359000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"CANYON LAKE, TX",4051000,ENS:387000;FDRR:1835000;REC:1815000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"DENISON DAM, LAKE TEXOMA, TX",9355000,ENS:1692000;FDRR:2574000;HYD:2400000;REC:2631000;WTR:58000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"ESTELLINE SPRINGS EXPERIMENTAL PROJECT, TX",28000,ENS:28000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"FERRELLS BRIDGE DAM, LAKE O' THE PINES, TX",4152000,ENS:613000;FDRR:1812000;REC:1713000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"GRANGER LAKE, TX",3012000,ENS:201000;FDRR:1623000;REC:1172000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"GRAPEVINE LAKE, TX",3137000,ENS:333000;FDRR:1545000;REC:1244000;WTR:15000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"GULF INTRACOASTAL WATERWAY, TX",36263000,NIH:36263000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"HORDS CREEK LAKE, TX",1874000,ENS:134000;FDRR:931000;REC:809000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"JIM CHAPMAN LAKE, TX",2118000,ENS:326000;FDRR:1629000;REC:147000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"JOE POOL LAKE, TX",1972000,ENS:160000;FDRR:1572000;REC:224000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"LAKE KEMP, TX",474000,FDRR:474000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"LAVON LAKE, TX",3982000,ENS:548000;FDRR:1864000;REC:1554000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"LEWISVILLE DAM, TX",4457000,ENS:612000;FDRR:2415000;REC:1414000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"NAVARRO MILLS LAKE, TX",2887000,ENS:171000;FDRR:1466000;REC:1234000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"NORTH SAN GABRIEL DAM AND LAKE GEORGETOWN, TX",3198000,ENS:327000;FDRR:1416000;REC:1438000;WTR:17000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"O.C. FISHER DAM AND LAKE, TX",1406000,ENS:177000;FDRR:1128000;REC:87000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"PAT MAYSE LAKE, TX",1384000,ENS:99000;FDRR:610000;REC:659000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"PROCTOR LAKE, TX",2781000,ENS:183000;FDRR:1541000;REC:1043000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"RAY ROBERTS LAKE, TX",1828000,ENS:169000;FDRR:1569000;REC:76000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"SAM RAYBURN DAM AND RESERVOIR, TX",9597000,ENS:1067000;FDRR:2820000;HYD:3675000;REC:2021000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"SOMERVILLE LAKE, TX",3583000,ENS:243000;FDRR:1698000;REC:1628000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"STILLHOUSE HOLLOW DAM, TX",3508000,ENS:272000;FDRR:1908000;REC:1312000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"TOWN BLUFF DAM, B.A. STEINHAGEN LAKE AND ROBERT DOUGLAS WILLIS HYDROPOWER PROJECT, TX",4235000,ENS:349000;FDRR:2083000;HYD:1015000;REC:788000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"WACO LAKE, TX",3672000,ENS:416000;FDRR:1542000;REC:1700000;WTR:14000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"WALLISVILLE LAKE, TX",3103000,FDRR:3103000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"WHITNEY LAKE, TX",7855000,ENS:649000;FDRR:2386000;HYD:2673000;REC:2128000;WTR:19000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+TX,SWD,"WRIGHT PATMAN DAM AND LAKE, TX",4371000,ENS:809000;FDRR:2029000;REC:1517000;WTR:16000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+VA,NAD,"ATLANTIC INTRACOASTAL WATERWAY - ALBEMARLE AND CHESAPEAKE CANAL ROUTE, VA",3597000,NIL:3597000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+VA,NAD,"ATLANTIC INTRACOASTAL WATERWAY - DISMAL SWAMP CANAL ROUTE, VA",1816000,FDRR:764000;NIL:1052000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+VA,NAD,"GATHRIGHT DAM AND LAKE MOOMAW, VA",3053000,FDRR:3053000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+VA,SAD,"JOHN H. KERR LAKE, VA & NC",12564000,ENS:1482000;FDRR:2158000;HYD:5701000;REC:3191000;WTR:32000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+VA,LRD,"JOHN W. FLANNAGAN DAM AND RESERVOIR, VA",2918000,ENS:62000;FDRR:2021000;REC:793000;WTR:42000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+VA,LRD,"NORTH FORK OF POUND RIVER LAKE, VA",901000,ENS:11000;FDRR:830000;REC:23000;WTR:37000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+VA,SAD,"PHILPOTT LAKE, VA",5300000,ENS:319000;FDRR:1215000;HYD:2056000;REC:1701000;WTR:9000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+VT,NAD,"BALL MOUNTAIN LAKE, VT",1116000,ENS:93000;FDRR:871000;REC:152000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+VT,NAD,"NORTH HARTLAND LAKE, VT",1025000,ENS:183000;FDRR:718000;REC:124000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+VT,NAD,"NORTH SPRINGFIELD LAKE, VT",955000,ENS:98000;FDRR:755000;REC:102000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+VT,NAD,"TOWNSHEND LAKE, VT",1019000,ENS:128000;FDRR:779000;REC:112000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+VT,NAD,"UNION VILLAGE DAM, VT",980000,ENS:82000;FDRR:796000;REC:102000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WA,NWD,"CHIEF JOSEPH DAM, WA",766000,REC:766000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WA,NWD,"HOWARD A. HANSON DAM, WA",4961000,ENS:141000;FDRR:4820000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WA,NWD,"ICE HARBOR LOCK AND DAM, WA",5635000,ENS:115000;NIH:4319000;REC:1201000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WA,NWD,"LAKE WASHINGTON SHIP CANAL, WA",1283000,ENS:465000;REC:818000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WA,NWD,"LITTLE GOOSE LOCK AND DAM, WA",3426000,ENS:19000;NIH:2992000;REC:415000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WA,NWD,"LOWER GRANITE LOCK AND DAM, WA",3964000,ENS:10000;NIH:2356000;REC:1598000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WA,NWD,"LOWER MONUMENTAL LOCK AND DAM, WA",3347000,ENS:33000;NIH:2800000;REC:514000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WA,NWD,"MILL CREEK LAKE, WA",2510000,ENS:300000;FDRR:1757000;REC:453000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WA,NWD,"MOUNT SAINT HELENS SEDIMENT CONTROL, WA",786000,FDRR:786000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WA,NWD,"MUD MOUNTAIN DAM, WA",7192000,ENS:78000;FDRR:6790000;REC:324000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WA,NWD,"STILLAGUAMISH RIVER, WA",366000,FDRR:366000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WA,NWD,"TACOMA - PUYALLUP RIVER, WA",366000,FDRR:366000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WA,NWD,"THE DALLES LOCK AND DAM, WA & OR",4472000,ENS:340000;NIH:3356000;REC:776000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WI,MVD,"EAU GALLE RIVER LAKE, WI",1131000,ENS:56000;FDRR:748000;REC:327000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WI,LRD,"FOX RIVER, WI",6883000,FDRR:6883000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WI,LRD,"STURGEON BAY HARBOR AND LAKE MICHIGAN SHIP CANAL, WI",20000,REC:20000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WV,LRD,"BEECH FORK LAKE, WV",1716000,ENS:75000;FDRR:1438000;REC:203000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WV,LRD,"BLUESTONE LAKE, WV",2467000,ENS:356000;FDRR:1925000;REC:186000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WV,LRD,"BURNSVILLE LAKE, WV",3328000,ENS:363000;FDRR:1942000;REC:1023000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WV,LRD,"EAST LYNN LAKE, WV",2765000,ENS:34000;FDRR:1974000;REC:757000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WV,LRD,"ELKINS, WV",65000,FDRR:65000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WV,LRD,"KANAWHA RIVER LOCKS AND DAMS, WV",16355000,ENS:46000;NIL:16213000;REC:96000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WV,LRD,"OHIO RIVER LOCKS AND DAMS, WV, KY & OH",58958000,ENS:73000;NIH:58778000;REC:107000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WV,LRD,"OHIO RIVER OPEN CHANNEL WORK, WV, KY & OH",2642000,NIH:2642000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WV,LRD,"R.D. BAILEY LAKE, WV",3043000,ENS:172000;FDRR:2244000;REC:627000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WV,LRD,"STONEWALL JACKSON LAKE, WV",1917000,ENS:110000;FDRR:1721000;REC:86000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WV,LRD,"SUMMERSVILLE LAKE, WV",2981000,ENS:175000;FDRR:1725000;REC:1035000;WTR:46000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WV,LRD,"SUTTON LAKE, WV",2909000,ENS:174000;FDRR:1927000;REC:808000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WV,LRD,"TYGART LAKE, WV",2211000,ENS:103000;FDRR:2001000;REC:107000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565
+WY,NWD,"JACKSON HOLE LEVEES, WY",1158000,FDRR:1158000,https://usace.contentdm.oclc.org/utils/getfile/collection/p16021coll6/id/2565

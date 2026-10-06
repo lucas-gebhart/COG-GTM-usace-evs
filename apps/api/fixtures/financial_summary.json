@@ -2,122 +2,122 @@
  "fiscal_year": 2026,
  "execution_curve": [
   {
-   "period": "2025-10-01",
-   "plan_cumulative": 200000000,
-   "obligated_cumulative": 162737347,
-   "expended_cumulative": 192171167
+   "period": "2025-01-01",
+   "plan_cumulative": 401252855.89,
+   "obligated_cumulative": 374129227.45,
+   "expended_cumulative": 243183997.83
   },
   {
    "period": "2025-11-01",
-   "plan_cumulative": 400000000,
-   "obligated_cumulative": 363302024,
-   "expended_cumulative": 353718921
+   "plan_cumulative": 68799667.63,
+   "obligated_cumulative": 64821384.11,
+   "expended_cumulative": 37812474.11
   },
   {
    "period": "2025-12-01",
-   "plan_cumulative": 600000000,
-   "obligated_cumulative": 546954167,
-   "expended_cumulative": 545784367
-  },
-  {
-   "period": "2026-01-01",
-   "plan_cumulative": 800000000,
-   "obligated_cumulative": 718149825,
-   "expended_cumulative": 699664553
+   "plan_cumulative": 207341463.97,
+   "obligated_cumulative": 195808353.89,
+   "expended_cumulative": 120748484.94
   },
   {
    "period": "2026-02-01",
-   "plan_cumulative": 1000000000,
-   "obligated_cumulative": 885285483,
-   "expended_cumulative": 825036329
+   "plan_cumulative": 637103771.17,
+   "obligated_cumulative": 601607891.04,
+   "expended_cumulative": 411098725.56
   },
   {
    "period": "2026-03-01",
-   "plan_cumulative": 1200000000,
-   "obligated_cumulative": 1108792962,
-   "expended_cumulative": 952728982
+   "plan_cumulative": 900521676.61,
+   "obligated_cumulative": 849850741.19,
+   "expended_cumulative": 609059697.98
   },
   {
    "period": "2026-04-01",
-   "plan_cumulative": 1400000000,
-   "obligated_cumulative": 1310642185,
-   "expended_cumulative": 1151845598
+   "plan_cumulative": 1178076500.04,
+   "obligated_cumulative": 1096635731.01,
+   "expended_cumulative": 822476798.26
   },
   {
    "period": "2026-05-01",
-   "plan_cumulative": 1600000000,
-   "obligated_cumulative": 1502683353,
-   "expended_cumulative": 1325393074
+   "plan_cumulative": 1455631323.42,
+   "obligated_cumulative": 1367256658.36,
+   "expended_cumulative": 1071017715.65
   },
   {
    "period": "2026-06-01",
-   "plan_cumulative": 1800000000,
-   "obligated_cumulative": 1677827448,
-   "expended_cumulative": 1519806272
+   "plan_cumulative": 1719049228.82,
+   "obligated_cumulative": 1619999755.53,
+   "expended_cumulative": 1322999800.39
   },
   {
    "period": "2026-07-01",
-   "plan_cumulative": 2000000000,
-   "obligated_cumulative": 1844592148,
-   "expended_cumulative": 1686943073
+   "plan_cumulative": 1954900144.13,
+   "obligated_cumulative": 1833278058.36,
+   "expended_cumulative": 1558286349.61
   },
   {
    "period": "2026-08-01",
-   "plan_cumulative": 2200000000,
-   "obligated_cumulative": 1844592148,
-   "expended_cumulative": 1686943073
+   "plan_cumulative": 2148811535.97,
+   "obligated_cumulative": 2018472658.65,
+   "expended_cumulative": 1782984181.85
   },
   {
    "period": "2026-09-01",
-   "plan_cumulative": 2400000000,
-   "obligated_cumulative": 1844592148,
-   "expended_cumulative": 1686943073
+   "plan_cumulative": 2287353332.38,
+   "obligated_cumulative": 2163597060.51,
+   "expended_cumulative": 1983297305.44
+  },
+  {
+   "period": "2026-10-01",
+   "plan_cumulative": 2356152999.99,
+   "obligated_cumulative": 2217829339.63,
+   "expended_cumulative": 2106937872.69
   }
  ],
  "by_appropriation": [
   {
+   "appropriation": "96X3112",
+   "allotted": 77797888.42,
+   "committed": 74832405.4,
+   "obligated": 70818157.87,
+   "expended": 67277249.97,
+   "title": "Mississippi River and Tributaries",
+   "expiring_fy": null
+  },
+  {
    "appropriation": "96X3121",
+   "allotted": 100762751.34,
+   "committed": 99357554.28,
+   "obligated": 95186283.74,
+   "expended": 90426969.55,
    "title": "Investigations",
-   "allotted": 176633985,
-   "committed": 164050310,
-   "obligated": 157438539,
-   "expended": 94801409,
    "expiring_fy": 2026
   },
   {
    "appropriation": "96X3122",
+   "allotted": 1162410055.41,
+   "committed": 1143377435.52,
+   "obligated": 1092947695.21,
+   "expended": 1038300310.47,
    "title": "Construction",
-   "allotted": 775841261,
-   "committed": 751850203,
-   "obligated": 708284943,
-   "expended": 631846413,
    "expiring_fy": null
   },
   {
    "appropriation": "96X3123",
+   "allotted": 841635133.66,
+   "committed": 834820371.45,
+   "obligated": 800578966.01,
+   "expended": 760550017.73,
    "title": "Operation and Maintenance",
-   "allotted": 887931707,
-   "committed": 714373429,
-   "obligated": 692066935,
-   "expended": 416762056,
-   "expiring_fy": null
-  },
-  {
-   "appropriation": "96X3112",
-   "title": "Mississippi River and Tributaries",
-   "allotted": 888628760,
-   "committed": 767638681,
-   "obligated": 739624621,
-   "expended": 569498199,
    "expiring_fy": null
   },
   {
    "appropriation": "96X4902",
+   "allotted": 173547171.16,
+   "committed": 165924772.35,
+   "obligated": 158298236.8,
+   "expended": 150383324.97,
    "title": "Revolving Fund",
-   "allotted": 155472809,
-   "committed": 151278444,
-   "obligated": 134764011,
-   "expended": 109114018,
    "expiring_fy": null
   }
  ],

@@ -42,5 +42,11 @@ legal_disclaimer: >-
   in good faith. Rows marked not-evaluated make no conformance claim. It does not represent a legally
   binding guarantee.
 repository: https://github.com/lucas-gebhart/COG-GTM-usace-evs (docs/a11y/)
+manual_test_plan_url: https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md
+standard: Revised Section 508 (36 CFR Part 1194) and WCAG 2.1 Level AA
+design_rules:
+  - WCAG 2.2 2.4.11 Focus Not Obscured (Minimum)
+  - WCAG 2.2 2.5.7 Dragging Movements
+  - WCAG 2.2 2.5.8 Target Size (Minimum)
 feedback: TBD (EVS accessibility feedback mailbox)
 license: CC-BY-4.0

@@ -130,6 +130,7 @@ jobs:
             docs/a11y/evs-openacr.yaml
             docs/a11y/evs-acr.md
             docs/a11y/evs-acr.html
+            docs/a11y/evs-axe-results.json
             apps/api/fixtures/accessibility.json
           retention-days: 90
       - name: Commit regenerated read-out back to the PR branch
@@ -138,7 +139,7 @@ jobs:
         run: |
           git config user.name "evs-ci"
           git config user.email "evs-ci@users.noreply.github.com"
-          git add docs/a11y/evs-openacr.yaml docs/a11y/evs-acr.md docs/a11y/evs-acr.html apps/api/fixtures/accessibility.json
+          git add docs/a11y/evs-openacr.yaml docs/a11y/evs-acr.md docs/a11y/evs-acr.html docs/a11y/evs-axe-results.json apps/api/fixtures/accessibility.json
           if git diff --cached --quiet; then echo "read-out unchanged"; exit 0; fi
           git commit -m "chore(a11y): regenerate ACR from CI evidence [skip ci]"
           git push origin HEAD:${{ github.head_ref }}

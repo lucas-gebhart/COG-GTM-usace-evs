@@ -149,6 +149,9 @@ html[data-theme="leadership"] .evs-chip { color: var(--evs-color-ink); }
 
 // Card mode under 640 px: each row renders as a labelled card (USWDS stacked-header pattern at a wider breakpoint).
 .evs-table--stacked {
+  // Cards never scroll sideways; without this the reserved scrollbar gutter leaves a few px of horizontal
+  // overflow and axe flags the tabindex=-1 region (scrollable-region-focusable) at 360 px.
+  .evs-table__wrap { overflow-x: visible; scrollbar-gutter: auto; }
   .usa-table caption { display: block; width: 100%; }
   .usa-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   .usa-table, .usa-table tbody, .usa-table tr, .usa-table td, .usa-table th { display: block; width: 100%; box-sizing: border-box; }

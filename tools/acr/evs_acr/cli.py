@@ -15,7 +15,7 @@ from .engine import evaluate_all
 from .evidence import load_attestation, load_axe_cells, load_lighthouse, load_pa11y, load_smoke
 from .mapping import DATA, load_mapping
 from .openacr import build_document, dump_yaml, level_counts, validate_document
-from .readout import build_readout
+from .readout import build_axe_bundle, build_readout
 from .render import render_html, render_markdown
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -90,7 +90,12 @@ def main(argv: list[str] | None = None) -> int:
     (args.out_dir / "evs-acr.md").write_text(render_markdown(doc, results, run))
     (args.out_dir / "evs-acr.html").write_text(render_html(doc, results, run))
     args.readout.parent.mkdir(parents=True, exist_ok=True)
-    readout = build_readout(cells, results, run, now, TARGET, args.acr_url)
+    (args.out_dir / "evs-axe-results.json").write_text(
+        json.dumps(build_axe_bundle(cells, run, now), indent=1) + "\n"
+    )
+    readout = build_readout(
+        cells, results, run, now, TARGET, args.acr_url, mapping=mapping, attestation=attestation, meta=meta
+    )
     args.readout.write_text(json.dumps(readout, indent=1) + "\n")
 
     counts = level_counts(results)
@@ -99,7 +104,7 @@ def main(argv: list[str] | None = None) -> int:
         f"pa11y {'yes' if pa11y else 'no'}, {len(keyboard)} keyboard routes, {len(reflow)} reflow cells; "
         + ", ".join(f"{v} {k}" for k, v in counts.items())
     )
-    print(f"wrote {args.out_dir / 'evs-openacr.yaml'}, .md, .html and {args.readout}")
+    print(f"wrote {args.out_dir / 'evs-openacr.yaml'}, .md, .html, evs-axe-results.json and {args.readout}")
 
     if args.fail_on_violations and (counts["does-not-support"] or counts["partially-supports"]):
         print("evs-acr-gen: open violations or partial rows present", file=sys.stderr)

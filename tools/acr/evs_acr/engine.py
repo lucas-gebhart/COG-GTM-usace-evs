@@ -56,6 +56,8 @@ class RunSummary:
     pa11y: Pa11yReport | None
     keyboard: list[SmokeResult]
     reflow: list[SmokeResult]
+    lighthouse_version: str | None = None
+    pa11y_version: str | None = None
 
 
 def worst(*levels: str) -> str:
@@ -87,6 +89,8 @@ def summarise_run(
         pa11y=pa11y,
         keyboard=keyboard,
         reflow=reflow,
+        lighthouse_version=next((r.version for r in lighthouse if r.version), None),
+        pa11y_version=pa11y.version if pa11y else None,
     )
 
 

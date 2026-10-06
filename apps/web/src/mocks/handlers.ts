@@ -1,5 +1,17 @@
 import { HttpResponse, http, type HttpHandler } from "msw";
 import { fixtures, syntheticAsOf, thresholds } from "./fixtures";
+import openacrYaml from "../../../../docs/a11y/evs-openacr.yaml?raw";
+import acrMarkdown from "../../../../docs/a11y/evs-acr.md?raw";
+import acrHtml from "../../../../docs/a11y/evs-acr.html?raw";
+import axeBundle from "../../../../docs/a11y/evs-axe-results.json";
+
+/** Same allow-list and media types as apps/api/evs/routers/accessibility.py. */
+const ARTIFACTS: Record<string, { type: string; body: string }> = {
+  "evs-openacr.yaml": { type: "application/yaml", body: openacrYaml },
+  "evs-acr.md": { type: "text/markdown; charset=utf-8", body: acrMarkdown },
+  "evs-acr.html": { type: "text/html; charset=utf-8", body: acrHtml },
+  "evs-axe-results.json": { type: "application/json", body: JSON.stringify(axeBundle) },
+};
 
 const BASE = "*/api/v1";
 
@@ -65,6 +77,13 @@ export const handlers: HttpHandler[] = [
 
   http.get(`${BASE}/public/srp/coverage`, () => HttpResponse.json(fixtures.srp)),
   http.get(`${BASE}/accessibility/readout`, () => HttpResponse.json(fixtures.accessibility)),
+  http.get(`${BASE}/accessibility/artifacts/:name`, ({ params }) => {
+    const artefact = ARTIFACTS[String(params.name)];
+    if (!artefact) return HttpResponse.json({ detail: `Unknown artefact; allowed: ${Object.keys(ARTIFACTS).join(", ")}` }, { status: 404 });
+    return new HttpResponse(artefact.body, {
+      headers: { "Content-Type": artefact.type, "Content-Disposition": `attachment; filename="${String(params.name)}"` },
+    });
+  }),
   http.get(`${BASE}/admin/feeds`, () => HttpResponse.json({ feeds: fixtures.feeds, generated_at: new Date().toISOString() })),
   http.get(`${BASE}/admin/thresholds`, () => HttpResponse.json(thresholds)),
 ];

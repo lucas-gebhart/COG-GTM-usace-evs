@@ -1,4 +1,5 @@
 from functools import lru_cache
+from pathlib import Path
 from typing import Literal
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -25,6 +26,9 @@ class Settings(BaseSettings):
     delay_yellow_minutes: int = 60
     delay_red_minutes: int = 240
     queue_yellow_vessels: int = 6
+
+    # Generated accessibility artefacts (OpenACR YAML, reports, axe bundle), see /accessibility/artifacts.
+    a11y_docs_dir: Path = Path(__file__).resolve().parents[3] / "docs" / "a11y"
 
     s3_endpoint: str | None = "http://localhost:9000"
     s3_bucket: str = "evs-raw"

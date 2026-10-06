@@ -36,7 +36,7 @@ are pulled every cycle, default `OH-79`), `LPMS_FAILOVER_HOURS` (6), `SIMULATOR_
 | `lpms.py` | `stall_stoppage_json` | 15 min | 22 active and scheduled stoppages. Its `refreshDate` is the feed refresh time used by the status engine. |
 | `lpms.py` | `json/lock_queue_json`, `json/traffic_report` | 15 min | Per lock; pulled for `LPMS_DETAIL_LOCKS` plus any lock with pending arrivals, up to 12 per cycle. |
 | `lpms.py` | `lookup_stoppage_reason_codes` | once | The 36 reason codes also seed the simulator. |
-| `gis.py` | NDC Locks FeatureServer (`f=geojson`) | daily | 234 chamber features collapse to 232 locks on `RIVERCD + LOCKCD`, joined to LPMS `riverCode + lockNo`. |
+| `gis.py` | NDC GIS Locks (`f=geojson`) | daily | 234 chamber features collapse to 232 locks on `RIVERCD + LOCKCD`, joined to LPMS `riverCode + lockNo`. |
 | `noaa.py` | NWPS `gauges?bbox=...` and `gauges/{LID}` | 30 min | One regional list call (about 6,700 gauges) returns observed and forecast flood categories for every paired gauge; detail calls are rationed by `NOAA_DETAIL_BUDGET` because NWPS allows 10 requests per 5 minutes. |
 | `usgs.py` | NWIS IV, parameters 00065 and 00060 | 30 min | Up to 100 sites per call. |
 | `ntni.py` | NTNI notice print pages | 15 min | Linked from `lock_status_report.ntniNoticesLinks`; parsed for the effective window and lock list. |

@@ -1,4 +1,4 @@
-"""NDC Locks FeatureServer (ArcGIS) GeoJSON: authoritative lock geometry and characteristics.
+"""NDC GIS Locks (ArcGIS) GeoJSON: authoritative lock geometry and characteristics.
 One feature per chamber (234 on 2026-10-06); collapsed to one row per lock on RIVERCD + LOCKCD."""
 
 import json

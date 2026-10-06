@@ -297,7 +297,7 @@ def feed_health_rows() -> list[dict]:
             610,
         ),
         ("LPMS stall_stoppage_json", LPMS_URLS["LPMS stall_stoppage_json"], 15, NOW, None, 590),
-        ("NDC Locks FeatureServer", GIS_URL, 1440, NOW, None, 1200),
+        ("NDC GIS Locks", GIS_URL, 1440, NOW, None, 1200),
         ("NOAA NWPS gauges", "https://api.water.noaa.gov/nwps/v1/gauges/{lid}", 30, None, None, None),
         ("USGS NWIS IV", "https://waterservices.usgs.gov/nwis/iv/", 30, None, None, None),
     ]

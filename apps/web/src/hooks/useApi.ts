@@ -95,8 +95,8 @@ export function useFeeds(extra?: Extra<Schemas["FeedHealthList"]>) {
   return useQuery<Schemas["FeedHealthList"], ApiError>({ queryKey: ["admin-feeds"], queryFn: async () => unwrap(await api.GET("/api/v1/admin/feeds")), ...extra });
 }
 
-export function useThresholds(extra?: Extra<Record<string, number>>) {
-  return useQuery<Record<string, number>, ApiError>({ queryKey: ["admin-thresholds"], queryFn: async () => unwrap(await api.GET("/api/v1/admin/thresholds")) as Record<string, number>, ...extra });
+export function useThresholds(extra?: Extra<Schemas["Thresholds"]>) {
+  return useQuery<Schemas["Thresholds"], ApiError>({ queryKey: ["admin-thresholds"], queryFn: async () => unwrap(await api.GET("/api/v1/admin/thresholds")), ...extra });
 }
 
 /** Path of the public lock SSE stream, for useSse. */

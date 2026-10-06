@@ -12,10 +12,15 @@ class Settings(BaseSettings):
     env: Literal["local", "fly", "govcloud"] = "local"
     database_url: str = "postgresql+asyncpg://evs:evs@localhost:5432/evs"
     database_url_sync: str = "postgresql://evs:evs@localhost:5432/evs"
+    # auto: use the database when reachable, otherwise fall back to fixtures with a logged warning.
+    # db: fail at first use when the database is unreachable. fixtures: never touch the database.
+    data_mode: Literal["auto", "db", "fixtures"] = "auto"
+    database_connect_timeout_s: float = 3.0
 
     # Identity: Keycloak locally, Cognito / Army ICAM federation in GovCloud.
     oidc_issuer: str = "http://localhost:8080/realms/evs"
     oidc_audience: str = "evs-web"
+    oidc_jwks_url: str | None = None  # discovered from the issuer when unset
     auth_disabled: bool = True  # local dev and fixtures mode only; CI asserts False for env=govcloud
 
     # Data source mode for public feeds (LPMS, NOAA, USGS).

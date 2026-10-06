@@ -188,29 +188,32 @@ interface MarkerButtonProps {
 function MarkerButton({ point, selected, onSelect, onKeyDown }: MarkerButtonProps) {
   const tipId = useId();
   const [tip, setTip] = useState(false);
-  const [placement, setPlacement] = useState("");
+  const [placement, setPlacement] = useState<{ below: boolean; shift: number; maxWidth: number | null }>({ below: false, shift: 0, maxWidth: null });
   const inner = useRef<HTMLDivElement>(null);
   const tipBox = useRef<HTMLDivElement>(null);
-  // Keep the tooltip inside the map: flip below the marker near the top edge, hug the marker's side near the left or
-  // right edge. MapLibre clips anything that leaves the map container.
+  // Keep the tooltip inside the map: flip below the marker near the top edge and slide it sideways (or narrow it) so it
+  // never crosses the left or right edge. MapLibre clips anything that leaves the map container.
   useLayoutEffect(() => {
     if (!tip) {
-      setPlacement("");
+      setPlacement({ below: false, shift: 0, maxWidth: null });
       return;
     }
     const button = inner.current?.querySelector("button");
     const box = tipBox.current;
     const host = inner.current?.closest(".maplibregl-map") ?? inner.current?.closest(".evs-map");
     if (!button || !box || !host) return;
+    const margin = 4;
     const b = button.getBoundingClientRect();
     const h = host.getBoundingClientRect();
-    const t = box.getBoundingClientRect();
-    const classes: string[] = [];
-    if (b.top - h.top < t.height + 8) classes.push("evs-maptip--below");
+    const room = h.width - margin * 2;
+    const width = Math.min(box.getBoundingClientRect().width, room);
     const centre = b.left + b.width / 2;
-    if (centre + t.width / 2 > h.right - 4) classes.push("evs-maptip--end");
-    else if (centre - t.width / 2 < h.left + 4) classes.push("evs-maptip--start");
-    setPlacement(classes.join(" "));
+    const left = Math.min(Math.max(centre - width / 2, h.left + margin), h.right - margin - width);
+    setPlacement({
+      below: b.top - h.top < box.getBoundingClientRect().height + 8,
+      shift: Math.round(left + width / 2 - centre),
+      maxWidth: width < box.getBoundingClientRect().width ? Math.floor(width) : null,
+    });
   }, [tip]);
   useEffect(() => {
     const wrap = inner.current?.parentElement;
@@ -250,7 +253,14 @@ function MarkerButton({ point, selected, onSelect, onKeyDown }: MarkerButtonProp
       >
         {point.shape}
       </button>
-      <div role="tooltip" id={tipId} ref={tipBox} className={["evs-maptip", placement].filter(Boolean).join(" ")} hidden={!tip}>
+      <div
+        role="tooltip"
+        id={tipId}
+        ref={tipBox}
+        className={["evs-maptip", placement.below ? "evs-maptip--below" : ""].filter(Boolean).join(" ")}
+        style={{ marginLeft: placement.shift || undefined, maxWidth: placement.maxWidth ?? undefined }}
+        hidden={!tip}
+      >
         <div className="evs-maptip__box">{point.tooltip}</div>
       </div>
     </div>

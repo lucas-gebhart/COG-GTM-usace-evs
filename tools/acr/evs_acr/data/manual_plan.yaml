@@ -1,0 +1,55 @@
+# Manual test plan rows shown on /accessibility. Each row is one assistive technology or input condition from
+# docs/a11y/MANUAL_TEST_PLAN.md. `tests` lists MT-* ids or prefixes (MT-SR-*); `assistive_tech` is the id used
+# in docs/a11y/manual_attestation.yaml. A row is passed only when every attested criterion that cites one of
+# its tests says supports; planned means the tests exist in the attestation file but none has been executed.
+rows:
+  - id: nvda-firefox
+    name: NVDA + Firefox (Windows 11)
+    category: screen_reader
+    assistive_tech: nvda-firefox
+    tests: [MT-SR-*]
+  - id: jaws-chrome
+    name: JAWS + Chrome (Windows 11)
+    category: screen_reader
+    assistive_tech: jaws-chrome
+    tests: [MT-SR-*]
+  - id: voiceover-ios
+    name: VoiceOver + Safari (iOS)
+    category: screen_reader
+    assistive_tech: voiceover-ios
+    tests: [MT-SR-*, MT-TOUCH-*]
+  - id: keyboard-only
+    name: Keyboard only (no pointer)
+    category: keyboard
+    assistive_tech: keyboard-only
+    tests: [MT-KBD-*]
+  - id: zoom-400
+    name: 400 percent zoom and 320 CSS px reflow
+    category: zoom
+    assistive_tech: zoom-400
+    tests: [MT-ZOOM-*, MT-RESP-01]
+  - id: forced-colors
+    name: Windows High Contrast (forced-colors)
+    category: contrast
+    assistive_tech: forced-colors
+    tests: [MT-VIS-01, MT-VIS-02, MT-VIS-04, MT-KBD-07]
+  - id: cvd-sim
+    name: Colour-vision deficiency simulation
+    category: contrast
+    assistive_tech: cvd-sim
+    tests: [MT-VIS-01]
+  - id: reduced-motion
+    name: prefers-reduced-motion
+    category: motion
+    assistive_tech: reduced-motion
+    tests: [MT-MOTION-*]
+  - id: touch
+    name: Touch and single pointer (tablet, phone)
+    category: touch
+    assistive_tech: null
+    tests: [MT-TOUCH-*]
+  - id: forms-timing
+    name: Forms, errors and timing
+    category: forms
+    assistive_tech: null
+    tests: [MT-FORM-*, MT-TIME-*]

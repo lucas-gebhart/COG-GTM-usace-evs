@@ -1,0 +1,101 @@
+prompt --application/shared_components/user_interface/lovs/apex_calendar_event_colors
+begin
+--   Manifest
+--     APEX_CALENDAR_EVENT_COLORS
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.11.30'
+,p_release=>'24.2.15'
+,p_default_workspace_id=>20
+,p_default_application_id=>7150
+,p_default_id_offset=>1539581868058128
+,p_default_owner=>'ORACLE'
+);
+wwv_flow_imp_shared.create_list_of_values(
+ p_id=>wwv_flow_imp.id(29525529456393321342)
+,p_lov_name=>'APEX_CALENDAR_EVENT_COLORS'
+,p_lov_query=>'.'||wwv_flow_imp.id(29525529456393321342)||'.'
+,p_location=>'STATIC'
+,p_version_scn=>45730080759537
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(29525529706594321344)
+,p_lov_disp_sequence=>1
+,p_lov_disp_value=>'Red'
+,p_lov_return_value=>'red'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(29525530123620321345)
+,p_lov_disp_sequence=>2
+,p_lov_disp_value=>'Cyan'
+,p_lov_return_value=>'cyan'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(29525530556795321345)
+,p_lov_disp_sequence=>3
+,p_lov_disp_value=>'Blue'
+,p_lov_return_value=>'blue'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(29525530944667321345)
+,p_lov_disp_sequence=>4
+,p_lov_disp_value=>'Blue Sky'
+,p_lov_return_value=>'bluesky'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(29525531305992321346)
+,p_lov_disp_sequence=>5
+,p_lov_disp_value=>'Dark Blue'
+,p_lov_return_value=>'darkblue'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(29525531758689321346)
+,p_lov_disp_sequence=>6
+,p_lov_disp_value=>'Green'
+,p_lov_return_value=>'green'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(29525532107644321346)
+,p_lov_disp_sequence=>7
+,p_lov_disp_value=>'Yellow'
+,p_lov_return_value=>'yellow'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(29525532577537321346)
+,p_lov_disp_sequence=>8
+,p_lov_disp_value=>'Silver'
+,p_lov_return_value=>'silver'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(29525532905172321346)
+,p_lov_disp_sequence=>9
+,p_lov_disp_value=>'Brown'
+,p_lov_return_value=>'brown'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(29525533310464321347)
+,p_lov_disp_sequence=>10
+,p_lov_disp_value=>'Lime'
+,p_lov_return_value=>'lime'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(29525534109273321347)
+,p_lov_disp_sequence=>12
+,p_lov_disp_value=>'Gray'
+,p_lov_return_value=>'gray'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(29525534528768321347)
+,p_lov_disp_sequence=>13
+,p_lov_disp_value=>'Black'
+,p_lov_return_value=>'black'
+);
+wwv_flow_imp_shared.create_static_lov_data(
+ p_id=>wwv_flow_imp.id(29525534974941321348)
+,p_lov_disp_sequence=>14
+,p_lov_disp_value=>'Orange'
+,p_lov_return_value=>'orange'
+);
+wwv_flow_imp.component_end;
+end;
+/

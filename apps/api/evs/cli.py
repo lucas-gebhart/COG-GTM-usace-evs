@@ -1,9 +1,20 @@
 import json
+import sys
 from pathlib import Path
 
 import typer
 
 app = typer.Typer(help="EVS operations CLI", no_args_is_help=True)
+FIXTURE_DIR = Path(__file__).resolve().parents[1] / "fixtures"
+
+
+def _seed_package() -> None:
+    """Make db/seed importable (repo checkout or the /db copy baked into the API image)."""
+    from evs.db.migrate import default_migrations_dir
+
+    seed_dir = default_migrations_dir().parent / "seed"
+    if str(seed_dir) not in sys.path:
+        sys.path.insert(0, str(seed_dir))
 
 
 @app.command()
@@ -17,6 +28,31 @@ def migrate() -> None:
 
 
 @app.command()
+def seed(
+    reset: bool = typer.Option(False, "--reset", help="Truncate evs.* and synth.* before seeding"),
+) -> None:
+    """Load public samples (GIS, LPMS, SRP) and generate the synthetic CEFMS/P2/EMS/CMP/BUILDER data."""
+    from evs.settings import get_settings
+
+    _seed_package()
+    from evs_seed.run import seed as run_seed
+
+    for table, count in run_seed(get_settings().database_url_sync, reset_first=reset, log=typer.echo).items():
+        typer.echo(f"{table:28s} {count:>8}")
+
+
+@app.command("dump-fixtures")
+def dump_fixtures(out: Path = FIXTURE_DIR) -> None:
+    """Regenerate apps/api/fixtures/*.json from the seeded database."""
+    from evs.settings import get_settings
+
+    _seed_package()
+    from evs_seed.dump import dump
+
+    dump(get_settings().database_url_sync, out, log=typer.echo)
+
+
+@app.command()
 def openapi(out: Path = Path("../../packages/contract/openapi.json")) -> None:
     """Write the OpenAPI 3.1 contract consumed by the web client generator."""
     from evs.main import create_app
@@ -27,10 +63,31 @@ def openapi(out: Path = Path("../../packages/contract/openapi.json")) -> None:
 
 
 @app.command()
-def ingest(once: bool = True) -> None:
-    """Run the public-feed ingestion cycle (implemented in WP5a)."""
-    typer.echo("ingest: not implemented yet (WP5a)")
-    raise typer.Exit(code=2)
+def ingest(
+    once: bool = typer.Option(False, "--once", help="Run GIS, gauges and LPMS cycles once and exit."),
+    loop: bool = typer.Option(
+        False,
+        "--loop",
+        help="Run forever: LPMS every EVS_INGEST_INTERVAL_SECONDS (900), gauges 30 min, GIS daily.",
+    ),
+    source: str | None = typer.Option(None, help="Override EVS_FEED_SOURCE: live, fixtures or simulated."),
+) -> None:
+    """Poll the public feeds (LPMS, NDC GIS, NOAA NWPS, USGS NWIS), evaluate lock status, notify the API."""
+    import logging
+
+    from evs.ingest.worker import IngestWorker
+    from evs.settings import get_settings
+
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s %(message)s")
+    settings = get_settings()
+    if source:
+        settings = settings.model_copy(update={"feed_source": source})
+    worker = IngestWorker(settings)
+    if loop:
+        worker.run_loop()
+    else:
+        summary = worker.run_once()
+        typer.echo(json.dumps(summary, indent=2, default=str))
 
 
 if __name__ == "__main__":

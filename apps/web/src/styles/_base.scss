@@ -1,0 +1,107 @@
+// Base element styles, focus, motion, reflow and forced-colors rules.
+
+html, body, #root { min-height: 100%; }
+
+body {
+  background: var(--evs-color-bg);
+  color: var(--evs-color-ink);
+  font-family: var(--evs-font-body);
+  line-height: var(--evs-line-body);
+}
+
+// Leadership mode: 1920x1080 big screen, type scale x1.4, dark palette (section 3.2.3 of the 508 report).
+html[data-theme="leadership"] {
+  font-size: 140%;
+  color-scheme: dark;
+  background: var(--evs-color-bg);
+
+  body { background: var(--evs-color-bg); color: var(--evs-color-ink); }
+  a, .usa-link, .usa-footer a, .usa-nav a, .usa-nav__primary > .usa-nav__primary-item > a, .usa-breadcrumb__link, .usa-identifier a, .usa-button--unstyled,
+  .usa-banner__button, .usa-banner__button-text { color: var(--evs-color-link); }
+  .usa-header, .usa-footer, .usa-banner, .usa-nav { background: var(--evs-color-panel); color: var(--evs-color-ink); }
+  .usa-banner__header, .usa-banner__inner, .usa-banner__content { color: var(--evs-color-ink); }
+  .usa-nav__primary a, .usa-nav__primary button, .usa-logo a, .usa-menu-btn { color: var(--evs-color-ink); }
+  .usa-nav__primary .usa-current, .usa-nav__primary a[aria-current="page"] { color: var(--evs-color-ink); }
+  .usa-nav__primary .usa-current::after, .usa-nav__primary a[aria-current="page"]::after { background: var(--evs-color-link); }
+  .usa-table, .usa-table td, .usa-table th { background: var(--evs-color-bg); color: var(--evs-color-ink); border-color: var(--evs-color-hairline); }
+  .usa-table thead th { background: var(--evs-color-panel); }
+  .usa-button { background: var(--evs-color-link); color: #13171f; } // blue-30v under blue-warm-90 text 8.02:1
+  .usa-button--outline { background: transparent; color: var(--evs-color-link); box-shadow: inset 0 0 0 2px var(--evs-color-link); }
+  .usa-button--unstyled { color: var(--evs-color-link); }
+  .usa-input, .usa-select, .usa-textarea { background: var(--evs-color-panel); color: var(--evs-color-ink); border-color: var(--evs-color-ink-secondary); }
+  .usa-label, .usa-legend, .usa-hint { color: var(--evs-color-ink); }
+  .usa-breadcrumb { background: transparent; }
+  .usa-breadcrumb__link, .usa-breadcrumb__list-item { color: var(--evs-color-ink-secondary); }
+  .usa-alert { background: var(--evs-color-panel); color: var(--evs-color-ink); }
+  .usa-pagination .usa-pagination__button, .usa-pagination .usa-pagination__link { color: var(--evs-color-link); border-color: var(--evs-color-hairline); }
+  .usa-pagination .usa-current { background: var(--evs-color-link); color: #13171f; }
+  .usa-tooltip__body { background: var(--evs-color-ink); color: var(--evs-color-bg); }
+  .usa-footer, .usa-footer * { color: var(--evs-color-ink-secondary); }
+  .usa-skipnav { background: var(--evs-color-panel); color: var(--evs-color-link); }
+}
+
+// The hidden attribute must win over component display rules (FilterBar mobile disclosure).
+[hidden] { display: none !important; }
+
+// Focus: USWDS default ring, never removed without a replacement (2.4.7). Double ring keeps 3:1 on any surface.
+:focus-visible {
+  outline: 0.25rem solid var(--evs-color-focus);
+  outline-offset: 0.25rem;
+}
+.evs-main:focus { outline: none; }
+.evs-skipnav:focus { position: static; width: auto; height: auto; }
+
+// Sticky headers must not hide the focused element (WCAG 2.2 2.4.11)
+html { scroll-padding-top: 5rem; }
+
+.evs-sr-only, .evs-visually-hidden {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+.evs-tabular { font-variant-numeric: tabular-nums; font-family: var(--evs-font-mono); }
+
+// Headings: one h1 per route, each widget owns an h2/h3 that is also its accessible name.
+h1, .evs-h1 { font-size: var(--evs-text-2xl); line-height: var(--evs-line-heading); margin: 0 0 var(--evs-space-3); }
+h2, .evs-h2 { font-size: var(--evs-text-xl); line-height: var(--evs-line-heading); }
+h3, .evs-h3 { font-size: var(--evs-text-lg); line-height: var(--evs-line-heading); }
+h4, .evs-h4 { font-size: var(--evs-text-md); font-weight: 700; line-height: var(--evs-line-heading); }
+p { max-width: 75ch; } // 45 to 75 character measure
+
+// Reflow: nothing scrolls horizontally at 320 px except tables, Gantt and map (1.4.10). Widgets stack in one column.
+.evs-grid { display: grid; gap: var(--evs-space-3); grid-template-columns: 1fr; }
+.evs-grid--kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (min-width: 40em) { // 640 px tablet, 2 columns
+  .evs-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .evs-grid--kpis { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (min-width: 64em) { // 1024 px desktop, 12 columns
+  .evs-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .evs-grid--rail { grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); }
+}
+img, svg, video { max-width: 100%; height: auto; }
+.evs-break-anywhere { overflow-wrap: anywhere; word-break: break-word; }
+.evs-scroll-x { overflow-x: auto; max-width: 100%; scrollbar-gutter: stable; }
+.evs-scroll-x:focus-visible { outline-offset: 0; }
+
+// Motion: nothing animates under reduced motion (2.2.2, 2.3.1)
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Windows High Contrast / forced colours: system colours replace fills; shapes, dashes and text carry the meaning.
+@media (forced-colors: active) {
+  :focus-visible { outline: 0.25rem solid Highlight; }
+  .evs-marker__shape { fill: Canvas !important; stroke: CanvasText !important; }
+  .evs-marker__glyph, .evs-marker__ring { stroke: CanvasText !important; fill: CanvasText !important; }
+  .evs-chip { border: 1px solid CanvasText; forced-color-adjust: none; background: Canvas !important; color: CanvasText !important; }
+  .evs-chip__shape { fill: Canvas !important; stroke: CanvasText !important; }
+  .evs-figure .recharts-surface path, .evs-figure .recharts-surface line { stroke: CanvasText; }
+  .evs-figure .recharts-surface rect[fill^="url("] { fill: Highlight; }
+  .evs-skeleton__bar { background: GrayText; }
+}

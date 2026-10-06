@@ -2,400 +2,3132 @@
  "target": "WCAG 2.1 AA (Revised Section 508)",
  "routes": [
   {
-   "route": "/",
-   "viewport": "mobile-360",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/",
-   "viewport": "mobile-360",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/",
+   "route": "/accessibility",
    "viewport": "desktop-1280",
-   "theme": "light",
+   "theme": "leadership",
+   "reduced_motion": false,
    "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/",
-   "viewport": "desktop-1280",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/programs",
-   "viewport": "mobile-360",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/programs",
-   "viewport": "mobile-360",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/programs",
-   "viewport": "desktop-1280",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/programs",
-   "viewport": "desktop-1280",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/projects/123456",
-   "viewport": "mobile-360",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/projects/123456",
-   "viewport": "mobile-360",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/projects/123456",
-   "viewport": "desktop-1280",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/projects/123456",
-   "viewport": "desktop-1280",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/financial",
-   "viewport": "mobile-360",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/financial",
-   "viewport": "mobile-360",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/financial",
-   "viewport": "desktop-1280",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/financial",
-   "viewport": "desktop-1280",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/workforce",
-   "viewport": "mobile-360",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/workforce",
-   "viewport": "mobile-360",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/workforce",
-   "viewport": "desktop-1280",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/workforce",
-   "viewport": "desktop-1280",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/schedule",
-   "viewport": "mobile-360",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/schedule",
-   "viewport": "mobile-360",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/schedule",
-   "viewport": "desktop-1280",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/schedule",
-   "viewport": "desktop-1280",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/facilities",
-   "viewport": "mobile-360",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/facilities",
-   "viewport": "mobile-360",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/facilities",
-   "viewport": "desktop-1280",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/facilities",
-   "viewport": "desktop-1280",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/public/srp",
-   "viewport": "mobile-360",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/public/srp",
-   "viewport": "mobile-360",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/public/srp",
-   "viewport": "desktop-1280",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/public/srp",
-   "viewport": "desktop-1280",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/public/locks",
-   "viewport": "mobile-360",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/public/locks",
-   "viewport": "mobile-360",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/public/locks",
-   "viewport": "desktop-1280",
-   "theme": "light",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/public/locks",
-   "viewport": "desktop-1280",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:22.846000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
   },
   {
    "route": "/accessibility",
-   "viewport": "mobile-360",
-   "theme": "light",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": true,
    "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
-  },
-  {
-   "route": "/accessibility",
-   "viewport": "mobile-360",
-   "theme": "leadership-dark",
-   "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:44.499000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
   },
   {
    "route": "/accessibility",
    "viewport": "desktop-1280",
    "theme": "light",
+   "reduced_motion": false,
    "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:38.316000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
   },
   {
    "route": "/accessibility",
    "viewport": "desktop-1280",
-   "theme": "leadership-dark",
+   "theme": "light",
+   "reduced_motion": true,
    "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:00.283000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
   },
   {
-   "route": "/admin",
+   "route": "/accessibility",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:28.100000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/accessibility",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:48.134000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/accessibility",
    "viewport": "mobile-360",
    "theme": "light",
+   "reduced_motion": false,
    "violations": 0,
-   "passes": 0,
-   "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:47.086000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/accessibility",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:06.961000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/accessibility",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:54.238000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/accessibility",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:15.674000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/accessibility",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:10.611000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/accessibility",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:31.625000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/accessibility",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:52.746000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/accessibility",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:04:14.980000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/accessibility",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:07.672000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/accessibility",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:29.550000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
   },
   {
    "route": "/admin",
-   "viewport": "mobile-360",
-   "theme": "leadership-dark",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": false,
    "violations": 0,
-   "passes": 0,
+   "passes": 51,
    "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:21.525000+00:00",
+   "violation_details": [],
+   "incomplete_rules": []
+  },
+  {
+   "route": "/admin",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 0,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:43.345000+00:00",
+   "violation_details": [],
+   "incomplete_rules": []
   },
   {
    "route": "/admin",
    "viewport": "desktop-1280",
    "theme": "light",
+   "reduced_motion": false,
    "violations": 0,
-   "passes": 0,
+   "passes": 51,
    "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:36.959000+00:00",
+   "violation_details": [],
+   "incomplete_rules": []
   },
   {
    "route": "/admin",
    "viewport": "desktop-1280",
-   "theme": "leadership-dark",
+   "theme": "light",
+   "reduced_motion": true,
    "violations": 0,
-   "passes": 0,
+   "passes": 51,
    "incomplete": 0,
-   "run_at": "2026-10-06T14:30:00+00:00"
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:58.991000+00:00",
+   "violation_details": [],
+   "incomplete_rules": []
+  },
+  {
+   "route": "/admin",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 48,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:26.586000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/admin",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 48,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:47.162000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/admin",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 48,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:45.619000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/admin",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 48,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:06.020000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/admin",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 0,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:52.457000+00:00",
+   "violation_details": [],
+   "incomplete_rules": []
+  },
+  {
+   "route": "/admin",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 0,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:14.121000+00:00",
+   "violation_details": [],
+   "incomplete_rules": []
+  },
+  {
+   "route": "/admin",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 0,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:08.894000+00:00",
+   "violation_details": [],
+   "incomplete_rules": []
+  },
+  {
+   "route": "/admin",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 0,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:30.361000+00:00",
+   "violation_details": [],
+   "incomplete_rules": []
+  },
+  {
+   "route": "/admin",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 0,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:51.417000+00:00",
+   "violation_details": [],
+   "incomplete_rules": []
+  },
+  {
+   "route": "/admin",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 0,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:04:13.495000+00:00",
+   "violation_details": [],
+   "incomplete_rules": []
+  },
+  {
+   "route": "/admin",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 0,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:06.262000+00:00",
+   "violation_details": [],
+   "incomplete_rules": []
+  },
+  {
+   "route": "/admin",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 0,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:28.369000+00:00",
+   "violation_details": [],
+   "incomplete_rules": []
+  },
+  {
+   "route": "/facilities",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:12.035000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:34.209000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:27.441000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:49.675000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:17.773000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:38.749000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:35.851000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:57.589000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:43.202000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:05.282000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:59.683000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:21.669000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:41.490000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:04:04.114000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:56.340000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/facilities",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:19.150000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:08.052000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:30.050000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:23.362000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:45.665000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:14.405000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:34.745000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:31.792000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:53.681000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:39.502000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:01.303000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:56.147000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:17.349000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:37.721000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:04:00.241000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:52.588000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/financial",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:14.918000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:02.832000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:25.357000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:18.273000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:40.833000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:09.306000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:30.403000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:26.305000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:49.456000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:34.210000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:56.665000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:50.634000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:13.019000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:32.182000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:55.279000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:47.162000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/programs",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:10.191000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:04.929000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:27.205000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:20.116000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:42.798000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:11.526000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:31.948000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:28.801000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:50.975000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:05.466000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:27.905000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:20.952000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:43.456000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:11.785000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:32.886000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:29.494000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:51.869000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:36.601000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:59.214000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:53.162000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:15.545000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:34.798000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:57.848000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:49.697000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects/:p2",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 49,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:12.778000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:36.254000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:58.330000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:52.961000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:14.443000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:34.386000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:57.290000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:49.226000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/projects",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:11.994000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:17.808000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:39.519000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:33.350000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:55.300000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:18.891000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:40.732000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:34.339000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:56.339000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:24.040000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:44.683000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:43.124000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:03.570000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:49.783000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:11.609000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:06.274000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:27.794000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:48.834000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:04:10.893000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:03.665000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks/:id",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:25.731000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:23.372000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:43.493000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:42.385000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:02.449000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:49.047000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:10.713000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:05.646000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:26.622000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:47.740000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:04:09.918000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:02.571000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/locks",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:24.491000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:16.317000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:38.341000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:31.747000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:53.903000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:21.624000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:42.400000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:40.373000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:01.277000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:47.275000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:09.150000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:03.789000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:25.452000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:46.331000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:04:08.443000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:01.114000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/public/srp",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 44,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:23.424000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast",
+    "link-in-text-block"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 46,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:02.117000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 46,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:24.538000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 46,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:17.295000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 46,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:40.105000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:08.990000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:29.489000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:26.971000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 43,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:48.565000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 46,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:33.646000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 46,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:55.569000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 46,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:50.287000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 46,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:11.748000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 46,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:31.484000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 46,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:54.560000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 46,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:46.467000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 46,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:09.204000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:13.972000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:35.671000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:29.427000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:51.625000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:19.971000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:40.228000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:38.369000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:59.159000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:45.351000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:07.111000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:01.989000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:22.944000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:43.825000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:04:06.287000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:58.685000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/schedule",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 50,
+   "incomplete": 2,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:20.745000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "aria-valid-attr-value",
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:08.978000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "desktop-1280",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:31.040000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:24.405000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "desktop-1280",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:46.616000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:14.940000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "mobile-360",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:35.858000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:32.722000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "mobile-360",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:58:54.815000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:40.208000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "tablet-768",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:01:02.270000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T21:59:56.582000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "tablet-768",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 52,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:00:18.724000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:38.447000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "wide-1920",
+   "theme": "leadership",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:04:01.150000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": false,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:02:53.323000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
+  },
+  {
+   "route": "/workforce",
+   "viewport": "wide-1920",
+   "theme": "light",
+   "reduced_motion": true,
+   "violations": 0,
+   "passes": 51,
+   "incomplete": 1,
+   "advisories": 0,
+   "run_at": "2026-10-06T22:03:15.974000+00:00",
+   "violation_details": [],
+   "incomplete_rules": [
+    "color-contrast"
+   ]
   }
  ],
  "criteria": [
@@ -403,38 +3135,2014 @@
    "criterion": "1.1.1",
    "name": "Non-text Content",
    "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
    "method": "automated",
-   "status": "not-evaluated"
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [image-alt, svg-img-alt, role-img-alt, input-image-alt, object-alt, aria-meter-name, aria-progressbar-name]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: MT-SR-01 (chart names and descriptions, map marker names) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-SR-01"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.1.1",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/non-text-content"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "1.2.1",
+   "name": "Audio-only and Video-only (Prerecorded)",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "not_applicable",
+   "status": "not-applicable",
+   "notes": "EVS ships no audio or video content.",
+   "detail": "NOT APPLICABLE: EVS ships no audio or video content.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.2.1",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded"
+    }
+   ]
+  },
+  {
+   "criterion": "1.2.2",
+   "name": "Captions (Prerecorded)",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "not_applicable",
+   "status": "not-applicable",
+   "notes": "EVS ships no audio or video content.",
+   "detail": "NOT APPLICABLE: EVS ships no audio or video content.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.2.2",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded"
+    }
+   ]
+  },
+  {
+   "criterion": "1.2.3",
+   "name": "Audio Description or Media Alternative (Prerecorded)",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "not_applicable",
+   "status": "not-applicable",
+   "notes": "EVS ships no audio or video content.",
+   "detail": "NOT APPLICABLE: EVS ships no audio or video content.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.2.3",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded"
+    }
+   ]
+  },
+  {
+   "criterion": "1.3.1",
+   "name": "Info and Relationships",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "automated",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [list, listitem, definition-list, dlitem, th-has-data-cells, td-headers-attr, td-has-header, table-fake-caption, aria-required-children, aria-required-parent, p-as-heading]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: MT-SR-02 (table header and scope reading, KPI tile semantics, chart \"view as table\") not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-SR-02"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.3.1",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "1.3.2",
+   "name": "Meaningful Sequence",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-SR-03 (reading order matches visual order on each route at 320 px and 1280 px) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-SR-03"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.3.2",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "1.3.3",
+   "name": "Sensory Characteristics",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-VIS-01 (status never conveyed by colour, shape or position alone (icon + text label)) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-VIS-01"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.3.3",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "1.3.4",
+   "name": "Orientation",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "automated",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [css-orientation-lock]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: MT-RESP-01 (portrait and landscape on tablet) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-RESP-01"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.3.4",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/orientation"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "1.3.5",
+   "name": "Identify Input Purpose",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "automated",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [autocomplete-valid]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: MT-FORM-01 (login and profile fields carry autocomplete tokens) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-FORM-01"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.3.5",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "1.4.1",
+   "name": "Use of Color",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "automated",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [link-in-text-block]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: MT-VIS-01 (colour-vision simulation on status chips, map markers and chart series) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-VIS-01"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.4.1",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/use-of-color"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "1.4.2",
+   "name": "Audio Control",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "not_applicable",
+   "status": "not-applicable",
+   "notes": "EVS ships no audio.",
+   "detail": "NOT APPLICABLE: EVS ships no audio.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.4.2",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/audio-control"
+    }
+   ]
   },
   {
    "criterion": "1.4.3",
    "name": "Contrast (Minimum)",
    "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
    "method": "automated",
-   "status": "not-evaluated"
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [color-contrast]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: MT-VIS-02 (contrast spot-check of chart labels drawn in SVG or canvas (axe cannot read canvas text)) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-VIS-02"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.4.3",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/visual-audio-contrast-contrast"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "1.4.4",
+   "name": "Resize text",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-ZOOM-01 (200% browser zoom on every route) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-ZOOM-01"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.4.4",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/visual-audio-contrast-scale"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "1.4.5",
+   "name": "Images of Text",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-VIS-03 (no images of text (logos exempt)) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-VIS-03"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.4.5",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/visual-audio-contrast-text-presentation"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
   },
   {
    "criterion": "1.4.10",
    "name": "Reflow",
    "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
    "method": "manual",
-   "status": "not-evaluated"
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. SMOKE: 320 px reflow smoke (no horizontal scroll, both themes): 26/26 cells passed. MANUAL: MT-ZOOM-02 (400% zoom / 320 px reflow; tables and Gantt may scroll in two dimensions with visible scrollbars) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-ZOOM-02"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.4.10",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/reflow"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "1.4.11",
+   "name": "Non-text Contrast",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-VIS-04 (3:1 for focus rings, chart lines and markers, map markers against the basemap, input borders) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-VIS-04"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.4.11",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "1.4.12",
+   "name": "Text Spacing",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "automated",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [avoid-inline-spacing]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: MT-ZOOM-03 (text-spacing bookmarklet on every route) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-ZOOM-03"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.4.12",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/text-spacing"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "1.4.13",
+   "name": "Content on Hover or Focus",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. SMOKE: keyboard smoke (skip link first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-04 (tooltips and popovers are dismissible with Escape, hoverable and persistent) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-KBD-04"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 1.4.13",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
   },
   {
    "criterion": "2.1.1",
    "name": "Keyboard",
    "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "automated",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [scrollable-region-focusable, frame-focusable-content, server-side-image-map]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. SMOKE: keyboard smoke (skip link first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-01 (keyboard-only pass of every route including charts (arrow keys) and map (Tab to markers, Enter opens popover)) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-KBD-01"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.1.1",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/keyboard"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.1.2",
+   "name": "No Keyboard Trap",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
    "method": "manual",
-   "status": "not-evaluated"
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. SMOKE: keyboard smoke (skip link first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-02 (no traps in modal, date picker, map canvas) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-KBD-02"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.1.2",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.1.4",
+   "name": "Character Key Shortcuts",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-KBD-03 (single-key shortcuts only active while a component has focus) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-KBD-03"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.1.4",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.2.1",
+   "name": "Timing Adjustable",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "automated",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [meta-refresh]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: MT-TIME-01 (session timeout warning with extend; live feed refresh does not move focus) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-TIME-01"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.2.1",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.2.2",
+   "name": "Pause, Stop, Hide",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "automated",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [blink, marquee]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: MT-MOTION-01 (live table and map updates can be paused; prefers-reduced-motion honoured) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-MOTION-01"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.2.2",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.3.1",
+   "name": "Three Flashes or Below Threshold",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-MOTION-02 (no flashing content) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-MOTION-02"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.3.1",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.4.1",
+   "name": "Bypass Blocks",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "automated",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [bypass]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. SMOKE: keyboard smoke (skip link first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-05 (skip link and landmarks (banner, navigation, main, contentinfo)) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-KBD-05"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.4.1",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.4.2",
+   "name": "Page Titled",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "automated",
+   "status": "supports",
+   "notes": "Automated cells pass and manual attestation supports.",
+   "detail": "AUTOMATED: axe rules [document-title]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.4.2",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/page-titled"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.4.3",
+   "name": "Focus Order",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. SMOKE: keyboard smoke (skip link first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-06 (focus order in filters, dialogs, popovers and after route change) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-KBD-06"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.4.3",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/focus-order"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.4.4",
+   "name": "Link Purpose (In Context)",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "automated",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [link-name]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: MT-SR-04 (link text understandable in context) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-SR-04"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.4.4",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.4.5",
+   "name": "Multiple Ways",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-SR-05 (global navigation plus in-page links and breadcrumbs) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-SR-05"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.4.5",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.4.6",
+   "name": "Headings and Labels",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-SR-05 (headings and labels are descriptive) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-SR-05"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.4.6",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.4.7",
+   "name": "Focus Visible",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. SMOKE: keyboard smoke (skip link first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-07 (focus visible on every interactive element including chart points and map markers) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-KBD-07"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.4.7",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/focus-visible"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.5.1",
+   "name": "Pointer Gestures",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-TOUCH-01 (map pinch and drag have button alternatives) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-TOUCH-01"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.5.1",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/pointer-gestures"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.5.2",
+   "name": "Pointer Cancellation",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-TOUCH-02 (actions fire on the up event; drag can be cancelled) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-TOUCH-02"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.5.2",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/pointer-cancellation"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.5.3",
+   "name": "Label in Name",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "automated",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [label-content-name-mismatch]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: MT-SR-06 (visible label is part of the accessible name) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-SR-06"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.5.3",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/label-in-name"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "2.5.4",
+   "name": "Motion Actuation",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "not_applicable",
+   "status": "not-applicable",
+   "notes": "EVS has no motion-actuated functions.",
+   "detail": "NOT APPLICABLE: EVS has no motion-actuated functions.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 2.5.4",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation"
+    }
+   ]
+  },
+  {
+   "criterion": "3.1.1",
+   "name": "Language of Page",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "automated",
+   "status": "supports",
+   "notes": "Automated cells pass and manual attestation supports.",
+   "detail": "AUTOMATED: axe rules [html-has-lang, html-lang-valid, html-xml-lang-mismatch]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 3.1.1",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/language-of-page"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "3.1.2",
+   "name": "Language of Parts",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "automated",
+   "status": "supports",
+   "notes": "Automated cells pass and manual attestation supports.",
+   "detail": "AUTOMATED: axe rules [valid-lang]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 3.1.2",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "3.2.1",
+   "name": "On Focus",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-KBD-08 (focusing a filter does not change context) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-KBD-08"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 3.2.1",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/on-focus"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "3.2.2",
+   "name": "On Input",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-FORM-02 (filter changes announced, no auto-submit surprises) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-FORM-02"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 3.2.2",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/on-input"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "3.2.3",
+   "name": "Consistent Navigation",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-SR-05 (consistent header and navigation across routes) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-SR-05"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 3.2.3",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "3.2.4",
+   "name": "Consistent Identification",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-SR-05 (consistent icon and label vocabulary (status chips, as-of badges)) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-SR-05"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 3.2.4",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "3.3.1",
+   "name": "Error Identification",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-FORM-03 (error identified in text, aria-describedby, focus moved to summary) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-FORM-03"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 3.3.1",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/error-identification"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "3.3.2",
+   "name": "Labels or Instructions",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "automated",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [label, form-field-multiple-labels]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: MT-FORM-04 (labels and hints present) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-FORM-04"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 3.3.2",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "3.3.3",
+   "name": "Error Suggestion",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-FORM-05 (suggestions in error text) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-FORM-05"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 3.3.3",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "3.3.4",
+   "name": "Error Prevention (Legal, Financial, Data)",
+   "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-FORM-06 (admin data-source edits are reversible or confirmed) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-FORM-06"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 3.3.4",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "4.1.1",
+   "name": "Parsing",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "automated",
+   "status": "supports",
+   "notes": "Automated cells pass and manual attestation supports.",
+   "detail": "AUTOMATED: axe rules [duplicate-id, duplicate-id-active]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 4.1.1",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/parsing"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "4.1.2",
+   "name": "Name, Role, Value",
+   "level": "A",
+   "chapter": "success_criteria_level_a",
+   "chapter_title": "WCAG 2.1 Level A",
+   "method": "automated",
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: axe rules [button-name, aria-allowed-attr, aria-required-attr, aria-valid-attr, aria-valid-attr-value, aria-roles, aria-hidden-focus, aria-command-name, aria-input-field-name, aria-toggle-field-name, aria-tooltip-name, aria-tab-name, nested-interactive, select-name, input-button-name, frame-title]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit a154046dbf8e; run 2026-10-06 22:04 UTC. MANUAL: MT-SR-07 (name, role, value and state for custom widgets (sortable headers, chips, map markers, chart points)) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 208,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-SR-07"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 4.1.2",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/name-role-value"
+    },
+    {
+     "label": "axe results, 208 cells",
+     "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
   },
   {
    "criterion": "4.1.3",
    "name": "Status Messages",
    "level": "AA",
+   "chapter": "success_criteria_level_aa",
+   "chapter_title": "WCAG 2.1 Level AA",
    "method": "manual",
-   "status": "not-evaluated"
+   "status": "not-evaluated",
+   "notes": "Evidence incomplete; no claim made.",
+   "detail": "AUTOMATED: no axe-core rule covers this criterion; evidence is manual. MANUAL: MT-SR-08 (aria-live announcements for as-of updates, filter result counts, save confirmations) not yet attested. Not a conformance claim until every row carries evidence.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-SR-08"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Understanding 4.1.3",
+     "href": "https://www.w3.org/WAI/WCAG21/Understanding/status-messages"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  }
+ ],
+ "section508": [
+  {
+   "criterion": "302.1",
+   "name": "Without Vision",
+   "level": "508",
+   "chapter": "functional_performance_criteria",
+   "chapter_title": "Revised 508 Chapter 3: Functional performance criteria",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "screen reader pass (NVDA, JAWS, VoiceOver) on all routes; charts expose \"view as table\"; map exposes a list view (MT-SR-01, MT-SR-02, MT-SR-03, MT-SR-07). Not yet attested; no claim made.",
+   "detail": "screen reader pass (NVDA, JAWS, VoiceOver) on all routes; charts expose \"view as table\"; map exposes a list view (MT-SR-01, MT-SR-02, MT-SR-03, MT-SR-07). Not yet attested; no claim made.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-SR-01",
+    "MT-SR-02",
+    "MT-SR-03",
+    "MT-SR-07"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#302-functional-performance-criteria"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "302.2",
+   "name": "With Limited Vision",
+   "level": "508",
+   "chapter": "functional_performance_criteria",
+   "chapter_title": "Revised 508 Chapter 3: Functional performance criteria",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "400% zoom reflow, user font scaling, 4.5:1 text contrast, 3:1 non-text contrast (MT-ZOOM-01, MT-ZOOM-02, MT-VIS-02, MT-VIS-04). Not yet attested; no claim made.",
+   "detail": "400% zoom reflow, user font scaling, 4.5:1 text contrast, 3:1 non-text contrast (MT-ZOOM-01, MT-ZOOM-02, MT-VIS-02, MT-VIS-04). Not yet attested; no claim made.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-ZOOM-01",
+    "MT-ZOOM-02",
+    "MT-VIS-02",
+    "MT-VIS-04"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#302-functional-performance-criteria"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "302.3",
+   "name": "Without Perception of Color",
+   "level": "508",
+   "chapter": "functional_performance_criteria",
+   "chapter_title": "Revised 508 Chapter 3: Functional performance criteria",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "status encoded with icon + text + colour; colour-blind-safe palette; patterns in stacked charts (MT-VIS-01). Not yet attested; no claim made.",
+   "detail": "status encoded with icon + text + colour; colour-blind-safe palette; patterns in stacked charts (MT-VIS-01). Not yet attested; no claim made.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-VIS-01"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#302-functional-performance-criteria"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "302.4",
+   "name": "Without Hearing",
+   "level": "508",
+   "chapter": "functional_performance_criteria",
+   "chapter_title": "Revised 508 Chapter 3: Functional performance criteria",
+   "method": "not_applicable",
+   "status": "not-applicable",
+   "notes": "no audio content; all information is visual and textual. Attested not-applicable by unnamed tester on undated with no AT recorded. no audio content; all information is visual and textual",
+   "detail": "no audio content; all information is visual and textual. Attested not-applicable by unnamed tester on undated with no AT recorded. no audio content; all information is visual and textual",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#302-functional-performance-criteria"
+    }
+   ]
+  },
+  {
+   "criterion": "302.5",
+   "name": "With Limited Hearing",
+   "level": "508",
+   "chapter": "functional_performance_criteria",
+   "chapter_title": "Revised 508 Chapter 3: Functional performance criteria",
+   "method": "not_applicable",
+   "status": "not-applicable",
+   "notes": "no audio content. Attested not-applicable by unnamed tester on undated with no AT recorded. no audio content",
+   "detail": "no audio content. Attested not-applicable by unnamed tester on undated with no AT recorded. no audio content",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#302-functional-performance-criteria"
+    }
+   ]
+  },
+  {
+   "criterion": "302.6",
+   "name": "Without Speech",
+   "level": "508",
+   "chapter": "functional_performance_criteria",
+   "chapter_title": "Revised 508 Chapter 3: Functional performance criteria",
+   "method": "not_applicable",
+   "status": "not-applicable",
+   "notes": "no speech input required. Attested not-applicable by unnamed tester on undated with no AT recorded. no speech input required",
+   "detail": "no speech input required. Attested not-applicable by unnamed tester on undated with no AT recorded. no speech input required",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#302-functional-performance-criteria"
+    }
+   ]
+  },
+  {
+   "criterion": "302.7",
+   "name": "With Limited Manipulation",
+   "level": "508",
+   "chapter": "functional_performance_criteria",
+   "chapter_title": "Revised 508 Chapter 3: Functional performance criteria",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "keyboard-only operation, 44 px targets, no path-based gestures required (MT-KBD-01, MT-TOUCH-01, MT-TOUCH-02). Not yet attested; no claim made.",
+   "detail": "keyboard-only operation, 44 px targets, no path-based gestures required (MT-KBD-01, MT-TOUCH-01, MT-TOUCH-02). Not yet attested; no claim made.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-KBD-01",
+    "MT-TOUCH-01",
+    "MT-TOUCH-02"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#302-functional-performance-criteria"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "302.8",
+   "name": "With Limited Reach and Strength",
+   "level": "508",
+   "chapter": "functional_performance_criteria",
+   "chapter_title": "Revised 508 Chapter 3: Functional performance criteria",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "keyboard and single-pointer operation, no simultaneous actions (MT-KBD-01, MT-TOUCH-01). Not yet attested; no claim made.",
+   "detail": "keyboard and single-pointer operation, no simultaneous actions (MT-KBD-01, MT-TOUCH-01). Not yet attested; no claim made.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-KBD-01",
+    "MT-TOUCH-01"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#302-functional-performance-criteria"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "302.9",
+   "name": "With Limited Language, Cognitive, and Learning Abilities",
+   "level": "508",
+   "chapter": "functional_performance_criteria",
+   "chapter_title": "Revised 508 Chapter 3: Functional performance criteria",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "consistent navigation, plain-language labels, error suggestions, pausable live updates (MT-SR-05, MT-FORM-02, MT-FORM-05). Not yet attested; no claim made.",
+   "detail": "consistent navigation, plain-language labels, error suggestions, pausable live updates (MT-SR-05, MT-FORM-02, MT-FORM-05). Not yet attested; no claim made.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [
+    "MT-SR-05",
+    "MT-FORM-02",
+    "MT-FORM-05"
+   ],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#302-functional-performance-criteria"
+    },
+    {
+     "label": "Manual test plan",
+     "href": "https://github.com/lucas-gebhart/COG-GTM-usace-evs/blob/main/docs/a11y/MANUAL_TEST_PLAN.md"
+    }
+   ]
+  },
+  {
+   "criterion": "602.2",
+   "name": "Accessibility and Compatibility Features",
+   "level": "508",
+   "chapter": "support_documentation_and_services",
+   "chapter_title": "Revised 508 Chapter 6: Support documentation and services",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "docs/a11y/README.md and the in-app /accessibility page document keyboard model, screen reader notes, zoom and reduced-motion behaviour. Not yet attested; no claim made.",
+   "detail": "docs/a11y/README.md and the in-app /accessibility page document keyboard model, screen reader notes, zoom and reduced-motion behaviour. Not yet attested; no claim made.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#602-support-documentation"
+    }
+   ]
+  },
+  {
+   "criterion": "602.3",
+   "name": "Electronic Support Documentation",
+   "level": "508",
+   "chapter": "support_documentation_and_services",
+   "chapter_title": "Revised 508 Chapter 6: Support documentation and services",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "documentation is Markdown and HTML conforming to WCAG 2.1 AA. Not yet attested; no claim made.",
+   "detail": "documentation is Markdown and HTML conforming to WCAG 2.1 AA. Not yet attested; no claim made.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#602-support-documentation"
+    }
+   ]
+  },
+  {
+   "criterion": "602.4",
+   "name": "Alternate Formats for Non-Electronic Support Documentation",
+   "level": "508",
+   "chapter": "support_documentation_and_services",
+   "chapter_title": "Revised 508 Chapter 6: Support documentation and services",
+   "method": "not_applicable",
+   "status": "not-applicable",
+   "notes": "alternate formats on request via the feedback mailbox. Attested not-applicable by unnamed tester on undated with no AT recorded. alternate formats on request via the feedback mailbox",
+   "detail": "alternate formats on request via the feedback mailbox. Attested not-applicable by unnamed tester on undated with no AT recorded. alternate formats on request via the feedback mailbox",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#602-support-documentation"
+    }
+   ]
+  },
+  {
+   "criterion": "603.2",
+   "name": "Information on Accessibility and Compatibility Features",
+   "level": "508",
+   "chapter": "support_documentation_and_services",
+   "chapter_title": "Revised 508 Chapter 6: Support documentation and services",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "support contact available via email; TTY and relay noted. Not yet attested; no claim made.",
+   "detail": "support contact available via email; TTY and relay noted. Not yet attested; no claim made.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#602-support-documentation"
+    }
+   ]
+  },
+  {
+   "criterion": "603.3",
+   "name": "Accommodation of Communication Needs",
+   "level": "508",
+   "chapter": "support_documentation_and_services",
+   "chapter_title": "Revised 508 Chapter 6: Support documentation and services",
+   "method": "manual",
+   "status": "not-evaluated",
+   "notes": "support staff briefed on accessibility features and feedback triage. Not yet attested; no claim made.",
+   "detail": "support staff briefed on accessibility features and feedback triage. Not yet attested; no claim made.",
+   "automated_cells": 0,
+   "open_violations": 0,
+   "manual_tests": [],
+   "tester": null,
+   "attested_on": null,
+   "evidence": [
+    {
+     "label": "Revised 508 standard",
+     "href": "https://www.access-board.gov/ict/#602-support-documentation"
+    }
+   ]
   }
  ],
  "acr_download_url": "/acr/evs-openacr.yaml",
- "generated_at": "2026-10-06T14:30:00+00:00"
+ "generated_at": "2026-10-06T22:08:58.000654+00:00",
+ "git_sha": "a154046dbf8ea5250360b2b97c56ffda8db88a12",
+ "axe_version": "4.13.0",
+ "as_of": {
+  "source_as_of": "2026-10-06T22:04:14.980000+00:00",
+  "fetched_at": "2026-10-06T22:08:58.000654+00:00",
+  "freshness": "fresh",
+  "source": "fixtures"
+ },
+ "summary": {
+  "criteria_total": 48,
+  "supports": 4,
+  "partially_supports": 0,
+  "does_not_support": 0,
+  "not_applicable": 5,
+  "not_evaluated": 39,
+  "routes_tested": 13,
+  "cells": 208,
+  "zero_violation_cells": 208,
+  "viewports": [
+   "desktop-1280",
+   "mobile-360",
+   "tablet-768",
+   "wide-1920"
+  ],
+  "themes": [
+   "leadership",
+   "light"
+  ],
+  "motion_settings": 2,
+  "total_violations": 0,
+  "total_advisories": 0,
+  "needs_review": 228,
+  "last_run_at": "2026-10-06T22:04:14.980000+00:00",
+  "keyboard_routes_passed": 13,
+  "keyboard_routes_total": 13,
+  "reflow_cells_passed": 26,
+  "reflow_cells_total": 26,
+  "lighthouse_runs": 12,
+  "lighthouse_min_score": 1,
+  "pa11y_urls": 0,
+  "pa11y_errors": 0,
+  "manual_passed": 0,
+  "manual_total": 10
+ },
+ "versions": {
+  "axe": "4.13.0",
+  "pa11y": null,
+  "lighthouse": "12.6.1",
+  "generator": "0.1.0"
+ },
+ "manual": [
+  {
+   "id": "nvda-firefox",
+   "name": "NVDA + Firefox (Windows 11)",
+   "category": "screen_reader",
+   "assistive_tech": "nvda-firefox",
+   "version": "",
+   "tests": [
+    "MT-SR-*"
+   ],
+   "status": "planned",
+   "criteria_total": 13,
+   "criteria_attested": 0,
+   "tester": null,
+   "date": null
+  },
+  {
+   "id": "jaws-chrome",
+   "name": "JAWS + Chrome (Windows 11)",
+   "category": "screen_reader",
+   "assistive_tech": "jaws-chrome",
+   "version": "",
+   "tests": [
+    "MT-SR-*"
+   ],
+   "status": "planned",
+   "criteria_total": 13,
+   "criteria_attested": 0,
+   "tester": null,
+   "date": null
+  },
+  {
+   "id": "voiceover-ios",
+   "name": "VoiceOver + Safari (iOS)",
+   "category": "screen_reader",
+   "assistive_tech": "voiceover-ios",
+   "version": "",
+   "tests": [
+    "MT-SR-*",
+    "MT-TOUCH-*"
+   ],
+   "status": "planned",
+   "criteria_total": 17,
+   "criteria_attested": 0,
+   "tester": null,
+   "date": null
+  },
+  {
+   "id": "keyboard-only",
+   "name": "Keyboard only (no pointer)",
+   "category": "keyboard",
+   "assistive_tech": "keyboard-only",
+   "version": "",
+   "tests": [
+    "MT-KBD-*"
+   ],
+   "status": "planned",
+   "criteria_total": 10,
+   "criteria_attested": 0,
+   "tester": null,
+   "date": null
+  },
+  {
+   "id": "zoom-400",
+   "name": "400 percent zoom and 320 CSS px reflow",
+   "category": "zoom",
+   "assistive_tech": "zoom-400",
+   "version": "",
+   "tests": [
+    "MT-ZOOM-*",
+    "MT-RESP-01"
+   ],
+   "status": "planned",
+   "criteria_total": 5,
+   "criteria_attested": 0,
+   "tester": null,
+   "date": null
+  },
+  {
+   "id": "forced-colors",
+   "name": "Windows High Contrast (forced-colors)",
+   "category": "contrast",
+   "assistive_tech": "forced-colors",
+   "version": "",
+   "tests": [
+    "MT-VIS-01",
+    "MT-VIS-02",
+    "MT-VIS-04",
+    "MT-KBD-07"
+   ],
+   "status": "planned",
+   "criteria_total": 7,
+   "criteria_attested": 0,
+   "tester": null,
+   "date": null
+  },
+  {
+   "id": "cvd-sim",
+   "name": "Colour-vision deficiency simulation",
+   "category": "contrast",
+   "assistive_tech": "cvd-sim",
+   "version": "",
+   "tests": [
+    "MT-VIS-01"
+   ],
+   "status": "planned",
+   "criteria_total": 3,
+   "criteria_attested": 0,
+   "tester": null,
+   "date": null
+  },
+  {
+   "id": "reduced-motion",
+   "name": "prefers-reduced-motion",
+   "category": "motion",
+   "assistive_tech": "reduced-motion",
+   "version": "",
+   "tests": [
+    "MT-MOTION-*"
+   ],
+   "status": "planned",
+   "criteria_total": 2,
+   "criteria_attested": 0,
+   "tester": null,
+   "date": null
+  },
+  {
+   "id": "touch",
+   "name": "Touch and single pointer (tablet, phone)",
+   "category": "touch",
+   "assistive_tech": null,
+   "version": "",
+   "tests": [
+    "MT-TOUCH-*"
+   ],
+   "status": "planned",
+   "criteria_total": 4,
+   "criteria_attested": 0,
+   "tester": null,
+   "date": null
+  },
+  {
+   "id": "forms-timing",
+   "name": "Forms, errors and timing",
+   "category": "forms",
+   "assistive_tech": null,
+   "version": "",
+   "tests": [
+    "MT-FORM-*",
+    "MT-TIME-*"
+   ],
+   "status": "planned",
+   "criteria_total": 8,
+   "criteria_attested": 0,
+   "tester": null,
+   "date": null
+  }
+ ],
+ "artifacts": [
+  {
+   "name": "evs-openacr.yaml",
+   "label": "OpenACR 2.5 (YAML)",
+   "media_type": "application/yaml",
+   "href": "/api/v1/accessibility/artifacts/evs-openacr.yaml"
+  },
+  {
+   "name": "evs-acr.md",
+   "label": "Accessibility Conformance Report (Markdown)",
+   "media_type": "text/markdown",
+   "href": "/api/v1/accessibility/artifacts/evs-acr.md"
+  },
+  {
+   "name": "evs-acr.html",
+   "label": "Accessibility Conformance Report (HTML)",
+   "media_type": "text/html",
+   "href": "/api/v1/accessibility/artifacts/evs-acr.html"
+  },
+  {
+   "name": "evs-axe-results.json",
+   "label": "axe-core results, every cell (JSON)",
+   "media_type": "application/json",
+   "href": "/api/v1/accessibility/artifacts/evs-axe-results.json"
+  }
+ ],
+ "statement": {
+  "product": "Enterprise Visibility Suite (EVS)",
+  "version": "0.1.0-demo",
+  "description": "React + USWDS front end, FastAPI API and PostgreSQL/PostGIS data layer for USACE enterprise project visibility (migration demo from Oracle APEX). Web application only.",
+  "standard": "Revised Section 508 (36 CFR Part 1194) and WCAG 2.1 Level AA",
+  "design_rules": [
+   "WCAG 2.2 2.4.11 Focus Not Obscured (Minimum)",
+   "WCAG 2.2 2.5.7 Dragging Movements",
+   "WCAG 2.2 2.5.8 Target Size (Minimum)"
+  ],
+  "scope_routes": [
+   "/",
+   "/accessibility",
+   "/admin",
+   "/facilities",
+   "/financial",
+   "/programs",
+   "/projects",
+   "/projects/:p2",
+   "/public/locks",
+   "/public/locks/:id",
+   "/public/srp",
+   "/schedule",
+   "/workforce"
+  ],
+  "evaluation_methods": "Automated: axe-core via @axe-core/playwright in CI (every route x 4 viewports x 2 themes x reduced-motion on/off), eslint-plugin-jsx-a11y strict, Lighthouse CI accessibility category (budget 100), pa11y-ci (axe runner, WCAG2AA), Playwright keyboard-traversal and 320 px reflow smoke tests. Manual: keyboard-only pass, NVDA + Firefox, JAWS + Chrome, VoiceOver iOS + Safari, 200% and 400% zoom / 320 CSS px reflow, Windows High Contrast (forced-colors), colour-vision deficiency simulation, prefers-reduced-motion. Manual test IDs (MT-*) refer to docs/a11y/MANUAL_TEST_PLAN.md.",
+  "known_issues": [
+   "39 of 48 WCAG 2.1 A/AA criteria are not evaluated: manual attestation outstanding, no claim made.",
+   "228 axe needs-review items (incomplete checks such as contrast over images) await a human decision.",
+   "10 of 10 manual test environments are planned and not yet executed."
+  ],
+  "contact": "TBD (EVS accessibility feedback mailbox)",
+  "repository": "https://github.com/lucas-gebhart/COG-GTM-usace-evs (docs/a11y/)",
+  "legal_disclaimer": "This report reflects testing of the EVS demo build at the stated version, commit and date and is provided in good faith. Rows marked not-evaluated make no conformance claim. It does not represent a legally binding guarantee.",
+  "report_date": "2026-10-06",
+  "git_sha": "a154046dbf8e",
+  "demo_notice": "EVS is a demonstration system. This read-out describes the demo build, not a production deployment."
+ }
 }

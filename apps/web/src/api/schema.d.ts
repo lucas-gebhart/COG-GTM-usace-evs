@@ -21,6 +21,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/enterprise/kpis": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Enterprise KPI tiles */
+        get: operations["kpis_api_v1_enterprise_kpis_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/programs": {
         parameters: {
             query?: never;
@@ -28,7 +45,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** List Programs */
+        /**
+         * Programs (APEX Initiatives IR)
+         * @description Interactive Report parameters: repeatable `filter=column:op:value` (op: eq, ne, gt, gte, lt, lte, like, in), `q` full text, `sort=-col,col2`, `limit`, `offset`, `format=csv`. Columns: program_code, name, business_line, division, funded_amount, obligated_amount, expended_amount, variance_pct, project_count, schedule_health.
+         */
         get: operations["list_programs_api_v1_programs_get"];
         put?: never;
         post?: never;
@@ -45,7 +65,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** List Projects */
+        /**
+         * Projects (APEX Projects IR)
+         * @description Interactive Report parameters: repeatable `filter=column:op:value` (op: eq, ne, gt, gte, lt, lte, like, in), `q` full text, `sort=-col,col2`, `limit`, `offset`, `format=csv`. Columns: p2_project_no, name, program_code, district, division, business_line, phase, pdt_lead, baseline_finish, current_finish, pct_complete, funded_amount, obligated_amount, expended_amount, schedule_health.
+         */
         get: operations["list_projects_api_v1_projects_get"];
         put?: never;
         post?: never;
@@ -62,8 +85,110 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Get Project */
+        /** Project detail (APEX Project Details) */
         get: operations["get_project_api_v1_projects__p2_project_no__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/projects/{p2_project_no}/status": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        /** Update project status (APEX Project form) */
+        put: operations["put_project_status_api_v1_projects__p2_project_no__status_put"];
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/projects/{p2_project_no}/kanban/move": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Move a Kanban card (APEX Kanban Board drop) */
+        post: operations["kanban_move_api_v1_projects__p2_project_no__kanban_move_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/projects/{p2_project_no}/archive": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Archive or un-archive a project */
+        post: operations["archive_api_v1_projects__p2_project_no__archive_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/projects/{p2_project_no}/milestones/{code}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        /** Update a milestone (APEX Milestone form) */
+        put: operations["put_milestone_api_v1_projects__p2_project_no__milestones__code__put"];
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/projects/{p2_project_no}/history": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Project change history */
+        get: operations["history_api_v1_projects__p2_project_no__history_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/schedule/milestones": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Milestones with slip (status=slipped for the late list) */
+        get: operations["milestones_api_v1_schedule_milestones_get"];
         put?: never;
         post?: never;
         delete?: never;
@@ -89,6 +214,27 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/financial/variance-by-program": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Obligation variance against plan to date, by program
+         * @description Plan to date is each program's funded amount scaled by the enterprise plan pace at the
+         *     latest CEFMS period (plan_cumulative at that period over the full-year plan).
+         */
+        get: operations["variance_by_program_api_v1_financial_variance_by_program_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/workforce/labor": {
         parameters: {
             query?: never;
@@ -96,7 +242,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Labor */
+        /**
+         * EMS labor by district and pay period (APEX People IR)
+         * @description Interactive Report parameters as on /projects. Columns: district, pay_period, hours_plan, hours_regular, hours_overtime, labor_cost.
+         */
         get: operations["labor_api_v1_workforce_labor_get"];
         put?: never;
         post?: never;
@@ -113,8 +262,28 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Condition */
+        /**
+         * BUILDER component condition rows
+         * @description Interactive Report parameters as on /projects. Columns: building_id, installation, district, uniformat_section, component_type, ci, bci, deficiency_cost, work_plan_year.
+         */
         get: operations["condition_api_v1_facilities_condition_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/facilities/ci-distribution": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Condition index histogram and worst installations */
+        get: operations["ci_distribution_api_v1_facilities_ci_distribution_get"];
         put?: never;
         post?: never;
         delete?: never;
@@ -130,7 +299,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** List Locks */
+        /**
+         * List Locks
+         * @description All locks in evs.lock_current. `reporting_only` drops locks absent from the LPMS status feed.
+         */
         get: operations["list_locks_api_v1_public_locks_get"];
         put?: never;
         post?: never;
@@ -208,6 +380,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/accessibility/artifacts/{name}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Download a generated accessibility artefact */
+        get: operations["artifact_api_v1_accessibility_artifacts__name__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/admin/feeds": {
         parameters: {
             query?: never;
@@ -234,7 +423,8 @@ export interface paths {
         };
         /** Thresholds */
         get: operations["thresholds_api_v1_admin_thresholds_get"];
-        put?: never;
+        /** Persist status engine thresholds */
+        put: operations["put_thresholds_api_v1_admin_thresholds_put"];
         post?: never;
         delete?: never;
         options?: never;
@@ -246,14 +436,25 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** AccessibilityReadout */
+        /**
+         * AccessibilityReadout
+         * @description Generated by evs-acr-gen (tools/acr); never edited by hand.
+         */
         AccessibilityReadout: {
             /** Target */
             target: string;
             /** Routes */
             routes: components["schemas"]["AxeRouteResult"][];
-            /** Criteria */
+            /**
+             * Criteria
+             * @description WCAG 2.1 A and AA rows (48)
+             */
             criteria: components["schemas"]["CriterionStatus"][];
+            /**
+             * Section508
+             * @description Revised 508 FPC and support rows
+             */
+            section508?: components["schemas"]["CriterionStatus"][];
             /** Acr Download Url */
             acr_download_url: string;
             /**
@@ -261,6 +462,24 @@ export interface components {
              * Format: date-time
              */
             generated_at: string;
+            /**
+             * Git Sha
+             * @default unknown
+             */
+            git_sha: string;
+            /**
+             * Axe Version
+             * @default unknown
+             */
+            axe_version: string;
+            as_of: components["schemas"]["AsOf"];
+            summary: components["schemas"]["ReadoutSummary"];
+            versions: components["schemas"]["ToolVersions"];
+            /** Manual */
+            manual: components["schemas"]["ManualTestRow"][];
+            /** Artifacts */
+            artifacts: components["schemas"]["ArtifactLink"][];
+            statement: components["schemas"]["ConformanceStatement"];
         };
         /** AppropriationRow */
         AppropriationRow: {
@@ -278,6 +497,17 @@ export interface components {
             expended: number;
             /** Expiring Fy */
             expiring_fy?: number | null;
+        };
+        /** ArtifactLink */
+        ArtifactLink: {
+            /** Name */
+            name: string;
+            /** Label */
+            label: string;
+            /** Media Type */
+            media_type: string;
+            /** Href */
+            href: string;
         };
         /**
          * AsOf
@@ -307,7 +537,10 @@ export interface components {
              */
             source: string;
         };
-        /** AxeRouteResult */
+        /**
+         * AxeRouteResult
+         * @description One axe-core run: route x viewport x theme x reduced-motion cell.
+         */
         AxeRouteResult: {
             /** Route */
             route: string;
@@ -315,6 +548,11 @@ export interface components {
             viewport: string;
             /** Theme */
             theme: string;
+            /**
+             * Reduced Motion
+             * @default false
+             */
+            reduced_motion: boolean;
             /** Violations */
             violations: number;
             /** Passes */
@@ -322,10 +560,136 @@ export interface components {
             /** Incomplete */
             incomplete: number;
             /**
+             * Advisories
+             * @default 0
+             */
+            advisories: number;
+            /**
              * Run At
              * Format: date-time
              */
             run_at: string;
+            /** Violation Details */
+            violation_details?: components["schemas"]["AxeViolation"][];
+            /** Incomplete Rules */
+            incomplete_rules?: string[];
+        };
+        /** AxeViolation */
+        AxeViolation: {
+            /** Rule */
+            rule: string;
+            /**
+             * Impact
+             * @enum {string}
+             */
+            impact: "critical" | "serious" | "moderate" | "minor" | "unknown";
+            /** Nodes */
+            nodes: number;
+            /**
+             * Help Url
+             * @default
+             */
+            help_url: string;
+            /**
+             * Help
+             * @default
+             */
+            help: string;
+            /**
+             * Source
+             * @default axe
+             * @enum {string}
+             */
+            source: "axe" | "lighthouse" | "pa11y";
+            /**
+             * Where
+             * @default
+             */
+            where: string;
+        };
+        /** CiBucket */
+        CiBucket: {
+            /** Label */
+            label: string;
+            /** Ci Min */
+            ci_min: number;
+            /** Ci Max */
+            ci_max: number;
+            /**
+             * Band
+             * @enum {string}
+             */
+            band: "good" | "fair" | "poor";
+            /** Count */
+            count: number;
+            /** Deficiency Cost */
+            deficiency_cost: number;
+        };
+        /** CiByInstallation */
+        CiByInstallation: {
+            /** Installation */
+            installation: string;
+            /** District */
+            district: string;
+            /** Component Count */
+            component_count: number;
+            /** Avg Ci */
+            avg_ci: number;
+            /** Min Ci */
+            min_ci: number;
+            /** Deficiency Cost */
+            deficiency_cost: number;
+        };
+        /**
+         * CiDistribution
+         * @description Histogram with BUILDER threshold bands (good 70 to 100, fair 40 to 69, poor 0 to 39).
+         */
+        CiDistribution: {
+            /** Buckets */
+            buckets: components["schemas"]["CiBucket"][];
+            /** By Installation */
+            by_installation: components["schemas"]["CiByInstallation"][];
+            as_of: components["schemas"]["AsOf"];
+        };
+        /** ConformanceStatement */
+        ConformanceStatement: {
+            /** Product */
+            product: string;
+            /** Version */
+            version: string;
+            /**
+             * Description
+             * @default
+             */
+            description: string;
+            /** Standard */
+            standard: string;
+            /** Design Rules */
+            design_rules: string[];
+            /** Scope Routes */
+            scope_routes: string[];
+            /** Evaluation Methods */
+            evaluation_methods: string;
+            /** Known Issues */
+            known_issues: string[];
+            /** Contact */
+            contact: string;
+            /**
+             * Repository
+             * @default
+             */
+            repository: string;
+            /**
+             * Legal Disclaimer
+             * @default
+             */
+            legal_disclaimer: string;
+            /** Report Date */
+            report_date: string;
+            /** Git Sha */
+            git_sha: string;
+            /** Demo Notice */
+            demo_notice: string;
         };
         /** CriterionStatus */
         CriterionStatus: {
@@ -337,7 +701,14 @@ export interface components {
              * Level
              * @enum {string}
              */
-            level: "A" | "AA";
+            level: "A" | "AA" | "508";
+            /**
+             * Chapter
+             * @enum {string}
+             */
+            chapter: "success_criteria_level_a" | "success_criteria_level_aa" | "functional_performance_criteria" | "support_documentation_and_services";
+            /** Chapter Title */
+            chapter_title: string;
             /**
              * Method
              * @enum {string}
@@ -353,6 +724,40 @@ export interface components {
              * @default
              */
             notes: string;
+            /**
+             * Detail
+             * @description Full OpenACR note for the row
+             * @default
+             */
+            detail: string;
+            /**
+             * Automated Cells
+             * @default 0
+             */
+            automated_cells: number;
+            /**
+             * Open Violations
+             * @default 0
+             */
+            open_violations: number;
+            /**
+             * Manual Tests
+             * @description MT-* ids from docs/a11y/MANUAL_TEST_PLAN.md
+             */
+            manual_tests?: string[];
+            /** Tester */
+            tester?: string | null;
+            /** Attested On */
+            attested_on?: string | null;
+            /** Evidence */
+            evidence?: components["schemas"]["EvidenceLink"][];
+        };
+        /** EvidenceLink */
+        EvidenceLink: {
+            /** Label */
+            label: string;
+            /** Href */
+            href: string;
         };
         /** ExecutionPoint */
         ExecutionPoint: {
@@ -393,6 +798,7 @@ export interface components {
         FacilitySummary: {
             /** Rows */
             rows: components["schemas"]["FacilityRow"][];
+            page?: components["schemas"]["Page"] | null;
             as_of: components["schemas"]["AsOf"];
         };
         /** FeedHealth */
@@ -414,6 +820,21 @@ export interface components {
              * @enum {string}
              */
             status: "healthy" | "degraded" | "down" | "simulated" | "fixtures";
+            /** Mode */
+            mode?: ("live" | "fixtures" | "simulated") | null;
+            /** Last Attempt At */
+            last_attempt_at?: string | null;
+            /** Http Status */
+            http_status?: number | null;
+            /** Rows Parsed */
+            rows_parsed?: number | null;
+            /**
+             * Consecutive Failures
+             * @default 0
+             */
+            consecutive_failures: number;
+            /** Updated At */
+            updated_at?: string | null;
         };
         /** FeedHealthList */
         FeedHealthList: {
@@ -440,6 +861,46 @@ export interface components {
             /** Detail */
             detail?: components["schemas"]["ValidationError"][];
         };
+        /**
+         * KanbanColumn
+         * @description Port of the Kanban Board column derivation (APEX page 4 region SQL).
+         */
+        KanbanColumn: {
+            /** Column Id */
+            column_id: number;
+            /** Heading */
+            heading: string;
+            /** Pct Complete Range */
+            pct_complete_range: string;
+        };
+        /**
+         * KpiList
+         * @description Enterprise overview tiles (route `/`).
+         */
+        KpiList: {
+            /** Tiles */
+            tiles: components["schemas"]["KpiTile"][];
+            as_of: components["schemas"]["AsOf"];
+        };
+        /** KpiTile */
+        KpiTile: {
+            /** Id */
+            id: string;
+            /** Label */
+            label: string;
+            /** Value */
+            value: number;
+            /**
+             * Unit
+             * @default
+             */
+            unit: string;
+            /** Delta */
+            delta?: number | null;
+            /** Delta Label */
+            delta_label?: string | null;
+            as_of: components["schemas"]["AsOf"];
+        };
         /** LaborRow */
         LaborRow: {
             /** District */
@@ -461,6 +922,7 @@ export interface components {
             fiscal_year: number;
             /** Rows */
             rows: components["schemas"]["LaborRow"][];
+            page?: components["schemas"]["Page"] | null;
             as_of: components["schemas"]["AsOf"];
         };
         /** LockDetail */
@@ -482,6 +944,13 @@ export interface components {
             river_mile: number | null;
             /** District */
             district: string | null;
+            /**
+             * Division
+             * @description USACE division code, e.g. LRD
+             */
+            division?: string | null;
+            /** State */
+            state?: string | null;
             /** Chambers */
             chambers: number | null;
             /** Latitude */
@@ -545,12 +1014,31 @@ export interface components {
                 [key: string]: unknown;
             }[];
             /**
+             * Gauges
+             * @description Latest NOAA NWPS and USGS NWIS readings for the lock
+             */
+            gauges?: {
+                [key: string]: unknown;
+            }[];
+            /**
              * Status Inputs
              * @description inputs_used by the status engine
              */
             status_inputs?: {
                 [key: string]: unknown;
             };
+            /**
+             * History
+             * @description Status evaluations from the last 24 hours, oldest first
+             */
+            history?: components["schemas"]["StatusHistoryPoint"][];
+            /**
+             * Ntni Notices
+             * @description Notices to Navigation Interests that name this lock
+             */
+            ntni_notices?: {
+                [key: string]: unknown;
+            }[];
         };
         /** LockList */
         LockList: {
@@ -588,6 +1076,13 @@ export interface components {
             river_mile: number | null;
             /** District */
             district: string | null;
+            /**
+             * Division
+             * @description USACE division code, e.g. LRD
+             */
+            division?: string | null;
+            /** State */
+            state?: string | null;
             /** Chambers */
             chambers: number | null;
             /** Latitude */
@@ -620,6 +1115,43 @@ export interface components {
             active_stoppages: number;
             as_of: components["schemas"]["AsOf"];
         };
+        /**
+         * ManualTestRow
+         * @description One assistive technology or input condition from the manual test plan.
+         */
+        ManualTestRow: {
+            /** Id */
+            id: string;
+            /** Name */
+            name: string;
+            /**
+             * Category
+             * @enum {string}
+             */
+            category: "screen_reader" | "keyboard" | "zoom" | "contrast" | "motion" | "touch" | "forms" | "other";
+            /** Assistive Tech */
+            assistive_tech?: string | null;
+            /**
+             * Version
+             * @default
+             */
+            version: string;
+            /** Tests */
+            tests: string[];
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "planned" | "passed" | "failed" | "partial" | "not-evaluated";
+            /** Criteria Total */
+            criteria_total: number;
+            /** Criteria Attested */
+            criteria_attested: number;
+            /** Tester */
+            tester?: string | null;
+            /** Date */
+            date?: string | null;
+        };
         /** Milestone */
         Milestone: {
             /** Code */
@@ -637,6 +1169,29 @@ export interface components {
              * @enum {string}
              */
             status: "complete" | "scheduled" | "slipped";
+        };
+        /** MilestoneList */
+        MilestoneList: {
+            /** Items */
+            items: components["schemas"]["ProjectMilestone"][];
+            page: components["schemas"]["Page"];
+            as_of: components["schemas"]["AsOf"];
+        };
+        /**
+         * MilestoneUpdate
+         * @description Body of `PUT /projects/{p2_project_no}/milestones/{code}` (APEX page 508 Milestone form).
+         */
+        MilestoneUpdate: {
+            /** Current Date */
+            current_date?: string | null;
+            /** Actual Date */
+            actual_date?: string | null;
+            /** Status */
+            status?: ("complete" | "scheduled" | "slipped") | null;
+            /** Owner */
+            owner?: string | null;
+            /** Description */
+            description?: string | null;
         };
         /** Page */
         Page: {
@@ -680,6 +1235,27 @@ export interface components {
             page: components["schemas"]["Page"];
             as_of: components["schemas"]["AsOf"];
         };
+        /** ProgramVariance */
+        ProgramVariance: {
+            /** Program Code */
+            program_code: string;
+            /** Name */
+            name: string;
+            /** Business Line */
+            business_line: string;
+            /** Division */
+            division: string;
+            /** Funded Amount */
+            funded_amount: number;
+            /** Obligated Amount */
+            obligated_amount: number;
+            /** Plan To Date */
+            plan_to_date: number;
+            /** Variance Amount */
+            variance_amount: number;
+            /** Variance Pct */
+            variance_pct: number;
+        };
         /** Project */
         Project: {
             /** P2 Project No */
@@ -721,12 +1297,240 @@ export interface components {
              */
             milestones: components["schemas"]["Milestone"][];
         };
+        /**
+         * ProjectArchiveUpdate
+         * @description Body of `POST /projects/{p2_project_no}/archive` (APEX pages 47 and 52).
+         */
+        ProjectArchiveUpdate: {
+            /** Archived */
+            archived: boolean;
+            /** Reason */
+            reason?: string | null;
+        };
+        /**
+         * ProjectHistoryEvent
+         * @description One row of the change history (APEX page 64 Project Change History, sp_project_history).
+         */
+        ProjectHistoryEvent: {
+            /** Id */
+            id?: number | null;
+            /** P2 Project No */
+            p2_project_no: string;
+            /** Attribute */
+            attribute: string;
+            /**
+             * Change Type
+             * @enum {string}
+             */
+            change_type: "CREATE" | "UPDATE" | "DELETE" | "ARCHIVE" | "UNARCHIVE" | "VIEW";
+            /** Old Value */
+            old_value?: string | null;
+            /** New Value */
+            new_value?: string | null;
+            /**
+             * Changed On
+             * Format: date-time
+             */
+            changed_on: string;
+            /** Changed By */
+            changed_by: string;
+        };
+        /** ProjectHistoryList */
+        ProjectHistoryList: {
+            /** P2 Project No */
+            p2_project_no: string;
+            /** Events */
+            events: components["schemas"]["ProjectHistoryEvent"][];
+            as_of: components["schemas"]["AsOf"];
+        };
         /** ProjectList */
         ProjectList: {
             /** Items */
             items: components["schemas"]["Project"][];
             page: components["schemas"]["Page"];
             as_of: components["schemas"]["AsOf"];
+        };
+        /**
+         * ProjectMilestone
+         * @description Milestone row joined to its project, for the schedule page (route `/schedule`).
+         */
+        ProjectMilestone: {
+            /** Code */
+            code: string;
+            /** Name */
+            name: string;
+            /** Baseline Date */
+            baseline_date: string | null;
+            /** Current Date */
+            current_date: string | null;
+            /** Actual Date */
+            actual_date: string | null;
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "complete" | "scheduled" | "slipped";
+            /** P2 Project No */
+            p2_project_no: string;
+            /** Project Name */
+            project_name: string;
+            /** Program Code */
+            program_code: string;
+            /** District */
+            district: string;
+            /** Slip Days */
+            slip_days?: number | null;
+        };
+        /** ProjectStatusResult */
+        ProjectStatusResult: {
+            project: components["schemas"]["Project"];
+            kanban: components["schemas"]["KanbanColumn"];
+            /**
+             * Archived
+             * @default false
+             */
+            archived: boolean;
+            /** History */
+            history: components["schemas"]["ProjectHistoryEvent"][];
+            as_of: components["schemas"]["AsOf"];
+        };
+        /**
+         * ProjectStatusUpdate
+         * @description Body of `PUT /projects/{p2_project_no}/status` (APEX page 24 Project form).
+         */
+        ProjectStatusUpdate: {
+            /**
+             * Pct Complete
+             * @description Must be a multiple of 10 (sp_projects_pct_complete_ck)
+             */
+            pct_complete: number;
+            /** Phase */
+            phase?: string | null;
+            /**
+             * Current Finish
+             * @description Target complete; required at 50 percent or more
+             */
+            current_finish?: string | null;
+            /** Status Scale */
+            status_scale?: string | null;
+            /** Link Url */
+            link_url?: string | null;
+            /** Link Name */
+            link_name?: string | null;
+            /** Note */
+            note?: string | null;
+        };
+        /** ReadoutSummary */
+        ReadoutSummary: {
+            /** Criteria Total */
+            criteria_total: number;
+            /** Supports */
+            supports: number;
+            /** Partially Supports */
+            partially_supports: number;
+            /** Does Not Support */
+            does_not_support: number;
+            /** Not Applicable */
+            not_applicable: number;
+            /** Not Evaluated */
+            not_evaluated: number;
+            /** Routes Tested */
+            routes_tested: number;
+            /** Cells */
+            cells: number;
+            /** Zero Violation Cells */
+            zero_violation_cells: number;
+            /** Viewports */
+            viewports: string[];
+            /** Themes */
+            themes: string[];
+            /** Motion Settings */
+            motion_settings: number;
+            /** Total Violations */
+            total_violations: number;
+            /** Total Advisories */
+            total_advisories: number;
+            /**
+             * Needs Review
+             * @description axe incomplete checks plus pa11y needs-review items
+             * @default 0
+             */
+            needs_review: number;
+            /** Last Run At */
+            last_run_at?: string | null;
+            /**
+             * Keyboard Routes Passed
+             * @default 0
+             */
+            keyboard_routes_passed: number;
+            /**
+             * Keyboard Routes Total
+             * @default 0
+             */
+            keyboard_routes_total: number;
+            /**
+             * Reflow Cells Passed
+             * @default 0
+             */
+            reflow_cells_passed: number;
+            /**
+             * Reflow Cells Total
+             * @default 0
+             */
+            reflow_cells_total: number;
+            /**
+             * Lighthouse Runs
+             * @default 0
+             */
+            lighthouse_runs: number;
+            /** Lighthouse Min Score */
+            lighthouse_min_score?: number | null;
+            /**
+             * Pa11Y Urls
+             * @default 0
+             */
+            pa11y_urls: number;
+            /**
+             * Pa11Y Errors
+             * @default 0
+             */
+            pa11y_errors: number;
+            /**
+             * Manual Passed
+             * @default 0
+             */
+            manual_passed: number;
+            /**
+             * Manual Total
+             * @default 0
+             */
+            manual_total: number;
+        };
+        /**
+         * SrpCitation
+         * @description Provenance for one headline figure. The UI shows source and year next to every number.
+         */
+        SrpCitation: {
+            /**
+             * Figure
+             * @description Key in `headline`, e.g. river_systems
+             */
+            figure: string;
+            /** Label */
+            label: string;
+            /**
+             * Value Text
+             * @description The figure as the source states it, e.g. 'nearly 15,000 miles'
+             */
+            value_text: string;
+            /** Source */
+            source: string;
+            /** Source Url */
+            source_url: string;
+            /** Year */
+            year: number;
+            /** Note */
+            note?: string | null;
         };
         /** SrpCoverage */
         SrpCoverage: {
@@ -738,6 +1542,8 @@ export interface components {
             headline: {
                 [key: string]: number | string;
             };
+            /** Citations */
+            citations?: components["schemas"]["SrpCitation"][];
             as_of: components["schemas"]["AsOf"];
         };
         /** SrpSite */
@@ -778,6 +1584,80 @@ export interface components {
             /** Source Url */
             source_url: string;
         };
+        /**
+         * StatusHistoryPoint
+         * @description One status engine evaluation, newest last; the detail panel draws the 24-hour history from these.
+         */
+        StatusHistoryPoint: {
+            /**
+             * Evaluated At
+             * Format: date-time
+             */
+            evaluated_at: string;
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "operating" | "delayed" | "closed" | "stale" | "unknown";
+            /** Status Reason */
+            status_reason: string;
+            /** Rule No */
+            rule_no?: number | null;
+            /** Source */
+            source: string;
+            /** Freshness */
+            freshness: string;
+        };
+        /**
+         * ThresholdUpdate
+         * @description Status engine thresholds editable on `/admin` (APEX Administrator scheme).
+         */
+        ThresholdUpdate: {
+            /** Stale After Minutes */
+            stale_after_minutes: number;
+            /** Delay Yellow Minutes */
+            delay_yellow_minutes: number;
+            /** Delay Red Minutes */
+            delay_red_minutes: number;
+            /** Queue Yellow Vessels */
+            queue_yellow_vessels: number;
+            /** Lpms Failover Hours */
+            lpms_failover_hours?: number | null;
+        };
+        /** Thresholds */
+        Thresholds: {
+            /** Stale After Minutes */
+            stale_after_minutes: number;
+            /** Delay Yellow Minutes */
+            delay_yellow_minutes: number;
+            /** Delay Red Minutes */
+            delay_red_minutes: number;
+            /** Queue Yellow Vessels */
+            queue_yellow_vessels: number;
+            /** Lpms Failover Hours */
+            lpms_failover_hours: number;
+            /**
+             * Source
+             * @default settings
+             * @enum {string}
+             */
+            source: "settings" | "db" | "fixtures";
+            /** Updated At */
+            updated_at?: string | null;
+            /** Updated By */
+            updated_by?: string | null;
+        };
+        /** ToolVersions */
+        ToolVersions: {
+            /** Axe */
+            axe: string;
+            /** Pa11Y */
+            pa11y?: string | null;
+            /** Lighthouse */
+            lighthouse?: string | null;
+            /** Generator */
+            generator: string;
+        };
         /** ValidationError */
         ValidationError: {
             /** Location */
@@ -790,6 +1670,17 @@ export interface components {
             input?: unknown;
             /** Context */
             ctx?: Record<string, never>;
+        };
+        /**
+         * VarianceByProgram
+         * @description Diverging variance bars on `/programs` and `/financial`.
+         */
+        VarianceByProgram: {
+            /** Fiscal Year */
+            fiscal_year: number;
+            /** Rows */
+            rows: components["schemas"]["ProgramVariance"][];
+            as_of: components["schemas"]["AsOf"];
         };
     };
     responses: never;
@@ -822,12 +1713,9 @@ export interface operations {
             };
         };
     };
-    list_programs_api_v1_programs_get: {
+    kpis_api_v1_enterprise_kpis_get: {
         parameters: {
-            query?: {
-                limit?: number;
-                offset?: number;
-            };
+            query?: never;
             header?: never;
             path?: never;
             cookie?: never;
@@ -835,6 +1723,38 @@ export interface operations {
         requestBody?: never;
         responses: {
             /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["KpiList"];
+                };
+            };
+        };
+    };
+    list_programs_api_v1_programs_get: {
+        parameters: {
+            query?: {
+                division?: string | null;
+                business_line?: string | null;
+                schedule_health?: string | null;
+                /** @description Comma separated columns, `-` prefix for descending */
+                sort?: string | null;
+                /** @description Free text search across text columns (IR search bar) */
+                q?: string | null;
+                limit?: number;
+                offset?: number;
+                /** @description `csv` streams the filtered rows */
+                format?: string;
+            };
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description JSON body; text/csv (same columns) when format=csv */
             200: {
                 headers: {
                     [name: string]: unknown;
@@ -859,8 +1779,19 @@ export interface operations {
             query?: {
                 program_code?: string | null;
                 district?: string | null;
+                division?: string | null;
+                business_line?: string | null;
+                phase?: string | null;
+                schedule_health?: string | null;
+                min_pct_complete?: number | null;
+                /** @description Comma separated columns, `-` prefix for descending */
+                sort?: string | null;
+                /** @description Free text search across text columns (IR search bar) */
+                q?: string | null;
                 limit?: number;
                 offset?: number;
+                /** @description `csv` streams the filtered rows */
+                format?: string;
             };
             header?: never;
             path?: never;
@@ -868,7 +1799,7 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Successful Response */
+            /** @description JSON body; text/csv (same columns) when format=csv */
             200: {
                 headers: {
                     [name: string]: unknown;
@@ -919,6 +1850,219 @@ export interface operations {
             };
         };
     };
+    put_project_status_api_v1_projects__p2_project_no__status_put: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                p2_project_no: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ProjectStatusUpdate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ProjectStatusResult"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    kanban_move_api_v1_projects__p2_project_no__kanban_move_post: {
+        parameters: {
+            query: {
+                /** @description Target Kanban column (1 to 5) */
+                column_id: number;
+            };
+            header?: never;
+            path: {
+                p2_project_no: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ProjectStatusResult"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    archive_api_v1_projects__p2_project_no__archive_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                p2_project_no: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ProjectArchiveUpdate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ProjectStatusResult"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    put_milestone_api_v1_projects__p2_project_no__milestones__code__put: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                p2_project_no: string;
+                code: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["MilestoneUpdate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Milestone"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    history_api_v1_projects__p2_project_no__history_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                p2_project_no: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ProjectHistoryList"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    milestones_api_v1_schedule_milestones_get: {
+        parameters: {
+            query?: {
+                status?: ("complete" | "scheduled" | "slipped") | null;
+                district?: string | null;
+                program_code?: string | null;
+                p2_project_no?: string | null;
+                /** @description Comma separated columns, `-` prefix for descending */
+                sort?: string | null;
+                /** @description Free text search across text columns (IR search bar) */
+                q?: string | null;
+                limit?: number;
+                offset?: number;
+                /** @description `csv` streams the filtered rows */
+                format?: string;
+            };
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description JSON body; text/csv (same columns) when format=csv */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["MilestoneList"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
     financial_summary_api_v1_financial_summary_get: {
         parameters: {
             query?: {
@@ -950,7 +2094,7 @@ export interface operations {
             };
         };
     };
-    labor_api_v1_workforce_labor_get: {
+    variance_by_program_api_v1_financial_variance_by_program_get: {
         parameters: {
             query?: {
                 fiscal_year?: number;
@@ -962,6 +2106,47 @@ export interface operations {
         requestBody?: never;
         responses: {
             /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["VarianceByProgram"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    labor_api_v1_workforce_labor_get: {
+        parameters: {
+            query?: {
+                fiscal_year?: number;
+                district?: string | null;
+                pay_period?: string | null;
+                /** @description Comma separated columns, `-` prefix for descending */
+                sort?: string | null;
+                /** @description Free text search across text columns (IR search bar) */
+                q?: string | null;
+                limit?: number;
+                offset?: number;
+                /** @description `csv` streams the filtered rows */
+                format?: string;
+            };
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description JSON body; text/csv (same columns) when format=csv */
             200: {
                 headers: {
                     [name: string]: unknown;
@@ -983,6 +2168,49 @@ export interface operations {
     };
     condition_api_v1_facilities_condition_get: {
         parameters: {
+            query?: {
+                district?: string | null;
+                installation?: string | null;
+                component_type?: string | null;
+                /** @description Only components at or below this CI */
+                max_ci?: number | null;
+                /** @description Comma separated columns, `-` prefix for descending */
+                sort?: string | null;
+                /** @description Free text search across text columns (IR search bar) */
+                q?: string | null;
+                limit?: number;
+                offset?: number;
+                /** @description `csv` streams the filtered rows */
+                format?: string;
+            };
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description JSON body; text/csv (same columns) when format=csv */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["FacilitySummary"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    ci_distribution_api_v1_facilities_ci_distribution_get: {
+        parameters: {
             query?: never;
             header?: never;
             path?: never;
@@ -996,7 +2224,7 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["FacilitySummary"];
+                    "application/json": components["schemas"]["CiDistribution"];
                 };
             };
         };
@@ -1005,6 +2233,7 @@ export interface operations {
         parameters: {
             query?: {
                 river_code?: string | null;
+                reporting_only?: boolean;
             };
             header?: never;
             path?: never;
@@ -1123,6 +2352,47 @@ export interface operations {
             };
         };
     };
+    artifact_api_v1_accessibility_artifacts__name__get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                name: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description The artefact file */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": unknown;
+                    "application/yaml": unknown;
+                    "text/html; charset=utf-8": unknown;
+                    "text/markdown; charset=utf-8": unknown;
+                };
+            };
+            /** @description Unknown artefact name or artefact not generated yet */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
     feeds_api_v1_admin_feeds_get: {
         parameters: {
             query?: never;
@@ -1158,9 +2428,40 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
-                        [key: string]: unknown;
-                    };
+                    "application/json": components["schemas"]["Thresholds"];
+                };
+            };
+        };
+    };
+    put_thresholds_api_v1_admin_thresholds_put: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ThresholdUpdate"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Thresholds"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
                 };
             };
         };

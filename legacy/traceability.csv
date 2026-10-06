@@ -1,0 +1,918 @@
+apex_page,apex_page_name,apex_region_id,apex_region_name,apex_region_type,evs_route,evs_component,api_endpoint,sql_object,test_id,status
+1,home,41376453076139866272,Notifications,NATIVE_DYNAMIC_CONTENT,/,pages/EnterpriseOverview/FreshnessStrip,GET /api/v1/admin/feeds,,web:pages/EnterpriseOverview.test.tsx; e2e:overview.spec.ts,migrated
+1,home,40989090502530557843,Menubar,TMPL_THEME_42$CONTENT_ROW,/,app/AppLayout (primary nav),,,web:pages/EnterpriseOverview.test.tsx; e2e:overview.spec.ts,migrated
+1,home,56740433561052006211,Reviews Needed,NATIVE_DYNAMIC_CONTENT,/,pages/EnterpriseOverview/FreshnessStrip,GET /api/v1/admin/feeds,,web:pages/EnterpriseOverview.test.tsx; e2e:overview.spec.ts,migrated
+1,home,49001115179777388994,Project Search,STATIC,/,app/AppLayout (search),GET /api/v1/projects?q=,,web:pages/EnterpriseOverview.test.tsx; e2e:overview.spec.ts,migrated
+1,home,55491903744582352510,My Activities,TMPL_THEME_42$CONTENT_ROW,/,pages/EnterpriseOverview/ScheduleHealth,GET /api/v1/workforce/labor,sp_activities;sp_activity_types;sp_date_range_pct_comp;sp_initiatives;sp_projects;sp_team_members,web:pages/EnterpriseOverview.test.tsx; e2e:overview.spec.ts,migrated
+1,home,53205373870373421172,My Initiatives,TMPL_THEME_42$CONTENT_ROW,/,pages/EnterpriseOverview/KpiTiles,GET /api/v1/programs,sp_areas;sp_initiatives;sp_project_contributors;sp_projects;sp_team_members,web:pages/EnterpriseOverview.test.tsx; e2e:overview.spec.ts,migrated
+1,home,41579293761725943861,My Projects,TMPL_THEME_42$CONTENT_ROW,/,pages/EnterpriseOverview/KpiTiles,GET /api/v1/projects,sp_activities;sp_favorites;sp_initiatives;sp_project_priorities;sp_projects;sp_release_trains;sp_tasks;sp_team_members,web:pages/EnterpriseOverview.test.tsx; e2e:overview.spec.ts,migrated
+1,home,52861349035501637675,My Open Releases,TMPL_THEME_42$CONTENT_ROW,/,pages/EnterpriseOverview/ScheduleHealth,GET /api/v1/projects,sp_activities;sp_projects;sp_release_milestones;sp_release_trains;sp_tasks;sp_team_members,web:pages/EnterpriseOverview.test.tsx; e2e:overview.spec.ts,migrated
+1,home,40506778417903286983,Recently Changed Projects,NATIVE_SQL_REPORT,/,pages/EnterpriseOverview/RecentProjectsTable,GET /api/v1/projects?sort=updated,sp_initiatives;sp_project_priorities;sp_projects;sp_release_trains;sp_team_members,web:pages/EnterpriseOverview.test.tsx; e2e:overview.spec.ts,migrated
+1,home,40124747147497543025,Breadcrumb,NATIVE_BREADCRUMB,/,app/AppLayout (breadcrumb),,,web:pages/EnterpriseOverview.test.tsx; e2e:overview.spec.ts,migrated
+2,My Alerts,56010940732705407238,Buttons,STATIC,,,,,,not_migrated
+2,My Alerts,44111607551264274217,Notifications,TMPL_THEME_42$CONTENT_ROW,,,,sp_team_member_notifications,,not_migrated
+3,Project Details,43922886083314717052,Breadcrumb,NATIVE_BREADCRUMB,/projects/:p2,app/AppLayout (breadcrumb),,,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,41271237723189114202,Comments,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,41271237794675114203,Comment Form,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,42765984306883148784,Review Needed,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,44787229438347731870,Menubar,TMPL_THEME_42$CONTENT_ROW,/projects/:p2,app/AppLayout (primary nav),,,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,46511822434929831595,contributor button container,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,46511822481136831596,milestone button container,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,46511823288554831604,review button container,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,47728216572345890004,Archived Project,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,142860104311613242364,Comments Report,NATIVE_SQL_REPORT,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},sp_project_comments_v;sp_team_members,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,47728216507071890003,Duplicate of:,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,48999803752597585389,Clarification Requested for Review,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,53797036845315814995,task content,NATIVE_IR,/projects/:p2,pages/ProjectDetail/CmpRecords,GET /api/v1/projects/{p2_project_no},sp_task_comments;sp_task_documents;sp_task_links;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,68377262439243885735,RDS,NATIVE_DISPLAY_SELECTOR,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,68377260482145885715,Project Details,NATIVE_SQL_REPORT,/projects/:p2,pages/ProjectDetail/Header,GET /api/v1/projects/{p2_project_no},sp_areas;sp_favorites;sp_initiative_focus_areas;sp_initiatives;sp_project_priorities;sp_project_scales;sp_project_statuses;sp_projects;sp_release_trains;sp_team_members,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,51243452881739848190,Activity,STATIC,/projects/:p2,pages/ProjectDetail/LaborHours,GET /api/v1/workforce/labor?project=,,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,48805116164342715389,Description,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,38090003491716244790,Contributors,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,37614963900058937372,review content,NATIVE_IR,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},sp_task_comments;sp_task_documents;sp_task_links;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,38090003604210244791,contributors content,NATIVE_IR,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},sp_project_comments;sp_project_contributors;sp_project_documents;sp_project_links;sp_resource_types;sp_team_members,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,37614965283866937386,Milestones,STATIC,/projects/:p2,pages/ProjectDetail/MilestoneTimeline,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,37614965388362937387,milestone content,NATIVE_IR,/projects/:p2,pages/ProjectDetail/MilestoneTimeline,GET /api/v1/projects/{p2_project_no},sp_task_comments;sp_task_documents;sp_task_links;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,37614963835027937371,Reviews,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,53797036597381814993,Tasks,STATIC,/projects/:p2,pages/ProjectDetail/CmpRecords,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,68015116027398133514,description content,NATIVE_DYNAMIC_CONTENT,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,51193797278043397052,activity content,TMPL_THEME_42$CONTENT_ROW,/projects/:p2,pages/ProjectDetail/LaborHours,GET /api/v1/workforce/labor?project=,sp_activities;sp_activity_types;sp_date_range_pct_comp;sp_initiatives;sp_projects;sp_team_members,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,151399961100667022450,Links,NATIVE_IR,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},sp_project_links;sp_task_links;sp_task_types;sp_tasks,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,151399962886842022468,Documents,NATIVE_IR,/projects/:p2,pages/ProjectDetail/Documents,GET /api/v1/projects/{p2_project_no},sp_documents_v,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,48877183674628636376,footer,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,37713824072877667488,Related,NATIVE_IR,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},sp_project_related;sp_projects,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,46404489457287694998,Approvals,TMPL_THEME_42$CONTENT_ROW,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},sp_approval_types;sp_project_approval_chain;sp_project_approvals;sp_team_members,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,38455255769257056480,Additional Attriubtes,NATIVE_SQL_REPORT,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},sp_areas;sp_favorites;sp_initiatives;sp_proj_interactions_log;sp_project_groups;sp_project_history;sp_projects;sp_task_history;sp_task_types;sp_tasks;sp_team_members,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,50493824755486761115,description button container,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+3,Project Details,51243453029844848191,Activity Filters,STATIC,/projects/:p2,pages/ProjectDetail,GET /api/v1/projects/{p2_project_no},,web:pages/ProjectDetail.test.tsx; api:test_project_detail,migrated
+4,Kanban Board,173680189555055541219,Kanban Board,NATIVE_SQL_REPORT,/schedule,"pages/Schedule (KanbanCard, Move to menu)",GET /api/v1/projects,sp_initiative_focus_areas;sp_project_priorities;sp_project_sizes;sp_projects;sp_release_trains;sp_team_members,web:pages/Schedule.test.tsx; e2e:schedule.spec.ts,migrated
+4,Kanban Board,173950504564216817917,do not drop - Search Results,NATIVE_SQL_REPORT,/schedule,pages/Schedule (milestone slip list),GET /api/v1/projects,sp_initiative_focus_areas;sp_project_priorities;sp_project_sizes;sp_projects;sp_release_trains;sp_team_members,web:pages/Schedule.test.tsx; e2e:schedule.spec.ts,migrated
+4,Kanban Board,159911809757945557264,Faceted Search,NATIVE_FACETED_SEARCH,/schedule,components/FacetFilters,(query string on list endpoint),,web:pages/Schedule.test.tsx; e2e:schedule.spec.ts,migrated
+4,Kanban Board,145967143002169616911,Menubar,TMPL_THEME_42$CONTENT_ROW,/schedule,app/AppLayout (primary nav),,,web:pages/Schedule.test.tsx; e2e:schedule.spec.ts,migrated
+4,Kanban Board,139101964123911345951,Breadcrumb,NATIVE_BREADCRUMB,/schedule,app/AppLayout (breadcrumb),,,web:pages/Schedule.test.tsx; e2e:schedule.spec.ts,migrated
+5,UserDetail,45799515719249157721,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+5,UserDetail,37816329361387140402,RDS,NATIVE_DISPLAY_SELECTOR,,,,,,not_migrated
+5,UserDetail,41363077796648330383,Note on Report,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+5,UserDetail,46663859074282172539,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+5,UserDetail,49248167681791784008,Project Change content,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+5,UserDetail,151946407440773607757,Projects,NATIVE_IR,,,,sp_activities;sp_areas;sp_initiatives;sp_project_contributors;sp_project_priorities;sp_project_scales;sp_project_statuses;sp_projects;sp_release_trains;sp_task_types;sp_tasks,,not_migrated
+5,UserDetail,52117709369965011891,Activity,TMPL_THEME_42$CONTENT_ROW,,,,sp_activities;sp_activity_types;sp_date_range_pct_comp;sp_projects;sp_team_members,,not_migrated
+5,UserDetail,45342885338470087134,Profile Details,NATIVE_SQL_REPORT,,,,sp_activities;sp_countries;sp_group_members;sp_groups;sp_projects;sp_tasks;sp_team_members,,not_migrated
+5,UserDetail,54164594605811607162,Milestones,NATIVE_SQL_REPORT,,,,sp_project_priorities;sp_projects;sp_release_trains;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+5,UserDetail,38104381957453281176,Reviews,NATIVE_SQL_REPORT,,,,sp_project_priorities;sp_projects;sp_release_trains;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+5,UserDetail,55451870786372187699,Tasks,NATIVE_SQL_REPORT,,,,sp_project_priorities;sp_projects;sp_release_trains;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+5,UserDetail,20511113226381173157,Approvals,NATIVE_IR,,,,sp_approval_types;sp_project_approval_chain;sp_project_approvals;sp_projects,,not_migrated
+5,UserDetail,49248167642094784007,My Project Changes,STATIC,,,,,,not_migrated
+5,UserDetail,46943267974742730071,Groups,NATIVE_IR,,,,sp_group_members;sp_groups,,not_migrated
+5,UserDetail,45706975834150222702,Profile,STATIC,,,,,,not_migrated
+5,UserDetail,40996716200948284011,button container,STATIC,,,,,,not_migrated
+5,UserDetail,61925773697916598291,buttons,STATIC,,,,,,not_migrated
+6,Link,151744779425592346682,Project Link,NATIVE_FORM,,,,sp_project_links,,not_migrated
+6,Link,151744790901449346689,Buttons,STATIC,,,,,,not_migrated
+7,Comments Filter Report,161775021722152257153,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+7,Comments Filter Report,42137342834270251175,Project Comments,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiative_comments_v;sp_initiatives;sp_project_comments_v;sp_projects;sp_release_comments_v;sp_release_trains;sp_task_comments_v;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+7,Comments Filter Report,46720205836106840671,Facets,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+8,Releases,42420645802924429453,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+8,Releases,44360482243870793116,Items,STATIC,,,,,,not_migrated
+8,Releases,44360479842521793092,Faceted Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+8,Releases,41556302447891414635,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+8,Releases,40652051507549630655,Releases,TMPL_THEME_42$CONTENT_ROW,,,,sp_projects;sp_release_milestones;sp_release_trains;sp_tasks;sp_team_members,,not_migrated
+9,Project Contributor,38104792503414605865,Project Contributor,NATIVE_FORM,,,,sp_project_contributors,,not_migrated
+9,Project Contributor,38104800218168605877,Buttons,STATIC,,,,,,not_migrated
+10,Related Project,42780379339356606325,Related Project,NATIVE_FORM,,,,sp_project_related,,not_migrated
+10,Related Project,42780385888681606352,Buttons,STATIC,,,,,,not_migrated
+10,Related Project,49762296286514785580,Audit info,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+11,Initiative Change History,55084451502886031073,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+11,Initiative Change History,55084452154213031089,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+11,Initiative Change History,55084453320621031104,Button Bar,STATIC,,,,,,not_migrated
+11,Initiative Change History,55084452012285031089,Search Results,NATIVE_SQL_REPORT,,,,sp_init_focus_area_history;sp_initiative_focus_areas;sp_initiative_history,,not_migrated
+11,Initiative Change History,86564076288673304968,details,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_team_members,,not_migrated
+12,Project Document,151941533341712705481,Project Document,NATIVE_FORM,,,,sp_project_documents,,not_migrated
+12,Project Document,151941542705428705487,Buttons,STATIC,,,,,,not_migrated
+13,Initiative Document,167975544751607020771,Document,NATIVE_FORM,,,,sp_initiative_documents,,not_migrated
+13,Initiative Document,167975554115323020777,Buttons,STATIC,,,,,,not_migrated
+14,Release Change History,63258020956739772914,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+14,Release Change History,63258021608066772930,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+14,Release Change History,63258022774474772945,Button Bar,STATIC,,,,,,not_migrated
+14,Release Change History,63258021466138772930,Search Results,NATIVE_SQL_REPORT,,,,sp_project_history;sp_projects;sp_release_history;sp_release_trains;sp_team_members,,not_migrated
+14,Release Change History,113682853966574611685,Release,NATIVE_SQL_REPORT,,,,sp_projects;sp_release_trains;sp_team_members,,not_migrated
+15,Favorited Projects by User,43691976930350946956,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+15,Favorited Projects by User,43691977667630946959,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+15,Favorited Projects by User,43691978474064946961,Button Bar,STATIC,,,,,,not_migrated
+15,Favorited Projects by User,43691977646047946959,Search Results,NATIVE_SQL_REPORT,,,,sp_areas;sp_favorites;sp_initiatives;sp_project_priorities;sp_projects;sp_team_members,,not_migrated
+17,Focus Areas,37713825568022667503,Sort Container,STATIC,,,,,,not_migrated
+17,Focus Areas,43779682244201656594,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+17,Focus Areas,42281277852481438482,Areas,TMPL_THEME_42$CONTENT_ROW,,,,sp_areas;sp_initiatives;sp_projects;sp_team_members,,not_migrated
+17,Focus Areas,68528238855294240781,faceted search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+17,Focus Areas,42915338889168641776,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+18,Focus Area,176241876057327573707,Area,NATIVE_FORM,,,,sp_areas,,not_migrated
+18,Focus Area,176241882541471573733,Buttons,STATIC,,,,,,not_migrated
+19,People Details,39820381275099388089,filters,STATIC,,,,,,not_migrated
+19,People Details,42409562446381039388,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+19,People Details,42863149564844103905,Users ,NATIVE_SQL_REPORT,,,,sp_activities;sp_areas;sp_countries;sp_initiatives;sp_notification_subscriptions;sp_project_comments;sp_project_comments_emails;sp_project_documents;sp_projects;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+19,People Details,43658893186629763675,Faceted Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+19,People Details,41545219091348024570,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+20,Person Details,176242146862498591022,User,NATIVE_FORM,,,,sp_team_members,,not_migrated
+20,Person Details,176242158361802591041,Buttons,STATIC,,,,,,not_migrated
+21,Initiatives,148809198157042090339,items,STATIC,/programs,pages/Programs (filter items),,,web:pages/Programs.test.tsx; api:test_programs,migrated
+21,Initiatives,45182087927102988360,Menubar,TMPL_THEME_42$CONTENT_ROW,/programs,app/AppLayout (primary nav),,,web:pages/Programs.test.tsx; api:test_programs,migrated
+21,Initiatives,41702543585220774109,Initiatives,TMPL_THEME_42$CONTENT_ROW,/programs,pages/Programs/ProgramTable,GET /api/v1/programs,sp_areas;sp_initiatives;sp_projects;sp_team_members,web:pages/Programs.test.tsx; api:test_programs,migrated
+21,Initiatives,68212662034148500489,Faceted Search,NATIVE_FACETED_SEARCH,/programs,components/FacetFilters,(query string on list endpoint),,web:pages/Programs.test.tsx; api:test_programs,migrated
+21,Initiatives,44317744572069973542,Breadcrumb,NATIVE_BREADCRUMB,/programs,app/AppLayout (breadcrumb),,,web:pages/Programs.test.tsx; api:test_programs,migrated
+22,Initiative,176257870655540813250,Initiative,NATIVE_FORM,,,,sp_initiatives,,not_migrated
+22,Initiative,176257877566936813269,Buttons,STATIC,,,,,,not_migrated
+23,Projects,42378435759122105012,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+23,Projects,67214720228167729791,Items,STATIC,,,,,,not_migrated
+23,Projects,68015115248934133506,Faceted Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+23,Projects,37246848535456912414,Content Row,TMPL_THEME_42$CONTENT_ROW,,,,sp_activities;sp_approval_types;sp_areas;sp_favorites;sp_initiative_approvals;sp_initiative_focus_areas;sp_initiatives;sp_project_approvals;sp_project_groups;sp_project_priorities;sp_project_scales;sp_project_statuses;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+23,Projects,41514092404089090194,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+24,Project,176264782142717484061,Project,NATIVE_FORM,,,,sp_projects,,not_migrated
+24,Project,40397379577110202998,Advanced,STATIC,,,,,,not_migrated
+24,Project,176264792230413484081,Buttons,STATIC,,,,,,not_migrated
+25,About Release Dashboard,39340212909823352597,About,STATIC,,,,,,not_migrated
+26,AI Summaries,28129347697042682169,AI Summaries,NATIVE_SQL_REPORT,,,,sp_project_ai_summaries,,not_migrated
+26,AI Summaries,28131764107435695141,buttons,STATIC,,,,,,not_migrated
+27,Release,68814959212135913074,Release,NATIVE_FORM,,,,sp_release_trains,,not_migrated
+27,Release,68814966479782913107,Buttons,STATIC,,,,,,not_migrated
+28,Edit Comment,37697983925797796524,Edit Comment,NATIVE_FORM,,,,sp_project_comments_v,,not_migrated
+28,Edit Comment,37698003392583796561,Buttons,STATIC,,,,,,not_migrated
+29,Project Images,38145431302666166575,Images,NATIVE_CARDS,,,,sp_project_documents;sp_task_documents;sp_task_types;sp_tasks,,not_migrated
+29,Project Images,39012383630935607340,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+29,Project Images,38145431944355166581,Facets,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+29,Project Images,70493427237479186933,Project,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_project_priorities;sp_project_scales;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+30,Project Document Details,40479145813371325932,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+30,Project Document Details,44569495780426841418,Document Description,NATIVE_SQL_REPORT,,,,sp_project_documents,,not_migrated
+30,Project Document Details,74075402647126410923,No Preview Available,STATIC,,,,,,not_migrated
+30,Project Document Details,44077911311268264047,&P30_FILE_NAME.,STATIC,,,,,,not_migrated
+30,Project Document Details,41501762723768119076,SQL,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+30,Project Document Details,27117242230643764655,Text,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+30,Project Document Details,27117240197387764635,Markdown,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+30,Project Document Details,27117240359158764636,HTML Display of Markdown,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+30,Project Document Details,42497663850074646705,PL/SQL,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+30,Project Document Details,38145435390317166616,Document Details,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_project_documents;sp_projects,,not_migrated
+30,Project Document Details,42497663443909646701,YAML,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+30,Project Document Details,42497663612559646703,JSON,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+30,Project Document Details,42497663733719646704,XML,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+30,Project Document Details,42497663479066646702,Java,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+30,Project Document Details,42497663880964646706,Python,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+30,Project Document Details,41501762812573119077,PDF,STATIC,,,,,,not_migrated
+31,Links from Comments,42497664376259646711,Button Bar,STATIC,,,,,,not_migrated
+31,Links from Comments,42497664691050646714,links,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+32,Description,188272159451954080085,Project,NATIVE_FORM,,,,sp_projects,,not_migrated
+32,Description,188272169539650080105,Buttons,STATIC,,,,,,not_migrated
+33,Initiative Focus Area Details,159887310845130223944,Comments Report,NATIVE_SQL_REPORT,,,,sp_init_focus_area_comments_v;sp_team_members,,not_migrated
+33,Initiative Focus Area Details,53811147375086576711,Comment Form,STATIC,,,,,,not_migrated
+33,Initiative Focus Area Details,66844871756481809014,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+33,Initiative Focus Area Details,43926633770451298648,Projects,NATIVE_SQL_REPORT,,,,sp_initiatives;sp_project_priorities;sp_project_scales;sp_project_statuses;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+33,Initiative Focus Area Details,39226228670154940686,Project Schedule,STATIC,,,,,,not_migrated
+33,Initiative Focus Area Details,65980528401448794196,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+33,Initiative Focus Area Details,55083683028706389416,report,NATIVE_SQL_REPORT,,,,sp_initiatives;sp_project_scales;sp_project_statuses;sp_projects;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+33,Initiative Focus Area Details,61249993517802845017,Details,STATIC,,,,,,not_migrated
+33,Initiative Focus Area Details,58563378628182979081,RDS,NATIVE_DISPLAY_SELECTOR,,,,,,not_migrated
+33,Initiative Focus Area Details,65831865274248661846,Description,STATIC,,,,,,not_migrated
+33,Initiative Focus Area Details,90040788400486182177,details,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiative_focus_areas;sp_initiatives;sp_projects;sp_team_members,,not_migrated
+33,Initiative Focus Area Details,172644463904682558133,Comments,STATIC,,,,,,not_migrated
+33,Initiative Focus Area Details,63345222381534692222,Links,NATIVE_IR,,,,sp_init_focus_area_links,,not_migrated
+33,Initiative Focus Area Details,184431665270146012797,Documents,NATIVE_IR,,,,sp_init_focus_area_documents,,not_migrated
+33,Initiative Focus Area Details,85041865137304079971,description,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+34,Size,42660676159698284305,Size,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+35,Edit Initiative Focus Area Comment,54731659924435211600,Edit Comment,NATIVE_FORM,,,,sp_init_focus_area_comments_v,,not_migrated
+35,Edit Initiative Focus Area Comment,54731679391221211637,Buttons,STATIC,,,,,,not_migrated
+36,Project Detail,43750347206615976349,Attributes,NATIVE_SQL_REPORT,,,,sp_areas;sp_favorites;sp_initiative_focus_areas;sp_initiatives;sp_project_groups;sp_project_priorities;sp_project_scales;sp_project_sizes;sp_project_statuses;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+36,Project Detail,38072381438468321281,Activity,NATIVE_SQL_REPORT,,,,sp_activities;sp_activity_types;sp_projects;sp_team_members,,not_migrated
+36,Project Detail,37614968010974937413,Milestones,NATIVE_SQL_REPORT,,,,sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+36,Project Detail,38090001632519244771,Reviews,NATIVE_SQL_REPORT,,,,sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+36,Project Detail,72349515475432024248,Tasks,NATIVE_SQL_REPORT,,,,sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+36,Project Detail,60082690306053517610,Approvals,NATIVE_SQL_REPORT,,,,sp_approval_types;sp_project_approval_chain;sp_project_approvals;sp_team_members,,not_migrated
+36,Project Detail,38072383614256321302,Tags,NATIVE_SQL_REPORT,,,,sp_projects,,not_migrated
+36,Project Detail,38394338787889517581,Buttons,STATIC,,,,,,not_migrated
+36,Project Detail,38072381963183321286,Related,NATIVE_SQL_REPORT,,,,sp_project_related;sp_projects,,not_migrated
+36,Project Detail,153766638816608600999,Links,NATIVE_SQL_REPORT,,,,sp_project_links,,not_migrated
+37,All Project Summaries,132113427859129478327,Summaries,NATIVE_IR,,,,sp_project_ai_summaries;sp_projects,,not_migrated
+37,All Project Summaries,132113435025087478350,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+38,Release Link,41623863122649895952,Release Link,NATIVE_FORM,,,,sp_release_links,,not_migrated
+38,Release Link,41623869749094895963,Buttons,STATIC,,,,,,not_migrated
+39,Page Views,45994478977524977889,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+39,Page Views,45994479591563977891,Page Performance,NATIVE_IR,,,,,,not_migrated
+40,Link,168779459152018861824,Link,NATIVE_FORM,,,,sp_init_focus_area_links,,not_migrated
+40,Link,168779470627875861831,Buttons,STATIC,,,,,,not_migrated
+41,Reports,47015349125202045874,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+41,Reports,47013757957611934280,Reports from List,NATIVE_LIST,,,,,,not_migrated
+42,Release Document Details,57146072978485872864,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+42,Release Document Details,61236422945541388350,Document Description,NATIVE_SQL_REPORT,,,,sp_release_documents,,not_migrated
+42,Release Document Details,74075404126334411952,No Preview Available,STATIC,,,,,,not_migrated
+42,Release Document Details,60744838476382810979,&P42_FILE_NAME.,STATIC,,,,,,not_migrated
+42,Release Document Details,58168689888882666008,SQL,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+42,Release Document Details,76074242556856259426,Text,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+42,Release Document Details,81550323091417439528,Markdown,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+42,Release Document Details,81550355919124447168,HTML Display of Markdown,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+42,Release Document Details,59164591015189193637,PL/SQL,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+42,Release Document Details,59164590609024193633,YAML,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+42,Release Document Details,59164590777674193635,JSON,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+42,Release Document Details,59164590898834193636,XML,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+42,Release Document Details,54812362555431713548,Document Details,NATIVE_SQL_REPORT,,,,sp_release_documents;sp_release_trains,,not_migrated
+42,Release Document Details,59164590644181193634,Java,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+42,Release Document Details,59164591046079193638,Python,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+42,Release Document Details,58168689977687666009,PDF,STATIC,,,,,,not_migrated
+43,Countries,47730318018324401630,Countries,NATIVE_IR,,,,sp_countries,,not_migrated
+43,Countries,47730325184282401653,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+43,Countries,37246844415096912373,SQL,NATIVE_SQL_REPORT,,,,sp_countries,,not_migrated
+44,Country,47730299333149401567,Country,NATIVE_FORM,,,,sp_countries,,not_migrated
+44,Country,47730313225006401615,Buttons,STATIC,,,,,,not_migrated
+45,Archived Projects,48564178930177220652,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+45,Archived Projects,48564179516737220655,Archived Projects,NATIVE_IR,,,,sp_areas;sp_initiative_focus_areas;sp_initiatives;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+46,Image Gallery,48908827302708393562,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+46,Image Gallery,50155002528980663998,Image Gallery,NATIVE_CARDS,,,,sp_areas;sp_initiatives;sp_project_documents;sp_projects,,not_migrated
+46,Image Gallery,48805116530542715393,Facets,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+47,Archive Project,47728215088883889989,Archive,STATIC,,,,,,not_migrated
+47,Archive Project,47728215469348889993,Button Container,STATIC,,,,,,not_migrated
+48,Release Description,58535481965750761703,Release Description,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+48,Release Description,58535482184135761705,Button Bar,STATIC,,,,,,not_migrated
+49,Mark as Dupliate,59354936155215387912,Archive,STATIC,,,,,,not_migrated
+49,Mark as Dupliate,59354936535680387916,Button Container,STATIC,,,,,,not_migrated
+50,Unmark as Duplicate,71027035670012821920,Archive,STATIC,,,,,,not_migrated
+50,Unmark as Duplicate,71027036050477821924,Button Container,STATIC,,,,,,not_migrated
+51,Duplicate Projects,60238911417503727799,Duplidate Projects,NATIVE_IR,,,,sp_areas;sp_initiative_focus_areas;sp_initiatives;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+51,Duplicate Projects,60239468300056746026,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+52,Un-Archive Project,59405755687738487500,Archive,STATIC,,,,,,not_migrated
+52,Un-Archive Project,59405756068203487504,Button Container,STATIC,,,,,,not_migrated
+53,Initiative Document Details,57149006541903142222,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+53,Initiative Document Details,61239356508958657708,Document Description,NATIVE_SQL_REPORT,,,,sp_initiative_documents,,not_migrated
+53,Initiative Document Details,74075407065183412957,No Preview Available,STATIC,,,,,,not_migrated
+53,Initiative Document Details,60747772039800080337,&P53_FILE_NAME.,STATIC,,,,,,not_migrated
+53,Initiative Document Details,58171623452299935366,SQL,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+53,Initiative Document Details,81549088924917292204,Text,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+53,Initiative Document Details,81549128644446384988,Markdown,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+53,Initiative Document Details,81549090947373293754,HTML Display of Markdown,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+53,Initiative Document Details,59167524578606462995,PL/SQL,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+53,Initiative Document Details,59167524172441462991,YAML,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+53,Initiative Document Details,59167524341091462993,JSON,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+53,Initiative Document Details,59167524462251462994,XML,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+53,Initiative Document Details,54815296118848982906,Document Details,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiative_documents;sp_initiatives,,not_migrated
+53,Initiative Document Details,59167524207598462992,Java,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+53,Initiative Document Details,59167524609496462996,Python,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+53,Initiative Document Details,58171623541104935367,PDF,STATIC,,,,,,not_migrated
+54,Add Multiple People,177204523792610924302,Buttons,STATIC,,,,,,not_migrated
+54,Add Multiple People,177204523870062924302,Wizard Container,STATIC,,,,,,not_migrated
+55,Cross-Release Calendar,71512514115001015263,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+55,Cross-Release Calendar,71512514889163015274,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+55,Cross-Release Calendar,71512517270787015279,Button Bar,STATIC,,,,,,not_migrated
+55,Cross-Release Calendar,71512514820045015274,Search Results,NATIVE_CSS_CALENDAR,,,,sp_release_milestone_types;sp_release_milestones;sp_release_trains,,not_migrated
+55,Cross-Release Calendar,137677964126173749189,Release,NATIVE_SQL_REPORT,,,,sp_projects;sp_release_trains;sp_team_members,,not_migrated
+56,Initiative Focus Area Document,203257274335506652913,Document,NATIVE_FORM,,,,sp_init_focus_area_documents,,not_migrated
+56,Initiative Focus Area Document,203257283699222652919,Buttons,STATIC,,,,,,not_migrated
+57,Initiative Focus Area Change History,72207972964502377700,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+57,Initiative Focus Area Change History,72207722933045367707,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+57,Initiative Focus Area Change History,72207724099453367722,Button Bar,STATIC,,,,,,not_migrated
+57,Initiative Focus Area Change History,72207722791117367707,Search Results,NATIVE_SQL_REPORT,,,,sp_init_focus_area_history;sp_initiative_focus_areas,,not_migrated
+57,Initiative Focus Area Change History,103687347067505641586,details,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiative_focus_areas;sp_initiatives;sp_team_members,,not_migrated
+58,Add Multiple &NOMENCLATURE_USERS - Step 2,177204555550287929041,Buttons,STATIC,,,,,,not_migrated
+58,Add Multiple &NOMENCLATURE_USERS - Step 2,177204556047795929041,Hidden Items,STATIC,,,,,,not_migrated
+58,Add Multiple &NOMENCLATURE_USERS - Step 2,177204587655016929587,No Valid Users Exist - Page Info,STATIC,,,,,,not_migrated
+58,Add Multiple &NOMENCLATURE_USERS - Step 2,177204586977423929586,Valid Users Exist - Page Info,NATIVE_PLSQL,,,,,,not_migrated
+58,Add Multiple &NOMENCLATURE_USERS - Step 2,177204555598172929041,Wizard Container,STATIC,,,,,,not_migrated
+58,Add Multiple &NOMENCLATURE_USERS - Step 2,177204555938572929041,&P58_VALID_COUNT. Users to Add,NATIVE_JQM_LIST_VIEW,,,,,,not_migrated
+58,Add Multiple &NOMENCLATURE_USERS - Step 2,177204555774119929041,Exceptions,NATIVE_SQL_REPORT,,,,,,not_migrated
+59,Initiative Focus Area Document Details,74275416442157765088,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+59,Initiative Focus Area Document Details,78365766409213280574,Document Description,NATIVE_SQL_REPORT,,,,sp_init_focus_area_documents,,not_migrated
+59,Initiative Focus Area Document Details,91201816965438035823,No Preview Available,STATIC,,,,,,not_migrated
+59,Initiative Focus Area Document Details,77874181940054703203,&P59_FILE_NAME.,STATIC,,,,,,not_migrated
+59,Initiative Focus Area Document Details,75298033352554558232,SQL,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+59,Initiative Focus Area Document Details,54331477968191910537,Markdown,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+59,Initiative Focus Area Document Details,54331434237045818541,HTML Display of Markdown,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+59,Initiative Focus Area Document Details,54331428139663816289,Text,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+59,Initiative Focus Area Document Details,76293934478861085861,PL/SQL,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+59,Initiative Focus Area Document Details,71941706019103605772,Document Details,NATIVE_SQL_REPORT,,,,sp_areas;sp_init_focus_area_documents;sp_initiative_focus_areas;sp_initiatives,,not_migrated
+59,Initiative Focus Area Document Details,76293934072696085857,YAML,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+59,Initiative Focus Area Document Details,76293934241346085859,JSON,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+59,Initiative Focus Area Document Details,76293934362506085860,XML,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+59,Initiative Focus Area Document Details,76293934107853085858,Java,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+59,Initiative Focus Area Document Details,76293934509751085862,Python,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+59,Initiative Focus Area Document Details,75298033441359558233,PDF,STATIC,,,,,,not_migrated
+60,Task Images,55640363637069741594,Images,NATIVE_CARDS,,,,sp_task_documents,,not_migrated
+60,Task Images,56507315965339182359,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+60,Task Images,108678465036737076378,Task,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_projects;sp_task_statuses;sp_tasks;sp_team_members,,not_migrated
+60,Task Images,55640364278758741600,Facets,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+61,Add to Group,64071202479391146788,Group Member,NATIVE_FORM,,,,sp_group_members,,not_migrated
+61,Add to Group,64071208689536146805,Buttons,STATIC,,,,,,not_migrated
+62,Initiative Images,55674755364494645722,Images,NATIVE_CARDS,,,,sp_init_focus_area_documents;sp_initiative_documents;sp_initiative_focus_areas,,not_migrated
+62,Initiative Images,56541707692764086487,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+62,Initiative Images,55674756006183645728,Facets,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+62,Initiative Images,90572828170717047266,details,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_team_members,,not_migrated
+63,Copy Release,73636119190401322580,Release,STATIC,,,,,,not_migrated
+63,Copy Release,73636126458048322613,Buttons,STATIC,,,,,,not_migrated
+63,Copy Release,58710188982033323595,Milestones,NATIVE_SQL_REPORT,,,,sp_release_milestones;sp_release_trains,,not_migrated
+64,Project Change History,38173863368175508793,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+64,Project Change History,38173864019502508809,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+64,Project Change History,38173865185910508824,Button Bar,STATIC,,,,,,not_migrated
+64,Project Change History,38173863877574508809,Search Results,NATIVE_SQL_REPORT,,,,sp_project_history;sp_task_history;sp_task_types;sp_tasks,,not_migrated
+64,Project Change History,69653488153962782688,Projects,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_projects;sp_team_members,,not_migrated
+65,"Milestones, Reviews and Tasks",67697168736427208813,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+65,"Milestones, Reviews and Tasks",67697169381447208818,Search Results,NATIVE_IR,,,,sp_initiative_focus_areas;sp_initiatives;sp_projects;sp_release_trains;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+66,&P66_AREA. Initiatives,39600691882888397909,Sort Container,STATIC,,,,,,not_migrated
+66,&P66_AREA. Initiatives,47090957671370318612,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+66,&P66_AREA. Initiatives,47955301026403333430,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+66,&P66_AREA. Initiatives,39600691588875397906,About,STATIC,,,,,,not_migrated
+66,&P66_AREA. Initiatives,39600690958243397899,Faceted Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+66,&P66_AREA. Initiatives,42277169646039367388,Initiatives,TMPL_THEME_42$CONTENT_ROW,,,,sp_activities;sp_areas;sp_initiatives;sp_project_scales;sp_projects;sp_team_members,,not_migrated
+66,&P66_AREA. Initiatives,51997798532329295044,Area Details,STATIC,,,,,,not_migrated
+66,&P66_AREA. Initiatives,77711571555349698264,Contextual Information,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_projects,,not_migrated
+66,&P66_AREA. Initiatives,48244522027387413311,Additional Attriubtes,NATIVE_SQL_REPORT,,,,sp_areas,,not_migrated
+67,Contributor_roles,39600692918890397919,Contributor Roles,NATIVE_SQL_REPORT,,,,sp_resource_types,,not_migrated
+68,Initiative Focus Area Images,73268580490219444046,Images,NATIVE_CARDS,,,,sp_init_focus_area_documents,,not_migrated
+68,Initiative Focus Area Images,74135532818488884811,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+68,Initiative Focus Area Images,107636262092702034959,details,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiative_focus_areas;sp_initiatives;sp_team_members,,not_migrated
+68,Initiative Focus Area Images,73268581131908444052,Facets,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+69,Release Images,90870944707747816970,Images,NATIVE_CARDS,,,,sp_release_documents,,not_migrated
+69,Release Images,91737897036017257735,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+69,Release Images,90870945349436816976,Facets,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+69,Release Images,91738629828851901271,Release,NATIVE_SQL_REPORT,,,,sp_projects;sp_release_trains;sp_team_members,,not_migrated
+70,Project Groups,38127473747861738495,Project Groups,NATIVE_IR,,,,sp_initiatives;sp_project_groups;sp_projects,,not_migrated
+70,Project Groups,38127478894962738501,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+71,Page Performance,43200311753415453160,Timeframe,STATIC,,,,,,not_migrated
+71,Page Performance,43202219697078597544,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+71,Page Performance,43202220311117597546,Page Performance,NATIVE_IR,,,,,,not_migrated
+72,Page Views by User,40444239848690221773,FIlter,STATIC,,,,,,not_migrated
+72,Page Views by User,49539090999740835493,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+72,Page Views by User,49539091613779835495,Page Performance,NATIVE_IR,,,,,,not_migrated
+73,User Quick Look,42765985395182148795,Not a Team Member,STATIC,,,,,,not_migrated
+73,User Quick Look,40996714688333283996,Button Container,STATIC,,,,,,not_migrated
+73,User Quick Look,39768021202092113495,Person Details,NATIVE_SQL_REPORT,,,,sp_team_members,,not_migrated
+73,User Quick Look,54999704922729225667,Current and Future Project Activities,TMPL_THEME_42$CONTENT_ROW,,,,sp_activities;sp_activity_types;sp_date_range_pct_comp;sp_projects;sp_team_members,,not_migrated
+73,User Quick Look,154829271497511388871,Project Associations (Excludes Completed),NATIVE_SQL_REPORT,,,,sp_activities;sp_areas;sp_initiatives;sp_project_contributors;sp_project_priorities;sp_projects;sp_release_trains;sp_task_types;sp_tasks,,not_migrated
+73,User Quick Look,50382007128274366473,Open Reviews,NATIVE_SQL_REPORT,,,,sp_project_priorities;sp_projects;sp_release_trains;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+73,User Quick Look,51905690050388848877,Active Approvals,NATIVE_SQL_REPORT,,,,sp_approval_types;sp_project_approval_chain;sp_project_approvals;sp_projects,,not_migrated
+73,User Quick Look,46670187446413925697,Associated Groups,NATIVE_SQL_REPORT,,,,sp_group_members;sp_groups,,not_migrated
+74,People,44192547144049567909,filters,STATIC,/workforce,components/FacetFilters,,,web:pages/Workforce.test.tsx; api:test_workforce,migrated
+74,People,46781728315331219208,Menubar,TMPL_THEME_42$CONTENT_ROW,/workforce,app/AppLayout (primary nav),,,web:pages/Workforce.test.tsx; api:test_workforce,migrated
+74,People,48031059055579943495,Faceted Search,NATIVE_FACETED_SEARCH,/workforce,components/FacetFilters,(query string on list endpoint),,web:pages/Workforce.test.tsx; api:test_workforce,migrated
+74,People,47235315433794283725,Users ,TMPL_THEME_42$CONTENT_ROW,/workforce,pages/Workforce/LaborTable,GET /api/v1/workforce/labor,sp_activities;sp_areas;sp_countries;sp_group_members;sp_groups;sp_initiative_comments;sp_initiative_documents;sp_initiatives;sp_project_comments;sp_project_comments_emails;sp_project_documents;sp_projects;sp_release_comments;sp_release_documents;sp_task_comments;sp_task_documents;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,web:pages/Workforce.test.tsx; api:test_workforce,migrated
+74,People,45917384960298204390,Breadcrumb,NATIVE_BREADCRUMB,/workforce,app/AppLayout (breadcrumb),,,web:pages/Workforce.test.tsx; api:test_workforce,migrated
+75,Current Activity,39785075570250312077,Filter,STATIC,,,,,,not_migrated
+75,Current Activity,39784980351666284990,Current Activity,NATIVE_SQL_REPORT,,,,sp_activities;sp_activity_types;sp_project_priorities;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+75,Current Activity,45295364209798013033,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+75,Current Activity,44431020854764998215,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+76,Delete Release,73698375585019699329,Release,NATIVE_FORM,,,,sp_release_trains,,not_migrated
+76,Delete Release,41725545750441004281,Associated with this Release,NATIVE_SQL_REPORT,,,,sp_projects;sp_release_comments;sp_release_links;sp_release_milestones,,not_migrated
+76,Delete Release,73698382852666699362,Buttons,STATIC,,,,,,not_migrated
+77,Initiative Link,41625094253457286545,Initiative Link,NATIVE_FORM,,,,sp_initiative_links,,not_migrated
+77,Initiative Link,41625101473616286559,Buttons,STATIC,,,,,,not_migrated
+78,AI Summary Information,29014888468923880747,Information,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+79,Change History,57793211501476928785,Change History,NATIVE_IR,,,,sp_favorites;sp_init_focus_area_history;sp_initiative_focus_areas;sp_initiative_history;sp_initiatives;sp_project_history;sp_projects;sp_release_history;sp_release_trains;sp_task_history;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+79,Change History,58151891356499922719,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+80,Project Views,85518934429263339177,Items,STATIC,,,,,,not_migrated
+80,Project Views,55202764719401756925,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+80,Project Views,55202764662834756925,Search Results,NATIVE_SQL_REPORT,,,,sp_initiatives;sp_proj_interactions_log;sp_projects,,not_migrated
+80,Project Views,58429388562034234185,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+81,Initiative Views,103823711439207356411,Items,STATIC,,,,,,not_migrated
+81,Initiative Views,73507541729345774159,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+81,Initiative Views,73507541672778774159,Search Results,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_proj_interactions_log;sp_projects,,not_migrated
+81,Initiative Views,76734333799320973856,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+82,Tag History,39323069905960075959,Tag Changes,NATIVE_SQL_REPORT,,,,sp_project_history;sp_tag_diff,,not_migrated
+83,Release Comment,44989425371755909047,Release Comment,NATIVE_FORM,,,,sp_release_comments_v,,not_migrated
+83,Release Comment,44989432687076909082,Buttons,STATIC,,,,,,not_migrated
+84,Project Details Sent,59269369593158550800,Details Sent,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+85,Release Milestone,45058098929183928148,Release Milestone,NATIVE_FORM,,,,sp_release_milestones,,not_migrated
+85,Release Milestone,45058110459093928181,Buttons,STATIC,,,,,,not_migrated
+86,Projects,45482765110649658951,Projects Interactive Report,NATIVE_IR,/projects,pages/Projects/ProjectTable,GET /api/v1/projects,sp_activities;sp_approval_types;sp_areas;sp_favorites;sp_initiative_focus_areas;sp_initiatives;sp_project_approvals;sp_project_comments;sp_project_groups;sp_project_priorities;sp_project_scales;sp_project_sizes;sp_project_statuses;sp_projects;sp_release_trains;sp_task_types;sp_tasks;sp_team_members,web:pages/Projects.test.tsx; api:test_programs_and_projects_fixtures,planned
+86,Projects,50965397994731311020,Menubar,TMPL_THEME_42$CONTENT_ROW,/projects,app/AppLayout (primary nav),,,web:pages/Projects.test.tsx; api:test_programs_and_projects_fixtures,planned
+86,Projects,50101054639698296202,Breadcrumb,NATIVE_BREADCRUMB,/projects,app/AppLayout (breadcrumb),,,web:pages/Projects.test.tsx; api:test_programs_and_projects_fixtures,planned
+87,Initiative Comment,49686982910895887882,Initiative Comment,NATIVE_FORM,,,,sp_initiative_comments_v,,not_migrated
+87,Initiative Comment,49686990226216887917,Buttons,STATIC,,,,,,not_migrated
+88,Tags,39266084959337556680,Context,STATIC,,,,,,not_migrated
+88,Tags,38419381704404282815,buttons,STATIC,,,,,,not_migrated
+88,Tags,48249783141710800669,Tags,NATIVE_SQL_REPORT,,,,sp_projects,,not_migrated
+88,Tags,39666305175936193634,Tag Buttons,STATIC,,,,,,not_migrated
+89,Project Views by User,122130069652439385447,Items,STATIC,,,,,,not_migrated
+89,Project Views by User,91813899942577803195,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+89,Project Views by User,91813899886010803195,Search Results,NATIVE_SQL_REPORT,,,,sp_proj_interactions_log;sp_projects;sp_team_members,,not_migrated
+89,Project Views by User,76736285543824323567,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+90,Project Group,38127463859940738479,Project,NATIVE_FORM,,,,sp_project_groups,,not_migrated
+90,Project Group,38127469271273738488,Buttons,STATIC,,,,,,not_migrated
+91,Favorite Projects,50487550974291985299,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+91,Favorite Projects,50487551711571985302,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+91,Favorite Projects,50487552518005985304,Button Bar,STATIC,,,,,,not_migrated
+91,Favorite Projects,50487551689988985302,Search Results,NATIVE_SQL_REPORT,,,,sp_areas;sp_favorites;sp_initiatives;sp_project_priorities;sp_projects;sp_team_members,,not_migrated
+92,Release Milestone,49189204832043118175,Release Milestone,NATIVE_FORM,,,,sp_release_milestones,,not_migrated
+92,Release Milestone,49189214927312118188,Buttons,STATIC,,,,,,not_migrated
+93,Project Exceptions,42765983996857148781,contents,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+94,Initiative,41565405759516002070,RDS,NATIVE_DISPLAY_SELECTOR,,,,,,not_migrated
+94,Initiative,48982607614208821638,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+94,Initiative,49846950969241836456,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+94,Initiative,40293448405768691781,focus area content,NATIVE_IR,,,,sp_initiative_focus_areas;sp_projects,,not_migrated
+94,Initiative,41565408815667002101,Projects ,NATIVE_IR,,,,sp_initiatives;sp_project_priorities;sp_project_scales;sp_project_statuses;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+94,Initiative,41806955407192483899,Initiative Icon,TMPL_THEME_42$AVATAR,,,,sp_areas;sp_initiatives,,not_migrated
+94,Initiative,44252253978621161489,Initiative Details,STATIC,,,,,,not_migrated
+94,Initiative,54742468767242190933,Default Completeness Scale [&P94_STATUS_SCALE.],STATIC,,,,,,not_migrated
+94,Initiative,55059015799205694807,Default Tasks [&P94_DEFAULT_TASK_CNT.],STATIC,,,,,,not_migrated
+94,Initiative,55177378708922247805,task content,NATIVE_SQL_REPORT,,,,sp_initiative_default_tasks;sp_task_types,,not_migrated
+94,Initiative,73043048861304498649,Initiative,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_projects;sp_team_members,,not_migrated
+94,Initiative,50047297030760743682,Approval Workflow [&P94_APPROVAL_TYPE_CNT.],STATIC,,,,,,not_migrated
+94,Initiative,53086728100251817239,Status Scale content,NATIVE_SQL_REPORT,,,,sp_project_scales,,not_migrated
+94,Initiative,49762297901753785596,approval type content,NATIVE_IR,,,,sp_approval_types;sp_initiative_approval_chain;sp_initiative_approvals;sp_initiatives;sp_team_members,,not_migrated
+94,Initiative,40293448261128691779,Focus Areas [&P94_FOCUS_AREA_CNT.],STATIC,,,,,,not_migrated
+94,Initiative,155646708834508872042,Comments,NATIVE_SQL_REPORT,,,,sp_initiative_comments_v;sp_team_members,,not_migrated
+94,Initiative,41621602072957453097,Activities,NATIVE_IR,,,,sp_activities;sp_activity_types;sp_date_range_pct_comp;sp_initiatives;sp_team_members,,not_migrated
+94,Initiative,41376456070343866302,Associated Releases,NATIVE_IR,,,,sp_projects;sp_release_trains,,not_migrated
+94,Initiative,49954352924695454086,Focus Areas,NATIVE_IR,,,,sp_initiative_focus_areas;sp_projects;sp_team_members,,not_migrated
+94,Initiative,51905692825789848905,This Week Content,TMPL_THEME_42$CONTENT_ROW,,,,sp_projects;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+94,Initiative,52590895824095963384,This Week,STATIC,,,,,,not_migrated
+94,Initiative,46347225677624712493,Links,NATIVE_IR,,,,sp_init_focus_area_links;sp_initiative_focus_areas;sp_initiative_links,,not_migrated
+94,Initiative,167433884371348323955,Documents,NATIVE_IR,,,,sp_documents_v,,not_migrated
+94,Initiative,58034539737288833304,Additional Attriubtes,NATIVE_SQL_REPORT,,,,sp_initiatives,,not_migrated
+94,Initiative,49762297745600785594,Configuration,STATIC,,,,,,not_migrated
+95,Initiative Default Tasks,59902938735441276846,Initiative Tasks,STATIC,,,,,,not_migrated
+95,Initiative Default Tasks,55177375751473247775,report,NATIVE_SQL_REPORT,,,,sp_initiative_default_tasks;sp_task_types,,not_migrated
+95,Initiative Default Tasks,59902945955600276860,Buttons,STATIC,,,,,,not_migrated
+96,Involved People,68426539949819487770,Users ,TMPL_THEME_42$CONTENT_ROW,,,,sp_project_comments;sp_project_contributors;sp_project_documents;sp_project_links;sp_projects;sp_tasks;sp_team_members,,not_migrated
+97,Most Viewed Projects,55651342967739961626,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+97,Most Viewed Projects,55651343705019961629,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+97,Most Viewed Projects,55651344511453961631,Button Bar,STATIC,,,,,,not_migrated
+97,Most Viewed Projects,55651343683436961629,Search Results,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_proj_interactions_log;sp_project_priorities;sp_projects;sp_release_trains,,not_migrated
+98,Task Quick Look,55810211719203497963,&P98_TASK_TYPE.,NATIVE_SQL_REPORT,,,,sp_projects;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+98,Task Quick Look,50132248126843842916,Tags,NATIVE_SQL_REPORT,,,,sp_tasks,,not_migrated
+98,Task Quick Look,50454203300477039195,Buttons,STATIC,,,,,,not_migrated
+98,Task Quick Look,165826503329196122613,Links,NATIVE_SQL_REPORT,,,,sp_task_links,,not_migrated
+98,Task Quick Look,48857345938502853095,Documents,NATIVE_SQL_REPORT,,,,sp_task_documents,,not_migrated
+98,Task Quick Look,186026587461405775221,Comments,NATIVE_SQL_REPORT,,,,sp_task_comments;sp_team_members,,not_migrated
+99,"Past Due Milestones, Reviews and Tasks",82290232254532843007,Search Results,NATIVE_IR,,,,sp_initiatives;sp_projects;sp_release_trains;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+99,"Past Due Milestones, Reviews and Tasks",82290168200892120961,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+100,Comments,144390210559154653886,Comments,STATIC,,,,,,not_migrated
+100,Comments,23383229861175838758,Comment Report,NATIVE_SQL_REPORT,,,,sp_project_comments_v;sp_team_members,,not_migrated
+100,Comments,39949550201445729420,buttons,STATIC,,,,,,not_migrated
+100,Comments,41806956626296483911,Post Comment Button Container,STATIC,,,,,,not_migrated
+101,Activity,51182840237954336836,Activity,NATIVE_FORM,,,,sp_activities,,not_migrated
+101,Activity,51182849947093336871,Buttons,STATIC,,,,,,not_migrated
+102,Activities,39600721358323111292,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+102,Activities,38623446409433817713,Buttons Container,STATIC,,,,,,not_migrated
+102,Activities,65446603465704565229,Activities,TMPL_THEME_42$CONTENT_ROW,,,,sp_activities;sp_activity_types;sp_date_range_pct_comp;sp_initiatives;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+102,Activities,51182574775871902589,Faceted Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+102,Activities,38736378003290096474,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+103,Groups,45886859839017306471,Groups,NATIVE_IR,,,,sp_group_members;sp_groups;sp_team_members,,not_migrated
+103,Groups,55769441925919603477,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+103,Groups,54905098570886588659,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+104,Add Project,38236331016292145079,Content,STATIC,,,,,,not_migrated
+104,Add Project,38236332587249145095,Button Bar,STATIC,,,,,,not_migrated
+105,Area,38236334396362145113,About,STATIC,,,,,,not_migrated
+105,Area,42527479096973251987,button container,STATIC,,,,,,not_migrated
+106,Initiative,39638377142727433688,About,STATIC,,,,,,not_migrated
+106,Initiative,41119525223804903575,button container,STATIC,,,,,,not_migrated
+107,Project,41042297043203323872,About,STATIC,,,,,,not_migrated
+107,Project,39711610362913572855,button container,STATIC,,,,,,not_migrated
+108,Release,38305339152152761571,button container,STATIC,,,,,,not_migrated
+108,Release,42446490079145923169,About,STATIC,,,,,,not_migrated
+109,User,43851365993814582732,About,STATIC,,,,,,not_migrated
+109,User,41122016008749783696,button container,STATIC,,,,,,not_migrated
+110,Activity,39712397764304976912,button container,STATIC,,,,,,not_migrated
+110,Activity,43853548691298138510,About,STATIC,,,,,,not_migrated
+111,Project Milestone Calendar,48953555149842086112,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+111,Project Milestone Calendar,48953555924004086123,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+111,Project Milestone Calendar,48953558305628086128,Button Bar,STATIC,,,,,,not_migrated
+111,Project Milestone Calendar,48953555854886086123,Search Results,NATIVE_CSS_CALENDAR,,,,sp_initiative_focus_areas;sp_initiatives;sp_projects;sp_release_trains;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+111,Project Milestone Calendar,115119005161014820038,Release,NATIVE_SQL_REPORT,,,,sp_projects;sp_release_trains;sp_team_members,,not_migrated
+112,Initiative Milestones,81626062012261701653,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+112,Initiative Milestones,80761832750567691499,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+112,Initiative Milestones,54007418925934833325,Filter,STATIC,,,,,,not_migrated
+112,Initiative Milestones,69864873284486282055,Report Results,NATIVE_SQL_REPORT,,,,sp_initiative_focus_areas;sp_project_groups;sp_projects;sp_release_trains;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+112,Initiative Milestones,76031183773582737656,Details,STATIC,,,,,,not_migrated
+112,Initiative Milestones,104821978656266074816,details,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_projects,,not_migrated
+113,My Projects,38521086614660781975,User,STATIC,,,,,,not_migrated
+113,My Projects,38804216342754716607,Sort,STATIC,,,,,,not_migrated
+113,My Projects,43791838278780115416,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+113,My Projects,38658774270125406288,Content Row,TMPL_THEME_42$CONTENT_ROW,,,,sp_activities;sp_areas;sp_favorites;sp_initiatives;sp_project_priorities;sp_project_scales;sp_project_statuses;sp_projects;sp_release_trains;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+113,My Projects,38305341341046761593,Filter,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+113,My Projects,42927494923747100598,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+114,Developer_Pool,39723005601150527606,button container,STATIC,,,,,,not_migrated
+114,Developer_Pool,43864156528143689204,About,STATIC,,,,,,not_migrated
+115,What is Release Milestones,39728766699136908047,button container,STATIC,,,,,,not_migrated
+115,What is Release Milestones,43869917626130069645,About,STATIC,,,,,,not_migrated
+116,Copy Project,68146590365399370019,Copy,STATIC,,,,,,not_migrated
+116,Copy Project,68146590745864370023,Button Container,STATIC,,,,,,not_migrated
+117,Release,49015131594930361187,exception buttons,STATIC,,,,,,not_migrated
+117,Release,53887118731445620272,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+117,Release,41597147690488379788,RDS,NATIVE_DISPLAY_SELECTOR,,,,,,not_migrated
+117,Release,49015131709721361188,Exceptions body,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+117,Release,49015132006556361191,timeline buttons,STATIC,,,,,,not_migrated
+117,Release,57961272367074832206,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+117,Release,46264679718184155049,Projects,NATIVE_IR,,,,sp_activities;sp_favorites;sp_initiative_focus_areas;sp_initiatives;sp_project_comments;sp_project_priorities;sp_project_scales;sp_project_statuses;sp_projects;sp_release_trains;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+117,Release,49015132144728361192,Timeline contents,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+117,Release,53205376165132421194,Add Comment,STATIC,,,,,,not_migrated
+117,Release,74136251618652525759,Release,NATIVE_SQL_REPORT,,,,sp_projects;sp_release_trains;sp_team_members,,not_migrated
+117,Release,53888433030352211463,Milestones,NATIVE_IR,,,,sp_release_milestone_types;sp_release_milestones;sp_release_trains,,not_migrated
+117,Release,155647751022702851590,Comments,NATIVE_SQL_REPORT,,,,sp_release_comments_v;sp_team_members,,not_migrated
+117,Release,56482362084353629410,Contributors,TMPL_CONTENT_ROW,,,,sp_activities;sp_project_contributors;sp_projects;sp_release_trains;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+117,Release,61448501732573340600,Reviewers,NATIVE_IR,,,,sp_project_priorities;sp_projects;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+117,Release,46075840318215616801,Timeline,STATIC,,,,,,not_migrated
+117,Release,48020573912237669512,Exceptions,STATIC,,,,,,not_migrated
+117,Release,41621599801777453074,Links,NATIVE_IR,,,,sp_release_links,,not_migrated
+117,Release,183469377721151756702,Documents,NATIVE_IR,,,,sp_release_documents,,not_migrated
+118,What are Release Comments,41154735720500244746,button container,STATIC,,,,,,not_migrated
+118,What are Release Comments,45295886647493406344,About,STATIC,,,,,,not_migrated
+119,Project Groups,49886369866770596552,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+119,Project Groups,150369771404173111331,Comments Report,NATIVE_SQL_REPORT,,,,sp_project_comments_v;sp_projects;sp_team_members,,not_migrated
+119,Project Groups,49022026511737581734,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+119,Project Groups,49074118056543538525,RDS,NATIVE_DISPLAY_SELECTOR,,,,,,not_migrated
+119,Project Groups,49074183429613549709,Projects ,NATIVE_IR,,,,sp_initiatives;sp_project_priorities;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+119,Project Groups,48780904815748983169,Comments,STATIC,,,,,,not_migrated
+119,Project Groups,58754939778771919984,Current Activity,STATIC,,,,,,not_migrated
+119,Project Groups,58705284175075468846,Activity Content Row,TMPL_THEME_42$CONTENT_ROW,,,,sp_activities;sp_activity_types;sp_date_range_pct_comp;sp_initiatives;sp_projects;sp_team_members,,not_migrated
+120,Release Document,167977241562458282967,Document,NATIVE_FORM,,,,sp_release_documents,,not_migrated
+120,Release Document,167977250926174282973,Buttons,STATIC,,,,,,not_migrated
+121,Request Approval,77299309669378483206,Request Approval,STATIC,,,,,,not_migrated
+121,Request Approval,77299310049843483210,Button Container,STATIC,,,,,,not_migrated
+121,Request Approval,48139344831136521300,Approval Chain,NATIVE_SQL_REPORT,,,,sp_initiative_approval_chain;sp_initiative_approvals;sp_projects;sp_team_members,,not_migrated
+122,Screen Names,46715333592208350471,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+122,Screen Names,46715334280878350473,Screen Names,NATIVE_IR,,,,sp_team_members,,not_migrated
+123,Screen Names,46709712195930593074,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+123,Screen Names,57264940085705313617,Users ,TMPL_THEME_42$CONTENT_ROW,,,,sp_team_members,,not_migrated
+124,Change History,38623442689355817676,History,NATIVE_SQL_REPORT,,,,sp_projects,,not_migrated
+124,Change History,40130220208272554582,Buttons,STATIC,,,,,,not_migrated
+124,Change History,39909939958755920747,Changes,NATIVE_SQL_REPORT,,,,sp_project_history,,not_migrated
+125,Approval Request,48139345708578521309,Project,NATIVE_SQL_REPORT,,,,sp_approval_types;sp_project_approvals;sp_projects,,not_migrated
+125,Approval Request,53390417325550645287,&P125_APPROVAL_TYPE. Review,STATIC,,,,,,not_migrated
+125,Approval Request,47426999824562320168,Approval History,NATIVE_SQL_REPORT,,,,sp_project_approval_chain;sp_project_approvals;sp_team_members,,not_migrated
+125,Approval Request,50489759041637794618,Subsequent Approvers,NATIVE_SQL_REPORT,,,,sp_initiative_approval_chain;sp_project_approval_chain;sp_project_approvals;sp_team_members,,not_migrated
+126,Clarification Requested,60715651443867382455,Project,NATIVE_SQL_REPORT,,,,sp_approval_types;sp_project_approval_chain;sp_project_approvals;sp_projects;sp_team_members,,not_migrated
+126,Clarification Requested,65966723060839506433,&P126_APPROVAL_TYPE. Review,STATIC,,,,,,not_migrated
+126,Clarification Requested,60003305559851181314,Approval History,NATIVE_SQL_REPORT,,,,sp_project_approval_chain;sp_project_approvals;sp_team_members,,not_migrated
+127,Default Completeness Scale,189306390875706797738,Initiative,NATIVE_FORM,,,,sp_initiatives,,not_migrated
+127,Default Completeness Scale,189306397787102797757,Buttons,STATIC,,,,,,not_migrated
+127,Default Completeness Scale,53095319942587384871,Status Scale,NATIVE_SQL_REPORT,,,,sp_project_scales,,not_migrated
+128,Favorite,38623446477306817714,FavorIte,STATIC,,,,,,not_migrated
+128,Favorite,38804212931570716573,Button Bar,STATIC,,,,,,not_migrated
+129,Developer Detail Views,38891220574312586164,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+129,Developer Detail Views,38891221813350586173,Button Bar,STATIC,,,,,,not_migrated
+129,Developer Detail Views,42982264637641678668,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+129,Developer Detail Views,38891220483729586164,Search Results,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_proj_interactions_log;sp_projects;sp_team_members,,not_migrated
+129,Developer Detail Views,42117921282608663850,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+130,Activity Quick Look,53384332941083140510,Activity Content Row,TMPL_THEME_42$CONTENT_ROW,,,,sp_activities;sp_activity_types;sp_date_range_pct_comp;sp_projects;sp_team_members,,not_migrated
+131,My Activities,46793776562426387612,About,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+132,My Approval Requests,50799538773915804187,Pending Requests,NATIVE_SQL_REPORT,,,,sp_approval_types;sp_project_approval_chain;sp_project_approvals;sp_projects;sp_team_members,,not_migrated
+132,My Approval Requests,50799539357592804192,More Info Pending,NATIVE_SQL_REPORT,,,,sp_approval_types;sp_project_approval_chain;sp_project_approvals;sp_projects;sp_team_members,,not_migrated
+134,All Project Approvals,50489716740263786806,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+134,All Project Approvals,50489717426430786807,All Project Approvals,NATIVE_IR,,,,sp_approval_types;sp_initiatives;sp_project_approval_chain;sp_project_approvals;sp_projects;sp_team_members,,not_migrated
+135,Planning Board,155584106088334196737,Planning Board,NATIVE_SQL_REPORT,,,,sp_initiative_focus_areas;sp_project_priorities;sp_project_sizes;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+135,Planning Board,155854421097495473435,do not delete - Search Results,NATIVE_SQL_REPORT,,,,sp_initiative_focus_areas;sp_project_priorities;sp_project_sizes;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+135,Planning Board,117190599600756010519,Parameters,STATIC,,,,,,not_migrated
+135,Planning Board,141815726291224212782,Faceted Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+135,Planning Board,154851375477332108559,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+135,Planning Board,147990917132455446913,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+136,Description,72203213007678387574,&P136_PROJECT_NAME.,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+136,Description,39911628667905661248,Buttons,STATIC,,,,,,not_migrated
+137,App Recent Activity,40397376842220202970,Filter,STATIC,,,,,,not_migrated
+137,App Recent Activity,42184589639212553069,App Recent Activity (24 hours),NATIVE_SQL_REPORT,,,,,,not_migrated
+138,My Projects,49738645256633218288,About,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+139,My Subscriptions,40988168023730966484,Notification Subscriptions,NATIVE_SQL_REPORT,,,,sp_notification_subscriptions;sp_notifications;sp_release_trains,,not_migrated
+139,My Subscriptions,48691105037396928452,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+140,Activity Quick Look,40970596320088936040,Activity,NATIVE_SQL_REPORT,,,,sp_activities;sp_activity_types;sp_date_range_pct_comp;sp_projects;sp_team_members,,not_migrated
+140,Activity Quick Look,46695543732700663218,Associated Project,NATIVE_SQL_REPORT,,,,sp_activities;sp_areas;sp_favorites;sp_initiatives;sp_project_priorities;sp_project_sizes;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+140,Activity Quick Look,42368149600574953877,Associated Initiative,NATIVE_SQL_REPORT,,,,sp_activities;sp_areas;sp_initiatives;sp_team_members,,not_migrated
+141,Documents,146752184765854288832,Documents,TMPL_CONTENT_ROW,,,,sp_project_documents,,not_migrated
+141,Documents,42311524408145364366,buttons,STATIC,,,,,,not_migrated
+144,My Profile,40988250277861045428,My Profile,NATIVE_FORM,,,,sp_team_members,,not_migrated
+144,My Profile,40988267371736045455,Buttons,STATIC,,,,,,not_migrated
+145,Groups,52971997647348665360,About,STATIC,,,,,,not_migrated
+145,Groups,50242647662283866324,button container,STATIC,,,,,,not_migrated
+146,Links,53550869083245945887,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+146,Links,53550869836809945890,Links Interactive Report,NATIVE_IR,,,,sp_areas;sp_initiative_links;sp_initiatives;sp_project_links;sp_projects;sp_release_links;sp_release_trains;sp_task_links;sp_task_types;sp_tasks,,not_migrated
+147,My Approval Configuration,37396617336380952859,Configuration,NATIVE_SQL_REPORT,,,,sp_approval_types;sp_initiative_approval_chain;sp_initiative_approvals;sp_initiatives;sp_team_members,,not_migrated
+148,Weekly Summary,20511112803004173153,hidden stuff,STATIC,,,,,,not_migrated
+148,Weekly Summary,66423065991291184996,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+148,Weekly Summary,69638681055520388454,buttons,STATIC,,,,,,not_migrated
+148,Weekly Summary,69638681214650388455,Weekly Summary content,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+148,Weekly Summary,61530691414446005848,Weekly Summary,STATIC,,,,,,not_migrated
+149,Manage My Subscriptions,45082695178511914015,Notification Subscriptions,NATIVE_SQL_REPORT,,,,sp_notification_subscriptions;sp_notifications;sp_release_trains,,not_migrated
+149,Manage My Subscriptions,48401068573716018673,Info,STATIC,,,,,,not_migrated
+149,Manage My Subscriptions,52193003438504521775,Buttons,STATIC,,,,,,not_migrated
+150,Group,45886848681367306416,Group,NATIVE_FORM,,,,sp_groups,,not_migrated
+150,Group,45886854966295306460,Buttons,STATIC,,,,,,not_migrated
+151,Group Members,45888493899832841920,Group Members,NATIVE_IR,,,,sp_group_members;sp_team_members,,not_migrated
+151,Group Members,64758853920306489169,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+151,Group Members,45628237485817527514,Member Projects,NATIVE_IR,,,,sp_activities;sp_areas;sp_favorites;sp_group_members;sp_initiatives;sp_project_comments;sp_project_priorities;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+151,Group Members,63894510565273474351,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+151,Group Members,83125610311000074578,Group,NATIVE_SQL_REPORT,,,,sp_group_members;sp_groups,,not_migrated
+151,Group Members,46943272649472730117,Description,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+151,Group Members,45628237400689527513,RDS,NATIVE_DISPLAY_SELECTOR,,,,,,not_migrated
+152,Group Member,45888482735265841894,Group Member,NATIVE_FORM,,,,sp_group_members,,not_migrated
+152,Group Member,45888488945410841911,Buttons,STATIC,,,,,,not_migrated
+153,Project Exceptions,41137465138108398132,hidden stuff,STATIC,,,,,,not_migrated
+153,Project Exceptions,90265033211140613431,buttons,STATIC,,,,,,not_migrated
+153,Project Exceptions,87049418326395409975,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+153,Project Exceptions,90265033286104613432,Project Exceptions content,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+153,Project Exceptions,89650975141070270966,Project Exceptions,STATIC,,,,,,not_migrated
+154,Default Competencies,47935120645602385619,Default Competencies,NATIVE_IR,,,,sp_competencies;sp_team_members,,not_migrated
+154,Default Competencies,47935125287982385639,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+154,Default Competencies,52780816995457388018,SQL,NATIVE_SQL_REPORT,,,,sp_competencies,,not_migrated
+155,Default Competency,47935110972436385567,Default Competency,NATIVE_FORM,,,,sp_competencies,,not_migrated
+155,Default Competency,47935116252040385608,Buttons,STATIC,,,,,,not_migrated
+156,Documents,60944544351877959321,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+156,Documents,60944544996897959326,Search Results,NATIVE_IR,,,,sp_documents_v,,not_migrated
+157,Images in Comments,210217247080227395773,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+157,Images in Comments,90579568192345389795,Images in Comments,NATIVE_JET_CHART,,,,sp_comment_images,,not_migrated
+158,Comments Interactive Report,185936984701645108310,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+158,Comments Interactive Report,66299305813763102332,Project Comments,NATIVE_IR,,,,sp_areas;sp_initiative_comments_v;sp_initiatives;sp_project_comments_v;sp_projects;sp_release_comments_v;sp_release_trains;sp_task_comments_v;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+159,Project Contributors,62294131381251688174,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+159,Project Contributors,62294132015256688176,Search Results,NATIVE_IR,,,,sp_areas;sp_initiative_focus_areas;sp_initiatives;sp_project_contributors;sp_project_priorities;sp_projects;sp_release_trains;sp_resource_types;sp_team_members,,not_migrated
+161,Cumulative Flow,42859275455620048092,Cumulative Flow,NATIVE_JET_CHART,/financial,pages/Financial/CumulativeChart (table alternative: CumulativeTable),GET /api/v1/financial/summary,sp_project_history;sp_projects,web:pages/Financial.test.tsx; api:test_financial,planned
+162,Control Chart,42983730937643879396,Control Chart,NATIVE_JET_CHART,,,,sp_project_history;sp_projects,,not_migrated
+163,About Kanban,38033423287307290419,Kanban Board,STATIC,,,,,,not_migrated
+165,AI Release Summaries,58752958076255379280,AI Summaries,NATIVE_SQL_REPORT,,,,sp_release_ai_summaries,,not_migrated
+165,AI Release Summaries,58755374486648392252,buttons,STATIC,,,,,,not_migrated
+166,Release Details Sent,89894552623044450403,Details Sent,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+167,All Release Summaries,162888366953912778684,Summaries,NATIVE_IR,,,,sp_release_ai_summaries;sp_release_trains,,not_migrated
+167,All Release Summaries,162888374119870778707,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+170,Add Initiative,189485805779065926611,Initiative,STATIC,,,,,,not_migrated
+170,Add Initiative,189485812690461926630,Buttons,STATIC,,,,,,not_migrated
+171,Add Initiative - Completeness Scale,50047300489128743717,Completeness Scale,STATIC,,,,,,not_migrated
+171,Add Initiative - Completeness Scale,202713819443023049628,Buttons,STATIC,,,,,,not_migrated
+171,Add Initiative - Completeness Scale,66327549176163877544,Status Scale Report,NATIVE_SQL_REPORT,,,,sp_project_scales,,not_migrated
+172,Add Initiative - Default Tasks,215942352049557428958,Buttons,STATIC,,,,,,not_migrated
+172,Add Initiative - Default Tasks,68405738538655406767,default tasks,NATIVE_SQL_REPORT,,,,sp_task_types,,not_migrated
+174,Add Initiative - Focus Areas,229171764433915906508,Buttons,STATIC,,,,,,not_migrated
+174,Add Initiative - Focus Areas,81635150923013884317,Focus Area,STATIC,,,,,,not_migrated
+174,Add Initiative - Focus Areas,50133920077878657073,Focus Areas,NATIVE_SQL_REPORT,,,,,,not_migrated
+175,Add Initiative - Confirm,242403050690574530295,Buttons,STATIC,,,,,,not_migrated
+175,Add Initiative - Confirm,94866437179672508104,The following Initiative will be created,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+202,Release Dashboard,82810834250556802168,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+202,Release Dashboard,86884987886186014102,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+202,Release Dashboard,103059809059588847891,Release,NATIVE_SQL_REPORT,,,,sp_projects;sp_release_trains;sp_team_members,,not_migrated
+202,Release Dashboard,56060835872431206607,Dashboard,STATIC,,,,,,not_migrated
+202,Release Dashboard,58477329606009754434,Projects by Priority,NATIVE_SQL_REPORT,,,,sp_activities;sp_project_comments;sp_project_sizes;sp_projects;sp_release_trains,,not_migrated
+202,Release Dashboard,58477570215864775881,Projects by Size,NATIVE_SQL_REPORT,,,,sp_activities;sp_project_comments;sp_project_priorities;sp_project_sizes;sp_projects;sp_release_trains,,not_migrated
+202,Release Dashboard,58478320742047186840,Projects by Owner,NATIVE_SQL_REPORT,,,,sp_activities;sp_project_comments;sp_project_priorities;sp_project_sizes;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+203,Release Calendar,41993691238844342243,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+203,Release Calendar,41993692013006342254,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+203,Release Calendar,41993694394630342259,Button Bar,STATIC,,,,,,not_migrated
+203,Release Calendar,41993691943888342254,Search Results,NATIVE_CSS_CALENDAR,,,,sp_initiative_focus_areas;sp_projects;sp_release_milestone_types;sp_release_milestones;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+203,Release Calendar,91984153119641931912,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+203,Release Calendar,108159141250017076169,Release,NATIVE_SQL_REPORT,,,,sp_projects;sp_release_trains;sp_team_members,,not_migrated
+222,Status Scale,41363077720245330382,RDS,NATIVE_DISPLAY_SELECTOR,,,,,,not_migrated
+222,Status Scale,154768830699237439028,&P222_LABEL_A.,NATIVE_SQL_REPORT,,,,sp_project_scales,,not_migrated
+222,Status Scale,154768829914839439020,&P222_LABEL_B.,NATIVE_SQL_REPORT,,,,sp_project_scales,,not_migrated
+222,Status Scale,154751883955812534962,&P222_LABEL_C.,NATIVE_SQL_REPORT,,,,sp_project_scales,,not_migrated
+222,Status Scale,154751881955711534942,&P222_LABEL_D.,NATIVE_SQL_REPORT,,,,sp_project_scales,,not_migrated
+222,Status Scale,41363076894551330374,&P222_LABEL_E.,NATIVE_SQL_REPORT,,,,sp_project_scales,,not_migrated
+300,release_projects,43687280926275577011,sorting,STATIC,,,,,,not_migrated
+300,release_projects,38704363030736416965,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+300,release_projects,38605321461051383087,Facets,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+300,release_projects,39304239158551473997,Projects,TMPL_THEME_42$CONTENT_ROW,,,,sp_activities;sp_favorites;sp_project_contributors;sp_projects;sp_release_trains;sp_resource_types;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+300,release_projects,44284528172156809216,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+300,release_projects,48811493004929823762,Release,NATIVE_SQL_REPORT,,,,sp_activities;sp_project_contributors;sp_projects;sp_release_milestones;sp_release_trains,,not_migrated
+501,Task,170053023472883800945,Buttons,STATIC,,,,,,not_migrated
+501,Task,170053014109167800939,Task,NATIVE_FORM,,,,sp_tasks,,not_migrated
+502,Task Details,59694476925605199521,RDS,NATIVE_DISPLAY_SELECTOR,,,,,,not_migrated
+502,Task Details,67111678780298019089,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+502,Task Details,67976022135331033907,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+502,Task Details,62381325144710358940,Details,STATIC,,,,,,not_migrated
+502,Task Details,91172120027393696100,Task,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_projects;sp_task_statuses;sp_tasks;sp_team_members,,not_migrated
+502,Task Details,66969322098564766632,Details,STATIC,,,,,,not_migrated
+502,Task Details,173775780000598069493,Comments,NATIVE_SQL_REPORT,,,,sp_task_comments_v;sp_team_members,,not_migrated
+502,Task Details,64476296843713909944,Links,NATIVE_IR,,,,sp_task_links,,not_migrated
+502,Task Details,185562955537437521406,Documents,NATIVE_IR,,,,sp_task_documents,,not_migrated
+502,Task Details,86179321961620184757,Details,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+503,Task Comment,67846499840415899311,Task Comment,NATIVE_FORM,,,,sp_task_comments_v,,not_migrated
+503,Task Comment,67846507155736899346,Buttons,STATIC,,,,,,not_migrated
+504,Task Document,186135586559478770176,Document,NATIVE_FORM,,,,sp_task_documents,,not_migrated
+504,Task Document,186135595923194770182,Buttons,STATIC,,,,,,not_migrated
+505,Task Document Details,75309437570908917733,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+505,Task Document Details,79399787537964433219,Document Description,NATIVE_SQL_REPORT,,,,sp_task_documents,,not_migrated
+505,Task Document Details,55451868165200187672,No Preview Available,STATIC,,,,,,not_migrated
+505,Task Document Details,78908203068805855848,&P505_FILE_NAME.,STATIC,,,,,,not_migrated
+505,Task Document Details,76332054481305710877,SQL,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+505,Task Document Details,48857347805349853114,Text,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+505,Task Document Details,54333587206708125354,Markdown,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+505,Task Document Details,54333601076567127681,HTML Display of Markdown,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+505,Task Document Details,77327955491257238505,XML,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+505,Task Document Details,77327955607612238506,PL/SQL,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+505,Task Document Details,77327955201447238502,YAML,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+505,Task Document Details,77327955370097238504,JSON,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+505,Task Document Details,72975727147854758417,Document Details,NATIVE_SQL_REPORT,,,,sp_projects;sp_task_documents;sp_task_types;sp_tasks,,not_migrated
+505,Task Document Details,77327955236604238503,Java,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+505,Task Document Details,77327955638502238507,Python,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+505,Task Document Details,76332054570110710878,PDF,STATIC,,,,,,not_migrated
+506,Task Link,59789056037953605964,Task Link,NATIVE_FORM,,,,sp_task_links,,not_migrated
+506,Task Link,59789063258112605978,Buttons,STATIC,,,,,,not_migrated
+507,Task Change History,56339111276326588206,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+507,Task Change History,56339111927653588222,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+507,Task Change History,56339113094061588237,Button Bar,STATIC,,,,,,not_migrated
+507,Task Change History,109337602299971071305,Task,NATIVE_SQL_REPORT,,,,sp_projects;sp_task_statuses;sp_task_types;sp_tasks;sp_team_members,,not_migrated
+507,Task Change History,56339111785725588222,Search Results,NATIVE_SQL_REPORT,,,,sp_task_history,,not_migrated
+507,Task Change History,80546807417287734145,Details,STATIC,,,,,,not_migrated
+508,Milestone,171253831577765849195,Buttons,STATIC,,,,,,not_migrated
+508,Milestone,171253822214049849189,Task,NATIVE_FORM,,,,sp_tasks,,not_migrated
+509,Review,172455021971079236925,Buttons,STATIC,,,,,,not_migrated
+509,Review,172455012607363236919,Task,NATIVE_FORM,,,,sp_tasks,,not_migrated
+600,Project Interactions,48877186080287636400,button_bar,STATIC,,,,,,not_migrated
+600,Project Interactions,48877183924891636378,Project Interactions,NATIVE_SQL_REPORT,,,,sp_proj_interactions_log,,not_migrated
+610,Project Interactions,49171673691251001254,Search,NATIVE_FACETED_SEARCH,,components/FacetFilters,(query string on list endpoint),,,not_migrated
+610,Project Interactions,49171675432912001259,Button Bar,STATIC,,,,,,not_migrated
+610,Project Interactions,49171673590514001254,Search Results,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiatives;sp_proj_interactions_log;sp_projects;sp_release_trains,,not_migrated
+610,Project Interactions,188538138627453272412,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+4000,Workflow Console,46255768915107639761,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+4000,Workflow Console,46255770243497639765,Report,TMPL_THEME_42$CONTENT_ROW,,,,,,not_migrated
+4001,Workflow Details,46255786333506639792,Subject,TMPL_THEME_42$CONTENT_ROW,,,,,,not_migrated
+4001,Workflow Details,46255789760256639797,Activities,TMPL_THEME_42$CONTENT_ROW,,,,,,not_migrated
+4001,Workflow Details,46255797202458639808,Activity Audit,TMPL_THEME_42$COMMENTS,,,,,,not_migrated
+4001,Workflow Details,46255799975469639812,Variables,TMPL_THEME_42$CONTENT_ROW,,,,,,not_migrated
+4001,Workflow Details,46255805241975639818,Parameters,TMPL_THEME_42$CONTENT_ROW,,,,,,not_migrated
+4001,Workflow Details,46255806595656639820,History,TMPL_THEME_42$COMMENTS,,,,,,not_migrated
+4001,Workflow Details,46255808474751639823,Workflow Diagram,NATIVE_WORKFLOW_DIAGRAM,,,,,,not_migrated
+4001,Workflow Details,46255808932507639824,Buttons,STATIC,,,,,,not_migrated
+4010,Approval Types,48652280548387394510,Approval Types,NATIVE_IR,,,,sp_approval_types;sp_initiative_approvals,,not_migrated
+4010,Approval Types,48652285898189394517,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+4011,Approval Type,48652270260708394497,Approval Type,NATIVE_FORM,,,,sp_approval_types,,not_migrated
+4011,Approval Type,48652276136825394505,Buttons,STATIC,,,,,,not_migrated
+4011,Approval Type,48653980815924826601,Existing Types,NATIVE_SQL_REPORT,,,,sp_approval_types,,not_migrated
+4012,Initiative Approval Types,60406637142913002242,Initiative Approval Types,NATIVE_IR,,,,sp_approval_types;sp_initiative_approval_chain;sp_initiative_approvals;sp_initiatives;sp_project_approvals;sp_team_members,,not_migrated
+4012,Initiative Approval Types,60406642492715002249,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+4013,Initiative Approval Type,60406941637005026327,Initiative Approval Type,NATIVE_FORM,,,,sp_initiative_approvals,,not_migrated
+4013,Initiative Approval Type,50133922460630657096,Approvers,NATIVE_SQL_REPORT,,,,sp_initiative_approval_chain;sp_team_members,,not_migrated
+4013,Initiative Approval Type,60406947513122026335,Buttons,STATIC,,,,,,not_migrated
+4014,Initiative Approval Chain,72163289020738083689,Initiative Approval Chain,NATIVE_IR,,,,sp_approval_types;sp_initiative_approval_chain;sp_initiative_approvals;sp_initiatives;sp_team_members,,not_migrated
+4014,Initiative Approval Chain,72163294370540083696,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+4015,Initiative Approval Entry,72163671094143141231,Initiative Approval Entry,NATIVE_FORM,,,,sp_initiative_approval_chain,,not_migrated
+4015,Initiative Approval Entry,48653979662739826589,Existing Initiative Approval Chain,NATIVE_SQL_REPORT,,,,sp_initiative_approval_chain;sp_initiative_approvals;sp_team_members,,not_migrated
+4015,Initiative Approval Entry,72163676970260141239,Buttons,STATIC,,,,,,not_migrated
+4016,Initiative Approval Chain,50133923929522657111,Initiative,STATIC,,,,,,not_migrated
+4016,Initiative Approval Chain,73988779081865974009,Buttons,STATIC,,,,,,not_migrated
+4016,Initiative Approval Chain,50489754763320794575,Add New Entry,STATIC,,,,,,not_migrated
+4016,Initiative Approval Chain,85744355980580952544,Initiative Approval Chain,NATIVE_SQL_REPORT,,,,sp_initiative_approval_chain;sp_initiative_approvals;sp_team_members,,not_migrated
+9999,Login Page,176222235942730897825,Our Strategic Planner,STATIC,,,,,,not_migrated
+10000,Administration,176222400883519898498,ACL Information,NATIVE_PLSQL,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,45083553914773703685,Report,NATIVE_SQL_REPORT,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,176222299756145898496,Access Control Content,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,176222442215745898989,Access Control Actions,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,176222298058585898494,Administration,NATIVE_BREADCRUMB,/admin,app/AppLayout (breadcrumb),,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,176222400101962898497,Access Control,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,29014887557242880738,Warning,NATIVE_PLSQL,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,45083553542557703685,Feedback,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,176222401307925898498,User Counts Report,NATIVE_SQL_REPORT,/admin,pages/Admin/FeedTable,GET /api/v1/admin/feeds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,40397379156596202993,Look Up Values,NATIVE_LIST,/admin,pages/Admin/Thresholds,GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,48653980386614826597,Approval Options,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,44914294501856619017,Monitoring,NATIVE_LIST,/admin,pages/Admin/FeedTable,GET /api/v1/admin/feeds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,176229727605146951069,Configuration,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,24797173764233708446,Project Interactions,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,45083578266729704196,Feedback,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,48254040840349570899,Utilities,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,40986351522943013964,Notifications,NATIVE_LIST,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,45076796308555940872,Column 1,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10000,Administration,45076796404144940873,Column 2,STATIC,/admin,pages/Admin,GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds,,web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip,migrated
+10010,Configure Access Control,176222241070131897872,Access Control Configuration,STATIC,,,,,,not_migrated
+10010,Configure Access Control,176222241216533897872,Buttons,STATIC,,,,,,not_migrated
+10011,Users,176222245144818897880,Manage User Access,NATIVE_IR,,,,,,not_migrated
+10011,Users,180558964931115704647,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10012,User Details,176222251538628897917,Form on Manage User Access,NATIVE_FORM,,,,,,not_migrated
+10012,User Details,176222251646294897917,Buttons,STATIC,,,,,,not_migrated
+10013,Add Multiple Users - Step 1,176222259104390897933,Buttons,STATIC,,,,,,not_migrated
+10013,Add Multiple Users - Step 1,176222259181842897933,Wizard Container,STATIC,,,,,,not_migrated
+10014,Add Multiple Users - Step 2,176222259463721897933,Buttons,STATIC,,,,,,not_migrated
+10014,Add Multiple Users - Step 2,176222259961229897933,Hidden Items,STATIC,,,,,,not_migrated
+10014,Add Multiple Users - Step 2,176222291568450898479,No Valid Users Exist - Page Info,STATIC,,,,,,not_migrated
+10014,Add Multiple Users - Step 2,176222290890857898478,Valid Users Exist - Page Info,NATIVE_PLSQL,,,,,,not_migrated
+10014,Add Multiple Users - Step 2,176222259511606897933,Wizard Container,STATIC,,,,,,not_migrated
+10014,Add Multiple Users - Step 2,176222259852006897933,&P10014_VALID_COUNT. Users to Add,NATIVE_JQM_LIST_VIEW,,,,,,not_migrated
+10014,Add Multiple Users - Step 2,176222259687553897933,Exceptions,NATIVE_SQL_REPORT,,,,,,not_migrated
+10015,Users that are not People,77888158090790646946,Users,NATIVE_IR,,,,sp_team_members,,not_migrated
+10015,Users that are not People,77888163440592646953,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10016,People that are not Users,107124332163265027363,People,NATIVE_IR,,,,sp_team_members,,not_migrated
+10016,People that are not Users,107124337513067027370,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10050,Application Log,190907312382024230602,breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10050,Application Log,85256056803452739392,Application Log,NATIVE_IR,,,,sp_app_log,,not_migrated
+10061,Task Statuses,56836648363059390256,Task Statuses,NATIVE_IR,,,,sp_task_statuses;sp_task_types;sp_tasks,,not_migrated
+10061,Task Statuses,56836654291648390275,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10061,Task Statuses,57057204314388072312,SQL,NATIVE_SQL_REPORT,,,,sp_task_statuses,,not_migrated
+10062,Task Status,56843422958629432510,Task Status,NATIVE_FORM,,,,sp_task_statuses,,not_migrated
+10062,Task Status,56843429602041432542,Buttons,STATIC,,,,,,not_migrated
+10064,Task Types,56846670403808638528,Task Types,NATIVE_IR,,,,sp_initiative_default_tasks;sp_task_statuses;sp_task_types;sp_tasks,,not_migrated
+10064,Task Types,56846676332397638547,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10064,Task Types,57067226355137320584,SQL,NATIVE_SQL_REPORT,,,,sp_task_types,,not_migrated
+10065,Task Type,56847200857337705430,Task Type,NATIVE_FORM,,,,sp_task_types,,not_migrated
+10065,Task Type,55451870180457187693,Used as Default for,NATIVE_SQL_REPORT,,,,sp_areas;sp_initiative_default_tasks;sp_initiatives,,not_migrated
+10065,Task Type,56847207500749705462,Buttons,STATIC,,,,,,not_migrated
+10074,Notifications,40986301247166991351,Notifications,NATIVE_IR,,,,sp_notification_subscriptions;sp_notifications,,not_migrated
+10074,Notifications,40986306639783991368,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10074,Notifications,70654921610571849583,SQL,NATIVE_SQL_REPORT,,,,sp_notifications,,not_migrated
+10087,Notification,40986090462083991306,Notification,NATIVE_FORM,,,,sp_notifications,,not_migrated
+10087,Notification,40986296404396991341,Buttons,STATIC,,,,,,not_migrated
+10090,Release Milestone Types,57287580329418386242,Release Milestone Types,NATIVE_IR,,,,sp_release_milestone_types;sp_release_milestones,,not_migrated
+10090,Release Milestone Types,196629668126573589957,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10090,Release Milestone Types,87105763752133477368,SQL,NATIVE_SQL_REPORT,,,,sp_release_milestone_types,,not_migrated
+10091,Release Milestone Type,57287983393074427435,Release Milestone Type,NATIVE_FORM,,,,sp_release_milestone_types,,not_migrated
+10091,Release Milestone Type,57287989291129427455,Buttons,STATIC,,,,,,not_migrated
+10100,Project Size,42564074385820647207,Project Size,NATIVE_IR,,,,sp_project_sizes;sp_projects,,not_migrated
+10100,Project Size,42564079820450647221,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10100,Project Size,40985348125473796863,SQL,NATIVE_SQL_REPORT,,,,sp_project_sizes,,not_migrated
+10101,Project Size,42564063667103647171,Project Size,NATIVE_FORM,,,,sp_project_sizes,,not_migrated
+10101,Project Size,42564069573813647198,Buttons,STATIC,,,,,,not_migrated
+10110,Project Statuses,73024477418844582522,Project Statuses,NATIVE_IR,,,,sp_project_statuses;sp_projects,,not_migrated
+10110,Project Statuses,73024483347433582541,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10110,Project Statuses,73245033370173264578,SQL,NATIVE_SQL_REPORT,,,,sp_project_statuses,,not_migrated
+10111,Project Status,73031752411213401753,Project Status,NATIVE_FORM,,,,sp_project_statuses,,not_migrated
+10111,Project Status,73031759054625401785,Buttons,STATIC,,,,,,not_migrated
+10150,Initiative Focus Areas,45957197882959623648,Initiative Focus Areas,NATIVE_IR,,,,sp_areas;sp_initiative_focus_areas;sp_initiatives;sp_projects;sp_team_members,,not_migrated
+10150,Initiative Focus Areas,45957203317589623662,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10150,Initiative Focus Areas,44378471622612773304,SQL,NATIVE_SQL_REPORT,,,,sp_initiative_focus_areas;sp_initiatvie_focus_areas,,not_migrated
+10151,Initiative Focus Area,45957815268614655236,Initiative Focus Area,NATIVE_FORM,,,,sp_initiative_focus_areas,,not_migrated
+10151,Initiative Focus Area,45957821175324655263,Buttons,STATIC,,,,,,not_migrated
+10200,Project Completeness Scales,181626149128934162821,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10200,Project Completeness Scales,181626135487389162805,Project Scales,NATIVE_IR,,,,sp_project_scales,,not_migrated
+10200,Project Completeness Scales,43162214024070749771,Information,STATIC,,,,,,not_migrated
+10210,Project Completeness Scale,181626579751399211197,Project Completeness Scale,NATIVE_FORM,,,,sp_project_scales,,not_migrated
+10210,Project Completeness Scale,181626596913135211207,Buttons,STATIC,,,,,,not_migrated
+10400,Nomenclature,44865515018369298194,Nomenclature,NATIVE_IR,,,,sp_app_nomenclature,,not_migrated
+10400,Nomenclature,44865520175740298199,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10400,Nomenclature,45200198763131234348,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+10400,Nomenclature,66427335302195122616,SQL,NATIVE_SQL_REPORT,,,,sp_app_nomenclature,,not_migrated
+10410,Nomenclature Value,44865504704125298182,Nomenclature,NATIVE_FORM,,,,sp_app_nomenclature,,not_migrated
+10410,Nomenclature Value,44865510574233298189,Buttons,STATIC,,,,,,not_migrated
+10500,Project Default Tags,46929192240959405939,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10500,Project Default Tags,46927337552469774877,Default Tags,NATIVE_IR,,,,sp_default_tags;sp_projects,,not_migrated
+10500,Project Default Tags,37119475489809553107,SQL,NATIVE_SQL_REPORT,,,,sp_default_tags,,not_migrated
+10510,Project Default Tag,46979543498828694997,Project Default Tag,NATIVE_FORM,,,,sp_default_tags,,not_migrated
+10510,Project Default Tag,46979548721330695004,Buttons,STATIC,,,,,,not_migrated
+10515,Release Milestone Default Tags,78213496456580000063,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10515,Release Milestone Default Tags,78211641768090369001,Default Tags,NATIVE_IR,,,,sp_release_milestone_default_tags;sp_release_milestones,,not_migrated
+10515,Release Milestone Default Tags,68403779705430147231,SQL,NATIVE_SQL_REPORT,,,,sp_release_milestone_default_tags,,not_migrated
+10516,Release Milestone Default Tag,78263866186476293073,Release Milestone Default Tag,NATIVE_FORM,,,,sp_release_milestone_default_tags,,not_migrated
+10516,Release Milestone Default Tag,78263871408978293080,Buttons,STATIC,,,,,,not_migrated
+10520,Team Member Default Tags,51018514457480152819,Default Tags,NATIVE_IR,,,,sp_default_people_tags;sp_team_members,,not_migrated
+10520,Team Member Default Tags,41210652394819931049,SQL,NATIVE_SQL_REPORT,,,,sp_default_people_tags,,not_migrated
+10520,Team Member Default Tags,51020477140300819721,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10600,Contributor Roles,176240960841322124004,Resource Types,NATIVE_IR,,,,sp_project_contributors;sp_projects;sp_resource_types,,not_migrated
+10600,Contributor Roles,176240966284742124010,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10600,Contributor Roles,37119473752626553089,SQL,NATIVE_SQL_REPORT,,,,sp_resource_types,,not_migrated
+10601,Resource Type Usage,39835762049160367212,Usage,NATIVE_IR,,,,sp_project_contributors;sp_projects;sp_release_trains;sp_resource_types;sp_team_members,,not_migrated
+10601,Resource Type Usage,179630317018661500624,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10610,Contributor Role,176240950806127123990,Contributor Role,NATIVE_FORM,,,,sp_resource_types,,not_migrated
+10610,Contributor Role,176240955983627123998,Buttons,STATIC,,,,,,not_migrated
+10700,Activity Types,51100019512572408859,Activity Types,NATIVE_IR,,,,sp_activities;sp_activity_types,,not_migrated
+10700,Activity Types,190442107309727612574,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10700,Activity Types,80918202935287499985,SQL,NATIVE_SQL_REPORT,,,,sp_activity_types,,not_migrated
+10710,Activity Type,51100009232077408831,Activity Type,NATIVE_FORM,,,,sp_activity_types,,not_migrated
+10710,Activity Type,51100015130132408851,Buttons,STATIC,,,,,,not_migrated
+10750,External Project Links,41372640221775426395,External Project Links,NATIVE_IR,,,,sp_external_ticketing_systems;sp_initiatives,,not_migrated
+10750,External Project Links,43664905389247444288,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10750,External Project Links,88765410395750360430,SQL,NATIVE_SQL_REPORT,,,,sp_external_ticketing_systems,,not_migrated
+10760,External System Link,41372628681320426333,External System Link,NATIVE_FORM,,,,sp_external_ticketing_systems,,not_migrated
+10760,External System Link,41372635827892426382,Buttons,STATIC,,,,,,not_migrated
+10770,Home Page Messages,41376300329977803447,Home Page Messages,NATIVE_IR,,,,sp_application_notifications,,not_migrated
+10770,Home Page Messages,48141961762578316601,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10780,Home Page Message,41375689108013803417,Home Page Message,NATIVE_FORM,,,,sp_application_notifications,,not_migrated
+10780,Home Page Message,41376295795091803439,Buttons,STATIC,,,,,,not_migrated
+10790,Team Member Notifications,18063943007089890172,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10790,Team Member Notifications,18063943729445890174,Team Member Notifications,NATIVE_IR,,,,sp_projects;sp_team_member_notifications;sp_team_members,,not_migrated
+10791,Notification Email Contents,18064443173876940781,Notification Email Contents,NATIVE_SQL_REPORT,,,,sp_team_member_notifications,,not_migrated
+10800,Priorities,151756070654187677983,Project Priorities,NATIVE_IR,,,,sp_project_priorities;sp_projects,,not_migrated
+10800,Priorities,151756076186023677987,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+10800,Priorities,37119473932812553091,SQL,NATIVE_SQL_REPORT,,,,sp_project_priorities,,not_migrated
+10810,Priority,151756060330351677977,Project Priority,NATIVE_FORM,,,,sp_project_priorities,,not_migrated
+10810,Priority,151756066210630677981,Buttons,STATIC,,,,,,not_migrated
+10820,About this App,47476088032213860952,Menubar,TMPL_THEME_42$CONTENT_ROW,,app/AppLayout (primary nav),,,,not_migrated
+10820,About this App,39007335846017181009,About this Application,NATIVE_DYNAMIC_CONTENT,,,,,,not_migrated
+10820,About this App,42375733362526215385,Terminology,STATIC,,,,,,not_migrated
+10820,About this App,38236334580664145115,Terminology,STATIC,,,,,,not_migrated
+10820,About this App,38305339710743761577,Percent Complete,STATIC,,,,,,not_migrated
+10820,About this App,46611744677180846134,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+11300,Manage Archived Projects,48521659277299364782,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+11300,Manage Archived Projects,47728218160963890019,Archived Projects,NATIVE_IR,,,,sp_project_comments;sp_project_contributors;sp_project_documents;sp_project_priorities;sp_projects;sp_team_members,,not_migrated
+11310,Archived project,48717051277101413170,Archived Project,NATIVE_FORM,,,,sp_projects,,not_migrated
+11310,Archived project,48717071194430413208,Buttons,STATIC,,,,,,not_migrated
+11320,Manage Duplicate Projects,61812106926039424869,Duplicate Projects,NATIVE_IR,,,,sp_project_comments;sp_project_contributors;sp_project_documents;sp_project_priorities;sp_projects;sp_team_members,,not_migrated
+11320,Manage Duplicate Projects,62605706331809277668,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+12120,Feedback,45083515361225703615,Form on Feedback,STATIC,,,,,,not_migrated
+12120,Feedback,45083515388683703615,Buttons,STATIC,,,,,,not_migrated
+12121,Feedback Submitted,45083515933144703615,Feedback Submitted,STATIC,,,,,,not_migrated
+12123,Manage Feedback,45083517167539703615,Manage Feedback,NATIVE_IR,,,,,,not_migrated
+12123,Manage Feedback,53212691410302437512,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+12124,Feedback,45083516489778703615,Form Items Region,STATIC,,,,,,not_migrated
+12124,Feedback,45083516571690703615,Buttons,STATIC,,,,,,not_migrated
+12130,Configure Application Features,45129951916241196754,Configure Application Features,NATIVE_IR,,,,sp_util,,not_migrated
+12130,Configure Application Features,54908463969686157989,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+12135,AI Prompts,75601276792383373068,Prompts,NATIVE_IR,,,,sp_ai_prompts,,not_migrated
+12135,AI Prompts,75601283958341373091,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+12136,Edit Prompt,27117243315999764666,buttons,STATIC,,,,,,not_migrated
+12136,Edit Prompt,27873936018901090547,Edit Prompt,NATIVE_FORM,,,,sp_ai_prompts,,not_migrated
+12140,Configure External Person Link,180680678084175877652,Configure External Person Link,STATIC,,,,,,not_migrated
+12140,Configure External Person Link,180680678230577877652,Buttons,STATIC,,,,,,not_migrated
+12150,Settings,169932273235327228919,breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+12150,Settings,64281017656755737709,Settings,NATIVE_SQL_REPORT,,,,sp_app_settings,,not_migrated
+14000,About Page Text,39191492150138313722,About Page Text,NATIVE_IR,,,,sp_configurable_text,,not_migrated
+14000,About Page Text,39191497387781313737,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+14001,About Page Text Details,54701368976052507231,About Page Text Details,NATIVE_FORM,,,,sp_configurable_text,,not_migrated
+14001,About Page Text Details,54701374920898507245,Buttons,STATIC,,,,,,not_migrated
+14010,Delete Sample Data,185442657922400486853,breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+14010,Delete Sample Data,79791402343828995643,Delete Sample Data,NATIVE_SQL_REPORT,,,,sp_activities;sp_areas;sp_initiatives;sp_projects;sp_release_trains;sp_team_members,,not_migrated
+15021,Default Team Member Tag,40991189501560497979,Default Team Member Tag,NATIVE_FORM,,,,sp_default_people_tags,,not_migrated
+15021,Default Team Member Tag,40991194731344497987,Buttons,STATIC,,,,,,not_migrated
+16000,Error Log,106081014210125469699,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+16000,Error Log,76976941347384041599,Error Log,NATIVE_IR,,,,sp_error_log,,not_migrated
+16010,Job Reporting,66003604245262935811,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+16010,Job Reporting,47992732668014585103,Job Reporting,NATIVE_IR,,,,sp_generate_ai_project_summaries_job;sp_notif_subscriptions,,not_migrated
+16011,Job Run Details,47992713752881585040,Job Run Details,NATIVE_IR,,,,sp_generate_ai_summaries_job;sp_notif_subscriptions,,not_migrated
+16015,Subscriptions,56255561802254367939,Subscriptions,NATIVE_IR,,,,sp_group_members;sp_groups;sp_notification_subscriptions;sp_notifications;sp_release_trains;sp_team_members,,not_migrated
+16015,Subscriptions,66034073855699329174,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+16016,Add Subscription,56716201004234736938,Subscriptions,NATIVE_SQL_REPORT,,,,sp_notification_subscriptions;sp_notifications;sp_release_trains,,not_migrated
+16016,Add Subscription,63826509264227344698,Buttons,STATIC,,,,,,not_migrated
+16017,About Subscriptions,54742349694552642955,About,STATIC,,,,,,not_migrated
+16020,Email Reporting,77877138434172646782,Breadcrumb,NATIVE_BREADCRUMB,,app/AppLayout (breadcrumb),,,,not_migrated
+16020,Email Reporting,48773065571431218682,Email Reporting,NATIVE_IR,,,,,,not_migrated

@@ -1,0 +1,10 @@
+-- APEX supporting object install script: seed activity_types
+-- sequence 850, source application/deployment/install/install_seed_activity_types.sql
+-- kind: dml
+
+insert into SP_ACTIVITY_TYPES (ID, DISPLAY_SEQUENCE, ACTIVITY_TYPE, ACTIVITY_TYPE_DESCRIPTION, is_default_yn, static_id ) values ( 1, 1, 'Development', '', 'Y', 'DEV');
+insert into SP_ACTIVITY_TYPES (ID, DISPLAY_SEQUENCE, ACTIVITY_TYPE, ACTIVITY_TYPE_DESCRIPTION, is_default_yn, static_id ) values ( 2, 2, 'Prod Mgt', 'Product Management', 'N', 'PM');
+insert into SP_ACTIVITY_TYPES (ID, DISPLAY_SEQUENCE, ACTIVITY_TYPE, ACTIVITY_TYPE_DESCRIPTION, is_default_yn, static_id ) values ( 3, 3, 'Review', '', 'N', 'REVIEW');
+insert into SP_ACTIVITY_TYPES (ID, DISPLAY_SEQUENCE, ACTIVITY_TYPE, ACTIVITY_TYPE_DESCRIPTION, is_default_yn, static_id ) values ( 4, 4, 'Conference', 'Conference preparation, travel, attendance or other related work', 'N', 'CONF');
+insert into SP_ACTIVITY_TYPES (ID, DISPLAY_SEQUENCE, ACTIVITY_TYPE, ACTIVITY_TYPE_DESCRIPTION, is_default_yn, static_id ) values ( 5, 5, 'Customer Engagement', '', 'N', 'CUSTOMER');
+insert into SP_ACTIVITY_TYPES (ID, DISPLAY_SEQUENCE, ACTIVITY_TYPE, ACTIVITY_TYPE_DESCRIPTION, is_default_yn, static_id ) values ( 6, 6, 'Out of Office', '', 'N', 'OOO');

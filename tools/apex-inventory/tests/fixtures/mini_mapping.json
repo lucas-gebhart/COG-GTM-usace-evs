@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "shell_regions": {"NATIVE_BREADCRUMB": {"evs_component": "app/AppLayout", "sql_object": ""}},
+  "slice": [
+    {"apex_page": 1, "evs_route": "/", "evs_component": "pages/Home", "api_endpoint": "GET /api/v1/projects", "test_id": "web:Home.test.tsx", "status": "planned",
+     "regions": {"Burn down": {"evs_component": "pages/Home/Chart", "status": "migrated"}}}
+  ]
+}

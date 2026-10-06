@@ -1,0 +1,408 @@
+{
+ "snapshots": [
+  {
+   "year": 2002,
+   "river_systems": 8,
+   "dams": null,
+   "river_miles": null,
+   "source": "HEC SRP history",
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/history/"
+  },
+  {
+   "year": 2019,
+   "river_systems": 16,
+   "dams": 66,
+   "river_miles": 5111,
+   "source": "TNC SRP 2019",
+   "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/"
+  },
+  {
+   "year": 2020,
+   "river_systems": 30,
+   "dams": null,
+   "river_miles": null,
+   "source": "HEC SRP history",
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/history/"
+  },
+  {
+   "year": 2024,
+   "river_systems": 50,
+   "dams": null,
+   "river_miles": null,
+   "source": "HEC SRP history (50+ teams, 27 districts)",
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/history/"
+  },
+  {
+   "year": 2026,
+   "river_systems": 65,
+   "dams": 100,
+   "river_miles": 14500,
+   "floodplain_acres": 150000,
+   "source": "HEC/IWR (60+ systems, 14,000 mi) and TNC (65 rivers, ~15,000 mi, 100+ dams)",
+   "source_url": "https://www.iwr.usace.army.mil/Missions/Environment/Sustainable-Rivers-Program/"
+  }
+ ],
+ "sites": [
+  {
+   "name": "Green River",
+   "river": "Green River",
+   "state": "KY",
+   "district": "LRL",
+   "nid_id": null,
+   "latitude": 37.2,
+   "longitude": -86.1,
+   "year_joined": 2002,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Savannah River",
+   "river": "Savannah River",
+   "state": "GA",
+   "district": "SAS",
+   "nid_id": null,
+   "latitude": 33.6,
+   "longitude": -82.2,
+   "year_joined": 2002,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Bill Williams River",
+   "river": "Bill Williams River",
+   "state": "AZ",
+   "district": "SPL",
+   "nid_id": null,
+   "latitude": 34.3,
+   "longitude": -114.1,
+   "year_joined": 2002,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Willamette River",
+   "river": "Willamette River",
+   "state": "OR",
+   "district": "NWP",
+   "nid_id": null,
+   "latitude": 44.4,
+   "longitude": -122.6,
+   "year_joined": 2002,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Big Cypress Bayou",
+   "river": "Big Cypress Bayou",
+   "state": "TX",
+   "district": "SWF",
+   "nid_id": null,
+   "latitude": 32.7,
+   "longitude": -94.5,
+   "year_joined": 2002,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Roanoke River",
+   "river": "Roanoke River",
+   "state": "NC",
+   "district": "SAW",
+   "nid_id": null,
+   "latitude": 36.5,
+   "longitude": -77.8,
+   "year_joined": 2002,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Connecticut River",
+   "river": "Connecticut River",
+   "state": "VT",
+   "district": "NAE",
+   "nid_id": null,
+   "latitude": 43.3,
+   "longitude": -72.4,
+   "year_joined": 2010,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Kansas River",
+   "river": "Kansas River",
+   "state": "KS",
+   "district": "NWK",
+   "nid_id": null,
+   "latitude": 39.1,
+   "longitude": -96.1,
+   "year_joined": 2016,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Osage River",
+   "river": "Osage River",
+   "state": "MO",
+   "district": "NWK",
+   "nid_id": null,
+   "latitude": 38.2,
+   "longitude": -92.6,
+   "year_joined": 2016,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Cumberland River",
+   "river": "Cumberland River",
+   "state": "TN",
+   "district": "LRN",
+   "nid_id": null,
+   "latitude": 36.3,
+   "longitude": -85.0,
+   "year_joined": 2018,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Ouachita River",
+   "river": "Ouachita River",
+   "state": "AR",
+   "district": "MVK",
+   "nid_id": null,
+   "latitude": 34.5,
+   "longitude": -93.2,
+   "year_joined": 2018,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Russian River",
+   "river": "Russian River",
+   "state": "CA",
+   "district": "SPN",
+   "nid_id": null,
+   "latitude": 38.6,
+   "longitude": -123.0,
+   "year_joined": 2018,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Chattahoochee River",
+   "river": "Chattahoochee River",
+   "state": "GA",
+   "district": "SAM",
+   "nid_id": null,
+   "latitude": 34.2,
+   "longitude": -84.0,
+   "year_joined": 2018,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Apalachicola River",
+   "river": "Apalachicola River",
+   "state": "FL",
+   "district": "SAM",
+   "nid_id": null,
+   "latitude": 30.7,
+   "longitude": -84.9,
+   "year_joined": 2018,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Middle Fork Willamette",
+   "river": "Willamette River",
+   "state": "OR",
+   "district": "NWP",
+   "nid_id": null,
+   "latitude": 43.9,
+   "longitude": -122.8,
+   "year_joined": 2010,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Sacramento River",
+   "river": "Sacramento River",
+   "state": "CA",
+   "district": "SPK",
+   "nid_id": null,
+   "latitude": 40.7,
+   "longitude": -122.4,
+   "year_joined": 2018,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Rio Grande",
+   "river": "Rio Grande",
+   "state": "NM",
+   "district": "SPA",
+   "nid_id": null,
+   "latitude": 36.7,
+   "longitude": -106.2,
+   "year_joined": 2018,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Trinity River",
+   "river": "Trinity River",
+   "state": "TX",
+   "district": "SWF",
+   "nid_id": null,
+   "latitude": 32.9,
+   "longitude": -96.8,
+   "year_joined": 2020,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Pearl River",
+   "river": "Pearl River",
+   "state": "MS",
+   "district": "MVK",
+   "nid_id": null,
+   "latitude": 32.3,
+   "longitude": -90.2,
+   "year_joined": 2020,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Missouri River",
+   "river": "Missouri River",
+   "state": "MT",
+   "district": "NWO",
+   "nid_id": null,
+   "latitude": 48.0,
+   "longitude": -106.4,
+   "year_joined": 2020,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Alabama River",
+   "river": "Alabama River",
+   "state": "AL",
+   "district": "SAM",
+   "nid_id": null,
+   "latitude": 32.3,
+   "longitude": -86.8,
+   "year_joined": 2020,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Youghiogheny River",
+   "river": "Youghiogheny River",
+   "state": "PA",
+   "district": "LRP",
+   "nid_id": null,
+   "latitude": 39.8,
+   "longitude": -79.4,
+   "year_joined": 2022,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Allegheny River",
+   "river": "Allegheny River",
+   "state": "PA",
+   "district": "LRP",
+   "nid_id": null,
+   "latitude": 41.8,
+   "longitude": -79.0,
+   "year_joined": 2022,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  },
+  {
+   "name": "Des Moines River",
+   "river": "Des Moines River",
+   "state": "IA",
+   "district": "MVR",
+   "nid_id": null,
+   "latitude": 41.6,
+   "longitude": -93.6,
+   "year_joined": 2022,
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/"
+  }
+ ],
+ "headline": {
+  "river_systems": 65,
+  "river_miles": 14500,
+  "dams_and_reservoirs": 100,
+  "floodplain_acres": 150000,
+  "npv_usd_m_low": 243,
+  "npv_usd_m_high": 265,
+  "bcr_low": 12.6,
+  "bcr_high": 13.7,
+  "districts": 27,
+  "states": 30,
+  "program_start_year": 2002
+ },
+ "source_as_of": "2026-10-06T00:00:00+00:00",
+ "citations": [
+  {
+   "figure": "river_systems",
+   "label": "River systems",
+   "value_text": "65 rivers (USACE: more than 60 river systems)",
+   "source": "TNC Sustainable Rivers Project page; HEC SRP sites page",
+   "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/",
+   "year": 2026,
+   "note": "HEC states more than 60 river systems; TNC counts 65 rivers."
+  },
+  {
+   "figure": "river_miles",
+   "label": "River miles",
+   "value_text": "nearly 15,000 miles (USACE: 14,000 river miles)",
+   "source": "TNC Sustainable Rivers Project page; HEC SRP sites page",
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/",
+   "year": 2026,
+   "note": "Shown as 14,500, the midpoint of the two cited statements."
+  },
+  {
+   "figure": "dams_and_reservoirs",
+   "label": "Dams and reservoirs",
+   "value_text": "more than 100 associated reservoirs and dams",
+   "source": "TNC Sustainable Rivers Project page",
+   "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/",
+   "year": 2026,
+   "note": null
+  },
+  {
+   "figure": "floodplain_acres",
+   "label": "Floodplain acres",
+   "value_text": "150,000 acres of floodplain",
+   "source": "HEC SRP sites page",
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/",
+   "year": 2026,
+   "note": null
+  },
+  {
+   "figure": "districts",
+   "label": "USACE districts",
+   "value_text": "65 rivers across 27 Army Corps districts",
+   "source": "TNC newsroom, RTI economic analysis release",
+   "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/",
+   "year": 2026,
+   "note": null
+  },
+  {
+   "figure": "states",
+   "label": "States",
+   "value_text": "almost 30 rivers in 30 states",
+   "source": "TNC blog, 16 June 2020",
+   "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/",
+   "year": 2020,
+   "note": "Most recent cited state count; the program has grown since."
+  },
+  {
+   "figure": "npv_usd_m",
+   "label": "Portfolio net present value",
+   "value_text": "$243M to $265M by 2040",
+   "source": "RTI International cost-benefit analysis for TNC",
+   "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/",
+   "year": 2025,
+   "note": "Range across discount-rate scenarios in the RTI report."
+  },
+  {
+   "figure": "bcr",
+   "label": "Benefit-cost ratio",
+   "value_text": "12.63 to 13.69",
+   "source": "RTI International cost-benefit analysis for TNC",
+   "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/",
+   "year": 2025,
+   "note": null
+  },
+  {
+   "figure": "program_start",
+   "label": "Program start",
+   "value_text": "pilot 1998 on the Green River, formally established 2002 with 8 river systems",
+   "source": "HEC SRP history page",
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/history/",
+   "year": 2002,
+   "note": null
+  }
+ ]
+}

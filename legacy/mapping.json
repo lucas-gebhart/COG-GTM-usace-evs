@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "notes": [
+    "Maps APEX Strategic Planner pages (app 7150, APEX 24.2) to EVS routes. Consumed by `python -m apex_inventory ... --mapping legacy/mapping.json` to produce legacy/traceability.csv.",
+    "Status per docs/PLAN.md section 11: the eight slice pages are `planned` until their EVS page lands; WP3/WP4b flip a page (or a single region under `regions`) to `in_progress` or `migrated` here and regenerate with `make inventory`.",
+    "`regions` keys are APEX region display names (or region ids) and override the page defaults for that region only.",
+    "No JET chart lives on the home page in this export; the `/financial` chart row uses page 161 (Cumulative Flow, JET area chart over sp_project_history), the cumulative chart the plan calls for."
+  ],
+  "shell_regions": {
+    "NATIVE_BREADCRUMB": {
+      "evs_component": "app/AppLayout (breadcrumb)",
+      "api_endpoint": "",
+      "sql_object": ""
+    },
+    "Menubar": {
+      "evs_component": "app/AppLayout (primary nav)",
+      "api_endpoint": "",
+      "sql_object": ""
+    },
+    "NATIVE_FACETED_SEARCH": {
+      "evs_component": "components/FacetFilters",
+      "api_endpoint": "(query string on list endpoint)"
+    }
+  },
+  "slice": [
+    {
+      "apex_page": 1,
+      "label": "Dashboard (home)",
+      "evs_route": "/",
+      "evs_component": "pages/EnterpriseOverview",
+      "api_endpoint": "GET /api/v1/financial/summary",
+      "test_id": "web:pages/EnterpriseOverview.test.tsx; e2e:overview.spec.ts",
+      "status": "migrated",
+      "regions": {
+        "Recently Changed Projects": {
+          "evs_component": "pages/EnterpriseOverview/RecentProjectsTable",
+          "api_endpoint": "GET /api/v1/projects?sort=updated"
+        },
+        "My Projects": {
+          "evs_component": "pages/EnterpriseOverview/KpiTiles",
+          "api_endpoint": "GET /api/v1/projects"
+        },
+        "My Initiatives": {
+          "evs_component": "pages/EnterpriseOverview/KpiTiles",
+          "api_endpoint": "GET /api/v1/programs"
+        },
+        "My Activities": {
+          "evs_component": "pages/EnterpriseOverview/ScheduleHealth",
+          "api_endpoint": "GET /api/v1/workforce/labor"
+        },
+        "My Open Releases": {
+          "evs_component": "pages/EnterpriseOverview/ScheduleHealth",
+          "api_endpoint": "GET /api/v1/projects"
+        },
+        "Notifications": {
+          "evs_component": "pages/EnterpriseOverview/FreshnessStrip",
+          "api_endpoint": "GET /api/v1/admin/feeds"
+        },
+        "Reviews Needed": {
+          "evs_component": "pages/EnterpriseOverview/FreshnessStrip",
+          "api_endpoint": "GET /api/v1/admin/feeds"
+        },
+        "Project Search": {
+          "evs_component": "app/AppLayout (search)",
+          "api_endpoint": "GET /api/v1/projects?q="
+        }
+      }
+    },
+    {
+      "apex_page": 21,
+      "label": "Initiatives (programs and portfolio)",
+      "evs_route": "/programs",
+      "evs_component": "pages/Programs",
+      "api_endpoint": "GET /api/v1/programs",
+      "test_id": "web:pages/Programs.test.tsx; api:test_programs",
+      "status": "migrated",
+      "regions": {
+        "Initiatives": {
+          "evs_component": "pages/Programs/ProgramTable"
+        },
+        "items": {
+          "evs_component": "pages/Programs (filter items)",
+          "api_endpoint": ""
+        }
+      }
+    },
+    {
+      "apex_page": 3,
+      "label": "Project Details",
+      "evs_route": "/projects/:p2",
+      "evs_component": "pages/ProjectDetail",
+      "api_endpoint": "GET /api/v1/projects/{p2_project_no}",
+      "test_id": "web:pages/ProjectDetail.test.tsx; api:test_project_detail",
+      "status": "migrated",
+      "regions": {
+        "Project Details": {
+          "evs_component": "pages/ProjectDetail/Header"
+        },
+        "Milestones": {
+          "evs_component": "pages/ProjectDetail/MilestoneTimeline"
+        },
+        "milestone content": {
+          "evs_component": "pages/ProjectDetail/MilestoneTimeline"
+        },
+        "Tasks": {
+          "evs_component": "pages/ProjectDetail/CmpRecords"
+        },
+        "task content": {
+          "evs_component": "pages/ProjectDetail/CmpRecords"
+        },
+        "Documents": {
+          "evs_component": "pages/ProjectDetail/Documents"
+        },
+        "Activity": {
+          "evs_component": "pages/ProjectDetail/LaborHours",
+          "api_endpoint": "GET /api/v1/workforce/labor?project="
+        },
+        "activity content": {
+          "evs_component": "pages/ProjectDetail/LaborHours",
+          "api_endpoint": "GET /api/v1/workforce/labor?project="
+        }
+      }
+    },
+    {
+      "apex_page": 74,
+      "label": "People (workforce)",
+      "evs_route": "/workforce",
+      "evs_component": "pages/Workforce",
+      "api_endpoint": "GET /api/v1/workforce/labor",
+      "test_id": "web:pages/Workforce.test.tsx; api:test_workforce",
+      "status": "migrated",
+      "regions": {
+        "Users ": {
+          "evs_component": "pages/Workforce/LaborTable"
+        },
+        "filters": {
+          "evs_component": "components/FacetFilters",
+          "api_endpoint": ""
+        }
+      }
+    },
+    {
+      "apex_page": 4,
+      "label": "Kanban Board (schedule)",
+      "evs_route": "/schedule",
+      "evs_component": "pages/Schedule",
+      "api_endpoint": "GET /api/v1/projects",
+      "test_id": "web:pages/Schedule.test.tsx; e2e:schedule.spec.ts",
+      "status": "migrated",
+      "regions": {
+        "Kanban Board": {
+          "evs_component": "pages/Schedule (KanbanCard, Move to menu)"
+        },
+        "do not drop - Search Results": {
+          "evs_component": "pages/Schedule (milestone slip list)"
+        }
+      }
+    },
+    {
+      "apex_page": 10000,
+      "label": "Administration (lookups, feeds, thresholds)",
+      "evs_route": "/admin",
+      "evs_component": "pages/Admin",
+      "api_endpoint": "GET /api/v1/admin/feeds; GET /api/v1/admin/thresholds",
+      "test_id": "web:pages/Admin.test.tsx; e2e:matrix; api:test_admin_thresholds_round_trip",
+      "status": "migrated",
+      "regions": {
+        "Look Up Values": {
+          "evs_component": "pages/Admin/Thresholds",
+          "api_endpoint": "GET /api/v1/admin/thresholds"
+        },
+        "Monitoring": {
+          "evs_component": "pages/Admin/FeedTable",
+          "api_endpoint": "GET /api/v1/admin/feeds"
+        },
+        "User Counts Report": {
+          "evs_component": "pages/Admin/FeedTable",
+          "api_endpoint": "GET /api/v1/admin/feeds"
+        }
+      }
+    },
+    {
+      "apex_page": 86,
+      "label": "Projects Interactive Report",
+      "evs_route": "/projects",
+      "evs_component": "pages/Projects",
+      "api_endpoint": "GET /api/v1/projects",
+      "test_id": "web:pages/Projects.test.tsx; api:test_programs_and_projects_fixtures",
+      "status": "planned",
+      "regions": {
+        "Projects Interactive Report": {
+          "evs_component": "pages/Projects/ProjectTable"
+        }
+      }
+    },
+    {
+      "apex_page": 161,
+      "label": "Cumulative Flow (JET chart)",
+      "evs_route": "/financial",
+      "evs_component": "pages/Financial",
+      "api_endpoint": "GET /api/v1/financial/summary",
+      "test_id": "web:pages/Financial.test.tsx; api:test_financial",
+      "status": "migrated",
+      "regions": {
+        "Cumulative Flow": {
+          "evs_component": "pages/Financial/CumulativeChart (table alternative: CumulativeTable)",
+          "status": "planned"
+        }
+      }
+    }
+  ]
+}

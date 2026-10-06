@@ -1,0 +1,10 @@
+-- APEX supporting object install script: seed default tags
+-- sequence 820, source application/deployment/install/install_seed_default_tags.sql
+-- kind: dml
+
+insert into SP_DEFAULT_TAGS (ID, DISPLAY_SEQUENCE, TAG) values (1, 10, 'COMMITTED');
+insert into SP_DEFAULT_TAGS (ID, DISPLAY_SEQUENCE, TAG) values (2, 20, 'MVP');
+insert into SP_DEFAULT_TAGS (ID, DISPLAY_SEQUENCE, TAG) values (3, 30, 'URGENT');
+insert into SP_DEFAULT_TAGS (ID, DISPLAY_SEQUENCE, TAG) values (4, 40, 'CUSTOMER FACING');
+insert into SP_DEFAULT_TAGS (ID, DISPLAY_SEQUENCE, TAG) values (5, 50, 'NEEDS REVIEW');
+insert into SP_DEFAULT_TAGS (ID, DISPLAY_SEQUENCE, TAG) values (6, 60, 'IMPORTANT');

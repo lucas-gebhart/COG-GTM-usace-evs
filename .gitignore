@@ -13,3 +13,9 @@ apps/web/public/uswds/
 .pytest_cache/
 .ruff_cache/
 *.tsbuildinfo
+db/ora2pg/*.zip
+apps/web/storybook-static/
+.lighthouseci/
+apps/web/public/tiles/*.pmtiles
+.terraform/
+*.tfstate*

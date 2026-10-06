@@ -1,0 +1,58 @@
+name: deploy-fly
+# Deploys the demo to Fly.io. Runs on demand, and on pushes to main only when the FLY_API_TOKEN repository
+# secret exists (job-level `if` cannot read secrets, so a first job exports the check as an output).
+#
+# One-time setup: create an org deploy token with `fly tokens create deploy -o personal -a usace-evs-api`
+# (or `fly tokens create org -o personal` for all four apps), then add it in the GitHub repo under
+# Settings > Secrets and variables > Actions > New repository secret, name FLY_API_TOKEN.
+on:
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: "Apps to deploy, space separated (db keycloak api web). Empty deploys all."
+        required: false
+        default: ""
+  push:
+    branches: [main]
+    paths:
+      - "apps/**"
+      - "db/**"
+      - "packages/contract/**"
+      - "infra/fly/**"
+      - "infra/compose/keycloak/**"
+      - "tools/basemap/**"
+      - ".github/workflows/deploy-fly.yml"
+
+concurrency: { group: deploy-fly, cancel-in-progress: false }
+
+jobs:
+  check-token:
+    runs-on: ubuntu-latest
+    outputs:
+      present: ${{ steps.check.outputs.present }}
+    steps:
+      - id: check
+        env: { FLY_API_TOKEN: "${{ secrets.FLY_API_TOKEN }}" }
+        run: |
+          if [ -n "$FLY_API_TOKEN" ]; then echo "present=true" >> "$GITHUB_OUTPUT"; else
+            echo "present=false" >> "$GITHUB_OUTPUT"; echo "FLY_API_TOKEN secret is not set; skipping deploy"; fi
+
+  deploy:
+    needs: check-token
+    if: needs.check-token.outputs.present == 'true'
+    runs-on: ubuntu-latest
+    environment: fly
+    steps:
+      - uses: actions/checkout@v4
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - name: Deploy
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+          TARGETS: ${{ github.event.inputs.targets }}
+        run: infra/fly/deploy.sh $TARGETS
+        # TARGETS is empty on push and on a blank manual run, which deploys everything.
+      - name: Smoke test
+        run: |
+          curl -fsS https://usace-evs-api.fly.dev/api/v1/health
+          curl -fsS -o /dev/null -w 'web %{http_code}\n' https://usace-evs-web.fly.dev/healthz
+          curl -fsS -o /dev/null -r 0-16383 -w 'tiles %{http_code}\n' https://usace-evs-web.fly.dev/tiles/usace.pmtiles

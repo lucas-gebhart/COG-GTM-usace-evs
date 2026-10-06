@@ -118,7 +118,7 @@ Paired gauges: map each lock to a NOAA LID and USGS site (e.g. OH 76 Cannelton -
 If LPMS is unavailable (HTTP 5xx or stale > 6h), switch the status engine to a seeded Markov simulation over the GIS lock list: hourly transition matrix G->Y 4%, Y->G 30%, Y->R 10%, R->Y 25%, with seasonal multipliers (high-water Yellow probability x3 in Mar to May) and scheduled-closure injections drawn from the 36 real `stoppage_reason_codes` ("High Water", "Debris in lock recess or lock chamber", "Tow detained by Coast Guard or Corps", etc.). Flag every simulated row `source = "simulated"` in the UI.
 
 ### 2.8 Lock lat/lon sources
-1. NDC Locks FeatureServer layer 0 (234 chambers, NAD83 points, maxRecordCount 2000): authoritative. 
+1. NDC GIS Locks layer 0 (234 chambers, NAD83 points, maxRecordCount 2000): authoritative. 
 2. LPMS A1 `latitude`/`longitude` (swapped) for the 77 reporting locks.
 3. NID CSV `Latitude`/`Longitude` for dams with `Number of Locks > 0` (cross-check).
 4. District layer A11 for 16 Gulf locks.

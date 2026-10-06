@@ -1,0 +1,11 @@
+region             = "us-gov-west-1"
+environment        = "dev"
+availability_zones = ["us-gov-west-1a", "us-gov-west-1b"]
+alb_internal       = false
+allowed_cidrs      = ["0.0.0.0/0"] # replace with NIPR egress ranges
+image_tag          = "sha-0000000"
+aurora_serverless  = true
+web_callback_urls  = ["https://evs.example.mil/callback"]
+# icam_oidc_issuer        = "https://federation.eams.army.mil/oidc"
+# icam_oidc_client_id     = "..."
+# icam_oidc_client_secret = "..."

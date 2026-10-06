@@ -24,6 +24,7 @@ from evs.settings import get_settings
 
 log = logging.getLogger(__name__)
 router = APIRouter(prefix="/public/locks", tags=["public-locks"])
+PUBLIC = {"x-apex-authorization": "none"}
 STATUSES = ("operating", "delayed", "closed", "stale", "unknown")
 SUMMARY_SQL = """
 SELECT lock_id, river_code, river_name, lock_name, lock_no, river_mile, district, division, state, chambers,
@@ -129,7 +130,7 @@ def _fixture_list(river_code: str | None) -> LockList:
     return LockList(**data)
 
 
-@router.get("", response_model=LockList)
+@router.get("", response_model=LockList, openapi_extra=PUBLIC)
 async def list_locks(river_code: str | None = None, reporting_only: bool = False) -> LockList:
     """All locks in evs.lock_current. `reporting_only` drops locks absent from the LPMS status feed."""
     try:
@@ -144,7 +145,7 @@ async def list_locks(river_code: str | None = None, reporting_only: bool = False
     return _build_list(rows, river_code)
 
 
-@router.get("/{lock_id}", response_model=LockDetail)
+@router.get("/{lock_id}", response_model=LockDetail, openapi_extra=PUBLIC)
 async def get_lock(lock_id: str) -> LockDetail:
     try:
         rows = await _rows(SUMMARY_SQL + " WHERE lock_id = :lock_id", lock_id=lock_id)
@@ -305,6 +306,6 @@ async def lock_events(queue_timeout: float = 30.0) -> AsyncIterator[dict]:
         await conn.close()
 
 
-@router.get("/stream/events")
+@router.get("/stream/events", openapi_extra=PUBLIC)
 async def stream() -> EventSourceResponse:
     return EventSourceResponse(lock_events())

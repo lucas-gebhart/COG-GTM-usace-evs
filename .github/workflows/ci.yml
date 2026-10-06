@@ -16,6 +16,35 @@ jobs:
       - name: Contract is up to date
         run: uv run evs openapi --out /tmp/openapi.json && diff -q /tmp/openapi.json ../../packages/contract/openapi.json
 
+  api-db:
+    # SQL mode: migrations + seed + the full pytest suite (tests/test_db.py must not skip here).
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: apps/api } }
+    services:
+      postgis:
+        image: postgis/postgis:17-3.5
+        env: { POSTGRES_USER: evs, POSTGRES_PASSWORD: evs, POSTGRES_DB: evs }
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U evs -d evs" --health-interval 5s --health-timeout 3s --health-retries 20
+    env:
+      EVS_DATABASE_URL: postgresql+asyncpg://evs:evs@localhost:5432/evs
+      EVS_DATABASE_URL_SYNC: postgresql://evs:evs@localhost:5432/evs
+      EVS_TEST_DATABASE_URL: postgresql://evs:evs@localhost:5432/evs
+      EVS_REQUIRE_DB: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --extra dev
+      - run: uv run evs migrate
+      - run: uv run evs seed
+      - run: uv run pytest -q
+      - name: CSV export in SQL mode
+        run: |
+          EVS_DATA_MODE=db uv run uvicorn evs.main:app --port 8000 & sleep 3
+          curl -fsS "localhost:8000/api/v1/projects?district=LRL&sort=-funded_amount&format=csv" | head -5
+          curl -fsS -o /dev/null -w "%{http_code}\n" "localhost:8000/api/v1/enterprise/kpis"
+
   inventory:
     runs-on: ubuntu-latest
     steps:

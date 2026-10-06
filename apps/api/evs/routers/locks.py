@@ -19,7 +19,7 @@ from sse_starlette.sse import EventSourceResponse
 from evs.db import engine
 from evs.fixtures import load
 from evs.schemas.common import AsOf
-from evs.schemas.public import LockDetail, LockList, LockSummary
+from evs.schemas.public import LockDetail, LockList, LockSummary, StatusHistoryPoint
 from evs.settings import get_settings
 
 log = logging.getLogger(__name__)
@@ -27,11 +27,10 @@ router = APIRouter(prefix="/public/locks", tags=["public-locks"])
 PUBLIC = {"x-apex-authorization": "none"}
 STATUSES = ("operating", "delayed", "closed", "stale", "unknown")
 SUMMARY_SQL = """
-SELECT lock_id, river_code, river_name, lock_name, lock_no, river_mile, district, chambers, latitude,
-       longitude, status, status_reason, vessels_queued, avg_delay_4h_min, avg_delay_24h_min, last_lockage_at,
-       gauge_stage_ft,
-       flood_category, active_stoppages, as_of, evaluated_at, freshness, source, lift_ft, chamber_dimensions,
-       year_opened, owner, operator, status_inputs
+SELECT lock_id, river_code, river_name, lock_name, lock_no, river_mile, district, division, state, chambers,
+       latitude, longitude, status, status_reason, vessels_queued, avg_delay_4h_min, avg_delay_24h_min,
+       last_lockage_at, gauge_stage_ft, flood_category, active_stoppages, as_of, evaluated_at, freshness,
+       source, lift_ft, chamber_dimensions, year_opened, owner, operator, status_inputs
 FROM evs.lock_current
 """
 
@@ -70,6 +69,8 @@ def _summary(row: dict) -> LockSummary:
         lock_no=row["lock_no"],
         river_mile=_num(row["river_mile"]),
         district=row["district"],
+        division=row.get("division"),
+        state=row.get("state"),
         chambers=row["chambers"],
         latitude=_num(row["latitude"]),
         longitude=_num(row["longitude"]),
@@ -153,7 +154,7 @@ async def get_lock(lock_id: str) -> LockDetail:
         rows = []
         for item in load("locks")["items"]:
             if item["lock_id"] == lock_id:
-                return LockDetail(**item)
+                return LockDetail(**item, history=_fixture_history(item))
     if not rows:
         raise HTTPException(404, f"Lock {lock_id} not found")
     row = rows[0]
@@ -177,6 +178,17 @@ async def get_lock(lock_id: str) -> LockDetail:
         "ORDER BY end_of_lockage_at DESC LIMIT 25",
         lock_id=lock_id,
     )
+    history = await _rows(
+        "SELECT evaluated_at, status, status_reason, rule_no, source, freshness FROM evs.status_eval "
+        "WHERE lock_id = :lock_id AND evaluated_at > now() - interval '24 hours' "
+        "ORDER BY evaluated_at LIMIT 200",
+        lock_id=lock_id,
+    )
+    ntni = await _rows(
+        "SELECT notice_no, title, effective_from, effective_to, fetched_at, source FROM evs.ntni_notice "
+        "WHERE :lock_id = ANY(lock_ids) ORDER BY effective_from DESC NULLS LAST LIMIT 25",
+        lock_id=lock_id,
+    )
     gauges = await _rows(
         "SELECT DISTINCT ON (provider) provider, station_id, observed_at, stage_ft, flow_cfs, "
         "flood_category, "
@@ -197,7 +209,23 @@ async def get_lock(lock_id: str) -> LockDetail:
         recent_lockages=[_plain(x) for x in lockages],
         gauges=[_plain(g) for g in gauges],
         status_inputs=row["status_inputs"] or {},
+        history=[StatusHistoryPoint(**_plain(h)) for h in history],
+        ntni_notices=[_plain(n) for n in ntni],
     )
+
+
+def _fixture_history(item: dict) -> list[StatusHistoryPoint]:
+    """Fixtures carry one evaluation per lock, so the history is that single labelled point."""
+    as_of = item["as_of"]
+    return [
+        StatusHistoryPoint(
+            evaluated_at=as_of["source_as_of"],
+            status=item["status"],
+            status_reason=item["status_reason"],
+            source=as_of["source"],
+            freshness=as_of["freshness"],
+        )
+    ]
 
 
 async def _snapshot_event() -> dict:

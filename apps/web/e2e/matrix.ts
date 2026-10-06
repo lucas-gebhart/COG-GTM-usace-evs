@@ -41,6 +41,17 @@ function fixtureProjectId(): string {
   return "385694";
 }
 
+function fixtureLockId(): string {
+  const fixture = resolve(HERE, "..", "..", "api", "fixtures", "locks.json");
+  try {
+    const data = JSON.parse(readFileSync(fixture, "utf8")) as { items?: Array<{ lock_id?: string }> };
+    if (data.items?.[0]?.lock_id) return String(data.items[0].lock_id);
+  } catch {
+    // fall through to the default below
+  }
+  return "OH-79";
+}
+
 export interface PageUnderTest {
   path: string;
   url: string;
@@ -49,9 +60,10 @@ export interface PageUnderTest {
 }
 
 const PROJECT_ID = fixtureProjectId();
+const LOCK_ID = fixtureLockId();
 
 export const PAGES: PageUnderTest[] = routes.map((r) => {
-  const url = r.path.includes(":") ? r.path.replace(/:[A-Za-z0-9_]+/g, PROJECT_ID) : r.path;
+  const url = r.path.includes(":") ? r.path.replace(":id", LOCK_ID).replace(/:[A-Za-z0-9_]+/g, PROJECT_ID) : r.path;
   return { path: r.path, url, title: r.title, slug: r.path === "/" ? "root" : r.path.slice(1).replace(/[/:]/g, "_") };
 });
 

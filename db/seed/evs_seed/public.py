@@ -280,6 +280,11 @@ def srp_rows() -> tuple[list[dict], list[dict], dict]:
     return d["snapshots"], d["sites"], d["headline"]
 
 
+def srp_citations() -> list[dict]:
+    """Per-figure provenance for the SRP headline (source, URL, year), shown verbatim by the public page."""
+    return json.load((PUBLIC / "srp_sources.json").open())["citations"]
+
+
 def feed_health_rows() -> list[dict]:
     rows = [
         ("LPMS lock_status_report", LPMS_URLS["LPMS lock_status_report"], 15, NOW, None, 840),

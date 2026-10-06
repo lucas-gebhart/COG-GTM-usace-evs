@@ -316,7 +316,93 @@
   "npv_usd_m_low": 243,
   "npv_usd_m_high": 265,
   "bcr_low": 12.6,
-  "bcr_high": 13.7
+  "bcr_high": 13.7,
+  "districts": 27,
+  "states": 30,
+  "program_start_year": 2002
  },
- "source_as_of": "2026-10-06T00:00:00+00:00"
+ "source_as_of": "2026-10-06T00:00:00+00:00",
+ "citations": [
+  {
+   "figure": "river_systems",
+   "label": "River systems",
+   "value_text": "65 rivers (USACE: more than 60 river systems)",
+   "source": "TNC Sustainable Rivers Project page; HEC SRP sites page",
+   "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/",
+   "year": 2026,
+   "note": "HEC states more than 60 river systems; TNC counts 65 rivers."
+  },
+  {
+   "figure": "river_miles",
+   "label": "River miles",
+   "value_text": "nearly 15,000 miles (USACE: 14,000 river miles)",
+   "source": "TNC Sustainable Rivers Project page; HEC SRP sites page",
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/",
+   "year": 2026,
+   "note": "Shown as 14,500, the midpoint of the two cited statements."
+  },
+  {
+   "figure": "dams_and_reservoirs",
+   "label": "Dams and reservoirs",
+   "value_text": "more than 100 associated reservoirs and dams",
+   "source": "TNC Sustainable Rivers Project page",
+   "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/",
+   "year": 2026,
+   "note": null
+  },
+  {
+   "figure": "floodplain_acres",
+   "label": "Floodplain acres",
+   "value_text": "150,000 acres of floodplain",
+   "source": "HEC SRP sites page",
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/sites/",
+   "year": 2026,
+   "note": null
+  },
+  {
+   "figure": "districts",
+   "label": "USACE districts",
+   "value_text": "65 rivers across 27 Army Corps districts",
+   "source": "TNC newsroom, RTI economic analysis release",
+   "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/",
+   "year": 2026,
+   "note": null
+  },
+  {
+   "figure": "states",
+   "label": "States",
+   "value_text": "almost 30 rivers in 30 states",
+   "source": "TNC blog, 16 June 2020",
+   "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/",
+   "year": 2020,
+   "note": "Most recent cited state count; the program has grown since."
+  },
+  {
+   "figure": "npv_usd_m",
+   "label": "Portfolio net present value",
+   "value_text": "$243M to $265M by 2040",
+   "source": "RTI International cost-benefit analysis for TNC",
+   "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/",
+   "year": 2025,
+   "note": "Range across discount-rate scenarios in the RTI report."
+  },
+  {
+   "figure": "bcr",
+   "label": "Benefit-cost ratio",
+   "value_text": "12.63 to 13.69",
+   "source": "RTI International cost-benefit analysis for TNC",
+   "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/sustainable-rivers-project/",
+   "year": 2025,
+   "note": null
+  },
+  {
+   "figure": "program_start",
+   "label": "Program start",
+   "value_text": "pilot 1998 on the Green River, formally established 2002 with 8 river systems",
+   "source": "HEC SRP history page",
+   "source_url": "https://www.hec.usace.army.mil/sustainablerivers/history/",
+   "year": 2002,
+   "note": null
+  }
+ ]
 }

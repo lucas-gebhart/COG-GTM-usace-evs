@@ -6,6 +6,8 @@ import { useAnnounce } from "../hooks/useAnnounce";
 export interface FilterOption {
   value: string;
   label: string;
+  /** Optional optgroup label, e.g. the USACE division a river belongs to. */
+  group?: string;
 }
 
 export interface FilterField {
@@ -18,6 +20,17 @@ export interface FilterField {
 }
 
 export type FilterValues = Record<string, string>;
+
+/** Keeps ungrouped options first, then one optgroup per distinct group label in first-seen order. */
+function groupOptions(options: FilterOption[]): Array<[string | null, FilterOption[]]> {
+  const out = new Map<string | null, FilterOption[]>();
+  for (const o of options) {
+    const key = o.group ?? null;
+    if (!out.has(key)) out.set(key, []);
+    out.get(key)!.push(o);
+  }
+  return [...out.entries()].sort(([a], [b]) => (a === null ? -1 : b === null ? 1 : 0));
+}
 
 export interface FilterBarProps {
   legend?: string;
@@ -79,9 +92,19 @@ export function FilterBar({ legend = "Filters", fields, values, onApply, onReset
                 {f.type === "select" || f.options ? (
                   <select id={fid} name={f.id} className="usa-select" value={draft[f.id] ?? ""} onChange={(e) => setDraft({ ...draft, [f.id]: e.target.value })} aria-describedby={hintId}>
                     <option value="">{f.placeholder ?? "All"}</option>
-                    {f.options?.map((o) => (
-                      <option key={o.value} value={o.value}>{o.label}</option>
-                    ))}
+                    {groupOptions(f.options ?? []).map(([group, opts]) =>
+                      group ? (
+                        <optgroup key={group} label={group}>
+                          {opts.map((o) => (
+                            <option key={o.value} value={o.value}>{o.label}</option>
+                          ))}
+                        </optgroup>
+                      ) : (
+                        opts.map((o) => (
+                          <option key={o.value} value={o.value}>{o.label}</option>
+                        ))
+                      ),
+                    )}
                   </select>
                 ) : (
                   <input id={fid} name={f.id} className="usa-input" type={f.type ?? "text"} value={draft[f.id] ?? ""} placeholder={f.placeholder} onChange={(e) => setDraft({ ...draft, [f.id]: e.target.value })} aria-describedby={hintId} />

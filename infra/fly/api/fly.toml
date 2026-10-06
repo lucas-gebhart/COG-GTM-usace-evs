@@ -22,6 +22,10 @@ primary_region = "iad"
   EVS_OIDC_AUDIENCE = "evs-web"
   EVS_CORS_ORIGINS = '["https://usace-evs-web.fly.dev"]'
   EVS_PMTILES_URL = "/tiles/usace.pmtiles"
+  EVS_LPMS_DETAIL_LOCKS = "12"
+  # No MinIO on Fly: raw payload archive off (GovCloud uses S3, Compose uses MinIO).
+  EVS_S3_ENDPOINT = ""
+  EVS_S3_ACCESS_KEY = ""
 # EVS_DATABASE_URL and EVS_DATABASE_URL_SYNC are Fly secrets set by deploy.sh (never committed).
 
 [processes]

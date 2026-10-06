@@ -29,10 +29,14 @@ def _lock_payload(items: list[dict]) -> dict:
     counts = {s: 0 for s in LOCK_STATUSES}
     for i in items:
         counts[i["status"]] = counts.get(i["status"], 0) + 1
-    newest = max((i["as_of"]["source_as_of"] for i in items if i["as_of"].get("source_as_of")), default=None)
-    fetched = max((i["as_of"]["fetched_at"] for i in items if i["as_of"].get("fetched_at")), default=None)
-    freshness = "stale" if any(i["as_of"].get("freshness") == "stale" for i in items) else "fresh"
-    source = items[0]["as_of"]["source"] if items else "fixtures"
+    evaluated = [i for i in items if i["as_of"].get("fetched_at")] or items
+    newest = max(
+        (i["as_of"]["source_as_of"] for i in evaluated if i["as_of"].get("source_as_of")), default=None
+    )
+    fetched = max((i["as_of"]["fetched_at"] for i in evaluated if i["as_of"].get("fetched_at")), default=None)
+    freshness = "stale" if any(i["as_of"].get("freshness") == "stale" for i in evaluated) else "fresh"
+    latest = max(evaluated, key=lambda i: i["as_of"].get("fetched_at") or "", default=None)
+    source = latest["as_of"]["source"] if latest else "fixtures"
     return {
         "items": items,
         "rivers": [{"code": c, "name": n} for c, n in rivers],

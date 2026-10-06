@@ -10,7 +10,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:16.837000+00:00",
+   "run_at": "2026-10-06T19:14:27.043000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -25,7 +25,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:31.942000+00:00",
+   "run_at": "2026-10-06T19:14:49.343000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -40,7 +40,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:46.688000+00:00",
+   "run_at": "2026-10-06T19:13:42.169000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -55,7 +55,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:01.945000+00:00",
+   "run_at": "2026-10-06T19:14:04.668000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -70,7 +70,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:19.772000+00:00",
+   "run_at": "2026-10-06T19:11:33.622000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -85,7 +85,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:33.321000+00:00",
+   "run_at": "2026-10-06T19:11:54.128000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -100,7 +100,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:51.867000+00:00",
+   "run_at": "2026-10-06T19:10:52.673000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -115,7 +115,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:05.609000+00:00",
+   "run_at": "2026-10-06T19:11:12.867000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -130,7 +130,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:17.498000+00:00",
+   "run_at": "2026-10-06T19:12:58.832000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -145,7 +145,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:31.675000+00:00",
+   "run_at": "2026-10-06T19:13:20.066000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -160,7 +160,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:48.334000+00:00",
+   "run_at": "2026-10-06T19:12:16.122000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -175,7 +175,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:02.725000+00:00",
+   "run_at": "2026-10-06T19:12:36.985000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -190,7 +190,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:18.088000+00:00",
+   "run_at": "2026-10-06T19:15:57.053000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -205,7 +205,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:34.171000+00:00",
+   "run_at": "2026-10-06T19:16:19.869000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -220,7 +220,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:47.175000+00:00",
+   "run_at": "2026-10-06T19:15:12.214000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -235,7 +235,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:02.470000+00:00",
+   "run_at": "2026-10-06T19:15:34.931000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -250,7 +250,7 @@
    "passes": 42,
    "incomplete": 0,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:16.504000+00:00",
+   "run_at": "2026-10-06T19:14:25.357000+00:00",
    "violation_details": [],
    "incomplete_rules": []
   },
@@ -263,7 +263,7 @@
    "passes": 42,
    "incomplete": 0,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:30.763000+00:00",
+   "run_at": "2026-10-06T19:14:47.160000+00:00",
    "violation_details": [],
    "incomplete_rules": []
   },
@@ -276,7 +276,7 @@
    "passes": 42,
    "incomplete": 0,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:46.475000+00:00",
+   "run_at": "2026-10-06T19:13:40.565000+00:00",
    "violation_details": [],
    "incomplete_rules": []
   },
@@ -289,7 +289,7 @@
    "passes": 42,
    "incomplete": 0,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:00.765000+00:00",
+   "run_at": "2026-10-06T19:14:02.385000+00:00",
    "violation_details": [],
    "incomplete_rules": []
   },
@@ -302,7 +302,7 @@
    "passes": 40,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:19.064000+00:00",
+   "run_at": "2026-10-06T19:11:31.880000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -317,7 +317,7 @@
    "passes": 40,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:32.657000+00:00",
+   "run_at": "2026-10-06T19:11:52.250000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -332,7 +332,7 @@
    "passes": 40,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:51.269000+00:00",
+   "run_at": "2026-10-06T19:10:50.954000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -347,7 +347,7 @@
    "passes": 40,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:04.845000+00:00",
+   "run_at": "2026-10-06T19:11:11.116000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -362,7 +362,7 @@
    "passes": 40,
    "incomplete": 0,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:16.817000+00:00",
+   "run_at": "2026-10-06T19:12:56.801000+00:00",
    "violation_details": [],
    "incomplete_rules": []
   },
@@ -375,7 +375,7 @@
    "passes": 40,
    "incomplete": 0,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:30.584000+00:00",
+   "run_at": "2026-10-06T19:13:17.879000+00:00",
    "violation_details": [],
    "incomplete_rules": []
   },
@@ -388,7 +388,7 @@
    "passes": 40,
    "incomplete": 0,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:47.533000+00:00",
+   "run_at": "2026-10-06T19:12:13.975000+00:00",
    "violation_details": [],
    "incomplete_rules": []
   },
@@ -401,7 +401,7 @@
    "passes": 40,
    "incomplete": 0,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:01.785000+00:00",
+   "run_at": "2026-10-06T19:12:34.814000+00:00",
    "violation_details": [],
    "incomplete_rules": []
   },
@@ -414,7 +414,7 @@
    "passes": 42,
    "incomplete": 0,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:17.408000+00:00",
+   "run_at": "2026-10-06T19:15:55.991000+00:00",
    "violation_details": [],
    "incomplete_rules": []
   },
@@ -427,7 +427,7 @@
    "passes": 42,
    "incomplete": 0,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:33.351000+00:00",
+   "run_at": "2026-10-06T19:16:17.109000+00:00",
    "violation_details": [],
    "incomplete_rules": []
   },
@@ -440,7 +440,7 @@
    "passes": 42,
    "incomplete": 0,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:46.934000+00:00",
+   "run_at": "2026-10-06T19:15:10.954000+00:00",
    "violation_details": [],
    "incomplete_rules": []
   },
@@ -453,7 +453,7 @@
    "passes": 42,
    "incomplete": 0,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:01.736000+00:00",
+   "run_at": "2026-10-06T19:15:32.426000+00:00",
    "violation_details": [],
    "incomplete_rules": []
   },
@@ -466,7 +466,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:09.961000+00:00",
+   "run_at": "2026-10-06T19:14:16.756000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -481,7 +481,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:24.841000+00:00",
+   "run_at": "2026-10-06T19:14:38.706000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -496,7 +496,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:39.843000+00:00",
+   "run_at": "2026-10-06T19:13:31.927000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -511,7 +511,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:54.906000+00:00",
+   "run_at": "2026-10-06T19:13:53.731000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -526,7 +526,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:13.419000+00:00",
+   "run_at": "2026-10-06T19:11:23.866000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -541,7 +541,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:27.037000+00:00",
+   "run_at": "2026-10-06T19:11:44.433000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -556,7 +556,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:45.264000+00:00",
+   "run_at": "2026-10-06T19:10:42.285000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -571,7 +571,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:59.291000+00:00",
+   "run_at": "2026-10-06T19:11:03.329000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -586,7 +586,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:10.794000+00:00",
+   "run_at": "2026-10-06T19:12:48.489000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -601,7 +601,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:25.021000+00:00",
+   "run_at": "2026-10-06T19:13:09.950000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -616,7 +616,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:41.641000+00:00",
+   "run_at": "2026-10-06T19:12:05.784000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -631,7 +631,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:55.987000+00:00",
+   "run_at": "2026-10-06T19:12:27.011000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -646,7 +646,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:10.660000+00:00",
+   "run_at": "2026-10-06T19:15:47.083000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -661,7 +661,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:26.784000+00:00",
+   "run_at": "2026-10-06T19:16:08.447000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -676,7 +676,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:40.293000+00:00",
+   "run_at": "2026-10-06T19:15:01.663000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -691,7 +691,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:55.583000+00:00",
+   "run_at": "2026-10-06T19:15:23.831000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -706,7 +706,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:06.911000+00:00",
+   "run_at": "2026-10-06T19:14:11.748000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -721,7 +721,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:22.375000+00:00",
+   "run_at": "2026-10-06T19:14:34.294000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -736,7 +736,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:36.762000+00:00",
+   "run_at": "2026-10-06T19:13:27.133000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -751,7 +751,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:52.411000+00:00",
+   "run_at": "2026-10-06T19:13:49.433000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -766,7 +766,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:10.688000+00:00",
+   "run_at": "2026-10-06T19:11:19.787000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -781,7 +781,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:24.378000+00:00",
+   "run_at": "2026-10-06T19:11:40.269000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -796,7 +796,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:42.054000+00:00",
+   "run_at": "2026-10-06T19:10:37.615000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -811,7 +811,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:56.720000+00:00",
+   "run_at": "2026-10-06T19:10:59.143000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -826,7 +826,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:07.819000+00:00",
+   "run_at": "2026-10-06T19:12:44.013000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -841,7 +841,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:22.445000+00:00",
+   "run_at": "2026-10-06T19:13:05.377000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -856,7 +856,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:38.781000+00:00",
+   "run_at": "2026-10-06T19:12:01.399000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -871,7 +871,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:53.234000+00:00",
+   "run_at": "2026-10-06T19:12:22.421000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -886,7 +886,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:07.993000+00:00",
+   "run_at": "2026-10-06T19:15:41.774000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -901,7 +901,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:23.651000+00:00",
+   "run_at": "2026-10-06T19:16:04.638000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -916,7 +916,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:37.198000+00:00",
+   "run_at": "2026-10-06T19:14:56.740000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -931,7 +931,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:52.827000+00:00",
+   "run_at": "2026-10-06T19:15:19.879000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -946,7 +946,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:03.683000+00:00",
+   "run_at": "2026-10-06T19:14:07.297000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -961,7 +961,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:18.599000+00:00",
+   "run_at": "2026-10-06T19:14:29.575000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -976,7 +976,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:33.417000+00:00",
+   "run_at": "2026-10-06T19:13:22.670000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -991,7 +991,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:48.500000+00:00",
+   "run_at": "2026-10-06T19:13:44.691000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1006,7 +1006,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:07.336000+00:00",
+   "run_at": "2026-10-06T19:11:15.205000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1021,7 +1021,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:21.375000+00:00",
+   "run_at": "2026-10-06T19:11:35.947000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1036,7 +1036,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:38.372000+00:00",
+   "run_at": "2026-10-06T19:10:32.213000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1051,7 +1051,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:53.480000+00:00",
+   "run_at": "2026-10-06T19:10:54.969000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1066,7 +1066,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:04.481000+00:00",
+   "run_at": "2026-10-06T19:12:39.506000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1081,7 +1081,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:19.197000+00:00",
+   "run_at": "2026-10-06T19:13:01.269000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1096,7 +1096,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:35.086000+00:00",
+   "run_at": "2026-10-06T19:11:56.698000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1111,7 +1111,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:50.125000+00:00",
+   "run_at": "2026-10-06T19:12:18.484000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1126,7 +1126,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:04.284000+00:00",
+   "run_at": "2026-10-06T19:15:37.438000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1141,7 +1141,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:19.958000+00:00",
+   "run_at": "2026-10-06T19:15:59.680000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1156,7 +1156,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:33.748000+00:00",
+   "run_at": "2026-10-06T19:14:51.929000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1171,7 +1171,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:48.953000+00:00",
+   "run_at": "2026-10-06T19:15:14.843000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1186,7 +1186,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:04.758000+00:00",
+   "run_at": "2026-10-06T19:14:08.528000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1201,7 +1201,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:20.509000+00:00",
+   "run_at": "2026-10-06T19:14:31.369000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1216,7 +1216,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:34.570000+00:00",
+   "run_at": "2026-10-06T19:13:23.955000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1231,7 +1231,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:50.427000+00:00",
+   "run_at": "2026-10-06T19:13:46.526000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1246,7 +1246,7 @@
    "passes": 50,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:08.503000+00:00",
+   "run_at": "2026-10-06T19:11:16.870000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1261,7 +1261,7 @@
    "passes": 50,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:22.626000+00:00",
+   "run_at": "2026-10-06T19:11:37.537000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1276,7 +1276,7 @@
    "passes": 50,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:40.079000+00:00",
+   "run_at": "2026-10-06T19:10:34.694000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1291,7 +1291,7 @@
    "passes": 50,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:54.891000+00:00",
+   "run_at": "2026-10-06T19:10:56.416000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1306,7 +1306,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:05.488000+00:00",
+   "run_at": "2026-10-06T19:14:10.105000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1321,7 +1321,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:20.413000+00:00",
+   "run_at": "2026-10-06T19:14:32.201000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1336,7 +1336,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:35.212000+00:00",
+   "run_at": "2026-10-06T19:13:25.467000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1351,7 +1351,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:50.592000+00:00",
+   "run_at": "2026-10-06T19:13:47.366000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1366,7 +1366,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:09.100000+00:00",
+   "run_at": "2026-10-06T19:11:17.779000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1381,7 +1381,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:23.088000+00:00",
+   "run_at": "2026-10-06T19:11:38.470000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1396,7 +1396,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:40.644000+00:00",
+   "run_at": "2026-10-06T19:10:35.419000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1411,7 +1411,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:55.234000+00:00",
+   "run_at": "2026-10-06T19:10:57.431000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1426,7 +1426,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:06.243000+00:00",
+   "run_at": "2026-10-06T19:12:42.168000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1441,7 +1441,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:20.928000+00:00",
+   "run_at": "2026-10-06T19:13:03.817000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1456,7 +1456,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:36.911000+00:00",
+   "run_at": "2026-10-06T19:11:59.316000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1471,7 +1471,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:51.892000+00:00",
+   "run_at": "2026-10-06T19:12:20.990000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1486,7 +1486,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:06.097000+00:00",
+   "run_at": "2026-10-06T19:15:40.226000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1501,7 +1501,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:21.840000+00:00",
+   "run_at": "2026-10-06T19:16:02.263000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1516,7 +1516,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:35.652000+00:00",
+   "run_at": "2026-10-06T19:14:54.774000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1531,7 +1531,7 @@
    "passes": 49,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:51.098000+00:00",
+   "run_at": "2026-10-06T19:15:17.446000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1546,7 +1546,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:05.613000+00:00",
+   "run_at": "2026-10-06T19:12:40.826000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1561,7 +1561,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:20.576000+00:00",
+   "run_at": "2026-10-06T19:13:02.589000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1576,7 +1576,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:36.561000+00:00",
+   "run_at": "2026-10-06T19:11:58.284000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1591,7 +1591,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:51.348000+00:00",
+   "run_at": "2026-10-06T19:12:19.639000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1606,7 +1606,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:05.695000+00:00",
+   "run_at": "2026-10-06T19:15:38.456000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1621,7 +1621,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:21.400000+00:00",
+   "run_at": "2026-10-06T19:16:01.876000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1636,7 +1636,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:34.845000+00:00",
+   "run_at": "2026-10-06T19:14:53.306000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1651,7 +1651,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:50.837000+00:00",
+   "run_at": "2026-10-06T19:15:17.036000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1666,7 +1666,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:13.313000+00:00",
+   "run_at": "2026-10-06T19:14:21.694000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1681,7 +1681,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:28.558000+00:00",
+   "run_at": "2026-10-06T19:14:44.101000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1696,7 +1696,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:43.241000+00:00",
+   "run_at": "2026-10-06T19:13:37.032000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1711,7 +1711,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:58.569000+00:00",
+   "run_at": "2026-10-06T19:13:59.369000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1726,7 +1726,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:15.154000+00:00",
+   "run_at": "2026-10-06T19:14:23.491000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1741,7 +1741,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:29.414000+00:00",
+   "run_at": "2026-10-06T19:14:45.338000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1756,7 +1756,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:45.131000+00:00",
+   "run_at": "2026-10-06T19:13:38.757000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1771,7 +1771,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:59.476000+00:00",
+   "run_at": "2026-10-06T19:14:00.556000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1786,7 +1786,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:17.782000+00:00",
+   "run_at": "2026-10-06T19:11:30.177000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1801,7 +1801,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:31.351000+00:00",
+   "run_at": "2026-10-06T19:11:50.509000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1816,7 +1816,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:49.939000+00:00",
+   "run_at": "2026-10-06T19:10:49.233000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1831,7 +1831,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:03.583000+00:00",
+   "run_at": "2026-10-06T19:11:09.374000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1846,7 +1846,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:15.509000+00:00",
+   "run_at": "2026-10-06T19:12:55.071000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1861,7 +1861,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:29.356000+00:00",
+   "run_at": "2026-10-06T19:13:16.119000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1876,7 +1876,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:46.249000+00:00",
+   "run_at": "2026-10-06T19:12:12.301000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1891,7 +1891,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:00.477000+00:00",
+   "run_at": "2026-10-06T19:12:33.095000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1906,7 +1906,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:16.024000+00:00",
+   "run_at": "2026-10-06T19:15:54.195000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1921,7 +1921,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:31.868000+00:00",
+   "run_at": "2026-10-06T19:16:15.392000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1936,7 +1936,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:45.586000+00:00",
+   "run_at": "2026-10-06T19:15:09.125000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1951,7 +1951,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:00.344000+00:00",
+   "run_at": "2026-10-06T19:15:30.722000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1966,7 +1966,7 @@
    "passes": 50,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:16.689000+00:00",
+   "run_at": "2026-10-06T19:11:28.938000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1981,7 +1981,7 @@
    "passes": 50,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:30.210000+00:00",
+   "run_at": "2026-10-06T19:11:49.302000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -1996,7 +1996,7 @@
    "passes": 50,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:48.732000+00:00",
+   "run_at": "2026-10-06T19:10:48.015000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2011,7 +2011,7 @@
    "passes": 50,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:02.569000+00:00",
+   "run_at": "2026-10-06T19:11:08.145000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2026,7 +2026,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:14.208000+00:00",
+   "run_at": "2026-10-06T19:12:53.799000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2041,7 +2041,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:28.481000+00:00",
+   "run_at": "2026-10-06T19:13:14.805000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2056,7 +2056,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:45.168000+00:00",
+   "run_at": "2026-10-06T19:12:11.107000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2071,7 +2071,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:59.386000+00:00",
+   "run_at": "2026-10-06T19:12:31.744000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2086,7 +2086,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:14.551000+00:00",
+   "run_at": "2026-10-06T19:15:51.913000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2101,7 +2101,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:30.552000+00:00",
+   "run_at": "2026-10-06T19:16:14.465000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2116,7 +2116,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:43.759000+00:00",
+   "run_at": "2026-10-06T19:15:07.049000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2131,7 +2131,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:59.081000+00:00",
+   "run_at": "2026-10-06T19:15:29.780000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2146,7 +2146,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:13.468000+00:00",
+   "run_at": "2026-10-06T19:14:21.035000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2162,7 +2162,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:27.600000+00:00",
+   "run_at": "2026-10-06T19:14:42.935000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2178,7 +2178,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:43.401000+00:00",
+   "run_at": "2026-10-06T19:13:36.303000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2194,7 +2194,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:57.694000+00:00",
+   "run_at": "2026-10-06T19:13:58.080000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2210,7 +2210,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:16.023000+00:00",
+   "run_at": "2026-10-06T19:11:27.768000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2226,7 +2226,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:29.614000+00:00",
+   "run_at": "2026-10-06T19:11:48.155000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2242,7 +2242,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:48.206000+00:00",
+   "run_at": "2026-10-06T19:10:46.768000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2258,7 +2258,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:01.839000+00:00",
+   "run_at": "2026-10-06T19:11:07.035000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2274,7 +2274,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:13.749000+00:00",
+   "run_at": "2026-10-06T19:12:52.660000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2290,7 +2290,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:27.630000+00:00",
+   "run_at": "2026-10-06T19:13:13.747000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2306,7 +2306,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:44.500000+00:00",
+   "run_at": "2026-10-06T19:12:09.840000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2322,7 +2322,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:58.743000+00:00",
+   "run_at": "2026-10-06T19:12:30.806000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2338,7 +2338,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:14.114000+00:00",
+   "run_at": "2026-10-06T19:15:51.664000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2354,7 +2354,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:30.015000+00:00",
+   "run_at": "2026-10-06T19:16:12.849000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2370,7 +2370,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:43.864000+00:00",
+   "run_at": "2026-10-06T19:15:06.644000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2386,7 +2386,7 @@
    "passes": 44,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:58.587000+00:00",
+   "run_at": "2026-10-06T19:15:28.235000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast",
@@ -2402,7 +2402,7 @@
    "passes": 46,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:02.901000+00:00",
+   "run_at": "2026-10-06T19:14:05.660000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2417,7 +2417,7 @@
    "passes": 46,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:18.513000+00:00",
+   "run_at": "2026-10-06T19:14:28.521000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2432,7 +2432,7 @@
    "passes": 46,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:32.752000+00:00",
+   "run_at": "2026-10-06T19:13:21.054000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2447,7 +2447,7 @@
    "passes": 46,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:48.736000+00:00",
+   "run_at": "2026-10-06T19:13:43.624000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2462,7 +2462,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:06.816000+00:00",
+   "run_at": "2026-10-06T19:11:14.249000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2477,7 +2477,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:20.953000+00:00",
+   "run_at": "2026-10-06T19:11:34.999000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2492,7 +2492,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:38.922000+00:00",
+   "run_at": "2026-10-06T19:10:32.876000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2507,7 +2507,7 @@
    "passes": 43,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:53.143000+00:00",
+   "run_at": "2026-10-06T19:10:53.880000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2522,7 +2522,7 @@
    "passes": 46,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:03.848000+00:00",
+   "run_at": "2026-10-06T19:12:38.020000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2537,7 +2537,7 @@
    "passes": 46,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:18.790000+00:00",
+   "run_at": "2026-10-06T19:12:59.843000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2552,7 +2552,7 @@
    "passes": 46,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:34.713000+00:00",
+   "run_at": "2026-10-06T19:11:55.530000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2567,7 +2567,7 @@
    "passes": 46,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:49.540000+00:00",
+   "run_at": "2026-10-06T19:12:16.955000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2582,7 +2582,7 @@
    "passes": 46,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:03.856000+00:00",
+   "run_at": "2026-10-06T19:15:35.601000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2597,7 +2597,7 @@
    "passes": 46,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:19.470000+00:00",
+   "run_at": "2026-10-06T19:15:59.116000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2612,7 +2612,7 @@
    "passes": 46,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:32.898000+00:00",
+   "run_at": "2026-10-06T19:14:50.351000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2627,7 +2627,7 @@
    "passes": 46,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:49.227000+00:00",
+   "run_at": "2026-10-06T19:15:14.182000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2642,7 +2642,7 @@
    "passes": 50,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:10.592000+00:00",
+   "run_at": "2026-10-06T19:14:17.773000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2658,7 +2658,7 @@
    "passes": 50,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:25.924000+00:00",
+   "run_at": "2026-10-06T19:14:40.269000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2674,7 +2674,7 @@
    "passes": 50,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:40.560000+00:00",
+   "run_at": "2026-10-06T19:13:33.005000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2690,7 +2690,7 @@
    "passes": 50,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:56.011000+00:00",
+   "run_at": "2026-10-06T19:13:55.488000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2706,7 +2706,7 @@
    "passes": 50,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:14.259000+00:00",
+   "run_at": "2026-10-06T19:11:25.442000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2722,7 +2722,7 @@
    "passes": 50,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:27.792000+00:00",
+   "run_at": "2026-10-06T19:11:45.876000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2738,7 +2738,7 @@
    "passes": 50,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:46.126000+00:00",
+   "run_at": "2026-10-06T19:10:44.114000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2754,7 +2754,7 @@
    "passes": 50,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:00.151000+00:00",
+   "run_at": "2026-10-06T19:11:04.742000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2770,7 +2770,7 @@
    "passes": 51,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:11.570000+00:00",
+   "run_at": "2026-10-06T19:12:50.013000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2786,7 +2786,7 @@
    "passes": 51,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:25.876000+00:00",
+   "run_at": "2026-10-06T19:13:10.989000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2802,7 +2802,7 @@
    "passes": 51,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:42.571000+00:00",
+   "run_at": "2026-10-06T19:12:07.326000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2818,7 +2818,7 @@
    "passes": 51,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:56.710000+00:00",
+   "run_at": "2026-10-06T19:12:27.946000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2834,7 +2834,7 @@
    "passes": 50,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:11.754000+00:00",
+   "run_at": "2026-10-06T19:15:47.796000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2850,7 +2850,7 @@
    "passes": 50,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:27.687000+00:00",
+   "run_at": "2026-10-06T19:16:10.690000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2866,7 +2866,7 @@
    "passes": 50,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:41+00:00",
+   "run_at": "2026-10-06T19:15:03.017000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2882,7 +2882,7 @@
    "passes": 50,
    "incomplete": 2,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:56.357000+00:00",
+   "run_at": "2026-10-06T19:15:26.005000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "aria-valid-attr-value",
@@ -2898,7 +2898,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:07.866000+00:00",
+   "run_at": "2026-10-06T19:14:13.505000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2913,7 +2913,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:22.805000+00:00",
+   "run_at": "2026-10-06T19:14:35.544000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2928,7 +2928,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:37.588000+00:00",
+   "run_at": "2026-10-06T19:13:28.836000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2943,7 +2943,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:52.836000+00:00",
+   "run_at": "2026-10-06T19:13:50.639000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2958,7 +2958,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:11.309000+00:00",
+   "run_at": "2026-10-06T19:11:20.928000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2973,7 +2973,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:25.090000+00:00",
+   "run_at": "2026-10-06T19:11:41.517000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -2988,7 +2988,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:42.889000+00:00",
+   "run_at": "2026-10-06T19:10:38.766000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -3003,7 +3003,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:44:57.313000+00:00",
+   "run_at": "2026-10-06T19:11:00.454000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -3018,7 +3018,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:08.640000+00:00",
+   "run_at": "2026-10-06T19:12:45.464000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -3033,7 +3033,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:46:23.019000+00:00",
+   "run_at": "2026-10-06T19:13:06.951000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -3048,7 +3048,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:39.465000+00:00",
+   "run_at": "2026-10-06T19:12:02.752000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -3063,7 +3063,7 @@
    "passes": 52,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:45:53.998000+00:00",
+   "run_at": "2026-10-06T19:12:24.086000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -3078,7 +3078,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:08.636000+00:00",
+   "run_at": "2026-10-06T19:15:43.782000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -3093,7 +3093,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:48:24.383000+00:00",
+   "run_at": "2026-10-06T19:16:05.527000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -3108,7 +3108,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:38.118000+00:00",
+   "run_at": "2026-10-06T19:14:58.401000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -3123,7 +3123,7 @@
    "passes": 51,
    "incomplete": 1,
    "advisories": 0,
-   "run_at": "2026-10-06T18:47:53.410000+00:00",
+   "run_at": "2026-10-06T19:15:20.770000+00:00",
    "violation_details": [],
    "incomplete_rules": [
     "color-contrast"
@@ -3140,7 +3140,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [image-alt, svg-img-alt, role-img-alt, input-image-alt, object-alt, aria-meter-name, aria-progressbar-name]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-SR-01 (chart names and descriptions, map marker names) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [image-alt, svg-img-alt, role-img-alt, input-image-alt, object-alt, aria-meter-name, aria-progressbar-name]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: MT-SR-01 (chart names and descriptions, map marker names) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -3238,7 +3238,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [list, listitem, definition-list, dlitem, th-has-data-cells, td-headers-attr, td-has-header, table-fake-caption, aria-required-children, aria-required-parent, p-as-heading]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-SR-02 (table header and scope reading, KPI tile semantics, chart \"view as table\") not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [list, listitem, definition-list, dlitem, th-has-data-cells, td-headers-attr, td-has-header, table-fake-caption, aria-required-children, aria-required-parent, p-as-heading]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: MT-SR-02 (table header and scope reading, KPI tile semantics, chart \"view as table\") not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -3326,7 +3326,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [css-orientation-lock]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-RESP-01 (portrait and landscape on tablet) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [css-orientation-lock]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: MT-RESP-01 (portrait and landscape on tablet) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -3358,7 +3358,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [autocomplete-valid]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-FORM-01 (login and profile fields carry autocomplete tokens) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [autocomplete-valid]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: MT-FORM-01 (login and profile fields carry autocomplete tokens) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -3390,7 +3390,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [link-in-text-block]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-VIS-01 (colour-vision simulation on status chips, map markers and chart series) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [link-in-text-block]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: MT-VIS-01 (colour-vision simulation on status chips, map markers and chart series) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -3444,7 +3444,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [color-contrast]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-VIS-02 (contrast spot-check of chart labels drawn in SVG or canvas (axe cannot read canvas text)) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [color-contrast]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: MT-VIS-02 (contrast spot-check of chart labels drawn in SVG or canvas (axe cannot read canvas text)) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -3588,7 +3588,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [avoid-inline-spacing]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-ZOOM-03 (text-spacing bookmarklet on every route) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [avoid-inline-spacing]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: MT-ZOOM-03 (text-spacing bookmarklet on every route) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -3648,7 +3648,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [scrollable-region-focusable, frame-focusable-content, server-side-image-map]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. SMOKE: keyboard smoke (skip link first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-01 (keyboard-only pass of every route including charts (arrow keys) and map (Tab to markers, Enter opens popover)) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [scrollable-region-focusable, frame-focusable-content, server-side-image-map]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. SMOKE: keyboard smoke (skip link first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-01 (keyboard-only pass of every route including charts (arrow keys) and map (Tab to markers, Enter opens popover)) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -3736,7 +3736,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [meta-refresh]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-TIME-01 (session timeout warning with extend; live feed refresh does not move focus) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [meta-refresh]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: MT-TIME-01 (session timeout warning with extend; live feed refresh does not move focus) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -3768,7 +3768,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [blink, marquee]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-MOTION-01 (live table and map updates can be paused; prefers-reduced-motion honoured) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [blink, marquee]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: MT-MOTION-01 (live table and map updates can be paused; prefers-reduced-motion honoured) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -3828,7 +3828,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [bypass]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. SMOKE: keyboard smoke (skip link first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-05 (skip link and landmarks (banner, navigation, main, contentinfo)) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [bypass]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. SMOKE: keyboard smoke (skip link first, nav then main, visible focus, Escape closes popovers): 13/13 cells passed. MANUAL: MT-KBD-05 (skip link and landmarks (banner, navigation, main, contentinfo)) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -3860,7 +3860,7 @@
    "method": "automated",
    "status": "supports",
    "notes": "Automated cells pass and manual attestation supports.",
-   "detail": "AUTOMATED: axe rules [document-title]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [document-title]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [],
@@ -3918,7 +3918,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [link-name]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-SR-04 (link text understandable in context) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [link-name]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: MT-SR-04 (link text understandable in context) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -4090,7 +4090,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [label-content-name-mismatch]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-SR-06 (visible label is part of the accessible name) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [label-content-name-mismatch]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: MT-SR-06 (visible label is part of the accessible name) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -4144,7 +4144,7 @@
    "method": "automated",
    "status": "supports",
    "notes": "Automated cells pass and manual attestation supports.",
-   "detail": "AUTOMATED: axe rules [html-has-lang, html-lang-valid, html-xml-lang-mismatch]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [html-has-lang, html-lang-valid, html-xml-lang-mismatch]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [],
@@ -4174,7 +4174,7 @@
    "method": "automated",
    "status": "supports",
    "notes": "Automated cells pass and manual attestation supports.",
-   "detail": "AUTOMATED: axe rules [valid-lang]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [valid-lang]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [],
@@ -4344,7 +4344,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [label, form-field-multiple-labels]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-FORM-04 (labels and hints present) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [label, form-field-multiple-labels]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: MT-FORM-04 (labels and hints present) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -4432,7 +4432,7 @@
    "method": "automated",
    "status": "supports",
    "notes": "Automated cells pass and manual attestation supports.",
-   "detail": "AUTOMATED: axe rules [duplicate-id, duplicate-id-active]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [duplicate-id, duplicate-id-active]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: none required beyond automation. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [],
@@ -4462,7 +4462,7 @@
    "method": "automated",
    "status": "not-evaluated",
    "notes": "Evidence incomplete; no claim made.",
-   "detail": "AUTOMATED: axe rules [button-name, aria-allowed-attr, aria-required-attr, aria-valid-attr, aria-valid-attr-value, aria-roles, aria-hidden-focus, aria-command-name, aria-input-field-name, aria-toggle-field-name, aria-tooltip-name, aria-tab-name, nested-interactive, select-name, input-button-name, frame-title]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 4d9de46860bb; run 2026-10-06 18:48 UTC. MANUAL: MT-SR-07 (name, role, value and state for custom widgets (sortable headers, chips, map markers, chart points)) not yet attested. Not a conformance claim until every row carries evidence.",
+   "detail": "AUTOMATED: axe rules [button-name, aria-allowed-attr, aria-required-attr, aria-valid-attr, aria-valid-attr-value, aria-roles, aria-hidden-focus, aria-command-name, aria-input-field-name, aria-toggle-field-name, aria-tooltip-name, aria-tab-name, nested-interactive, select-name, input-button-name, frame-title]; 208 cells (13 routes x 4 viewports x 2 themes x 2 motion settings), 0 violations; axe-core 4.13.0; commit 7cf7325d2c8d; run 2026-10-06 19:16 UTC. MANUAL: MT-SR-07 (name, role, value and state for custom widgets (sortable headers, chips, map markers, chart points)) not yet attested. Not a conformance claim until every row carries evidence.",
    "automated_cells": 208,
    "open_violations": 0,
    "manual_tests": [
@@ -4872,12 +4872,12 @@
   }
  ],
  "acr_download_url": "/acr/evs-openacr.yaml",
- "generated_at": "2026-10-06T18:52:46.127094+00:00",
- "git_sha": "4d9de46860bb5bd40935e39f958ba715464914c1",
+ "generated_at": "2026-10-06T19:21:05.547803+00:00",
+ "git_sha": "7cf7325d2c8d4c75fd79f1f86c53b585af06bedf",
  "axe_version": "4.13.0",
  "as_of": {
-  "source_as_of": "2026-10-06T18:48:34.171000+00:00",
-  "fetched_at": "2026-10-06T18:52:46.127094+00:00",
+  "source_as_of": "2026-10-06T19:16:19.869000+00:00",
+  "fetched_at": "2026-10-06T19:21:05.547803+00:00",
   "freshness": "fresh",
   "source": "fixtures"
  },
@@ -4905,7 +4905,7 @@
   "total_violations": 0,
   "total_advisories": 0,
   "needs_review": 228,
-  "last_run_at": "2026-10-06T18:48:34.171000+00:00",
+  "last_run_at": "2026-10-06T19:16:19.869000+00:00",
   "keyboard_routes_passed": 13,
   "keyboard_routes_total": 13,
   "reflow_cells_passed": 26,
@@ -5142,7 +5142,7 @@
   "repository": "https://github.com/lucas-gebhart/COG-GTM-usace-evs (docs/a11y/)",
   "legal_disclaimer": "This report reflects testing of the EVS demo build at the stated version, commit and date and is provided in good faith. Rows marked not-evaluated make no conformance claim. It does not represent a legally binding guarantee.",
   "report_date": "2026-10-06",
-  "git_sha": "4d9de46860bb",
+  "git_sha": "7cf7325d2c8d",
   "demo_notice": "EVS is a demonstration system. This read-out describes the demo build, not a production deployment."
  }
 }

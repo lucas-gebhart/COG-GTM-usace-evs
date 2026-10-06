@@ -245,7 +245,7 @@ export function LockDetailPanel({ lockId, summary, headingLevel = 3 }: LockDetai
             {inputs.map(([k, v]) => (
               <div key={k} className="display-contents">
                 <dt>{k.replaceAll("_", " ")}</dt>
-                <dd>{text(v)}</dd>
+                <dd>{k.endsWith("_at") ? when(v) : text(v)}</dd>
               </div>
             ))}
           </dl>

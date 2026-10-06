@@ -100,8 +100,9 @@
 }
 .evs-dl {
   display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.25rem var(--evs-space-3); margin: 0; font-size: var(--evs-text-sm);
+  > div { display: contents; }
   dt { font-weight: 600; color: var(--evs-color-ink-secondary); }
-  dd { margin: 0 0 0.25rem; }
+  dd { margin: 0 0 0.25rem; min-width: 0; overflow-wrap: anywhere; white-space: pre-line; }
   @media (min-width: 40em) { grid-template-columns: max-content minmax(0, 1fr); dd { margin: 0; } }
 }
 

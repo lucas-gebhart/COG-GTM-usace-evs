@@ -14,3 +14,4 @@ apps/web/public/tiles
 legacy/strategic-planner
 infra/terraform-govcloud/**/.terraform
 docs
+!docs/a11y

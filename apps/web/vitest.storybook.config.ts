@@ -13,6 +13,9 @@ export default mergeConfig(
       globals: false,
       setupFiles: ["./.storybook/vitest.setup.ts"],
       include: ["src/**/*.stories.@(ts|tsx)"],
+      // One story file at a time: parallel browser workers race the addon-vitest setup file ("Vitest failed to find the runner").
+      fileParallelism: false,
+      retry: 1,
       exclude: ["e2e/**", "node_modules/**"],
       browser: { enabled: true, provider: "playwright", headless: true, instances: [{ browser: "chromium" }] },
     },

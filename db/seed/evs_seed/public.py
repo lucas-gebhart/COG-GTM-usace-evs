@@ -62,7 +62,9 @@ def lock_display_name(navstr: str | None, pms_name: str | None, lock_id: str) ->
 
 
 def lock_key(river: str, lock_no: str) -> str:
-    return f"{river}-{str(lock_no).lstrip('0') or '0'}"
+    """Same id form as evs.ingest.lpms.lock_id (OH-01, not OH-1) so live rows upsert over the seed."""
+    no = str(lock_no).strip()
+    return f"{str(river).strip().upper()}-{no.zfill(2) if no.isdigit() else no.upper()}"
 
 
 def lock_dims() -> list[dict]:

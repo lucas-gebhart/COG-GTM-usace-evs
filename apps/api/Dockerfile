@@ -7,6 +7,7 @@ RUN uv pip install --no-cache -e . 2>/dev/null || true
 COPY apps/api/ ./
 COPY db/ /db/
 COPY docs/a11y/ /docs/a11y/
+COPY legacy/data_samples/ /legacy/data_samples/
 RUN uv pip install --no-cache -e .
 ENV EVS_A11Y_DOCS_DIR=/docs/a11y
 EXPOSE 8000

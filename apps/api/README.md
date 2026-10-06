@@ -74,7 +74,7 @@ All paths are under `/api/v1`. The OpenAPI document carries the same mapping as 
 | `GET /workforce/labor` | page 74 People IR | viewer | `synth.ems_labor_log` |
 | `GET /facilities/condition` | new in EVS (BUILDER SMS) | viewer | `synth.builder_facility_condition` |
 | `GET /facilities/ci-distribution` | new in EVS | viewer | same |
-| `GET /public/locks`, `GET /public/locks/{id}`, `GET /public/locks/stream/events` | new in EVS (LPMS, NDC, NOAA, USGS) | none | `evs.lock_dim`, `evs.lock_status_fact` |
+| `GET /public/locks`, `GET /public/locks/{id}`, `GET /public/locks/stream/events` | new in EVS (LPMS, NDC, NOAA, USGS); WP5a router | none | `evs.lock_current`, `evs.stoppage`, `evs.lock_queue`, `evs.lockage`, `evs.gauge_fact` |
 | `GET /public/srp/coverage` | new in EVS (cited public figures) | none | `evs.srp_snapshot`, `evs.srp_site` |
 | `GET /admin/feeds` | page 10000 (Administration Rights) | admin | `evs.feed_health` |
 | `GET /admin/thresholds`, `PUT /admin/thresholds` | page 10000 (Administration Rights) | admin | `evs.threshold` |

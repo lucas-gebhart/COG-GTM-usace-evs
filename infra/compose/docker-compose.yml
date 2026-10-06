@@ -83,17 +83,22 @@ services:
       retries: 12
       start_period: 15s
 
+  # Public-feed worker: LPMS every 15 min, NOAA/USGS every 30 min, NDC GIS daily. EVS_FEED_SOURCE=live polls the
+  # real endpoints, fixtures replays legacy/data_samples, simulated runs the labelled Markov simulator.
   ingest:
     build: { context: ../.., dockerfile: apps/api/Dockerfile }
     environment:
       EVS_DATABASE_URL_SYNC: postgresql://evs:evs@db:5432/evs
       EVS_FEED_SOURCE: ${EVS_FEED_SOURCE:-fixtures}
       EVS_S3_ENDPOINT: http://minio:9000
-    command: ["evs", "ingest", "--loop"]
+      EVS_S3_ACCESS_KEY: evs
+      EVS_S3_SECRET_KEY: evs-local-minio
+      EVS_SAMPLES_DIR: /legacy/data_samples
+    command: >
+      sh -c "evs migrate && evs ingest --once && evs ingest --loop"
     depends_on:
       db: { condition: service_healthy }
       api: { condition: service_healthy }
-    profiles: ["ingest"]
 
   web:
     build:

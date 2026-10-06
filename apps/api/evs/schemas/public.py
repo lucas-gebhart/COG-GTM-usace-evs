@@ -49,6 +49,9 @@ class LockDetail(LockSummary):
     queue: list[dict] = []
     stoppages: list[dict] = []
     recent_lockages: list[dict] = []
+    gauges: list[dict] = Field(
+        default_factory=list, description="Latest NOAA NWPS and USGS NWIS readings for the lock"
+    )
     status_inputs: dict = Field(default_factory=dict, description="inputs_used by the status engine")
 
 

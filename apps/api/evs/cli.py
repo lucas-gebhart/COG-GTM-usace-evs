@@ -63,10 +63,31 @@ def openapi(out: Path = Path("../../packages/contract/openapi.json")) -> None:
 
 
 @app.command()
-def ingest(once: bool = True) -> None:
-    """Run the public-feed ingestion cycle (implemented in WP5a)."""
-    typer.echo("ingest: not implemented yet (WP5a)")
-    raise typer.Exit(code=2)
+def ingest(
+    once: bool = typer.Option(False, "--once", help="Run GIS, gauges and LPMS cycles once and exit."),
+    loop: bool = typer.Option(
+        False,
+        "--loop",
+        help="Run forever: LPMS every EVS_INGEST_INTERVAL_SECONDS (900), gauges 30 min, GIS daily.",
+    ),
+    source: str | None = typer.Option(None, help="Override EVS_FEED_SOURCE: live, fixtures or simulated."),
+) -> None:
+    """Poll the public feeds (LPMS, NDC GIS, NOAA NWPS, USGS NWIS), evaluate lock status, notify the API."""
+    import logging
+
+    from evs.ingest.worker import IngestWorker
+    from evs.settings import get_settings
+
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s %(message)s")
+    settings = get_settings()
+    if source:
+        settings = settings.model_copy(update={"feed_source": source})
+    worker = IngestWorker(settings)
+    if loop:
+        worker.run_loop()
+    else:
+        summary = worker.run_once()
+        typer.echo(json.dumps(summary, indent=2, default=str))
 
 
 if __name__ == "__main__":

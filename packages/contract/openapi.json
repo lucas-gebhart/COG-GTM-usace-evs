@@ -329,6 +329,7 @@
           "public-locks"
         ],
         "summary": "List Locks",
+        "description": "All locks in evs.lock_current. `reporting_only` drops locks absent from the LPMS status feed.",
         "operationId": "list_locks_api_v1_public_locks_get",
         "parameters": [
           {
@@ -345,6 +346,16 @@
                 }
               ],
               "title": "River Code"
+            }
+          },
+          {
+            "name": "reporting_only",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Reporting Only"
             }
           }
         ],
@@ -928,6 +939,73 @@
               "fixtures"
             ],
             "title": "Status"
+          },
+          "mode": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "live",
+                  "fixtures",
+                  "simulated"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mode"
+          },
+          "last_attempt_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Last Attempt At"
+          },
+          "http_status": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Http Status"
+          },
+          "rows_parsed": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rows Parsed"
+          },
+          "consecutive_failures": {
+            "type": "integer",
+            "title": "Consecutive Failures",
+            "default": 0
+          },
+          "updated_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Updated At"
           }
         },
         "type": "object",
@@ -1322,6 +1400,15 @@
             "type": "array",
             "title": "Recent Lockages",
             "default": []
+          },
+          "gauges": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Gauges",
+            "description": "Latest NOAA NWPS and USGS NWIS readings for the lock"
           },
           "status_inputs": {
             "additionalProperties": true,

@@ -45,23 +45,103 @@ jobs:
         with: { name: web-dist, path: apps/web/dist }
 
   a11y:
-    # WP6a extends this job: axe on every route x viewport x theme, pa11y-ci, Lighthouse, OpenACR generation.
+    # Section 508 evidence (WP6a): axe on every route x viewport x theme x reduced-motion, keyboard and
+    # 320 px reflow smoke, pa11y-ci and Lighthouse CI. Playwright is gating; pa11y and Lighthouse report.
     runs-on: ubuntu-latest
     needs: [web]
     defaults: { run: { working-directory: apps/web } }
+    env:
+      EVS_AUTH_DISABLED: "true"
+      EVS_FEED_SOURCE: fixtures
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
         with: { version: 10 }
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: pnpm, cache-dependency-path: apps/web/pnpm-lock.yaml }
+      - uses: astral-sh/setup-uv@v5
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install --with-deps chromium
+      - name: Start API in fixtures mode
+        working-directory: apps/api
+        run: |
+          uv sync
+          nohup uv run uvicorn evs.main:app --host 127.0.0.1 --port 8000 > /tmp/api.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8000/api/v1/health && break || sleep 1; done
       - run: pnpm gen:api && pnpm build
-      - run: pnpm test:a11y
+      - name: Playwright matrix (axe, keyboard, reflow)
+        run: pnpm test:a11y
+      - name: Start preview for pa11y and Lighthouse
+        run: |
+          nohup pnpm preview --port 4173 > /tmp/preview.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:4173/ > /dev/null && break || sleep 1; done
+      - name: pa11y-ci
+        if: always()
+        continue-on-error: true
+        run: pnpm a11y:pa11y
+      - name: Lighthouse CI (accessibility, budget 100)
+        if: always()
+        continue-on-error: true
+        run: pnpm a11y:lhci
       - uses: actions/upload-artifact@v4
         if: always()
-        with: { name: axe-results, path: apps/web/a11y-results }
+        with:
+          name: a11y-results
+          path: |
+            apps/web/a11y-results
+            !apps/web/a11y-results/playwright-report
+          if-no-files-found: error
+          retention-days: 30
+
+  acr:
+    # Merges the a11y evidence and docs/a11y/manual_attestation.yaml into the OpenACR (YAML, Markdown, HTML)
+    # and apps/api/fixtures/accessibility.json, validates with the GSA openacr CLI and publishes artefacts.
+    # On same-repo pull requests the regenerated files are committed back to the branch (see docs/a11y/README.md).
+    runs-on: ubuntu-latest
+    needs: [a11y]
+    if: always() && needs.a11y.result != 'cancelled' && needs.a11y.result != 'skipped'
+    permissions:
+      contents: write
+    defaults: { run: { working-directory: tools/acr } }
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref }}
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v5
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - uses: actions/download-artifact@v4
+        with: { name: a11y-results, path: apps/web/a11y-results }
+      - run: uv sync --extra dev
+      - run: uv run ruff check . && uv run ruff format --check .
+      - run: uv run pytest -q
+      - name: Generate OpenACR, Markdown, HTML and readout fixture
+        run: uv run evs-acr-gen
+      - name: Validate with GSA openacr CLI
+        run: npx --yes @openacr/openacr@0.3.8 validate -f ../../docs/a11y/evs-openacr.yaml -c evs_acr/data/catalog-2.5-edition-wcag-2.1-508-en.yaml
+      - name: Readout fixture matches AccessibilityReadout
+        working-directory: apps/api
+        run: uv sync && uv run python -c "import json; from evs.schemas.ops import AccessibilityReadout; AccessibilityReadout(**json.load(open('fixtures/accessibility.json'))); print('ok')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: acr
+          path: |
+            docs/a11y/evs-openacr.yaml
+            docs/a11y/evs-acr.md
+            docs/a11y/evs-acr.html
+            apps/api/fixtures/accessibility.json
+          retention-days: 90
+      - name: Commit regenerated read-out back to the PR branch
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        working-directory: .
+        run: |
+          git config user.name "evs-ci"
+          git config user.email "evs-ci@users.noreply.github.com"
+          git add docs/a11y/evs-openacr.yaml docs/a11y/evs-acr.md docs/a11y/evs-acr.html apps/api/fixtures/accessibility.json
+          if git diff --cached --quiet; then echo "read-out unchanged"; exit 0; fi
+          git commit -m "chore(a11y): regenerate ACR from CI evidence [skip ci]"
+          git push origin HEAD:${{ github.head_ref }}
 
   storybook:
     # Builds the component kit's Storybook and runs addon-a11y (axe) against every story in headless Chromium.

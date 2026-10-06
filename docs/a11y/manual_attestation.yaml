@@ -1,0 +1,501 @@
+# EVS manual accessibility attestation. Hand-edited by testers; read by evs-acr-gen (tools/acr).
+# One entry per WCAG 2.1 A/AA criterion that needs manual evidence, plus Revised 508 FPC (302.x) and
+# support documentation (602/603) rows. Test IDs (MT-*) are defined in docs/a11y/MANUAL_TEST_PLAN.md.
+# status: supports | partially-supports | does-not-support | not-applicable | not-evaluated
+# A row is 'supports' only after the listed tests pass on the stated build with the stated assistive
+# technology. Leave not-evaluated (tester, date, assistive_tech empty) until that happens; the generator
+# then reports the criterion as not-evaluated no matter what the automated cells say.
+schema_version: 1
+product_version: 0.1.0-demo
+testers: []
+# Assistive technology ids used in attestations (fill versions when testing starts).
+assistive_technology:
+  - id: nvda-firefox
+    name: "NVDA + Firefox (Windows 11)"
+    version: ''
+  - id: jaws-chrome
+    name: "JAWS + Chrome (Windows 11)"
+    version: ''
+  - id: voiceover-ios
+    name: "VoiceOver + Safari (iOS)"
+    version: ''
+  - id: keyboard-only
+    name: "Keyboard only (no pointer)"
+    version: ''
+  - id: zoom-400
+    name: "Browser zoom 400% / 320 CSS px"
+    version: ''
+  - id: forced-colors
+    name: "Windows High Contrast (forced-colors: active)"
+    version: ''
+  - id: cvd-sim
+    name: "Colour-vision deficiency simulation (deuteranopia, protanopia, tritanopia)"
+    version: ''
+  - id: reduced-motion
+    name: "prefers-reduced-motion: reduce"
+    version: ''
+attestations:
+  # WCAG A 1.1.1 Non-text Content
+  - criterion: "1.1.1"
+    status: not-evaluated
+    tests: [MT-SR-01]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 1.2.1 Audio-only and Video-only (Prerecorded)
+  - criterion: "1.2.1"
+    status: not-applicable
+    tests: []
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: "EVS ships no audio or video content."
+  # WCAG A 1.2.2 Captions (Prerecorded)
+  - criterion: "1.2.2"
+    status: not-applicable
+    tests: []
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: "EVS ships no audio or video content."
+  # WCAG A 1.2.3 Audio Description or Media Alternative (Prerecorded)
+  - criterion: "1.2.3"
+    status: not-applicable
+    tests: []
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: "EVS ships no audio or video content."
+  # WCAG A 1.3.1 Info and Relationships
+  - criterion: "1.3.1"
+    status: not-evaluated
+    tests: [MT-SR-02]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 1.3.2 Meaningful Sequence
+  - criterion: "1.3.2"
+    status: not-evaluated
+    tests: [MT-SR-03]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 1.3.3 Sensory Characteristics
+  - criterion: "1.3.3"
+    status: not-evaluated
+    tests: [MT-VIS-01]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 1.3.4 Orientation
+  - criterion: "1.3.4"
+    status: not-evaluated
+    tests: [MT-RESP-01]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 1.3.5 Identify Input Purpose
+  - criterion: "1.3.5"
+    status: not-evaluated
+    tests: [MT-FORM-01]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 1.4.1 Use of Color
+  - criterion: "1.4.1"
+    status: not-evaluated
+    tests: [MT-VIS-01]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 1.4.2 Audio Control
+  - criterion: "1.4.2"
+    status: not-applicable
+    tests: []
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: "EVS ships no audio."
+  # WCAG AA 1.4.3 Contrast (Minimum)
+  - criterion: "1.4.3"
+    status: not-evaluated
+    tests: [MT-VIS-02]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 1.4.4 Resize text
+  - criterion: "1.4.4"
+    status: not-evaluated
+    tests: [MT-ZOOM-01]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 1.4.5 Images of Text
+  - criterion: "1.4.5"
+    status: not-evaluated
+    tests: [MT-VIS-03]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 1.4.10 Reflow
+  - criterion: "1.4.10"
+    status: not-evaluated
+    tests: [MT-ZOOM-02]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 1.4.11 Non-text Contrast
+  - criterion: "1.4.11"
+    status: not-evaluated
+    tests: [MT-VIS-04]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 1.4.12 Text Spacing
+  - criterion: "1.4.12"
+    status: not-evaluated
+    tests: [MT-ZOOM-03]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 1.4.13 Content on Hover or Focus
+  - criterion: "1.4.13"
+    status: not-evaluated
+    tests: [MT-KBD-04]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 2.1.1 Keyboard
+  - criterion: "2.1.1"
+    status: not-evaluated
+    tests: [MT-KBD-01]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 2.1.2 No Keyboard Trap
+  - criterion: "2.1.2"
+    status: not-evaluated
+    tests: [MT-KBD-02]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 2.1.4 Character Key Shortcuts
+  - criterion: "2.1.4"
+    status: not-evaluated
+    tests: [MT-KBD-03]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 2.2.1 Timing Adjustable
+  - criterion: "2.2.1"
+    status: not-evaluated
+    tests: [MT-TIME-01]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 2.2.2 Pause, Stop, Hide
+  - criterion: "2.2.2"
+    status: not-evaluated
+    tests: [MT-MOTION-01]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 2.3.1 Three Flashes or Below Threshold
+  - criterion: "2.3.1"
+    status: not-evaluated
+    tests: [MT-MOTION-02]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 2.4.1 Bypass Blocks
+  - criterion: "2.4.1"
+    status: not-evaluated
+    tests: [MT-KBD-05]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 2.4.3 Focus Order
+  - criterion: "2.4.3"
+    status: not-evaluated
+    tests: [MT-KBD-06]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 2.4.4 Link Purpose (In Context)
+  - criterion: "2.4.4"
+    status: not-evaluated
+    tests: [MT-SR-04]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 2.4.5 Multiple Ways
+  - criterion: "2.4.5"
+    status: not-evaluated
+    tests: [MT-SR-05]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 2.4.6 Headings and Labels
+  - criterion: "2.4.6"
+    status: not-evaluated
+    tests: [MT-SR-05]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 2.4.7 Focus Visible
+  - criterion: "2.4.7"
+    status: not-evaluated
+    tests: [MT-KBD-07]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 2.5.1 Pointer Gestures
+  - criterion: "2.5.1"
+    status: not-evaluated
+    tests: [MT-TOUCH-01]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 2.5.2 Pointer Cancellation
+  - criterion: "2.5.2"
+    status: not-evaluated
+    tests: [MT-TOUCH-02]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 2.5.3 Label in Name
+  - criterion: "2.5.3"
+    status: not-evaluated
+    tests: [MT-SR-06]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 2.5.4 Motion Actuation
+  - criterion: "2.5.4"
+    status: not-applicable
+    tests: []
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: "EVS has no motion-actuated functions."
+  # WCAG A 3.2.1 On Focus
+  - criterion: "3.2.1"
+    status: not-evaluated
+    tests: [MT-KBD-08]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 3.2.2 On Input
+  - criterion: "3.2.2"
+    status: not-evaluated
+    tests: [MT-FORM-02]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 3.2.3 Consistent Navigation
+  - criterion: "3.2.3"
+    status: not-evaluated
+    tests: [MT-SR-05]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 3.2.4 Consistent Identification
+  - criterion: "3.2.4"
+    status: not-evaluated
+    tests: [MT-SR-05]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 3.3.1 Error Identification
+  - criterion: "3.3.1"
+    status: not-evaluated
+    tests: [MT-FORM-03]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 3.3.2 Labels or Instructions
+  - criterion: "3.3.2"
+    status: not-evaluated
+    tests: [MT-FORM-04]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 3.3.3 Error Suggestion
+  - criterion: "3.3.3"
+    status: not-evaluated
+    tests: [MT-FORM-05]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 3.3.4 Error Prevention (Legal, Financial, Data)
+  - criterion: "3.3.4"
+    status: not-evaluated
+    tests: [MT-FORM-06]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG A 4.1.2 Name, Role, Value
+  - criterion: "4.1.2"
+    status: not-evaluated
+    tests: [MT-SR-07]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # WCAG AA 4.1.3 Status Messages
+  - criterion: "4.1.3"
+    status: not-evaluated
+    tests: [MT-SR-08]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # 508 302.1 Without Vision
+  - criterion: "302.1"
+    status: not-evaluated
+    tests: [MT-SR-01, MT-SR-02, MT-SR-03, MT-SR-07]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # 508 302.2 With Limited Vision
+  - criterion: "302.2"
+    status: not-evaluated
+    tests: [MT-ZOOM-01, MT-ZOOM-02, MT-VIS-02, MT-VIS-04]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # 508 302.3 Without Perception of Color
+  - criterion: "302.3"
+    status: not-evaluated
+    tests: [MT-VIS-01]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # 508 302.4 Without Hearing
+  - criterion: "302.4"
+    status: not-applicable
+    tests: []
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: "no audio content; all information is visual and textual"
+  # 508 302.5 With Limited Hearing
+  - criterion: "302.5"
+    status: not-applicable
+    tests: []
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: "no audio content"
+  # 508 302.6 Without Speech
+  - criterion: "302.6"
+    status: not-applicable
+    tests: []
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: "no speech input required"
+  # 508 302.7 With Limited Manipulation
+  - criterion: "302.7"
+    status: not-evaluated
+    tests: [MT-KBD-01, MT-TOUCH-01, MT-TOUCH-02]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # 508 302.8 With Limited Reach and Strength
+  - criterion: "302.8"
+    status: not-evaluated
+    tests: [MT-KBD-01, MT-TOUCH-01]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # 508 302.9 With Limited Language, Cognitive, and Learning Abilities
+  - criterion: "302.9"
+    status: not-evaluated
+    tests: [MT-SR-05, MT-FORM-02, MT-FORM-05]
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # 508 602.2 Accessibility and Compatibility Features
+  - criterion: "602.2"
+    status: not-evaluated
+    tests: []
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # 508 602.3 Electronic Support Documentation
+  - criterion: "602.3"
+    status: not-evaluated
+    tests: []
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # 508 602.4 Alternate Formats for Non-Electronic Support Documentation
+  - criterion: "602.4"
+    status: not-applicable
+    tests: []
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: "alternate formats on request via the feedback mailbox"
+  # 508 603.2 Information on Accessibility and Compatibility Features
+  - criterion: "603.2"
+    status: not-evaluated
+    tests: []
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""
+  # 508 603.3 Accommodation of Communication Needs
+  - criterion: "603.3"
+    status: not-evaluated
+    tests: []
+    tester: null
+    date: null
+    assistive_tech: []
+    notes: ""

@@ -15,3 +15,4 @@ apps/web/public/uswds/
 *.tsbuildinfo
 db/ora2pg/*.zip
 apps/web/storybook-static/
+.lighthouseci/

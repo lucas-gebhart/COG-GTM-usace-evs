@@ -12,6 +12,12 @@ class FeedHealth(BaseModel):
     last_error: str | None
     latency_ms: int | None
     status: Literal["healthy", "degraded", "down", "simulated", "fixtures"]
+    mode: Literal["live", "fixtures", "simulated"] | None = None
+    last_attempt_at: datetime | None = None
+    http_status: int | None = None
+    rows_parsed: int | None = None
+    consecutive_failures: int = 0
+    updated_at: datetime | None = None
 
 
 class FeedHealthList(BaseModel):

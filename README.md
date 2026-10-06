@@ -8,6 +8,7 @@ internal CEFMS, EMS, P2/CMP and BUILDER data is synthetic.
 - Plan and decisions: [docs/PLAN.md](docs/PLAN.md)
 - Work packages: [docs/WORKPLAN.md](docs/WORKPLAN.md)
 - Research: [docs/research/](docs/research/)
+- Public-feed ingestion and lock status engine: [docs/ingest.md](docs/ingest.md)
 
 ## Run locally
 
@@ -17,6 +18,10 @@ make api           # or run the API with reload outside Docker
 make web           # Vite dev server on :5173 proxying /api to :8000
 make test
 ```
+
+Lock status comes from the public-feed worker (`cd apps/api && uv run evs ingest --once`, or the `ingest` Compose
+service). `EVS_FEED_SOURCE=live` polls LPMS, NDC GIS, NOAA NWPS and USGS NWIS; `fixtures` (the default) replays
+`legacy/data_samples`; `simulated` runs the labelled Markov simulator. See [docs/ingest.md](docs/ingest.md).
 
 ## Layout
 

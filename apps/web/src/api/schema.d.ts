@@ -130,7 +130,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** List Locks */
+        /**
+         * List Locks
+         * @description All locks in evs.lock_current. `reporting_only` drops locks absent from the LPMS status feed.
+         */
         get: operations["list_locks_api_v1_public_locks_get"];
         put?: never;
         post?: never;
@@ -414,6 +417,21 @@ export interface components {
              * @enum {string}
              */
             status: "healthy" | "degraded" | "down" | "simulated" | "fixtures";
+            /** Mode */
+            mode?: ("live" | "fixtures" | "simulated") | null;
+            /** Last Attempt At */
+            last_attempt_at?: string | null;
+            /** Http Status */
+            http_status?: number | null;
+            /** Rows Parsed */
+            rows_parsed?: number | null;
+            /**
+             * Consecutive Failures
+             * @default 0
+             */
+            consecutive_failures: number;
+            /** Updated At */
+            updated_at?: string | null;
         };
         /** FeedHealthList */
         FeedHealthList: {
@@ -542,6 +560,13 @@ export interface components {
              * @default []
              */
             recent_lockages: {
+                [key: string]: unknown;
+            }[];
+            /**
+             * Gauges
+             * @description Latest NOAA NWPS and USGS NWIS readings for the lock
+             */
+            gauges?: {
                 [key: string]: unknown;
             }[];
             /**
@@ -1005,6 +1030,7 @@ export interface operations {
         parameters: {
             query?: {
                 river_code?: string | null;
+                reporting_only?: boolean;
             };
             header?: never;
             path?: never;

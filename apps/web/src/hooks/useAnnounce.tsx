@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useMemo, useRef, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 
 type Politeness = "polite" | "assertive";
 
@@ -23,6 +23,9 @@ export function LiveRegionProvider({ children }: { children: ReactNode }) {
     set("");
     if (timer.current) clearTimeout(timer.current);
     timer.current = setTimeout(() => set(message), 50);
+  }, []);
+  useEffect(() => () => {
+    if (timer.current) clearTimeout(timer.current);
   }, []);
   const value = useMemo(() => ({ announce }), [announce]);
   return (

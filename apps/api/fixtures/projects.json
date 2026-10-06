@@ -1,0 +1,5961 @@
+[
+ {
+  "p2_project_no": "385694",
+  "name": "LRN Navigation Project 1",
+  "program_code": "LRD-NAV",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Navigation",
+  "phase": "Feasibility",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2028-06-20",
+  "current_finish": "2028-12-17",
+  "pct_complete": 6.1,
+  "funded_amount": 31161194,
+  "obligated_amount": 20467238,
+  "expended_amount": 11378102,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-03-08",
+    "current_date": "2025-03-08",
+    "actual_date": "2025-03-08",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-11-03",
+    "current_date": "2025-11-03",
+    "actual_date": "2025-11-03",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-07-01",
+    "current_date": "2026-07-01",
+    "actual_date": "2026-07-01",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-02-26",
+    "current_date": "2027-08-25",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-10-24",
+    "current_date": "2028-04-21",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "214147",
+  "name": "LRP Navigation Project 2",
+  "program_code": "LRD-NAV",
+  "district": "LRP",
+  "division": "LRD",
+  "business_line": "Navigation",
+  "phase": "Feasibility",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2028-04-17",
+  "current_finish": "2028-07-16",
+  "pct_complete": 20.2,
+  "funded_amount": 31161194,
+  "obligated_amount": 18392771,
+  "expended_amount": 10381454,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-01-03",
+    "current_date": "2025-01-03",
+    "actual_date": "2025-01-03",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-08-31",
+    "current_date": "2025-08-31",
+    "actual_date": "2025-08-31",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-04-28",
+    "current_date": "2026-04-28",
+    "actual_date": "2026-04-28",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-12-24",
+    "current_date": "2027-03-24",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-08-21",
+    "current_date": "2027-11-19",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "131428",
+  "name": "LRN Navigation Project 3",
+  "program_code": "LRD-NAV",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Navigation",
+  "phase": "Feasibility",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2027-06-20",
+  "current_finish": "2027-12-17",
+  "pct_complete": 71.1,
+  "funded_amount": 31161194,
+  "obligated_amount": 23086354,
+  "expended_amount": 12241159,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-03-07",
+    "current_date": "2024-03-07",
+    "actual_date": "2024-03-07",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-11-02",
+    "current_date": "2024-11-02",
+    "actual_date": "2024-11-02",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-06-30",
+    "current_date": "2025-06-30",
+    "actual_date": "2025-06-30",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-02-25",
+    "current_date": "2026-02-25",
+    "actual_date": "2026-02-25",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-10-23",
+    "current_date": "2027-04-21",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "183337",
+  "name": "LRP Navigation Project 4",
+  "program_code": "LRD-NAV",
+  "district": "LRP",
+  "division": "LRD",
+  "business_line": "Navigation",
+  "phase": "Construction",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2027-05-07",
+  "current_finish": "2027-06-06",
+  "pct_complete": 8.6,
+  "funded_amount": 31161194,
+  "obligated_amount": 19612925,
+  "expended_amount": 18125326,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-01-23",
+    "current_date": "2024-01-23",
+    "actual_date": "2024-01-23",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-09-19",
+    "current_date": "2024-09-19",
+    "actual_date": "2024-09-19",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-05-17",
+    "current_date": "2025-05-17",
+    "actual_date": "2025-05-17",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-01-12",
+    "current_date": "2026-01-12",
+    "actual_date": "2026-01-12",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-09-09",
+    "current_date": "2026-09-09",
+    "actual_date": "2026-09-09",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "209812",
+  "name": "LRL Navigation Project 5",
+  "program_code": "LRD-NAV",
+  "district": "LRL",
+  "division": "LRD",
+  "business_line": "Navigation",
+  "phase": "Feasibility",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2028-10-07",
+  "current_finish": "2029-04-05",
+  "pct_complete": 92.2,
+  "funded_amount": 31161194,
+  "obligated_amount": 14526870,
+  "expended_amount": 13803544,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-06-25",
+    "current_date": "2025-06-25",
+    "actual_date": "2025-06-25",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-02-20",
+    "current_date": "2026-02-20",
+    "actual_date": "2026-02-20",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-10-18",
+    "current_date": "2027-04-16",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-06-15",
+    "current_date": "2027-12-12",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-02-10",
+    "current_date": "2028-08-08",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "188922",
+  "name": "LRH Navigation Project 6",
+  "program_code": "LRD-NAV",
+  "district": "LRH",
+  "division": "LRD",
+  "business_line": "Navigation",
+  "phase": "Feasibility",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2029-04-19",
+  "current_finish": "2030-04-19",
+  "pct_complete": 71.3,
+  "funded_amount": 31161194,
+  "obligated_amount": 28626390,
+  "expended_amount": 22635664,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2026-01-05",
+    "current_date": "2026-01-05",
+    "actual_date": "2026-01-05",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-09-02",
+    "current_date": "2026-09-02",
+    "actual_date": "2026-09-02",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-04-30",
+    "current_date": "2028-04-29",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-12-26",
+    "current_date": "2028-12-25",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-08-22",
+    "current_date": "2029-08-22",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "273446",
+  "name": "LRP Navigation Project 7",
+  "program_code": "LRD-NAV",
+  "district": "LRP",
+  "division": "LRD",
+  "business_line": "Navigation",
+  "phase": "Feasibility",
+  "pdt_lead": "T. Nguyen",
+  "baseline_finish": "2028-11-25",
+  "current_finish": "2028-11-25",
+  "pct_complete": 32.3,
+  "funded_amount": 31161194,
+  "obligated_amount": 20592402,
+  "expended_amount": 12124682,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-08-13",
+    "current_date": "2025-08-13",
+    "actual_date": "2025-08-13",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-04-10",
+    "current_date": "2026-04-10",
+    "actual_date": "2026-04-10",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-12-06",
+    "current_date": "2026-12-06",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-08-03",
+    "current_date": "2027-08-03",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-03-30",
+    "current_date": "2028-03-30",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "437632",
+  "name": "MVR Navigation Project 1",
+  "program_code": "MVD-NAV",
+  "district": "MVR",
+  "division": "MVD",
+  "business_line": "Navigation",
+  "phase": "PED",
+  "pdt_lead": "L. Haddad",
+  "baseline_finish": "2027-02-04",
+  "current_finish": "2027-05-05",
+  "pct_complete": 33.0,
+  "funded_amount": 54743028,
+  "obligated_amount": 20379279,
+  "expended_amount": 18537790,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2023-10-23",
+    "current_date": "2023-10-23",
+    "actual_date": "2023-10-23",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-06-19",
+    "current_date": "2024-06-19",
+    "actual_date": "2024-06-19",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-02-14",
+    "current_date": "2025-02-14",
+    "actual_date": "2025-02-14",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2025-10-12",
+    "current_date": "2025-10-12",
+    "actual_date": "2025-10-12",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-06-09",
+    "current_date": "2026-06-09",
+    "actual_date": "2026-06-09",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "408174",
+  "name": "MVS Navigation Project 2",
+  "program_code": "MVD-NAV",
+  "district": "MVS",
+  "division": "MVD",
+  "business_line": "Navigation",
+  "phase": "Feasibility",
+  "pdt_lead": "L. Haddad",
+  "baseline_finish": "2027-03-16",
+  "current_finish": "2027-03-16",
+  "pct_complete": 21.5,
+  "funded_amount": 54743028,
+  "obligated_amount": 44289618,
+  "expended_amount": 40113761,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2023-12-02",
+    "current_date": "2023-12-02",
+    "actual_date": "2023-12-02",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-07-29",
+    "current_date": "2024-07-29",
+    "actual_date": "2024-07-29",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-03-26",
+    "current_date": "2025-03-26",
+    "actual_date": "2025-03-26",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2025-11-21",
+    "current_date": "2025-11-21",
+    "actual_date": "2025-11-21",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-07-19",
+    "current_date": "2026-07-19",
+    "actual_date": "2026-07-19",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "366903",
+  "name": "MVS Navigation Project 3",
+  "program_code": "MVD-NAV",
+  "district": "MVS",
+  "division": "MVD",
+  "business_line": "Navigation",
+  "phase": "Feasibility",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2028-09-16",
+  "current_finish": "2028-09-16",
+  "pct_complete": 71.1,
+  "funded_amount": 54743028,
+  "obligated_amount": 20340696,
+  "expended_amount": 10393993,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-06-04",
+    "current_date": "2025-06-04",
+    "actual_date": "2025-06-04",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-01-30",
+    "current_date": "2026-01-30",
+    "actual_date": "2026-01-30",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-09-27",
+    "current_date": "2026-09-27",
+    "actual_date": "2026-09-27",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-05-25",
+    "current_date": "2027-05-25",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-01-20",
+    "current_date": "2028-01-20",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "160175",
+  "name": "MVR Navigation Project 4",
+  "program_code": "MVD-NAV",
+  "district": "MVR",
+  "division": "MVD",
+  "business_line": "Navigation",
+  "phase": "O&M",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2027-01-09",
+  "current_finish": "2027-02-08",
+  "pct_complete": 91.9,
+  "funded_amount": 54743028,
+  "obligated_amount": 20433123,
+  "expended_amount": 14456718,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2023-09-27",
+    "current_date": "2023-09-27",
+    "actual_date": "2023-09-27",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-05-24",
+    "current_date": "2024-05-24",
+    "actual_date": "2024-05-24",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-01-19",
+    "current_date": "2025-01-19",
+    "actual_date": "2025-01-19",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2025-09-16",
+    "current_date": "2025-09-16",
+    "actual_date": "2025-09-16",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-05-14",
+    "current_date": "2026-05-14",
+    "actual_date": "2026-05-14",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "430611",
+  "name": "SWL Navigation Project 1",
+  "program_code": "SWD-NAV",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Navigation",
+  "phase": "Construction",
+  "pdt_lead": "J. Alvarez",
+  "baseline_finish": "2028-08-29",
+  "current_finish": "2028-11-27",
+  "pct_complete": 88.9,
+  "funded_amount": 52177341,
+  "obligated_amount": 34723309,
+  "expended_amount": 22196688,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-05-17",
+    "current_date": "2025-05-17",
+    "actual_date": "2025-05-17",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-01-12",
+    "current_date": "2026-01-12",
+    "actual_date": "2026-01-12",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-09-09",
+    "current_date": "2026-09-09",
+    "actual_date": "2026-09-09",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-05-07",
+    "current_date": "2027-08-05",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-01-02",
+    "current_date": "2028-04-01",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "408065",
+  "name": "SWL Navigation Project 2",
+  "program_code": "SWD-NAV",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Navigation",
+  "phase": "Feasibility",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2027-03-07",
+  "current_finish": "2027-03-07",
+  "pct_complete": 78.2,
+  "funded_amount": 52177341,
+  "obligated_amount": 31440129,
+  "expended_amount": 20016763,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2023-11-23",
+    "current_date": "2023-11-23",
+    "actual_date": "2023-11-23",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-07-20",
+    "current_date": "2024-07-20",
+    "actual_date": "2024-07-20",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-03-17",
+    "current_date": "2025-03-17",
+    "actual_date": "2025-03-17",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2025-11-12",
+    "current_date": "2025-11-12",
+    "actual_date": "2025-11-12",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-07-10",
+    "current_date": "2026-07-10",
+    "actual_date": "2026-07-10",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "170685",
+  "name": "SWL Navigation Project 3",
+  "program_code": "SWD-NAV",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Navigation",
+  "phase": "O&M",
+  "pdt_lead": "J. Alvarez",
+  "baseline_finish": "2028-03-18",
+  "current_finish": "2028-03-18",
+  "pct_complete": 89.6,
+  "funded_amount": 52177341,
+  "obligated_amount": 31373024,
+  "expended_amount": 15785263,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-12-04",
+    "current_date": "2024-12-04",
+    "actual_date": "2024-12-04",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-08-01",
+    "current_date": "2025-08-01",
+    "actual_date": "2025-08-01",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-03-29",
+    "current_date": "2026-03-29",
+    "actual_date": "2026-03-29",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-11-24",
+    "current_date": "2026-11-24",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-07-22",
+    "current_date": "2027-07-22",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "120133",
+  "name": "LRN Flood Risk Management Project 1",
+  "program_code": "LRD-FLO",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Flood Risk Management",
+  "phase": "O&M",
+  "pdt_lead": "J. Alvarez",
+  "baseline_finish": "2027-11-12",
+  "current_finish": "2027-11-12",
+  "pct_complete": 29.8,
+  "funded_amount": 11925754,
+  "obligated_amount": 6956107,
+  "expended_amount": 5265123,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-07-30",
+    "current_date": "2024-07-30",
+    "actual_date": "2024-07-30",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-03-27",
+    "current_date": "2025-03-27",
+    "actual_date": "2025-03-27",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-11-22",
+    "current_date": "2025-11-22",
+    "actual_date": "2025-11-22",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-07-20",
+    "current_date": "2026-07-20",
+    "actual_date": "2026-07-20",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-03-17",
+    "current_date": "2027-03-17",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "467351",
+  "name": "LRH Flood Risk Management Project 2",
+  "program_code": "LRD-FLO",
+  "district": "LRH",
+  "division": "LRD",
+  "business_line": "Flood Risk Management",
+  "phase": "Feasibility",
+  "pdt_lead": "R. Okafor",
+  "baseline_finish": "2028-06-01",
+  "current_finish": "2028-08-30",
+  "pct_complete": 42.2,
+  "funded_amount": 11925754,
+  "obligated_amount": 5542220,
+  "expended_amount": 4597799,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-02-17",
+    "current_date": "2025-02-17",
+    "actual_date": "2025-02-17",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-10-15",
+    "current_date": "2025-10-15",
+    "actual_date": "2025-10-15",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-06-12",
+    "current_date": "2026-06-12",
+    "actual_date": "2026-06-12",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-02-07",
+    "current_date": "2027-05-08",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-10-05",
+    "current_date": "2028-01-03",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "326108",
+  "name": "LRL Flood Risk Management Project 3",
+  "program_code": "LRD-FLO",
+  "district": "LRL",
+  "division": "LRD",
+  "business_line": "Flood Risk Management",
+  "phase": "Construction",
+  "pdt_lead": "J. Alvarez",
+  "baseline_finish": "2029-05-22",
+  "current_finish": "2029-05-22",
+  "pct_complete": 61.1,
+  "funded_amount": 11925754,
+  "obligated_amount": 9444024,
+  "expended_amount": 6918567,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2026-02-07",
+    "current_date": "2026-02-07",
+    "actual_date": "2026-02-07",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-10-05",
+    "current_date": "2026-10-05",
+    "actual_date": "2026-10-05",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-06-02",
+    "current_date": "2027-06-02",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2028-01-28",
+    "current_date": "2028-01-28",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-09-24",
+    "current_date": "2028-09-24",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "441052",
+  "name": "LRH Flood Risk Management Project 4",
+  "program_code": "LRD-FLO",
+  "district": "LRH",
+  "division": "LRD",
+  "business_line": "Flood Risk Management",
+  "phase": "Feasibility",
+  "pdt_lead": "K. Brooks",
+  "baseline_finish": "2029-05-30",
+  "current_finish": "2030-05-30",
+  "pct_complete": 20.1,
+  "funded_amount": 11925754,
+  "obligated_amount": 8837368,
+  "expended_amount": 8273356,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2026-02-15",
+    "current_date": "2026-02-15",
+    "actual_date": "2026-02-15",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-10-13",
+    "current_date": "2027-10-13",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-06-10",
+    "current_date": "2028-06-09",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2028-02-05",
+    "current_date": "2029-02-04",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-10-02",
+    "current_date": "2029-10-02",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "169751",
+  "name": "LRH Flood Risk Management Project 5",
+  "program_code": "LRD-FLO",
+  "district": "LRH",
+  "division": "LRD",
+  "business_line": "Flood Risk Management",
+  "phase": "PED",
+  "pdt_lead": "T. Nguyen",
+  "baseline_finish": "2028-08-10",
+  "current_finish": "2029-02-06",
+  "pct_complete": 50.4,
+  "funded_amount": 11925754,
+  "obligated_amount": 7409731,
+  "expended_amount": 4631125,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-04-28",
+    "current_date": "2025-04-28",
+    "actual_date": "2025-04-28",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-12-24",
+    "current_date": "2025-12-24",
+    "actual_date": "2025-12-24",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-08-21",
+    "current_date": "2026-08-21",
+    "actual_date": "2026-08-21",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-04-18",
+    "current_date": "2027-10-15",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-12-14",
+    "current_date": "2028-06-11",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "237435",
+  "name": "LRH Flood Risk Management Project 6",
+  "program_code": "LRD-FLO",
+  "district": "LRH",
+  "division": "LRD",
+  "business_line": "Flood Risk Management",
+  "phase": "O&M",
+  "pdt_lead": "J. Alvarez",
+  "baseline_finish": "2027-11-15",
+  "current_finish": "2028-11-14",
+  "pct_complete": 53.1,
+  "funded_amount": 11925754,
+  "obligated_amount": 4198955,
+  "expended_amount": 4019912,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-08-02",
+    "current_date": "2024-08-02",
+    "actual_date": "2024-08-02",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-03-30",
+    "current_date": "2025-03-30",
+    "actual_date": "2025-03-30",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-11-25",
+    "current_date": "2025-11-25",
+    "actual_date": "2025-11-25",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-07-23",
+    "current_date": "2026-07-23",
+    "actual_date": "2026-07-23",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-03-20",
+    "current_date": "2028-03-19",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "174338",
+  "name": "LRP Flood Risk Management Project 7",
+  "program_code": "LRD-FLO",
+  "district": "LRP",
+  "division": "LRD",
+  "business_line": "Flood Risk Management",
+  "phase": "PED",
+  "pdt_lead": "R. Okafor",
+  "baseline_finish": "2028-05-27",
+  "current_finish": "2028-05-27",
+  "pct_complete": 97.0,
+  "funded_amount": 11925754,
+  "obligated_amount": 7678419,
+  "expended_amount": 4813342,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-02-12",
+    "current_date": "2025-02-12",
+    "actual_date": "2025-02-12",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-10-10",
+    "current_date": "2025-10-10",
+    "actual_date": "2025-10-10",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-06-07",
+    "current_date": "2026-06-07",
+    "actual_date": "2026-06-07",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-02-02",
+    "current_date": "2027-02-02",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-09-30",
+    "current_date": "2027-09-30",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "324394",
+  "name": "LRN Flood Risk Management Project 8",
+  "program_code": "LRD-FLO",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Flood Risk Management",
+  "phase": "O&M",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2028-04-28",
+  "current_finish": "2028-04-28",
+  "pct_complete": 5.1,
+  "funded_amount": 11925754,
+  "obligated_amount": 8277951,
+  "expended_amount": 4579548,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-01-14",
+    "current_date": "2025-01-14",
+    "actual_date": "2025-01-14",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-09-11",
+    "current_date": "2025-09-11",
+    "actual_date": "2025-09-11",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-05-09",
+    "current_date": "2026-05-09",
+    "actual_date": "2026-05-09",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-01-04",
+    "current_date": "2027-01-04",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-09-01",
+    "current_date": "2027-09-01",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "222534",
+  "name": "MVP Flood Risk Management Project 1",
+  "program_code": "MVD-FLO",
+  "district": "MVP",
+  "division": "MVD",
+  "business_line": "Flood Risk Management",
+  "phase": "Feasibility",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2027-01-01",
+  "current_finish": "2027-01-01",
+  "pct_complete": 54.1,
+  "funded_amount": 40482217,
+  "obligated_amount": 17823143,
+  "expended_amount": 14626278,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2023-09-19",
+    "current_date": "2023-09-19",
+    "actual_date": "2023-09-19",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-05-16",
+    "current_date": "2024-05-16",
+    "actual_date": "2024-05-16",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-01-11",
+    "current_date": "2025-01-11",
+    "actual_date": "2025-01-11",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2025-09-08",
+    "current_date": "2025-09-08",
+    "actual_date": "2025-09-08",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-05-06",
+    "current_date": "2026-05-06",
+    "actual_date": "2026-05-06",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "309328",
+  "name": "MVR Flood Risk Management Project 2",
+  "program_code": "MVD-FLO",
+  "district": "MVR",
+  "division": "MVD",
+  "business_line": "Flood Risk Management",
+  "phase": "Feasibility",
+  "pdt_lead": "J. Alvarez",
+  "baseline_finish": "2029-01-24",
+  "current_finish": "2030-01-24",
+  "pct_complete": 58.5,
+  "funded_amount": 40482217,
+  "obligated_amount": 15948716,
+  "expended_amount": 9831074,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-10-12",
+    "current_date": "2025-10-12",
+    "actual_date": "2025-10-12",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-06-09",
+    "current_date": "2026-06-09",
+    "actual_date": "2026-06-09",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-02-04",
+    "current_date": "2028-02-04",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-10-02",
+    "current_date": "2028-10-01",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-05-29",
+    "current_date": "2029-05-29",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "321667",
+  "name": "MVS Flood Risk Management Project 3",
+  "program_code": "MVD-FLO",
+  "district": "MVS",
+  "division": "MVD",
+  "business_line": "Flood Risk Management",
+  "phase": "PED",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2027-04-29",
+  "current_finish": "2027-05-29",
+  "pct_complete": 54.1,
+  "funded_amount": 40482217,
+  "obligated_amount": 13777866,
+  "expended_amount": 12065010,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-01-15",
+    "current_date": "2024-01-15",
+    "actual_date": "2024-01-15",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-09-11",
+    "current_date": "2024-09-11",
+    "actual_date": "2024-09-11",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-05-09",
+    "current_date": "2025-05-09",
+    "actual_date": "2025-05-09",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-01-04",
+    "current_date": "2026-01-04",
+    "actual_date": "2026-01-04",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-09-01",
+    "current_date": "2026-09-01",
+    "actual_date": "2026-09-01",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "310444",
+  "name": "MVS Flood Risk Management Project 4",
+  "program_code": "MVD-FLO",
+  "district": "MVS",
+  "division": "MVD",
+  "business_line": "Flood Risk Management",
+  "phase": "Construction",
+  "pdt_lead": "K. Brooks",
+  "baseline_finish": "2027-10-27",
+  "current_finish": "2028-01-25",
+  "pct_complete": 22.8,
+  "funded_amount": 40482217,
+  "obligated_amount": 30150463,
+  "expended_amount": 27690744,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-07-14",
+    "current_date": "2024-07-14",
+    "actual_date": "2024-07-14",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-03-11",
+    "current_date": "2025-03-11",
+    "actual_date": "2025-03-11",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-11-06",
+    "current_date": "2025-11-06",
+    "actual_date": "2025-11-06",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-07-04",
+    "current_date": "2026-07-04",
+    "actual_date": "2026-07-04",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-03-01",
+    "current_date": "2027-05-30",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "230092",
+  "name": "MVR Flood Risk Management Project 5",
+  "program_code": "MVD-FLO",
+  "district": "MVR",
+  "division": "MVD",
+  "business_line": "Flood Risk Management",
+  "phase": "Construction",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2027-05-31",
+  "current_finish": "2027-08-29",
+  "pct_complete": 26.7,
+  "funded_amount": 40482217,
+  "obligated_amount": 32470152,
+  "expended_amount": 19598013,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-02-16",
+    "current_date": "2024-02-16",
+    "actual_date": "2024-02-16",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-10-13",
+    "current_date": "2024-10-13",
+    "actual_date": "2024-10-13",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-06-10",
+    "current_date": "2025-06-10",
+    "actual_date": "2025-06-10",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-02-05",
+    "current_date": "2026-02-05",
+    "actual_date": "2026-02-05",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-10-03",
+    "current_date": "2026-10-03",
+    "actual_date": "2026-10-03",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "216413",
+  "name": "SWT Flood Risk Management Project 1",
+  "program_code": "SWD-FLO",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Flood Risk Management",
+  "phase": "Construction",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2027-07-28",
+  "current_finish": "2028-01-24",
+  "pct_complete": 69.7,
+  "funded_amount": 33446866,
+  "obligated_amount": 19449216,
+  "expended_amount": 10345549,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-04-14",
+    "current_date": "2024-04-14",
+    "actual_date": "2024-04-14",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-12-10",
+    "current_date": "2024-12-10",
+    "actual_date": "2024-12-10",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-08-07",
+    "current_date": "2025-08-07",
+    "actual_date": "2025-08-07",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-04-04",
+    "current_date": "2026-04-04",
+    "actual_date": "2026-04-04",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-11-30",
+    "current_date": "2027-05-29",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "156059",
+  "name": "SWT Flood Risk Management Project 2",
+  "program_code": "SWD-FLO",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Flood Risk Management",
+  "phase": "O&M",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2029-05-07",
+  "current_finish": "2029-05-07",
+  "pct_complete": 79.0,
+  "funded_amount": 33446866,
+  "obligated_amount": 17592236,
+  "expended_amount": 9341219,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2026-01-23",
+    "current_date": "2026-01-23",
+    "actual_date": "2026-01-23",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-09-20",
+    "current_date": "2026-09-20",
+    "actual_date": "2026-09-20",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-05-18",
+    "current_date": "2027-05-18",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2028-01-13",
+    "current_date": "2028-01-13",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-09-09",
+    "current_date": "2028-09-09",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "359491",
+  "name": "SWL Flood Risk Management Project 3",
+  "program_code": "SWD-FLO",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Flood Risk Management",
+  "phase": "Construction",
+  "pdt_lead": "R. Okafor",
+  "baseline_finish": "2028-12-28",
+  "current_finish": "2029-12-28",
+  "pct_complete": 52.3,
+  "funded_amount": 33446866,
+  "obligated_amount": 25464987,
+  "expended_amount": 14134206,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-09-15",
+    "current_date": "2025-09-15",
+    "actual_date": "2025-09-15",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-05-13",
+    "current_date": "2026-05-13",
+    "actual_date": "2026-05-13",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-01-08",
+    "current_date": "2028-01-08",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-09-05",
+    "current_date": "2028-09-04",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-05-02",
+    "current_date": "2029-05-02",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "335250",
+  "name": "SWL Flood Risk Management Project 4",
+  "program_code": "SWD-FLO",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Flood Risk Management",
+  "phase": "Feasibility",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2028-08-09",
+  "current_finish": "2028-08-09",
+  "pct_complete": 91.4,
+  "funded_amount": 33446866,
+  "obligated_amount": 12933931,
+  "expended_amount": 11240812,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-04-27",
+    "current_date": "2025-04-27",
+    "actual_date": "2025-04-27",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-12-23",
+    "current_date": "2025-12-23",
+    "actual_date": "2025-12-23",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-08-20",
+    "current_date": "2026-08-20",
+    "actual_date": "2026-08-20",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-04-17",
+    "current_date": "2027-04-17",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-12-13",
+    "current_date": "2027-12-13",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "140116",
+  "name": "SWT Flood Risk Management Project 5",
+  "program_code": "SWD-FLO",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Flood Risk Management",
+  "phase": "O&M",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2027-11-11",
+  "current_finish": "2028-02-09",
+  "pct_complete": 92.1,
+  "funded_amount": 33446866,
+  "obligated_amount": 13500302,
+  "expended_amount": 8438384,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-07-29",
+    "current_date": "2024-07-29",
+    "actual_date": "2024-07-29",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-03-26",
+    "current_date": "2025-03-26",
+    "actual_date": "2025-03-26",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-11-21",
+    "current_date": "2025-11-21",
+    "actual_date": "2025-11-21",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-07-19",
+    "current_date": "2026-07-19",
+    "actual_date": "2026-07-19",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-03-16",
+    "current_date": "2027-06-14",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "280466",
+  "name": "SWT Flood Risk Management Project 6",
+  "program_code": "SWD-FLO",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Flood Risk Management",
+  "phase": "Feasibility",
+  "pdt_lead": "R. Okafor",
+  "baseline_finish": "2028-01-31",
+  "current_finish": "2028-07-29",
+  "pct_complete": 54.3,
+  "funded_amount": 33446866,
+  "obligated_amount": 26217071,
+  "expended_amount": 18768368,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-10-18",
+    "current_date": "2024-10-18",
+    "actual_date": "2024-10-18",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-06-15",
+    "current_date": "2025-06-15",
+    "actual_date": "2025-06-15",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-02-10",
+    "current_date": "2026-02-10",
+    "actual_date": "2026-02-10",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-10-08",
+    "current_date": "2027-04-06",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-06-05",
+    "current_date": "2027-12-02",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "134671",
+  "name": "SWL Flood Risk Management Project 7",
+  "program_code": "SWD-FLO",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Flood Risk Management",
+  "phase": "Construction",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2027-12-16",
+  "current_finish": "2028-12-15",
+  "pct_complete": 81.2,
+  "funded_amount": 33446866,
+  "obligated_amount": 16685227,
+  "expended_amount": 13231326,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-09-02",
+    "current_date": "2024-09-02",
+    "actual_date": "2024-09-02",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-04-30",
+    "current_date": "2025-04-30",
+    "actual_date": "2025-04-30",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-12-26",
+    "current_date": "2025-12-26",
+    "actual_date": "2025-12-26",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-08-23",
+    "current_date": "2026-08-23",
+    "actual_date": "2026-08-23",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-04-20",
+    "current_date": "2028-04-19",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "269299",
+  "name": "LRL Hydropower Project 1",
+  "program_code": "LRD-HYD",
+  "district": "LRL",
+  "division": "LRD",
+  "business_line": "Hydropower",
+  "phase": "Construction",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2028-11-13",
+  "current_finish": "2028-11-13",
+  "pct_complete": 27.7,
+  "funded_amount": 51686254,
+  "obligated_amount": 31090400,
+  "expended_amount": 20536877,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-08-01",
+    "current_date": "2025-08-01",
+    "actual_date": "2025-08-01",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-03-29",
+    "current_date": "2026-03-29",
+    "actual_date": "2026-03-29",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-11-24",
+    "current_date": "2026-11-24",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-07-22",
+    "current_date": "2027-07-22",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-03-18",
+    "current_date": "2028-03-18",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "418836",
+  "name": "LRN Hydropower Project 2",
+  "program_code": "LRD-HYD",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Hydropower",
+  "phase": "Construction",
+  "pdt_lead": "R. Okafor",
+  "baseline_finish": "2027-12-18",
+  "current_finish": "2028-06-15",
+  "pct_complete": 68.6,
+  "funded_amount": 51686254,
+  "obligated_amount": 29530910,
+  "expended_amount": 27058544,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-09-04",
+    "current_date": "2024-09-04",
+    "actual_date": "2024-09-04",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-05-02",
+    "current_date": "2025-05-02",
+    "actual_date": "2025-05-02",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-12-28",
+    "current_date": "2025-12-28",
+    "actual_date": "2025-12-28",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-08-25",
+    "current_date": "2026-08-25",
+    "actual_date": "2026-08-25",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-04-22",
+    "current_date": "2027-10-19",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "458017",
+  "name": "LRL Hydropower Project 3",
+  "program_code": "LRD-HYD",
+  "district": "LRL",
+  "division": "LRD",
+  "business_line": "Hydropower",
+  "phase": "O&M",
+  "pdt_lead": "R. Okafor",
+  "baseline_finish": "2028-07-11",
+  "current_finish": "2028-07-11",
+  "pct_complete": 62.2,
+  "funded_amount": 51686254,
+  "obligated_amount": 35647576,
+  "expended_amount": 34825957,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-03-29",
+    "current_date": "2025-03-29",
+    "actual_date": "2025-03-29",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-11-24",
+    "current_date": "2025-11-24",
+    "actual_date": "2025-11-24",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-07-22",
+    "current_date": "2026-07-22",
+    "actual_date": "2026-07-22",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-03-19",
+    "current_date": "2027-03-19",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-11-14",
+    "current_date": "2027-11-14",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "187727",
+  "name": "LRL Hydropower Project 4",
+  "program_code": "LRD-HYD",
+  "district": "LRL",
+  "division": "LRD",
+  "business_line": "Hydropower",
+  "phase": "O&M",
+  "pdt_lead": "R. Okafor",
+  "baseline_finish": "2029-03-08",
+  "current_finish": "2029-04-07",
+  "pct_complete": 16.3,
+  "funded_amount": 51686254,
+  "obligated_amount": 30331116,
+  "expended_amount": 21799150,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-11-24",
+    "current_date": "2025-11-24",
+    "actual_date": "2025-11-24",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-07-22",
+    "current_date": "2026-07-22",
+    "actual_date": "2026-07-22",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-03-19",
+    "current_date": "2027-04-18",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-11-14",
+    "current_date": "2027-12-14",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-07-11",
+    "current_date": "2028-08-10",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "457153",
+  "name": "LRN Hydropower Project 5",
+  "program_code": "LRD-HYD",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Hydropower",
+  "phase": "Feasibility",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2028-04-11",
+  "current_finish": "2028-07-10",
+  "pct_complete": 16.7,
+  "funded_amount": 51686254,
+  "obligated_amount": 41025146,
+  "expended_amount": 39391121,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-12-28",
+    "current_date": "2024-12-28",
+    "actual_date": "2024-12-28",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-08-25",
+    "current_date": "2025-08-25",
+    "actual_date": "2025-08-25",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-04-22",
+    "current_date": "2026-04-22",
+    "actual_date": "2026-04-22",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-12-18",
+    "current_date": "2027-03-18",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-08-15",
+    "current_date": "2027-11-13",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "276005",
+  "name": "LRP Hydropower Project 6",
+  "program_code": "LRD-HYD",
+  "district": "LRP",
+  "division": "LRD",
+  "business_line": "Hydropower",
+  "phase": "Feasibility",
+  "pdt_lead": "T. Nguyen",
+  "baseline_finish": "2028-11-05",
+  "current_finish": "2029-11-05",
+  "pct_complete": 40.6,
+  "funded_amount": 51686254,
+  "obligated_amount": 33671887,
+  "expended_amount": 22046288,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-07-24",
+    "current_date": "2025-07-24",
+    "actual_date": "2025-07-24",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-03-21",
+    "current_date": "2026-03-21",
+    "actual_date": "2026-03-21",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-11-16",
+    "current_date": "2027-11-16",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-07-14",
+    "current_date": "2028-07-13",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-03-10",
+    "current_date": "2029-03-10",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "372012",
+  "name": "LRL Hydropower Project 7",
+  "program_code": "LRD-HYD",
+  "district": "LRL",
+  "division": "LRD",
+  "business_line": "Hydropower",
+  "phase": "Feasibility",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2029-05-03",
+  "current_finish": "2029-08-01",
+  "pct_complete": 5.7,
+  "funded_amount": 51686254,
+  "obligated_amount": 15919260,
+  "expended_amount": 15504842,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2026-01-19",
+    "current_date": "2026-01-19",
+    "actual_date": "2026-01-19",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-09-16",
+    "current_date": "2026-09-16",
+    "actual_date": "2026-09-16",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-05-14",
+    "current_date": "2027-08-12",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2028-01-09",
+    "current_date": "2028-04-08",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-09-05",
+    "current_date": "2028-12-04",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "233267",
+  "name": "MVR Hydropower Project 1",
+  "program_code": "MVD-HYD",
+  "district": "MVR",
+  "division": "MVD",
+  "business_line": "Hydropower",
+  "phase": "PED",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2027-05-14",
+  "current_finish": "2027-05-14",
+  "pct_complete": 36.2,
+  "funded_amount": 78294139,
+  "obligated_amount": 29728340,
+  "expended_amount": 24475951,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-01-30",
+    "current_date": "2024-01-30",
+    "actual_date": "2024-01-30",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-09-26",
+    "current_date": "2024-09-26",
+    "actual_date": "2024-09-26",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-05-24",
+    "current_date": "2025-05-24",
+    "actual_date": "2025-05-24",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-01-19",
+    "current_date": "2026-01-19",
+    "actual_date": "2026-01-19",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-09-16",
+    "current_date": "2026-09-16",
+    "actual_date": "2026-09-16",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "204274",
+  "name": "MVR Hydropower Project 2",
+  "program_code": "MVD-HYD",
+  "district": "MVR",
+  "division": "MVD",
+  "business_line": "Hydropower",
+  "phase": "PED",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2029-01-02",
+  "current_finish": "2029-02-01",
+  "pct_complete": 9.6,
+  "funded_amount": 78294139,
+  "obligated_amount": 72789583,
+  "expended_amount": 49843597,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-09-20",
+    "current_date": "2025-09-20",
+    "actual_date": "2025-09-20",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-05-18",
+    "current_date": "2026-05-18",
+    "actual_date": "2026-05-18",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-01-13",
+    "current_date": "2027-02-12",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-09-10",
+    "current_date": "2027-10-10",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-05-07",
+    "current_date": "2028-06-06",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "424033",
+  "name": "MVP Hydropower Project 3",
+  "program_code": "MVD-HYD",
+  "district": "MVP",
+  "division": "MVD",
+  "business_line": "Hydropower",
+  "phase": "Feasibility",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2027-04-15",
+  "current_finish": "2027-07-14",
+  "pct_complete": 29.5,
+  "funded_amount": 78294139,
+  "obligated_amount": 56999420,
+  "expended_amount": 37785901,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-01-01",
+    "current_date": "2024-01-01",
+    "actual_date": "2024-01-01",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-08-28",
+    "current_date": "2024-08-28",
+    "actual_date": "2024-08-28",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-04-25",
+    "current_date": "2025-04-25",
+    "actual_date": "2025-04-25",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2025-12-21",
+    "current_date": "2025-12-21",
+    "actual_date": "2025-12-21",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-08-18",
+    "current_date": "2026-08-18",
+    "actual_date": "2026-08-18",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "442064",
+  "name": "SWL Hydropower Project 1",
+  "program_code": "SWD-HYD",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Hydropower",
+  "phase": "PED",
+  "pdt_lead": "T. Nguyen",
+  "baseline_finish": "2027-01-11",
+  "current_finish": "2027-01-11",
+  "pct_complete": 30.3,
+  "funded_amount": 21448632,
+  "obligated_amount": 8692685,
+  "expended_amount": 5259251,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2023-09-29",
+    "current_date": "2023-09-29",
+    "actual_date": "2023-09-29",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-05-26",
+    "current_date": "2024-05-26",
+    "actual_date": "2024-05-26",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-01-21",
+    "current_date": "2025-01-21",
+    "actual_date": "2025-01-21",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2025-09-18",
+    "current_date": "2025-09-18",
+    "actual_date": "2025-09-18",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-05-16",
+    "current_date": "2026-05-16",
+    "actual_date": "2026-05-16",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "370182",
+  "name": "SWT Hydropower Project 2",
+  "program_code": "SWD-HYD",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Hydropower",
+  "phase": "Construction",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2027-10-16",
+  "current_finish": "2027-11-15",
+  "pct_complete": 87.9,
+  "funded_amount": 21448632,
+  "obligated_amount": 18391242,
+  "expended_amount": 12270746,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-07-03",
+    "current_date": "2024-07-03",
+    "actual_date": "2024-07-03",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-02-28",
+    "current_date": "2025-02-28",
+    "actual_date": "2025-02-28",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-10-26",
+    "current_date": "2025-10-26",
+    "actual_date": "2025-10-26",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-06-23",
+    "current_date": "2026-06-23",
+    "actual_date": "2026-06-23",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-02-18",
+    "current_date": "2027-03-20",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "486677",
+  "name": "SWT Hydropower Project 3",
+  "program_code": "SWD-HYD",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Hydropower",
+  "phase": "Construction",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2029-04-14",
+  "current_finish": "2030-04-14",
+  "pct_complete": 35.9,
+  "funded_amount": 21448632,
+  "obligated_amount": 12835180,
+  "expended_amount": 12204829,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-12-31",
+    "current_date": "2025-12-31",
+    "actual_date": "2025-12-31",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-08-28",
+    "current_date": "2026-08-28",
+    "actual_date": "2026-08-28",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-04-25",
+    "current_date": "2028-04-24",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-12-21",
+    "current_date": "2028-12-20",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-08-17",
+    "current_date": "2029-08-17",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "376765",
+  "name": "SWT Hydropower Project 4",
+  "program_code": "SWD-HYD",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Hydropower",
+  "phase": "PED",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2027-02-07",
+  "current_finish": "2027-02-07",
+  "pct_complete": 77.5,
+  "funded_amount": 21448632,
+  "obligated_amount": 15173816,
+  "expended_amount": 14410913,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2023-10-26",
+    "current_date": "2023-10-26",
+    "actual_date": "2023-10-26",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-06-22",
+    "current_date": "2024-06-22",
+    "actual_date": "2024-06-22",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-02-17",
+    "current_date": "2025-02-17",
+    "actual_date": "2025-02-17",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2025-10-15",
+    "current_date": "2025-10-15",
+    "actual_date": "2025-10-15",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-06-12",
+    "current_date": "2026-06-12",
+    "actual_date": "2026-06-12",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "172324",
+  "name": "SWT Hydropower Project 5",
+  "program_code": "SWD-HYD",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Hydropower",
+  "phase": "O&M",
+  "pdt_lead": "T. Nguyen",
+  "baseline_finish": "2028-04-04",
+  "current_finish": "2029-04-04",
+  "pct_complete": 26.0,
+  "funded_amount": 21448632,
+  "obligated_amount": 14264007,
+  "expended_amount": 10090542,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-12-21",
+    "current_date": "2024-12-21",
+    "actual_date": "2024-12-21",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-08-18",
+    "current_date": "2025-08-18",
+    "actual_date": "2025-08-18",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-04-15",
+    "current_date": "2026-04-15",
+    "actual_date": "2026-04-15",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-12-11",
+    "current_date": "2027-12-11",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-08-08",
+    "current_date": "2028-08-07",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "128133",
+  "name": "SWL Hydropower Project 6",
+  "program_code": "SWD-HYD",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Hydropower",
+  "phase": "Construction",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2028-08-12",
+  "current_finish": "2028-09-11",
+  "pct_complete": 72.7,
+  "funded_amount": 21448632,
+  "obligated_amount": 18440202,
+  "expended_amount": 11989789,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-04-30",
+    "current_date": "2025-04-30",
+    "actual_date": "2025-04-30",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-12-26",
+    "current_date": "2025-12-26",
+    "actual_date": "2025-12-26",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-08-23",
+    "current_date": "2026-08-23",
+    "actual_date": "2026-08-23",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-04-20",
+    "current_date": "2027-05-20",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-12-16",
+    "current_date": "2028-01-15",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "419454",
+  "name": "SWT Hydropower Project 7",
+  "program_code": "SWD-HYD",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Hydropower",
+  "phase": "O&M",
+  "pdt_lead": "T. Nguyen",
+  "baseline_finish": "2027-12-31",
+  "current_finish": "2028-12-30",
+  "pct_complete": 50.9,
+  "funded_amount": 21448632,
+  "obligated_amount": 17924663,
+  "expended_amount": 12954891,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-09-17",
+    "current_date": "2024-09-17",
+    "actual_date": "2024-09-17",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-05-15",
+    "current_date": "2025-05-15",
+    "actual_date": "2025-05-15",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-01-10",
+    "current_date": "2026-01-10",
+    "actual_date": "2026-01-10",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-09-07",
+    "current_date": "2026-09-07",
+    "actual_date": "2026-09-07",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-05-05",
+    "current_date": "2028-05-04",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "317985",
+  "name": "SWT Hydropower Project 8",
+  "program_code": "SWD-HYD",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Hydropower",
+  "phase": "PED",
+  "pdt_lead": "R. Okafor",
+  "baseline_finish": "2029-05-06",
+  "current_finish": "2029-05-06",
+  "pct_complete": 12.9,
+  "funded_amount": 21448632,
+  "obligated_amount": 12334856,
+  "expended_amount": 6695360,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2026-01-22",
+    "current_date": "2026-01-22",
+    "actual_date": "2026-01-22",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-09-19",
+    "current_date": "2026-09-19",
+    "actual_date": "2026-09-19",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-05-17",
+    "current_date": "2027-05-17",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2028-01-12",
+    "current_date": "2028-01-12",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-09-08",
+    "current_date": "2028-09-08",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "302332",
+  "name": "LRP Environment Project 1",
+  "program_code": "LRD-ENV",
+  "district": "LRP",
+  "division": "LRD",
+  "business_line": "Environment",
+  "phase": "O&M",
+  "pdt_lead": "R. Okafor",
+  "baseline_finish": "2029-06-19",
+  "current_finish": "2029-06-19",
+  "pct_complete": 19.0,
+  "funded_amount": 30905706,
+  "obligated_amount": 19149614,
+  "expended_amount": 13255879,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2026-03-07",
+    "current_date": "2026-03-07",
+    "actual_date": "2026-03-07",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-11-02",
+    "current_date": "2026-11-02",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-06-30",
+    "current_date": "2027-06-30",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2028-02-25",
+    "current_date": "2028-02-25",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-10-22",
+    "current_date": "2028-10-22",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "447933",
+  "name": "LRN Environment Project 2",
+  "program_code": "LRD-ENV",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Environment",
+  "phase": "PED",
+  "pdt_lead": "T. Nguyen",
+  "baseline_finish": "2028-01-18",
+  "current_finish": "2028-04-17",
+  "pct_complete": 11.6,
+  "funded_amount": 30905706,
+  "obligated_amount": 18546019,
+  "expended_amount": 18153283,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-10-05",
+    "current_date": "2024-10-05",
+    "actual_date": "2024-10-05",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-06-02",
+    "current_date": "2025-06-02",
+    "actual_date": "2025-06-02",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-01-28",
+    "current_date": "2026-01-28",
+    "actual_date": "2026-01-28",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-09-25",
+    "current_date": "2026-09-25",
+    "actual_date": "2026-09-25",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-05-23",
+    "current_date": "2027-08-21",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "105545",
+  "name": "LRL Environment Project 3",
+  "program_code": "LRD-ENV",
+  "district": "LRL",
+  "division": "LRD",
+  "business_line": "Environment",
+  "phase": "PED",
+  "pdt_lead": "J. Alvarez",
+  "baseline_finish": "2028-09-02",
+  "current_finish": "2028-09-02",
+  "pct_complete": 63.8,
+  "funded_amount": 30905706,
+  "obligated_amount": 25997848,
+  "expended_amount": 22712926,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-05-21",
+    "current_date": "2025-05-21",
+    "actual_date": "2025-05-21",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-01-16",
+    "current_date": "2026-01-16",
+    "actual_date": "2026-01-16",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-09-13",
+    "current_date": "2026-09-13",
+    "actual_date": "2026-09-13",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-05-11",
+    "current_date": "2027-05-11",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-01-06",
+    "current_date": "2028-01-06",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "358615",
+  "name": "LRN Environment Project 4",
+  "program_code": "LRD-ENV",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Environment",
+  "phase": "O&M",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2029-02-24",
+  "current_finish": "2029-02-24",
+  "pct_complete": 67.6,
+  "funded_amount": 30905706,
+  "obligated_amount": 11234145,
+  "expended_amount": 6467799,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-11-12",
+    "current_date": "2025-11-12",
+    "actual_date": "2025-11-12",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-07-10",
+    "current_date": "2026-07-10",
+    "actual_date": "2026-07-10",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-03-07",
+    "current_date": "2027-03-07",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-11-02",
+    "current_date": "2027-11-02",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-06-29",
+    "current_date": "2028-06-29",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "116427",
+  "name": "MVS Environment Project 1",
+  "program_code": "MVD-ENV",
+  "district": "MVS",
+  "division": "MVD",
+  "business_line": "Environment",
+  "phase": "O&M",
+  "pdt_lead": "L. Haddad",
+  "baseline_finish": "2028-02-23",
+  "current_finish": "2028-02-23",
+  "pct_complete": 44.8,
+  "funded_amount": 114046847,
+  "obligated_amount": 69616167,
+  "expended_amount": 41299771,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-11-10",
+    "current_date": "2024-11-10",
+    "actual_date": "2024-11-10",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-07-08",
+    "current_date": "2025-07-08",
+    "actual_date": "2025-07-08",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-03-05",
+    "current_date": "2026-03-05",
+    "actual_date": "2026-03-05",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-10-31",
+    "current_date": "2026-10-31",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-06-28",
+    "current_date": "2027-06-28",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "426008",
+  "name": "MVR Environment Project 2",
+  "program_code": "MVD-ENV",
+  "district": "MVR",
+  "division": "MVD",
+  "business_line": "Environment",
+  "phase": "Feasibility",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2028-09-11",
+  "current_finish": "2028-09-11",
+  "pct_complete": 26.9,
+  "funded_amount": 114046847,
+  "obligated_amount": 69635084,
+  "expended_amount": 60476610,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-05-30",
+    "current_date": "2025-05-30",
+    "actual_date": "2025-05-30",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-01-25",
+    "current_date": "2026-01-25",
+    "actual_date": "2026-01-25",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-09-22",
+    "current_date": "2026-09-22",
+    "actual_date": "2026-09-22",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-05-20",
+    "current_date": "2027-05-20",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-01-15",
+    "current_date": "2028-01-15",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "299138",
+  "name": "MVS Environment Project 3",
+  "program_code": "MVD-ENV",
+  "district": "MVS",
+  "division": "MVD",
+  "business_line": "Environment",
+  "phase": "Feasibility",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2027-06-23",
+  "current_finish": "2027-06-23",
+  "pct_complete": 14.0,
+  "funded_amount": 114046847,
+  "obligated_amount": 79437624,
+  "expended_amount": 60515190,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-03-10",
+    "current_date": "2024-03-10",
+    "actual_date": "2024-03-10",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-11-05",
+    "current_date": "2024-11-05",
+    "actual_date": "2024-11-05",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-07-03",
+    "current_date": "2025-07-03",
+    "actual_date": "2025-07-03",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-02-28",
+    "current_date": "2026-02-28",
+    "actual_date": "2026-02-28",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-10-26",
+    "current_date": "2026-10-26",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "385867",
+  "name": "SWT Environment Project 1",
+  "program_code": "SWD-ENV",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Environment",
+  "phase": "O&M",
+  "pdt_lead": "R. Okafor",
+  "baseline_finish": "2027-02-10",
+  "current_finish": "2027-08-09",
+  "pct_complete": 7.4,
+  "funded_amount": 18252612,
+  "obligated_amount": 14207568,
+  "expended_amount": 7759648,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2023-10-29",
+    "current_date": "2023-10-29",
+    "actual_date": "2023-10-29",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-06-25",
+    "current_date": "2024-06-25",
+    "actual_date": "2024-06-25",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-02-20",
+    "current_date": "2025-02-20",
+    "actual_date": "2025-02-20",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2025-10-18",
+    "current_date": "2025-10-18",
+    "actual_date": "2025-10-18",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-06-15",
+    "current_date": "2026-06-15",
+    "actual_date": "2026-06-15",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "422287",
+  "name": "SWT Environment Project 2",
+  "program_code": "SWD-ENV",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Environment",
+  "phase": "Feasibility",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2028-09-03",
+  "current_finish": "2028-09-03",
+  "pct_complete": 79.2,
+  "funded_amount": 18252612,
+  "obligated_amount": 6658999,
+  "expended_amount": 3700094,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-05-22",
+    "current_date": "2025-05-22",
+    "actual_date": "2025-05-22",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-01-17",
+    "current_date": "2026-01-17",
+    "actual_date": "2026-01-17",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-09-14",
+    "current_date": "2026-09-14",
+    "actual_date": "2026-09-14",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-05-12",
+    "current_date": "2027-05-12",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-01-07",
+    "current_date": "2028-01-07",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "447735",
+  "name": "SWL Environment Project 3",
+  "program_code": "SWD-ENV",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Environment",
+  "phase": "O&M",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2027-05-26",
+  "current_finish": "2027-05-26",
+  "pct_complete": 90.4,
+  "funded_amount": 18252612,
+  "obligated_amount": 16216598,
+  "expended_amount": 11277758,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-02-11",
+    "current_date": "2024-02-11",
+    "actual_date": "2024-02-11",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-10-08",
+    "current_date": "2024-10-08",
+    "actual_date": "2024-10-08",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-06-05",
+    "current_date": "2025-06-05",
+    "actual_date": "2025-06-05",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-01-31",
+    "current_date": "2026-01-31",
+    "actual_date": "2026-01-31",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-09-28",
+    "current_date": "2026-09-28",
+    "actual_date": "2026-09-28",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "127645",
+  "name": "SWT Environment Project 4",
+  "program_code": "SWD-ENV",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Environment",
+  "phase": "PED",
+  "pdt_lead": "R. Okafor",
+  "baseline_finish": "2029-03-11",
+  "current_finish": "2029-03-11",
+  "pct_complete": 89.9,
+  "funded_amount": 18252612,
+  "obligated_amount": 6793535,
+  "expended_amount": 5329281,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-11-27",
+    "current_date": "2025-11-27",
+    "actual_date": "2025-11-27",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-07-25",
+    "current_date": "2026-07-25",
+    "actual_date": "2026-07-25",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-03-22",
+    "current_date": "2027-03-22",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-11-17",
+    "current_date": "2027-11-17",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-07-14",
+    "current_date": "2028-07-14",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "123643",
+  "name": "SWL Environment Project 5",
+  "program_code": "SWD-ENV",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Environment",
+  "phase": "Feasibility",
+  "pdt_lead": "L. Haddad",
+  "baseline_finish": "2027-05-03",
+  "current_finish": "2027-08-01",
+  "pct_complete": 53.2,
+  "funded_amount": 18252612,
+  "obligated_amount": 10076407,
+  "expended_amount": 8943696,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-01-19",
+    "current_date": "2024-01-19",
+    "actual_date": "2024-01-19",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-09-15",
+    "current_date": "2024-09-15",
+    "actual_date": "2024-09-15",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-05-13",
+    "current_date": "2025-05-13",
+    "actual_date": "2025-05-13",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-01-08",
+    "current_date": "2026-01-08",
+    "actual_date": "2026-01-08",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-09-05",
+    "current_date": "2026-09-05",
+    "actual_date": "2026-09-05",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "369910",
+  "name": "SWT Environment Project 6",
+  "program_code": "SWD-ENV",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Environment",
+  "phase": "O&M",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2028-11-06",
+  "current_finish": "2029-05-05",
+  "pct_complete": 35.3,
+  "funded_amount": 18252612,
+  "obligated_amount": 6170795,
+  "expended_amount": 5068657,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-07-25",
+    "current_date": "2025-07-25",
+    "actual_date": "2025-07-25",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-03-22",
+    "current_date": "2026-03-22",
+    "actual_date": "2026-03-22",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-11-17",
+    "current_date": "2027-05-16",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-07-15",
+    "current_date": "2028-01-11",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-03-11",
+    "current_date": "2028-09-07",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "246809",
+  "name": "SWT Environment Project 7",
+  "program_code": "SWD-ENV",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Environment",
+  "phase": "Feasibility",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2028-09-16",
+  "current_finish": "2029-09-16",
+  "pct_complete": 22.5,
+  "funded_amount": 18252612,
+  "obligated_amount": 12975254,
+  "expended_amount": 6901446,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-06-04",
+    "current_date": "2025-06-04",
+    "actual_date": "2025-06-04",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-01-30",
+    "current_date": "2026-01-30",
+    "actual_date": "2026-01-30",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-09-27",
+    "current_date": "2026-09-27",
+    "actual_date": "2026-09-27",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-05-25",
+    "current_date": "2028-05-24",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-01-20",
+    "current_date": "2029-01-19",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "350236",
+  "name": "SWT Environment Project 8",
+  "program_code": "SWD-ENV",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Environment",
+  "phase": "PED",
+  "pdt_lead": "K. Brooks",
+  "baseline_finish": "2027-03-30",
+  "current_finish": "2027-06-28",
+  "pct_complete": 6.0,
+  "funded_amount": 18252612,
+  "obligated_amount": 6132451,
+  "expended_amount": 5536088,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2023-12-16",
+    "current_date": "2023-12-16",
+    "actual_date": "2023-12-16",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-08-12",
+    "current_date": "2024-08-12",
+    "actual_date": "2024-08-12",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-04-09",
+    "current_date": "2025-04-09",
+    "actual_date": "2025-04-09",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2025-12-05",
+    "current_date": "2025-12-05",
+    "actual_date": "2025-12-05",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-08-02",
+    "current_date": "2026-08-02",
+    "actual_date": "2026-08-02",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "368186",
+  "name": "LRH Recreation Project 1",
+  "program_code": "LRD-REC",
+  "district": "LRH",
+  "division": "LRD",
+  "business_line": "Recreation",
+  "phase": "O&M",
+  "pdt_lead": "L. Haddad",
+  "baseline_finish": "2028-07-23",
+  "current_finish": "2028-07-23",
+  "pct_complete": 56.6,
+  "funded_amount": 19694809,
+  "obligated_amount": 18585461,
+  "expended_amount": 13794219,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-04-10",
+    "current_date": "2025-04-10",
+    "actual_date": "2025-04-10",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-12-06",
+    "current_date": "2025-12-06",
+    "actual_date": "2025-12-06",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-08-03",
+    "current_date": "2026-08-03",
+    "actual_date": "2026-08-03",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-03-31",
+    "current_date": "2027-03-31",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-11-26",
+    "current_date": "2027-11-26",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "452408",
+  "name": "LRN Recreation Project 2",
+  "program_code": "LRD-REC",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Recreation",
+  "phase": "Feasibility",
+  "pdt_lead": "K. Brooks",
+  "baseline_finish": "2027-06-17",
+  "current_finish": "2027-09-15",
+  "pct_complete": 81.7,
+  "funded_amount": 19694809,
+  "obligated_amount": 6559814,
+  "expended_amount": 5786914,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-03-04",
+    "current_date": "2024-03-04",
+    "actual_date": "2024-03-04",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-10-30",
+    "current_date": "2024-10-30",
+    "actual_date": "2024-10-30",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-06-27",
+    "current_date": "2025-06-27",
+    "actual_date": "2025-06-27",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-02-22",
+    "current_date": "2026-02-22",
+    "actual_date": "2026-02-22",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-10-20",
+    "current_date": "2027-01-18",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "412282",
+  "name": "LRN Recreation Project 3",
+  "program_code": "LRD-REC",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Recreation",
+  "phase": "Construction",
+  "pdt_lead": "K. Brooks",
+  "baseline_finish": "2028-08-04",
+  "current_finish": "2028-11-02",
+  "pct_complete": 58.7,
+  "funded_amount": 19694809,
+  "obligated_amount": 17501836,
+  "expended_amount": 9946773,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-04-22",
+    "current_date": "2025-04-22",
+    "actual_date": "2025-04-22",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-12-18",
+    "current_date": "2025-12-18",
+    "actual_date": "2025-12-18",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-08-15",
+    "current_date": "2026-08-15",
+    "actual_date": "2026-08-15",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-04-12",
+    "current_date": "2027-07-11",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-12-08",
+    "current_date": "2028-03-07",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "119729",
+  "name": "LRN Recreation Project 4",
+  "program_code": "LRD-REC",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Recreation",
+  "phase": "PED",
+  "pdt_lead": "K. Brooks",
+  "baseline_finish": "2027-05-22",
+  "current_finish": "2027-05-22",
+  "pct_complete": 61.4,
+  "funded_amount": 19694809,
+  "obligated_amount": 13857422,
+  "expended_amount": 10824838,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-02-07",
+    "current_date": "2024-02-07",
+    "actual_date": "2024-02-07",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-10-04",
+    "current_date": "2024-10-04",
+    "actual_date": "2024-10-04",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-06-01",
+    "current_date": "2025-06-01",
+    "actual_date": "2025-06-01",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-01-27",
+    "current_date": "2026-01-27",
+    "actual_date": "2026-01-27",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-09-24",
+    "current_date": "2026-09-24",
+    "actual_date": "2026-09-24",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "310144",
+  "name": "LRN Recreation Project 5",
+  "program_code": "LRD-REC",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Recreation",
+  "phase": "Feasibility",
+  "pdt_lead": "L. Haddad",
+  "baseline_finish": "2027-09-06",
+  "current_finish": "2027-09-06",
+  "pct_complete": 50.0,
+  "funded_amount": 19694809,
+  "obligated_amount": 8055976,
+  "expended_amount": 6245113,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-05-24",
+    "current_date": "2024-05-24",
+    "actual_date": "2024-05-24",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-01-19",
+    "current_date": "2025-01-19",
+    "actual_date": "2025-01-19",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-09-16",
+    "current_date": "2025-09-16",
+    "actual_date": "2025-09-16",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-05-14",
+    "current_date": "2026-05-14",
+    "actual_date": "2026-05-14",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-01-09",
+    "current_date": "2027-01-09",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "288795",
+  "name": "LRP Recreation Project 6",
+  "program_code": "LRD-REC",
+  "district": "LRP",
+  "division": "LRD",
+  "business_line": "Recreation",
+  "phase": "PED",
+  "pdt_lead": "R. Okafor",
+  "baseline_finish": "2029-01-03",
+  "current_finish": "2029-04-03",
+  "pct_complete": 42.9,
+  "funded_amount": 19694809,
+  "obligated_amount": 11429219,
+  "expended_amount": 5826817,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-09-21",
+    "current_date": "2025-09-21",
+    "actual_date": "2025-09-21",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-05-19",
+    "current_date": "2026-05-19",
+    "actual_date": "2026-05-19",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-01-14",
+    "current_date": "2027-04-14",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-09-11",
+    "current_date": "2027-12-10",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-05-08",
+    "current_date": "2028-08-06",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "164853",
+  "name": "LRN Recreation Project 7",
+  "program_code": "LRD-REC",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Recreation",
+  "phase": "Feasibility",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2027-03-05",
+  "current_finish": "2028-03-04",
+  "pct_complete": 9.7,
+  "funded_amount": 19694809,
+  "obligated_amount": 11399145,
+  "expended_amount": 6707912,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2023-11-21",
+    "current_date": "2023-11-21",
+    "actual_date": "2023-11-21",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-07-18",
+    "current_date": "2024-07-18",
+    "actual_date": "2024-07-18",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-03-15",
+    "current_date": "2025-03-15",
+    "actual_date": "2025-03-15",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2025-11-10",
+    "current_date": "2025-11-10",
+    "actual_date": "2025-11-10",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-07-08",
+    "current_date": "2026-07-08",
+    "actual_date": "2026-07-08",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "313608",
+  "name": "MVS Recreation Project 1",
+  "program_code": "MVD-REC",
+  "district": "MVS",
+  "division": "MVD",
+  "business_line": "Recreation",
+  "phase": "PED",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2029-02-16",
+  "current_finish": "2029-03-18",
+  "pct_complete": 70.7,
+  "funded_amount": 38875512,
+  "obligated_amount": 19135081,
+  "expended_amount": 13897762,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-11-04",
+    "current_date": "2025-11-04",
+    "actual_date": "2025-11-04",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-07-02",
+    "current_date": "2026-07-02",
+    "actual_date": "2026-07-02",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-02-27",
+    "current_date": "2027-03-29",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-10-25",
+    "current_date": "2027-11-24",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-06-21",
+    "current_date": "2028-07-21",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "275640",
+  "name": "MVS Recreation Project 2",
+  "program_code": "MVD-REC",
+  "district": "MVS",
+  "division": "MVD",
+  "business_line": "Recreation",
+  "phase": "O&M",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2027-12-19",
+  "current_finish": "2028-12-18",
+  "pct_complete": 43.1,
+  "funded_amount": 38875512,
+  "obligated_amount": 36711296,
+  "expended_amount": 34841819,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-09-05",
+    "current_date": "2024-09-05",
+    "actual_date": "2024-09-05",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-05-03",
+    "current_date": "2025-05-03",
+    "actual_date": "2025-05-03",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-12-29",
+    "current_date": "2025-12-29",
+    "actual_date": "2025-12-29",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-08-26",
+    "current_date": "2026-08-26",
+    "actual_date": "2026-08-26",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-04-23",
+    "current_date": "2028-04-22",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "494527",
+  "name": "MVP Recreation Project 3",
+  "program_code": "MVD-REC",
+  "district": "MVP",
+  "division": "MVD",
+  "business_line": "Recreation",
+  "phase": "Feasibility",
+  "pdt_lead": "L. Haddad",
+  "baseline_finish": "2028-06-22",
+  "current_finish": "2028-06-22",
+  "pct_complete": 61.8,
+  "funded_amount": 38875512,
+  "obligated_amount": 31487968,
+  "expended_amount": 28902906,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-03-10",
+    "current_date": "2025-03-10",
+    "actual_date": "2025-03-10",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-11-05",
+    "current_date": "2025-11-05",
+    "actual_date": "2025-11-05",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-07-03",
+    "current_date": "2026-07-03",
+    "actual_date": "2026-07-03",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-02-28",
+    "current_date": "2027-02-28",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-10-26",
+    "current_date": "2027-10-26",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "309940",
+  "name": "MVP Recreation Project 4",
+  "program_code": "MVD-REC",
+  "district": "MVP",
+  "division": "MVD",
+  "business_line": "Recreation",
+  "phase": "Construction",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2028-01-29",
+  "current_finish": "2028-04-28",
+  "pct_complete": 37.1,
+  "funded_amount": 38875512,
+  "obligated_amount": 15913699,
+  "expended_amount": 15294165,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-10-16",
+    "current_date": "2024-10-16",
+    "actual_date": "2024-10-16",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-06-13",
+    "current_date": "2025-06-13",
+    "actual_date": "2025-06-13",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-02-08",
+    "current_date": "2026-02-08",
+    "actual_date": "2026-02-08",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-10-06",
+    "current_date": "2027-01-04",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-06-03",
+    "current_date": "2027-09-01",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "449500",
+  "name": "MVS Recreation Project 5",
+  "program_code": "MVD-REC",
+  "district": "MVS",
+  "division": "MVD",
+  "business_line": "Recreation",
+  "phase": "O&M",
+  "pdt_lead": "L. Haddad",
+  "baseline_finish": "2027-09-29",
+  "current_finish": "2027-09-29",
+  "pct_complete": 60.8,
+  "funded_amount": 38875512,
+  "obligated_amount": 16431066,
+  "expended_amount": 15157688,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-06-16",
+    "current_date": "2024-06-16",
+    "actual_date": "2024-06-16",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-02-11",
+    "current_date": "2025-02-11",
+    "actual_date": "2025-02-11",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-10-09",
+    "current_date": "2025-10-09",
+    "actual_date": "2025-10-09",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-06-06",
+    "current_date": "2026-06-06",
+    "actual_date": "2026-06-06",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-02-01",
+    "current_date": "2027-02-01",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "351392",
+  "name": "MVP Recreation Project 6",
+  "program_code": "MVD-REC",
+  "district": "MVP",
+  "division": "MVD",
+  "business_line": "Recreation",
+  "phase": "PED",
+  "pdt_lead": "L. Haddad",
+  "baseline_finish": "2028-03-20",
+  "current_finish": "2028-09-16",
+  "pct_complete": 61.8,
+  "funded_amount": 38875512,
+  "obligated_amount": 26664627,
+  "expended_amount": 13773498,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-12-06",
+    "current_date": "2024-12-06",
+    "actual_date": "2024-12-06",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-08-03",
+    "current_date": "2025-08-03",
+    "actual_date": "2025-08-03",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-03-31",
+    "current_date": "2026-03-31",
+    "actual_date": "2026-03-31",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-11-26",
+    "current_date": "2027-05-25",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-07-24",
+    "current_date": "2028-01-20",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "343002",
+  "name": "MVS Recreation Project 7",
+  "program_code": "MVD-REC",
+  "district": "MVS",
+  "division": "MVD",
+  "business_line": "Recreation",
+  "phase": "Construction",
+  "pdt_lead": "J. Alvarez",
+  "baseline_finish": "2029-05-20",
+  "current_finish": "2030-05-20",
+  "pct_complete": 27.4,
+  "funded_amount": 38875512,
+  "obligated_amount": 16345444,
+  "expended_amount": 15296269,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2026-02-05",
+    "current_date": "2026-02-05",
+    "actual_date": "2026-02-05",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-10-03",
+    "current_date": "2026-10-03",
+    "actual_date": "2026-10-03",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-05-31",
+    "current_date": "2028-05-30",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2028-01-26",
+    "current_date": "2029-01-25",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-09-22",
+    "current_date": "2029-09-22",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "272458",
+  "name": "SWT Recreation Project 1",
+  "program_code": "SWD-REC",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Recreation",
+  "phase": "PED",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2029-01-09",
+  "current_finish": "2029-01-09",
+  "pct_complete": 62.0,
+  "funded_amount": 48196697,
+  "obligated_amount": 36663155,
+  "expended_amount": 20218021,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-09-27",
+    "current_date": "2025-09-27",
+    "actual_date": "2025-09-27",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-05-25",
+    "current_date": "2026-05-25",
+    "actual_date": "2026-05-25",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-01-20",
+    "current_date": "2027-01-20",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-09-17",
+    "current_date": "2027-09-17",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-05-14",
+    "current_date": "2028-05-14",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "290375",
+  "name": "SWL Recreation Project 2",
+  "program_code": "SWD-REC",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Recreation",
+  "phase": "O&M",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2029-01-15",
+  "current_finish": "2029-04-15",
+  "pct_complete": 7.8,
+  "funded_amount": 48196697,
+  "obligated_amount": 17793524,
+  "expended_amount": 10298890,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-10-03",
+    "current_date": "2025-10-03",
+    "actual_date": "2025-10-03",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-05-31",
+    "current_date": "2026-05-31",
+    "actual_date": "2026-05-31",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-01-26",
+    "current_date": "2027-04-26",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-09-23",
+    "current_date": "2027-12-22",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-05-20",
+    "current_date": "2028-08-18",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "123819",
+  "name": "SWL Recreation Project 3",
+  "program_code": "SWD-REC",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Recreation",
+  "phase": "Feasibility",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2027-07-04",
+  "current_finish": "2028-07-03",
+  "pct_complete": 92.7,
+  "funded_amount": 48196697,
+  "obligated_amount": 34297926,
+  "expended_amount": 28899672,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-03-21",
+    "current_date": "2024-03-21",
+    "actual_date": "2024-03-21",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-11-16",
+    "current_date": "2024-11-16",
+    "actual_date": "2024-11-16",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-07-14",
+    "current_date": "2025-07-14",
+    "actual_date": "2025-07-14",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-03-11",
+    "current_date": "2026-03-11",
+    "actual_date": "2026-03-11",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-11-06",
+    "current_date": "2027-11-06",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "155363",
+  "name": "SWL Recreation Project 4",
+  "program_code": "SWD-REC",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Recreation",
+  "phase": "O&M",
+  "pdt_lead": "J. Alvarez",
+  "baseline_finish": "2028-08-14",
+  "current_finish": "2028-09-13",
+  "pct_complete": 12.1,
+  "funded_amount": 48196697,
+  "obligated_amount": 32264575,
+  "expended_amount": 23668234,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-05-02",
+    "current_date": "2025-05-02",
+    "actual_date": "2025-05-02",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-12-28",
+    "current_date": "2025-12-28",
+    "actual_date": "2025-12-28",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-08-25",
+    "current_date": "2026-08-25",
+    "actual_date": "2026-08-25",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-04-22",
+    "current_date": "2027-05-22",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-12-18",
+    "current_date": "2028-01-17",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "179482",
+  "name": "SWT Recreation Project 5",
+  "program_code": "SWD-REC",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Recreation",
+  "phase": "PED",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2027-08-01",
+  "current_finish": "2028-01-28",
+  "pct_complete": 37.6,
+  "funded_amount": 48196697,
+  "obligated_amount": 44472460,
+  "expended_amount": 35640116,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-04-18",
+    "current_date": "2024-04-18",
+    "actual_date": "2024-04-18",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-12-14",
+    "current_date": "2024-12-14",
+    "actual_date": "2024-12-14",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-08-11",
+    "current_date": "2025-08-11",
+    "actual_date": "2025-08-11",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-04-08",
+    "current_date": "2026-04-08",
+    "actual_date": "2026-04-08",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-12-04",
+    "current_date": "2027-06-02",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "256675",
+  "name": "SWT Recreation Project 6",
+  "program_code": "SWD-REC",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Recreation",
+  "phase": "Construction",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2027-03-13",
+  "current_finish": "2027-03-13",
+  "pct_complete": 18.3,
+  "funded_amount": 48196697,
+  "obligated_amount": 31388106,
+  "expended_amount": 21451922,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2023-11-29",
+    "current_date": "2023-11-29",
+    "actual_date": "2023-11-29",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-07-26",
+    "current_date": "2024-07-26",
+    "actual_date": "2024-07-26",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-03-23",
+    "current_date": "2025-03-23",
+    "actual_date": "2025-03-23",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2025-11-18",
+    "current_date": "2025-11-18",
+    "actual_date": "2025-11-18",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-07-16",
+    "current_date": "2026-07-16",
+    "actual_date": "2026-07-16",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "446976",
+  "name": "LRN Water Supply Project 1",
+  "program_code": "LRD-WAT",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Water Supply",
+  "phase": "O&M",
+  "pdt_lead": "D. Romero",
+  "baseline_finish": "2028-12-25",
+  "current_finish": "2028-12-25",
+  "pct_complete": 39.0,
+  "funded_amount": 42102405,
+  "obligated_amount": 13728295,
+  "expended_amount": 13232168,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-09-12",
+    "current_date": "2025-09-12",
+    "actual_date": "2025-09-12",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-05-10",
+    "current_date": "2026-05-10",
+    "actual_date": "2026-05-10",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-01-05",
+    "current_date": "2027-01-05",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-09-02",
+    "current_date": "2027-09-02",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-04-29",
+    "current_date": "2028-04-29",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "403086",
+  "name": "LRL Water Supply Project 2",
+  "program_code": "LRD-WAT",
+  "district": "LRL",
+  "division": "LRD",
+  "business_line": "Water Supply",
+  "phase": "PED",
+  "pdt_lead": "T. Nguyen",
+  "baseline_finish": "2029-03-09",
+  "current_finish": "2029-06-07",
+  "pct_complete": 19.5,
+  "funded_amount": 42102405,
+  "obligated_amount": 27742976,
+  "expended_amount": 17027897,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-11-25",
+    "current_date": "2025-11-25",
+    "actual_date": "2025-11-25",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-07-23",
+    "current_date": "2026-07-23",
+    "actual_date": "2026-07-23",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-03-20",
+    "current_date": "2027-06-18",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-11-15",
+    "current_date": "2028-02-13",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-07-12",
+    "current_date": "2028-10-10",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "306860",
+  "name": "LRP Water Supply Project 3",
+  "program_code": "LRD-WAT",
+  "district": "LRP",
+  "division": "LRD",
+  "business_line": "Water Supply",
+  "phase": "O&M",
+  "pdt_lead": "L. Haddad",
+  "baseline_finish": "2027-05-12",
+  "current_finish": "2028-05-11",
+  "pct_complete": 34.8,
+  "funded_amount": 42102405,
+  "obligated_amount": 24263688,
+  "expended_amount": 13031115,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-01-28",
+    "current_date": "2024-01-28",
+    "actual_date": "2024-01-28",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-09-24",
+    "current_date": "2024-09-24",
+    "actual_date": "2024-09-24",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-05-22",
+    "current_date": "2025-05-22",
+    "actual_date": "2025-05-22",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-01-17",
+    "current_date": "2026-01-17",
+    "actual_date": "2026-01-17",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-09-14",
+    "current_date": "2026-09-14",
+    "actual_date": "2026-09-14",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "351853",
+  "name": "LRL Water Supply Project 4",
+  "program_code": "LRD-WAT",
+  "district": "LRL",
+  "division": "LRD",
+  "business_line": "Water Supply",
+  "phase": "Construction",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2027-02-22",
+  "current_finish": "2027-02-22",
+  "pct_complete": 10.0,
+  "funded_amount": 42102405,
+  "obligated_amount": 17534360,
+  "expended_amount": 15585492,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2023-11-10",
+    "current_date": "2023-11-10",
+    "actual_date": "2023-11-10",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-07-07",
+    "current_date": "2024-07-07",
+    "actual_date": "2024-07-07",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-03-04",
+    "current_date": "2025-03-04",
+    "actual_date": "2025-03-04",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2025-10-30",
+    "current_date": "2025-10-30",
+    "actual_date": "2025-10-30",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-06-27",
+    "current_date": "2026-06-27",
+    "actual_date": "2026-06-27",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "260710",
+  "name": "LRN Water Supply Project 5",
+  "program_code": "LRD-WAT",
+  "district": "LRN",
+  "division": "LRD",
+  "business_line": "Water Supply",
+  "phase": "O&M",
+  "pdt_lead": "T. Nguyen",
+  "baseline_finish": "2029-02-26",
+  "current_finish": "2029-05-27",
+  "pct_complete": 71.5,
+  "funded_amount": 42102405,
+  "obligated_amount": 32916899,
+  "expended_amount": 30557525,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-11-14",
+    "current_date": "2025-11-14",
+    "actual_date": "2025-11-14",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-07-12",
+    "current_date": "2026-07-12",
+    "actual_date": "2026-07-12",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-03-09",
+    "current_date": "2027-06-07",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-11-04",
+    "current_date": "2028-02-02",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-07-01",
+    "current_date": "2028-09-29",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "463607",
+  "name": "LRL Water Supply Project 6",
+  "program_code": "LRD-WAT",
+  "district": "LRL",
+  "division": "LRD",
+  "business_line": "Water Supply",
+  "phase": "Feasibility",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2027-05-17",
+  "current_finish": "2027-05-17",
+  "pct_complete": 60.3,
+  "funded_amount": 42102405,
+  "obligated_amount": 15569436,
+  "expended_amount": 8411806,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-02-02",
+    "current_date": "2024-02-02",
+    "actual_date": "2024-02-02",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2024-09-29",
+    "current_date": "2024-09-29",
+    "actual_date": "2024-09-29",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-05-27",
+    "current_date": "2025-05-27",
+    "actual_date": "2025-05-27",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-01-22",
+    "current_date": "2026-01-22",
+    "actual_date": "2026-01-22",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2026-09-19",
+    "current_date": "2026-09-19",
+    "actual_date": "2026-09-19",
+    "status": "complete"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "121369",
+  "name": "MVR Water Supply Project 1",
+  "program_code": "MVD-WAT",
+  "district": "MVR",
+  "division": "MVD",
+  "business_line": "Water Supply",
+  "phase": "Construction",
+  "pdt_lead": "S. Patel",
+  "baseline_finish": "2028-12-28",
+  "current_finish": "2028-12-28",
+  "pct_complete": 31.3,
+  "funded_amount": 64564335,
+  "obligated_amount": 41685416,
+  "expended_amount": 24300029,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-09-15",
+    "current_date": "2025-09-15",
+    "actual_date": "2025-09-15",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-05-13",
+    "current_date": "2026-05-13",
+    "actual_date": "2026-05-13",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-01-08",
+    "current_date": "2027-01-08",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-09-05",
+    "current_date": "2027-09-05",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-05-02",
+    "current_date": "2028-05-02",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "226573",
+  "name": "MVS Water Supply Project 2",
+  "program_code": "MVD-WAT",
+  "district": "MVS",
+  "division": "MVD",
+  "business_line": "Water Supply",
+  "phase": "PED",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2029-02-26",
+  "current_finish": "2029-02-26",
+  "pct_complete": 27.6,
+  "funded_amount": 64564335,
+  "obligated_amount": 57722606,
+  "expended_amount": 30744133,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-11-14",
+    "current_date": "2025-11-14",
+    "actual_date": "2025-11-14",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2026-07-12",
+    "current_date": "2026-07-12",
+    "actual_date": "2026-07-12",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2027-03-09",
+    "current_date": "2027-03-09",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-11-04",
+    "current_date": "2027-11-04",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2028-07-01",
+    "current_date": "2028-07-01",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "304269",
+  "name": "MVR Water Supply Project 3",
+  "program_code": "MVD-WAT",
+  "district": "MVR",
+  "division": "MVD",
+  "business_line": "Water Supply",
+  "phase": "Feasibility",
+  "pdt_lead": "T. Nguyen",
+  "baseline_finish": "2028-04-11",
+  "current_finish": "2028-05-11",
+  "pct_complete": 96.8,
+  "funded_amount": 64564335,
+  "obligated_amount": 21546337,
+  "expended_amount": 13714142,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-12-28",
+    "current_date": "2024-12-28",
+    "actual_date": "2024-12-28",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-08-25",
+    "current_date": "2025-08-25",
+    "actual_date": "2025-08-25",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-04-22",
+    "current_date": "2026-04-22",
+    "actual_date": "2026-04-22",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-12-18",
+    "current_date": "2027-01-17",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-08-15",
+    "current_date": "2027-09-14",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "293121",
+  "name": "MVR Water Supply Project 4",
+  "program_code": "MVD-WAT",
+  "district": "MVR",
+  "division": "MVD",
+  "business_line": "Water Supply",
+  "phase": "PED",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2027-11-29",
+  "current_finish": "2028-02-27",
+  "pct_complete": 50.9,
+  "funded_amount": 64564335,
+  "obligated_amount": 32882064,
+  "expended_amount": 22146815,
+  "schedule_health": "at_risk",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-08-16",
+    "current_date": "2024-08-16",
+    "actual_date": "2024-08-16",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-04-13",
+    "current_date": "2025-04-13",
+    "actual_date": "2025-04-13",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2025-12-09",
+    "current_date": "2025-12-09",
+    "actual_date": "2025-12-09",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-08-06",
+    "current_date": "2026-08-06",
+    "actual_date": "2026-08-06",
+    "status": "complete"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-04-03",
+    "current_date": "2027-07-02",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "302309",
+  "name": "SWT Water Supply Project 1",
+  "program_code": "SWD-WAT",
+  "district": "SWT",
+  "division": "SWD",
+  "business_line": "Water Supply",
+  "phase": "O&M",
+  "pdt_lead": "K. Brooks",
+  "baseline_finish": "2028-02-08",
+  "current_finish": "2028-02-08",
+  "pct_complete": 13.1,
+  "funded_amount": 65077724,
+  "obligated_amount": 30810439,
+  "expended_amount": 26822453,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-10-26",
+    "current_date": "2024-10-26",
+    "actual_date": "2024-10-26",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-06-23",
+    "current_date": "2025-06-23",
+    "actual_date": "2025-06-23",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-02-18",
+    "current_date": "2026-02-18",
+    "actual_date": "2026-02-18",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-10-16",
+    "current_date": "2026-10-16",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-06-13",
+    "current_date": "2027-06-13",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "336437",
+  "name": "SWL Water Supply Project 2",
+  "program_code": "SWD-WAT",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Water Supply",
+  "phase": "Feasibility",
+  "pdt_lead": "M. Chen",
+  "baseline_finish": "2028-02-01",
+  "current_finish": "2028-02-01",
+  "pct_complete": 67.7,
+  "funded_amount": 65077724,
+  "obligated_amount": 22589281,
+  "expended_amount": 21413728,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-10-19",
+    "current_date": "2024-10-19",
+    "actual_date": "2024-10-19",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-06-16",
+    "current_date": "2025-06-16",
+    "actual_date": "2025-06-16",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-02-11",
+    "current_date": "2026-02-11",
+    "actual_date": "2026-02-11",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-10-09",
+    "current_date": "2026-10-09",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-06-06",
+    "current_date": "2027-06-06",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "275792",
+  "name": "SWL Water Supply Project 3",
+  "program_code": "SWD-WAT",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Water Supply",
+  "phase": "Construction",
+  "pdt_lead": "T. Nguyen",
+  "baseline_finish": "2028-01-31",
+  "current_finish": "2028-01-31",
+  "pct_complete": 18.5,
+  "funded_amount": 65077724,
+  "obligated_amount": 38123517,
+  "expended_amount": 19721488,
+  "schedule_health": "on_track",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2024-10-18",
+    "current_date": "2024-10-18",
+    "actual_date": "2024-10-18",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-06-15",
+    "current_date": "2025-06-15",
+    "actual_date": "2025-06-15",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-02-10",
+    "current_date": "2026-02-10",
+    "actual_date": "2026-02-10",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2026-10-08",
+    "current_date": "2026-10-08",
+    "actual_date": null,
+    "status": "scheduled"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-06-05",
+    "current_date": "2027-06-05",
+    "actual_date": null,
+    "status": "scheduled"
+   }
+  ]
+ },
+ {
+  "p2_project_no": "336255",
+  "name": "SWL Water Supply Project 4",
+  "program_code": "SWD-WAT",
+  "district": "SWL",
+  "division": "SWD",
+  "business_line": "Water Supply",
+  "phase": "Feasibility",
+  "pdt_lead": "R. Okafor",
+  "baseline_finish": "2028-07-10",
+  "current_finish": "2029-01-06",
+  "pct_complete": 45.3,
+  "funded_amount": 65077724,
+  "obligated_amount": 38917388,
+  "expended_amount": 21992590,
+  "schedule_health": "late",
+  "milestones": [
+   {
+    "code": "FCSA",
+    "name": "Feasibility Cost Share Agreement",
+    "baseline_date": "2025-03-28",
+    "current_date": "2025-03-28",
+    "actual_date": "2025-03-28",
+    "status": "complete"
+   },
+   {
+    "code": "CHIEF",
+    "name": "Chief's Report",
+    "baseline_date": "2025-11-23",
+    "current_date": "2025-11-23",
+    "actual_date": "2025-11-23",
+    "status": "complete"
+   },
+   {
+    "code": "PPA",
+    "name": "Project Partnership Agreement",
+    "baseline_date": "2026-07-21",
+    "current_date": "2026-07-21",
+    "actual_date": "2026-07-21",
+    "status": "complete"
+   },
+   {
+    "code": "AWARD",
+    "name": "Construction Award",
+    "baseline_date": "2027-03-18",
+    "current_date": "2027-09-14",
+    "actual_date": null,
+    "status": "slipped"
+   },
+   {
+    "code": "BCOES",
+    "name": "BCOES Certification",
+    "baseline_date": "2027-11-13",
+    "current_date": "2028-05-11",
+    "actual_date": null,
+    "status": "slipped"
+   }
+  ]
+ }
+]

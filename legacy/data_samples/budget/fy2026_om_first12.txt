@@ -1,0 +1,468 @@
+          OPERATION
+             AND
+         MAINTENANCE
+
+
+
+
+KEY TO ABBREVIATIONS:
+ENS = ENVIRONMENT
+FRM = FLOOD RISK MANAGEMENT
+HMTF = HARBOR MAINTENANCE TRUST FUND
+HYD = HYDROPOWER
+NAV = NAVIGATION
+REC = RECREATION
+WTR = WATER SUPPLY
+This page is intentionally blank.
+                   OPERATION AND MAINTENANCE
+
+STATE                               PROJECT                           PAGE
+ALABAMA      ALABAMA RIVER LAKES, AL                                   1
+             BLACK WARRIOR AND TOMBIGBEE RIVERS, AL                    1
+             GULF INTRACOASTAL WATERWAY, AL                            1
+             TENNESSEE - TOMBIGBEE WATERWAY WILDLIFE MITIGATION, AL
+                                                                       1
+             & MS
+             TENNESSEE - TOMBIGBEE WATERWAY, AL & MS                   1
+             WALTER F. GEORGE LOCK AND DAM, AL & GA                    1
+ALASKA       CHENA RIVER LAKES, AK (MOOSE CREEK DAM)                   1
+ARIZONA      ALAMO LAKE, AZ                                            5
+             PAINTED ROCK DAM, AZ                                      5
+             WHITLOW RANCH DAM, AZ                                     5
+ARKANSAS     BEAVER LAKE, AR                                           2
+             BLAKELY MOUNTAIN DAM, LAKE OUACHITA, AR                   2
+             BLUE MOUNTAIN LAKE, AR                                    2
+             BULL SHOALS LAKE, AR                                      2
+             DEGRAY LAKE, AR                                           2
+             DEQUEEN LAKE, AR                                          3
+             DIERKS LAKE, AR                                           3
+             GILLHAM LAKE, AR                                          3
+             GREERS FERRY LAKE, AR                                     3
+             MCCLELLAN-KERR ARKANSAS RIVER NAVIGATION SYSTEM, AR       3
+             MILLWOOD LAKE, AR                                         4
+             NARROWS DAM, LAKE GREESON, AR                             4
+             NIMROD LAKE, AR                                           4
+             NORFORK LAKE, AR                                          4
+             OUACHITA AND BLACK RIVERS, AR & LA                        4
+             WHITE RIVER, AR                                           4
+CALIFORNIA   BLACK BUTTE LAKE, CA                                      5
+             BUCHANAN DAM, H.V. EASTMAN LAKE, CA                       5
+             COYOTE VALLEY DAM, LAKE MENDOCINO, CA                     5
+             DRY CREEK (WARM SPRINGS) LAKE AND CHANNEL, CA             5
+             FARMINGTON DAM, CA                                        6
+             HIDDEN DAM, HENSLEY LAKE, CA                              6
+             ISABELLA LAKE, CA                                         6
+             LOS ANGELES COUNTY DRAINAGE AREA, CA                      6
+             MERCED COUNTY STREAMS, CA                                 6
+             MOJAVE RIVER DAM, CA                                      6
+             NEW HOGAN LAKE, CA                                        6
+             NEW MELONES LAKE, DOWNSTREAM CHANNEL, CA                  6
+             PINE FLAT LAKE, CA                                        7
+                    OPERATION AND MAINTENANCE
+
+STATE                                PROJECT                          PAGE
+              SACRAMENTO RIVER AND TRIBUTARIES
+CALIFORNIA                                                             7
+              (DEBRIS CONTROL), CA 1/
+              SAN FRANCISCO BAY DELTA MODEL STRUCTURE, CA               7
+              SANTA ANA RIVER BASIN, CA                                 7
+              SUCCESS LAKE, CA                                          7
+              TERMINUS DAM, LAKE KAWEAH, CA                             7
+              YUBA RIVER, CA 1/                                         7
+COLORADO      BEAR CREEK LAKE, CO                                       7
+              CHATFIELD LAKE, CO                                        8
+              CHERRY CREEK LAKE, CO                                     8
+              JOHN MARTIN RESERVOIR, CO                                 8
+              TRINIDAD LAKE, CO                                         8
+CONNECTICUT   BLACK ROCK LAKE, CT                                       8
+              COLEBROOK RIVER LAKE, CT                                  8
+              HANCOCK BROOK LAKE, CT                                    8
+              HOP BROOK LAKE, CT                                        9
+              MANSFIELD HOLLOW LAKE, CT                                 9
+              NORTHFIELD BROOK LAKE, CT                                 9
+              STAMFORD HURRICANE BARRIER, CT                            9
+              THOMASTON DAM, CT                                         9
+              WEST THOMPSON LAKE, CT                                    9
+FLORIDA       CENTRAL & SOUTHERN FLORIDA (C&SF), FL 1/                  9
+              INTRACOASTAL WATERWAY, JACKSONVILLE TO MIAMI, FL          9
+              JIM WOODRUFF LOCK AND DAM, LAKE SEMINOLE, FL, AL & GA    10
+              OKEECHOBEE WATERWAY, FL 1/                               10
+              SOUTH FLORIDA ECOSYSTEM RESTORATION, FL                  10
+GEORGIA       ALLATOONA LAKE, GA                                       10
+              APALACHICOLA, CHATTAHOOCHEE AND FLINT RIVERS,
+                                                                       10
+              GA, AL & FL
+              ATLANTIC INTRACOASTAL WATERWAY, GA                       10
+              BUFORD DAM AND LAKE SIDNEY LANIER, GA                    10
+              CARTERS DAM AND LAKE, GA                                 11
+              HARTWELL LAKE, GA & SC                                   11
+              J. STROM THURMOND LAKE, GA & SC                          11
+              RICHARD B. RUSSELL DAM AND LAKE, GA & SC                 11
+              WEST POINT DAM AND LAKE, GA & AL                         12
+HAWAII        BARBERS POINT HARBOR, HI                                 12
+IDAHO         ALBENI FALLS DAM, ID                                     13
+              DWORSHAK DAM AND RESERVOIR, ID                           13
+              LUCKY PEAK LAKE, ID                                      13
+ILLINOIS      CARLYLE LAKE, IL                                         13
+                  OPERATION AND MAINTENANCE
+
+STATE                               PROJECT                            PAGE
+ILLINOIS   CHICAGO RIVER, IL                                            13
+           CHICAGO SANITARY AND SHIP CANAL DISPERSAL BARRIERS, IL       13
+           FARM CREEK RESERVOIRS, IL                                    13
+           ILLINOIS WATERWAY (MVR PORTION), IL & IN                     13
+           ILLINOIS WATERWAY (MVS PORTION), IL & IN                     13
+           KASKASKIA RIVER NAVIGATION, IL                               14
+           LAKE SHELBYVILLE, IL                                         14
+           MISSISSIPPI RIVER BETWEEN MISSOURI RIVER AND
+                                                                        14
+           MINNEAPOLIS (MVR PORTION), IL
+           MISSISSIPPI RIVER BETWEEN MISSOURI RIVER AND
+                                                                        14
+           MINNEAPOLIS (MVS PORTION), IL
+           REND LAKE, IL                                                14
+INDIANA    BROOKVILLE LAKE, IN                                          14
+           CAGLES MILL LAKE, IN                                         15
+           CECIL M. HARDEN LAKE, IN                                     15
+           J. EDWARD ROUSH LAKE, IN                                     15
+           MISSISSINEWA LAKE, IN                                        15
+           MONROE LAKE, IN                                              15
+           PATOKA LAKE, IN                                              15
+           SALAMONIE LAKE, IN                                           15
+IOWA       CORALVILLE LAKE, IA                                          12
+           MISSOURI RIVER - SIOUX CITY TO THE MOUTH, IA, KS, MO & NE    12
+           RATHBUN LAKE, IA                                             12
+           RED ROCK DAM AND LAKE RED ROCK, IA                           12
+           SAYLORVILLE LAKE, IA                                         12
+KANSAS     CLINTON LAKE, KS                                             16
+           COUNCIL GROVE LAKE, KS                                       16
+           EL DORADO LAKE, KS                                           16
+           ELK CITY LAKE, KS                                            16
+           FALL RIVER LAKE, KS                                          16
+           HILLSDALE LAKE, KS                                           16
+           JOHN REDMOND DAM AND RESERVOIR, KS                           17
+           KANOPOLIS LAKE, KS                                           17
+           MARION LAKE, KS                                              17
+           MELVERN LAKE, KS                                             17
+           MILFORD LAKE, KS                                             17
+           PEARSON - SKUBITZ BIG HILL LAKE, KS                          18
+           PERRY LAKE, KS                                               18
+           POMONA LAKE, KS                                              18
+           TORONTO LAKE, KS                                             18
+           TUTTLE CREEK LAKE, KS                                        18
+                      OPERATION AND MAINTENANCE
+
+STATE                                 PROJECT                    PAGE
+KANSAS          WILSON LAKE, KS                                   18
+KENTUCKY        BARKLEY DAM AND LAKE BARKLEY, KY & TN             19
+                BARREN RIVER LAKE, KY                             19
+                BUCKHORN LAKE, KY                                 19
+                CARR CREEK LAKE, KY                               19
+                CAVE RUN LAKE, KY                                 19
+                DEWEY LAKE, KY                                    20
+                FALLS OF THE OHIO NATIONAL WILDLIFE, KY & IN      20
+                FISHTRAP LAKE, KY                                 20
+                GRAYSON LAKE, KY                                  20
+                GREEN AND BARREN RIVERS, KY                       20
+                GREEN RIVER LAKE, KY                              20
+                LAUREL RIVER LAKE, KY                             20
+                MARTINS FORK LAKE, KY                             21
+                MIDDLESBORO CUMBERLAND RIVER BASIN, KY            21
+                NOLIN LAKE, KY                                    21
+                OHIO RIVER LOCKS AND DAMS, KY, IL, IN & OH        21
+                OHIO RIVER OPEN CHANNEL WORK, KY, IL, IN & OH     21
+                PAINTSVILLE LAKE, KY                              21
+                ROUGH RIVER LAKE, KY                              21
+                TAYLORSVILLE LAKE, KY                             22
+                WOLF CREEK DAM, LAKE CUMBERLAND, KY               22
+                YATESVILLE LAKE, KY                               22
+LOUISIANA       BAYOU BODCAU RESERVOIR, LA                        22
+                BAYOU PIERRE, LA                                  22
+                CADDO LAKE, LA                                    22
+                GULF INTRACOASTAL WATERWAY, LA                    22
+                J. BENNETT JOHNSTON WATERWAY, LA                  22
+                WALLACE LAKE, LA                                  23
+MARYLAND        CUMBERLAND, MD AND RIDGELEY, WV                   24
+                JENNINGS RANDOLPH LAKE, MD & WV                   25
+MASSACHUSETTS   BARRE FALLS DAM, MA                               23
+                BIRCH HILL DAM, MA                                23
+                BUFFUMVILLE LAKE, MA                              23
+                CAPE COD CANAL, MA 1/                             23
+                CHARLES RIVER NATURAL VALLEY STORAGE AREAS, MA    23
+                CONANT BROOK LAKE, MA                             23
+                EAST BRIMFIELD LAKE, MA                           23
+                HODGES VILLAGE DAM, MA                            24
+                KNIGHTVILLE DAM, MA                               24
+                LITTLEVILLE LAKE, MA                              24
+                      OPERATION AND MAINTENANCE
+
+STATE                                  PROJECT                           PAGE
+MASSACHUSETTS   NEW BEDFORD HURRICANE BARRIER, MA                         24
+                TULLY LAKE, MA                                            24
+                WEST HILL DAM, MA                                         24
+                WESTVILLE LAKE, MA                                        24
+MICHIGAN        KEWEENAW WATERWAY, MI 1/                                  25
+                SEBEWAING RIVER, MI                                       25
+                ST. MARYS RIVER, MI 1/                                    25
+MINNESOTA       BIG STONE LAKE AND WHETSTONE RIVER, MN & SD               25
+                DULUTH - SUPERIOR HARBOR, MN & WI 1/                      25
+                LAC QUI PARLE LAKES, MINNESOTA RIVER, MN                  25
+                MISSISSIPPI RIVER BETWEEN MISSOURI RIVER AND
+                                                                          25
+                MINNEAPOLIS (MVP PORTION), MN
+                ORWELL LAKE, MN                                           25
+                RED LAKE RESERVOIR, MN                                    26
+                RESERVOIRS AT HEADWATERS OF MISSISSIPPI RIVER, MN         26
+MISSISSIPPI     EAST FORK, TOMBIGBEE RIVER, MS                            28
+                OKATIBBEE LAKE, MS                                        28
+                PEARL RIVER, MS & LA                                      28
+MISSOURI        CLARENCE CANNON DAM AND MARK TWAIN LAKE, MO               26
+                CLEARWATER LAKE, MO                                       26
+                HARRY S. TRUMAN DAM AND RESERVOIR, MO                     26
+                LITTLE BLUE RIVER LAKES, MO                               26
+                LONG BRANCH LAKE, MO                                      27
+                MISSISSIPPI RIVER BETWEEN THE OHIO AND MISSOURI RIVERS
+                                                                          27
+                (REG WORKS), MO & IL
+                POMME DE TERRE LAKE, MO                                   27
+                SMITHVILLE LAKE, MO                                       27
+                STOCKTON LAKE, MO                                         27
+                TABLE ROCK LAKE, MO & AR                                  28
+MONTANA         FT. PECK DAM AND LAKE, MT                                 28
+                LIBBY DAM, MT                                             28
+NEBRASKA        GAVINS POINT DAM, LEWIS AND CLARK LAKE, NE & SD           30
+                HARLAN COUNTY LAKE, NE                                    30
+                MISSOURI RIVER - KENSLERS BEND, NE TO SIOUX CITY, IA      30
+                PAPILLION CREEK AND TRIBUTARIES LAKES, NE                 30
+                SALT CREEK AND TRIBUTARIES, NE                            30
+NEVADA          MARTIS CREEK LAKE, NV & CA                                32
+                PINE AND MATHEWS CANYONS DAMS, NV                         32
+NEW HAMPSHIRE   BLACKWATER DAM, NH                                        30
+                EDWARD MACDOWELL LAKE, NH                                 31
+                FRANKLIN FALLS DAM, NH                                    31
+                       OPERATION AND MAINTENANCE
+
+STATE                                 PROJECT                   PAGE
+NEW HAMPSHIRE    HOPKINTON - EVERETT LAKES, NH                   31
+                 OTTER BROOK LAKE, NH                            31
+                 SURRY MOUNTAIN LAKE, NH                         31
+NEW JERSEY       PASSAIC RIVER FLOOD WARNING SYSTEMS, NJ         31
+NEW MEXICO       ABIQUIU DAM, NM                                 31
+                 COCHITI LAKE, NM                                31
+                 CONCHAS LAKE, NM                                32
+                 GALISTEO DAM, NM                                32
+                 JEMEZ CANYON DAM, NM                            32
+                 SANTA ROSA DAM AND LAKE, NM                     32
+                 TWO RIVERS DAM, NM                              32
+                 UPPER RIO GRANDE WATER OPERATIONS MODEL, NM     32
+NEW YORK         ALMOND LAKE, NY                                 32
+                 ARKPORT DAM, NY                                 33
+                 EAST SIDNEY LAKE, NY                            33
+                 MOUNT MORRIS DAM, NY                            33
+                 SOUTHERN NEW YORK FLOOD CONTROL PROJECTS, NY    33
+                 WHITNEY POINT LAKE, NY                          33
+NORTH CAROLINA   ATLANTIC INTRACOASTAL WATERWAY, NC              28
+                 B. EVERETT JORDAN DAM AND LAKE, NC              28
+                 CAPE FEAR RIVER ABOVE WILMINGTON, NC 1/         29
+                 FALLS LAKE, NC                                  29
+                 W. KERR SCOTT DAM AND RESERVOIR, NC             29
+NORTH DAKOTA     BOWMAN HALEY LAKE, ND                           29
+                 GARRISON DAM, LAKE SAKAKAWEA, ND                29
+                 HOMME LAKE, ND                                  29
+                 LAKE ASHTABULA AND BALDHILL DAM, ND             29
+                 PIPESTEM LAKE, ND                               30
+                 SOURIS RIVER, ND                                30
+OHIO             ALUM CREEK LAKE, OH                             33
+                 BERLIN LAKE, OH                                 33
+                 CAESAR CREEK LAKE, OH                           34
+                 CLARENCE J. BROWN DAM AND RESERVOIR, OH         34
+                 DEER CREEK LAKE, OH                             34
+                 DELAWARE LAKE, OH                               34
+                 DILLON LAKE, OH                                 34
+                 MASSILLON LOCAL PROTECTION PROJECT, OH          34
+                 MICHAEL J. KIRWAN DAM AND RESERVOIR, OH         34
+                 MOSQUITO CREEK LAKE, OH                         35
+                 MUSKINGUM RIVER LAKES, OH                       35
+                 NORTH BRANCH KOKOSING RIVER LAKE, OH            35
+                 OPERATION AND MAINTENANCE
+
+STATE                             PROJECT                          PAGE
+OHIO       OHIO - MISSISSIPPI FLOOD CONTROL, OH                     35
+           PAINT CREEK LAKE, OH                                     35
+           TOM JENKINS DAM, OH                                      35
+           WEST FORK OF MILL CREEK LAKE, OH                         35
+           WILLIAM H. HARSHA LAKE, OH                               36
+OKLAHOMA   ARCADIA LAKE, OK                                         36
+           BIRCH LAKE, OK                                           36
+           BROKEN BOW LAKE, OK                                      36
+           CANTON LAKE, OK                                          36
+           COPAN LAKE, OK                                           37
+           EUFAULA LAKE, OK                                         37
+           FORT GIBSON LAKE, OK                                     37
+           FORT SUPPLY LAKE, OK                                     37
+           GREAT SALT PLAINS LAKE, OK                               37
+           HEYBURN LAKE, OK                                         37
+           HUGO LAKE, OK                                            38
+           HULAH LAKE, OK                                           38
+           KAW LAKE, OK                                             38
+           KEYSTONE LAKE, OK                                        38
+           MCCLELLAN - KERR ARKANSAS RIVER NAVIGATION SYSTEM, OK    38
+           OOLOGAH LAKE, OK                                         39
+           OPTIMA LAKE, OK                                          39
+           PENSACOLA RESERVOIR, LAKE OF THE CHEROKEES, OK           39
+           PINE CREEK LAKE, OK                                      39
+           SARDIS LAKE, OK                                          39
+           SKIATOOK LAKE, OK                                        39
+           TENKILLER FERRY LAKE, OK                                 39
+           WAURIKA LAKE, OK                                         40
+           WISTER LAKE, OK                                          40
+OREGON     APPLEGATE LAKE, OR                                       40
+           BLUE RIVER LAKE, OR                                      40
+           BONNEVILLE LOCK AND DAM, OR & WA 1/                      40
+           COTTAGE GROVE LAKE, OR                                   40
+           COUGAR LAKE, OR                                          41
+           DETROIT LAKE, OR                                         41
+           DORENA LAKE, OR                                          41
+           ELK CREEK LAKE, OR                                       41
+           FALL CREEK LAKE, OR                                      41
+           FERN RIDGE LAKE, OR                                      41
+           GREEN PETER - FOSTER LAKES, OR                           42
+           HILLS CREEK LAKE, OR                                     42
+                       OPERATION AND MAINTENANCE
+
+STATE                                  PROJECT                PAGE
+OREGON           JOHN DAY LOCK AND DAM, OR & WA                42
+                 LOOKOUT POINT LAKE, OR                        42
+                 LOST CREEK LAKE, OR                           42
+                 MCNARY LOCK AND DAM, OR & WA                  42
+                 WILLAMETTE RIVER AT WILLAMETTE FALLS, OR      42
+                 WILLAMETTE RIVER BANK PROTECTION, OR          43
+                 WILLOW CREEK LAKE, OR                         43
+PENNSYLVANIA     ALLEGHENY RIVER, PA                           43
+                 ALVIN R. BUSH DAM, PA                         43
+                 AYLESWORTH CREEK LAKE, PA                     43
+                 BELTZVILLE LAKE, PA                           43
+                 BLUE MARSH LAKE, PA                           43
+                 CONEMAUGH RIVER LAKE, PA                      43
+                 COWANESQUE LAKE, PA                           44
+                 CROOKED CREEK LAKE, PA                        44
+                 CURWENSVILLE LAKE, PA                         44
+                 EAST BRANCH CLARION RIVER LAKE, PA            44
+                 FOSTER JOSEPH SAYERS DAM, PA                  44
+                 FRANCIS E. WALTER DAM, PA                     44
+                 GENERAL EDGAR JADWIN DAM AND RESERVOIR, PA    44
+                 JOHNSTOWN, PA                                 44
+                 KINZUA DAM AND ALLEGHENY RESERVOIR, PA        45
+                 LOYALHANNA LAKE, PA                           45
+                 MAHONING CREEK LAKE, PA                       45
+                 MONONGAHELA RIVER, PA & WV                    45
+                 OHIO RIVER LOCKS AND DAMS, PA, OH & WV        45
+                 OHIO RIVER OPEN CHANNEL WORK, PA, OH & WV     45
+                 PROMPTON LAKE, PA                             45
+                 PUNXSUTAWNEY, PA                              45
+                 RAYSTOWN LAKE, PA                             45
+                 SHENANGO RIVER LAKE, PA                       46
+                 STILLWATER LAKE, PA                           46
+                 TIOGA-HAMMOND LAKES, PA                       46
+                 TIONESTA LAKE, PA                             46
+                 UNION CITY LAKE, PA                           46
+                 WOODCOCK CREEK LAKE, PA                       46
+                 YORK INDIAN ROCK DAM, PA                      46
+                 YOUGHIOGHENY RIVER LAKE, PA & MD              47
+RHODE ISLAND     FOX POINT BARRIER, NARRANGANSETT BAY, RI      47
+                 WOONSOCKET, RI                                47
+SOUTH CAROLINA   ATLANTIC INTRACOASTAL WATERWAY, SC            47
+                      OPERATION AND MAINTENANCE
+
+STATE                                  PROJECT                             PAGE
+SOUTH DAKOTA   BIG BEND DAM, LAKE SHARPE, SD                                47
+               COLD BROOK LAKE, SD                                          47
+               COTTONWOOD SPRINGS LAKE, SD                                  47
+               FORT RANDALL DAM, LAKE FRANCIS CASE, SD                      48
+               LAKE TRAVERSE, SD & MN                                       48
+               OAHE DAM, LAKE OAHE, SD & ND                                 48
+TENNESSEE      CENTER HILL LAKE, TN                                         48
+               CHEATHAM LOCK AND DAM, TN                                    48
+               CORDELL HULL DAM AND RESERVOIR, TN                           49
+               DALE HOLLOW LAKE, TN                                         49
+               J. PERCY PRIEST DAM AND RESERVOIR, TN                        49
+               OLD HICKORY LOCK AND DAM, TN                                 49
+               TENNESSEE RIVER, TN                                          50
+TEXAS          AQUILLA LAKE, TX                                             50
+               ARKANSAS - RED RIVER BASINS CHLORIDE CONTROL - AREA VIII,
+                                                                            50
+               TX
+               BARDWELL LAKE, TX                                            50
+               BELTON LAKE, TX                                              50
+               BENBROOK LAKE, TX                                            50
+               BUFFALO BAYOU AND TRIBUTARIES, TX                            50
+               CANYON LAKE, TX                                              51
+               DENISON DAM, LAKE TEXOMA, TX                                 51
+               ESTELLINE SPRINGS EXPERIMENTAL PROJECT, TX                   51
+               FERRELLS BRIDGE DAM, LAKE O' THE PINES, TX                   51
+               GRANGER LAKE, TX                                             51
+               GRAPEVINE LAKE, TX                                           51
+               GULF INTRACOASTAL WATERWAY, TX                               51
+               HORDS CREEK LAKE, TX                                         52
+               JIM CHAPMAN LAKE, TX                                         52
+               JOE POOL LAKE, TX                                            52
+               LAKE KEMP, TX                                                52
+               LAVON LAKE, TX                                               52
+               LEWISVILLE DAM, TX                                           52
+               NAVARRO MILLS LAKE, TX                                       53
+               NORTH SAN GABRIEL DAM AND LAKE GEORGETOWN, TX                53
+               O. C. FISHER DAM AND LAKE, TX                                53
+               PAT MAYSE LAKE, TX                                           53
+               PROCTOR LAKE, TX                                             53
+               RAY ROBERTS LAKE, TX                                         54
+               SAM RAYBURN DAM AND RESERVOIR, TX                            54
+               SOMERVILLE LAKE, TX                                          54
+                      OPERATION AND MAINTENANCE
+
+STATE                                 PROJECT                     PAGE
+TEXAS           STILLHOUSE HOLLOW DAM, TX                          54
+                TOWN BLUFF DAM, B.A. STEINHAGEN LAKE AND ROBERT
+                                                                   54
+                DOUGLAS WILLIS HYDROPOWER PROJECT, TX
+                WACO LAKE, TX                                      55
+                WALLISVILLE LAKE, TX                               55
+                WHITNEY LAKE, TX                                   55
+                WRIGHT PATMAN DAM AND LAKE, TX                     55
+VERMONT         BALL MOUNTAIN LAKE, VT                             56
+                NORTH HARTLAND LAKE, VT                            56
+                NORTH SPRINGFIELD LAKE, VT                         56
+                TOWNSHEND LAKE, VT                                 57
+                UNION VILLAGE DAM, VT                              57
+                ATLANTIC INTRACOASTAL WATERWAY - ALBEMARLE AND
+VIRGINIA                                                           55
+                CHESAPEAKE CANAL ROUTE, VA
+                ATLANTIC INTRACOASTAL WATERWAY - DISMAL SWAMP
+                                                                   55
+                CANAL ROUTE, VA
+                GATHRIGHT DAM AND LAKE MOOMAW, VA                  55
+                JOHN H. KERR LAKE, VA & NC                         55
+                JOHN W. FLANNAGAN DAM AND RESERVOIR, VA            56
+                NORTH FORK OF POUND RIVER LAKE, VA                 56
+                PHILPOTT LAKE, VA                                  56
+WASHINGTON      CHIEF JOSEPH DAM, WA                               57
+                HOWARD A. HANSON DAM, WA                           57
+                ICE HARBOR LOCK AND DAM, WA                        57
+                LAKE WASHINGTON SHIP CANAL, WA 1/                  57
+                LITTLE GOOSE LOCK AND DAM, WA                      57
+                LOWER GRANITE LOCK AND DAM, WA                     57
+                LOWER MONUMENTAL LOCK AND DAM, WA                  57
+                MILL CREEK LAKE, WA                                58
+                MOUNT SAINT HELENS SEDIMENT CONTROL, WA            58
+                MUD MOUNTAIN DAM, WA                               58
+                STILLAGUAMISH RIVER, WA                            58
+                TACOMA - PUYALLUP RIVER, WA                        58
+                THE DALLES LOCK AND DAM, WA & OR                   58
+WEST VIRGINIA   BEECH FORK LAKE, WV                                58
+                BLUESTONE LAKE, WV                                 59
+                BURNSVILLE LAKE, WV                                59
+                EAST LYNN LAKE, WV                                 59
+                ELKINS, WV                                         59
+                KANAWHA RIVER LOCKS AND DAMS, WV                   59
+                OHIO RIVER LOCKS AND DAMS, WV, KY & OH             59
+                OHIO RIVER OPEN CHANNEL WORK, WV, KY & OH          59
+

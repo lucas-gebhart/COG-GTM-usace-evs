@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Date: Tue, 06 Oct 2026 14:27:49 GMT
+Server: USA
+Set-Cookie: session=expiry=1791297473929651;Max-Age=600;httpOnly;secure;
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: x-requested-with, Content-Type, origin, authorization, accept, client-security-token
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT
+Content-Security-Policy: frame-src 'self' blob: data: *.usace.army.mil *.sec.usace.army.mil *.ops.usace.army.mil *.cwbi.mil *.disdi.osd.mil *.usace.dps.mil usace.dps.mil *.noaa.gov https://login.microsoftonline.us https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; frame-ancestors 'self' blob: data: *.usace.army.mil *.sec.usace.army.mil *.ops.usace.army.mil *.cwbi.mil *.disdi.osd.mil *.usace.dps.mil usace.dps.mil *.noaa.gov
+Access-Control-Max-Age: 600
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Type: text/html;charset=utf-8
+ETag: "KcR9embETK04NNmg32iP1zBU5109wI6Gtnjh6tNT69ovvmUxHnIkcH7iko0gsSBHxiy/OczFJmWe5xjrMqldMQ=="
+Set-Cookie: session=expiry=1791297473929651;Max-Age=600;httpOnly;secure;
+Vary: Origin
+Transfer-Encoding: chunked
+

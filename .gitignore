@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+.env
+a11y-results/
+playwright-report/
+test-results/
+.DS_Store
+legacy/strategic-planner/*.zip
+apps/web/public/uswds/
+.pytest_cache/
+.ruff_cache/
+*.tsbuildinfo

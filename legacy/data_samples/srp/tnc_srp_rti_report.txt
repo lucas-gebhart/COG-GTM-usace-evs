@@ -1,0 +1,2406 @@
+Sustainable Rivers
+Program Cost-
+Benefit Analysis
+Final Report | March 2026
+
+
+
+
+RTI Project Number        Prepared for:
+0219728.002               The Nature Conservancy
+                          4245 Fairfax Drive
+Prepared by:
+                          Arlington, VA 22203
+Smit Vasquez Caballero
+Robert Beach
+Brooke Shaw
+Daden Goldfinger
+RTI International
+3040 E. Cornwallis Road
+Durham, NC 27713-2852
+www.rti.org                                        © Rory Doyle
+                                                                               Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Contents
+
+
+Executive Summary .................................................................................................................... 1
+
+1.     Introduction ........................................................................................................................ 1
+
+2.     SRP Background................................................................................................................ 2
+
+3.     Data and Methods .............................................................................................................. 3
+       3.1     Data Sources .................................................................................................. 3
+               3.1.1 Expert Interviews ................................................................................. 3
+               3.1.2 Secondary Data Collection .................................................................. 3
+       3.2     Methods .......................................................................................................... 4
+               3.2.1 Costs ................................................................................................... 4
+               3.2.2 Benefits Estimates ............................................................................... 5
+               3.2.3 Net Benefits Estimates ........................................................................ 6
+               3.2.4      Cost–Benefit Analysis (CBA) ............................................................... 7
+
+4.     Measures of Economic Benefit......................................................................................... 9
+       4.1     Case Study 1: Mel Price Lock and Dam ......................................................... 9
+               4.1.1 Benefits ............................................................................................. 10
+               4.1.2 Cost–Benefit Analysis ....................................................................... 13
+               4.1.3      Sensitivity Analysis ............................................................................ 14
+       4.2     Case Study 2: Des Moines River .................................................................. 15
+               4.2.1 Benefits ............................................................................................. 16
+               4.2.2 Cost–Benefit Analysis ....................................................................... 19
+               4.2.3      Sensitivity Analysis ............................................................................ 20
+       4.3     Case Study 3: Caddo Lake ........................................................................... 22
+               4.3.1 Benefits ............................................................................................. 23
+               4.3.2      Cost–Benefit Analysis ....................................................................... 25
+               4.3.3      Sensitivity Analysis ............................................................................ 26
+       4.4     Case Study 4: Green River ........................................................................... 28
+               4.4.1      Benefits ............................................................................................. 29
+               4.4.2      Cost–Benefit Analysis ....................................................................... 31
+               4.4.3      Sensitivity Analysis ............................................................................ 31
+
+5.     Aggregation of Impacts ................................................................................................... 32
+
+6.     Conclusion ....................................................................................................................... 36
+
+
+
+
+                                                                                                                                           iii
+                                                                               Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+7.      Acknowledgments ........................................................................................................... 37
+
+8.      References........................................................................................................................ 38
+
+Appendix A .............................................................................................................................. A-1
+
+
+
+
+                                                                                                                                          iv
+                                                                         Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Figures
+
+Figure 4-1.   Cumulative Present Value Costs and Benefits, and NPV for Mel Price
+              SRP, 2020 to 2040 .............................................................................................. 13
+Figure 4-2.   Cumulative Present Value Costs and Benefits and NPV for Des Moines
+              River SRP, 2020 to 2040..................................................................................... 20
+Figure 4-3.   Present Value Costs, Present Value Benefits, NPV, and BCR for Caddo
+              Lake SRP, 2020 to 2040 ..................................................................................... 26
+Figure 4-4 Cumulative Discounted Benefits for Green River, 2010 to 2040 ............................... 31
+Figure 5-1.   Present Value Costs, Present Value Benefits, NPV, and BCR for Selected
+              SRP Sites, 2020 to 2040 ..................................................................................... 33
+
+
+
+
+                                                                                                                               v
+                                                                              Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Tables
+
+Table 3-1 Environmental Actions, Intended Benefits, and Site Condition Across SRP
+              Projects (Based on Expert Survey Responses) .................................................... 7
+Table 4-1 Mel Price Intended Benefits and Ecosystem Services ............................................... 11
+Table 4-2 Annual Benefits from Mel Price SRP by Environmental Action and Intended
+              Benefit ................................................................................................................. 12
+Table 4-3 NPV and BCR for Mel Price, 2020–2040.................................................................... 14
+Table 4-4 NPV and BCR in 2040 for Mel Price SRP, by Discount Rate ..................................... 14
+Table 4-5 NPV and BCR in 2040 for Mel Price SRP, by Future Cost Assumption ..................... 14
+Table 4-6 Des Moines Intended Benefits and Ecosystem Services ........................................... 18
+Table 4-7 Annual Benefits from Des Moines SRP by Environmental Action and Intended
+             Benefit ................................................................................................................. 19
+Table 4-8 NPV and BCR for Des Moines River, 2015–2040 ...................................................... 20
+Table 4-9 Cumulative NPV and BCR in 2040 for Des Moines River SRP, by Discount
+             Rate ..................................................................................................................... 21
+Table 4-10 NPV and BCR in 2040 for Des Moines SRP, by Future Cost Assumption ............... 21
+Table 4-11 Caddo Lake Intended Benefits and Ecosystem Services ......................................... 24
+Table 4-12   Annual Benefits from Caddo Lake SRP by Environmental Action and
+             Intended Benefit .................................................................................................. 25
+Table 4-13 NPV and BCR for Caddo Lake, 2010–2040 ............................................................. 26
+Table 4-14 Cumulative NPV and BCR in 2040 for Caddo Lake SRP, by Discount Rate ........... 27
+Table 4-15 NPV and BCR in 2040 for Caddo Lake SRP, by Future Cost Assumption .............. 27
+Table 4-16 Green River Intended Benefits and Ecosystem Services ......................................... 30
+Table 4-17 Annual Benefits from Green River SRP by Environmental Action and
+               Intended Benefit .................................................................................................. 30
+Table 5-1 Intended Benefits and Assumed Site Characteristics Across SRP for
+               Aggregate Program Benefits Analysis................................................................. 34
+Table 5-2 NPV and BCR for SRP Portfolio, 2020–2040 ............................................................. 35
+
+
+
+
+                                                                                                                                       vi
+                                                        Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+
+Executive Summary
+The Nature Conservancy (TNC) engaged RTI International to evaluate the economic and
+ecological impacts of the Sustainable Rivers Program (SRP). This assessment estimates the
+monetary value of ecosystem services generated through SRP, which modernizes dam
+operations to improve river health while maintaining authorized uses such as navigation,
+hydropower, and flood risk reduction. The study focuses on four case study sites—Melvin Price
+Locks and Dam (Illinois–Missouri), Des Moines River (Iowa), Caddo Lake/Big Cypress Bayou
+(Texas-Louisiana), and Green River (Kentucky)—and extends results to provide an order-of-
+magnitude estimate for the broader SRP portfolio.
+Since the 1930s, the U.S. Army Corps of Engineers (USACE) has constructed and managed
+large dams to meet national needs. USACE is in the process of updating many of its
+infrastructure management plans to better reflect new engineering technologies, changing
+stakeholder needs, and increased understanding of ecological impacts and opportunities. SRP,
+launched in 2002, is a partnership between USACE, TNC, and diverse stakeholders such as the
+U.S. Fish and Wildlife Service, state natural resource departments, local water utilities, and
+academic institutions. Its mission is to integrate environmental strategies such as environmental
+flows (e-flows) and environmental pool (e-pools) management into dam operations, thereby
+enhancing ecosystem function and community resilience.
+This study used a mixed-methods approach,
+combining literature review, expert interviews, and
+quantitative cost–benefit analysis (CBA). Benefits           “These results indicate that SRP
+were estimated using a transfer regression framework         investments consistently generate
+                                                             substantial economic returns, with
+applied to 55 valuation studies covering ecosystem           benefits exceeding costs within a
+services such as maintenance of life cycles, soil            few years at most sites.”
+fertility, water purification and waste treatment,
+regulation of water and sediment flows, erosion prevention, and recreation and tourism
+opportunities. Cost data were provided by USACE for 2010–2024. The analysis compared
+baseline (no-action) and SRP implementation scenarios, with results projected and values
+quantified through 2040.
+Key Findings
+
+   ▪   Melvin Price Locks and Dam: Net Present Value (NPV) of $2.70 million and benefit–cost
+       ratio (BCR) of 12.43 by 2040; benefits exceed costs within three years, based on
+       cumulative benefits and costs evaluated from 2021 through 2040.
+   ▪   Des Moines River: NPV of $17.70 million and BCR of 8.98; benefits exceed costs by
+       2028, based on analysis of cumulative benefits and costs from 2015 through 2040.
+   ▪   Caddo Lake/Big Cypress Bayou: NPV of $2.86 million and BCR of 7.89; benefits exceed
+       costs within five years, generating positive returns from 2015 onward, with evaluation
+       covering the period from 2012 through 2040.
+
+
+
+
+                                                                                                  ES-1
+                                                       Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+   ▪   Green River: Roughly $20 million in realized benefits since 2010, projected to exceed
+       $37 million by 2040, with cumulative benefits assessed over the 2010–2040 period.
+       Since complete cost data were unavailable, results are expressed as cumulative
+       discounted benefits rather than BCR or NPV.
+   ▪   Portfolio-level: Including the four case study sites and additional program sites, the
+       program yields an estimated NPV of approximately $265 million and a BCR of 13.69
+       under Scenario 1, representing an optimistic ecosystem recovery condition, and an
+       estimated NPV of approximately $243 million with a BCR of 12.63 under Scenario 2,
+       representing a more conservative recovery scenario.
+
+
+These results indicate that SRP investments
+consistently generate substantial economic returns,             “SRP is cost-effective both in the
+with benefits exceeding costs within a few years at             short term and over the full
+most sites. The SRP demonstrates that modernizing               evaluation horizon, underscoring
+                                                                its value as the largest and most
+dam operations can deliver high-value ecosystem
+                                                                comprehensive program of its kind
+services while supporting multiple authorized uses of           in the United States.”
+federal water infrastructure. Despite uncertainties
+inherent in benefit transfer methods, the results are
+robust in both direction and magnitude. SRP is cost-effective both in the short term and over the
+full evaluation horizon, underscoring its value as the largest and most comprehensive program
+of its kind in the United States. Continued investment will ensure that ecological and economic
+benefits persist and expand across diverse river systems.
+
+
+
+
+                                                                                                 ES-2
+                                                                 Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+
+1.      Introduction
+TNC engaged RTI International, an independent scientific research institute, to evaluate the
+impacts of SRP. This report presents the results of our study, which monetizes the benefits
+provided by improved ecosystem services following SRP investments. These benefits are
+associated with implementing environmental actions that improve river health and ecosystem
+function while modernizing dam operations and maintaining or enhancing authorized uses such
+as navigation, hydropower, and flood risk reduction. We focus on case studies of benefits at
+specific sites and also use the collected information to estimate the benefits across the broader
+SRP portfolio.
+This report evaluates the economic and ecological impacts of SRP to more fully describe SRP’s
+impacts to decision-makers and stakeholders, including USACE leadership, policymakers,
+funders, local partners, and the public. It estimates the economic value of ecosystem services1
+enhanced by SRP at four sites—Melvin Price Locks and Dam (Illinois–Missouri; hereafter
+referred to as Mel Price), Des Moines River (Iowa), Caddo Lake/Big Cypress Bayou (Texas-
+Louisiana; hereafter referred to as Caddo Lake), and Green River (Kentucky)—and provides a
+rough estimate of benefits across a portfolio of 16 SRP projects. To accomplish this, we
+employed a mixed-methods approach that combines literature review, expert interviews, and
+quantitative analysis. Our qualitative assessment documents expected benefits from
+environmental actions implemented through SRP. Our quantitative analysis uses CBA to
+estimate the economic value of ecosystem services enhanced by SRP projects, starting from
+the year the project transitions from the start-up phase through 2040.
+The remainder of this report is organized as follows. Section 2 provides additional background
+on SRP, including its history, goals, and implementation framework. Section 3 describes the
+data sources and methodological approach used to estimate the benefits of SRP projects.
+Section 4 presents the results of the CBA for the four case study sites, including key economic
+metrics such as net present benefits, net present costs, NPV, and BCR. Section 5 extends this
+analysis to estimate the overall benefits of the SRP portfolio. Finally, Section 6 concludes with a
+summary of findings and limitations.
+
+
+
+
+1
+ Ecosystem services are the benefits that humans derive from ecosystems and classified into four categories:
+provisioning, regulating, cultural, and supporting services.
+
+
+
+
+                                                                                                               1
+                                                                  Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+
+2.       SRP Background
+Beginning in the 1930s, USACE built hundreds of large dams to meet the nation’s growing
+needs for navigation, flood risk reduction, and hydropower. USACE is in the process of updating
+many of its infrastructure management plans to better reflect new engineering technologies,
+changing stakeholder needs, and increased understanding of ecological impacts and
+opportunities. SRP works with water managers, reservoir operators, scientists, and other
+stakeholders to help modernize dam operations to enhance community, economic and
+environmental benefits provided by existing infrastructure.
+Initiated in 1998 as a pilot on the Green River in Kentucky and formally launched in 2002, SRP
+is a partnership between USACE, TNC, and state, federal, academic and other nonprofit
+partners. Its mission is to enhance the ecological performance of existing water infrastructure by
+integrating environmental strategies into dam operations without compromising authorized
+purposes. SRP operates through a structured process under which each participating site
+progresses through a framework of Advance, Implement, and Incorporate phases2 (USACE &
+TNC, 2025). As of 2024, SRP has engaged more than 50 teams across 27 USACE districts. It is
+the largest and most comprehensive program for implementing environmental strategies such
+as e-flows, e-pools, and conservation locking at federal reservoirs.
+E-flows, a strategy to manage the quantity, timing, and quality of water flows required to sustain
+ecosystems, are at the core of SRP’s approach. When paired with complementary actions such
+as e-pools at reservoirs, e-flows support ecological functions critical to river health. By restoring
+flow regimes and associated habitat conditions, SRP projects have improved fish migration and
+life cycle support, enhanced water quality and sediment transport, reconnected floodplains and
+revitalized wetlands, increased opportunities for recreation, tourism and wildlife viewing, and
+boosted fish populations in reservoirs, among other benefits.
+In each river system, SRP collaborates with local stakeholders to design and implement flow
+prescriptions and reservoir operations that achieve measurable ecological outcomes. These
+outcomes, documented through SRP’s Metrics Framework, include improvements in river miles
+and habitat acres affected, species supported, and ecosystem services delivered (Sustainable
+Rivers Program, 2025). Ultimately, SRP’s documented results show how modernizing dam
+operations can unlock the full environmental potential of existing infrastructure, delivering
+substantial ecosystem service benefits while supporting resilient communities and sustainable
+economies.
+
+
+
+
+2
+ Advance involves engaging stakeholders in a science-based process to define the flow needs of riverine
+ecosystems. Implement focuses on testing the effectiveness and feasibility of the defined flows. Incorporate entails
+embedding e-flow management actions into reservoir operations policies, such as water control manuals.
+
+
+
+
+                                                                                                                   2
+                                                         Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+
+3.     Data and Methods
+3.1    Data Sources
+To estimate the benefits of implementing SRP at each of the four sites, we used a combination
+of primary and secondary data sources. Primary data were collected through interviews and
+surveys with TNC and USACE staff at each project site. Secondary data included internal SRP
+documents, project reports, and GIS data describing site-level ecological characteristics. Below,
+we describe each data source in detail.
+
+3.1.1 Expert Interviews
+At each project site, we conducted two rounds of interviews and a structured survey with key
+project personnel. The first interview aimed to understand the local context, including the
+historical, cultural, social, economic, and ecological significance of the site. Specific goals were
+first to identify environmental actions introduced under SRP. The second goal was to document
+the intended benefits of each environmental action. We considered a wide range of benefits
+including improvements in wetland and floodplain function, enhancement of aquatic habitat, and
+support for wildlife and fisheries, among others.
+Following this initial interview, we synthesized the information and created a site-specific
+inventory of environmental action interventions and their intended benefits. Each benefit was
+then mapped to relevant ecosystem services using The Economics of Ecosystems and
+Biodiversity (TEEB) classification system (de Groot et al., 2021). TEEB was selected because it
+offers a comprehensive and internationally recognized framework for identifying and
+categorizing ecosystem services, ensuring comparability with other studies and consistency in
+terminology. Appendix Table A-1 lists all ecosystem services included in the TEEB
+classification.
+During the second interview, we reviewed this inventory with site representatives to validate the
+identified interventions and intended benefits and confirm or correct associated ecosystem
+service choices. Following the second interview we provided site representatives with a survey
+to collect additional information regarding the conditions of each ecosystem attribute affected by
+the environmental action, the temporal scale over which benefits were expected to accrue, and
+the geographic scale at which benefits are observed or anticipated to occur. These inputs, along
+with secondary data, informed key site-level characteristics used in the benefit estimation
+framework described below.
+
+3.1.2 Secondary Data Collection
+TNC and USACE staff provided budgetary and financial data on program implementation costs
+at the project-site level. We reviewed SRP administrative documents, internal reports, and
+published research to supplement and cross-validate information on intended benefits. These
+sources also provided spatial data, such as the number of acres or river miles affected by each
+
+
+
+
+                                                                                                       3
+                                                                  Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+environmental action (Sustainable Rivers Program, 2025). Finally, we used GIS to generate
+total hectares of relevant ecosystems per site.3
+
+3.2      Methods
+3.2.1 Costs
+We used actual site-level annual costs for environmental action implementation, as reported by
+TNC and USACE staff managing SRP activities, covering the period from initial Advance phase
+through 2024. Cost components across all four sites included a wide range of activities
+necessary to support projects, such as planning and preparatory analyses (modeling, mapping,
+and baseline data collection), as well as monitoring and evaluation efforts (vegetation, soil,
+hydrologic, and fish and wildlife studies). Additional components involved coordination,
+reporting, and the integration of findings into management frameworks.
+Mel Price entered the Advance phase in 2021, with total reported SRP expenditures of
+$218,000 from 2022 to 2024. The Des Moines site entered the Advance phase in 2015, with
+total reported expenditures of $2,040,155 through 2024, and cost data beginning that same
+year.4 Caddo Lake reported $320,000 in total expenditures from 2010 through 2020, although
+the site entered the Advance phase in 2004. Finally, the Green River project recorded $205,000
+in total expenditures from 2010 to 2024; although the site entered the Advance phase in 2002,
+cost data prior to 2010 were unavailable. For consistency, all cost data through 2024 were
+adjusted for inflation, and costs projected beyond 2024 were discounted.5 Since our cost
+information only covers 2010–2024, the analysis does not account for expenditures prior to
+2010, particularly for Caddo Lake and Green River.
+SRP’s role concludes at the prescription and planning stage, after which site staff continue
+implementation without SRP-funded operations or maintenance. Historical cost patterns reflect
+this approach, with many out-years showing zero expenditures and only occasional monitoring
+costs at a limited number of sites. Because the analysis values benefit relative to SRP’s
+incremental investment, and the costs of implementing SRP-recommended changes to
+operations are folded into the duties of USACE officials who already manage operations at
+these facilities, our analysis assumes that post-2024 costs are zero. However, recognizing that
+this assumption may underestimate potential ongoing costs, we conducted a sensitivity analysis
+
+
+
+3
+  The number of hectares per site was estimated using a combination of information from the SRP metrics framework
+and geographic descriptions provided by site representatives in the survey.
+4
+  According to TNC staff, estimated costs at Des Moines are much higher than at other sites due to extensive
+research and monitoring efforts conducted in collaboration with universities and the State of Iowa, including studies
+on shorebird health, fisheries, and wetlands.
+5
+  The cost data we collected are not evenly distributed across the years from when projects entered the Advance
+phase through 2024. In some cases, costs were zero for most years. For example, data from TNC and USACE show
+annual expenditures for the Green River project in 2016, 2023, and 2024, even though it officially entered the
+Advance phase in 2002. This pattern reflects how SRP provides targeted support during specific phases—primarily
+the Advance and Implement stages. Once planning and management prescriptions are completed, SRP’s direct
+funding ends, and site partners (such as USACE or state agencies) continue implementation and monitoring using
+their own budgets. Consequently, years without new SRP-funded activities or monitoring appear as “zero-cost” years.
+
+
+
+
+                                                                                                                   4
+                                                                  Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+in which future costs were assumed to equal 50% of total costs to date, distributed evenly over
+the remaining analysis period.
+
+3.2.2 Benefits Estimates
+To estimate the benefits of each SRP project, we first applied a benefit transfer approach6 using
+a meta-analysis value transfer function. Specifically, we estimated a meta-regression model that
+predicts ecosystem service values (in 2025 USD per hectare per year) as a function of site and
+study characteristics. Following Brander et al. (2012) and Amatucci et al. (2024), we used the
+Ecosystem Services Valuation Database (ESVD)7 to estimate the following meta-analysis
+regression:
+                           𝐸𝑆! = β" + β# 𝑋!,# + β% 𝑋!,% + β& 𝑋!,& + 𝐵' 𝑋!,' + ϵ! , (1)
+
+where, 𝐸𝑆! denotes the ecosystem service value of study 𝑖, expressed in 2025 U.S. dollars per
+hectare per year. The subscript 𝑖 refers to a study from the ESVD database. β" is the constant
+term; 𝑋!,# denotes the vector of study characteristics (e.g., valuation method); 𝑋!,% includes site
+characteristic (e.g., ecosystem condition, area), 𝑋!,& indicates dummy variables for biome (e.g.,
+rivers and lakes, temperate forest and woodland); and 𝑋!,' represents dummy variables for
+ecosystem services (e.g., moderation of extreme events, regulation of water flows)8. Finally, ϵ!
+denotes the error term.
+The regression model specified in Equation (1) was estimated once using a log-linear
+specification, where the dependent variable represents the natural logarithm of ecosystem
+service value (2025 USD per hectare per year). Table A-2 in the Appendix provides summary
+statistics for all variables included in the meta-analysis, and Table A-3 reports the estimated
+coefficients obtained from Equation (1). The estimation was based on a dataset of 55 valuation
+studies drawn from the ESVD database. Our estimates are consistent in both significance and
+direction with those of Amatucci et al. (2024) and Branders et al. (2012). However, our analysis
+is based on a subset of ESVD studies focusing exclusively on four biomes (intensive land use,
+rangelands and natural grasslands, rivers and lakes, and temperate forest and woodland)
+whereas Branders et al. rely on all available studies and Amatucci et al. uses a different subset
+of studies.9
+
+The estimated coefficients (𝛽,′𝑠) from Equation (1) were then applied to predict the monetary
+value of each ecosystem service 𝑚 present at each site 𝑠. Site-specific predictor variables were
+
+
+6
+  Benefit transfer is an economic valuation method that applies results from existing primary studies to estimate the
+value of ecosystem services or policy impacts at sites where original valuation data are unavailable. While primary
+research is ideal, benefit transfer is often the most practical approach for informing policy decisions when time or
+resource constraints prevent new data collection (Johnston and Rosenberger, 2010).
+7
+  https://www.esvd.net/. Table A-1 lists all the ecosystem services available in the ESVD dataset.
+8
+  Each ecosystem service dummy variable takes the value of 1 if the corresponding ecosystem service is present and
+assessed in the study site, and 0 otherwise.
+9
+  The analysis focuses on four biomes because they are the most closely associated with river and freshwater
+ecosystems represented in SRP project sites. Studies focused on other biomes (e.g., marine, coastal, tropical and
+subtropical forests, deserts, and semi-deserts) were excluded, as they are not relevant to the hydrological and
+ecological contexts of SRP.
+
+
+
+
+                                                                                                                   5
+                                                         Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+populated using information from expert interviews and GIS-derived datasets, including
+indicators of ecosystem condition, area, land cover, and biome classification.
+For each SRP site, the relevant dummy variables were assigned based on the site’s ecological
+and service characteristics. For example, when estimating the value of the ecosystem service
+maintenance of life cycles for a site located within the rivers and lakes biome, the corresponding
+dummy variables for that ecosystem service and biome were set to one, while other dummies
+were set to zero. For all estimated ecosystem service values, the market price dummy variable
+was set to one, as this valuation methods tend to provide more conservative estimates
+compared to other available valuation approaches.
+The total annual ecosystem service benefit for site 𝑠, denoted 𝐸𝐵( , was calculated as:
+                                       2" + β
+            𝐸𝐵( = ∑)∈+,! 𝐸𝑆) = ∑)∈+,! 1β    2# 𝑋(,# + β
+                                                      2% 𝑋(,% + β
+                                                                2& 𝑋(,& + β
+                                                                          2' 𝑋(,' 3, (2)
+
+where 𝐸𝑆) represents the estimated value of ecosystem service 𝑚 predicted from the meta-
+regression, and 𝐸𝑆- denotes the set of all ecosystem services considered at site 𝑠. Table 3-1
+lists the site-specific variables used in these estimations, derived from expert input and spatial
+data on mean species abundance and dominant land cover.
+
+3.2.3 Net Benefits Estimates
+We used Equation (2) to estimate the total annual ecosystem service values for each intended
+benefit at each site under two scenarios. The first was the no-action baseline scenario, in which
+the ecosystem condition—categorized as degraded (severely impaired and potentially
+collapsing), intermediate (moderately modified but still functioning), or good (ecologically healthy
+and resilient)—reflected the state prior to SRP implementation, as reported by site experts in
+their survey responses. The second was the post-implementation scenario, representing the
+current and maximum ecosystem conditions after SRP.
+This change in ecosystem condition was incorporated directly into the meta-analysis estimated
+with Equation (2) through adjustments to the corresponding explanatory variable. Table 3-1
+reports the condition transitions from prior to SRP (baseline) to after implementation (current
+and maximum) for each expected benefit–ecosystem pair. The net expected benefit of SRP at
+each site is defined as the difference in total annual ecosystem service value between the
+implementation and baseline scenarios.
+
+
+
+
+                                                                                                       6
+                                                                    Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Table 3-1 Environmental Actions, Intended Benefits, and Site Condition Across
+SRP Projects (Based on Expert Survey Responses)
+
+   Site     Start    Env.       Intended      Area              Relevant Site Conditions             Years (from
+            Year    Action       Benefit      (ha)                                                   current =
+                                                     Baseline         Current        Maximum         2024) until
+                                                                                                     Maximized
+                                                                                                     Benefits Are
+                                                                                                     Realized
+Mel         2021    EF        Lake            24     Degraded         Intermediate   Good            6 to 10
+Price                         Sturgeon/
+                              Fisheries
+                    EP        Waterfowl       451    Degraded         Good           Good            6 to 10
+                              Shorebirds      451    Degraded         Intermediate   Good            11 to 20
+                              Fisheries       451    Degraded         Intermediate   Good            11 to 20
+                              Wetland       451      Degraded         Intermediate   Good            6 to 10
+                              Vegetation
+                              Water Quality NA       Degraded         Degraded       Degraded        NA
+Des         2015    EF        Mussels       695      Degraded         Degraded       Intermediate    6 to 10
+Moines
+                              Fisheries/      695    Degraded         Degraded       Good            6 to 10
+                              Sturgeon
+                    EP        Herptiles       6,281 Degraded          Degraded       Intermediate    6 to 10
+                              Shorebirds      1,214 Degraded          Degraded       Good            6 to 10
+                              Water Quality 1,298 Degraded            Degraded       Intermediate    6 to 10
+                              Wetland         NA     Intermediate     Intermediate   Intermediate    NA
+                              Vegetation
+Caddo       2010    EF        Fisheries       809    Intermediate     Good           Good            6 to 10
+Lake
+                              Floodplain    809      Degraded         Degraded       Intermediate    More than 20
+                              Connectivity
+                    EP        Water Quality 809      Intermediate     Good           Good            6 to 10
+                              Flood           809    Degraded         Degraded       Intermediate    More than 20
+                              Protection
+Green       2002    EF        Mussels         4,989 Degraded          Intermediate   Good            11 to 20
+River
+                              Fisheries       4,989 Degraded          Intermediate   Good            6 to 10
+                    EP        Recreation      1,331 Intermediate      Good           Good            3 to 5
+                               Habitat          1,331 Degraded         Intermediate Good              11 to 20
+                               Enhancement
+Notes: EF = E-flows; EP = E-pools
+Ecosystem conditions:
+a. Degraded: Ecosystems are severely impaired and potentially collapsing
+b. Intermediate: Ecosystems are moderately modified but still functioning
+c. Good: Ecosystems are ecologically healthy and resilient
+Ecosystem conditions vary across three temporal scales. Baseline, the ecosystem’s condition before SRP
+   implementation, used as the reference point for comparison; current, the current ecosystem condition as of 2024;
+   maximum, the potential best-case ecosystem condition achievable with full SRP success.
+Although interventions at the Des Moines site have been in place for approximately 10 years, survey responses
+   indicate that ecosystem conditions for the intended benefits have not changed from the baseline to the current.
+   Therefore, we assume that maximum benefits will begin to accrue after the ten-year mark.
+
+3.2.4 Cost–Benefit Analysis (CBA)
+To evaluate the overall economic performance of SRP actions at each site, we conducted a
+CBA comparing annual program costs to projected annual ecosystem service benefits. For each
+
+
+
+
+                                                                                                                      7
+                                                        Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+site, the analysis period begins when SRP transitions from the Advance to the Implement or
+Incorporate phase and extends to 2040. This duration was determined based on expert input to
+ensure that all major expected benefits are realized.
+We applied a real discount rate of 7% to compute the present value of both costs and benefits
+and conducted a sensitivity analysis using alternative rates of 3.25% and 10%, with the 3.25%
+rate reflecting the official federal interest rate for USACE projects related to economic evaluation
+for water and related land resources. Discounted values were then used to calculate the present
+value of benefits and the present value of costs. Additionally, we conducted an additional
+sensitivity analysis in which future costs were assumed to increase from zero to 50% of total
+costs to date, distributed evenly over the remaining analysis period. The resulting CBA metrics
+include NPV, defined as the difference between the present value of benefits and the present
+value of costs, and the BCR, defined as the present value of benefits divided by the present
+value of costs.
+
+
+
+
+                                                                                                      8
+                                                            Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+
+4.      Measures of Economic Benefit
+4.1     Case Study 1: Mel Price Lock and Dam
+
+
+
+
+Credit: Missouri Department of Conservation
+
+
+
+ Benefit–Cost Highlights for Mel Price SRP
+ § $2.94 million in total discounted benefits versus $0.24 million in costs through 2040; NPV of $2.70
+   million.
+ § BCR: 12.43 by 2024; every dollar invested yields over twelve dollars in returns.
+ § Benefits exceed costs within three years, demonstrating early positive returns.
+ § Annual current benefits range from $12,000 for lake sturgeon and fisheries to $231,000 for
+   waterfowl, shorebirds, and fisheries, with total potential annual benefits of $270,000.
+ § Sensitivity tests confirm BCR remains above 10 under all discount rate scenarios (10.41 at 10%,
+   15.92 at 3.25%).
+
+
+
+
+                                                                                                          9
+                                                             Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Mel Price is located at river mile 200.78 on the Upper Mississippi River, approximately 17 miles
+north of St. Louis, Missouri. Operated by the USACE St. Louis District, the structure maintains a
+9-foot navigation channel critical to commercial transport on the river. The facility includes a
+public museum and educational center, offers regular public tours, and attracts visitors year-
+round, especially for river-related recreation in nearby towns such as Alton and East Alton,
+Illinois. Furthermore, the area around Mel Price is significant for supporting endangered aquatic
+species, such as lake sturgeon, which can reach 8 feet long, weigh over 200 pounds, and live
+over 100 years.10
+In 2015, lake sturgeon were observed spawning in the tailwaters of the dam. This was the first
+confirmed instance of sturgeon spawning in Missouri in decades. The event spurred scientific
+and management interest in defining and
+maintaining suitable hydraulic conditions for
+sturgeon reproduction, such as flow, timing,
+temperature, and substrate                        Partners
+characteristics.11 Since then, USACE, in          § USACE St. Louis District
+partnership with the Missouri Department of       § Illinois Department of Natural Resources
+Conservation, U.S. Fish and Wildlife              § Missouri Department of Conservation
+                                                  § Missouri Department of Natural Resources
+Service and other agencies, has sought to         § River Resources Action Team
+operationalize e-flows tailored to support        § US Fish and Wildlife Service - Endangered
+lake sturgeon spawning. These efforts                Species and Refuges
+                                                  § TNC and other nongovernmental
+involve modeling dam gate operations, field          organizations and private groups
+monitoring of flow targets, and collaborative
+outreach and planning under SRP. The Mel
+Price site entered the Advance phase in
+2021 and transitioned to the Implement phase in 2022, marking the initiation of sturgeon-related
+e-flow actions.
+Mel Price has also established e-pool management. Prompted by a unique hydrological event in
+2014 that required an extended drawdown period, managers observed a marked return of
+perennial aquatic vegetation not seen in over two decades.12 Encouraged by this outcome,
+USACE and its partners launched a four-year demonstration (2015–2018) that extended low
+pool conditions from the typical 30–40 days to as long as 90 days during the summer growing
+season, when hydrologic conditions allowed. Monitoring throughout the demonstration showed
+increased plant diversity and abundance, particularly among emergent vegetation beneficial to
+fish, macroinvertebrates, shorebirds, and waterfowl.
+
+4.1.1 Benefits
+According to expert interviews, at Mel Price, e-flow and e-pool management actions are being
+implemented to enhance habitat conditions and support a variety of ecological outcomes in the
+
+10
+   The lake sturgeon is a state-endangered fish species in Illinois and Missouri.
+11
+   https://www.hec.usace.army.mil/sustainablerivers/publications/docs/Mississippi%20-%20Lake%20sturgeon%20spa
+wning%20summary%20-%202022.pdf
+12
+   Information provided by site experts during the expert elicitation process.
+
+
+
+
+                                                                                                          10
+                                                                Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Upper Mississippi River. A central focus of the e-flow strategy is to stimulate natural spawning of
+lake sturgeon, a state-endangered species, by using e-flows to create suitable hydraulic
+conditions below the dam during the spring spawning season; these flows are designed to
+support sturgeon reproduction without the need for artificial stocking. By promoting sturgeon
+recovery, these actions contribute to natural population dynamics and create educational and
+public-awareness opportunities, as people visit the area to observe spawning events.
+Successful natural reproduction could also reduce the likelihood of future listing under the
+Endangered Species Act, thereby avoiding potential regulatory impacts on navigation. In
+addition, e-flows provide habitat conditions that align with the reproductive requirements of other
+native fish species, including blue sucker.
+E-pool management actions at Mel Price have further enhanced ecological outcomes by
+lowering water levels during the growing season, exposing mudflats and creating conditions
+favorable for the growth of vegetation such as wild millet. This emergent vegetation improves
+habitat complexity, provides shelter and food for macroinvertebrates and juvenile fish, and
+enhances fish spawning conditions. These actions contribute to supporting ecosystem services,
+including the maintenance of life cycles. Additionally, the vegetation and shallow water areas
+created through e-pool management provide important stopover and feeding habitat for
+migratory waterfowl using the Mississippi Flyway, supporting cultural ecosystem services such
+as recreation opportunities.13 Shorebirds, gulls, and other waterbirds also benefit from these
+conditions, which enhance aesthetic values and wildlife viewing opportunities. Furthermore, e-
+pool drawdowns can improve water quality by promoting sediment consolidation and nutrient
+uptake by vegetation, thereby delivering regulating services related to waste treatment and
+nutrient cycling. Table 4-1 summarizes the intended benefits of the environmental actions
+implemented at Mel Price and the associated ecosystem services, as identified by site
+representatives during expert elicitation interviews.
+
+Table 4-1 Mel Price Intended Benefits and Ecosystem Services
+
+ Environmental       Intended Benefits                      Mapped TEEB Ecosystem Services
+    Action
+ E-flows         Lake Sturgeon /             ▪   Maintenance of life cycles                       Supporting
+                 Fisheries                   ▪   Biological control                               Regulating
+                                             ▪   Information for cognitive development            Cultural
+ E-pools         Waterfowl / Shorebirds /    ▪   Maintenance of life cycles                       Supporting
+                 Fisheries                   ▪   Opportunities for recreation and tourism         Cultural
+                                             ▪   Aesthetic information / Inspiration              Cultural
+                 Wetland Vegetation          ▪   Maintenance of soil fertility                    Regulating
+                 Water Quality               ▪   Waste treatment                                  Regulating
+                                             ▪   Regulation of water flows / sediment processes   Regulating
+
+To quantify the ecosystem service benefits generated by SRP at Mel Price, we applied the
+meta-regression coefficients from Equation (2). Model inputs were populated using site-specific
+variables derived from GIS data and expert survey responses. Benefits were estimated for each
+
+13
+   The average vehicle count at Riverlands Migratory Bird Sanctuary has been around 111,000 since 2020, peaking
+in 2024 with 121,000.
+
+
+
+
+                                                                                                               11
+                                                                    Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+intended benefit that experts reported or expected to result from SRP environmental actions.
+Table 3-1 summarizes the changes in ecosystem conditions associated with each ecosystem
+and linked to each intended benefit, as reported by experts. For example, experts indicated that
+prior to SRP implementation, the ecosystem supporting lake sturgeon at the Mel Price site was
+degraded. The current condition is considered intermediate and is expected to reach a good
+condition once maximum annual benefits are achieved, which is projected to occur within 6–10
+years from the current year (2024).
+Current annual benefits were calculated as the marginal difference between the sum of model-
+predicted ecosystem service values ($/ha/year) under current (post-SRP action) ecosystem
+conditions and the predicted values under no-action baseline conditions for each intended
+benefit. Maximum annual benefit values were calculated as the marginal difference between
+model-predicted ecosystem service values under the expected ecosystem conditions fostered
+by SRP, once benefits are fully realized, and the predicted values under no-action baseline
+conditions. Table 4-2 summarizes the estimated current and maximum potential annual benefits
+based on these calculations. Current annual value reflects estimated benefits as of 2024, while
+maximum annual value represents the upper bound of annual benefits assuming full realization
+of ecological improvements.
+Current annual benefits across the intended benefit categories at the Mel Price SRP site are
+estimated to range from approximately $12,000 for lake sturgeon and fisheries to $231,000 for
+waterfowl, shorebirds, and fisheries, with additional benefits of about $13,600 associated with
+wetland vegetation. The estimated maximum annual benefits range from $15,700 for lake
+sturgeon and fisheries to $237,000 for waterfowl, shorebirds, and fisheries, with wetland
+vegetation benefits increasing to approximately $17,200 per year. This results in a total potential
+annual benefit of about $270,000 across all categories. Most of these benefits are attributed to
+e-pool actions, which affect a relatively large area of 451 hectares, compared to e-flow actions,
+which cover 24 hectares.
+
+Table 4-2 Annual Benefits from Mel Price SRP by Environmental Action and
+Intended Benefit
+
+    Environmental Action             Area (ha)        Current Annual Value              Maximum Annual Value
+    Intended Benefit
+                                                     $/ha/yr            $/yr           $/ha/yr             $/yr
+    E-flows
+       Lake Sturgeon / Fisheries            24              510         $12,487               $642          $15,713
+    E-pools
+       Waterfowl / Shorebirds /            451             $513        $231,419               $527         $237,453
+       Fisheriesa
+       Wetland Vegetation                  451              $30         $13,659                  $38        $17,187
+       Water Qualityb                       NA               $0              $0                   $0             $0
+    Total                                                              $257,565                            $270,353
+a
+    This report assumed improvement of ecosystem services and area from SRP overlap between shorebirds,
+     waterfowl, and fisheries (e-pools), so benefits are grouped to avoid double counting.
+b
+    While water quality was identified as an intended benefit of the Mel Price SRP, experts indicated that ecosystem
+     condition will remain degraded; therefore, both current and maximum annual benefit values have been set to zero.
+
+
+
+
+                                                                                                                   12
+                                                                    Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+4.1.2 Cost–Benefit Analysis
+For retrospective benefits, we assumed a linear increase in values from zero at the start of SRP
+intervention to the current annual value in the present. For prospective benefits, we assumed a
+linear increase14 in ecosystem service values from current annual levels to maximum annual
+values, with the time horizon for full realization based on expert responses, after which annual
+benefits are held constant. A real discount rate of 7% was applied to both benefits and costs. All
+benefits and costs were assumed to be fully attributable to environmental actions at the Mel
+Price project site. Figure 4-1 displays the cumulative present value of benefits and costs, as well
+as NPV, and Table 4-3 presents the BCR for the Mel Price SRP project from 2020 to 2040.
+Cumulative discounted benefits increase steadily from the beginning of the program, exceed
+cumulative investments by 2023, and result in positive net benefits from the third year onward.
+By 2040, total discounted benefits at Mel Price Lock and Dam are estimated at approximately
+$2.94 million, compared to $0.24 million in total discounted costs, yielding an NPV of $2.70
+million and a BCR of 12.43.
+
+Figure 4-1. Cumulative Present Value Costs and Benefits, and NPV for Mel Price SRP,
+          2020 to 2040
+
+
+
+
+14
+  Assuming a linear increase in benefits over time is a conservative simplification. Site experts indicated that in some
+cases ecosystem service benefits may begin immediately following implementation rather than accumulating
+gradually, suggesting that this assumption may underestimate early-period benefits prior to full realization.
+
+
+
+
+                                                                                                                     13
+                                                                     Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Table 4-3 NPV and BCR for Mel Price, 2020–2040
+
+                       2020               2025                2030                 2035                 2040
+ NPV                            $0         $530,201           $1,516,348            $2,215,976          $2,706,484
+ BCR                          0.00             3.24                 7.40                 10.36               12.43
+ Costs and benefits calculated using a real discount rate of 7%
+
+
+4.1.3 Sensitivity Analysis
+To assess the robustness of results, we evaluated the BCR and NPV for the Mel Price SRP
+under alternative discount rates and cost assumptions. The baseline scenario applied a 7% real
+discount rate, with additional cases evaluated at 3.25% and 10%. As shown in Table 4-4, results
+remain strongly positive across all discount rates: the BCR ranges from 15.92 at 3.25% to 10.41
+at 10%, while the NPV ranges from $3.53 million to $2.23 million. The modest decline in BCR at
+higher discount rates reflects the reduced present value of future benefits when greater weight
+is placed on near-term outcomes.
+Recognizing that the baseline assumption of no future costs may underestimate ongoing
+expenditures, we conducted a sensitivity analysis in which future costs were assumed to equal
+50% of total costs incurred to date and were distributed evenly over the remaining analysis
+period. As shown in Table 4-5, even under this more conservative cost scenario, the NPV
+remains strongly positive at $2.64 million and the BCR remains close to 10 (9.84), indicating
+that benefits continue to exceed costs. Overall, the sensitivity analyses confirm the robust
+economic justification of the Mel Price SRP project, as benefits outweigh costs under all tested
+discount rate and cost assumptions.
+
+Table 4-4 NPV and BCR in 2040 for Mel Price SRP, by Discount Rate
+                                                           Discount Rate
+                           3.25%                                7%                               10%
+ NPV                                 $3,534,827                      $2,706,484                         $2,227,670
+ BCR                                      15.92                           12.43                              10.41
+
+
+
+Table 4-5 NPV and BCR in 2040 for Mel Price SRP, by Future Cost Assumption
+                                       No Future          Future costs (50% of costs to date)
+                                        Costs
+                      NPV                $2,706,484                                 $2,644,316
+                      BCR                         12.43                                   9.84
+
+
+
+
+                                                                                                                  14
+                                                                Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+4.2        Case Study 2: Des Moines River
+
+
+
+
+Credit: Stephen J. Dinsmore
+
+
+
+ Benefit–Cost Highlights for Des Moines River SRP
+ § $19.9 million in total discounted benefits versus $2.2 million in costs through 2040; NPV of $17.7
+   million.
+ § BCR: 8.98 by 2040; every dollar invested yields nearly nine dollars in ecosystem service benefits.
+ § Benefits exceed costs by 2028, generating positive net benefits from that year onward.
+ § Maximum potential annual benefits total $3.1 million, primarily from e-pool actions, with e-flows and
+   fisheries contributing an additional $562,000 per year.
+ § Sensitivity tests confirm BCR remains above 6 under all discount rate scenarios (6.77 at 10%, 12.92
+   at 3.25%) and above 8 under conservative cost assumptions.
+
+
+
+The Des Moines River system in Iowa includes two major USACE reservoirs: Saylorville Lake,
+located directly upstream of the City of Des Moines, and Lake Red Rock, approximately 50
+miles downstream.15 Operations at these reservoirs influence hydrology along the Des Moines
+River and ultimately affect the Mississippi River system, including downstream ecological
+conditions extending to the Gulf of Mexico. In particular, Lake Red Rock helps regulate flows
+from a watershed that is among the nation’s largest contributors to nutrient loading and hypoxia
+
+
+15
+     https://www.mvr.usace.army.mil/Missions/Environmental-Stewardship/Sustainable-Rivers/Des-Moines-River-SRP/
+
+
+
+
+                                                                                                             15
+                                                                 Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+in the Gulf, making its role in nutrient retention and water quality management ecologically
+significant.
+SRP at Des Moines River was launched in 2015 to identify environmental opportunities and
+implement operational changes that improve riverine and in-reservoir habitat conditions. The
+program has engaged federal and state agencies, scientists, and conservation organizations to
+define seasonal flow and pool management strategies that restore key aspects of the natural
+flow regime.
+SRP at the Des Moines River entered the
+Advance phase for e-pool management in
+2015 and transitioned to the Implement
+                                                    Partners
+phase in 2016. Similarly, e-flows entered
+                                                    § USACE Rock Island District
+the Advance phase in 2015 and                       § The Nature Conservancy
+transitioned to the Incorporate phase in            § Des Moines Water Works
+2020. E-flow actions on the Des Moines              § Iowa Department of Natural Resources
+                                                    § The University of Iowa-Iowa Geological
+River are typically implemented in the                Survey
+spring to stimulate fish spawning and               § Natural Resources Conservation Service
+involve temporarily increasing pool levels          § Ottumwa Water and Hydro
+                                                    § Polk County Conservation
+within the conservation range and                   § Red Rock Lake Association
+releasing them as flow pulses, guided by            § University of Iowa
+real-time biological and hydrologic                 § U.S. Fish and Wildlife Service
+                                                    § U.S. Geological Society
+monitoring. In contrast, e-pool                     § William Penn University
+management actions are implemented
+primarily in the fall to benefit migratory bird
+species. By manipulating reservoir levels,
+managers expose or inundate mudflats—particularly in the Delta region of Lake Red Rock—
+creating high-quality stopover habitat for shorebirds and waterfowl migrating between the Arctic
+and South America.
+
+4.2.1 Benefits
+E-flows and e-pool management strategies on the Des Moines River have been implemented to
+restore ecological functions and deliver multiple ecosystem services.16 E-flows have been
+developed to support the life histories of native mussels across 142 river miles by increasing
+spring and fall discharges and enhancing habitat heterogeneity, such as cobble substrates and
+riparian buffers (Griffen et al., 2024). By fostering mussel population health, these actions
+provide ecosystem services such as waste treatment, maintenance of life cycles, and
+maintenance of soil fertility. E-flows have also been used to reduce mortality in shovelnose
+sturgeon by restoring more natural summer flow patterns and introducing heat-relief pulses to
+mitigate degraded habitat conditions during periods associated with repeated die-offs. These
+
+16
+  Flood Risk Management (FRM) is the primary authorized mission at Des Moines River reservoirs and supersedes
+environmental stewardship activities, including SRP. Site representatives noted that while SRP practices are
+ecologically preferred when feasible, their implementation is constrained during periods when FRM objectives govern
+operation.
+
+
+
+
+                                                                                                                16
+                                                                Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+management considerations are particularly important given that sustained low outflows,
+combined with high temperatures and low dissolved oxygen, have caused large fish kills in the
+Des Moines River, including shovelnose sturgeon.17
+In addition, e-flows mimic natural spring flood pulses that support the spawning and rearing of
+native fish species, including Sciaenidae and Clupeidae.18 These managed discharges enhance
+fish reproductive success by influencing the density of larval fish populations and by flushing
+zooplankton from the reservoir into downstream reaches, improving foraging conditions for early
+life stages of fish. This process supports ecosystem services such as the maintenance of life
+cycles.
+E-pool management actions at Lake Red Rock further support ecological goals by enhancing
+habitat for a range of species. One focus is support for herpetofauna, with pilot studies
+documenting a variety of amphibians and reptiles, such as bullfrogs, spring peepers, and
+snapping turtles, that benefit from managed water levels creating stable overwintering and
+breeding habitats (Thostenson et al., 2024). These actions contribute to supporting ecosystem
+services related to the maintenance of life cycles, as well as cultural values associated with
+biodiversity preservation. Shorebirds and other waterbirds also benefit from water level
+drawdowns, which expose mudflats and create diverse foraging environments during fall
+migration.19 These drawdowns have been linked to increased species richness and greater use
+of the reservoir by migratory bird guilds, particularly shorebirds. Management of the Lake Red
+Rock delta during drawdowns promotes abundant invertebrate communities in newly exposed
+mudflats, which attract shorebirds and can extend their stopover duration, potentially influencing
+migration timing and distance.20 Subsequent vegetation growth, flowering, and seed production
+support migrating waterfowl and provide additional benefits for pollinators when fall pool levels
+rise. Collectively, these outcomes generate a suite of supporting and cultural ecosystem
+services, including existence and bequest values.
+Vegetation management is another intended benefit of e-pool operations. Seasonal drawdowns
+promote the growth of desirable annual moist-soil plants, increasing vegetation cover and
+diversity while enhancing food resources for migratory birds and monarch butterflies during their
+southward migration. In addition, both e-flows and e-pools contribute to improved water quality.
+Seasonal drawdowns help reduce nitrate and phosphorus levels in the reservoir through natural
+uptake processes. Table 4-6 lists the intended benefits of the environmental actions
+implemented on the Des Moines River, along with the corresponding ecosystem services, as
+identified by site representatives during expert elicitation interviews.
+
+
+
+
+17
+   Information based on interviews with Des Moines River site representatives.
+18
+   https://ewn.erdc.dren.mil/wp-content/uploads/2023/04/06-2023_Feb_DownstreamFisheries_Griffen.pdf
+19
+   https://www.hec.usace.army.mil/sustainablerivers/publications/docs/Des%20Moines%20-%20Waterbird%20and%2
+0aquatic%20invertebrate%20responses%20to%20reservoir%20drawdowns%20-%20Field%20report%20-%202023.p
+df
+20
+   https://faculty.sites.iastate.edu/cootjr/project/bird-and-vegetation-responses-sustainable-rivers-program-iowa
+
+
+
+
+                                                                                                              17
+                                                            Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Table 4-6 Des Moines Intended Benefits and Ecosystem Services
+
+ Environmental      Intended Benefits                    Mapped TEEB Ecosystem Services
+    Action
+ E-Flows         Mussels                ▪   Waste treatment                             Regulating
+                                        ▪   Maintenance of life cycles                  Supporting
+                                        ▪   Maintenance of soil fertility               Regulating
+                 Fisheries / Sturgeon   ▪   Maintenance of life cycles                  Supporting
+                                        ▪   Opportunities for recreation and tourism    Cultural
+ E-Pools         Herptiles              ▪   Maintenance of life cycles                  Supporting
+                                        ▪   Existence and bequest values                Cultural
+                 Shorebirds             ▪   Maintenance of life cycles                  Supporting
+                                        ▪   Existence and bequest values                Cultural
+                 Water Quality          ▪   Waste treatment (water quality)             Regulating
+                 Wetland Vegetation     ▪   Maintenance of soil fertility               Regulating
+                                        ▪   Maintenance of genetic diversity            Supporting
+
+
+To quantify the ecosystem service benefits generated by SRP on the Des Moines River, we
+applied the estimated parameters from the meta-regression model (Equation 1) using site-
+specific inputs derived from GIS data and expert responses (see Table 3-1). Values were
+estimated for intended benefit categories in which ecological improvements were defined based
+on expert input, specifically for mussel, sturgeon, and other fish habitat associated with e-flows,
+as well as herptile habitat, shorebird habitat, and water quality associated with e-pools. Current
+and maximum annual benefits were calculated as the marginal difference between model-
+predicted values under existing conditions and baseline (no-action) conditions. Table 4-7
+summarizes the estimated annual benefits.
+Current annual benefits for each intended benefit category at the Des Moines SRP site are
+estimated at $0, as experts did not report observable differences between current and baseline
+conditions for any category. However, experts noted that ecological conditions in the reservoirs
+and river are expected to improve to good or intermediate condition once the practice is fully
+implemented. Maximum potential annual benefits are estimated to range from approximately
+$116,000 to $2.0 million per year, totaling about $3.1 million annually across all categories. The
+largest share of these benefits is associated with herptile-related intended benefits, which affect
+6,281 hectares and are projected to generate up to $2.0 million in annual value once ecological
+improvements are fully realized. E-flow–related fisheries benefits also contribute substantially,
+together accounting for more than $562,000 in potential annual value.
+
+
+
+
+                                                                                                         18
+                                                                   Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+
+Table 4-7 Annual Benefits from Des Moines SRP by Environmental Action and
+Intended Benefit
+
+        Environmental Action        Area (ha)        Current Annual Valuea              Maximum Annual Value
+          Intended Benefit
+                                                    $/ha/yr            $/yr            $/ha/yr             $/yr
+    E-flows
+       Mussels                            695                 $0              $0             $437          $305,365
+       Fisheries/Sturgeon                 695                 $0              $0             $370          $257,250
+    E-pools
+       Herptiles                        6,281                 $0              $0             $319        $2,003,235
+       Shorebirds                       1,214                 $0              $0             $403         $489,189
+       Water Quality                    1,298                 $0              $0              $89         $116,171
+       Wetland Vegetationb                 NA                 $0              $0               $0                $0
+    Total                                                                     $0                         $3,171,210
+a
+  Current annual values are zero because, according to site experts, ecosystem conditions have not improved from
+   their baseline state despite approximately 10 years of interventions. This suggests that no measurable ecological
+   changes have yet occurred for the intended benefits, and therefore, no current ecosystem service value can be
+   attributed. It is assumed that benefits will begin to accrue only when observable improvements in ecosystem
+   condition occur beyond the 10-year mark.
+b
+  While wetland vegetation was identified as an intended benefit of the Des Moines SRP, experts did not expect
+   significant improvements to ecosystem condition; although benefits are possible, we do not include in benefit
+   evaluation and the current and maximum annual values were set to zero.
+
+4.2.2 Cost–Benefit Analysis
+The CBA applies a 7% real discount rate to both costs and projected benefits. All benefits are
+assumed to begin accruing in 2025 and continue through 2040, consistent with expected
+implementation timelines and ecological lag effects. Figure 4-2 displays the cumulative present
+value of benefits and costs and the resulting NPV, while Table 4-8 presents the BCR for the Des
+Moines SRP from 2020 to 2040.
+The analysis estimates an NPV of approximately $17.7 million and a BCR of 8.98 by 2040.
+Benefits begin accruing in the future because current and baseline conditions are equivalent for
+each intended benefit, and no positive benefits are observed immediately following
+implementation. Benefits begin to exceed costs around 2028, resulting in positive net benefits
+from that year onward. By 2040, total discounted benefits reach approximately $19.9 million,
+compared to $2.2 million in total discounted costs, yielding an NPV of about $17.7 million. The
+BCR increases gradually over time after 2024 as costs plateau and benefits continue to accrue.
+At the Des Moines River, the final BCR value of 8.98 by 2040 indicates that every $1 invested
+by SRP generates nearly $9 in quantified ecosystem service benefits.
+
+
+
+
+                                                                                                                   19
+                                                                Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Figure 4-2. Cumulative Present Value Costs and Benefits and NPV for Des Moines
+          River SRP, 2020 to 2040.
+
+
+
+
+Table 4-8 NPV and BCR for Des Moines River, 2015–2040
+
+                2015           2020            2025              2030            2035               2040
+ NPV          -$29,116        -$646,183         -$1,851,556     $3,894,463     $11,951,135        $17,722,000
+ BCR                0.00            0.00               0.17           2.75            6.38               8.98
+ Costs and benefits calculated using a real discount rate of 7%
+
+
+
+4.2.3 Sensitivity Analysis
+To assess the robustness of results, we evaluated the NPV and BCR for the Des Moines River
+SRP under alternative discount rate and cost assumptions. The baseline scenario applied a 7%
+real discount rate, with additional cases evaluated at 3.25% and 10%. As shown in Table 4-9,
+results remain positive across all discount rates: the BCR ranges from 12.92 at 3.25% to 6.77 at
+10%, while the NPV ranges from $26.47 million to $12.81 million, respectively. The decline in
+BCR at higher discount rates reflects the reduced present value of future benefits when greater
+emphasis is placed on near-term outcomes.
+We also conducted a sensitivity analysis of costs in which future costs were assumed to equal
+50% of total costs incurred to date and were distributed evenly over the remaining analysis
+period. As shown in Table 4-10, even under this more conservative cost scenario, the NPV
+remains positive at $17.14 million and the BCR remains above 7, indicating that benefits
+
+
+
+
+                                                                                                             20
+                                                         Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+continue to exceed costs by a substantial margin. Overall, the sensitivity analyses confirm the
+robust economic justification of the Des Moines River SRP project, as benefits outweigh costs
+under all tested discount rate and cost assumptions.
+
+Table 4-9 Cumulative NPV and BCR in 2040 for Des Moines River SRP, by
+Discount Rate
+
+                                                    Discount Rate
+                           3.25%                        7%                             10%
+ NPV                           $26,473,437                   $17,722,000                  $12,809,823
+ BCR                                 12.92                          8.98                         6.77
+
+
+Table 4-10 NPV and BCR in 2040 for Des Moines SRP, by Future Cost Assumption
+                                No Future      Future costs (50% of costs to date)
+                                  Costs
+                   NPV           $17,722,000                           $17,140,203
+                   BCR                  8.98                                  7.12
+
+
+
+
+                                                                                                      21
+                                                                    Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+4.3        Case Study 3: Caddo Lake
+
+
+
+
+Credit: Fauna Creative
+
+
+
+ Benefit–Cost Highlights for Caddo Lake SRP
+ § $3.22 million in total discounted benefits versus $0.36 million in costs through 2040; NPV of $2.86
+   million.
+ § BCR: 7.89 by 2040; every dollar invested yields more than seven dollars in ecosystem service
+   benefits.
+ § Annual benefits total $89,000, driven by fisheries ($71,700) and water quality ($17,500)
+   improvements, with maximum potential benefits reaching $750,000 per year as flood protection
+   ($382,000) and floodplain connectivity ($276,000) gains are realized.
+ § Sensitivity tests confirm robust performance: BCR ranges from 10.56 at 3.25% to 6.42 at 10%, and
+   remains above 7 under conservative cost assumptions.
+
+
+
+The Caddo Lake/Big Cypress Bayou SRP project centers on Caddo Lake, located on the
+Texas–Louisiana border. The watershed spans approximately 2,970 square miles, about one-
+third of which is regulated by Lake O’ the Pines and other upstream reservoirs.21 The Caddo
+Lake watershed features extensive bald cypress swamps, bottomland hardwood forests, and
+diverse aquatic habitats. Recognized as a Ramsar Wetland of International Importance, Caddo
+Lake supports high biodiversity, including species such as paddlefish, bluehead shiners, and
+
+21
+     https://www.hec.usace.army.mil/sustainablerivers/sites/bigcypress/
+
+
+
+
+                                                                                                                 22
+                                                              Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+freshwater mussels. The lake also contributes to the economies of nearby rural communities,
+particularly in towns such as Uncertain, Texas, through tourism-related activities including
+boating, birdwatching, hunting, and fishing.
+A key hydrological control point in the system is Lake O’
+the Pines, a USACE reservoir. The dam, associated                        Partners
+infrastructure, and all lake project lands are federally                 § USACE Fort Worth District
+owned and administered by the USACE Fort Worth                           § The Nature Conservancy
+District. The dam’s primary function is flood risk                       § Caddo Lake Institute
+                                                                         § Northeast Texas Municipal
+management, with secondary roles in water supply,                          Water District
+recreation, and fish and wildlife conservation.
+USACE, in partnership with TNC and the Caddo Lake
+Institute, launched an SRP environmental action
+initiative in 2004 to address ecological degradation. The goal was to restore natural hydrologic
+variability through the development and implementation of e-flow recommendations. Early
+recommendations were based on historical hydrologic analyses, particularly the 1.5-year
+recurrence interval flow (approximately 6,000 cfs22), which was used as a surrogate for bankfull
+flow—the stage at which a stream or river conveys the maximum discharge within its channel
+before spilling onto the floodplain. This initial guidance evolved through a series of stakeholder
+workshops held in 2005, 2008, and 2011 and was supported by empirical data from the U.S.
+Geological Survey. Research confirmed that flows between 1,500 and 2,500 cfs were effective
+in restoring riparian and wetland connectivity near Jefferson, Texas.23 These flow prescriptions
+have been implemented since 2012, when SRP transitioned from the Advance phase to the
+Implement phase.
+
+4.3.1 Benefits
+According to expert interviews, e-flow and e-pool actions at Caddo Lake have been
+implemented to restore hydrologic and ecological processes in Big Cypress Bayou and the
+broader lake system. E-flows in Big Cypress Bayou are designed to enhance fish habitat and
+populations, particularly for species such as American paddlefish, by supporting critical life
+stages.24, 25 These actions also enhance recreational opportunities, including fishing, waterfowl
+hunting, and tourism, which are vital to the local economy in nearby communities. Additionally,
+e-flows improve river–floodplain connectivity by providing periodic inundation essential for
+maintaining cypress swamps and floodplain forests. Monitoring has demonstrated that, in the
+absence of high-flow pulses, higher-elevation floodplain forests experience increased mortality
+and reduced regeneration, underscoring the necessity of environmental flows for long-term
+floodplain health (Smith et al., 2019). This reconnection supports fish communities, particularly
+
+
+22
+   Cubic feet per second.
+23
+   https://www.hec.usace.army.mil/sustainablerivers/publications/docs/Big%20Cypress%20-%20Summary%20report
+%20on%20high%20flow%20pulses.pdf
+24
+   https://www.hec.usace.army.mil/sustainablerivers/publications/docs/Big%20Cypress%20-%20Paddlefish%20reintr
+oduction%20assessment.pdf
+25
+   Flow-ecology workshop Big Cypress Bayou - Caddo Lake
+
+
+
+
+                                                                                                           23
+                                                                     Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+paddlefish, and improves the ecological condition of riparian habitats. In doing so, it provides
+regulating services such as erosion prevention and water purification, as well as supporting
+services related to forest health and regeneration.
+Flow operations at upstream Lake O’ the Pines are used to minimize flood risk at Caddo Lake
+downstream, although their effectiveness may be limited during high inflow events from the
+broader watershed. Monitoring of soil moisture across different plant communities indicates that
+pulse releases associated with e-flows have increased soil moisture levels. These releases also
+help improve water quality by enhancing waste treatment functions, particularly during low-flow
+periods when nutrient concentrations and water temperatures tend to rise. By improving water
+quality, these operations contribute directly to water purification ecosystem services. Table 4-11
+lists the intended benefits of the environmental actions implemented at Caddo Lake, along with
+the corresponding ecosystem services, as identified by site representatives during expert
+elicitation interviews.
+To quantify the ecosystem service benefits generated by SRP at Caddo Lake, we applied
+estimated parameters from the meta-regression model (Equation 1) using site-specific inputs
+derived from GIS data and expert survey responses (see Table 3-1). Benefits were estimated
+for each intended benefit based on the corresponding ecosystem service categories listed in
+Table 4-11.26
+
+Table 4-11 Caddo Lake Intended Benefits and Ecosystem Services
+
+              Environmental Action                                Intended Benefits                 Mapped TEEB
+                                                                                                     Ecosystem
+                                                                                                      Services
+ E-Flows (Big             Fisheries                  ▪   Maintenance of life cycles                Supporting
+ Cypress Bayou)                                      ▪   Opportunities for recreation and          Cultural
+                                                         tourism
+                          Floodplain                 ▪   Erosion prevention                        Regulating
+                          Connectivity               ▪   Water purification                        Regulating
+                                                     ▪   Maintenance of life cycles (proxy for     Supporting
+                                                         Forest Health)
+ E-Pools (Caddo           Water Quality              ▪   Waste treatment                           Regulating
+ Lake)                    Flood protection           ▪   Moderation of extreme events              Regulating
+                                                     ▪   Erosion prevention                        Regulating
+
+Current and maximum annual benefits were calculated as the marginal difference between
+model-predicted ecosystem service values under current conditions and baseline (no-action)
+conditions. At Caddo Lake, experts indicated that current ecological conditions for some benefit
+categories are relatively close to the maximum expected improvements, resulting in similar
+current and maximum annual values for those benefits. Table 4-12 summarizes the estimated
+annual benefits from the SRP.
+
+
+
+
+26
+   While floodplain connectivity and flood protection were identified as intended benefits, site experts did not expect
+significant improvements in condition due to SRP over the next 20 years, so these benefits are not included.
+
+
+
+
+                                                                                                                      24
+                                                        Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Current annual benefits at the Caddo Lake SRP site total approximately $89,000 per year,
+driven primarily by fisheries benefits ($71,700 per year) and water quality benefits ($17,500 per
+year). Maximum potential annual benefits are projected to reach nearly $750,000 per year,
+reflecting additional future benefits from flood protection ($382,000 per year) and floodplain
+connectivity ($276,000 per year) associated with e-flow and e-pool actions across the 809-
+hectare project area.
+
+4.3.2 Cost–Benefit Analysis
+The CBA applies a 7% real discount rate to both costs and projected benefits, all of which are
+assumed to be fully attributable to SRP actions at the Caddo Lake project site. For benefits, the
+analysis assumes a linear increase from zero at the start of SRP activities to current annual
+ecosystem service values, followed by a constant annual stream of benefits thereafter.
+Figure 4-3 displays the cumulative present value of discounted benefits and costs and the
+resulting NPV, while Table 4-13 presents the BCR for the Caddo Lake SRP from 2010 to 2040.
+Cumulative discounted benefits increase steadily from the initiation of the program and exceed
+cumulative discounted costs around 2015, resulting in positive net benefits from that point
+forward.
+By 2040, total discounted benefits at Caddo Lake are estimated at approximately $3.22 million,
+compared to $0.36 million in total discounted costs, yielding an NPV of $2.86 million. The
+resulting benefit–cost ratio of 7.89 indicates that each dollar invested in the Caddo Lake SRP
+generates nearly $8 in quantified ecosystem service benefits over the analysis period.
+Table 4-12  Annual Benefits from Caddo Lake SRP by Environmental Action and
+Intended Benefit
+
+     Environmental Action     Area (ha)     Current Annual Value           Maximum Annual Value
+       Intended Benefit
+                                           $/ha/yr         $/yr           $/ha/yr            $/yr
+ E-flows
+    Fisheries                       809          $89        $71,722              $89          $71,722
+    Floodplain Connectivity         809            0              0             $341         $276,065
+ E-pools
+    Water Quality                   809          $22        $17,483              $22          $17,483
+    Flood Protection                809            0              0             $472         $382,045
+ Total                                                      $89,205                          $747,315
+
+
+
+
+                                                                                                     25
+                                                                  Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Figure 4-3. Present Value Costs, Present Value Benefits, NPV, and BCR for Caddo
+          Lake SRP, 2020 to 2040
+
+
+
+
+Table 4-13 NPV and BCR for Caddo Lake, 2010–2040
+
+               2010          2015         2020          2025             2030         2035          2040
+ NPV          -$43,156      -$96,509     $31,081      $476,105         $1,193,100   $2,036,199    $2,862,254
+ BCR              0.00          0.57        1.07          2.15               3.87         5.90          7.89
+ Costs and benefits are calculated using a real discount rate of 7%.
+
+
+
+4.3.3 Sensitivity Analysis
+To assess the robustness of results, we evaluated the NPV and BCR for Caddo Lake under
+alternative discount rate and cost assumptions. The baseline scenario applied a 7% real
+discount rate, with additional cases evaluated at 3.25% and 10%. As shown in Table 4-11,
+results remain positive across all discount rates: the BCR ranges from 10.56 at 3.25% to 6.42 at
+10%, while the NPV ranges from $3.97 million to $2.25 million. Consistent with analyses at
+other sites, we also conducted a sensitivity analysis of costs in which future costs were
+assumed to equal 50% of total costs incurred to date and were distributed evenly over the
+remaining analysis period. As shown in Table 4-12, even under this more conservative cost
+scenario, the NPV remains strongly positive at $2.77 million and the BCR remains stable at
+7.65, indicating that benefits continue to exceed costs by a substantial margin. Overall, the
+sensitivity analyses indicate that benefits outweigh costs under all tested discount rate and cost
+assumptions.
+
+
+
+
+                                                                                                               26
+                                                           Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Table 4-14 Cumulative NPV and BCR in 2040 for Caddo Lake SRP, by Discount
+Rate
+
+                                                   Discount Rate
+                     3.25%                               7%                             10%
+NPV                          $3,969,152                       $2,862,254                       $2,250,492
+BCR                               10.56                             7.89                             6.42
+
+
+
+Table 4-15 NPV and BCR in 2040 for Caddo Lake SRP, by Future Cost Assumption
+                              No Future          Future costs (50% of costs to date)
+                               Costs
+               NPV              $2,862,254                                 $2,770,999
+               BCR                        7.89                                   7.65
+
+
+
+
+                                                                                                        27
+                                                            Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+4.4     Case Study 4: Green River
+
+
+
+
+Credit: Jim Howe
+
+
+
+ Benefit–Cost Highlights for Green River
+ § $37.8 million in total discounted benefits through 2040.
+ § Annual benefits currently total $2.11 million, with the majority derived from e-flow action—$1.31
+   million from fisheries and $298,000 from mussel habitat restoration across 4,989 hectares.
+ § E-pool actions provide an additional $502,000 per year from recreation ($211,000) and habitat
+   enhancement ($291,000) across 1,331 hectares.
+ § Benefits are projected to reach $2.65 million annually by 2040.
+
+
+
+Green River Lake and Dam is located in south-central Kentucky, approximately 90 miles south-
+southeast of Louisville. The lake spans Taylor, Adair, and Casey counties, with the dam situated
+at river mile 305.7 on the Green River. Constructed between 1964 and 1969, the project was
+originally designed as a multipurpose facility, with flood risk management as its primary function.
+The dam consists of an earth- and rock-fill structure with multilevel release capabilities that
+allow for control of downstream water temperatures.
+
+
+
+
+                                                                                                         28
+                                                                     Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Green River Lake also provides a wide range of recreational opportunities, including camping,
+fishing, boating, hiking, swimming, and sightseeing. Ecologically, the Green River is recognized
+as one of the most biologically diverse rivers in the U.S., supporting more than 60 mussel
+species, 152 fish species, numerous endemic species, and multiple cave systems hydrologically
+connected to the river.27
+Because of the river’s exceptional biodiversity,
+USACE and TNC implemented a reoperation plan in                              Partners
+2002 to create more natural flow and temperature                             § USACE Louisville District
+                                                                             § The Nature Conservancy
+regimes by modifying water releases from Green                               § U.S. Fish and Wildlife Service
+River Dam. After four years of altered operations,                           § Kentucky Department of Fish
+scientists documented successful reproduction among                            and Wildlife Resources
+                                                                             § Mammoth Cave National Park
+several mussel species, indicating a positive trajectory                     § Kentucky Waterways Alliance
+for long-term recovery (Meffert, 2010).
+The environmental actions implemented included both e-flows and e-pool management. For e-
+flows, the spring filling schedule was extended, and the fall drawdown schedule was modified to
+reduce cold-water releases and better replicate natural flow regimes. For e-pools, the winter
+pool level was raised from 664 to 668 feet to improve water quality and more closely mimic
+natural hydrologic conditions. Collectively, these changes improved downstream water quality,
+reduced turbidity, and enhanced aquatic habitats. In addition, modifications to release structures
+enabled warmer water discharges during the spring, further supporting aquatic ecosystems.
+
+4.4.1 Benefits
+According to expert interviews, a central focus of the e-flow strategy is to sustain the life
+histories of native mussel species by providing flow regimes and water levels that enhance
+habitat stability and host–fish interactions. These conditions are particularly important given the
+river’s high biodiversity, which includes more than 60 mussel species. Site representatives
+noted that ecological observations, while largely anecdotal, suggest improved or stabilized
+mussel populations, along with broader improvements in aquatic habitats and downstream
+ecological conditions. The e-flow strategy also supports fish populations by aligning water
+releases with spawning, rearing, and foraging needs. Fish species that spawn during the fall, in
+particular, have shown evidence of stable or improving populations since the project began.
+Collectively, these outcomes contribute to supporting ecosystem services related to the
+maintenance of life cycles, helping to ensure that critical ecological functions are sustained
+across the river system.
+E-pool management has further expanded the range of ecological and cultural benefits by
+extending the summer pool period, thereby prolonging the recreational season for boating,
+fishing, and other lake-based activities well into October. This extension has increased
+opportunities for tourism and recreation, delivering cultural ecosystem services associated with
+recreational use.
+
+
+27
+     https://www.hec.usace.army.mil/sustainablerivers/sites/green/
+
+
+
+
+                                                                                                                  29
+                                                                     Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+In addition, e-pool management actions have improved physical habitat conditions by
+moderating water releases to prevent sudden and prolonged discharges of cold water that can
+stress downstream habitats. These actions have enhanced mussel breeding conditions and
+helped restore more natural flow regimes, thereby reducing ecological stress. As a result, they
+provide regulating ecosystem services such as improved waste treatment and regulation of
+water flows. Table 4-16 summarizes the intended benefits of the environmental actions
+implemented at the Green River, along with the corresponding ecosystem services, as identified
+by site representatives during expert elicitation interviews.
+To quantify the ecosystem service benefits generated by SRP at the Green River, we applied
+estimated parameters from the meta-regression model (Equation 1) using site-specific inputs
+derived from GIS data and expert survey responses (see Table 3-1). Benefits were estimated
+for each intended benefit based on the corresponding ecosystem service categories listed in
+Table 4-16.
+
+Table 4-16 Green River Intended Benefits and Ecosystem Services
+
+ Environmental          Intended Benefits                         Mapped TEEB Ecosystem Services
+    Action
+ E-flows          Mussels                        ▪   Waste treatment                               Regulating
+                                                 ▪   Maintenance of life cycles                    Supporting
+                                                 ▪   Maintenance of soil fertility                 Regulating
+                  Fisheries                      ▪   Maintenance of life cycles                    Supporting
+ E-pools          Recreation                     ▪   Opportunities for recreation and tourism      Cultural
+                  Habitat Enhancement            ▪   Waste treatment                               Regulating
+                                                 ▪   Regulation of water flows                     Regulating
+
+
+Current and maximum annual benefits were calculated as the marginal difference between
+model-predicted ecosystem service values under current conditions and baseline (no-action)
+conditions. The results are summarized in Table 4-17.
+
+Table 4-17 Annual Benefits from Green River SRP by Environmental Action and Intended
+          Benefit
+ Environmental Action        Area           Current Annual Value                    Maximum Annual Value
+ Intended Benefit            (ha)
+                                       $/ha/yr             $/yr              $/ha/yr                 $/yr
+ E-flows
+    Fisheries                 4,989         $263           $1,313,037              $331                     $1,652,202
+    Mussels                   4,989          $60            $298,209                $75                      $375,239
+ E-pools
+    Recreation                1,331         $159            $211,162               $194                      $257,649
+    Habitat                   1,331         $219            $291,460               $276                      $366,746
+    Enhancement
+ Total                                                     $2,113,869                                       $2,651,836
+
+
+SRP-recommended actions at the Green River are currently generating approximately $2.11
+million per year in total benefits, with the majority derived from e-flow actions. These benefits
+include an estimated $1.31 million per year from fisheries and $298,000 per year from mussel
+
+
+
+
+                                                                                                                   30
+                                                           Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+habitat restoration across approximately 4,989 hectares. Additional benefits are associated with
+e-pool actions, which generate about $211,000 per year from recreation and $291,000 per year
+from habitat enhancement across 1,331 hectares. Annual benefits are expected to continue
+increasing as habitat conditions improve, reaching approximately $2.65 million per year by 2040
+as a result of SRP implementation.
+
+4.4.2 Cost–Benefit Analysis
+Although reoperation planning for the Green River began in 2002, data on implementation costs
+are only available from 2010 onward. Because a substantial portion of program costs cannot be
+captured, we present only the net present benefits associated with the SRP, rather than the
+BCR and NPV. A 7% real discount rate was applied to benefits, which are assumed to be fully
+attributable to the SRP. Figure 4-4 shows cumulative discounted benefits from 2010 to 2040.
+The SRP has generated roughly $20 million in real benefits since 2010, and as ecosystem
+conditions continue to improve, benefits are expected to exceed $37 million in real value by
+2040.
+
+Figure 4-4 Cumulative Discounted Benefits for Green River, 2010 to 2040
+
+   $40,000,000
+
+   $35,000,000
+
+   $30,000,000
+
+   $25,000,000
+
+   $20,000,000
+
+   $15,000,000
+
+   $10,000,000
+
+    $5,000,000
+
+           $0
+                 2010
+                 2011
+                 2012
+                 2013
+                 2014
+                 2015
+                 2016
+                 2017
+                 2018
+                 2019
+                 2020
+                 2021
+                 2022
+                 2023
+                 2024
+                 2025
+                 2026
+                 2027
+                 2028
+                 2029
+                 2030
+                 2031
+                 2032
+                 2033
+                 2034
+                 2035
+                 2036
+                 2037
+                 2038
+                 2039
+                 2040
+
+
+
+                                           Real benefits
+
+
+4.4.3 Sensitivity Analysis
+At a 3.25% discount rate, real benefits are expected to exceed $44.8 million by 2040. Under a
+more conservative assumption using a 10% discount rate, real benefits are projected to be
+approximately $30.4 million. This compares with $37.8 million in expected benefits calculated
+using a 7% discount rate.
+
+
+
+
+                                                                                                        31
+                                                                                                                                                                                              Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+
+5.                      Aggregation of Impacts
+
+                                  Washington
+
+                              Co lum                                                                                                                                                                                                L.
+                                       b i a R.                                                                                                                                                                                                                                                                                 Maine
+                                                                                                                                           North                                                                                    Superior
+                                                                                        Montana                                            Dakota
+
+                                                                                                                                                                                  Minnesota
+                                                                                                                                                                                                                                                                   L.                                                 VT
+
+
+
+
+                                                                                                                                                                                                                                         higan
+                         Oregon                                  Idaho                                                                                                                                                                                             Huron                                                   NH
+                                                                                                                                                                                                                                                                                                  tario
+                                                                                                                                                                                                                                                                                             L. On
+                                                                                                                                                                                                          Wisconsin
+                                                                                                                                                                                                                                                                                                        New York
+
+
+
+
+                                                                                                                                                                                                                                   L. Mic
+                                                                                                                         South                                                                                                                                                                                              MA
+                                                                  Sn
+
+
+
+
+                                                                   a ke R .
+                                                                                                                         Dakota                                                                                                                                                                                             RI
+
+
+
+
+                                                                                                                                                                                                          Mis
+                                                                                         Wyoming
+          .
+
+
+
+
+                                                                                                                                                                                                                                                            Michigan
+     Sacr a mento R
+
+
+
+
+                                                                                                                                                                                                                                                                                  ie                                   CT
+
+
+
+
+                                                                                                                                                                                                              si s
+                                                                                                                                                                                                                                                                                Er
+                                                                                                                                                       M is
+                                                                                                                                                              s o ur i
+
+
+
+
+                                                                                                                                                                                                              sip
+                                                                                                                                                                         R.
+                                                                                                                                                                                                                                                                             L.
+
+
+
+
+                                                                                                                                                                                                                pi
+                                                                                                                                                                                                                     R.
+                                                                                                                                  Nebraska
+                                                                                                                                                                                                                                                    Indiana                                       Pennsylvania
+                                            Nevada                                                                                                                                                                             Illinois
+                                                                                                                                       Platt
+                                                                                                                                             eR                                    Iowa                                                                          Ohio                                            NJ
+                                                                                                                                                  .
+                                                                                                                                                                                                                                                                                                        MD
+                                                                                 Utah                                                                                                                                                                                                                            DE
+                                                                                                                                                                                                                                                                   O
+                 California                                                                                                                                                                                                                                            h i o R.
+                                                                                             Colorado                                                                                                                                                                                  WV
+                                                                                                        A rk
+                                                                                                               a n s a s R.
+                                                                                                                                 Kansas                                                                                                                                                            Virginia
+                                                                                                                                                                                                                                                                   KY
+                                                                                                                                                                                              Missouri
+                                                  C olorado R.
+
+
+
+
+                                                                                                                                                                                                                                                                                         North
+                                                                                                                                                                                                                                                                                        Carolina
+                                                                                                                                                                                                                                    TN
+                                                                                                                                                      Oklahoma                                                                               en
+                                                                                                                                                                                                                                                                                             South
+
+
+
+
+                                                                                                                                                                                                                                           T
+                                                                    Gila                     New                                                                                                                                                  n essee
+                                                                                                                                                                                                                                                            R.                              Carolina
+                                                                         R   .              Mexico
+                                                                                                                                                                                          Arkansas
+                                                                       Arizona                                                                                                                                        Mississippi
+                                                                                                                                                                                                                                                      Alabama
+                                                                                                                                                                                                                                                                                  Georgia
+
+
+
+
+                                                                                                                                                                                                                       R.
+                                                                                                                                                                                              Re
+                                                                                                                                                                                                 d
+
+
+
+
+                                                                                                                                                                                                                 Miss sipp i
+                                                                                                                                                                                                     R.
+
+
+
+
+                                                                                                                                                                                                                     is
+                                                                                                                              Texas
+                                                                                                                                                         Co
+                                                                                                                                                                lora
+                                                                                                                                                                       do
+                                                                                                                                                                            R
+                                                                                                                                                                                          Louisiana
+                                                                                                                                                                                                                                                                                            Florida
+                                                                                                                                                                              .
+                                                                                                                                 R.
+                                                                                                                                  Gr
+                                                                                                                                  an
+                                                                                                                                      de
+
+
+
+
+Sustainable River Program Distribution
+Credit: USACE28
+
+
+Based on program budget information and documentation of acres and river miles affected by
+SRP actions, as reported in the SRP Metrics Framework (USACE & TNC, 2025), we calculated
+an order-of-magnitude estimate of the returns on program investments to date, including the
+four case study sites. For historical costs, we aggregated the total annual budgets reported for
+all other sites in the program from 2010 to 2024 and applied an inflation adjustment based on
+the Consumer Price Index (CPI).
+To calculate benefits for the additional sites, we applied the estimated parameters from the
+regression model (Equation 1) using a set of assumptions for the independent variables. Areas
+affected by site and by action purpose were converted to hectares. To convert river miles to
+hectares, we calculated the average river width using measurements from three randomly
+selected points along the SRP areas of impact for each river.29 We then assigned a single
+ecosystem service category to each affected action purpose to generate benefits using the
+
+28
+   https://www.nature.org/en-us/what-we-do/our-priorities/protect-water-and-land/land-and-water-stories/sustainable-
+rivers-project/
+29
+   Because the meta-analysis expresses ecosystem service values on a per-hectare basis, we calculated river areas
+as the product of length and mean width to ensure consistency with the valuation framework. This area-based
+approximation provides a practical and transparent method for comparing benefits across sites and ecosystem types
+within the same analytical units ($/ha/yr).
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                        32
+                                                       Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+regression model. We also assumed that the biome for all sites is rivers and lakes and applied
+the average mean species abundance and population density values derived from the four case
+study sites. Because expert information on ecological conditions was not available for the
+additional sites, we evaluated the following two scenarios:
+   •   Scenario 1: For each site and action purpose, ecological conditions were assumed to
+       be degraded prior to SRP implementation, intermediate under current conditions, and
+       good once benefits are fully realized. Full realization of benefits was assumed to occur
+       eight years from the present for each site.
+   •   Scenario 2: For each site and action purpose, ecological conditions were assumed to
+       be degraded prior to SRP implementation, intermediate under current conditions, and to
+       remain intermediate once benefits are fully realized.
+Table 5-1 presents the assumed characteristics for each site and scenario using this approach.
+To calculate benefits over time, we estimated the marginal difference in site value between a
+no-action scenario, corresponding to baseline conditions over time, and a counterfactual
+scenario, corresponding to improved conditions over time, with annual benefits scaled linearly
+until they reach their maximum. For historical benefits, we applied an inflation adjustment based
+on the CPI, and for projected benefits, we applied a 7% real discount rate. Figure 5-1 presents
+the cumulative present value of costs and benefits, as well as NPV, for each scenario, and
+Table 5-2 reports the BCR estimated under this approach for each scenario.
+
+Figure 5-1. Present Value Costs, Present Value Benefits, NPV, and BCR for Selected
+SRP Sites, 2020 to 2040
+       $350,000,000
+
+       $300,000,000
+
+       $250,000,000
+
+       $200,000,000
+
+       $150,000,000
+
+       $100,000,000
+
+        $50,000,000
+
+                $-
+                      2010
+                      2011
+                      2012
+                      2013
+                      2014
+                      2015
+                      2016
+                      2017
+                      2018
+                      2019
+                      2020
+                      2021
+                      2022
+                      2023
+                      2024
+                      2025
+                      2026
+                      2027
+                      2028
+                      2029
+                      2030
+                      2031
+                      2032
+                      2033
+                      2034
+                      2035
+                      2036
+                      2037
+                      2038
+                      2039
+                      2040
+
+
+
+
+                          Real Benefits (Scenario 1)   Real Benefits (Scenario 2)
+                          Real Costs                   NPV (Scenario 1)
+                          NPV (Scenario 2)
+
+
+
+
+                                                                                                    33
+                                                                       Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Table 5-1 Intended Benefits and Assumed Site Characteristics Across SRP for
+Aggregate Program Benefits Analysis
+Site              Start   Intended        Area                      Relevant Site Conditions                   Years Until
+                  Year    Benefit         (ha)      Baseline        Current              Maximum               Maximized
+                                                                                                               Benefits
+                                                                                  Scenario     Scenario
+                                                                                     1            2
+
+Barren River      2012    Floodplain      830       Degraded      Intermediate      Good        Intermediate   8
+Bill Williams     2006    Fisheries       716       Degraded      Intermediate      Good        Intermediate   8
+River                     Geo. Process    716       Degraded      Intermediate      Good        Intermediate   8
+                          Veg. Riparian   716       Degraded      Intermediate      Good        Intermediate   8
+                          Benthics        716       Degraded      Intermediate      Good        Intermediate   8
+Cape Fear River 2020      Fisheries       2,969     Degraded      Intermediate      Good        Intermediate   8
+                          Fish Pass.      4,443     Degraded      Intermediate      Good        Intermediate   8
+                          Habitat         4,443     Degraded      Intermediate      Good        Intermediate   8
+                          Structures
+Cossatot River    2023    Mussels         1,697     Degraded      Intermediate      Good        Intermediate   8
+Iowa River - E-   2023    Fisheries       3,586     Degraded      Intermediate      Good        Intermediate   8
+Flows                     Mussels         1,300     Degraded      Intermediate      Good        Intermediate   8
+                          Herptiles       2,286     Degraded      Intermediate      Good        Intermediate   8
+                          Temperature     1,300     Degraded      Intermediate      Good        Intermediate   8
+                          Management
+                          Shorebirds,     2,286     Degraded      Intermediate      Good        Intermediate   8
+                          Gulls, Other
+                          Water Birds
+Roanoke River     2016    Fisheries       3,745     Degraded      Intermediate      Good        Intermediate   8
+                          Geo. Process    3,745     Degraded      Intermediate      Good        Intermediate   8
+                          Floodplain      53,767    Degraded      Intermediate      Good        Intermediate   8
+Salt River        2023    Fisheries       1,476     Degraded      Intermediate      Good        Intermediate   8
+Upper Ohio        2023    Fisheries       4,731     Degraded      Intermediate      Good        Intermediate   8
+River                     Mussels         4,731     Degraded      Intermediate      Good        Intermediate   8
+                          Geo. Process    4,731     Degraded      Intermediate      Good        Intermediate   8
+                          Herptiles       4,731     Degraded      Intermediate      Good        Intermediate   8
+Willamette River 2008     Fisheries       12,284    Degraded      Intermediate      Good        Intermediate   8
+                          Geo. Process    12,284    Degraded      Intermediate      Good        Intermediate   8
+                          Veg. Riparian   12,284    Degraded      Intermediate      Good        Intermediate   8
+Bois de Sioux     2023    Shorebirds,     2,428     Degraded      Intermediate      Good        Intermediate   8
+River                     Gulls, Other
+                          Water Birds
+Kaskaskia         2021    Wetlands Veg.   599       Degraded      Intermediate      Good        Intermediate   8
+River*
+Mel Price         2021    Lake Sturgeon/ 24         Degraded      Intermediate      Good           Good        6 to 10
+                          Fisheries
+                          Waterfowl      451        Degraded          Good          Good           Good        6 to 10
+                          Shorebirds     451        Degraded      Intermediate      Good           Good        11 to 20
+                          Fisheries      451        Degraded      Intermediate      Good           Good        11 to 20
+                          Wetland        451        Degraded      Intermediate      Good           Good        6 to 10
+                          Vegetation
+                          Water Quality NA          Degraded       Degraded        Degraded       Degraded     NA
+Des Moines        2015    Mussels        695        Degraded       Degraded      Intermediate   Intermediate   6 to 10
+                          Fisheries/     695        Degraded       Degraded          Good           Good       6 to 10
+                          Sturgeon
+                          Herptiles      6,281       Degraded       Degraded     Intermediate   Intermediate   6 to 10
+                          Shorebirds     1,214       Degraded       Degraded         Good           Good       6 to 10
+                          Water Quality 1,298        Degraded       Degraded     Intermediate   Intermediate   6 to 10
+                          Wetland        NA        Intermediate   Intermediate   Intermediate   Intermediate   NA
+                          Vegetation
+Caddo Lake        2010    Fisheries      809       Intermediate     Good             Good           Good       6 to 10
+                          Floodplain     809         Degraded      Degraded      Intermediate   Intermediate   More than
+                          Connectivity                                                                         20
+                          Water Quality 809        Intermediate      Good           Good           Good        6 to 10
+
+
+
+
+                                                                                                                             34
+                                                                            Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+                            Flood            809         Degraded       Degraded      Intermediate    Intermediate   More than
+                            Protection                                                                               20
+Green River        2002     Mussels          4,989       Degraded      Intermediate       Good            Good       11 to 20
+                            Fisheries        4,989       Degraded      Intermediate       Good            Good       6 to 10
+                            Recreation       1,331     Intermediate        Good           Good            Good       3 to 5
+                            Habitat          1,331       Degraded      Intermediate       Good            Good       11 to 20
+                            Enhancement
+
+                          The following SRP sites were not included in the aggregation analysis due to insufficient data:
+Tule River                             Arkansas River                                              Tenn-Tom Waterway
+Pecos River                            Fourche La Fave River                                       Tombigbee River
+Ballard Locks                          White/Black/Little Red Rivers                               Alabama River
+Yakima River Delta (McNary)            Minnesota River                                             Coosawattee River
+Walla Walla River (Mill Creek)         Farm Creek                                                  Chattahoochee River
+Kootenai River                         Bayou Courtableau                                           Apalachicola River
+Cherry Creek                           Wabash River                                                Savannah River
+James River                            Ohio River                                                  Neuse River
+Kansas River                           Rough River                                                 Potomac River
+Osage River                            Nolin River                                                 Lehigh River
+Brazos River                           Cumberland River                                            Connecticut River
+Trinity River                          Sugar Creek                                                 Kanawha River
+Neches River                           Twelve Pole Creek
+
+
+
+Table 5-2 NPV and BCR for SRP Portfolio, 2020–2040
+
+                                  2020                2025                2030                   2035                       2040
+ Scenario 1       NPV         $37,911,632          $89,997,500        $162,707,764            $222,728,936            $265,139,820
+                  BCR                7.56                 5.31                8.79                   11.66                   13.69
+ Scenario 2       NPV         $37,911,632          $89,588,974        $155,931,740            $207,024,846            $243,040,699
+                  BCR                7.56                 5.29                8.46                   10.91                   12.63
+
+Using the Scenario 1 approach, the four case study sites combined with the additional program
+sites yield an estimated NPV of approximately $265 million and a BCR of 13.69 through 2040.
+Under the Scenario 2 approach, the estimated NPV is approximately $243 million, with a BCR
+of 12.63. In both scenarios, the program generates substantial economic returns relative to
+costs. However, because several strong assumptions are required to estimate aggregated
+benefits, these results should be interpreted as order-of-magnitude estimates of program value
+rather than precise valuations.
+
+
+
+
+                                                                                                                                   35
+                                                       Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+
+6.     Conclusion
+
+ SRP delivers strong returns on investment through quantifiable ecosystem service
+ benefits. These benefits will continue to accrue over time, provided that USACE
+ Districts continue to implement SRP-recommended actions.
+
+Across all four SRP project sites, the results demonstrate that the program is highly cost-
+effective, delivering positive returns on investment within only a few years. By 2040, Mel Price
+achieves an NPV of $2.70 million and a BCR of 12.43, with benefits exceeding costs within just
+three years. The Des Moines River, while its benefits lag costs until approximately 2028,
+ultimately delivers the largest absolute gains, with an NPV of $17.7 million and a BCR of 8.98.
+Caddo Lake, though smaller in scale, generates efficient and early returns, producing an NPV of
+$2.86 million and a BCR of 7.89, with benefits surpassing costs from 2015 onward. The Green
+River has already realized more than $18 million in benefits since 2010 and is projected to
+exceed $34 million by 2040. At the portfolio level, including both the case study sites and
+additional program sites, the SRP as a whole provides positive returns, with an NPV ranging
+from $243 million to $265 million and a BCR ranging from 12.63 to 13.69 through 2040. Taken
+together, these outcomes demonstrate that SRP investments consistently yield high returns
+relative to costs, reflecting strong short- and long-term cost-effectiveness across diverse
+ecological contexts.
+These results are based on two primary sources of information: cost data from 2010 to 2024
+provided by USACE staff for each site, and estimated ecosystem service values associated with
+intended benefits from environmental actions at each site. Benefit valuation was conducted
+using a benefit transfer approach, which enables estimation in the absence of site-specific
+primary data collection. Although this method follows a well-established meta-analytic transfer
+regression framework, the results should not be interpreted as precise measurements due to
+inherent limitations in capturing all site-specific variables. Nevertheless, the regression model
+draws on a dataset of 55 studies, which helps minimize extrapolation error and improve the
+overall robustness of the estimates.
+It is important to note that cost estimates include only expenditures incurred directly by SRP.
+Implementation of environmental actions at each site was also supported by several partners,
+including state, regional, federal, and nonprofit organizations. These partners’ financial and in-
+kind contributions were essential to project success; however, while they are acknowledged
+here, they were not monetized in this analysis. Because detailed cost-sharing data were
+unavailable, we cannot attribute precise portions of total costs exclusively to SRP. Incorporating
+these additional contributions would increase total costs and, in turn, reduce the estimated
+NPVs and BCRs. Nonetheless, tracking expenditures by USACE—the owner and manager of
+all infrastructure subject to SRP—is critical for understanding the value of SRP investments
+from a federal perspective.
+
+
+
+
+                                                                                                    36
+                                                       Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Net benefits were estimated by comparing two scenarios: a baseline (no-action) scenario and
+an SRP implementation scenario. Changes in ecosystem service values were informed by site
+representatives’ input on expected changes in ecosystem conditions associated with intended
+benefits. This approach assumes that observed changes are primarily attributable to SRP
+actions; however, we acknowledge that external factors, such as weather variability, may also
+influence outcomes and could lead to under- or overestimation of impacts in the short term.
+Because the analysis evaluates benefits over multiple decades, short-term weather-related
+variability is expected to average out, allowing the estimates to more closely reflect the long-
+term average effects of SRP actions.
+All estimates relied on the expert judgment of site representatives with in-depth knowledge of
+dam operations, SRP implementation, site monitoring, and ecosystem conditions. While their
+input reflects well-informed and credible expertise, a comprehensive ecological assessment
+supported by empirical data would be required for more rigorous validation. In addition, the
+identification of intended benefits and corresponding ecosystem services was driven primarily
+by these site representatives; a broader expert elicitation process would improve the
+completeness and validation of ecosystem service selection. Finally, the analysis was
+constrained by the ecosystem service categories available within the TEEB classification, which
+limited our ability to quantify services beyond those captured under this framework.
+In sum, while the estimates involve uncertainty, the overall direction of the results is robust,
+leading us to conclude that SRP delivers strong returns on investment through quantifiable
+ecosystem service benefits. These benefits are expected to continue accruing over time,
+provided that USACE districts continue to implement SRP-recommended actions and maintain
+associated environmental improvements.
+
+
+7.     Acknowledgments
+This report was made possible, in part, by support from the Enterprise Mobility Foundation.
+
+
+
+
+                                                                                                    37
+                                                       Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+
+8.     References
+Amatucci, A., Ventura, V., Simonetto, A., & Gilioli, G. (2024). The economic value of ecosystem
+      services: Meta-analysis and potential application of value transfer for freshwater
+      ecosystems. Environmental and Resource Economics, 87(11), 3041–3061.
+Brander, L. M., Bräuer, I., Gerdes, H., Ghermandi, A., Kuik, O., Markandya, A., ... &
+      Wagtendonk, A. (2012). Using meta-analysis and GIS for value transfer and scaling up:
+      Valuing climate change induced losses of European wetlands. Environmental and
+      Resource Economics, 52(3), 395–413.
+de Groot, R., Brander, L., Lieshout, J., Solomonides, S., Guisado, V., Schaegner, P., ... & van
+      Vliet, A. (2021). Updating and upgrading the Ecosystem Services Valuation Database
+      (ESVD): A global database for valuing ecosystem services (with focus on data relevant
+      for the Netherlands). Ministry of Agriculture, Nature and Food Quality, Netherlands.
+Griffen, E. M., Richards, A. L., Weber, M. J., & Roe, K. J. (2024). Annual report to United States
+        Geological Survey and United States Army Corps of Engineers: Sustainable Rivers
+        Program for the Des Moines River downstream of Red Rock Dam (Grant No.
+        G21AC10262). Department of Natural Resource Ecology and Management, Iowa State
+        University.
+Johnston, R. J., & Rosenberger, R. S. (2010). Methods, trends and controversies in
+       contemporary benefit transfer. Journal of Economic Surveys, 24(3), 479–510.
+Meffert, K. (2010). Economic impact analysis: Reoperation of Green River Lake, KY – Pilot
+        project for the Sustainable Rivers Project. United States Army Corps of Engineers,
+        Louisville District.
+Smith, R., Trungale, J., Lowerre, R., Hayes, T., Montagne, M., Bister, T., Overdyke, L.-A., &
+       Hackett, M. (2019). Instream flow restoration and watershed conservation in the Cypress
+       Basin, Texas. In Proceedings of the American Fisheries Society Symposium (Vol. 91).
+       American Fisheries Society.
+Sustainable Rivers Program. (2025). Sustainable Rivers Program metrics framework to track
+       and communicate program impact. Prepared for U.S. Army Corps of Engineers, The
+       Nature Conservancy, and other organizations involved with Sustainable Rivers.
+Thostenson, P., Kinkead, K., Gosselink, T., & Dinsmore, S. J. (2024). Species inventory at Lake
+      Red Rock Delta: Purpose and pilot results. Sustainable Rivers Program, Rock Island
+      District.
+U.S. Army Corps of Engineers & The Nature Conservancy. (2025). Sustainable Rivers Program:
+       In progress review FY 2024. Retrieved from
+       https://www.hec.usace.army.mil/sustainablerivers/
+
+
+
+
+                                                                                                    38
+                                                                   Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+
+Appendix A
+Tables
+Table A-1 TEBB Ecosystem Services Classification
+ Service                Ecosystem Service                                               ES Code
+ Provisioning           Food                                                            1
+ Provisioning           Water                                                           2
+ Provisioning           Raw materials                                                   3
+ Provisioning           Genetic resources                                               4
+ Provisioning           Medicinal resources                                             5
+ Provisioning           Ornamental resources                                            6
+ Regulating             Air quality regulation                                          7
+ Regulating             Climate regulation                                              8
+ Regulating             Moderation of extreme events                                    9
+ Regulating             Regulation of water flows                                       10
+ Regulating             Waste treatment                                                 11
+ Regulating             Erosion prevention                                              12
+ Regulating             Maintenance of soil fertility                                   13
+ Regulating             Pollination                                                     14
+ Regulating             Biological control                                              15
+ Habitat                Maintenance of life cycles                                      16
+ Habitat                Maintenance of genetic diversity                                17
+ Cultural               Aesthetic information                                           18
+ Cultural               Opportunities for recreation and tourism                        19
+ Cultural               Inspiration for culture, art and design                         20
+ Cultural               Spiritual experience                                            21
+ Cultural               Information for cognitive development                           22
+ Cultural               Existence, bequest values                                       23
+ Habitat                Maintenance of life cycles                                      16
+ Habitat                Maintenance of genetic diversity                                17
+ Cultural               Aesthetic information                                           18
+ Cultural               Opportunities for recreation and tourism                        19
+ Cultural               Inspiration for culture, art and design                         20
+ Cultural               Spiritual experience                                            21
+ Cultural               Information for cognitive development                           22
+ Cultural               Existence, bequest values                                       23
+
+Source: https://www.esvd.info/classifications
+
+
+
+
+                                                                                                              A-1
+                                                             Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+
+Table A-2 Summary Statistics of Variables Used in the Meta-Regression (n = 55
+Studies)
+                    Variable           Type                    Description                     Mean    SD
+ Dependent Variable
+         log(ES value)                 N      Natural log of ecosystem service value (2025      6.26   2.03
+                                              USD/ha/year)
+ Site Characteristics
+         log(Site area)                N      Natural log of site area (ha)                    10.01   3.71
+         Ecosystem condition:          D      =1 if intermediate condition (ref. = degraded)    0.62   0.49
+         Intermediate
+         Ecosystem condition: Well-    D      =1 if well-functioning (ref. = degraded)          0.28   0.45
+         functioning
+         Mean MSA                      N      Mean species abundance (biodiversity proxy)       0.35   0.17
+ Biome Type
+         Intensive land use            D      =1 if biome = intensive land use                  0.54    0.5
+         Rangelands / grasslands       D      =1 if biome = rangelands & natural                0.17   0.37
+                                              grasslands
+         Rivers and lakes              D      =1 if biome = rivers and lakes                    0.04   0.19
+         Temperate forest / woodland   D      =1 if biome = temperate forest & woodland         0.13   0.34
+ Ecosystem Service Category
+         Food                          D      =1 if ES code = 1                                 0.67   0.47
+         Water                         D      =1 if ES code = 2                                 0.19   0.39
+         Extreme event moderation      D      =1 if ES code = 9                                 0.09   0.29
+         Water flow regulation         D      =1 if ES code = 10                                0.04    0.2
+         Waste treatment               D      =1 if ES code = 11                                0.02   0.13
+         Erosion prevention            D      =1 if ES code = 12                                  0    0.05
+         Soil fertility maintenance    D      =1 if ES code = 13                                 0.1    0.3
+         Biological control            D      =1 if ES code = 15                                0.02   0.14
+         Life-cycle maintenance        D      =1 if ES code = 16                                  0    0.05
+         Genetic diversity             D      =1 if ES code = 17                                0.02   0.13
+         Aesthetic information         D      =1 if ES code = 18                                0.01   0.11
+         Recreation & tourism          D      =1 if ES code = 19                                0.07   0.25
+         Existence / bequest           D      =1 if ES code = 23                                0.03   0.18
+ Valuation Method
+         Contingent valuation (CV)     D      =1 if method = contingent valuation               0.12   0.33
+         Market price (MP)             D      =1 if method = market price                       0.51    0.5
+         Production function (PF)      D      =1 if method = production function                0.05   0.22
+         Replacement cost (RC)         D      =1 if method = replacement cost                   0.16   0.37
+Notes: N = continuous variable; D = dummy variable. All monetary values are expressed in 2025 USD.
+Reference categories omitted from the table include degraded ecosystem condition and valuation
+methods not listed.
+
+
+
+
+                                                                                                        A-2
+                                                                Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Table A-3 Meta-Regression Model Results
+ Variable                                                         Coef.        SE
+ Site Characteristics
+ Intercept                                                        3.770***     0.982
+ log(Site area)                                                   0.03         0.032
+ Ecosystem condition: Intermediate                                1.414***     0.436
+ Ecosystem condition: Well-functioning / extensively              1.593***     0.46
+ managed
+ Mean MSA                                                         0            0.567
+ Biome
+ Intensive land use                                               0            0.403
+ Rangelands & natural grasslands                                  −0.365***    1.028
+ Rivers and lakes                                                 0.216        0.455
+ Temperate forest & woodland                                      −1.114***    0.705
+ Ecosystem Service Category
+ Food                                                             −0.088***    0.277
+ Water                                                            −1.200⁺      0.307
+ Extreme event moderation                                         1.087        0.671
+ Water flow regulation                                            0.159        0.491
+ Waste treatment                                                  0.626        0.758
+ Erosion prevention                                               −0.626***    1.008
+ Soil fertility maintenance                                       −1.105***    0.504
+ Biological control                                               0.301⁺       0.855
+ Life-cycle maintenance                                           −2.175***    1.324
+ Genetic diversity                                                −1.376       0.649
+ Aesthetic information                                            0.000*       0.862
+ Recreation & tourism                                             0.878        0.806
+ Existence / bequest values                                       −1.639       0.566
+ Valuation Method
+ Contingent valuation                                             0.439        0.813
+ Market price                                                     1.265**      0.943
+ Production function                                              1.056⁺       1.256
+ Replacement cost                                                 0.082        1.038
+ Model fit
+ Observations                                                     55
+ R²                                                               0.520
+ Adjusted R²                                                      0.492
+Notes:
+⁺ p < 0.10, * p < 0.05, ** p < 0.01, *** p < 0.001.
+Reference categories omitted for ecosystem condition, biome, ecosystem service category, and valuation method
+
+
+
+
+                                                                                                            A-3
+                                                        Sustainable Rivers Program Cost–Benefit Analysis
+
+
+
+Table A-4. NPV and BCR for Each Site, by year, 2010–2040, Using a 7% Real Discount
+           Rate
+                             NPV                                            BCR
+         Caddo Lake      Des Moines     Mel Price       Caddo Lake      Des Moines       Mel Price
+                         River                                          River
+ 2010         -$43,156             $0              $0            0.00             0.00            0.00
+ 2011         -$77,502             $0              $0            0.10             0.00            0.00
+ 2012        -$107,911             $0              $0            0.20             0.00            0.00
+ 2013         -$95,636             $0              $0            0.35             0.00            0.00
+ 2014        -$101,616             $0              $0            0.46             0.00            0.00
+ 2015         -$96,509       -$29,116              $0            0.57             0.00            0.00
+ 2016         -$66,146       -$29,116              $0            0.73             0.00            0.00
+ 2017          -$9,067       -$99,502              $0            0.96             0.00            0.00
+ 2018          $54,611      -$118,240              $0            1.22             0.00            0.00
+ 2019         $106,569      -$175,908              $0            1.41             0.00            0.00
+ 2020          $31,081      -$646,183              $0            1.07             0.00            0.00
+ 2021         $112,221      -$891,606        -$85,667            1.27             0.00            0.00
+ 2022         $194,180      -$988,076        -$67,600            1.47             0.00            0.58
+ 2023         $279,457    -$1,720,067         $31,964            1.67             0.00            1.13
+ 2024         $368,662    -$2,220,209       $289,529             1.89             0.00            2.22
+ 2025         $476,105    -$1,851,556       $530,201             2.15             0.17            3.24
+ 2026         $598,794    -$1,165,861       $755,082             2.44             0.47            4.19
+ 2027         $734,070      -$209,317       $965,204             2.77             0.91            5.08
+ 2028         $879,568       $976,798      $1,161,531            3.12             1.44            5.90
+ 2029       $1,033,195     $2,355,657      $1,344,964            3.49             2.06            6.68
+ 2030       $1,193,100     $3,894,463      $1,516,348            3.87             2.75            7.40
+ 2031       $1,357,650     $5,564,068      $1,676,469            4.27             3.51            8.08
+ 2032       $1,525,413     $7,338,620      $1,826,066            4.67             4.31            8.71
+ 2033       $1,695,132     $8,988,953      $1,965,387            5.08             5.05            9.30
+ 2034       $1,865,711    $10,523,762      $2,095,138            5.49             5.74            9.85
+ 2035       $2,036,199    $11,951,135      $2,215,976            5.90             6.38           10.36
+ 2036       $2,205,771    $13,278,592      $2,328,513            6.31             6.98           10.83
+ 2037       $2,373,721    $14,513,127      $2,433,320            6.72             7.54           11.27
+ 2038       $2,539,446    $15,661,244      $2,530,926            7.12             8.05           11.69
+ 2039       $2,702,433    $16,728,993      $2,621,828            7.51             8.53           12.07
+ 2040       $2,862,254    $17,722,000      $2,706,484            7.89             8.98           12.43
+
+
+
+
+                                                                                                     A-4
+

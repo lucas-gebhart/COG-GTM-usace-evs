@@ -1,0 +1,17 @@
+// USWDS theme settings for EVS. Tokens only; every color pair below is verified in the 508 report.
+@use "uswds-core" with (
+  $theme-show-compile-warnings: false,
+  $theme-show-notifications: false,
+  $theme-image-path: "/uswds/img",
+  $theme-font-path: "/uswds/fonts",
+  $theme-color-primary: "blue-60v",
+  $theme-color-primary-dark: "blue-70v",
+  $theme-color-primary-darker: "blue-80v",
+  $theme-color-base-ink: "gray-90",
+  $theme-color-success: "green-cool-50v",
+  $theme-color-warning: "gold-20v",
+  $theme-color-error: "red-60v",
+  $theme-focus-color: "blue-40v",
+  $theme-focus-width: 0.5,
+  $theme-utility-breakpoints: ("card": true, "card-lg": true, "mobile-lg": true, "tablet": true, "tablet-lg": true, "desktop": true, "desktop-lg": true, "widescreen": true)
+);

@@ -1,0 +1,1 @@
+{"swagger":"2.0","info":{"title":"ORDS generated API for uscg","version":"1.0.0"},"host":"ndc.ops.usace.army.mil","basePath":"/ords/lpms/uscg","schemes":["https"],"produces":["application/json"],"paths":{"/json":{"get":{"description":"Retrieve records from uscg","responses":{"200":{"description":"The queried record.","schema":{"type":"object","properties":{}}}}}}}}

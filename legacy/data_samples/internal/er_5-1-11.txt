@@ -1,0 +1,802 @@
+                              DEPARTMENT OF THE ARMY
+                               U.S. ARMY CORPS OF ENGINEERS
+                                      441 G STREET NW
+                                WASHINGTON, D.C. 20314-1000
+
+
+
+CECS
+
+
+MEMORANDUM FOR COMMANDERS, MAJOR SUBORDINATE COMMANDS,
+DISTRICTS, CENTERS AND LABS
+
+SUBJECT:     Revision of ER 5-1-11, U.S. Army Corps of Engineers (USAGE) Business
+Process
+
+
+1. ER 5-7-1, Project Management, issued on 30 September 1992, introduced USAGE
+to the concept and rules of project management. ER 5-1-11, Program and Project
+Management, originally issued on 27 February 1998, applied those project management
+principles to programs as well, and mandated that all work performed by USAGE would
+follow the Project Management Business Process (PMBP), without exception. The
+regulation also dictated that all work be "managed using the PM automation information
+systems (AIS) and PMBP ."
+
+2. This led to the unwritten but nonetheless powerful corporate oral tradition that "all
+work is a project" and that all work must be loaded into our PM AIS. The USAGE
+Business Process imperatives were introduced in the 17 August 2001 revision. We have
+operated under ER 5-1-11 for almost nine years now, and have learned that the
+efficiencies of the PMBP are not realized in all types of work. We also discovered the
+limitations of attempting to manage all work within the PM AIS.
+
+3. In order to align ourselves with industry standards, and in response to the
+recognition that all work is NOT a project, this revision of ER 5-1-11 clearly defines the
+concept of "project," as well as the work that we undertake that is NOT a project. It also
+dictates the process for managing non-project work as well as our corporate data. The
+new ER requires consistent, timely and accurate use of corporate AIS. All USAGE
+programs, to include project and non-project work, will be captured in P2, however the
+level of detail will be dependent upon the specific program and category of work.
+
+4. Appendix C of this revision is a graphical representation of the organization of ER 5-
+1-11, as well as its relationship to other doctrine and processes. Many of the PMBP
+imperatives are smart business and effective for any type of work; these imperatives
+have been moved under the USAGE business doctrine, which are the overarching
+philosophy and operation principles that qpply to the whole U.S. Army Corps of
+Engineers. Three additional imperatives relate only to the management of projects (as
+defined by this regulation) and are then retained under the Project Delivery Process -
+the PMBP. While the process of managing projects is well-defined, we now have the
+doctrine in place to develop more detailed processes to manage our non-project work
+as well as our corporate data.
+CECS
+
+SUBJECT:    Revision of ER 5-1-11, U.S. Army Corps of Engineers (USAGE) Business
+Process
+
+
+5. Point of contact for this revision is Mary Gauker, Deputy, Program and Project
+Management Community of Practice (CECW-CB), 202-761-1811 or
+Marv.C.Gauker@hq02.usace.army.mil.
+
+FOR THE COMMANDER:
+
+
+
+
+                                        Colonel, or s of Engineers
+                                        Chief of Staff
+                                DEPARTMENT OF THE ARMY                             ER 5-1-11
+                                 U.S. Army Corps ofEngineers
+CECW-CB                          Washington, D.C. 20314-1000
+
+Regulation                                                                  1 November 2006
+No. ER 5-1-11
+
+
+                                       Management
+                                 USACE BUSINESS PROCESS
+
+1. Purpose. This regulation establishes policy and doctrine to accomplish all work performed
+by the U.S. Army Corps of Engineers (USACE).
+
+2. Applicability. This regulation applies to all USACE activities, all USACE employees, and
+all functions.
+
+ 3. Distribution. Approved for public release, distribution is unlimited.
+
+ 4. References.
+
+   a. AR 5-1, Total Army Quality Management
+
+   b. AR 11-2, Management Control
+
+   c. FM 22-100, Army Leadership
+
+   d. ER 25-1-8, The Community ofPractice (CoP) in the U.S. Army Corps of Engineers
+      (USACE,) dtd 23 January 2006
+
+   e. A Guide to the Project Management Body of Knowledge (P MBO~ Guide) - Third
+      Edition, Project Management Institute, ~nc., 2004
+
+ 5. Definitions. Appendix A provides definitions to ensure a common understanding of key and
+ essential terms.
+
+ 6. USACE Business Doctrine.
+
+   a. Mission-Focused Execution. USACE shall make resource decisions based on what is best
+for the mission, the Nation, and the public while considering the impacts to all customers.
+Leaders facilitate smart use of resources, technical competency, and innovation across the
+organization with a focus on mission execution. As public servants, all USACE employees have
+taken an oath to support and defend the interests of the United States and its citizens.
+Accordingly, all USACE employees must make decisions based on the best interests of the
+Nation, the Army, and the public. Recognition of this preeminent responsibility is critical to
+properly balancing the many interests that USACE faces in executing its missions.
+
+This regulation supersedes ER 5-1-11, Program and Project Management, 17 August 2001
+                                                                                       ER 5-1-11
+                                                                                   1 November 06
+
+
+
+   b. Teamwork. USACE operates as a team serving the Army and the Nation. USACE seeks
+to meet the Nation's needs as efficiently and effectively as possible. To achieve this, people with
+the right skills and tools must work on the right job. All organizations must act in unison across
+boundaries to draw on combined strengths and leverage the resources of the public and private
+sectors to meet national needs. By sharing knowledge, Communities of Practice (CoPs) in
+USACE build, maintain, and provide expertise and capability to accomplish the USACE
+miSSIOn.
+
+
+    c. Customer Focus. The execution of all USACE work, project delivery, and program
+execution across organizational boundaries must appear seamless to customers. This "one door
+to the Corps" concept means that any USACE activity that receives a customer request for
+support must ensure that customer receives the best USACE can provide, putting aside self
+interests. When a customer develops a trusting relationship with a particular individual or
+district, the customer may wish to go through that entity for all their Corps support, even if
+outside that entity's area of responsibility; that entity must ensure they leverage the best and
+most cost effective assets from across USACE.
+
+  d. Operating Principles. Five universal operating principles govern all work performed by
+USACE. It is the responsibility of senior leaders to ensure these imperatives are followed across
+USACE for all work.
+
+                             USACE Business Process Imperatives
+      1. Plan for success and keep commitments
+      2. Measure quality with the goals and~xpectations ofthe customer in mind
+      3. Build effective communications into all activities and processes
+      4. Use best practices and seek continual improvement
+      5. Use corporate automated information systems consistently and accurately
+
+        (1) Plan for success and keep commitments. All work shall be managed with a written
+plan. Planning enables us to fully understand our customers' requirements, as well as build trust
+with customers and coworkers by clarifying expectations, keeping commitments, and ensuring
+all products and services are delivered as promised. Each person contributes to success by
+meeting the requirements of his or her role, regardless of functional area or echelon within the
+organization. People may contribute to mission success individually, as part of a team, or
+indirectly as a provider of support services.
+
+        (2) Measure quality with the goals and expectations of the customer in mind. Quality
+is the degree to which a set of inherent characteristics fulfills requirements. US ACE strives to
+meet or exceed the goals, objectives, and expectations of the customer, while complying with
+legal obligations and administration policy. All employees contribute to our ability to succeed.
+Each person is responsible and accountable for the timeliness and quality of his or her work.
+Quality is managed through the Plan-Do-Check-Act cycle, which is described at Appendix B.
+
+
+                                                 2
+                                                                                        ER 5-1-11
+                                                                                    1 November 06
+
+
+        (3) Build effective communications into all activities and processes. USACE utilizes
+effective communication to interact internally as a team and externally with partners,
+stakeholders, and customers. Communication is essential to foster: cooperation; focused
+understanding of requirements and expected outcomes; and the continual improvement to the
+business processes that are so vital to continued success. Effective communication is critical to
+the meaningful exchange of ideas, desires, requirements and plans. US ACE will make relevant
+information fully and readily available consistent with law and national security interests.
+
+        (4) Use best practices and seek continual improvement. USACE strives to do the right
+things, the right way, for the right reasons, and to constantly improve. Evaluating performance
+during and after completion of work can produce opportunities to further improve business
+processes, in terms of execution, productivity, cost effectiveness, streamlined processes,
+timeliness, quality, and customer service. As a learning organization, USACE uses CoPs to
+standardize common procedures and facilitate sharing of knowledge and best practices. CoPs
+simplify working across boundaries and incorporating lessons learned. Before beginning any
+new project, activity, or service, each individual shall check for applicable lessons learned and
+best practices in USACE lessons learned databases.
+
+        (5) Use corporate automated information systems consistently and accurately.
+Consistent, timely, and accurate use of corporate automated information systems (AIS) is
+necessary to ensure data validity, integrity, and accessibility. Access to meaningful and accurate
+information is paramount to managing our programs, projects, and meeting customer
+commitments; data stored within our corporate AIS help execute enterprise level business
+processes and provide decision support. All data must be managed in such a fashion to achieve
+interoperability as well as regional and corporate visibility of essential information that can be
+seamlessly shared across USACE, its customers, stakeholders, and partners. Each and every
+individual is responsible for data quality in the corporate AIS. For example, different team
+members may be responsible for the integrity and validity of data in Corps of Engineers
+Financial Management System (CEFMS,) Resident Management System (RMS,) Real Estate
+Management Information System (REMIS,) Facilities and Equipment Maintenance System
+(FEMS,) Procurement Desktop 2 (PD2,) Design Review and Checking System (DrChecks 8M,)
+Project Management Information System 2 (P2), and other AIS.
+
+    e. All work accomplished by USACE is cqnsidered part of a program. A program is a
+collection of related projects, services, routine administrative and recurring operational
+processes, or some mixture of these. Programs are executed to provide projects, products, and
+services for both internal and external customers. Programs can be organized by customer
+(internal or external), appropriation, similarity of scope, or by other unifying characteristics.
+Programs shall be managed in accordance with the overarching principles ofthe USACE
+business process.
+
+
+
+
+                                                 3
+                                                                                                  ER 5-1-11
+                                                                                              I November 06
+
+
+7. Project Delivery Process. A project is a temporary endeavor undertaken to create a unique
+product, service, or result. 1 The Project Management Business Process (PMBP) is the
+fundamental method used to deliver quality projects at all echelons of USACE.
+
+    a. Central Tenet ofPMBP. The heart of the PMBP is results-focused teamwork. We draw
+on the diverse resources ofUSACE worldwide to assemble strong multi-disciplinary teams,
+unconstrained by geography or organizational boundaries, to best meet the customers' needs, and
+the national/public interests. This regulation empowers Project Delivery Teams (PDTs) with the
+authority and responsibility for delivering quality products and services.
+
+    b. PMBP Imperatives. In addition to the five USACE business process principles, there are
+three imperatives that govern the successful completion of projects.
+
+                                           PMBP Imperatives
+         I. One project, one team, one Project Manager (PM)
+         2. Manage all projects with a Project Management Plan (PMP)
+         3. The Project Delivery Team (PDT) is responsible for project success
+
+        (1) One project, one team, one Project Manager (PM) Each project is assigned to one
+PDT, with a single PM for management and leadership during the life cycle of the project.
+Senior leaders select the PM based on the individual's abilities to best lead the specific project
+without regard to assigned organizational element. Generally, the PM will reside in the
+geographic area of responsibility, but can be elsewhere as needed to meet project requirements.
+The PDT shall consist of everyone necessary for successful development and execution of all
+phases of the project. The customer is an integral part of the PDT. The PM is responsible for
+ensuring that the necessary disciplines and perspectives are represented within the PDT. The
+PDT may be drawn from more than one USACE district or activity and may include specialists,
+consultants/contractors, stakeholders, or representatives from other federal and state agencies.
+Team members shall be chosen for their skills and abilities to successfully execute a quality
+project, regardless of their assigned functional or geographic locations within USACE. Virtual
+and matrix teams shall be used to align USACE efforts and focus on quality project delivery.
+The team will expand to include all necessary expertise on a specific issue and may include a
+vertical aspect encompassing the MSC and headquarters.
+
+
+
+
+1
+ Project Management Institute, A Guide to the Project Management Body of Knowledge (PMBO/(W Guide)-
+Third Edition, Project Management Institute, Inc., 2004. Copyright and all rights reserved. Material from this
+publication has been reproduced with the permission of PMI.
+
+
+
+
+                                                       4
+                                                                                       ER 5-1-11
+                                                                                   1 November 06
+
+
+        (2) Manage all projects with a Project Management Plan (PMP). To meet mission
+objectives, each project is managed under a project management plan (PMP). A PMP is a
+roadmap for quality project delivery. The PM and the PDT work with the customer early in the
+project scoping process to determine what the customer needs and to refine those requirements in
+light of safety, fiscal, schedule, legal, and other constraints. The PDT shall measure its success
+against the expectations documented in the PMP, which is an agreement between US ACE and
+the customer that defines project objectives ahd project-specific quality control procedures
+appropriate to the size, complexity, acquisition strategy, project delivery, and nature of each
+product. It should be signed by all PDT members, including the customer; to document their
+commitment to project success. To be an effective management and communication tool, the
+plan must be a living document that is updated as conditions change. The PM will inform
+customers when their requests will cause significant scope, schedule, or cost impacts, and will
+coordinate any changes to the project with the customer and PDT, updating the PMP as
+appropriate.
+        All work is managed using the PMP and all PDT members share this responsibility. The
+PM and PDT will develop and maintain the PMP at a level of detail commensurate with the
+scope of the project. PMPs should be concise and succinct, but address all processes and areas
+necessary to ensure effective project execution. Minimum requirements for project management
+plans are found in the PMBP Manual. Management of similar projects of limited scope using a
+Program Management Plan (PgMP) rather than an individual PMP for each is acceptable.
+However, when a project under a program is of such scope that it is no longer manageable under
+the PgMP, it shall be managed with a separate PMP.
+
+         (3) The Project Delivery Team (PDT) is responsible for project success. The PDT is
+empowered and supported by senior organizational leaders to make project decisions within the
+bounds of the approved PMP. Led by the Project Manager, they are empowered to act in unison
+across organizational boundaries focusing on consistent service to customers. Senior leaders
+are responsible to ensure the team has the resources, tools, skills, and experience needed to
+deliver a quality project. Though projects may include many distinct, separate phases, they must
+be approached from an integrated, life-cycle perspective focused on meeting the project's goals,
+objectives, and expectations.
+         The PDT shall work with customers to determine and provide what is expected and must
+strive to deliver products and services that are in the public interest. The needs and expectations
+of customers and stakeholders shall be balanced, while considering available resources and life-
+cycle requirements. Expectations ofthe beneficiaries and/or stakeholders of projects are
+considered when determining quality objectives. USACE will not compromise professional
+standards. Requirements that exceed mandatory standards are negotiated with the customer
+based on the project's complexity, available resources, and the degree of risk the customer and
+USACE are willing to assume.
+
+8. Process for Other Work.
+
+   a. Recognizing that all work is not a project, several key USACE functions are organized
+around ongoing, recurring, and cyclical work rather than discrete projects. Other non-project
+work can include some operations and maintenance
+                                              I
+                                                     (O&M) activities at completed works,
+regulatory permitting, flood plain management, general and administrative support, and real
+
+
+                                                 5
+                                                                                       ER 5-1-11
+                                                                                   1 November 06
+
+
+estate actions. However, some of this work (eg. major maintenance, some regulatory work, and
+real estate) is a project and should be managed in accordance with the Project Delivery Process.
+
+      (1) For example, in the Real Estate function, a major land acquisition, land disposal, and
+BRAC-related acquisitions are projects, whereas outgrants, renewal of recruiting leases, and
+management of leases are not.
+
+      (2) Fielding a new system is a project in the Corporate Information world, but records
+management, maintaining the library, and operating and sustaining a system are other work.
+
+        (3) Research and Development (R&D) Projects include basic research (e.g., development
+of new and advanced inorganic cements that bond to reinforcing materials), applied research
+(e.g., development of protective measures, decision aids and concepts for base camp protection
+against terrorist and conventional contingency environments) and demonstration R&D military
+studies and applied civil works R&D studies (e.g., development of concrete armor unit
+technology for coastal structures, Core Loc). Additional project examples include civil (e.g.,
+development ofthe Regional Internet Bank Information Tracking System for EPA to assist in
+day-to-day mitigation banking business) and military (e.g., developed and produced for the
+Army Environmental Center as an alternative: to lead bullets for use on small arms training
+ranges) reimbursable studies for other federal' agencies and state and local governments.
+Examples of non-project work include items such as Corps of Engineers Enterprise Infrastructure
+Services, (which provides for the 24 hours a day, 365 days per year primary information
+technology infrastructure for USACE,) the day-to-day maintenance and administrative oversight
+of the R&D grounds and facilities, and routine/redundant laboratory testing/analysis.
+
+        (4) Most business lines within USACE Operations undertake both project and non-
+project work:
+                (a) Creation of Level 1 inventories and development of an original master plan are
+projects for the Environmental Stewardship and Environmental Restoration business lines, while
+periodic updating and maintaining those plans are "other work."
+                (b) In the Recreation arena, a major park upgrade is a project; operating a visitor
+center and operation/administration of a recreation area are non-project work.
+                (c) Examples of projects in the Navigation and Flood Coastal Reduction Business
+Lines are rehabilitation of a lock, restoration of a beach, and large, multi-year or event-driven
+dredging. Examples of non-project work in this area include dam safety inspections, lock
+dewatering, lock and dam operation and maintenance, and annual or routine recurring dredging
+occurring under a single contract.               .
+                (d) Reconnaissance studies and feasibility studies and creation of a watershed
+plan are projects in Planning, whereas on-goi:qg watershed planning and flood plain management
+are both non-project work.
+                (e) Regulatory projects include individual/standard permit actions and
+Environmental Impact Studies (EIS), and wetland delineation. Permit enforcement and handling
+administrative appeals are examples of non-project work.
+                (f) Within the Emergency Management/Readiness function, Disaster Recovery
+and Response would be considered a program; however, within that program are individual
+recovery (long-term restoration of the environment for people) projects such as Debris Removal,
+
+
+                                                 6
+                                                                                       ER 5-1-11
+                                                                                   1 November 06
+
+
+Temporary Housing, and Temporary Roofing. Examples of "other work" are the response (i.e.
+immediate 30 days or less life-saving) missions ofProcuring and Providing Ice and Water,
+Providing Emergency Power, and Urban Search and Rescue.
+
+    b. Like projects, however, this ongoing work is still planned, executed, and controlled. 2 In
+order to support achievement of quality objectives, all activities considered to be other work will
+be performed in full accordance with the USACE business doctrine described in paragraph 6.
+Elements of the PMBP as described in paragraph 7 may be used at the discretion of the executing
+entity. For example instance, multi-disciplinary teams are used throughout USACE to execute
+non-project work such as normal operations of a recreation area or dam safety inspections.
+                                              i
+   c. All work will be managed in accordan~e with a control document (e.g. Program
+Management Plan (PgMP) or other programmatically specified document) for the purpose of
+allocating funds and resources, and establishing program goals, objectives, acquisition strategy,
+and priorities on an annual basis. A PgMP is a necessity when mission success requires synergy
+and integration between individual projects or activities in a program. When an individual
+project under a program is of such scope that it is no longer manageable under the PgMP, it shall
+be managed with a separate PMP.
+
+9. Roles and Responsibilities. HQUSACE, Major Subordinate Commands (MSCs), centers,
+laboratories, and districts all have direct responsibility for quality and process improvement. All
+echelons ofUSACE work together to ensure and enhance the quality of our projects and
+services. The goal is to create an environment that promotes communication, respect, trust, and
+cooperation. USACE is a corporate entity operating through Regional Business Centers (RBCs).
+
+   a. HQUSACE communicates philosophy and strategic vision through policy allowing
+subordinates to tailor services on a case-by-case basis. HQUSACE and MSCs employ vertical
+teaming such as Regional Integration Teams and District Support Teams to address work
+coordination and policy issues. HQUSACE interacts with national customers, other agencies,
+and private industry regarding programmatic issues.
+                                                  I
+
+
+
+    b. MSCs manage the RBCs facilitating rbsults-focused operations and utilizing appropriate
+technical resources and innovative practices. MSCs remove encumbrances to regional
+excellence. MSCs ensure that customers whose work crosses RBC boundaries receive seamless
+service and are responsible for vertical and horizontal coordination and integration. MSCs
+perform quality assurance of the RBC quality processes through periodic evaluations using an
+integrated approach consistent with the USACE business process.
+
+   c. Commanders are ultimately responsible for all that happens or fails to happen in their
+organizations. Commanders empower their workforces to operate within the framework of the
+USACE business process in executing the mission. The Commander is the leader of the
+corporate team, which sets the strategic direction for the organization. Within ERDC, these
+responsibilities are vested in the Directors.
+
+2
+    Ibid
+
+
+
+                                                      7
+                                                                                       ER 5-1-11
+                                                                                   1 November 06
+
+
+
+   d. The Deputy for Program and Project Management (DPM) has programmatic oversight
+over all work in a District. The DPM is responsible for the vertical and horizontal integration of
+products to produce the projects and manage programs in accordance with the USACE business
+process. The DPM provides continuity of corporate leadership in developing and assessing
+mission and work requirements and in developing corporate programs, plans, goals, and
+objectives.
+
+   e. Senior leaders, working as a corporate team, create the conditions necessary for success
+through actions and behavior consistent with the USACE business process. The corporate team
+promotes the long-term success ofthe organization through strategic planning. District senior
+leaders within the RBC evaluate workload projections, staffing, technical expertise, and market
+conditions to ensure that we will be able to support our customers in the future.
+
+   f. Middle managers work together at the operational level ofthe organization, with a focus on
+executing the current year's mission and planning for the next year. They provide adequate
+resources and delegate authority commensurate with responsibilities to subordinates to facilitate
+success and maintain a quality workforce. By working as a team, middle managers can help
+ensure selection of optimal execution strategies and maintain technical expertise across the RBC.
+
+   g. Supervisors at all levels of the organization lead their staffs to implement the USACE
+business process to successfully execute the mission. They maintain a high level of professional
+expertise within their organizations and are responsible for the quality of the processes employed
+to execute all work. They work as a management !
+                                                    team to assign work, balance workload and
+resolve resource conflicts on an ongoing basi~.
+
+   h. Program managers (PgMs) are responsible for management of unique customer
+requirements for a set of related projects, services, or activities. They integrate program
+information and are responsible for making accurate program projections necessary to support
+workload analysis at the local, regional, and national level. Program managers will often be the
+Point of Contact (POC) for interaction with the customer on their assigned program. Program
+managers include Operations Project Managers responsible for the overall O&M of one or more
+multi-purpose water resource development sites, leading teams that execute the projects or
+recurring work activities at these sites.
+
+  j. The Project Manager (PM) manages scope, schedule, quality, and budget while leading a
+project delivery team to successful project execution. This individual is the primary interface
+with the customer and is also the U.S. Army Corps of Engineers' primary internal advocate for
+the specific project. PMs manage all project resources, information, and commitments, and
+integrate and focus the efforts of the PDT. The PM's active role as consultant is essential to
+ensure that the customer's quality objectives are clearly articulated and that the customer
+understands the essential professional standards, laws, and codes, as well as public trust issues
+that must be incorporated into the project. In performing these functions, the PMs must operate
+consistent with their responsibilities as a public servant (federal official). PMs provide PDT
+leadership and facilitation with responsibility for assuring that the project stays focused on the
+public interest and on the customer's needs and expectations.
+
+
+                                                 8
+                                                                                       ER 5-1-11
+                                                                                   1 November 06
+
+
+
+   k. The PDT is responsible and accountable for delivering a quality project to the customer and
+for ensuring effective, coordinated actions to deliver the completed project according to the
+PMP. Team members are responsible and accountable to the PDT for the timeliness and quality
+of their own work, and for keeping commitments for completion of their portion of the project as
+documented in the PMP, as well as coordination with and keeping all other team members
+informed. Each PDT member represents their functional organization and must be empowered
+io make commitments and decisions on that organization's behalf; likewise, each PDT member
+is expected to communicate back to their functional element all relevant decisions, commitments
+and expectations.
+
+10. Management Control
+
+    a. Leaders at all levels make resource decisions based upon what is best for the mission,
+while considering impacts to all customers. Management controls, such as quality controls, are
+the responsibility ofthe leadership at all levels ofUSACE, from the District Commander and the
+MSC Commander, through to the Chief of Engineers. The commanders are responsible for
+assessing the absence or ineffectiveness of management controls. Whether the weakness is
+serious enough to be considered material and reported to the next level of command is a
+management judgment that must be made based on the criteria and other factors outlined in AR
+11-2. Reports of material weakness must specify corrective actions taken or planned. The
+highest echelon receiving the report will evaluate the corrective actions, provide assistance, if
+needed, and track progress.
+
+    b. All echelons are to lead and support efforts to collaborate, measure, manage, and improve
+the business processin accordance with AR 5-1, AR 11-2, and FM 22-100. Command
+Management Reviews, performance improvement processes, and standards at regional and
+national levels will be used to review, validate, and sustain the best business practices.
+
+   c. Headquarters, in concert with field offices, will develop and promulgate guidance media
+with context and examples of the precepts, and representations for a better understanding,
+implementation, and learning culture of the USACE Business Process.
+
+
+FOR THE COMMANDER:
+
+
+
+
+3 Appendices
+                                                                 ~
+                                                                 .PRETT~
+                                                     Colonel, Corps of Engineers
+APP A - Definitions                                  Chief of Staff
+APP B -Plan-Do-Check-Act Cycle
+APP C - USACE Doctrinal/Process Hierarchy
+
+
+
+                                                9
+                                                                                     ER 5-1-11
+                                                                                 1 November 06
+                                        APPENDIX A
+
+                                        DEFINITIONS
+
+Automated Information Systems: A combination of computer hardware and software,
+telecommunications information technology, personnel, and other resources that collect, record,
+process, store, communicate, retrieve, and display information.
+
+Community ofPractice: A group of people who regularly interact to collectively learn, solve
+problems, build skills and competencies, and develop best practices around a shared concern,
+goal, mission, set of problems, or work practice. More information on the various communities
+of practice in US ACE is available from their respective websites.
+
+Customer: Customer as used in this regulation may be a number of people/organizations. In
+general, the customer is any individual or organization for which USACE delivers projects, or
+services to meet specific needs. Customers may be either external or internal to USACE.
+
+Deputy for Programs and Project Management (PPM): The civilian deputy to the District
+Commander. DPM as used in this regulation includes Center positions such as Deputy for
+Programs and Technical Management and Deputy for Programs and Project Management/Project
+Delivery Team.
+
+District Support Teams: Cross-functional teams at MSCs that facilitate resolution of issues and
+champion district causes.
+
+Empowerment: Authority to exercise judgment and take action, with concomitant responsibility
+for resultant positive or negative consequences.
+
+Functional Organization: Organization structure in which staff are grouped by technical
+specialty.
+
+Matrix Team: Group of people working across organization boundaries for a common purpose.
+
+Operations:
+a.) The ongoing execution of activities that produces the same product or provides a continuous
+or repetitive service. The objective of ongoing operations is to sustain something (business,
+facility).
+b.) Within USACE, the organization that operates and maintains facilities and services that
+provide river and harbor navigation, flood damage reduction, water supply, hydroelectric power,
+recreation, environmental and fish and wildlife sustainment, restoration and protection. Its
+Regulatory mission protects the Nation's waterways and wetlands; and it undertakes disaster
+relief and recovery work through its Emergency Management/Readiness function.
+
+Process: A series of actions, tasks, or procedures with a common objective to achieve an end or
+result.
+
+
+
+
+                                               A-1
+                                                                                       ER 5-1-11
+                                                                                   1 November 06
+Program: A collection of related projects, services, routine administrative and recurring
+operational processes, or some mixture of these, which are managed in a coordinated way to
+obtain benefits and control not available from managing them individually. 3 Programs may be
+categorized by funding source, customer, similarity of scope, or other common criteria for which
+resources are allocated and collectively managed.
+
+Program Management: The centralized, coordinated management ofprograms within available
+resources, in accordance with applicable laws, policies, and regulations, to achieve strategic
+benefits and objectives. 4 Under program management, programs, projects and non-project
+activities are aggregated for oversight and direction by the organization's senior leadership.
+
+Program Management Plan (PgMP): A formal, approved, living document used to define
+program requirements and expectations, including accountability and performance
+measurements, and guide program execution and control.
+
+Project: A temporary endeavor undertaken to create a unique product, service, or result. 5
+Internal services are discrete projects when they are unique and non-recurring.
+
+Project Delivery Team (PDT): The team, led by a project manager, composed of everyone
+necessary for successful development and execution of all phases of the project. The PDT may
+be drawn from more than one USACE district or activity and may include specialists,
+consultants/contractors, stakeholders, or representatives from other federal and state agencies.
+Team members are chosen for their skills and abilities to successfully execute a quality project,
+regardless of their assigned functional or geographic locations within USACE. The team will
+expand to include all necessary expertise on a specific issue and may include a vertical aspect
+encompassing the MSC and headquarters.
+
+Project Management: The application of knowledge, skills, tools, and techniques to project
+activities in order to meet project requirements. 6
+
+Project Manager (PM): Assigned to achieve the project objectives, the person who manages
+scope, schedule, quality and budget while leading a project delivery team (PDT.) Project
+managers may be assigned to any organizational or geographic element.
+
+Project Management Business Process (PMBP): A fundamental subset of the US ACE business
+process used to deliver quality projects. It re~ects the USACE corporate commitment to provide
+"customer service" that is inclusive, seamless; flexible, effective, and efficient. It embodies
+communication, leadership, systematic and coordinated management, teamwork, partnering,
+effective balancing of competing demands, and primary accountability for the life cycle of a
+project. For more information please visit the USACE PMBP portal at
+https ://pm bp. usace.arm y .mil/
+
+
+3
+  Ibid
+4
+  1bid
+5
+  1bid
+6
+  1bid
+
+
+                                                A-2
+                                                                                       ER 5-1-11
+                                                                                   1 November 06
+Project Management Plan (PMP): A formal, approved, living document used to define
+requirements and expected outcomes and guide project execution and control. Primary uses of
+the PMP are to facilitate communication among participants, assign responsibilities, define
+assumptions, and document decisions to establish baseline plans for scope, cost, schedule and
+quality objectives against which performance can be measured, and to adjust these plans as
+actuals dictate. PMP is developed by the project delivery team (PDT).
+
+Quality: The degree to which a set of inherent characteristics fulfills requirements.
+
+Quality Assurance (QA): That part of quality management focused on providing confidence that
+quality requirements of a project, product, service, or process will be fulfilled. QA includes
+those processes employed to ensure that QC activities are being accomplished in accordance
+with planned activities and that those QC activities are effective in producing a product that
+meets the desired end quality.
+
+Quality Control (QC): That part of quality management focused on fulfilling quality
+requirements of a project, product, service, or process. It includes those processes used to ensure
+performance meets agreed upon customer requirements that are consistent with law, regulations,
+policies, sound technical criteria, schedules, and budget.
+
+Regional Business Center: An MSC and its districts acting together as a regional business entity.
+This vertical and lateral integration of organizational capabilities, resource sharing, technical
+expertise, project management, and project delivery broadens and enhances the range of services
+and quality within the region.
+
+Regional Integration Team: Cross-functional teams at HQUSACE that facilitate resolution of
+issues and champion RBC causes.
+
+Stakeholders: Individuals and organizations who are involved in or may be affected by the
+project.
+
+Vertical Team: Team that is composed of personnel from different command levels in the
+organization.
+
+Virtual Team: Team working across geographic or organizational boundaries without physical
+co-location.
+
+Work: Sustained physical or mental effort or activity directed toward the production or
+accomplishment of something. Work of a business can generally be categorized as either
+projects or operations, although there may be some overlap.
+
+
+
+
+                                                A-3
+                                                                                       ER 5-1-11
+                                                                                   1 November 06
+
+                                         APPENDIX B
+
+                                   Plan-Do-Check-Act Cycle
+
+
+    1. Plan for                                                   2. Work the
+      Quality                                                     Plan- build
+                                                                   Quality in
+
+
+
+
+   4. Revise
+  procedures                                                           for
+                                                                    Problems
+
+1. Plan: We assign the right people with the right skills and tools to work on the right project.
+We plan for and build quality into our work at each step in the process. We use a systematic
+planning process to identify the customer's quality goals; develop an effective plan and
+processes to achieve those goals, and measure our attainment of the quality objectives. We help
+our customers to express their desired outcomes in objective, quantitative terms. We
+communicate with our customers to ensure mutual understanding of standards and processes. It
+is essential that the project team, which includes the customer, understand the costs and benefits
+of selected quality standards and the processes to be used to achieve mutual objectives. We
+identify appropriate standards and determine how to achieve them, consulting lessons learned on
+previous projects as appropriate. We consider the risk factors and complexity of each project,
+and adapt processes to provide the requisite level of quality. We consult, advise, and reach
+consensus with the customer before we do work. We use value engineering when it serves to
+increase the quality of our projects. The product of the planning phase is the project
+management plan (PMP).
+
+2. Do: We then do the work according to approved PMPs and documented procedures. Our
+procedures are developed and documented with sufficient detail to ensure that actions are
+performed correctly and completely each time. Project and program execution is a dynamic
+process. The team must communicate and adapt to changing conditions and modify project
+plans to ensure project objectives are met. Quality management consists of executing a well-
+conceived and continually updated PMP.
+                                                           ,,
+
+
+                                               B-1
+ER 5-1-11
+1 November 06
+
+
+3. Check: We perform sufficient independent technical review, management oversight, and
+verification to ensure that we meet the quality objectives documented in the PMP. Team
+members periodically check performance against the plan and verify sufficiency of the plan and
+actual performance to meet or exceed agreed-on objectives. After action reviews are conducted
+to facilitate sharing of lessons learned. Findings are shared with the project teams and other
+personnel to facilitate continuous improvement.
+
+4. Act: We take specific corrective actions to remove the systemic cause of any non-
+conformance, deficiency, or other unwanted effect. We improve quality through systematic
+analysis and refinement of work processes. The process of continuous quality improvement
+leads to the refinement of the overall quality system. Quality improvements include appropriate
+revisions to quality management plans, alteration of procedures, and adjustments to resource
+allocations.
+
+
+
+
+                                              B-2
+                                                                                    ER 5-1-11
+                                                                                1 November 06
+                                                      APPENDIXC
+
+                                   USACE Doctrinal/Process Hierarchy
+
+
+
+
+       1. Pkvlfar fi1J.:<:N$and bvp <:Q>111Mif»Wifls
+       2. Jlft.vtm."' q~~aiU>•wit.h IM gp.;~MI/#JI~~MDjtM .:lit~~~I' ilt #<WI
+        3.. &/J 11/focli•-. ca--~~r~aatl acr.n·lrJr$ and ptoc<~a«
+        4. Ulll wst~sg.otJ#U<.c~iJ'fJ'"'-Nl
+        5.u.,   ~~-m.w~ !Jt{i?mroi~M syst.~ -~~~~mrd.:c<:W'!'Jt<tl>'
+
+
+
+
+          Project Delive'Y                                  Process for
+          Process (PMBP)                                    Other Work
+
+
+
+
+The above is a graphical representation ofthe organization ofER 5-1-11 as well as its
+relationship to other doctrine, business processes and AIS's.
+
+The USACE Business Process Imperatives are applicable across the organization, just as
+we apply the Army values within USACE. These universally applicable principles
+include, for example: planning for success, measuring goals based on customer
+expectations, emphasizing effective communications, seeking best practices and
+maintaining accurate corporate data.
+
+The Project Management Business Process, PMBP, focuses on the management of
+projects, while other processes focus on the management of other work. Although both
+types of work share important characteristics applying the most appropriate processes and
+tools to different types of work will bring greater effici~ncies and effectiveness to each.
+
+
+
+
+                                                                C-1
+

@@ -1,0 +1,77 @@
+# Local parity stack for the GovCloud reference architecture.
+#   web  -> ECS Fargate web (nginx + React)        keycloak -> Cognito / Army ICAM
+#   api  -> ECS Fargate api (FastAPI)              db       -> Aurora PostgreSQL + PostGIS
+#   ingest -> ECS Fargate scheduled task           minio    -> S3
+name: evs
+services:
+  db:
+    image: postgis/postgis:17-3.5
+    environment:
+      POSTGRES_USER: evs
+      POSTGRES_PASSWORD: evs
+      POSTGRES_DB: evs
+    ports: ["5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U evs -d evs"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.4
+    command: ["start-dev", "--import-realm", "--http-port=8080"]
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: admin
+      KC_HOSTNAME: http://localhost:8080
+    ports: ["8080:8080"]
+    volumes: ["./keycloak:/opt/keycloak/data/import:ro"]
+
+  minio:
+    image: minio/minio:RELEASE.2025-09-07T16-13-09Z
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: evs
+      MINIO_ROOT_PASSWORD: evs-local-minio
+    ports: ["9000:9000", "9001:9001"]
+    volumes: ["minio:/data"]
+
+  api:
+    build: { context: ../.., dockerfile: apps/api/Dockerfile }
+    environment:
+      EVS_ENV: local
+      EVS_DATABASE_URL: postgresql+asyncpg://evs:evs@db:5432/evs
+      EVS_DATABASE_URL_SYNC: postgresql://evs:evs@db:5432/evs
+      EVS_OIDC_ISSUER: http://localhost:8080/realms/evs
+      EVS_AUTH_DISABLED: "true"
+      EVS_FEED_SOURCE: ${EVS_FEED_SOURCE:-fixtures}
+      EVS_S3_ENDPOINT: http://minio:9000
+      EVS_CORS_ORIGINS: '["http://localhost:3000","http://localhost:5173"]'
+    command: >
+      sh -c "evs migrate && uvicorn evs.main:app --host 0.0.0.0 --port 8000"
+    ports: ["8000:8000"]
+    depends_on:
+      db: { condition: service_healthy }
+
+  ingest:
+    build: { context: ../.., dockerfile: apps/api/Dockerfile }
+    environment:
+      EVS_DATABASE_URL_SYNC: postgresql://evs:evs@db:5432/evs
+      EVS_FEED_SOURCE: ${EVS_FEED_SOURCE:-fixtures}
+      EVS_S3_ENDPOINT: http://minio:9000
+    command: ["evs", "ingest", "--loop"]
+    depends_on:
+      db: { condition: service_healthy }
+    profiles: ["ingest"]
+
+  web:
+    build: { context: ../.., dockerfile: apps/web/Dockerfile }
+    environment:
+      API_UPSTREAM: http://api:8000
+    ports: ["3000:80"]
+    depends_on: [api]
+
+volumes:
+  pgdata: {}
+  minio: {}

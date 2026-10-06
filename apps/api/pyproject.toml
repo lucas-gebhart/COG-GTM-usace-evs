@@ -1,0 +1,43 @@
+[project]
+name = "evs-api"
+version = "0.1.0"
+description = "USACE Enterprise Visibility Suite API and ingestion workers"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.30",
+  "pydantic>=2.9,<3",
+  "pydantic-settings>=2.5,<3",
+  "sqlalchemy[asyncio]>=2.0,<3",
+  "asyncpg>=0.29",
+  "psycopg[binary]>=3.2,<4",
+  "sse-starlette>=2.1",
+  "httpx>=0.27",
+  "pyjwt[crypto]>=2.9,<3",
+  "orjson>=3.10",
+  "typer>=0.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.24", "ruff>=0.6", "anyio>=4"]
+
+[project.scripts]
+evs = "evs.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["evs"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

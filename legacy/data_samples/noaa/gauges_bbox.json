@@ -1,0 +1,1284 @@
+{
+  "gauges": [
+    {
+      "lid": "ABPK2",
+      "name": "South Fork Beargrass Creek near Audubon Park",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.2114592,
+      "longitude": -85.7024613,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 1.78,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "BRCK2",
+      "name": "Brashears Creek at Taylorsville",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.0370083,
+      "longitude": -85.3407867,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": ""
+      },
+      "status": {
+        "observed": {
+          "primary": 5.62,
+          "primaryUnit": "ft",
+          "secondary": 0.0119,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "BSNK2",
+      "name": "Rolling Fork River near Boston",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 37.7672853,
+      "longitude": -85.7038488,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFF"
+      },
+      "status": {
+        "observed": {
+          "primary": 1.98,
+          "primaryUnit": "ft",
+          "secondary": 0.0169,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "low_threshold",
+          "validTime": "2026-10-06T13:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "BTDK2",
+      "name": "Beech Fork at Bardstown",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 37.79700569,
+      "longitude": -85.4807919,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 2.46,
+          "primaryUnit": "ft",
+          "secondary": 0.009,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "CFTK2",
+      "name": "Middle Fork Beargrass Creek near Clifton",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.25034895,
+      "longitude": -85.7166287,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 2.09,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "CLVK2",
+      "name": "Rolling Fork at Calvary",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 37.5125,
+      "longitude": -85.2611111,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": ""
+      },
+      "status": {
+        "observed": {
+          "primary": 2.92,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "FDLK2",
+      "name": "Pond Creek (C KY) near Fairdale",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.1197916,
+      "longitude": -85.7957955,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 2.7,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "FNCK2",
+      "name": "Chenoweth Run near Fern Creek",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.16006729,
+      "longitude": -85.5421797,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 2.8,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-06T13:55:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "FSVK2",
+      "name": "Floyds Fork at Fisherville",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.18840166,
+      "longitude": -85.460235,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 0.91,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:20:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "GNBK2",
+      "name": "Salt River (KY) at Glensboro",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.00201594,
+      "longitude": -85.0605085,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": ""
+      },
+      "status": {
+        "observed": {
+          "primary": 2.67,
+          "primaryUnit": "ft",
+          "secondary": 0.0086,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "HGVK2",
+      "name": "Nolin River at Hodgenville",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 37.57805556,
+      "longitude": -85.7536111,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 4.53,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "LBJK2",
+      "name": "Rolling Fork River near Lebanon Junction",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 37.82284205,
+      "longitude": -85.7477377,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 5.45,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "LYDK2",
+      "name": "Goose Creek (C KY) near Lyndon",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.2759036,
+      "longitude": -85.606072,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 0.92,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "MDOK2",
+      "name": "Pond Creek (C KY) at Medora",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.05423677,
+      "longitude": -85.8716296,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 4.53,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "MLPK2",
+      "name": "Ohio River at McAlpine Lower",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.28034736,
+      "longitude": -85.7991305,
+      "pedts": {
+        "observed": "HTIRG",
+        "forecast": "HTIFF"
+      },
+      "status": {
+        "observed": {
+          "primary": 11.82,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-06T14:00:00Z"
+        },
+        "forecast": {
+          "primary": 12.3,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-07T06:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "MLUK2",
+      "name": "Ohio River at McAlpine Upper",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.26590376,
+      "longitude": -85.7688518,
+      "pedts": {
+        "observed": "HPIRG",
+        "forecast": "HPIFF"
+      },
+      "status": {
+        "observed": {
+          "primary": 12.72,
+          "primaryUnit": "ft",
+          "secondary": 222,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-06T14:00:00Z"
+        },
+        "forecast": {
+          "primary": 13,
+          "primaryUnit": "ft",
+          "secondary": 250,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-06T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "MLWK2",
+      "name": "Beargrass Creek at Mellwood",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.26590398,
+      "longitude": -85.7207955,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFF"
+      },
+      "status": {
+        "observed": {
+          "primary": 7.69,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "MLXK2",
+      "name": "Ohio River at Louisville Water Tower",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.281111111111,
+      "longitude": -85.702222222222,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": ""
+      },
+      "status": {
+        "observed": {
+          "primary": 12.92,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T14:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "MUDK2",
+      "name": "Beech Fork at Maud",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 37.83283985,
+      "longitude": -85.2960686,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 8.39,
+          "primaryUnit": "ft",
+          "secondary": 0.0037,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "MWTK2",
+      "name": "Floyds Fork near Mt. Washington",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.085277777778,
+      "longitude": -85.555,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 3.78,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "NHVK2",
+      "name": "Rolling Fork River at New Haven",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 37.6495063,
+      "longitude": -85.5974617,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": ""
+      },
+      "status": {
+        "observed": {
+          "primary": 2.89,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "OKLK2",
+      "name": "Northern Ditch near Okolona",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.1492,
+      "longitude": -85.6788,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 4.34,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "PRPK2",
+      "name": "Mill Creek (KY) near Pleasure Ridge Park",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.1775699,
+      "longitude": -85.8669086,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 2.11,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "PVYK2",
+      "name": "Floyds Fork near Pewee Valley",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.28534776,
+      "longitude": -85.4674592,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": ""
+      },
+      "status": {
+        "observed": {
+          "primary": 3.87,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "RVPK2",
+      "name": "Ohio River at Riverview Park",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.134711,
+      "longitude": -85.90123055,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": ""
+      },
+      "status": {
+        "observed": {
+          "primary": 11.11,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "SELI3",
+      "name": "Silver Creek (IN) at Sellersburg",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "IN",
+        "name": "Indiana"
+      },
+      "latitude": 38.370555555555555,
+      "longitude": -85.726388888889,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 3.42,
+          "primaryUnit": "ft",
+          "secondary": 0.0028,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:30:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "SHPK2",
+      "name": "Salt River (KY) at Shepherdsville",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 37.98506585,
+      "longitude": -85.7174591,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFF"
+      },
+      "status": {
+        "observed": {
+          "primary": 1.07,
+          "primaryUnit": "ft",
+          "secondary": 0.0996,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-06T13:30:00Z"
+        },
+        "forecast": {
+          "primary": 1.1,
+          "primaryUnit": "ft",
+          "secondary": 0.109,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-06T18:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "STMK2",
+      "name": "Middle Fork Beargrass Creek near St. Matthews",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.237293,
+      "longitude": -85.6646834,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 0.5,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:45:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "TVLK2",
+      "name": "Salt River (KY) at Taylorsville Lake",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.016388888889,
+      "longitude": -85.307777777778,
+      "pedts": {
+        "observed": "HPIRG",
+        "forecast": "HPIFA"
+      },
+      "status": {
+        "observed": {
+          "primary": 546.63,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-06T13:15:00Z"
+        },
+        "forecast": {
+          "primary": 546.63,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "no_flooding",
+          "validTime": "2026-10-06T15:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "VYWK2",
+      "name": "Mill Creek (KY) near Valley Station",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.07812588,
+      "longitude": -85.8899635,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFF"
+      },
+      "status": {
+        "observed": {
+          "primary": 0.81,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "WPTK2",
+      "name": "Salt River at West Point",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 37.992222,
+      "longitude": -85.9220555,
+      "pedts": {
+        "observed": "HGIRA",
+        "forecast": ""
+      },
+      "status": {
+        "observed": {
+          "primary": 9.59,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:00:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "lid": "ZTNK2",
+      "name": "Pennsylvania Run near Zoneton",
+      "rfc": {
+        "abbreviation": "OHRFC",
+        "name": "Ohio River Forecast Center"
+      },
+      "wfo": {
+        "abbreviation": "LMK",
+        "name": "Louisville"
+      },
+      "state": {
+        "abbreviation": "KY",
+        "name": "Kentucky"
+      },
+      "latitude": 38.08756629,
+      "longitude": -85.642458,
+      "pedts": {
+        "observed": "HGIRG",
+        "forecast": "HGIFE"
+      },
+      "status": {
+        "observed": {
+          "primary": 1.12,
+          "primaryUnit": "ft",
+          "secondary": -999,
+          "secondaryUnit": "kcfs",
+          "floodCategory": "not_defined",
+          "validTime": "2026-10-06T13:15:00Z"
+        },
+        "forecast": {
+          "primary": -999,
+          "primaryUnit": "",
+          "secondary": -999,
+          "secondaryUnit": "",
+          "floodCategory": "fcst_not_current",
+          "validTime": "0001-01-01T00:00:00Z"
+        }
+      }
+    }
+  ]
+}

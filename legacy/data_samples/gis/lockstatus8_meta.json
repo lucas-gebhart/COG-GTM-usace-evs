@@ -1,0 +1,794 @@
+{
+  "currentVersion" : 12, 
+  "id" : 1, 
+  "name" : "Lock Status", 
+  "type" : "Feature Layer", 
+  "serviceItemId" : "d6c337ffafdf4dfe89c30e890fac48e5", 
+  "cacheMaxAge" : 30, 
+  "displayField" : "LOCK_NAME", 
+  "description" : "MVDGIS_VIEW.Lock Status Query Layer", 
+  "copyrightText" : "", 
+  "defaultVisibility" : true, 
+  "serverGens" : {
+    "minServerGen" : 1688179, 
+    "serverGen" : 1688179
+  }, 
+  "editFieldsInfo" : {
+    "creationDateField" : "CreationDate", 
+    "creatorField" : "Creator", 
+    "editDateField" : "EditDate", 
+    "editorField" : "Editor"
+  }, 
+  "editingInfo" : {
+    "lastEditDate" : 1791288075042, 
+    "schemaLastEditDate" : 1668055743056, 
+    "dataLastEditDate" : 1791288075042
+  }, 
+  "relationships" : [], 
+  "isDataVersioned" : false, 
+  "hasContingentValuesDefinition" : false, 
+  "supportsAppend" : true, 
+  "supportsCalculate" : true, 
+  "supportsASyncCalculate" : true, 
+  "supportsTruncate" : true, 
+  "supportsAttachmentsByUploadId" : true, 
+  "supportsAttachmentsResizing" : true, 
+  "supportsRollbackOnFailureParameter" : true, 
+  "supportsStatistics" : true, 
+  "supportsExceedsLimitStatistics" : true, 
+  "supportsAdvancedQueries" : true, 
+  "supportsValidateSql" : true, 
+  "supportsCoordinatesQuantization" : true, 
+  "supportsLayerOverrides" : true, 
+  "supportsTilesAndBasicQueriesMode" : true, 
+  "supportsFieldDescriptionProperty" : true, 
+  "supportsQuantizationEditMode" : true, 
+  "supportsColumnStoreIndex" : true, 
+  "supportsApplyEditsWithGlobalIds" : true, 
+  "supportsReturningQueryGeometry" : true, 
+  "enableNullGeometry" : false, 
+  "advancedQueryCapabilities" : {
+    "supportsPagination" : true, 
+    "supportsPaginationOnAggregatedQueries" : true, 
+    "supportsQueryRelatedPagination" : true, 
+    "supportsQueryWithDistance" : true, 
+    "supportsOutDistance" : true, 
+    "supportsReturningQueryExtent" : true, 
+    "supportsStatistics" : true, 
+    "supportsOrderBy" : true, 
+    "supportsDistinct" : true, 
+    "supportsQueryWithResultType" : true, 
+    "supportsSqlExpression" : true, 
+    "supportsTimeRelation" : true, 
+    "supportsAdvancedQueryRelated" : true, 
+    "supportsCountDistinct" : true, 
+    "supportsPercentileStatistics" : true, 
+    "supportsApproxPercentileStatistics" : true, 
+    "supportsSpatialAggregationStatistics" : true, 
+    "supportedSpatialAggregationStatistics" : [
+      "EnvelopeAggregate", 
+      "CentroidAggregate", 
+      "ConvexHullAggregate"
+    ], 
+    "supportsLod" : true, 
+    "supportsQueryWithLodSR" : false, 
+    "supportedLodTypes" : [
+      "geohash"
+    ], 
+    "supportsReturningGeometryCentroid" : false, 
+    "supportsReturningGeometryEnvelope" : false, 
+    "supportsQueryWithDatumTransformation" : true, 
+    "supportsCurrentUserQueries" : true, 
+    "supportsHavingClause" : true, 
+    "supportsOutFieldSQLExpression" : true, 
+    "supportsMaxRecordCountFactor" : true, 
+    "supportsTopFeaturesQuery" : true, 
+    "supportsDisjointSpatialRel" : true, 
+    "supportsQueryWithCacheHint" : true, 
+    "supportedOperationsWithCacheHint" : [
+      "query", 
+      "queryTopFilter", 
+      "queryAnalytics", 
+      "queryAttachments", 
+      "queryRelated", 
+      "queryBins", 
+      "queryPivot"
+    ], 
+    "supportsQueryAnalytic" : true, 
+    "supportsQueryPivot" : true, 
+    "supportsQueryBins" : true, 
+    "supportsDefaultSR" : true, 
+    "supportsTranslations" : false, 
+    "supportsAggIds" : true, 
+    "supportsQueryWithCollation" : true, 
+    "supportsISODOW" : true, 
+    "supportsISOWeek" : true, 
+    "supportsFullTextSearch" : true, 
+    "fullTextSearchCapabilities" : {
+      "supportsAccentSensitivity" : true, 
+      "supportsStopWords" : true, 
+      "supportsSearchOperator" : true, 
+      "supportsOperator" : true
+    }
+  }, 
+  "advancedQueryAnalyticCapabilities" : {
+    "supportsLinearRegression" : true, 
+    "supportsTrendlineRegression" : true, 
+    "supportsAsync" : true, 
+    "supportsPercentileAnalytic" : true
+  }, 
+  "queryBinsCapabilities" : {
+    "supportsAsync" : true, 
+    "supportsAutoIntervalBin" : true, 
+    "supportsFixedIntervalBin" : true, 
+    "supportsFixedBoundariesBin" : true, 
+    "supportsDateBin" : true, 
+    "supportsClassificationBin" : true, 
+    "supportsStackBy" : true, 
+    "supportsSplitBy" : true, 
+    "supportsFirstDayOfWeek" : true, 
+    "supportsSnapToData" : true, 
+    "supportsReturnFullIntervalBin" : true, 
+    "supportsReturnStackValueRange" : true, 
+    "supportsNormalization" : true, 
+    "supportedStatisticTypes" : [
+      "COUNT", 
+      "SUM", 
+      "AVG", 
+      "VAR", 
+      "STDDEV", 
+      "MIN", 
+      "MAX", 
+      "PERCENTILE_CONT", 
+      "PERCENTILE_DISC", 
+      "APPROX_PERCENTILE_CONT", 
+      "APPROX_PERCENTILE_DISC", 
+      "CentroidAggregate", 
+      "EnvelopeAggregate", 
+      "ConvexHullAggregate"
+    ], 
+    "supportedNormalizationTypes" : [
+      "boxCox", 
+      "field", 
+      "inverse", 
+      "log", 
+      "naturalLog", 
+      "percentOfTotal", 
+      "squareRoot"
+    ]
+  }, 
+  "supportedOperationsWithCollation" : "query,addField,updateField", 
+  "advancedEditingCapabilities" : {
+    "supportedSqlFormatsInCalculate" : [
+      "standard"
+    ], 
+    "supportsAsyncApplyEdits" : true, 
+    "supportsReturnEditResults" : true, 
+    "supportsApplyEditsbyUploadID" : true, 
+    "supportedApplyEditsUploadIDFormats" : "JSON,PBF", 
+    "supportsTranslation" : false, 
+    "supportsMaxTranslations" : 10
+  }, 
+  "infoInEstimates" : [
+    "extent", 
+    "count"
+  ], 
+  "useStandardizedQueries" : true, 
+  "geometryType" : "esriGeometryPoint", 
+  "minScale" : 0, 
+  "maxScale" : 0, 
+  "extent" : {
+    "xmin" : -93.293117999999936, 
+    "ymin" : 29.553628600000025, 
+    "xmax" : -89.972063999999989, 
+    "ymax" : 31.002240100000051, 
+    "spatialReference" : {
+      "wkt" : "GEOGCS[\"Longitude / Latitude (NAD 83)\",DATUM[\"NAD 83\",SPHEROID[\"GRS 80\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Decimal Degree\",0.0174532925199433]]"
+    }
+  }, 
+  "spatialReference" : {
+    "wkt" : "GEOGCS[\"Longitude / Latitude (NAD 83)\",DATUM[\"NAD 83\",SPHEROID[\"GRS 80\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Decimal Degree\",0.0174532925199433]]"
+  }, 
+  "drawingInfo":{"renderer":{"visualVariables":[{"type":"rotationInfo","field":"SYMBOL_ANGLE","rotationType":"geographic"}],"authoringInfo":{"colorRamp":{"type":"multipart","colorRamps":[{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[202,252,252,255],"toColor":[202,252,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[244,179,252,255],"toColor":[244,179,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[242,252,182,255],"toColor":[242,252,182,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,185,179,255],"toColor":[252,185,179,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[179,199,252,255],"toColor":[179,199,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,227,197,255],"toColor":[252,227,197,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[179,252,194,255],"toColor":[179,252,194,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,212,246,255],"toColor":[252,212,246,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[204,225,252,255],"toColor":[204,225,252,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[252,179,216,255],"toColor":[252,179,216,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[238,252,212,255],"toColor":[238,252,212,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[187,252,222,255],"toColor":[187,252,222,255]},{"type":"algorithmic","algorithm":"esriCIELabAlgorithm","fromColor":[223,197,252,255],"toColor":[223,197,252,255]}]}},"type":"uniqueValue","field1":"LOCK_STATUS","fieldDelimiter":",","uniqueValueInfos":[{"symbol":{"angle":0,"xoffset":0,"yoffset":0,"type":"esriPMS","url":"89596133-8be8-4b08-aa99-eed1c2f8085a","imageData":"iVBORw0KGgoAAAANSUhEUgAAAA8AAAASCAYAAACEnoQPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABTklEQVQ4jc3Qv0sCcRjH8ffVYRFIaQ6SJIEolEESQTU0CuFQQ39CURAR1SBUg2YkIv2AG6KtpcaoplqitSlUiNCLaAoJ4W6IOs4fNBVpnjfU0Gf88ry+PM9H5BcR/wT3rTJcFnjPxskYDQ+s49KK+LJJrquw/sqo0MyWd5GELLFZC33LzOqQ0BWOoAYDeOZo01VilQpBq4OJVBTVH8WiFzhxhgjZh2hKh+us/ZnOEWj3M5bd5t4zz35ZY6Y3grvFAUXV4OaqRyv4N3Aqt8Rsg0YNmLTdCJpis/wDLAhoutJ4WFdAECj9wLLEgSDSrz0z7ZqitRbmLynlLzh3dxF+rLd2bpcFRE7VDIfeJbotNii/QW6Pl6LCiixxLNdb++uDJFc9UXx3Ec46AgTVNDdNdiZzOxQMb/6epygaMO5dI/AgkTLqoGHbctwYmmKzfADu/GMaThVG8QAAAABJRU5ErkJggg==","contentType":"image/png","width":11,"height":13},"value":"Open","label":"Open"},{"symbol":{"angle":0,"xoffset":0,"yoffset":0,"type":"esriPMS","url":"34886192-26c2-4e61-9711-fe8c7be7d0aa","imageData":"iVBORw0KGgoAAAANSUhEUgAAAA8AAAASCAYAAACEnoQPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABQElEQVQ4jc3QMUsCcRiA8efyiAgcFIcwanSxQUTIhkYhHGrwIxQJEqINgjrcX6NDDjW4Idpaaoxq0iVamyRd+gYOIdwNYgeKNAmmnjfU0DO/P3jfV+YXyX+C83l2JYkvVaVjN1wssjkcEtA0Xn/gfp89l4vLdJqKrnMxC7NZToGKYXAHMxggmWTdNCmPx8R8Pg6FwBSC1V6Ph3iceCTCSi63YO1J0SgEg+xXq3ykUlxbFieKwrbPB6Zpc/N0bjeUSmy0WpTDYbsPOHx7GXTETv0DLElYhrF82DBAkhjNYV3nRpbZ6XY5TiRYm4XNJqNGg2e/n9wcBqjXOZNlHjsdbjMZtjweGAzg6opPw+Bc17lfuPYkTeNFCAKKwlMoRKzd5s3r5ahWo2d783RCYAEHhQIhXefd7gdLv62q9tARO/UNE3JeZD0VFtEAAAAASUVORK5CYII=","contentType":"image/png","width":11,"height":13},"value":"Restricted","label":"Restricted"},{"symbol":{"angle":0,"xoffset":0,"yoffset":0,"type":"esriPMS","url":"52a45b9a-1d72-4cc2-88e1-c38b20b95c40","imageData":"iVBORw0KGgoAAAANSUhEUgAAAA8AAAASCAYAAACEnoQPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABSklEQVQ4jc2Qv0sCAQCFv7PDIpDSHCRJAlEogyKCamgUwqGG/oSiICKqQagGzUhE+gEO0dZSY1RTLdHaFCpEeBfRFBLC3RB1nD9oEsw8b6ihb34fvPdEfoH4J/J6P6NCmc94jqxReHMQd1HDn8xx+01+1xlvEdhZ9pFIyWzXi6t+5tFJKDonUCcDLHhpV3VilQpBp42paBo1GsBa0DkLuQiNOLCEMw1qVxnrgkAHE7s5Hhe9HGpl5iJ9eJytoBYNNtdiE2ErgOteITZsN3rA5O1moqlsxj+QBQFN0ZuHFR0EgdIPOSVzJAoMvGrMzrhpqxev85Su8lx2ewjz3KD2vsSSCOdZleMVHz12K3yU4UDiTSmylpI5RW5Qu0pS4ibaiz/ywMVQJ8GMyp3DwvSeRMFwcy3RFzRgcsPHUOqJtNEHTd+Oy8aiqWzGF+pGYxqI5YhCAAAAAElFTkSuQmCC","contentType":"image/png","width":11,"height":13},"value":"Closed","label":"Closed"},{"symbol":{"angle":0,"xoffset":0,"yoffset":0,"type":"esriPMS","url":"d6d7475f-9576-4714-86ba-f950873670a9","imageData":"iVBORw0KGgoAAAANSUhEUgAAAA8AAAASCAYAAACEnoQPAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABTUlEQVQ4jc2QO0hCAQBFj/aILCQKh+gHBrnUIBJYQ1tSGWRQNgdFQURUg1ANmpGI9AGHaKshh4bITLQlWpskXRqjhoYQnpCamlhTYOrzDTV05nvg3ivwC4Q/kdctGBWfvLsCxKTCm1baPrLoPAFuf8jJHAM1SnaWR3F7w2yXiqtjzFPALaY5hRIZYGGI+kQaZ6GASaNi3OEn4bBSG09ybjZg7utCafNVqP1Nfzf0tDO4e8XD4jCHmRxz9ik6NWpIpCQ2F6NWwdY0LZFHnAat1AMyb1cTZWU5/oGsUJARU9WiIKZAAfky2RviSFDS+yIyO2mkrlS8jpIPR7hszWOrWHs/yJIgcBF75njFTEdTA6SzcBDiVXxjzRvGV5wv2+zxc+OYQWc/w6/XYoo+cdfciGUvSFxyczGOEzLAyMYEem+Ie6kPqr7t8kuLsrIcX0w7Ycs7+orLAAAAAElFTkSuQmCC","contentType":"image/png","width":11,"height":13},"value":"Intermittent Closure","label":"Intermittent Closure"}]},"labelingInfo":[{"name":"Lock Name","labelExpression":null,"labelExpressionInfo":{"expression":"$feature.LOCK_NAME"},"useCodedValues":true,"maxScale":0,"minScale":0,"where":null,"labelPlacement":"esriServerPointLabelPlacementAboveCenter","symbol":{"color":[0,0,0,255],"type":"esriTS","backgroundColor":null,"borderLineColor":null,"borderLineSize":null,"haloSize":1,"haloColor":[255,255,255,255],"verticalAlignment":"bottom","horizontalAlignment":"left","rightToLeft":false,"angle":0,"xoffset":0,"yoffset":1,"text":"","rotated":false,"kerning":true,"font":{"size":8,"style":"normal","decoration":"none","weight":"normal","family":"Verdana"}}},{"name":"Lock Status","labelExpression":null,"labelExpressionInfo":{"expression":"$feature.LOCK_STATUS"},"useCodedValues":true,"maxScale":0,"minScale":0,"where":null,"labelPlacement":"esriServerPointLabelPlacementBelowCenter","symbol":{"color":[0,0,0,255],"type":"esriTS","backgroundColor":null,"borderLineColor":null,"borderLineSize":null,"haloSize":1,"haloColor":[255,255,255,255],"verticalAlignment":"bottom","horizontalAlignment":"left","rightToLeft":false,"angle":0,"xoffset":0,"yoffset":-2,"text":"","rotated":false,"kerning":true,"font":{"size":8,"style":"normal","decoration":"underline","weight":"normal","family":"Verdana"}}}],"transparency":0}, 
+  "allowGeometryUpdates" : false, 
+  "hasAttachments" : false, 
+  "htmlPopupType" : "esriServerHTMLPopupTypeAsHTMLText", 
+  "hasMetadata" : true, 
+  "hasM" : false, 
+  "hasZ" : false, 
+  "objectIdField" : "LOCK_ID", 
+  "uniqueIdField" : 
+  {
+    "name" : "LOCK_ID", 
+    "isSystemMaintained" : true
+  }, 
+  "globalIdField" : "GlobalID", 
+  "typeIdField" : "LOCK_STATUS", 
+  "collation" : {
+    "locale" : "neutral", 
+    "caseSensitive" : false, 
+    "accentSensitive" : true
+  }, 
+  "fields" : [
+    {
+      "name" : "LOCK_ID", 
+      "type" : "esriFieldTypeOID", 
+      "alias" : "LOCK_ID", 
+      "sqlType" : "sqlTypeOther", 
+      "nullable" : false, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "LOCK_NAME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "LOCK_NAME", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 80, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "LOCK_ABBREV_NAME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "LOCK_ABBREV_NAME", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 20, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "PRIMARY_CHANNEL_NAME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "PRIMARY_CHANNEL_NAME", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 80, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "SECONDARY_CHANNEL_NAME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "SECONDARY_CHANNEL_NAME", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 80, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "INSTALLATION_DATE", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "INSTALLATION_DATE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null, 
+      "precision" : 1
+    }, 
+    {
+      "name" : "CLOSURE_DATE", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "CLOSURE_DATE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null, 
+      "precision" : 1
+    }, 
+    {
+      "name" : "STATUS_DATE", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "STATUS_DATE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null, 
+      "precision" : 1
+    }, 
+    {
+      "name" : "LOCK_STATUS", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "LOCK_STATUS", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 20, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "OPEN_FLOW_FLAG", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "OPEN_FLOW_FLAG", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 1, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "PRIMARY_CHNL_LOCKING_COUNT", 
+      "type" : "esriFieldTypeSmallInteger", 
+      "alias" : "PRIMARY_CHNL_LOCKING_COUNT", 
+      "sqlType" : "sqlTypeOther", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "SECONDARY_CHNL_LOCKING_COUNT", 
+      "type" : "esriFieldTypeSmallInteger", 
+      "alias" : "SECONDARY_CHNL_LOCKING_COUNT", 
+      "sqlType" : "sqlTypeOther", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "PRIMARY_CHNL_GAGE_READING", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "PRIMARY_CHNL_GAGE_READING", 
+      "sqlType" : "sqlTypeOther", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "SECONDARY_CHNL_GAGE_READING", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "SECONDARY_CHNL_GAGE_READING", 
+      "sqlType" : "sqlTypeOther", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "QUEUE_TIME_HOURS", 
+      "type" : "esriFieldTypeSingle", 
+      "alias" : "QUEUE_TIME_HOURS", 
+      "sqlType" : "sqlTypeOther", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "LOCK_REMARKS", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "LOCK_REMARKS", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 1000, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "LOCK_NOTICES", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "LOCK_NOTICES", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 1000, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "CLOSURE_SCHEDULE", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "CLOSURE_SCHEDULE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 1000, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "PERSON_NAME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "PERSON_NAME", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 133, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "PERSON_TITLE", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "PERSON_TITLE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 80, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "ADDRESS_CITY_AND_STATE", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "ADDRESS_CITY_AND_STATE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 77, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "WORK_PHONE", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "WORK_PHONE", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 100, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "EMAIL_ADDRESS", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "EMAIL_ADDRESS", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 100, 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "SYMBOL_ANGLE", 
+      "type" : "esriFieldTypeSmallInteger", 
+      "alias" : "SYMBOL_ANGLE", 
+      "sqlType" : "sqlTypeOther", 
+      "nullable" : true, 
+      "editable" : true, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "GlobalID", 
+      "type" : "esriFieldTypeGlobalID", 
+      "alias" : "GlobalID", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 38, 
+      "nullable" : false, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : "NEWID() WITH VALUES"
+    }, 
+    {
+      "name" : "CreationDate", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "CreationDate", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null, 
+      "precision" : 1
+    }, 
+    {
+      "name" : "Creator", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Creator", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 128, 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "EditDate", 
+      "type" : "esriFieldTypeDate", 
+      "alias" : "EditDate", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 8, 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null, 
+      "precision" : 1
+    }, 
+    {
+      "name" : "Editor", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "Editor", 
+      "sqlType" : "sqlTypeOther", 
+      "length" : 128, 
+      "nullable" : true, 
+      "editable" : false, 
+      "domain" : null, 
+      "defaultValue" : null
+    }
+  ], 
+  "indexes" : [
+    {
+      "name" : "PK__LOCK_STA__62AB7FA8C3D9C9E3", 
+      "fields" : "LOCK_ID", 
+      "isAscending" : true, 
+      "isUnique" : true, 
+      "description" : "", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "user_8790.LOCK_STATUS_LOCK_STATUS2_Shape_sidx", 
+      "fields" : "SHAPE", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "", 
+      "indexType" : "Spatial"
+    }, 
+    {
+      "name" : "GlobalID_Index", 
+      "fields" : "GlobalID", 
+      "isAscending" : false, 
+      "isUnique" : true, 
+      "description" : "", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "CreationDateIndex", 
+      "fields" : "CreationDate", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "CreationDate Field index", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "CreatorIndex", 
+      "fields" : "Creator", 
+      "isAscending" : false, 
+      "isUnique" : false, 
+      "description" : "Creator Field index", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "EditDateIndex", 
+      "fields" : "EditDate", 
+      "isAscending" : true, 
+      "isUnique" : false, 
+      "description" : "EditDate Field index", 
+      "indexType" : "Attribute"
+    }, 
+    {
+      "name" : "EditorIndex", 
+      "fields" : "Editor", 
+      "isAscending" : false, 
+      "isUnique" : false, 
+      "description" : "Editor Field index", 
+      "indexType" : "Attribute"
+    }
+  ], 
+  "dateFieldsTimeReference" : {
+    "timeZone" : "UTC", 
+    "timeZoneIANA" : "Etc/UTC", 
+    "respectsDaylightSaving" : false
+  }, 
+  "preferredTimeReference" : null, 
+  "types" : [
+    {
+      "id" : "Open", 
+      "name" : "Open", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Open", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPoint", 
+          "prototype" : {
+            "attributes" : {
+              "EMAIL_ADDRESS" : null, 
+              "SYMBOL_ANGLE" : null, 
+              "LOCK_NAME" : null, 
+              "LOCK_ABBREV_NAME" : null, 
+              "PRIMARY_CHANNEL_NAME" : null, 
+              "SECONDARY_CHANNEL_NAME" : null, 
+              "INSTALLATION_DATE" : null, 
+              "CLOSURE_DATE" : null, 
+              "STATUS_DATE" : null, 
+              "LOCK_STATUS" : "Open", 
+              "OPEN_FLOW_FLAG" : null, 
+              "PRIMARY_CHNL_LOCKING_COUNT" : null, 
+              "SECONDARY_CHNL_LOCKING_COUNT" : null, 
+              "PRIMARY_CHNL_GAGE_READING" : null, 
+              "SECONDARY_CHNL_GAGE_READING" : null, 
+              "QUEUE_TIME_HOURS" : null, 
+              "LOCK_REMARKS" : null, 
+              "LOCK_NOTICES" : null, 
+              "CLOSURE_SCHEDULE" : null, 
+              "PERSON_NAME" : null, 
+              "PERSON_TITLE" : null, 
+              "ADDRESS_CITY_AND_STATE" : null, 
+              "WORK_PHONE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Restricted", 
+      "name" : "Restricted", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Restricted", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPoint", 
+          "prototype" : {
+            "attributes" : {
+              "EMAIL_ADDRESS" : null, 
+              "SYMBOL_ANGLE" : null, 
+              "LOCK_NAME" : null, 
+              "LOCK_ABBREV_NAME" : null, 
+              "PRIMARY_CHANNEL_NAME" : null, 
+              "SECONDARY_CHANNEL_NAME" : null, 
+              "INSTALLATION_DATE" : null, 
+              "CLOSURE_DATE" : null, 
+              "STATUS_DATE" : null, 
+              "LOCK_STATUS" : "Restricted", 
+              "OPEN_FLOW_FLAG" : null, 
+              "PRIMARY_CHNL_LOCKING_COUNT" : null, 
+              "SECONDARY_CHNL_LOCKING_COUNT" : null, 
+              "PRIMARY_CHNL_GAGE_READING" : null, 
+              "SECONDARY_CHNL_GAGE_READING" : null, 
+              "QUEUE_TIME_HOURS" : null, 
+              "LOCK_REMARKS" : null, 
+              "LOCK_NOTICES" : null, 
+              "CLOSURE_SCHEDULE" : null, 
+              "PERSON_NAME" : null, 
+              "PERSON_TITLE" : null, 
+              "ADDRESS_CITY_AND_STATE" : null, 
+              "WORK_PHONE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Closed", 
+      "name" : "Closed", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Closed", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPoint", 
+          "prototype" : {
+            "attributes" : {
+              "EMAIL_ADDRESS" : null, 
+              "SYMBOL_ANGLE" : null, 
+              "LOCK_NAME" : null, 
+              "LOCK_ABBREV_NAME" : null, 
+              "PRIMARY_CHANNEL_NAME" : null, 
+              "SECONDARY_CHANNEL_NAME" : null, 
+              "INSTALLATION_DATE" : null, 
+              "CLOSURE_DATE" : null, 
+              "STATUS_DATE" : null, 
+              "LOCK_STATUS" : "Closed", 
+              "OPEN_FLOW_FLAG" : null, 
+              "PRIMARY_CHNL_LOCKING_COUNT" : null, 
+              "SECONDARY_CHNL_LOCKING_COUNT" : null, 
+              "PRIMARY_CHNL_GAGE_READING" : null, 
+              "SECONDARY_CHNL_GAGE_READING" : null, 
+              "QUEUE_TIME_HOURS" : null, 
+              "LOCK_REMARKS" : null, 
+              "LOCK_NOTICES" : null, 
+              "CLOSURE_SCHEDULE" : null, 
+              "PERSON_NAME" : null, 
+              "PERSON_TITLE" : null, 
+              "ADDRESS_CITY_AND_STATE" : null, 
+              "WORK_PHONE" : null
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "id" : "Intermittent Closure", 
+      "name" : "Intermittent Closure", 
+      "domains" : 
+      {
+      }, 
+      "templates" : [
+        {
+          "name" : "Intermittent Closure", 
+          "description" : "", 
+          "drawingTool" : "esriFeatureEditToolPoint", 
+          "prototype" : {
+            "attributes" : {
+              "EMAIL_ADDRESS" : null, 
+              "SYMBOL_ANGLE" : null, 
+              "LOCK_NAME" : null, 
+              "LOCK_ABBREV_NAME" : null, 
+              "PRIMARY_CHANNEL_NAME" : null, 
+              "SECONDARY_CHANNEL_NAME" : null, 
+              "INSTALLATION_DATE" : null, 
+              "CLOSURE_DATE" : null, 
+              "STATUS_DATE" : null, 
+              "LOCK_STATUS" : "Intermittent Closure", 
+              "OPEN_FLOW_FLAG" : null, 
+              "PRIMARY_CHNL_LOCKING_COUNT" : null, 
+              "SECONDARY_CHNL_LOCKING_COUNT" : null, 
+              "PRIMARY_CHNL_GAGE_READING" : null, 
+              "SECONDARY_CHNL_GAGE_READING" : null, 
+              "QUEUE_TIME_HOURS" : null, 
+              "LOCK_REMARKS" : null, 
+              "LOCK_NOTICES" : null, 
+              "CLOSURE_SCHEDULE" : null, 
+              "PERSON_NAME" : null, 
+              "PERSON_TITLE" : null, 
+              "ADDRESS_CITY_AND_STATE" : null, 
+              "WORK_PHONE" : null
+            }
+          }
+        }
+      ]
+    }
+  ], 
+  "templates" : [], 
+  "supportedQueryFormats" : "JSON, geoJSON, PBF", 
+  "supportedAppendFormats" : "sqlite,geoPackage,shapefile,filegdb,featureCollection,geojson,csv,excel,jsonl,featureService,pbf", 
+  "supportedAppendSourceFilterFormats" : "sqlite,geoPackage,shapefile,filegdb,featureService", 
+  "supportedExportFormats" : "csv,shapefile,sqlite,geoPackage,filegdb,featureCollection,geojson,kml,excel,parquet", 
+  "supportedConvertFileFormats" : "JSON,PBF,Parquet", 
+  "supportedConvertContentFormats" : "LayerEditCollection,FeatureCollection", 
+  "supportedSpatialRelationships" : [
+    "esriSpatialRelIntersects", 
+    "esriSpatialRelContains", 
+    "esriSpatialRelCrosses", 
+    "esriSpatialRelEnvelopeIntersects", 
+    "esriSpatialRelIndexIntersects", 
+    "esriSpatialRelOverlaps", 
+    "esriSpatialRelTouches", 
+    "esriSpatialRelWithin", 
+    "esriSpatialRelDisjoint", 
+    "esriSpatialRelRelation"
+  ], 
+  "guidFormat" : "", 
+  "supportsContingentValues" : true, 
+  "supportsEditingContingentValues" : true, 
+  "supportedContingentValuesFormats" : "JSON, PBF", 
+  "supportsFieldGroups" : true, 
+  "supportedSyncDataOptions" : 260, 
+  "hasStaticData" : true, 
+  "maxRecordCount" : 2000, 
+  "standardMaxRecordCount" : 16000, 
+  "maxIdsCount" : 1000000, 
+  "standardMaxRecordCountNoGeometry" : 32000, 
+  "tileMaxRecordCount" : 8000, 
+  "maxRecordCountFactor" : 1, 
+  "capabilities" : "Query,Extract,ChangeTracking"
+}

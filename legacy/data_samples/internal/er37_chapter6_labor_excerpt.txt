@@ -1,0 +1,194 @@
+             LABOR COSTS AND LABOR COST CORRECTIONS
+
+
+TOPIC                                            PARA        PAGE
+
+General                                          6-1         6-1
+
+Policy                                           6-2         6-1
+
+Labor and Labor Costs Corrections Procedures     6-3         6-3
+
+Accounting Procedures                            6-4         6-5
+
+
+
+
+                               6-i
+                                                          ER 37-1-30
+                                                            Change 9
+                                                           15 Sep 10
+
+
+                               CHAPTER 6
+
+                 LABOR COSTS AND LABOR COST CORRECTIONS
+
+
+6-1.  General. This chapter prescribes the accounting policy for
+recording labor costs and correcting labor errors.  The
+objective is to ensure that each Corps of Engineers employee
+understands the importance of correctly recording labor costs in
+the Corps of Engineers Financial Management System (CEFMS) .
+This chapter applies to all Corps of Engineers employees.
+
+6-2.   Policy.
+
+      a.  The Corps of Engineers is a project-oriented
+organization.  Labor costs are appropriately charged to the
+benefitting project, customer, facility, overhead or leave
+account.
+
+       b. Labor costs are subject to the provisions of 31 USC
+3512(e) and the Statement of Federal Financial Accounting
+Standard #4, paragraph 49, which requires each agency to record,
+accumulate and allocate managerial costs on an accrual basis.
+Labor costs are recorded through the end of each month using the
+early labor cutoff procedures in CEFMS.
+
+      c.  Pursuant to 31 USC 1301, labor hours actually worked
+on a specific project or customer order are charged to that
+project or customer order. Accordingly, legitimate labor
+costing errors or corrections to estimated labor must be
+processed promptly.  Under no circumstances will labor hours
+actually worked on a specific project or customer order be
+charged or transferred to another project or customer order, a
+departmental overhead account, a general and administrative
+overhead account, or a shop and facility account to:
+
+       (1)   Compensate for funding shortfalls;
+
+      (2)  Liquidate or reduce balances in accounts with funds
+that will expire at the end of the current fiscal year;
+
+
+                                  6-1
+ER 37-1-30
+Change 9
+15 Sep 10
+
+       (3)  Eliminate or avoid credit balances in accounts
+resulting from posting of labor actually worked;
+
+       (4)   Mask potential anti-deficiency act violations;
+
+       (5)   Mask cost overruns;
+
+       (6)   Facilitate performance of work in advance of receipt
+of funds;
+
+       (7)   Avoid reprogramming actions.
+
+       d.  It is the policy of the Chief of Engineers to identify
+the recording of labor costs and other applications of fiscal
+performance measures as part of performance standards for all
+labor certifying supervisors or work leaders, program/project
+managers, and division/staff office chiefs.
+
+      e.  Program, project or facility account managers will
+direct all team members to stop work on a project or other work
+order upon exhaustion of funds and notify customers that work is
+being stopped until the funding issue is resolved.
+
+      f.  Methods of Determining Labor Cost Rates.  Employees
+are initially paid from the USACE Revolving Fund.  The labor and
+payroll account is charged with the gross earnings of these
+employees and credited with labor cost distributions.  USACE
+uses the 'Effective Time Method.'  Under this method, the labor
+cost rates for the regular tour of duty and overtime consist of
+actual pay rates increased to include the cost of government-
+provided benefits and a factor for all paid leave.  Labor costs
+for night differential and holiday pay are computed at the
+actual pay rate.  The effective time method provides the means
+to:
+
+       (1)  Charge projects or customer orders for time actually
+worked at a rate which will absorb the amount of pay for annual
+and shore leave accrued, sick or other leave taken, holidays,
+administrative leave granted, severance pay entitlement, and
+continuation pay for traumatic job-related injuries.
+
+
+
+                                   6-2
+                                                       ER 37-1-30
+                                                         Change 9
+                                                        15 Sep 10
+
+        (2) Accumulate a balance in the labor and payroll account
+to approximate the monetary value of annual leave, shore leave,
+restored leave, compensatory time, travel compensatory time, and
+credit hours, to include the associated amounts for Medicare
+ (MDCR) and Old Age/Survivors Disability Insurance (OASDI) due
+employees.
+
+       (3) When employees receive cost of living allowances
+(COLA), it is necessary to compute the COLA on the effective pay
+rate. This provides the reserve from which the labor cost is
+absorbed when the employee is on leave.
+
+        (4) Average Rates for Groups of Employees.  Under this
+method, an average effective time hourly rate is established and
+used for costing labor of employees engaged in a common activity
+such as shops, floating plant, and executive, advisory and
+administrative functions.   Equitable costing as well as economy
+are prerequisites for use of the average effective labor rate
+method.
+
+      g.  Supervisors are required to maintain documentation of
+each employee's labor submission for audit purposes. See ER 37-
+1-30, chapter 9.
+
+       h. Resource management officers are responsible for
+ensuring that policies outlined in this chapter are in place and
+working effectively.  They are responsible for leading the
+effort to provide local training regarding project labor costing
+and fiscal responsibility.
+
+6-3.   Labor and Labor Costs Corrections Procedures.
+
+       a.  Labor charges will automatically post to the cited
+work item regardless of funds availability.   Labor charges made
+in excess of a labor purchase request available balance will
+reduce the appropriate funding account and can result in a
+negative fund account balance.   When this occurs the responsible
+employee for each work item is notified via electronic mail from
+CEFMS. Appropriate action must be taken immediately as, if not
+corrected in a timely manner, an Anti-Deficiency Act violation
+can occur.
+
+
+                                6-3
+ER 37-1-30
+Change 9
+15 Sep 10
+
+       b.  Costs charged to programs, projects, facilities, or
+customer orders are based on actual work performed.
+Departmental Overhead and General and Administrative overhead
+costs are allocated based on direct labor charges, ensuring an
+equitable distribution of overhead in accordance with accounting
+standards.  Overhead adjustments (cost transfers) are not
+processed for the purpose of decreasing or expending the balance
+on a completed work activity or customer order, or for the
+purpose of concealing a shortage of funds in a program, project,
+facility or customer order.
+
+       c. Labor costs transfers will be prepared by the
+initiator and approved by the employee, the employee's
+supervisor, and either the program manager, project manager,
+facility account manager, program analyst, or responsible
+employee for the funded work items on both sides of the
+transaction.  The following information is required:
+
+       (1) Identification and signature of the individuals who
+determined the need for the labor cost transfer;
+
+        (2) The timeframe for the transaction;
+
+        (3) Erroneous labor charge code and correct labor charge
+code;
+
+        (4) Cost hour type;
+
+        (5) Organization code;

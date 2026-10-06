@@ -1,0 +1,2180 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "EVS API",
+    "description": "USACE Enterprise Visibility Suite API.\n\nEvery endpoint that replaces an Oracle APEX page carries an `x-apex-page` extension so the\ntraceability matrix (legacy/traceability.csv) can be regenerated from the contract.\n",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "tags": [
+          "meta"
+        ],
+        "summary": "Health",
+        "operationId": "health_api_v1_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Health Api V1 Health Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/programs": {
+      "get": {
+        "tags": [
+          "portfolio"
+        ],
+        "summary": "List Programs",
+        "operationId": "list_programs_api_v1_programs_get",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 500,
+              "default": 50,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 0,
+              "title": "Offset"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProgramList"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-page": "20"
+      }
+    },
+    "/api/v1/projects": {
+      "get": {
+        "tags": [
+          "portfolio"
+        ],
+        "summary": "List Projects",
+        "operationId": "list_projects_api_v1_projects_get",
+        "parameters": [
+          {
+            "name": "program_code",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Program Code"
+            }
+          },
+          {
+            "name": "district",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "District"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 500,
+              "default": 50,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 0,
+              "title": "Offset"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectList"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-page": "30"
+      }
+    },
+    "/api/v1/projects/{p2_project_no}": {
+      "get": {
+        "tags": [
+          "portfolio"
+        ],
+        "summary": "Get Project",
+        "operationId": "get_project_api_v1_projects__p2_project_no__get",
+        "parameters": [
+          {
+            "name": "p2_project_no",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "P2 Project No"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Project"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-page": "31"
+      }
+    },
+    "/api/v1/financial/summary": {
+      "get": {
+        "tags": [
+          "financial"
+        ],
+        "summary": "Financial Summary",
+        "operationId": "financial_summary_api_v1_financial_summary_get",
+        "parameters": [
+          {
+            "name": "fiscal_year",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 2026,
+              "title": "Fiscal Year"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FinancialSummary"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-page": "1"
+      }
+    },
+    "/api/v1/workforce/labor": {
+      "get": {
+        "tags": [
+          "workforce"
+        ],
+        "summary": "Labor",
+        "operationId": "labor_api_v1_workforce_labor_get",
+        "parameters": [
+          {
+            "name": "fiscal_year",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 2026,
+              "title": "Fiscal Year"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LaborSummary"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-page": "40"
+      }
+    },
+    "/api/v1/facilities/condition": {
+      "get": {
+        "tags": [
+          "facilities"
+        ],
+        "summary": "Condition",
+        "operationId": "condition_api_v1_facilities_condition_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FacilitySummary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/public/locks": {
+      "get": {
+        "tags": [
+          "public-locks"
+        ],
+        "summary": "List Locks",
+        "operationId": "list_locks_api_v1_public_locks_get",
+        "parameters": [
+          {
+            "name": "river_code",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "River Code"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LockList"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/public/locks/{lock_id}": {
+      "get": {
+        "tags": [
+          "public-locks"
+        ],
+        "summary": "Get Lock",
+        "operationId": "get_lock_api_v1_public_locks__lock_id__get",
+        "parameters": [
+          {
+            "name": "lock_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Lock Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LockDetail"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/public/locks/stream/events": {
+      "get": {
+        "tags": [
+          "public-locks"
+        ],
+        "summary": "Stream",
+        "operationId": "stream_api_v1_public_locks_stream_events_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/public/srp/coverage": {
+      "get": {
+        "tags": [
+          "public-srp"
+        ],
+        "summary": "Coverage",
+        "operationId": "coverage_api_v1_public_srp_coverage_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SrpCoverage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/accessibility/readout": {
+      "get": {
+        "tags": [
+          "accessibility"
+        ],
+        "summary": "Readout",
+        "operationId": "readout_api_v1_accessibility_readout_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AccessibilityReadout"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/admin/feeds": {
+      "get": {
+        "tags": [
+          "admin"
+        ],
+        "summary": "Feeds",
+        "operationId": "feeds_api_v1_admin_feeds_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FeedHealthList"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-authorization": "Administrator"
+      }
+    },
+    "/api/v1/admin/thresholds": {
+      "get": {
+        "tags": [
+          "admin"
+        ],
+        "summary": "Thresholds",
+        "operationId": "thresholds_api_v1_admin_thresholds_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": true,
+                  "type": "object",
+                  "title": "Response Thresholds Api V1 Admin Thresholds Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AccessibilityReadout": {
+        "properties": {
+          "target": {
+            "type": "string",
+            "title": "Target"
+          },
+          "routes": {
+            "items": {
+              "$ref": "#/components/schemas/AxeRouteResult"
+            },
+            "type": "array",
+            "title": "Routes"
+          },
+          "criteria": {
+            "items": {
+              "$ref": "#/components/schemas/CriterionStatus"
+            },
+            "type": "array",
+            "title": "Criteria"
+          },
+          "acr_download_url": {
+            "type": "string",
+            "title": "Acr Download Url"
+          },
+          "generated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Generated At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "target",
+          "routes",
+          "criteria",
+          "acr_download_url",
+          "generated_at"
+        ],
+        "title": "AccessibilityReadout"
+      },
+      "AppropriationRow": {
+        "properties": {
+          "appropriation": {
+            "type": "string",
+            "title": "Appropriation"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "allotted": {
+            "type": "number",
+            "title": "Allotted"
+          },
+          "committed": {
+            "type": "number",
+            "title": "Committed"
+          },
+          "obligated": {
+            "type": "number",
+            "title": "Obligated"
+          },
+          "expended": {
+            "type": "number",
+            "title": "Expended"
+          },
+          "expiring_fy": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Expiring Fy"
+          }
+        },
+        "type": "object",
+        "required": [
+          "appropriation",
+          "title",
+          "allotted",
+          "committed",
+          "obligated",
+          "expended"
+        ],
+        "title": "AppropriationRow"
+      },
+      "AsOf": {
+        "properties": {
+          "source_as_of": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source As Of",
+            "description": "Newest timestamp inside the source payload"
+          },
+          "fetched_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Fetched At",
+            "description": "When the EVS ingestion worker stored it"
+          },
+          "freshness": {
+            "type": "string",
+            "enum": [
+              "fresh",
+              "aging",
+              "stale",
+              "simulated"
+            ],
+            "title": "Freshness",
+            "default": "fresh"
+          },
+          "source": {
+            "type": "string",
+            "title": "Source",
+            "description": "live | fixtures | simulated | synthetic",
+            "default": "fixtures"
+          }
+        },
+        "type": "object",
+        "title": "AsOf",
+        "description": "Every dataset carries both the source timestamp and when EVS fetched it."
+      },
+      "AxeRouteResult": {
+        "properties": {
+          "route": {
+            "type": "string",
+            "title": "Route"
+          },
+          "viewport": {
+            "type": "string",
+            "title": "Viewport"
+          },
+          "theme": {
+            "type": "string",
+            "title": "Theme"
+          },
+          "violations": {
+            "type": "integer",
+            "title": "Violations"
+          },
+          "passes": {
+            "type": "integer",
+            "title": "Passes"
+          },
+          "incomplete": {
+            "type": "integer",
+            "title": "Incomplete"
+          },
+          "run_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Run At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "route",
+          "viewport",
+          "theme",
+          "violations",
+          "passes",
+          "incomplete",
+          "run_at"
+        ],
+        "title": "AxeRouteResult"
+      },
+      "CriterionStatus": {
+        "properties": {
+          "criterion": {
+            "type": "string",
+            "title": "Criterion"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "A",
+              "AA"
+            ],
+            "title": "Level"
+          },
+          "method": {
+            "type": "string",
+            "enum": [
+              "automated",
+              "manual",
+              "not_applicable"
+            ],
+            "title": "Method"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "supports",
+              "partially-supports",
+              "does-not-support",
+              "not-applicable",
+              "not-evaluated"
+            ],
+            "title": "Status"
+          },
+          "notes": {
+            "type": "string",
+            "title": "Notes",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "criterion",
+          "name",
+          "level",
+          "method",
+          "status"
+        ],
+        "title": "CriterionStatus"
+      },
+      "ExecutionPoint": {
+        "properties": {
+          "period": {
+            "type": "string",
+            "format": "date",
+            "title": "Period"
+          },
+          "plan_cumulative": {
+            "type": "number",
+            "title": "Plan Cumulative"
+          },
+          "obligated_cumulative": {
+            "type": "number",
+            "title": "Obligated Cumulative"
+          },
+          "expended_cumulative": {
+            "type": "number",
+            "title": "Expended Cumulative"
+          }
+        },
+        "type": "object",
+        "required": [
+          "period",
+          "plan_cumulative",
+          "obligated_cumulative",
+          "expended_cumulative"
+        ],
+        "title": "ExecutionPoint"
+      },
+      "FacilityRow": {
+        "properties": {
+          "building_id": {
+            "type": "string",
+            "title": "Building Id"
+          },
+          "installation": {
+            "type": "string",
+            "title": "Installation"
+          },
+          "district": {
+            "type": "string",
+            "title": "District"
+          },
+          "uniformat_section": {
+            "type": "string",
+            "title": "Uniformat Section"
+          },
+          "component_type": {
+            "type": "string",
+            "title": "Component Type"
+          },
+          "ci": {
+            "type": "number",
+            "title": "Ci"
+          },
+          "bci": {
+            "type": "number",
+            "title": "Bci"
+          },
+          "deficiency_cost": {
+            "type": "number",
+            "title": "Deficiency Cost"
+          },
+          "work_plan_year": {
+            "type": "integer",
+            "title": "Work Plan Year"
+          }
+        },
+        "type": "object",
+        "required": [
+          "building_id",
+          "installation",
+          "district",
+          "uniformat_section",
+          "component_type",
+          "ci",
+          "bci",
+          "deficiency_cost",
+          "work_plan_year"
+        ],
+        "title": "FacilityRow"
+      },
+      "FacilitySummary": {
+        "properties": {
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/FacilityRow"
+            },
+            "type": "array",
+            "title": "Rows"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "rows",
+          "as_of"
+        ],
+        "title": "FacilitySummary"
+      },
+      "FeedHealth": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "title": "Source"
+          },
+          "endpoint": {
+            "type": "string",
+            "title": "Endpoint"
+          },
+          "cadence_minutes": {
+            "type": "integer",
+            "title": "Cadence Minutes"
+          },
+          "last_success_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Last Success At"
+          },
+          "last_error": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Last Error"
+          },
+          "latency_ms": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Latency Ms"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "healthy",
+              "degraded",
+              "down",
+              "simulated",
+              "fixtures"
+            ],
+            "title": "Status"
+          }
+        },
+        "type": "object",
+        "required": [
+          "source",
+          "endpoint",
+          "cadence_minutes",
+          "last_success_at",
+          "last_error",
+          "latency_ms",
+          "status"
+        ],
+        "title": "FeedHealth"
+      },
+      "FeedHealthList": {
+        "properties": {
+          "feeds": {
+            "items": {
+              "$ref": "#/components/schemas/FeedHealth"
+            },
+            "type": "array",
+            "title": "Feeds"
+          },
+          "generated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Generated At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "feeds",
+          "generated_at"
+        ],
+        "title": "FeedHealthList"
+      },
+      "FinancialSummary": {
+        "properties": {
+          "fiscal_year": {
+            "type": "integer",
+            "title": "Fiscal Year"
+          },
+          "execution_curve": {
+            "items": {
+              "$ref": "#/components/schemas/ExecutionPoint"
+            },
+            "type": "array",
+            "title": "Execution Curve"
+          },
+          "by_appropriation": {
+            "items": {
+              "$ref": "#/components/schemas/AppropriationRow"
+            },
+            "type": "array",
+            "title": "By Appropriation"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "fiscal_year",
+          "execution_curve",
+          "by_appropriation",
+          "as_of"
+        ],
+        "title": "FinancialSummary"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "LaborRow": {
+        "properties": {
+          "district": {
+            "type": "string",
+            "title": "District"
+          },
+          "pay_period": {
+            "type": "string",
+            "title": "Pay Period"
+          },
+          "hours_plan": {
+            "type": "number",
+            "title": "Hours Plan"
+          },
+          "hours_regular": {
+            "type": "number",
+            "title": "Hours Regular"
+          },
+          "hours_overtime": {
+            "type": "number",
+            "title": "Hours Overtime"
+          },
+          "labor_cost": {
+            "type": "number",
+            "title": "Labor Cost"
+          }
+        },
+        "type": "object",
+        "required": [
+          "district",
+          "pay_period",
+          "hours_plan",
+          "hours_regular",
+          "hours_overtime",
+          "labor_cost"
+        ],
+        "title": "LaborRow"
+      },
+      "LaborSummary": {
+        "properties": {
+          "fiscal_year": {
+            "type": "integer",
+            "title": "Fiscal Year"
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/LaborRow"
+            },
+            "type": "array",
+            "title": "Rows"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "fiscal_year",
+          "rows",
+          "as_of"
+        ],
+        "title": "LaborSummary"
+      },
+      "LockDetail": {
+        "properties": {
+          "lock_id": {
+            "type": "string",
+            "title": "Lock Id",
+            "description": "riverCode + '-' + lockNo, e.g. OH-79"
+          },
+          "river_code": {
+            "type": "string",
+            "title": "River Code"
+          },
+          "river_name": {
+            "type": "string",
+            "title": "River Name"
+          },
+          "lock_name": {
+            "type": "string",
+            "title": "Lock Name"
+          },
+          "lock_no": {
+            "type": "string",
+            "title": "Lock No"
+          },
+          "river_mile": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "River Mile"
+          },
+          "district": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "District"
+          },
+          "chambers": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Chambers"
+          },
+          "latitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Latitude"
+          },
+          "longitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Longitude"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "operating",
+              "delayed",
+              "closed",
+              "stale",
+              "unknown"
+            ],
+            "title": "Status"
+          },
+          "status_reason": {
+            "type": "string",
+            "title": "Status Reason"
+          },
+          "vessels_queued": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Vessels Queued"
+          },
+          "avg_delay_4h_min": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avg Delay 4H Min"
+          },
+          "avg_delay_24h_min": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avg Delay 24H Min"
+          },
+          "last_lockage_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Last Lockage At"
+          },
+          "gauge_stage_ft": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gauge Stage Ft"
+          },
+          "flood_category": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Flood Category"
+          },
+          "active_stoppages": {
+            "type": "integer",
+            "title": "Active Stoppages",
+            "default": 0
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          },
+          "lift_ft": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lift Ft"
+          },
+          "chamber_dimensions": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Chamber Dimensions"
+          },
+          "year_opened": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Year Opened"
+          },
+          "owner": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Owner"
+          },
+          "operator": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Operator"
+          },
+          "queue": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Queue",
+            "default": []
+          },
+          "stoppages": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Stoppages",
+            "default": []
+          },
+          "recent_lockages": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Recent Lockages",
+            "default": []
+          },
+          "status_inputs": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Status Inputs",
+            "description": "inputs_used by the status engine"
+          }
+        },
+        "type": "object",
+        "required": [
+          "lock_id",
+          "river_code",
+          "river_name",
+          "lock_name",
+          "lock_no",
+          "river_mile",
+          "district",
+          "chambers",
+          "latitude",
+          "longitude",
+          "status",
+          "status_reason",
+          "vessels_queued",
+          "avg_delay_4h_min",
+          "avg_delay_24h_min",
+          "last_lockage_at",
+          "as_of"
+        ],
+        "title": "LockDetail"
+      },
+      "LockList": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/LockSummary"
+            },
+            "type": "array",
+            "title": "Items"
+          },
+          "rivers": {
+            "items": {
+              "additionalProperties": {
+                "type": "string"
+              },
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Rivers"
+          },
+          "counts": {
+            "additionalProperties": {
+              "type": "integer"
+            },
+            "propertyNames": {
+              "enum": [
+                "operating",
+                "delayed",
+                "closed",
+                "stale",
+                "unknown"
+              ]
+            },
+            "type": "object",
+            "title": "Counts"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "items",
+          "rivers",
+          "counts",
+          "as_of"
+        ],
+        "title": "LockList"
+      },
+      "LockSummary": {
+        "properties": {
+          "lock_id": {
+            "type": "string",
+            "title": "Lock Id",
+            "description": "riverCode + '-' + lockNo, e.g. OH-79"
+          },
+          "river_code": {
+            "type": "string",
+            "title": "River Code"
+          },
+          "river_name": {
+            "type": "string",
+            "title": "River Name"
+          },
+          "lock_name": {
+            "type": "string",
+            "title": "Lock Name"
+          },
+          "lock_no": {
+            "type": "string",
+            "title": "Lock No"
+          },
+          "river_mile": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "River Mile"
+          },
+          "district": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "District"
+          },
+          "chambers": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Chambers"
+          },
+          "latitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Latitude"
+          },
+          "longitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Longitude"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "operating",
+              "delayed",
+              "closed",
+              "stale",
+              "unknown"
+            ],
+            "title": "Status"
+          },
+          "status_reason": {
+            "type": "string",
+            "title": "Status Reason"
+          },
+          "vessels_queued": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Vessels Queued"
+          },
+          "avg_delay_4h_min": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avg Delay 4H Min"
+          },
+          "avg_delay_24h_min": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avg Delay 24H Min"
+          },
+          "last_lockage_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Last Lockage At"
+          },
+          "gauge_stage_ft": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gauge Stage Ft"
+          },
+          "flood_category": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Flood Category"
+          },
+          "active_stoppages": {
+            "type": "integer",
+            "title": "Active Stoppages",
+            "default": 0
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "lock_id",
+          "river_code",
+          "river_name",
+          "lock_name",
+          "lock_no",
+          "river_mile",
+          "district",
+          "chambers",
+          "latitude",
+          "longitude",
+          "status",
+          "status_reason",
+          "vessels_queued",
+          "avg_delay_4h_min",
+          "avg_delay_24h_min",
+          "last_lockage_at",
+          "as_of"
+        ],
+        "title": "LockSummary",
+        "description": "One row of the live lock table. Geometry comes from the NDC GIS layer, status from LPMS."
+      },
+      "Milestone": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "baseline_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Baseline Date"
+          },
+          "current_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Current Date"
+          },
+          "actual_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Actual Date"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "complete",
+              "scheduled",
+              "slipped"
+            ],
+            "title": "Status"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "name",
+          "baseline_date",
+          "current_date",
+          "actual_date",
+          "status"
+        ],
+        "title": "Milestone"
+      },
+      "Page": {
+        "properties": {
+          "total": {
+            "type": "integer",
+            "title": "Total"
+          },
+          "limit": {
+            "type": "integer",
+            "title": "Limit"
+          },
+          "offset": {
+            "type": "integer",
+            "title": "Offset"
+          }
+        },
+        "type": "object",
+        "required": [
+          "total",
+          "limit",
+          "offset"
+        ],
+        "title": "Page"
+      },
+      "Program": {
+        "properties": {
+          "program_code": {
+            "type": "string",
+            "title": "Program Code"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "business_line": {
+            "type": "string",
+            "title": "Business Line"
+          },
+          "division": {
+            "type": "string",
+            "title": "Division"
+          },
+          "funded_amount": {
+            "type": "number",
+            "title": "Funded Amount"
+          },
+          "obligated_amount": {
+            "type": "number",
+            "title": "Obligated Amount"
+          },
+          "expended_amount": {
+            "type": "number",
+            "title": "Expended Amount"
+          },
+          "variance_pct": {
+            "type": "number",
+            "title": "Variance Pct"
+          },
+          "project_count": {
+            "type": "integer",
+            "title": "Project Count"
+          },
+          "schedule_health": {
+            "type": "string",
+            "enum": [
+              "on_track",
+              "at_risk",
+              "late"
+            ],
+            "title": "Schedule Health"
+          }
+        },
+        "type": "object",
+        "required": [
+          "program_code",
+          "name",
+          "business_line",
+          "division",
+          "funded_amount",
+          "obligated_amount",
+          "expended_amount",
+          "variance_pct",
+          "project_count",
+          "schedule_health"
+        ],
+        "title": "Program"
+      },
+      "ProgramList": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/Program"
+            },
+            "type": "array",
+            "title": "Items"
+          },
+          "page": {
+            "$ref": "#/components/schemas/Page"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "items",
+          "page",
+          "as_of"
+        ],
+        "title": "ProgramList"
+      },
+      "Project": {
+        "properties": {
+          "p2_project_no": {
+            "type": "string",
+            "title": "P2 Project No"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "program_code": {
+            "type": "string",
+            "title": "Program Code"
+          },
+          "district": {
+            "type": "string",
+            "title": "District"
+          },
+          "division": {
+            "type": "string",
+            "title": "Division"
+          },
+          "business_line": {
+            "type": "string",
+            "title": "Business Line"
+          },
+          "phase": {
+            "type": "string",
+            "title": "Phase"
+          },
+          "pdt_lead": {
+            "type": "string",
+            "title": "Pdt Lead"
+          },
+          "baseline_finish": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Baseline Finish"
+          },
+          "current_finish": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Current Finish"
+          },
+          "pct_complete": {
+            "type": "number",
+            "title": "Pct Complete"
+          },
+          "funded_amount": {
+            "type": "number",
+            "title": "Funded Amount"
+          },
+          "obligated_amount": {
+            "type": "number",
+            "title": "Obligated Amount"
+          },
+          "expended_amount": {
+            "type": "number",
+            "title": "Expended Amount"
+          },
+          "schedule_health": {
+            "type": "string",
+            "enum": [
+              "on_track",
+              "at_risk",
+              "late"
+            ],
+            "title": "Schedule Health"
+          },
+          "milestones": {
+            "items": {
+              "$ref": "#/components/schemas/Milestone"
+            },
+            "type": "array",
+            "title": "Milestones",
+            "default": []
+          }
+        },
+        "type": "object",
+        "required": [
+          "p2_project_no",
+          "name",
+          "program_code",
+          "district",
+          "division",
+          "business_line",
+          "phase",
+          "pdt_lead",
+          "baseline_finish",
+          "current_finish",
+          "pct_complete",
+          "funded_amount",
+          "obligated_amount",
+          "expended_amount",
+          "schedule_health"
+        ],
+        "title": "Project"
+      },
+      "ProjectList": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/Project"
+            },
+            "type": "array",
+            "title": "Items"
+          },
+          "page": {
+            "$ref": "#/components/schemas/Page"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "items",
+          "page",
+          "as_of"
+        ],
+        "title": "ProjectList"
+      },
+      "SrpCoverage": {
+        "properties": {
+          "snapshots": {
+            "items": {
+              "$ref": "#/components/schemas/SrpSnapshot"
+            },
+            "type": "array",
+            "title": "Snapshots"
+          },
+          "sites": {
+            "items": {
+              "$ref": "#/components/schemas/SrpSite"
+            },
+            "type": "array",
+            "title": "Sites"
+          },
+          "headline": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "type": "object",
+            "title": "Headline"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "snapshots",
+          "sites",
+          "headline",
+          "as_of"
+        ],
+        "title": "SrpCoverage"
+      },
+      "SrpSite": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "river": {
+            "type": "string",
+            "title": "River"
+          },
+          "state": {
+            "type": "string",
+            "title": "State"
+          },
+          "district": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "District"
+          },
+          "nid_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Nid Id"
+          },
+          "latitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Latitude"
+          },
+          "longitude": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Longitude"
+          },
+          "year_joined": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Year Joined"
+          },
+          "source_url": {
+            "type": "string",
+            "title": "Source Url"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "river",
+          "state",
+          "district",
+          "nid_id",
+          "latitude",
+          "longitude",
+          "year_joined",
+          "source_url"
+        ],
+        "title": "SrpSite"
+      },
+      "SrpSnapshot": {
+        "properties": {
+          "year": {
+            "type": "integer",
+            "title": "Year"
+          },
+          "river_systems": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "River Systems"
+          },
+          "dams": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Dams"
+          },
+          "river_miles": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "River Miles"
+          },
+          "floodplain_acres": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Floodplain Acres"
+          },
+          "source": {
+            "type": "string",
+            "title": "Source"
+          },
+          "source_url": {
+            "type": "string",
+            "title": "Source Url"
+          }
+        },
+        "type": "object",
+        "required": [
+          "year",
+          "river_systems",
+          "dams",
+          "river_miles",
+          "source",
+          "source_url"
+        ],
+        "title": "SrpSnapshot"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "portfolio",
+      "description": "Programs and P2 projects"
+    },
+    {
+      "name": "financial",
+      "description": "CEFMS execution (synthetic)"
+    },
+    {
+      "name": "workforce",
+      "description": "EMS labor (synthetic)"
+    },
+    {
+      "name": "facilities",
+      "description": "BUILDER SMS condition (synthetic)"
+    },
+    {
+      "name": "public-locks",
+      "description": "Live lock status from LPMS, public"
+    },
+    {
+      "name": "public-srp",
+      "description": "Sustainable Rivers Program coverage, public"
+    },
+    {
+      "name": "accessibility",
+      "description": "Section 508 read-out"
+    },
+    {
+      "name": "admin",
+      "description": "Feed health and thresholds"
+    }
+  ]
+}

@@ -23,7 +23,7 @@ export function LockDetailPage() {
     return (
       <div className="evs-page">
         <PageHeader title={`Lock ${id}`} breadcrumbs={crumbs} />
-        <ErrorState message={q.error.status === 404 ? `No lock with ID ${id} is known to this demo. Choose one from the lock status table.` : "This lock could not be loaded."} error={q.error} onRetry={() => q.refetch()} />
+        <ErrorState message={q.error.status === 404 ? `No lock with ID ${id} is known to this demo. Choose one from the lock status table.` : "This lock could not be loaded."} error={q.error} onRetry={() => q.refetch()} headingLevel={2} />
       </div>
     );
   }

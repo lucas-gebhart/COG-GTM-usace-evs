@@ -189,7 +189,7 @@ Concrete run-of-pipeline for a live segment (about 8 minutes):
 
 ### 3.4 Public sample APEX application to use as the "legacy" source
 
-Verified downloadable exports (all MIT-licensed in `oracle/apex`, branch 24.2, APEX release 24.2.14):
+Verified downloadable exports (in `oracle/apex`, branch 24.2, APEX release 24.2.14; the archives carry the Universal Permissive License 1.0, not MIT as first noted here):
 
 | App | Why | Download (verified HTTP 200, size) |
 |---|---|---|

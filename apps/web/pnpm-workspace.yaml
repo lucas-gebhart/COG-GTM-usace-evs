@@ -1,9 +1,13 @@
-# pnpm 10 reads onlyBuiltDependencies, pnpm 11+ reads allowBuilds; both allow the esbuild and watcher postinstalls.
+# pnpm 10 reads onlyBuiltDependencies/ignoredBuiltDependencies, pnpm 11+ reads allowBuilds; both allow the esbuild
+# and watcher postinstalls and skip puppeteer's Chrome download (Lighthouse runs on the Playwright chromium).
 onlyBuiltDependencies:
   - "@parcel/watcher"
   - esbuild
   - msw
+ignoredBuiltDependencies:
+  - puppeteer
 allowBuilds:
   "@parcel/watcher": true
   esbuild: true
   msw: true
+  puppeteer: false

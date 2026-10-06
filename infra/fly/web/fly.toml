@@ -1,0 +1,30 @@
+# EVS web (nginx + React build) on Fly.io. /api is proxied over the private network to usace-evs-api.internal:8000,
+# /tiles serves the PMTiles basemap with HTTP range requests. Deploy from the repo root:
+#   fly deploy --config infra/fly/web/fly.toml --dockerfile apps/web/Dockerfile .
+app = "usace-evs-web"
+primary_region = "iad"
+
+[build]
+  dockerfile = "../../../apps/web/Dockerfile"  # relative to this file; build context is the repo root
+
+[env]
+  API_UPSTREAM = "http://api.process.usace-evs-api.internal:8000"
+  DNS_RESOLVER = "[fdaa::3]"
+
+[http_service]
+  internal_port = 80
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [[http_service.checks]]
+    interval = "15s"
+    timeout = "5s"
+    grace_period = "10s"
+    method = "GET"
+    path = "/healthz"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"

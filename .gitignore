@@ -13,3 +13,6 @@ apps/web/public/uswds/
 .pytest_cache/
 .ruff_cache/
 *.tsbuildinfo
+apps/web/public/tiles/*.pmtiles
+.terraform/
+*.tfstate*

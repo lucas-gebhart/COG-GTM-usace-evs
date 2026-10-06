@@ -1,0 +1,16 @@
+# Shared build context for apps/api/Dockerfile and apps/web/Dockerfile (context is the repo root).
+.git
+**/node_modules
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+apps/web/dist
+apps/web/a11y-results
+apps/web/playwright-report
+apps/web/test-results
+apps/web/public/uswds
+apps/web/public/tiles
+legacy/strategic-planner
+infra/terraform-govcloud/**/.terraform
+docs

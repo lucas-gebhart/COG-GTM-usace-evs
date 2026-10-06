@@ -485,6 +485,11 @@ export interface components {
             viewport: string;
             /** Theme */
             theme: string;
+            /**
+             * Reduced Motion
+             * @default false
+             */
+            reduced_motion: boolean;
             /** Violations */
             violations: number;
             /** Passes */

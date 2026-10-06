@@ -1,0 +1,30 @@
+[project]
+name = "evs-acr"
+version = "0.1.0"
+description = "EVS OpenACR generator: merges axe, Lighthouse, pa11y and manual attestation evidence into an OpenACR"
+requires-python = ">=3.12"
+dependencies = ["pyyaml>=6.0,<7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+evs-acr-gen = "evs_acr.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["evs_acr"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]  # long literal strings (HTML/CSS/notes); the formatter owns code line length
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

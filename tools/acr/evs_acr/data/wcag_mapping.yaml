@@ -1,0 +1,403 @@
+# WCAG 2.1 A/AA criteria to evidence mapping (docs/research/evs_508_and_design_report.md, Appendix A).
+# method: automated = at least one axe-core rule exists (19); manual = no axe rule, attestation only (24);
+# not_applicable = content EVS does not ship (5). A criterion is "supports" only when every automated cell
+# passes AND the manual attestation (where manual_tests is non-empty) says supports.
+criteria:
+  - num: 1.1.1
+    name: Non-text Content
+    level: A
+    method: automated
+    axe_rules: [image-alt, svg-img-alt, role-img-alt, input-image-alt, object-alt, aria-meter-name, aria-progressbar-name]
+    manual_tests: [MT-SR-01]
+    manual_note: chart names and descriptions, map marker names
+  - num: 1.2.1
+    name: Audio-only and Video-only (Prerecorded)
+    level: A
+    method: not_applicable
+    na_reason: EVS ships no audio or video content.
+  - num: 1.2.2
+    name: Captions (Prerecorded)
+    level: A
+    method: not_applicable
+    na_reason: EVS ships no audio or video content.
+  - num: 1.2.3
+    name: Audio Description or Media Alternative (Prerecorded)
+    level: A
+    method: not_applicable
+    na_reason: EVS ships no audio or video content.
+  - num: 1.3.1
+    name: Info and Relationships
+    level: A
+    method: automated
+    axe_rules: [list, listitem, definition-list, dlitem, th-has-data-cells, td-headers-attr, td-has-header, table-fake-caption, aria-required-children, aria-required-parent, p-as-heading]
+    manual_tests: [MT-SR-02]
+    manual_note: table header and scope reading, KPI tile semantics, chart "view as table"
+  - num: 1.3.2
+    name: Meaningful Sequence
+    level: A
+    method: manual
+    manual_tests: [MT-SR-03]
+    manual_note: reading order matches visual order on each route at 320 px and 1280 px
+  - num: 1.3.3
+    name: Sensory Characteristics
+    level: A
+    method: manual
+    manual_tests: [MT-VIS-01]
+    manual_note: status never conveyed by colour, shape or position alone (icon + text label)
+  - num: 1.3.4
+    name: Orientation
+    level: AA
+    method: automated
+    axe_rules: [css-orientation-lock]
+    manual_tests: [MT-RESP-01]
+    manual_note: portrait and landscape on tablet
+  - num: 1.3.5
+    name: Identify Input Purpose
+    level: AA
+    method: automated
+    axe_rules: [autocomplete-valid]
+    manual_tests: [MT-FORM-01]
+    manual_note: login and profile fields carry autocomplete tokens
+  - num: 1.4.1
+    name: Use of Color
+    level: A
+    method: automated
+    axe_rules: [link-in-text-block]
+    manual_tests: [MT-VIS-01]
+    manual_note: colour-vision simulation on status chips, map markers and chart series
+  - num: 1.4.2
+    name: Audio Control
+    level: A
+    method: not_applicable
+    axe_rules: [no-autoplay-audio]
+    na_reason: EVS ships no audio.
+  - num: 1.4.3
+    name: Contrast (Minimum)
+    level: AA
+    method: automated
+    axe_rules: [color-contrast]
+    manual_tests: [MT-VIS-02]
+    manual_note: contrast spot-check of chart labels drawn in SVG or canvas (axe cannot read canvas text)
+  - num: 1.4.4
+    name: Resize text
+    level: AA
+    method: manual
+    manual_tests: [MT-ZOOM-01]
+    manual_note: 200% browser zoom on every route
+  - num: 1.4.5
+    name: Images of Text
+    level: AA
+    method: manual
+    manual_tests: [MT-VIS-03]
+    manual_note: no images of text (logos exempt)
+  - num: 1.4.10
+    name: Reflow
+    level: AA
+    method: manual
+    manual_tests: [MT-ZOOM-02]
+    manual_note: 400% zoom / 320 px reflow; tables and Gantt may scroll in two dimensions with visible scrollbars
+    smoke: reflow
+  - num: 1.4.11
+    name: Non-text Contrast
+    level: AA
+    method: manual
+    manual_tests: [MT-VIS-04]
+    manual_note: 3:1 for focus rings, chart lines and markers, map markers against the basemap, input borders
+  - num: 1.4.12
+    name: Text Spacing
+    level: AA
+    method: automated
+    axe_rules: [avoid-inline-spacing]
+    manual_tests: [MT-ZOOM-03]
+    manual_note: text-spacing bookmarklet on every route
+  - num: 1.4.13
+    name: Content on Hover or Focus
+    level: AA
+    method: manual
+    manual_tests: [MT-KBD-04]
+    manual_note: tooltips and popovers are dismissible with Escape, hoverable and persistent
+    smoke: keyboard
+  - num: 2.1.1
+    name: Keyboard
+    level: A
+    method: automated
+    axe_rules: [scrollable-region-focusable, frame-focusable-content, server-side-image-map]
+    manual_tests: [MT-KBD-01]
+    manual_note: keyboard-only pass of every route including charts (arrow keys) and map (Tab to markers, Enter opens popover)
+    smoke: keyboard
+  - num: 2.1.2
+    name: No Keyboard Trap
+    level: A
+    method: manual
+    manual_tests: [MT-KBD-02]
+    manual_note: no traps in modal, date picker, map canvas
+    smoke: keyboard
+  - num: 2.1.4
+    name: Character Key Shortcuts
+    level: A
+    method: manual
+    manual_tests: [MT-KBD-03]
+    manual_note: single-key shortcuts only active while a component has focus
+  - num: 2.2.1
+    name: Timing Adjustable
+    level: A
+    method: automated
+    axe_rules: [meta-refresh]
+    manual_tests: [MT-TIME-01]
+    manual_note: session timeout warning with extend; live feed refresh does not move focus
+  - num: 2.2.2
+    name: Pause, Stop, Hide
+    level: A
+    method: automated
+    axe_rules: [blink, marquee]
+    manual_tests: [MT-MOTION-01]
+    manual_note: live table and map updates can be paused; prefers-reduced-motion honoured
+  - num: 2.3.1
+    name: Three Flashes or Below Threshold
+    level: A
+    method: manual
+    manual_tests: [MT-MOTION-02]
+    manual_note: no flashing content
+  - num: 2.4.1
+    name: Bypass Blocks
+    level: A
+    method: automated
+    axe_rules: [bypass]
+    manual_tests: [MT-KBD-05]
+    manual_note: skip link and landmarks (banner, navigation, main, contentinfo)
+    smoke: keyboard
+  - num: 2.4.2
+    name: Page Titled
+    level: A
+    method: automated
+    axe_rules: [document-title]
+    manual_tests: []
+    manual_note: route titles follow the pattern "Page | EVS"
+  - num: 2.4.3
+    name: Focus Order
+    level: A
+    method: manual
+    manual_tests: [MT-KBD-06]
+    manual_note: focus order in filters, dialogs, popovers and after route change
+    smoke: keyboard
+  - num: 2.4.4
+    name: Link Purpose (In Context)
+    level: A
+    method: automated
+    axe_rules: [link-name]
+    manual_tests: [MT-SR-04]
+    manual_note: link text understandable in context
+  - num: 2.4.5
+    name: Multiple Ways
+    level: AA
+    method: manual
+    manual_tests: [MT-SR-05]
+    manual_note: global navigation plus in-page links and breadcrumbs
+  - num: 2.4.6
+    name: Headings and Labels
+    level: AA
+    method: manual
+    manual_tests: [MT-SR-05]
+    manual_note: headings and labels are descriptive
+  - num: 2.4.7
+    name: Focus Visible
+    level: AA
+    method: manual
+    manual_tests: [MT-KBD-07]
+    manual_note: focus visible on every interactive element including chart points and map markers
+    smoke: keyboard
+  - num: 2.5.1
+    name: Pointer Gestures
+    level: A
+    method: manual
+    manual_tests: [MT-TOUCH-01]
+    manual_note: map pinch and drag have button alternatives
+  - num: 2.5.2
+    name: Pointer Cancellation
+    level: A
+    method: manual
+    manual_tests: [MT-TOUCH-02]
+    manual_note: actions fire on the up event; drag can be cancelled
+  - num: 2.5.3
+    name: Label in Name
+    level: A
+    method: automated
+    axe_rules: [label-content-name-mismatch]
+    manual_tests: [MT-SR-06]
+    manual_note: visible label is part of the accessible name
+  - num: 2.5.4
+    name: Motion Actuation
+    level: A
+    method: not_applicable
+    na_reason: EVS has no motion-actuated functions.
+  - num: 3.1.1
+    name: Language of Page
+    level: A
+    method: automated
+    axe_rules: [html-has-lang, html-lang-valid, html-xml-lang-mismatch]
+    manual_tests: []
+    manual_note: none needed beyond automation
+  - num: 3.1.2
+    name: Language of Parts
+    level: AA
+    method: automated
+    axe_rules: [valid-lang]
+    manual_tests: []
+    manual_note: none needed beyond automation
+  - num: 3.2.1
+    name: On Focus
+    level: A
+    method: manual
+    manual_tests: [MT-KBD-08]
+    manual_note: focusing a filter does not change context
+  - num: 3.2.2
+    name: On Input
+    level: A
+    method: manual
+    manual_tests: [MT-FORM-02]
+    manual_note: filter changes announced, no auto-submit surprises
+  - num: 3.2.3
+    name: Consistent Navigation
+    level: AA
+    method: manual
+    manual_tests: [MT-SR-05]
+    manual_note: consistent header and navigation across routes
+  - num: 3.2.4
+    name: Consistent Identification
+    level: AA
+    method: manual
+    manual_tests: [MT-SR-05]
+    manual_note: consistent icon and label vocabulary (status chips, as-of badges)
+  - num: 3.3.1
+    name: Error Identification
+    level: A
+    method: manual
+    manual_tests: [MT-FORM-03]
+    manual_note: error identified in text, aria-describedby, focus moved to summary
+  - num: 3.3.2
+    name: Labels or Instructions
+    level: A
+    method: automated
+    axe_rules: [label, form-field-multiple-labels]
+    manual_tests: [MT-FORM-04]
+    manual_note: labels and hints present
+  - num: 3.3.3
+    name: Error Suggestion
+    level: AA
+    method: manual
+    manual_tests: [MT-FORM-05]
+    manual_note: suggestions in error text
+  - num: 3.3.4
+    name: Error Prevention (Legal, Financial, Data)
+    level: AA
+    method: manual
+    manual_tests: [MT-FORM-06]
+    manual_note: admin data-source edits are reversible or confirmed
+  - num: 4.1.1
+    name: Parsing
+    level: A
+    method: automated
+    axe_rules: [duplicate-id, duplicate-id-active]
+    manual_tests: []
+    manual_note: obsolete in WCAG 2.2; still reported for the 2.1 edition
+  - num: 4.1.2
+    name: Name, Role, Value
+    level: A
+    method: automated
+    axe_rules: [button-name, aria-allowed-attr, aria-required-attr, aria-valid-attr, aria-valid-attr-value, aria-roles, aria-hidden-focus, aria-command-name, aria-input-field-name, aria-toggle-field-name, aria-tooltip-name, aria-tab-name, nested-interactive, select-name, input-button-name, frame-title]
+    manual_tests: [MT-SR-07]
+    manual_note: name, role, value and state for custom widgets (sortable headers, chips, map markers, chart points)
+  - num: 4.1.3
+    name: Status Messages
+    level: AA
+    method: manual
+    manual_tests: [MT-SR-08]
+    manual_note: aria-live announcements for as-of updates, filter result counts, save confirmations
+
+# Revised Section 508 rows. FPC (302.x) and support documentation (602/603) are manual attestations;
+# hardware (Chapter 4) and software (Chapter 5) are not applicable for a web application reported against WCAG.
+section508:
+  - num: "302.1"
+    name: Without Vision
+    manual_tests: [MT-SR-01, MT-SR-02, MT-SR-03, MT-SR-07]
+    manual_note: screen reader pass (NVDA, JAWS, VoiceOver) on all routes; charts expose "view as table"; map exposes a list view
+  - num: "302.2"
+    name: With Limited Vision
+    manual_tests: [MT-ZOOM-01, MT-ZOOM-02, MT-VIS-02, MT-VIS-04]
+    manual_note: 400% zoom reflow, user font scaling, 4.5:1 text contrast, 3:1 non-text contrast
+  - num: "302.3"
+    name: Without Perception of Color
+    manual_tests: [MT-VIS-01]
+    manual_note: status encoded with icon + text + colour; colour-blind-safe palette; patterns in stacked charts
+  - num: "302.4"
+    name: Without Hearing
+    manual_tests: []
+    manual_note: no audio content; all information is visual and textual
+    default_level: not-applicable
+  - num: "302.5"
+    name: With Limited Hearing
+    manual_tests: []
+    manual_note: no audio content
+    default_level: not-applicable
+  - num: "302.6"
+    name: Without Speech
+    manual_tests: []
+    manual_note: no speech input required
+    default_level: not-applicable
+  - num: "302.7"
+    name: With Limited Manipulation
+    manual_tests: [MT-KBD-01, MT-TOUCH-01, MT-TOUCH-02]
+    manual_note: keyboard-only operation, 44 px targets, no path-based gestures required
+  - num: "302.8"
+    name: With Limited Reach and Strength
+    manual_tests: [MT-KBD-01, MT-TOUCH-01]
+    manual_note: keyboard and single-pointer operation, no simultaneous actions
+  - num: "302.9"
+    name: With Limited Language, Cognitive, and Learning Abilities
+    manual_tests: [MT-SR-05, MT-FORM-02, MT-FORM-05]
+    manual_note: consistent navigation, plain-language labels, error suggestions, pausable live updates
+  - num: "602.2"
+    name: Accessibility and Compatibility Features
+    manual_tests: []
+    manual_note: docs/a11y/README.md and the in-app /accessibility page document keyboard model, screen reader notes, zoom and reduced-motion behaviour
+  - num: "602.3"
+    name: Electronic Support Documentation
+    manual_tests: []
+    manual_note: documentation is Markdown and HTML conforming to WCAG 2.1 AA
+  - num: "602.4"
+    name: Alternate Formats for Non-Electronic Support Documentation
+    manual_tests: []
+    manual_note: alternate formats on request via the feedback mailbox
+    default_level: not-applicable
+  - num: "603.2"
+    name: Information on Accessibility and Compatibility Features
+    manual_tests: []
+    manual_note: support contact available via email; TTY and relay noted
+  - num: "603.3"
+    name: Accommodation of Communication Needs
+    manual_tests: []
+    manual_note: support staff briefed on accessibility features and feedback triage
+
+chapter_notes:
+  success_criteria_level_a: >-
+    Web component only. Levels are populated by evs-acr-gen: supports = zero axe violations across every
+    route, viewport, theme and motion cell in the run AND the manual attestation says supports;
+    partially-supports = an open defect with a workaround or an attested partial; does-not-support = a
+    critical or serious violation or an attested failure; not-evaluated = evidence missing.
+  success_criteria_level_aa: >-
+    Same population rule as Level A.
+  success_criteria_level_aaa: >-
+    AAA is not an EVS target. Rows are retained for completeness and marked not-evaluated.
+  functional_performance_criteria: >-
+    FPC are attested manually from the assistive technology test matrix (NVDA, JAWS, VoiceOver,
+    keyboard-only, 400% zoom, Windows High Contrast, colour-vision simulation). See
+    docs/a11y/MANUAL_TEST_PLAN.md.
+  hardware: >-
+    Not applicable. EVS is a web application and ships no hardware.
+  software: >-
+    Not applicable to EVS web content per VPAT 2.5 Chapter 5 guidance: web applications evaluated against
+    WCAG are reported in the WCAG tables rather than 502/503. 504 (authoring tools) is not applicable;
+    EVS has no end-user content authoring.
+  support_documentation_and_services: >-
+    docs/a11y/README.md, the manual test plan and the in-app Accessibility page (route /accessibility)
+    document accessibility features and the feedback channel.

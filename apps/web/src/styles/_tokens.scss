@@ -1,0 +1,104 @@
+// EVS design tokens as CSS custom properties.
+// Every colour pair lists its WCAG 2.x contrast ratio from docs/research/evs_508_and_design_report.md section 1.2.1.
+// Light theme is the default for internal pages; html[data-theme="leadership"] is the 1920x1080 big-screen dark theme.
+
+:root {
+  // Text and surfaces
+  --evs-color-ink: #1b1b1b;            // gray-90 on white 17.22:1 (1.4.3)
+  --evs-color-ink-secondary: #565c65;  // gray-cool-60 on white 6.74:1, on panel #edeff0 5.85:1
+  --evs-color-ink-disabled: #71767a;   // gray-cool-50 on white 4.59:1 (disabled text is exempt; met anyway)
+  --evs-color-link: #005ea2;           // blue-60v on white 6.72:1 (1.4.3, 1.4.11)
+  --evs-color-brand: #1a4480;          // blue-warm-70v on white 9.62:1
+  --evs-color-bg: #ffffff;
+  --evs-color-panel: #edeff0;          // gray-cool-5 under gray-90 text 14.93:1
+  --evs-color-hairline: #c6cace;       // gray-cool-20, decorative grid and border lines only (1.65:1, exempt)
+  --evs-color-focus: #2491ff;          // blue-40v on white 3.20:1 (1.4.11 non-text)
+  --evs-color-focus-contrast: #1b1b1b; // inner ring so the focus ring also meets 3:1 on blue surfaces
+
+  // Status bundle: colour + shape + icon + text. Any single channel identifies the status (1.4.1, 1.3.3).
+  --evs-status-operating: #008817;        // green-cool-50v, fill on white 4.63:1, on panel 4.02:1; circle, check
+  --evs-status-operating-bg: #ecf3ec;     // green-cool-5, chip text gray-90 on it 15.25:1
+  --evs-status-delayed: #ffbe2e;          // gold-20v, 1.66:1 on white so the 2 px gray-90 stroke (10.38:1) carries the boundary; triangle, exclamation
+  --evs-status-delayed-bg: #f5f0e6;       // gold-5, chip text 15.16:1
+  --evs-status-closed: #b50909;           // red-60v on white 6.98:1; octagon, x
+  --evs-status-closed-bg: #f4e3db;        // red-warm-10, chip text 13.83:1
+  --evs-status-stale: #565c65;            // gray-cool-60 on white 6.74:1, on panel 5.85:1; dashed hatched ring, clock
+  --evs-status-stale-bg: #edeff0;         // gray-cool-5, chip text 14.93:1
+  --evs-status-unknown: #71767a;          // gray-cool-50 on white 4.59:1; diamond, question mark
+  --evs-status-unknown-bg: #f0f0f0;       // gray-5, chip text 15.9:1
+  --evs-status-stroke: #1b1b1b;           // gray-90 outline on every marker shape
+
+  // Categorical chart palette, max five series, each also carries a dash pattern and a marker shape.
+  --evs-series-1: #005ea2; // blue-60v 6.72:1 on white, solid / circle
+  --evs-series-2: #cf4900; // orange-warm-50v 4.56:1, dashed 6-3 / square
+  --evs-series-3: #783cb9; // violet-60v 6.68:1, dotted 2-3 / triangle
+  --evs-series-4: #216e1f; // green-cool-60v 6.34:1, dash-dot / diamond
+  --evs-series-5: #565c65; // gray-cool-60 6.74:1, long dash 10-4 / cross
+  --evs-series-negative: #b50909; // red-60v 6.98:1 for negative variance (also labelled in text)
+  --evs-chart-grid: #c6cace;      // gray-cool-20, decorative
+  --evs-chart-axis: #565c65;      // gray-cool-60 6.74:1 for tick labels at 12 px minimum
+  --evs-chart-plan-band: rgba(86, 92, 101, 0.18); // plan band behind the actual line, labelled in text
+
+  // Typography scale (rem everywhere so browser zoom and OS font scaling are honoured, 1.4.4)
+  --evs-font-body: "Public Sans Web", "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --evs-font-mono: "Roboto Mono Web", "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --evs-text-xs: 0.75rem;   // 12 px, axis ticks only with 4.5:1 and a table alternative
+  --evs-text-sm: 0.875rem;  // 14 px, minimum for UI text
+  --evs-text-md: 1rem;
+  --evs-text-lg: 1.25rem;   // h3
+  --evs-text-xl: 1.5rem;    // h2
+  --evs-text-2xl: 2rem;     // h1
+  --evs-kpi-value: clamp(1.5rem, 1rem + 2.5vw, 3.5rem); // 24 px mobile up to 56 px desktop
+  --evs-line-body: 1.5;
+  --evs-line-heading: 1.2;
+
+  // Spacing and layout
+  --evs-space-1: 0.25rem;
+  --evs-space-2: 0.5rem;
+  --evs-space-3: 1rem;
+  --evs-space-4: 1.5rem;
+  --evs-space-5: 2rem;
+  --evs-radius: 0.25rem;
+  --evs-hit-area: 2.75rem; // 44 px minimum target (2.5.8)
+  --evs-shadow: 0 1px 2px rgba(27, 27, 27, 0.12);
+}
+
+// Leadership (big screen) theme: background blue-warm-90, text gray-cool-10 13.68:1.
+// Series colours all exceed 4.5:1 on the dark background so labels drawn in series colour stay readable.
+html[data-theme="leadership"] {
+  --evs-color-ink: #dfe1e2;            // gray-cool-10 on #13171f 13.68:1
+  --evs-color-ink-secondary: #a9aeb1;  // gray-cool-30 on #13171f 8.01:1
+  --evs-color-ink-disabled: #8d9297;   // gray-cool-40 on #13171f 5.6:1
+  --evs-color-link: #58b4ff;           // blue-30v on #13171f 8.02:1
+  --evs-color-brand: #dfe1e2;
+  --evs-color-bg: #13171f;             // blue-warm-90
+  --evs-color-panel: #1f242e;          // under gray-cool-10 text 11.4:1
+  --evs-color-hairline: #3d4551;       // gray-cool-70, decorative
+  --evs-color-focus: #2491ff;          // blue-40v on #13171f 5.61:1
+  --evs-color-focus-contrast: #ffffff;
+
+  --evs-status-operating: #21c834;     // green-cool-30v on #13171f 8.01:1
+  --evs-status-operating-bg: #0f2a14;  // text gray-cool-10 on it 11.9:1
+  --evs-status-delayed: #ffbe2e;       // gold-20v on #13171f 10.9:1
+  --evs-status-delayed-bg: #332a0c;    // text 11.5:1
+  --evs-status-closed: #ff8d7b;        // red-30v on #13171f 7.99:1
+  --evs-status-closed-bg: #3a1612;     // text 11.6:1
+  --evs-status-stale: #a9aeb1;         // gray-cool-30 8.01:1
+  --evs-status-stale-bg: #262b33;      // text 10.8:1
+  --evs-status-unknown: #a9aeb1;
+  --evs-status-unknown-bg: #262b33;
+  --evs-status-stroke: #dfe1e2;
+
+  --evs-series-1: #58b4ff; // blue-30v 8.02:1 on #13171f
+  --evs-series-2: #ffbc78; // orange-20v 10.87:1
+  --evs-series-3: #ee83ff; // violet-warm-30v 7.97:1
+  --evs-series-4: #21c834; // green-cool-30v 8.01:1
+  --evs-series-5: #a9aeb1; // gray-cool-30 8.01:1
+  --evs-series-negative: #ff8d7b; // red-30v 7.99:1
+  --evs-chart-grid: #3d4551;
+  --evs-chart-axis: #a9aeb1;
+  --evs-chart-plan-band: rgba(169, 174, 177, 0.22);
+
+  --evs-kpi-value: 4.5rem;
+  --evs-shadow: none;
+}

@@ -59,7 +59,7 @@ export const Locks: StoryObj<Meta<typeof DataTable<Lock>>> = {
     caption: "Lock status by river",
     columns: lockColumns,
     data: fixtures.locks.items,
-    getRowId: (r) => r.lock_id,
+    getRowId: (r, i) => `${r.lock_id}-${i}`, // the public fixture lists OH-78 twice
     getRowHref: (r) => `/public/locks/${r.lock_id}`,
     initialSorting: [{ id: "status", desc: false }],
     pageSize: 25,

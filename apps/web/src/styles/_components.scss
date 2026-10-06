@@ -149,6 +149,7 @@ html[data-theme="leadership"] .evs-chip { color: var(--evs-color-ink); }
 
 // Card mode under 640 px: each row renders as a labelled card (USWDS stacked-header pattern at a wider breakpoint).
 .evs-table--stacked {
+  .usa-table caption { display: block; width: 100%; }
   .usa-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   .usa-table, .usa-table tbody, .usa-table tr, .usa-table td, .usa-table th { display: block; width: 100%; box-sizing: border-box; }
   .usa-table tr { border: 1px solid var(--evs-color-hairline); border-radius: var(--evs-radius); margin-bottom: var(--evs-space-2); padding: var(--evs-space-2) 0; background: var(--evs-color-bg); }
@@ -198,16 +199,23 @@ html[data-theme="leadership"] .evs-error { color: var(--evs-color-ink); }
   &__btn.usa-button { margin: 0; }
 }
 
-// Shell
+// Shell: USWDS extended header. The nav sits on its own row under the brand so it can never overlap the title,
+// and items wrap onto a second row when the viewport (or zoom level) is too narrow for all of them.
 .evs-header {
   .usa-nav__primary a[aria-current="page"] { font-weight: 700; }
   .usa-nav__primary-item a { white-space: normal; }
-  &__tools { display: flex; align-items: center; gap: var(--evs-space-2); padding: var(--evs-space-2) 0; }
-  .usa-nav__inner { display: flex; flex-direction: column; }
+  .usa-nav__secondary-item { display: flex; align-items: center; }
+  .usa-logo { white-space: normal; }
 }
 @media (min-width: 64em) {
-  .evs-header .usa-nav { display: flex; align-items: center; gap: var(--evs-space-3); }
-  .evs-header .usa-nav__primary { flex: 1 1 auto; }
+  .evs-header .usa-logo { max-width: none; }
+  .evs-header .usa-nav__inner { display: flex; flex-wrap: nowrap; align-items: center; gap: var(--evs-space-3); }
+  .evs-header .usa-nav__primary { flex: 1 1 auto; min-width: 0; flex-wrap: wrap; }
+  .evs-header .usa-nav__primary-item { flex: 0 0 auto; }
+  // Theme toggle flows after the links instead of USWDS absolute positioning, so it cannot cover them when they wrap.
+  .evs-header .usa-nav__secondary { position: static; flex: 0 0 auto; margin: 0 0 0 auto; min-width: 0; }
+  .evs-header .usa-nav__secondary-links { margin: 0; }
+  .evs-header .usa-nav__secondary-item { padding: 0; }
 }
 .evs-footer {
   margin-top: var(--evs-space-5); border-top: 1px solid var(--evs-color-hairline);

@@ -8,7 +8,7 @@ Demo frontend for the USACE Enterprise Visibility Suite. Nothing here is an oper
 | --- | --- |
 | `pnpm install` | Install dependencies (`pnpm-workspace.yaml` approves the esbuild, msw and @parcel/watcher build scripts) |
 | `pnpm gen:api` | Regenerate `src/api/schema.d.ts` from `packages/contract/openapi.json` |
-| `pnpm dev` | Vite dev server on :3000, proxies `/api` to the FastAPI server on :8000 |
+| `pnpm dev` | Vite dev server on :5173 (the Compose web container serves :3000), proxies `/api` to the FastAPI server on :8000 |
 | `pnpm dev:mock` | Same, with `VITE_MOCK=1`: MSW serves `apps/api/fixtures/*.json` so no API or database is needed |
 | `pnpm lint`, `pnpm typecheck` | ESLint (`jsx-a11y` strict) and `tsc -b` |
 | `pnpm test` | Vitest + Testing Library + `vitest-axe` on every component and hook |

@@ -34,7 +34,7 @@ export const CHART_TOKENS = {
   focus: "var(--evs-color-focus)",
   minLineWidth: 2,
   minMarkerDiameter: 8,
-  minWidth: 280,
+  minWidth: 240,
   minHeight: 180,
 } as const;
 

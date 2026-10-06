@@ -5,6 +5,7 @@ import { useElementSize } from "../hooks/useElementSize";
 import { useAnnounce } from "../hooks/useAnnounce";
 import { downloadCsv, slugify, toCsv, type CsvColumn } from "../lib/csv";
 import { CHART_TOKENS, SERIES } from "../theme/chartPalette";
+import { ChartPatterns } from "../theme/ChartPatterns";
 
 export interface FigureColumn<T> extends CsvColumn<T> {
   /** Right-align numbers. */
@@ -52,7 +53,7 @@ function cell<T extends object>(col: FigureColumn<T>, row: T): string {
 /**
  * Accessible chart wrapper (508 report 1.2.5 and 1.2.6): figure with heading and long description,
  * "View as table" toggle, CSV download, reduced-motion aware, Recharts accessibilityLayer expected on.
- * Below 280 px of container width the chart is replaced by the table so nothing is clipped (1.4.10).
+ * Below 240 px of container width the chart is replaced by the table so nothing is clipped (1.4.10).
  */
 export function Figure<T extends object>({
   title, description, data, columns, children, legend, height = 260, defaultView = "chart", csvName, footer, headingLevel = 3, className, getRowKey,
@@ -135,6 +136,8 @@ export function Figure<T extends object>({
       )}
       {legend && legend.length > 0 && (
         <ul className="evs-legend" aria-label={`${title} legend`}>
+          {/* Pattern defs live here, not only inside the chart, so swatches keep their fills in table view. */}
+          <svg width="0" height="0" className="evs-legend__defs" aria-hidden="true" focusable="false"><ChartPatterns /></svg>
           {legend.map((item) => {
             const s = item.seriesIndex !== undefined ? SERIES[item.seriesIndex % SERIES.length] : undefined;
             const color = item.color ?? s?.color ?? "currentColor";

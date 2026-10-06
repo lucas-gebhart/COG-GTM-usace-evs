@@ -1,11 +1,26 @@
 import { useEffect, useRef, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router";
-import { GovBanner, GridContainer, Header, NavMenuButton, PrimaryNav, Title } from "@trussworks/react-uswds";
+import { ExtendedNav, GovBanner, GridContainer, Header, NavMenuButton, Title } from "@trussworks/react-uswds";
 import { routes } from "./routes";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { LiveRegionProvider } from "../hooks/useAnnounce";
 
 const NAV = routes.filter((r) => !r.path.includes(":"));
+
+// Short visible nav labels; the page title from routes.ts stays the h1 and the document title.
+const NAV_LABEL: Record<string, string> = {
+  "/": "Overview",
+  "/programs": "Programs",
+  "/projects": "Projects",
+  "/financial": "Financial",
+  "/workforce": "Workforce",
+  "/schedule": "Schedule",
+  "/facilities": "Facilities",
+  "/public/srp": "Sustainable Rivers",
+  "/public/locks": "Locks",
+  "/accessibility": "Accessibility",
+  "/admin": "Feeds and thresholds",
+};
 
 function matchRoute(pathname: string) {
   const exact = routes.find((r) => r.path === pathname);
@@ -37,8 +52,16 @@ export function AppLayout() {
     main.current?.focus();
   }, [location.pathname]);
 
+  // Mobile menu: Escape closes, focus moves to the close button on open and back to the Menu button on close.
+  const wasOpen = useRef(false);
   useEffect(() => {
-    if (!mobileOpen) return;
+    if (!mobileOpen) {
+      if (wasOpen.current) document.querySelector<HTMLElement>(".evs-header .usa-menu-btn")?.focus();
+      wasOpen.current = false;
+      return;
+    }
+    wasOpen.current = true;
+    document.querySelector<HTMLElement>("#evs-primary-nav .usa-nav__close")?.focus();
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setMobileOpen(false);
     };
@@ -62,32 +85,27 @@ export function AppLayout() {
       </a>
       <GovBanner aria-label="Official website of the United States government" />
       <div className={`usa-overlay evs-nav-overlay ${mobileOpen ? "is-visible" : "evs-nav-overlay--hidden"}`} onClick={() => setMobileOpen(false)} aria-hidden="true" />
-      <Header basic className="evs-header">
-        <div className="usa-nav-container">
-          <div className="usa-navbar">
-            <Title>
-              <NavLink to="/" aria-label="EVS, Enterprise Visibility Suite, home">
-                EVS <span className="text-normal">Enterprise Visibility Suite</span>
-              </NavLink>
-            </Title>
-            <NavMenuButton label="Menu" onClick={() => setMobileOpen(true)} aria-expanded={mobileOpen} aria-controls="evs-primary-nav" />
-          </div>
-          <PrimaryNav
-            id="evs-primary-nav"
-            aria-label="Primary"
-            items={NAV.map((r) => (
-              <NavLink key={r.path} to={r.path} className="usa-nav-link" end={r.path === "/"}>
-                <span>{r.title}</span>
-              </NavLink>
-            ))}
-            mobileExpanded={mobileOpen}
-            onToggleMobileNav={() => setMobileOpen(false)}
-          >
-            <div className="evs-header__tools">
-              <ThemeToggle compact />
-            </div>
-          </PrimaryNav>
+      <Header extended className="evs-header">
+        <div className="usa-navbar">
+          <Title>
+            <NavLink to="/" aria-label="EVS, Enterprise Visibility Suite, home">
+              EVS <span className="text-normal">Enterprise Visibility Suite</span>
+            </NavLink>
+          </Title>
+          <NavMenuButton label="Menu" onClick={() => setMobileOpen(true)} aria-expanded={mobileOpen} aria-controls="evs-primary-nav" />
         </div>
+        <ExtendedNav
+          id="evs-primary-nav"
+          aria-label="Primary"
+          primaryItems={NAV.map((r) => (
+            <NavLink key={r.path} to={r.path} className="usa-nav-link" end={r.path === "/"} title={r.title}>
+              <span>{NAV_LABEL[r.path] ?? r.title}</span>
+            </NavLink>
+          ))}
+          secondaryItems={[<ThemeToggle key="theme" compact />]}
+          mobileExpanded={mobileOpen}
+          onToggleMobileNav={() => setMobileOpen(false)}
+        />
       </Header>
       <main id="main-content" ref={main} tabIndex={-1} className="evs-main">
         <GridContainer className="padding-y-3">

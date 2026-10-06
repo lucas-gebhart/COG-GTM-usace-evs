@@ -13,3 +13,4 @@ apps/web/public/uswds/
 .pytest_cache/
 .ruff_cache/
 *.tsbuildinfo
+apps/web/storybook-static/

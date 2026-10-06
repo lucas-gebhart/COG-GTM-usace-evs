@@ -43,8 +43,8 @@ PROJECT_COLUMNS = Columns(
         "current_finish": "p.current_finish",
         "pct_complete": "p.pct_complete",
         "funded_amount": "p.funded_amount",
-        "obligated_amount": "p.obligated_amount",
-        "expended_amount": "p.expended_amount",
+        "obligated_amount": "coalesce(x.obligated_amount, 0)",
+        "expended_amount": "coalesce(x.expended_amount, 0)",
         "schedule_health": "p.schedule_health",
     },
     text_columns={
@@ -70,14 +70,27 @@ MILESTONE_COLUMNS = Columns(
         "code": "m.code",
         "name": "m.name",
         "baseline_date": "m.baseline_date",
-        "current_date": 'm."current_date"',
+        "current_date": "m.forecast_date",
         "actual_date": "m.actual_date",
         "status": "m.status",
-        "slip_days": '(m."current_date" - m.baseline_date)',
+        "slip_days": "(m.forecast_date - m.baseline_date)",
     },
     text_columns={"p2_project_no", "project_name", "program_code", "district", "code", "name", "status"},
     default_sort="-slip_days,current_date,p2_project_no,code",
 )
+
+PROGRAM_SELECT = ", ".join(PROGRAM_COLUMNS.columns)
+# Amounts come from synth.v_project_execution (CEFMS funding roll-up); the P2 row only stores funded_amount.
+PROJECT_FROM = f"{t.PROJECT} p LEFT JOIN {t.PROJECT_EXECUTION} x USING (p2_project_no)"
+PROJECT_SELECT = ", ".join(
+    expr if expr == f"p.{name}" else f"{expr} AS {name}" for name, expr in PROJECT_COLUMNS.columns.items()
+)
+# P2 calls the forecast "current date"; the API keeps that name, the table uses forecast_date (reserved word).
+MILESTONE_SELECT = (
+    "m.p2_project_no, m.seq, m.code, m.name, m.baseline_date, m.forecast_date AS current_date, "
+    "m.actual_date, m.status, m.owner, m.description, m.status_last_changed_on"
+)
+MILESTONE_SQL_COLUMN = {"current_date": "forecast_date"}
 
 MILESTONE_FIELDS = (
     "code",
@@ -129,9 +142,10 @@ class PgPortfolioRepo(PgBase):
     async def list_programs(self, q: ListQuery) -> tuple[list[dict], int]:
         params: dict[str, Any] = {}
         where = PROGRAM_COLUMNS.where_clause(q, params)
-        total = await self.scalar(f"SELECT count(*) FROM {t.PROGRAM}{where}", params)
+        total = await self.scalar(f"SELECT count(*) FROM {t.PROGRAM_SUMMARY}{where}", params)
         rows = await self.rows(
-            f"SELECT * FROM {t.PROGRAM}{where}{PROGRAM_COLUMNS.order_clause(q)} LIMIT :limit OFFSET :offset",
+            f"SELECT {PROGRAM_SELECT} FROM {t.PROGRAM_SUMMARY}{where}{PROGRAM_COLUMNS.order_clause(q)} "
+            "LIMIT :limit OFFSET :offset",
             {**params, "limit": q.limit, "offset": q.offset},
         )
         return [clean(r) for r in rows], int(total or 0)
@@ -139,9 +153,9 @@ class PgPortfolioRepo(PgBase):
     async def list_projects(self, q: ListQuery) -> tuple[list[dict], int]:
         params: dict[str, Any] = {}
         where = PROJECT_COLUMNS.where_clause(q, params)
-        total = await self.scalar(f"SELECT count(*) FROM {t.PROJECT} p{where}", params)
+        total = await self.scalar(f"SELECT count(*) FROM {PROJECT_FROM}{where}", params)
         rows = await self.rows(
-            f"SELECT p.* FROM {t.PROJECT} p{where}{PROJECT_COLUMNS.order_clause(q)} "
+            f"SELECT {PROJECT_SELECT} FROM {PROJECT_FROM}{where}{PROJECT_COLUMNS.order_clause(q)} "
             "LIMIT :limit OFFSET :offset",
             {**params, "limit": q.limit, "offset": q.offset},
         )
@@ -149,8 +163,8 @@ class PgPortfolioRepo(PgBase):
         if rows:
             ids = [r["p2_project_no"] for r in rows]
             ms = await self.rows(
-                f"SELECT * FROM {t.MILESTONE} m WHERE m.p2_project_no = ANY(:ids) "
-                'ORDER BY m.p2_project_no, m."current_date"',
+                f"SELECT {MILESTONE_SELECT} FROM {t.MILESTONE} m WHERE m.p2_project_no = ANY(:ids) "
+                "ORDER BY m.p2_project_no, m.seq",
                 {"ids": ids},
             )
             by_project: dict[str, list[dict]] = {}
@@ -162,13 +176,13 @@ class PgPortfolioRepo(PgBase):
 
     async def get_project(self, p2_project_no: str) -> dict | None:
         row = await self.one(
-            f"SELECT p.* FROM {t.PROJECT} p WHERE p.p2_project_no = :no", {"no": p2_project_no}
+            f"SELECT {PROJECT_SELECT} FROM {PROJECT_FROM} WHERE p.p2_project_no = :no", {"no": p2_project_no}
         )
         if row is None:
             return None
         row = clean(row)
         ms = await self.rows(
-            f'SELECT * FROM {t.MILESTONE} m WHERE m.p2_project_no = :no ORDER BY m."current_date"',
+            f"SELECT {MILESTONE_SELECT} FROM {t.MILESTONE} m WHERE m.p2_project_no = :no ORDER BY m.seq",
             {"no": p2_project_no},
         )
         row["milestones"] = [clean(m) for m in ms]
@@ -180,8 +194,8 @@ class PgPortfolioRepo(PgBase):
         base = f"FROM {t.MILESTONE} m JOIN {t.PROJECT} p ON p.p2_project_no = m.p2_project_no{where}"
         total = await self.scalar(f"SELECT count(*) {base}", params)
         rows = await self.rows(
-            "SELECT m.*, p.name AS project_name, p.program_code, p.district, "
-            f'(m."current_date" - m.baseline_date) AS slip_days {base}{MILESTONE_COLUMNS.order_clause(q)} '
+            f"SELECT {MILESTONE_SELECT}, p.name AS project_name, p.program_code, p.district, "
+            f"(m.forecast_date - m.baseline_date) AS slip_days {base}{MILESTONE_COLUMNS.order_clause(q)} "
             "LIMIT :limit OFFSET :offset",
             {**params, "limit": q.limit, "offset": q.offset},
         )
@@ -222,7 +236,7 @@ class PgPortfolioRepo(PgBase):
     ) -> None:
         stmts: list[tuple[str, dict]] = []
         if changes:
-            sets = ", ".join(f'"{k}" = :{k}' for k in changes)
+            sets = ", ".join(f"{MILESTONE_SQL_COLUMN.get(k, k)} = :{k}" for k in changes)
             stmts.append(
                 (
                     f"UPDATE {t.MILESTONE} SET {sets} WHERE p2_project_no = :no AND code = :code",
@@ -258,17 +272,17 @@ class PgPortfolioRepo(PgBase):
                    count(*) FILTER (WHERE p.schedule_health = 'late') AS late_projects,
                    count(*) FILTER (WHERE p.schedule_health = 'at_risk') AS at_risk_projects,
                    coalesce(sum(p.funded_amount), 0) AS funded_amount,
-                   coalesce(sum(p.obligated_amount), 0) AS obligated_amount,
-                   coalesce(sum(p.expended_amount), 0) AS expended_amount,
+                   coalesce(sum(x.obligated_amount), 0) AS obligated_amount,
+                   coalesce(sum(x.expended_amount), 0) AS expended_amount,
                    (SELECT count(*) FROM {t.MILESTONE} m WHERE m.status = 'slipped') AS slipped_milestones,
                    (SELECT count(*) FROM {t.PROGRAM}) AS programs
-            FROM {t.PROJECT} p
+            FROM {PROJECT_FROM}
             """
         )
         return clean(row or {})
 
     async def variance_by_program(self) -> list[dict]:
-        rows = await self.rows(f"SELECT * FROM {t.PROGRAM} ORDER BY program_code")
+        rows = await self.rows(f"SELECT {PROGRAM_SELECT} FROM {t.PROGRAM_SUMMARY} ORDER BY program_code")
         return [clean(r) for r in rows]
 
 

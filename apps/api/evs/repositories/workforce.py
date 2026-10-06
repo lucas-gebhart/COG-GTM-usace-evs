@@ -1,4 +1,4 @@
-"""EMS labor log (synthetic)."""
+"""EMS labor by district and pay period (synth.v_labor_summary rolls up the per-employee log)."""
 
 from __future__ import annotations
 
@@ -36,11 +36,12 @@ class PgWorkforceRepo(PgBase):
     async def list_labor(self, fiscal_year: int, q: ListQuery) -> tuple[list[dict], int]:
         params: dict[str, Any] = {"fy": fiscal_year}
         where = LABOR_COLUMNS.where_clause(q, params)
-        where = (where + " AND fiscal_year = :fy") if where else " WHERE fiscal_year = :fy"
-        total = await self.scalar(f"SELECT count(*) FROM {t.EMS_LABOR_LOG}{where}", params)
+        fy = "left(pay_period, 4)::int = :fy"  # pay_period is FY-PP, e.g. 2026-14
+        where = f"{where} AND {fy}" if where else f" WHERE {fy}"
+        total = await self.scalar(f"SELECT count(*) FROM {t.LABOR_SUMMARY}{where}", params)
         rows = await self.rows(
             "SELECT district, pay_period, hours_plan, hours_regular, hours_overtime, labor_cost "
-            f"FROM {t.EMS_LABOR_LOG}{where}{LABOR_COLUMNS.order_clause(q)} LIMIT :limit OFFSET :offset",
+            f"FROM {t.LABOR_SUMMARY}{where}{LABOR_COLUMNS.order_clause(q)} LIMIT :limit OFFSET :offset",
             {**params, "limit": q.limit, "offset": q.offset},
         )
         return [clean(r) for r in rows], int(total or 0)

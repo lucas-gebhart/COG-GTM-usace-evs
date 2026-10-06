@@ -67,12 +67,21 @@ def require_db() -> None:
 def migrated_db() -> tuple[str, str]:
     require_db()
     from evs.db.migrate import run as migrate
-    from evs.db.seed import run as seed
 
     sync_url, async_url = db_urls()
     migrate(sync_url)
-    seed(sync_url)
+    seed_db(sync_url)
     return sync_url, async_url
+
+
+def seed_db(sync_url: str, reset: bool = False) -> dict[str, int]:
+    """WP2's `evs seed` (db/seed/evs_seed): public lock/SRP samples plus the synthetic generators."""
+    from evs.cli import _seed_package
+
+    _seed_package()
+    from evs_seed.run import seed
+
+    return seed(sync_url, reset_first=reset, log=lambda *_: None)
 
 
 @pytest.fixture

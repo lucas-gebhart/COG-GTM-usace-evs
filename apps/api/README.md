@@ -2,7 +2,8 @@
 
 - `uv sync --extra dev` then `uv run uvicorn evs.main:app --reload`
 - `uv run evs migrate` applies `db/migrations/*.sql`
-- `uv run evs seed` loads `fixtures/*.json` into the `synth` and `evs` tables (stand-in until WP2's generators land)
+- `uv run evs seed` loads the public lock/SRP samples and generates the synthetic CEFMS/P2/EMS/BUILDER data
+  (`db/seed/evs_seed`, WP2); `uv run evs dump-fixtures` rewrites `fixtures/*.json` from that database
 - `uv run evs openapi` regenerates `packages/contract/openapi.json`, then `cd apps/web && pnpm gen:api`
 - `uv run pytest -q`, `uv run ruff check .`, `uv run ruff format --check .`
 
@@ -84,12 +85,18 @@ over dicts so `tests/test_legacy_ports.py` covers them without HTTP or a databas
 
 ## Schema ownership
 
-- `db/migrations/0007_wp3_evs_state.sql` (this package): `evs.threshold`, `evs.project_state`, `evs.project_history`,
-  `evs.project_interaction_log`. These hold the APEX-only state (archive flag, status scale, link, note, history)
-  that has no home in the P2-shaped `synth.p2_project`.
-- `synth.*` and the lock, SRP and feed tables belong to WP2 and WP5a. Until their migrations land,
-  `tests/sql/assumed_wp2_schema.sql` creates the columns the repositories read (the names follow the Pydantic
-  models in `evs/schemas/`), and `evs seed` loads the fixtures into them.
+- `db/migrations/0002..0005` (WP2): `legacy.*` (ora2pg), `evs.lock_dim`, `evs.lock_status_fact` (raw polls),
+  `evs.status_eval` (status engine output), `evs.stoppage`, `evs.srp_*`, `evs.feed_health`, `evs.threshold` and
+  `synth.*`. The repositories read the roll-up views rather than the base tables where amounts are derived:
+  `synth.v_program_summary`, `synth.v_project_execution` (obligated and expended from `synth.cefms_funding`),
+  `synth.v_labor_summary` (per-employee `ems_labor_log` plus `ems_labor_plan`), `synth.cefms_execution`,
+  `synth.cefms_appropriation`, `synth.builder_facility_condition` and `evs.lock_current`.
+  `synth.p2_milestone.forecast_date` is exposed as `current_date` (the P2 name) in the API.
+- `db/migrations/0007_wp3_evs_state.sql` (this package): `evs.project_state`, `evs.project_history`,
+  `evs.project_interaction_log` and the `evs.threshold.updated_by` column. These hold the APEX-only state
+  (archive flag, status scale, link, note, history) that has no home in the P2-shaped `synth.p2_project`.
+- Writes go to base tables only: `synth.p2_project` (`pct_complete`, `current_finish`, `schedule_health`),
+  `synth.p2_milestone`, `evs.threshold` and the WP3 tables above.
 
 ## Tests
 

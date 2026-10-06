@@ -24,10 +24,10 @@ make test
 apps/api         FastAPI service, ingestion workers, status engine, CLI (uv)
 apps/web         Vite + React 19 + USWDS, Playwright + axe
 db/migrations    plain SQL, applied by `evs migrate` (same files for Docker, Fly, Aurora)
-db/seed          synthetic data generators
+db/seed          public sample loaders, synthetic data generators, `evs seed` and `evs dump-fixtures`
 packages/contract/openapi.json   API contract; web types generated from it
 legacy/          APEX export, inventory, traceability matrix, captured public data samples
-tools/           apex-inventory parser, fixture builder, ACR generator
+tools/           apex-inventory parser, ACR generator
 infra/           compose, fly, terraform-govcloud
 docs/            plan, work packages, research reports, run of show
 ```

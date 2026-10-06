@@ -35,7 +35,7 @@ class PgOpsRepo(PgBase):
     async def feeds(self) -> list[dict]:
         rows = await self.rows(
             f"SELECT source, endpoint, cadence_minutes, last_success_at, last_error, latency_ms, status "
-            f"FROM {t.FEED_HEALTH} ORDER BY source"
+            f"FROM {t.FEED_HEALTH} ORDER BY cadence_minutes, source"
         )
         return [clean(r) for r in rows]
 
@@ -55,9 +55,8 @@ class PgOpsRepo(PgBase):
         await self.execute(
             [
                 (
-                    f"INSERT INTO {t.THRESHOLD} (key, value, updated_at, updated_by) "
-                    "VALUES (:key, :value, now(), :actor) ON CONFLICT (key) DO UPDATE SET "
-                    "value = EXCLUDED.value, updated_at = now(), updated_by = EXCLUDED.updated_by",
+                    f"UPDATE {t.THRESHOLD} SET value = :value, updated_at = now(), updated_by = :actor "
+                    "WHERE key = :key",
                     {"key": k, "value": int(values[k]), "actor": actor},
                 )
                 for k in THRESHOLD_KEYS

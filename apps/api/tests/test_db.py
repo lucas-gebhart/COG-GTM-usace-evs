@@ -11,6 +11,7 @@ import io
 
 import psycopg
 import pytest
+from conftest import seed_db
 
 from evs.repositories.portfolio import PROJECT_COLUMNS
 from evs.repositories.query import ListQuery, parse_sort
@@ -21,14 +22,14 @@ pytestmark = pytest.mark.db
 def test_migrations_and_seed_are_idempotent(migrated_db):
     sync_url, _ = migrated_db
     from evs.db.migrate import run as migrate
-    from evs.db.seed import run as seed
 
     assert migrate(sync_url) == []
-    counts = seed(sync_url)
-    assert counts["synth.p2_project"] == 101 and counts["evs.lock_dim"] == 77
+    counts = seed_db(sync_url)
+    assert counts["synth.p2_project"] == 120 and counts["evs.lock_dim"] == 234
+    assert counts["evs.status_eval"] == 77 and counts["synth.ems_labor_log"] == 4550
     with psycopg.connect(sync_url) as conn:
-        names = {r[0] for r in conn.execute("SELECT filename FROM schema_migration")}
-        assert {"0001_extensions.sql", "0007_wp3_evs_state.sql"} <= names
+        names = {r[0] for r in conn.execute("SELECT filename FROM public.schema_migration")}
+        assert {"0001_extensions.sql", "0005_synth.sql", "0007_wp3_evs_state.sql"} <= names
         assert conn.execute("SELECT count(*) FROM evs.threshold").fetchone()[0] == 4
 
 
@@ -60,13 +61,14 @@ def test_db_csv_and_filters(db_client):
 
 def test_db_aggregates_and_public(db_client):
     kpis = {t["id"]: t for t in db_client.get("/api/v1/enterprise/kpis").json()["tiles"]}
-    assert kpis["projects"]["value"] == 101 and kpis["locks_operating"]["value"] == 57
+    assert kpis["projects"]["value"] == 120 and kpis["locks_operating"]["value"] == 57
     dist = db_client.get("/api/v1/facilities/ci-distribution").json()
-    assert sum(b["count"] for b in dist["buckets"]) == 160
+    assert sum(b["count"] for b in dist["buckets"]) == 215
     locks = db_client.get("/api/v1/public/locks", params={"river_code": "OH"}).json()
     assert locks["items"] and all(i["river_code"] == "OH" for i in locks["items"])
     one = db_client.get(f"/api/v1/public/locks/{locks['items'][0]['lock_id']}").json()
-    assert one["as_of"]["source"] == "fixtures"
+    assert one["as_of"]["source"] == "fixtures" and one["status_inputs"]
+    assert db_client.get("/api/v1/public/locks").json()["counts"] == locks_fixture_counts()
     srp = db_client.get("/api/v1/public/srp/coverage").json()
     assert srp["snapshots"] and srp["sites"] and srp["as_of"]["source"] == "cited-public"
     assert db_client.get("/api/v1/admin/feeds").json()["feeds"]
@@ -120,12 +122,15 @@ def test_db_writes_persist(db_client, migrated_db):
             == 200
         )
         assert conn.execute("SELECT count(*) FROM evs.project_interaction_log").fetchone()[0] >= 1
-        # restore so the parity test stays valid on re-runs
+        # restore so the parity test stays valid on re-runs (WP2's seed only reloads after a reset)
         conn.execute("UPDATE evs.project_state SET archived = false WHERE p2_project_no = %s", (no,))
+        conn.execute(
+            "UPDATE evs.threshold SET value = CASE key WHEN 'stale_after_minutes' THEN 120 "
+            "WHEN 'delay_yellow_minutes' THEN 60 WHEN 'delay_red_minutes' THEN 240 ELSE 6 END, "
+            "updated_by = 'migration'"
+        )
         conn.commit()
-    from evs.db.seed import run as seed
-
-    seed(sync_url)
+    seed_db(sync_url, reset=True)
 
 
 def test_sql_where_clause_is_parameterised():
@@ -139,6 +144,13 @@ def test_sql_where_clause_is_parameterised():
     assert where.startswith(" WHERE ")
     expected = " ORDER BY p.funded_amount DESC NULLS LAST, p.p2_project_no ASC NULLS LAST"
     assert PROJECT_COLUMNS.order_clause(q) == expected
+
+
+def locks_fixture_counts() -> dict:
+    import json
+    from pathlib import Path
+
+    return json.loads((Path(__file__).resolve().parents[1] / "fixtures" / "locks.json").read_text())["counts"]
 
 
 def _strip(row: dict) -> dict:

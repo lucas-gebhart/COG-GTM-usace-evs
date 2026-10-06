@@ -67,4 +67,4 @@ def test_aggregates(client):
     assert slipped["items"] and all(m["status"] == "slipped" for m in slipped["items"])
     assert slipped["items"][0]["slip_days"] >= slipped["items"][-1]["slip_days"]
     dist = client.get("/api/v1/facilities/ci-distribution").json()
-    assert sum(b["count"] for b in dist["buckets"]) == 160 and dist["by_installation"]
+    assert sum(b["count"] for b in dist["buckets"]) == 215 and dist["by_installation"]

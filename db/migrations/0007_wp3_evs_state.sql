@@ -1,19 +1,8 @@
 -- WP3: EVS-native tables for the APEX Strategic Planner slice that has no P2/CEFMS counterpart.
--- 0002..0005 (WP2) create legacy.* and synth.*; 0006 (WP5a) creates the feed tables.
+-- 0002..0005 (WP2) create legacy.*, evs.* (locks, SRP, feeds, thresholds) and synth.*.
 
--- Status engine thresholds editable from /admin (APEX Administrator scheme). Defaults mirror evs/settings.py.
-CREATE TABLE IF NOT EXISTS evs.threshold (
-    key         text PRIMARY KEY,
-    value       integer NOT NULL CHECK (value > 0),
-    updated_at  timestamptz NOT NULL DEFAULT now(),
-    updated_by  text NOT NULL DEFAULT 'migration'
-);
-INSERT INTO evs.threshold (key, value) VALUES
-    ('stale_after_minutes', 120),
-    ('delay_yellow_minutes', 60),
-    ('delay_red_minutes', 240),
-    ('queue_yellow_vessels', 6)
-ON CONFLICT (key) DO NOTHING;
+-- evs.threshold is created and defaulted by 0004 (WP2). WP3 records who changed a value from /admin.
+ALTER TABLE evs.threshold ADD COLUMN IF NOT EXISTS updated_by text NOT NULL DEFAULT 'migration';
 
 -- APEX-only project columns (sp_projects.status_scale, archived_yn, archived_date, archived_by,
 -- sp_project_links) kept beside the P2 project row instead of altering synth.p2_project.

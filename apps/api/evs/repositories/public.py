@@ -1,12 +1,13 @@
 """Public datasets: lock status (LPMS via the WP5a worker) and SRP coverage (cited public figures).
 
-Lock rows in the database are written by the ingestion worker (`evs.lock_status_fact`, one row per
-lock per evaluation). Until WP5a lands, the `evs seed` command loads the fixture snapshot so the
-SQL path is exercised; `as_of.source` is taken from the stored row, never hard coded here.
+Lock rows come from WP2's `evs.lock_current` view over `evs.lock_dim`, `evs.status_eval` and
+`evs.lock_status_fact`; `evs seed` loads the captured LPMS baseline (source = fixtures) until the
+WP5a worker writes live evaluations. `as_of.source` is taken from the stored row, never hard coded.
 """
 
 from __future__ import annotations
 
+import json
 from typing import Any, Protocol
 
 from evs.repositories import tables as t
@@ -43,33 +44,54 @@ def _lock_payload(items: list[dict]) -> dict:
 
 
 class PgPublicRepo(PgBase):
+    """Reads `evs.lock_current` (WP2 view: dimension + latest status_eval + latest raw poll).
+
+    Only locks with an evaluation are listed, matching `evs dump-fixtures`; `fetched_at` is the
+    evaluation time and `source` the evaluation source (fixtures | live | simulated).
+    """
+
     LOCK_SQL = f"""
-        SELECT d.lock_id, d.river_code, d.river_name, d.lock_name, d.lock_no, d.river_mile, d.district,
-               d.chambers, d.latitude, d.longitude, d.lift_ft, d.chamber_dimensions, d.year_opened, d.owner,
-               d.operator, f.status, f.status_reason, f.vessels_queued, f.avg_delay_4h_min,
-               f.avg_delay_24h_min, f.last_lockage_at, f.gauge_stage_ft, f.flood_category, f.active_stoppages,
-               f.source_as_of, f.fetched_at, f.freshness, f.source, f.status_inputs, f.queue, f.stoppages,
-               f.recent_lockages
-        FROM {t.LOCK_DIM} d
-        LEFT JOIN LATERAL (
-            SELECT * FROM {t.LOCK_STATUS} s WHERE s.lock_id = d.lock_id ORDER BY s.fetched_at DESC LIMIT 1
-        ) f ON true
+        SELECT c.lock_id, c.river_code, c.river_name, c.lock_name, c.lock_no, c.river_mile, c.district,
+               c.chambers, c.latitude, c.longitude, c.lift_ft, c.chamber_dimensions, c.year_opened, c.owner,
+               c.operator, c.status, c.status_reason, c.vessels_queued, c.avg_delay_4h_min,
+               c.avg_delay_24h_min, NULL::timestamptz AS last_lockage_at, c.gauge_stage_ft,
+               NULL::text AS flood_category, c.active_stoppages, c.source_as_of,
+               c.evaluated_at AS fetched_at, c.freshness, c.eval_source AS source,
+               c.inputs_used AS status_inputs
+        FROM {t.LOCK_CURRENT} c
+        WHERE c.evaluated_at IS NOT NULL
+    """
+    STOPPAGE_SQL = f"""
+        SELECT chamber_no, begin_at, end_at, is_scheduled, traffic_stopped, reason_code, hw_cycles
+        FROM {t.STOPPAGE} WHERE lock_id = :id AND traffic_stopped AND (end_at IS NULL OR end_at > now())
+        ORDER BY begin_at DESC LIMIT 20
     """
 
     async def list_locks(self, river_code: str | None) -> dict:
-        where = " WHERE d.river_code = :rc" if river_code else ""
+        where = " AND c.river_code = :rc" if river_code else ""
         rows = await self.rows(
-            self.LOCK_SQL + where + " ORDER BY d.river_code, d.river_mile", {"rc": river_code}
+            self.LOCK_SQL + where + " ORDER BY c.river_code, c.river_mile NULLS LAST, c.lock_no",
+            {"rc": river_code},
         )
         return _lock_payload([_lock_row(r) for r in rows])
 
     async def get_lock(self, lock_id: str) -> dict | None:
-        row = await self.one(self.LOCK_SQL + " WHERE d.lock_id = :id", {"id": lock_id})
-        return _lock_row(row) if row else None
+        row = await self.one(self.LOCK_SQL + " AND c.lock_id = :id", {"id": lock_id})
+        if row is None:
+            return None
+        out = _lock_row(row)
+        out["stoppages"] = [clean(s) for s in await self.rows(self.STOPPAGE_SQL, {"id": lock_id})]
+        return out
 
     async def srp_coverage(self) -> dict:
-        snaps = await self.rows(f"SELECT * FROM {t.SRP_SNAPSHOT} ORDER BY year")
-        sites = await self.rows(f"SELECT * FROM {t.SRP_SITE} ORDER BY name")
+        snaps = await self.rows(
+            "SELECT year, river_systems, dams, river_miles, floodplain_acres, source, source_url, headline, "
+            f"source_as_of, fetched_at FROM {t.SRP_SNAPSHOT} ORDER BY year"
+        )
+        sites = await self.rows(
+            "SELECT name, river, state, district, nid_id, latitude, longitude, year_joined, source_url "
+            f"FROM {t.SRP_SITE} ORDER BY year_joined, name"
+        )
         snaps = [clean(s) for s in snaps]
         sites = [clean(s) for s in sites]
         latest = snaps[-1] if snaps else {}
@@ -78,7 +100,7 @@ class PgPublicRepo(PgBase):
             "river_miles": latest.get("river_miles") or 0,
             "dams_and_reservoirs": latest.get("dams") or 0,
             "floodplain_acres": latest.get("floodplain_acres") or 0,
-            **{k: v for k, v in (latest.get("headline") or {}).items()},
+            **{k: v for k, v in (_json(latest.get("headline")) or {}).items()},
         }
         as_of = AsOf(
             source_as_of=latest.get("source_as_of"),
@@ -91,6 +113,11 @@ class PgPublicRepo(PgBase):
             "headline": headline,
             "as_of": as_of.model_dump(),
         }
+
+
+def _json(v: Any) -> Any:
+    """asyncpg hands jsonb back decoded; the text() path can still yield a string."""
+    return json.loads(v) if isinstance(v, str) else v
 
 
 SNAPSHOT_KEYS = {"year", "river_systems", "dams", "river_miles", "floodplain_acres", "source", "source_url"}
@@ -118,7 +145,7 @@ def _lock_row(r: dict[str, Any]) -> dict:
         queue=r.get("queue") or [],
         stoppages=r.get("stoppages") or [],
         recent_lockages=r.get("recent_lockages") or [],
-        status_inputs=r.get("status_inputs") or {},
+        status_inputs=_json(r.get("status_inputs")) or {},
         as_of=AsOf(
             source_as_of=r.get("source_as_of"),
             fetched_at=r.get("fetched_at"),

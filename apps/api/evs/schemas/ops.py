@@ -23,6 +23,7 @@ class AxeRouteResult(BaseModel):
     route: str
     viewport: str
     theme: str
+    reduced_motion: bool = False
     violations: int
     passes: int
     incomplete: int

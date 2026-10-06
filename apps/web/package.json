@@ -12,7 +12,11 @@
     "test": "vitest run",
     "test:a11y": "playwright test",
     "gen:api": "openapi-typescript ../../packages/contract/openapi.json -o src/api/schema.d.ts",
-    "postinstall": "node scripts/copy-uswds-assets.mjs"
+    "postinstall": "node scripts/copy-uswds-assets.mjs",
+    "a11y:pa11y": "node scripts/run-pa11y.cjs",
+    "a11y:lhci": "lhci autorun --config=lighthouserc.cjs",
+    "a11y:urls": "node scripts/a11y-urls.cjs",
+    "a11y:all": "pnpm test:a11y && pnpm a11y:pa11y && pnpm a11y:lhci"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.59.0",
@@ -30,6 +34,7 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.10.0",
     "@eslint/js": "^9.30.0",
+    "@lhci/cli": "^0.15.1",
     "@playwright/test": "^1.54.0",
     "@testing-library/jest-dom": "^6.6.0",
     "@testing-library/react": "^16.3.0",
@@ -43,6 +48,7 @@
     "globals": "^16.0.0",
     "jsdom": "^26.1.0",
     "openapi-typescript": "^7.8.0",
+    "pa11y-ci": "^4.1.1",
     "sass": "^1.89.0",
     "typescript": "~5.8.0",
     "typescript-eslint": "^8.35.0",

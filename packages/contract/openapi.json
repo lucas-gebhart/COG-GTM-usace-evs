@@ -676,6 +676,11 @@
             "type": "string",
             "title": "Theme"
           },
+          "reduced_motion": {
+            "type": "boolean",
+            "title": "Reduced Motion",
+            "default": false
+          },
           "violations": {
             "type": "integer",
             "title": "Violations"

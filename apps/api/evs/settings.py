@@ -5,6 +5,14 @@ from typing import Literal
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
+def default_a11y_docs_dir() -> Path:
+    """Repo checkout (<root>/docs/a11y) or the container image (/docs/a11y, see the Dockerfile)."""
+    here = Path(__file__).resolve()
+    if len(here.parents) > 3 and (here.parents[3] / "docs" / "a11y").is_dir():
+        return here.parents[3] / "docs" / "a11y"
+    return Path("/docs/a11y")
+
+
 class Settings(BaseSettings):
     """Twelve-factor configuration. Same image runs locally, on Fly.io and in GovCloud."""
 
@@ -53,7 +61,7 @@ class Settings(BaseSettings):
     samples_dir: str | None = None  # defaults to <repo>/legacy/data_samples or /legacy/data_samples
 
     # Generated accessibility artefacts (OpenACR YAML, reports, axe bundle), see /accessibility/artifacts.
-    a11y_docs_dir: Path = Path(__file__).resolve().parents[3] / "docs" / "a11y"
+    a11y_docs_dir: Path = default_a11y_docs_dir()
 
     s3_endpoint: str | None = "http://localhost:9000"
     s3_bucket: str = "evs-raw"

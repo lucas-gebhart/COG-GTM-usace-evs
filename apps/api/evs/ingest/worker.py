@@ -45,10 +45,12 @@ FIXTURES = {
 
 
 def default_samples_dir() -> Path:
-    for candidate in (
-        Path(__file__).resolve().parents[4] / "legacy" / "data_samples",
-        Path("/legacy/data_samples"),
-    ):
+    """Repo checkout (<root>/legacy/data_samples) or the container image (/legacy/data_samples)."""
+    here = Path(__file__).resolve()
+    candidates = [Path("/legacy/data_samples")]
+    if len(here.parents) > 4:
+        candidates.insert(0, here.parents[4] / "legacy" / "data_samples")
+    for candidate in candidates:
         if candidate.is_dir():
             return candidate
     return Path("legacy/data_samples")

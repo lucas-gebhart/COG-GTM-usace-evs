@@ -1,21 +1,5 @@
 @forward "uswds-settings";
 @use "uswds";
-
-:root {
-  --evs-status-operating: #4d8055; /* green-cool-50v */
-  --evs-status-delayed: #ffbe2e;   /* gold-20v, always paired with dark outline + triangle */
-  --evs-status-closed: #b50909;    /* red-60v */
-  --evs-status-stale: #71767a;     /* gray-50 */
-}
-
-html, body, #root { height: 100%; }
-.evs-main:focus { outline: none; }
-.evs-skipnav:focus { position: static; width: auto; height: auto; }
-.evs-visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-}
-
-/* Leadership mode: 1920x1080 big screen, type scale x1.4, dark theme. Toggled on <html data-theme="leadership"> */
-html[data-theme="leadership"] { font-size: 140%; background: #1b1b1b; color: #f0f0f0; }
+@use "tokens";
+@use "base";
+@use "components";

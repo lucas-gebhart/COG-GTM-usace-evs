@@ -57,8 +57,27 @@ jobs:
         with: { node-version: 22, cache: pnpm, cache-dependency-path: apps/web/pnpm-lock.yaml }
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install --with-deps chromium
-      - run: pnpm build
+      - run: pnpm gen:api && pnpm build
       - run: pnpm test:a11y
       - uses: actions/upload-artifact@v4
         if: always()
         with: { name: axe-results, path: apps/web/a11y-results }
+
+  storybook:
+    # Builds the component kit's Storybook and runs addon-a11y (axe) against every story in headless Chromium.
+    runs-on: ubuntu-latest
+    needs: [web]
+    defaults: { run: { working-directory: apps/web } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with: { version: 10 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm, cache-dependency-path: apps/web/pnpm-lock.yaml }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm gen:api
+      - run: pnpm build-storybook
+      - run: pnpm test:storybook
+      - uses: actions/upload-artifact@v4
+        with: { name: storybook-static, path: apps/web/storybook-static }

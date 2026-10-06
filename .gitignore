@@ -14,3 +14,4 @@ apps/web/public/uswds/
 .ruff_cache/
 *.tsbuildinfo
 db/ora2pg/*.zip
+apps/web/storybook-static/

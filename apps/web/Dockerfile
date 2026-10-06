@@ -7,6 +7,9 @@ COPY apps/web/package.json apps/web/pnpm-lock.yaml apps/web/pnpm-workspace.yaml 
 COPY apps/web/scripts/ ./scripts/
 RUN pnpm install --frozen-lockfile
 COPY apps/web/ ./
+# Demo hosts run the API with EVS_AUTH_DISABLED=true; the header role switcher is compiled in only when this is 1.
+ARG VITE_AUTH_DISABLED=1
+ENV VITE_AUTH_DISABLED=$VITE_AUTH_DISABLED
 # MSW mock mode and the mock-mode read-out import the API fixtures and the axe bundle by relative path (../../../api, ../../../../docs).
 COPY apps/api/fixtures/ /api/fixtures/
 COPY docs/a11y/ /docs/a11y/

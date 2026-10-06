@@ -654,6 +654,8 @@ class IngestWorker:
             k = known.get(no)
             if k and k[5] > datetime.now(UTC) - timedelta(hours=24):
                 continue
+            if self.mode == "fixtures" and not (self.samples / f"ntni/notice_{no}.html").exists():
+                continue
             f = self.fetch(
                 f"NTNI notice {no}",
                 ntni.notice_url(self.settings.ntni_base_url, no),
@@ -1051,15 +1053,21 @@ class IngestWorker:
         summary["finished_at"] = datetime.now(UTC)
         return summary
 
-    def due(self, source: str, cadence_minutes: int) -> bool:
+    def due(self, source: str, cadence_minutes: float) -> bool:
         last = self.last_success(source)
         return last is None or last < datetime.now(UTC) - timedelta(minutes=cadence_minutes)
 
     def run_loop(self, poll_seconds: int | None = None) -> None:
         """LPMS every EVS_INGEST_INTERVAL_SECONDS (900 s), gauges 30 min, GIS daily; ticks each minute."""
-        cadence = dict(CADENCE, lpms=max(1, self.settings.ingest_interval_seconds // 60))
-        poll_seconds = poll_seconds or min(60, self.settings.ingest_interval_seconds)
-        log.info("ingest loop: mode=%s lpms=%dm gauges=%dm gis=%dm", self.mode, *cadence.values())
+        interval = max(1, self.settings.ingest_interval_seconds)
+        cadence: dict[str, float] = dict(CADENCE, lpms=interval / 60)
+        poll_seconds = poll_seconds or min(60, interval)
+        log.info(
+            "ingest loop: mode=%s lpms=%ss gauges=%sm gis=%sm",
+            self.mode,
+            interval,
+            *list(cadence.values())[1:],
+        )
         while True:
             for name, source, fn in (
                 ("gis", GIS_LOCKS, self.run_gis),

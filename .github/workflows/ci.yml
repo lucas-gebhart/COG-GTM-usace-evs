@@ -57,6 +57,7 @@ jobs:
         with: { node-version: 22, cache: pnpm, cache-dependency-path: apps/web/pnpm-lock.yaml }
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm build
       - run: pnpm test:a11y
       - uses: actions/upload-artifact@v4
         if: always()

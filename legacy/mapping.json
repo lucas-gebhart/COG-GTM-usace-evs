@@ -19,7 +19,7 @@
       "evs_component": "pages/EnterpriseOverview",
       "api_endpoint": "GET /api/v1/financial/summary",
       "test_id": "web:pages/EnterpriseOverview.test.tsx; e2e:overview.spec.ts",
-      "status": "planned",
+      "status": "migrated",
       "regions": {
         "Recently Changed Projects": {"evs_component": "pages/EnterpriseOverview/RecentProjectsTable", "api_endpoint": "GET /api/v1/projects?sort=updated"},
         "My Projects": {"evs_component": "pages/EnterpriseOverview/KpiTiles", "api_endpoint": "GET /api/v1/projects"},
@@ -38,7 +38,7 @@
       "evs_component": "pages/Programs",
       "api_endpoint": "GET /api/v1/programs",
       "test_id": "web:pages/Programs.test.tsx; api:test_programs",
-      "status": "planned",
+      "status": "migrated",
       "regions": {
         "Initiatives": {"evs_component": "pages/Programs/ProgramTable"},
         "items": {"evs_component": "pages/Programs (filter items)", "api_endpoint": ""}
@@ -51,7 +51,7 @@
       "evs_component": "pages/ProjectDetail",
       "api_endpoint": "GET /api/v1/projects/{p2_project_no}",
       "test_id": "web:pages/ProjectDetail.test.tsx; api:test_project_detail",
-      "status": "planned",
+      "status": "migrated",
       "regions": {
         "Project Details": {"evs_component": "pages/ProjectDetail/Header"},
         "Milestones": {"evs_component": "pages/ProjectDetail/MilestoneTimeline"},
@@ -70,7 +70,7 @@
       "evs_component": "pages/Workforce",
       "api_endpoint": "GET /api/v1/workforce/labor",
       "test_id": "web:pages/Workforce.test.tsx; api:test_workforce",
-      "status": "planned",
+      "status": "migrated",
       "regions": {
         "Users ": {"evs_component": "pages/Workforce/LaborTable"},
         "filters": {"evs_component": "components/FacetFilters", "api_endpoint": ""}
@@ -83,10 +83,10 @@
       "evs_component": "pages/Schedule",
       "api_endpoint": "GET /api/v1/projects",
       "test_id": "web:pages/Schedule.test.tsx; e2e:schedule.spec.ts",
-      "status": "planned",
+      "status": "migrated",
       "regions": {
-        "Kanban Board": {"evs_component": "pages/Schedule/Gantt (list alternative: MilestoneList)"},
-        "do not drop - Search Results": {"evs_component": "pages/Schedule/MilestoneList"}
+        "Kanban Board": {"evs_component": "pages/Schedule (KanbanCard, Move to menu)"},
+        "do not drop - Search Results": {"evs_component": "pages/Schedule (milestone slip list)"}
       }
     },
     {
@@ -122,9 +122,9 @@
       "evs_component": "pages/Financial",
       "api_endpoint": "GET /api/v1/financial/summary",
       "test_id": "web:pages/Financial.test.tsx; api:test_financial",
-      "status": "planned",
+      "status": "migrated",
       "regions": {
-        "Cumulative Flow": {"evs_component": "pages/Financial/CumulativeChart (table alternative: CumulativeTable)"}
+        "Cumulative Flow": {"evs_component": "pages/Financial/CumulativeChart (table alternative: CumulativeTable)", "status": "planned"}
       }
     }
   ]

@@ -3,6 +3,7 @@ import { NavLink, Outlet, useLocation } from "react-router";
 import { ExtendedNav, GovBanner, GridContainer, Header, NavMenuButton, Title } from "@trussworks/react-uswds";
 import { routes } from "./routes";
 import { ThemeToggle } from "../components/ThemeToggle";
+import { RoleSwitcher } from "../components/RoleSwitcher";
 import { LiveRegionProvider } from "../hooks/useAnnounce";
 
 const NAV = routes.filter((r) => !r.path.includes(":"));
@@ -102,7 +103,7 @@ export function AppLayout() {
               <span>{NAV_LABEL[r.path] ?? r.title}</span>
             </NavLink>
           ))}
-          secondaryItems={[<ThemeToggle key="theme" compact />]}
+          secondaryItems={[<RoleSwitcher key="role" />, <ThemeToggle key="theme" compact />]}
           mobileExpanded={mobileOpen}
           onToggleMobileNav={() => setMobileOpen(false)}
         />

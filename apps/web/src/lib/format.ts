@@ -4,6 +4,7 @@ const NUMBER = new Intl.NumberFormat("en-US", { maximumFractionDigits: 1 });
 const INTEGER = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
 const COMPACT = new Intl.NumberFormat("en-US", { notation: "compact", maximumFractionDigits: 2 });
 const PERCENT = new Intl.NumberFormat("en-US", { style: "percent", maximumFractionDigits: 1, signDisplay: "exceptZero" });
+const PERCENT_VALUE = new Intl.NumberFormat("en-US", { style: "percent", maximumFractionDigits: 1 });
 const CURRENCY = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", notation: "compact", maximumFractionDigits: 2 });
 
 export function formatNumber(n: number | null | undefined, options?: { integer?: boolean }): string {
@@ -25,6 +26,12 @@ export function formatCurrency(n: number | null | undefined): string {
 export function formatPercent(n: number | null | undefined, isPercentage = false): string {
   if (n === null || n === undefined || Number.isNaN(n)) return "n/a";
   return PERCENT.format(isPercentage ? n / 100 : n);
+}
+
+/** Percent for a level rather than a change (0.941 -> 94.1%, no sign), e.g. percent complete or obligation rate. */
+export function formatPercentValue(n: number | null | undefined, isPercentage = false): string {
+  if (n === null || n === undefined || Number.isNaN(n)) return "n/a";
+  return PERCENT_VALUE.format(isPercentage ? n / 100 : n);
 }
 
 export function parseDate(value: string | Date | null | undefined): Date | null {

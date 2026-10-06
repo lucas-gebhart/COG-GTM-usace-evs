@@ -89,6 +89,7 @@ test.describe("keyboard traversal", () => {
       else info.annotations.push({ type: "note", description: "main has no focusable controls yet; main-reach check skipped" });
 
       // 3. Escape closes dialogs and popovers opened from keyboard and returns focus to the trigger (1.4.13, 2.1.2).
+      // USWDS tooltips keep an aria-hidden [role=tooltip] in the DOM while closed, so only visible ones count as open.
       const triggers = page.getByRole("main").locator("[aria-haspopup], [aria-expanded='false'], [data-popover-trigger]");
       const triggerCount = Math.min(await triggers.count(), 8);
       const escapeResults: Array<{ trigger: string; opened: boolean; closedOnEscape: boolean; focusRestored: boolean }> = [];
@@ -99,7 +100,7 @@ test.describe("keyboard traversal", () => {
         await page.keyboard.press("Enter");
         await page.waitForTimeout(150);
         const opened = await page.evaluate(() => {
-          const dialog = document.querySelector("[role='dialog'], [role='menu'], [role='listbox'], [role='tooltip'], .usa-modal.is-visible");
+          const dialog = document.querySelector("[role='dialog'], [role='menu'], [role='listbox'], [role='tooltip']:not([aria-hidden='true']), .usa-modal.is-visible");
           const expanded = document.activeElement?.getAttribute("aria-expanded") === "true" || !!document.querySelector("[aria-expanded='true']");
           return !!dialog || expanded;
         });
@@ -109,7 +110,7 @@ test.describe("keyboard traversal", () => {
           await page.keyboard.press("Escape");
           await page.waitForTimeout(150);
           closedOnEscape = await page.evaluate(() => {
-            const dialog = document.querySelector("[role='dialog'], [role='menu'], [role='listbox'], [role='tooltip'], .usa-modal.is-visible");
+            const dialog = document.querySelector("[role='dialog'], [role='menu'], [role='listbox'], [role='tooltip']:not([aria-hidden='true']), .usa-modal.is-visible");
             return !dialog && !document.querySelector("[aria-expanded='true']");
           });
           focusRestored = await trigger.evaluate((el) => el === document.activeElement);

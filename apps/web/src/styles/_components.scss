@@ -252,7 +252,11 @@ html[data-theme="leadership"] .evs-error { color: var(--evs-color-ink); }
   .usa-label { margin: 0; font-size: var(--evs-text-sm); white-space: nowrap; }
 }
 @media (max-width: 63.99em) {
-  .evs-role-switcher { padding: var(--evs-space-2) var(--evs-space-3); }
+  // Inside the slide-in nav panel: label above a full-width select, nothing wider than the panel.
+  .evs-role-switcher { display: flex; flex-wrap: wrap; padding: var(--evs-space-2) var(--evs-space-3); }
+  .evs-role-switcher .usa-select { width: 100%; max-width: 100%; }
+  .evs-header .usa-nav__secondary-item { flex-wrap: wrap; }
+  .evs-header .usa-nav__secondary-item > * { max-width: 100%; }
 }
 
 .evs-detail-list {

@@ -267,7 +267,8 @@ class SynthData:
 
 
 def fiscal_month_start(fm: int) -> date:
-    month = (9 + fm) % 12 + 1
+    """Fiscal month 1 is October of the prior calendar year; 4 is January; 12 is September."""
+    month = (fm + 8) % 12 + 1
     year = FISCAL_YEAR - 1 if fm <= 3 else FISCAL_YEAR
     return date(year, month, 1)
 

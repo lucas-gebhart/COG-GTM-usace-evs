@@ -92,13 +92,13 @@ export function Financial() {
           {(data) => (
             <Figure
               title={`Obligated and expended by appropriation, FY${data.fiscal_year}`}
-              description={`${appropriations.length} appropriation${appropriations.length === 1 ? "" : "s"}; funded, obligated and expended totals.`}
+              description={`${appropriations.length} appropriation${appropriations.length === 1 ? "" : "s"}; allotted, obligated and expended totals.`}
               data={appropriations}
               columns={[
                 { key: "appropriation", header: "Appropriation", rowHeader: true },
-                { key: "funded_amount", header: "Funded", numeric: true, format: (v) => formatCurrency(v as number) },
-                { key: "obligated_amount", header: "Obligated", numeric: true, format: (v) => formatCurrency(v as number) },
-                { key: "expended_amount", header: "Expended", numeric: true, format: (v) => formatCurrency(v as number) },
+                { key: "allotted", header: "Allotted", numeric: true, format: (v) => formatCurrency(v as number) },
+                { key: "obligated", header: "Obligated", numeric: true, format: (v) => formatCurrency(v as number) },
+                { key: "expended", header: "Expended", numeric: true, format: (v) => formatCurrency(v as number) },
                 { key: "variance_pct", header: "Variance", numeric: true, format: (v) => formatPercent(v as number, true) },
               ]}
               legend={[{ name: "Funded", seriesIndex: 4 }, { name: "Obligated", seriesIndex: 0 }, { name: "Expended", seriesIndex: 1 }]}
@@ -114,9 +114,9 @@ export function Financial() {
                     <XAxis dataKey="appropriation" tick={{ fill: CHART_TOKENS.axis, fontSize: 11 }} />
                     <YAxis tickFormatter={(v: number) => formatCompact(v)} width={56} tick={{ fill: CHART_TOKENS.axis }} />
                     <Tooltip formatter={(v) => formatCurrency(Number(v))} />
-                    <Bar name="Funded" dataKey="funded_amount" fill={`url(#${SERIES[4].patternId})`} stroke={SERIES[4].color} isAnimationActive={!reducedMotion} />
-                    <Bar name="Obligated" dataKey="obligated_amount" fill={`url(#${SERIES[0].patternId})`} stroke={SERIES[0].color} isAnimationActive={!reducedMotion} />
-                    <Bar name="Expended" dataKey="expended_amount" fill={`url(#${SERIES[1].patternId})`} stroke={SERIES[1].color} isAnimationActive={!reducedMotion} />
+                    <Bar name="Allotted" dataKey="allotted" fill={`url(#${SERIES[4].patternId})`} stroke={SERIES[4].color} isAnimationActive={!reducedMotion} />
+                    <Bar name="Obligated" dataKey="obligated" fill={`url(#${SERIES[0].patternId})`} stroke={SERIES[0].color} isAnimationActive={!reducedMotion} />
+                    <Bar name="Expended" dataKey="expended" fill={`url(#${SERIES[1].patternId})`} stroke={SERIES[1].color} isAnimationActive={!reducedMotion} />
                   </BarChart>
                 </ResponsiveContainer>
               )}

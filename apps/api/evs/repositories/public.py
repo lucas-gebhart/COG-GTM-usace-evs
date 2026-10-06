@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 from typing import Any, Protocol
 
+from evs.fixtures import load as load_fixture
 from evs.repositories import tables as t
 from evs.repositories._sql import PgBase, clean
 from evs.repositories.fixture_store import FixtureStore
@@ -99,7 +100,11 @@ class PgPublicRepo(PgBase):
         snaps = [clean(s) for s in snaps]
         sites = [clean(s) for s in sites]
         latest = snaps[-1] if snaps else {}
+        # Citations and the derived figures (NPV, BCR, districts) are cited public material, not measured
+        # by this demo, so they come from the same research document the fixtures serve.
+        cited = load_fixture("srp")
         headline = {
+            **{k: v for k, v in cited.get("headline", {}).items()},
             "river_systems": latest.get("river_systems") or len({s["river"] for s in sites}),
             "river_miles": latest.get("river_miles") or 0,
             "dams_and_reservoirs": latest.get("dams") or 0,
@@ -107,7 +112,7 @@ class PgPublicRepo(PgBase):
             **{k: v for k, v in (_json(latest.get("headline")) or {}).items()},
         }
         as_of = AsOf(
-            source_as_of=latest.get("source_as_of"),
+            source_as_of=latest.get("source_as_of") or cited.get("as_of", {}).get("source_as_of"),
             fetched_at=latest.get("fetched_at"),
             source="cited-public",
         )
@@ -115,6 +120,7 @@ class PgPublicRepo(PgBase):
             "snapshots": [{k: v for k, v in s.items() if k in SNAPSHOT_KEYS} for s in snaps],
             "sites": [{k: v for k, v in s.items() if k in SITE_KEYS} for s in sites],
             "headline": headline,
+            "citations": cited.get("citations", []),
             "as_of": as_of.model_dump(),
         }
 

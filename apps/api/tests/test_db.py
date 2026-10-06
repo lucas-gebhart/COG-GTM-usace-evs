@@ -30,7 +30,7 @@ def test_migrations_and_seed_are_idempotent(migrated_db):
     with psycopg.connect(sync_url) as conn:
         names = {r[0] for r in conn.execute("SELECT filename FROM public.schema_migration")}
         assert {"0001_extensions.sql", "0005_synth.sql", "0007_wp3_evs_state.sql"} <= names
-        assert conn.execute("SELECT count(*) FROM evs.threshold").fetchone()[0] == 4
+        assert conn.execute("SELECT count(*) FROM evs.threshold").fetchone()[0] == 5
 
 
 def test_db_mode_matches_fixtures_mode(db_client, client):
@@ -68,7 +68,9 @@ def test_db_aggregates_and_public(db_client):
     assert locks["items"] and all(i["river_code"] == "OH" for i in locks["items"])
     one = db_client.get(f"/api/v1/public/locks/{locks['items'][0]['lock_id']}").json()
     assert one["as_of"]["source"] == "fixtures" and one["status_inputs"]
-    assert db_client.get("/api/v1/public/locks").json()["counts"] == locks_fixture_counts()
+    # WP5a lists every lock_dim row (unknown = no LPMS evaluation); the fixture dump only has reporting locks
+    reporting = db_client.get("/api/v1/public/locks", params={"reporting_only": "true"}).json()
+    assert reporting["counts"] == locks_fixture_counts()
     srp = db_client.get("/api/v1/public/srp/coverage").json()
     assert srp["snapshots"] and srp["sites"] and srp["as_of"]["source"] == "cited-public"
     assert db_client.get("/api/v1/admin/feeds").json()["feeds"]

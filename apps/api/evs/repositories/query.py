@@ -195,9 +195,9 @@ def _cmp(a: Any, b: Any, op: str) -> bool:
 def _sort_key(v: Any) -> tuple[int, Any]:
     if v is None:
         return (1, 0)
-    if isinstance(v, (int, float)):
+    if isinstance(v, int | float):
         return (0, v)
-    if isinstance(v, (date, datetime)):
+    if isinstance(v, date | datetime):
         return (0, v.isoformat())
     return (0, str(v).lower())
 
@@ -217,8 +217,8 @@ def csv_response(rows: Iterable[Mapping[str, Any]], columns: Iterable[str], file
 
 
 def _csv_cell(v: Any) -> Any:
-    if isinstance(v, (date, datetime)):
+    if isinstance(v, date | datetime):
         return v.isoformat()
-    if isinstance(v, (list, dict)):
+    if isinstance(v, list | dict):
         return ""
     return v

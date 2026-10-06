@@ -2,12 +2,15 @@
 
 from __future__ import annotations
 
+import logging
 from typing import Any
 
 from fastapi import HTTPException, status
 from sqlalchemy import text
 from sqlalchemy.exc import DBAPIError, OperationalError
 from sqlalchemy.ext.asyncio import AsyncEngine
+
+log = logging.getLogger("evs.repositories")
 
 
 class PgBase:
@@ -20,6 +23,7 @@ class PgBase:
                 result = await conn.execute(text(sql), params or {})
                 return [dict(r) for r in result.mappings().all()]
         except (OperationalError, OSError, DBAPIError) as exc:
+            log.warning("query failed (%s): %s", type(exc).__name__, exc)
             raise HTTPException(status.HTTP_503_SERVICE_UNAVAILABLE, "database unavailable") from exc
 
     async def one(self, sql: str, params: dict[str, Any] | None = None) -> dict[str, Any] | None:
@@ -40,6 +44,7 @@ class PgBase:
                     last = [dict(r) for r in result.mappings().all()] if result.returns_rows else []
                 return last
         except (OperationalError, OSError, DBAPIError) as exc:
+            log.warning("query failed (%s): %s", type(exc).__name__, exc)
             raise HTTPException(status.HTTP_503_SERVICE_UNAVAILABLE, "database unavailable") from exc
 
 

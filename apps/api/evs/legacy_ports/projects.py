@@ -238,7 +238,7 @@ def _event(
 def _fmt(v: Any) -> str | None:
     if v is None:
         return None
-    if isinstance(v, (date, datetime)):
+    if isinstance(v, date | datetime):
         return v.strftime("%d-%b-%Y").upper()
     if isinstance(v, str) and len(v) == 10 and v[4] == "-" and v[7] == "-":
         return date.fromisoformat(v).strftime("%d-%b-%Y").upper()
@@ -246,7 +246,7 @@ def _fmt(v: Any) -> str | None:
 
 
 def _norm(v: Any) -> Any:
-    if isinstance(v, (date, datetime)):
+    if isinstance(v, date | datetime):
         return v.isoformat()[:10]
     if isinstance(v, float) and v.is_integer():
         return int(v)

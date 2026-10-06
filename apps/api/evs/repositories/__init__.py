@@ -19,7 +19,7 @@ from typing import Literal
 from fastapi import FastAPI, Request
 from sqlalchemy.ext.asyncio import AsyncEngine
 
-from evs.db.engine import make_engine, probe
+from evs.db.pool import make_engine, probe
 from evs.repositories import facilities, financial, ops, portfolio, public, workforce
 from evs.repositories.fixture_store import FixtureStore
 from evs.settings import Settings, get_settings

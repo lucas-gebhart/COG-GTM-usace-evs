@@ -10,7 +10,13 @@ from evs.repositories._sql import PgBase, clean
 from evs.repositories.fixture_store import FixtureStore
 from evs.settings import Settings, get_settings
 
-THRESHOLD_KEYS = ("stale_after_minutes", "delay_yellow_minutes", "delay_red_minutes", "queue_yellow_vessels")
+THRESHOLD_KEYS = (
+    "stale_after_minutes",
+    "delay_yellow_minutes",
+    "delay_red_minutes",
+    "queue_yellow_vessels",
+    "lpms_failover_hours",
+)
 
 
 class OpsRepo(Protocol):
@@ -34,7 +40,8 @@ class PgOpsRepo(PgBase):
 
     async def feeds(self) -> list[dict]:
         rows = await self.rows(
-            f"SELECT source, endpoint, cadence_minutes, last_success_at, last_error, latency_ms, status "
+            "SELECT source, endpoint, cadence_minutes, mode, last_attempt_at, last_success_at, last_error, "
+            "latency_ms, http_status, rows_parsed, consecutive_failures, status, updated_at "
             f"FROM {t.FEED_HEALTH} ORDER BY cadence_minutes, source"
         )
         return [clean(r) for r in rows]
@@ -60,6 +67,7 @@ class PgOpsRepo(PgBase):
                     {"key": k, "value": int(values[k]), "actor": actor},
                 )
                 for k in THRESHOLD_KEYS
+                if values.get(k) is not None
             ]
         )
         return await self.get_thresholds()
@@ -76,7 +84,10 @@ class FixtureOpsRepo:
         return dict(self.store.thresholds or settings_thresholds(get_settings()))
 
     async def put_thresholds(self, values: dict, actor: str) -> dict:
-        self.store.thresholds = {k: int(values[k]) for k in THRESHOLD_KEYS} | {
+        current = self.store.thresholds or settings_thresholds(get_settings())
+        self.store.thresholds = {
+            k: int(values[k]) if values.get(k) is not None else current[k] for k in THRESHOLD_KEYS
+        } | {
             "source": "fixtures",
             "updated_at": datetime.now(UTC),
             "updated_by": actor,

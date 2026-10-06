@@ -4,13 +4,17 @@ from collections.abc import AsyncIterator
 from functools import lru_cache
 
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
+from sqlalchemy.pool import NullPool
 
 from evs.settings import get_settings
 
 
 @lru_cache
 def engine():
-    return create_async_engine(get_settings().database_url, pool_pre_ping=True)
+    # NullPool: asyncpg connections are bound to the event loop that opened them; FastAPI's TestClient and
+    # the SSE generator run on different loops, so pooled connections would be reused across loops.
+    # Aurora / RDS Proxy pools server side in GovCloud.
+    return create_async_engine(get_settings().database_url, poolclass=NullPool)
 
 
 @lru_cache

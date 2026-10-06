@@ -44,7 +44,7 @@ def _lock_payload(items: list[dict]) -> dict:
 
 
 class PgPublicRepo(PgBase):
-    """Reads `evs.lock_current` (WP2 view: dimension + latest status_eval + latest raw poll).
+    """Reads `evs.lock_current` (WP2 view, widened by WP5a 0008 with gauge, queue and lockage data).
 
     Only locks with an evaluation are listed, matching `evs dump-fixtures`; `fetched_at` is the
     evaluation time and `source` the evaluation source (fixtures | live | simulated).
@@ -54,10 +54,10 @@ class PgPublicRepo(PgBase):
         SELECT c.lock_id, c.river_code, c.river_name, c.lock_name, c.lock_no, c.river_mile, c.district,
                c.chambers, c.latitude, c.longitude, c.lift_ft, c.chamber_dimensions, c.year_opened, c.owner,
                c.operator, c.status, c.status_reason, c.vessels_queued, c.avg_delay_4h_min,
-               c.avg_delay_24h_min, NULL::timestamptz AS last_lockage_at, c.gauge_stage_ft,
-               NULL::text AS flood_category, c.active_stoppages, c.source_as_of,
+               c.avg_delay_24h_min, c.last_lockage_at, c.gauge_stage_ft,
+               c.flood_category, c.active_stoppages, c.source_as_of,
                c.evaluated_at AS fetched_at, c.freshness, c.eval_source AS source,
-               c.inputs_used AS status_inputs
+               c.status_inputs
         FROM {t.LOCK_CURRENT} c
         WHERE c.evaluated_at IS NOT NULL
     """

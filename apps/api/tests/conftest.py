@@ -70,7 +70,7 @@ def migrated_db() -> tuple[str, str]:
 
     sync_url, async_url = db_urls()
     migrate(sync_url)
-    seed_db(sync_url)
+    seed_db(sync_url, reset=True)  # WP5a ingest tests add rows; start from the WP2 baseline
     return sync_url, async_url
 
 

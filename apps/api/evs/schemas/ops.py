@@ -12,6 +12,12 @@ class FeedHealth(BaseModel):
     last_error: str | None
     latency_ms: int | None
     status: Literal["healthy", "degraded", "down", "simulated", "fixtures"]
+    mode: Literal["live", "fixtures", "simulated"] | None = None
+    last_attempt_at: datetime | None = None
+    http_status: int | None = None
+    rows_parsed: int | None = None
+    consecutive_failures: int = 0
+    updated_at: datetime | None = None
 
 
 class FeedHealthList(BaseModel):
@@ -26,9 +32,11 @@ class ThresholdUpdate(BaseModel):
     delay_yellow_minutes: int = Field(ge=1, le=1440)
     delay_red_minutes: int = Field(ge=1, le=2880)
     queue_yellow_vessels: int = Field(ge=1, le=100)
+    lpms_failover_hours: int | None = Field(default=None, ge=1, le=168)  # WP5a; unchanged when omitted
 
 
 class Thresholds(ThresholdUpdate):
+    lpms_failover_hours: int
     source: Literal["settings", "db", "fixtures"] = "settings"
     updated_at: datetime | None = None
     updated_by: str | None = None

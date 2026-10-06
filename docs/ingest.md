@@ -9,11 +9,11 @@ feeds are public and unauthenticated and their shapes were captured on 2026-10-0
 
 ```bash
 cd apps/api
-uv run evs migrate                              # applies db/migrations/0006_ingest.sql
+uv run evs migrate                              # applies WP2's 0002 to 0005 and db/migrations/0008_ingest.sql
 uv run evs ingest --once                        # one cycle, prints a JSON summary
 uv run evs ingest --once --source fixtures      # replay legacy/data_samples (no network)
 uv run evs ingest --once --source simulated     # labelled Markov simulator
-uv run evs ingest --loop                        # LPMS every 15 min, gauges every 30 min, GIS daily
+uv run evs ingest --loop                        # LPMS every 15 min (EVS_INGEST_INTERVAL_SECONDS), gauges 30 min, GIS daily
 ```
 
 `EVS_FEED_SOURCE` (`live`, `fixtures`, `simulated`) selects the mode; `--source` overrides it. Compose runs
@@ -23,7 +23,7 @@ endpoints.
 
 Other settings (all `EVS_` prefixed, see `apps/api/evs/settings.py`): `LPMS_BASE_URL`, `GIS_LOCKS_URL`,
 `NOAA_BASE_URL`, `USGS_IV_URL`, `NTNI_BASE_URL`, `HTTP_TIMEOUT_S` (20), `HTTP_RETRIES` (2), `INGEST_USER_AGENT`,
-`NOAA_DETAIL_BUDGET` (8 gauge detail calls per cycle), `LPMS_DETAIL_LOCKS` (locks whose queue and traffic reports
+`INGEST_INTERVAL_SECONDS` (900, the LPMS cadence of `--loop`), `NOAA_DETAIL_BUDGET` (8 gauge detail calls per cycle), `LPMS_DETAIL_LOCKS` (locks whose queue and traffic reports
 are pulled every cycle, default `OH-79`), `LPMS_FAILOVER_HOURS` (6), `SIMULATOR_SEED`, `SAMPLES_DIR`,
 `S3_ENDPOINT` / `S3_BUCKET` / `S3_ACCESS_KEY` / `S3_SECRET_KEY` for raw archival.
 
@@ -85,9 +85,9 @@ The newest input includes the stoppage feed `refreshDate` (or the HTTP `Date` he
 
 ## Persistence and streaming
 
-Migration `0006_ingest.sql` adds `evs.lock_dim`, `evs.threshold`, `evs.lock_status_fact`, `evs.stoppage`,
-`evs.gauge_fact`, `evs.ntni_notice`, `evs.lock_queue`, `evs.lockage`, `evs.status_eval`, `evs.feed_health`,
-`evs.feed_cache` and the `evs.lock_current` view that joins the latest evaluation, fact, gauge, active stoppages and
+WP2's `0004_evs_core.sql` owns `evs.lock_dim`, `evs.threshold`, `evs.lock_status_fact` (partitioned by month on `polled_at`), `evs.stoppage`, `evs.status_eval` and `evs.feed_health`. Migration `0008_ingest.sql` adds the worker's extra columns (`feed_refresh_at`, `ntni_notices`, `rule_no`, feed health attempt and HTTP fields) plus
+`evs.gauge_fact`, `evs.ntni_notice`, `evs.lock_queue`, `evs.lockage`, `evs.feed_cache` and replaces the
+`evs.lock_current` view that joins the latest evaluation, fact, gauge, active stoppages and
 last lockage per lock. After each LPMS cycle the worker runs `NOTIFY evs_locks` with
 `{"at", "source", "counts", "changed": [lock ids], "changed_total", "as_of"}`.
 

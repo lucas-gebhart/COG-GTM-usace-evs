@@ -43,13 +43,13 @@ class FeedClient:
     def close(self) -> None:
         self._client.close()
 
-    def get(self, url: str, params: dict | None = None) -> FetchResult:
+    def get(self, url: str, params: dict | None = None, timeout: float | None = None) -> FetchResult:
         started = time.monotonic()
         fetched_at = datetime.now(UTC)
         last_error, last_status, last_text, headers = None, None, "", {}
         for attempt in range(1, self.retries + 1):
             try:
-                resp = self._client.get(url, params=params)
+                resp = self._client.get(url, params=params, timeout=timeout or httpx.USE_CLIENT_DEFAULT)
                 last_status, last_text, headers = resp.status_code, resp.text, dict(resp.headers)
                 if resp.status_code in RETRY_STATUSES and attempt < self.retries:
                     last_error = f"HTTP {resp.status_code}"

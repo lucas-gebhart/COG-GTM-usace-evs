@@ -124,6 +124,7 @@ def main() -> None:
         d = details.get(lid) if lid else None
         usgs = str(d.get("usgsId")) if d and str(d.get("usgsId") or "").isdigit() else None
         mod = ((d or {}).get("flood") or {}).get("categories", {}).get("moderate", {}).get("stage") if d else None
+        mod = None if mod is None or float(mod) <= -999 else mod  # NWPS uses -9999 for "not defined"
         mod = None if mod in (None, -999) else mod
         name = json.dumps((d or {}).get("name")) if d else "None"
         out.append(f"    GaugePairing({lock_id!r}, {lid!r}, {usgs!r}, {name}, "

@@ -26,6 +26,7 @@ class Settings(BaseSettings):
     delay_red_minutes: int = 240
     queue_yellow_vessels: int = 6
     lpms_failover_hours: int = 6  # switch to the labelled simulator after LPMS has failed this long
+    ingest_interval_seconds: int = 900  # LPMS cadence for `evs ingest --loop` (WP7 Fly process group)
     noaa_base_url: str = "https://api.water.noaa.gov/nwps/v1"
     usgs_iv_url: str = "https://waterservices.usgs.gov/nwis/iv/"
     ntni_base_url: str = "https://ndc.ops.usace.army.mil/ords/ntni"

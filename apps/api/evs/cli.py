@@ -30,7 +30,9 @@ def openapi(out: Path = Path("../../packages/contract/openapi.json")) -> None:
 def ingest(
     once: bool = typer.Option(False, "--once", help="Run GIS, gauges and LPMS cycles once and exit."),
     loop: bool = typer.Option(
-        False, "--loop", help="Run forever: LPMS every 15 min, gauges 30 min, GIS daily."
+        False,
+        "--loop",
+        help="Run forever: LPMS every EVS_INGEST_INTERVAL_SECONDS (900), gauges 30 min, GIS daily.",
     ),
     source: str | None = typer.Option(None, help="Override EVS_FEED_SOURCE: live, fixtures or simulated."),
 ) -> None:

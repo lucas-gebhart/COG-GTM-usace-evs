@@ -108,12 +108,17 @@ class IngestWorker:
         return Fetched(path.read_text(), now, None, False, None)
 
     def fetch(
-        self, source: str, url: str, archive_key: str | None = None, fixture: str | None = None
+        self,
+        source: str,
+        url: str,
+        archive_key: str | None = None,
+        fixture: str | None = None,
+        timeout: float | None = None,
     ) -> Fetched:
         """Live GET with raw archival and last-good fallback, or fixture replay."""
         if self.mode != "live":
             return self.fixture(fixture or FIXTURES.get(source, ""))
-        res = self.client.get(url)
+        res = self.client.get(url, timeout=timeout)
         if res.text and self.archive and archive_key:
             self.archive.put(RawArchive.key(*archive_key.split("/", 1), res.fetched_at), res.text)
         if res.ok:
@@ -243,8 +248,8 @@ class IngestWorker:
                                       district, division, state, town, chambers, lift_ft, chamber_dimensions,
                                       year_opened, owner, operator,
                                       geom, geom_source, source)
-            VALUES (%(id)s, %(rc)s, %(no)s, %(rn)s, %(ln)s, %(mi)s, %(di)s, %(dv)s, %(st)s, %(tw)s, %(ch)s,
-                    %(lf)s,
+            VALUES (%(id)s, %(rc)s, %(no)s, %(rn)s, COALESCE(%(ln)s, %(id)s), %(mi)s, %(di)s, %(dv)s, %(st)s,
+                    %(tw)s, %(ch)s, %(lf)s,
                     %(cd)s, %(yr)s, %(ow)s, %(op)s,
                     CASE WHEN %(lat)s::float8 IS NULL THEN NULL
                          ELSE ST_SetSRID(ST_MakePoint(%(lon)s::float8, %(lat)s::float8), 4326) END,
@@ -330,7 +335,10 @@ class IngestWorker:
         counts = {"noaa": 0, "usgs": 0, "noaa_detail": 0}
         pairings = [p for p in BY_LOCK.values() if p.lid]
         url = noaa.region_url(self.settings.noaa_base_url)
-        fetched = self.fetch(NOAA_GAUGES, url, "noaa/gauges")
+        # The regional list is about 7 MB and NWPS streams it slowly; give it a longer read timeout.
+        fetched = self.fetch(
+            NOAA_GAUGES, url, "noaa/gauges", timeout=max(self.settings.http_timeout_s, 120.0)
+        )
         gauges: dict[str, noaa.NwpsGauge] = {}
         error = None
         if fetched.ok:
@@ -786,12 +794,13 @@ class IngestWorker:
     def persist_facts(self, status_rows, delay_rows, stoppages, feed_refresh, fetched_at, source) -> None:
         delay_by = {d.lock_id: d for d in delay_rows}
         with self.conn.cursor() as cur:
+            cur.execute("SELECT evs.ensure_lock_status_partition(%s)", (fetched_at,))
             cur.executemany(
                 """
-                INSERT INTO evs.lock_status_fact (lock_id, source, source_as_of, feed_refresh_at, fetched_at,
-                    eroc, upper_gauge_ft, lower_gauge_ft, weather_code, air_temp_f, pending_arrivals,
-                    locking_now, locked_up_24h, locked_down_24h,
-                    avg_delay_4h_min, avg_delay_24h_min, active_stoppage, ntni_notices, notes, raw)
+                INSERT INTO evs.lock_status_fact (lock_id, source, source_as_of, feed_refresh_at, polled_at,
+                    eroc, upper_gauge_ft, lower_gauge_ft, weather_code, air_temp_f, vessels_queued,
+                    total_locking, locked_up_24h, locked_down_24h,
+                    avg_delay_4h_min, avg_delay_24h_min, active_stoppages, ntni_notices, notes, raw)
                 VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
                 """,
                 [
@@ -816,7 +825,7 @@ class IngestWorker:
                             else r.avg_delay_4h_min
                         ),
                         delay_by[r.lock_id].delay_24h_min if r.lock_id in delay_by else None,
-                        r.active_stoppage,
+                        None if r.active_stoppage is None else int(r.active_stoppage),
                         r.ntni_notices,
                         r.notes,
                         Jsonb(r.raw),
@@ -925,8 +934,8 @@ class IngestWorker:
                 changed.append(lock_id)
         with self.conn.cursor() as cur:
             cur.executemany(
-                "INSERT INTO evs.status_eval (lock_id, evaluated_at, status, status_reason, rule_no, as_of, "
-                "freshness, source, "
+                "INSERT INTO evs.status_eval (lock_id, evaluated_at, status, status_reason, rule_no, "
+                "source_as_of, freshness, source, "
                 "inputs_used) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                 [
                     (
@@ -1046,16 +1055,19 @@ class IngestWorker:
         last = self.last_success(source)
         return last is None or last < datetime.now(UTC) - timedelta(minutes=cadence_minutes)
 
-    def run_loop(self, poll_seconds: int = 60) -> None:
-        log.info("ingest loop: mode=%s lpms=%dm gauges=%dm gis=%dm", self.mode, *CADENCE.values())
+    def run_loop(self, poll_seconds: int | None = None) -> None:
+        """LPMS every EVS_INGEST_INTERVAL_SECONDS (900 s), gauges 30 min, GIS daily; ticks each minute."""
+        cadence = dict(CADENCE, lpms=max(1, self.settings.ingest_interval_seconds // 60))
+        poll_seconds = poll_seconds or min(60, self.settings.ingest_interval_seconds)
+        log.info("ingest loop: mode=%s lpms=%dm gauges=%dm gis=%dm", self.mode, *cadence.values())
         while True:
             for name, source, fn in (
                 ("gis", GIS_LOCKS, self.run_gis),
                 ("gauges", NOAA_GAUGES, self.run_gauges),
                 ("lpms", LPMS_STATUS, self.run_lpms),
             ):
-                if self.due(source, CADENCE[name]) or (
-                    name == "lpms" and self.mode == "simulated" and self.due(SIMULATOR, CADENCE["lpms"])
+                if self.due(source, cadence[name]) or (
+                    name == "lpms" and self.mode == "simulated" and self.due(SIMULATOR, cadence["lpms"])
                 ):
                     try:
                         fn()

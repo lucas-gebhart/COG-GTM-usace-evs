@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { type MouseEvent, useMemo, useState } from "react";
 import type { ColumnDef } from "@tanstack/react-table";
 import { Alert, Button } from "@trussworks/react-uswds";
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
@@ -271,12 +271,36 @@ function Conformance({ data }: { data: Readout }) {
   );
 }
 
+/**
+ * Fetch the artefact and save it as a blob. Anchor downloads are navigations, which the MSW service worker
+ * does not intercept in mock mode; fetch() is intercepted, and the href stays as the no-JS fallback.
+ */
+async function saveArtifact(event: MouseEvent<HTMLAnchorElement>, href: string, name: string): Promise<void> {
+  if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey) return;
+  event.preventDefault();
+  try {
+    const res = await fetch(href);
+    if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+    const url = URL.createObjectURL(await res.blob());
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = name;
+    a.rel = "noopener";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 0);
+  } catch {
+    window.location.assign(href);
+  }
+}
+
 function Downloads({ data }: { data: Readout }) {
   return (
     <ul className="evs-a11y-downloads">
       {data.artifacts.map((a) => (
         <li key={a.name}>
-          <a className="usa-button usa-button--outline" href={a.href} download={a.name}>
+          <a className="usa-button usa-button--outline" href={a.href} download={a.name} onClick={(e) => void saveArtifact(e, a.href, a.name)}>
             {a.label}
           </a>
         </li>
@@ -290,7 +314,7 @@ function Statement({ data }: { data: Readout }) {
   return (
     <div className="evs-a11y-statement">
       <Alert type="info" slim>
-        {st.demo_notice}
+        <p className="usa-alert__text">{st.demo_notice}</p>
       </Alert>
       <dl>
         <dt>Product</dt>

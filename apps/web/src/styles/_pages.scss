@@ -1,14 +1,13 @@
 // Page-level layout. Each block is prefixed evs-<page>- and composes kit components.
 
 // /accessibility read-out
-.evs-a11y-section { margin-top: var(--evs-space-5); }
+.evs-a11y-section { margin-top: var(--evs-space-5); overflow-wrap: anywhere; }
 .evs-a11y-section > h2 { margin-bottom: var(--evs-space-3); }
 .evs-a11y-loading { display: grid; gap: var(--evs-space-4); margin-top: var(--evs-space-4); }
 .evs-a11y-toolbar { display: flex; flex-wrap: wrap; gap: var(--evs-space-2); margin: var(--evs-space-3) 0; }
 .evs-a11y-evidence {
   list-style: none; margin: 0; padding: 0;
   display: flex; flex-wrap: wrap; gap: var(--evs-space-1) var(--evs-space-2);
-  li { white-space: nowrap; }
 }
 .evs-a11y-details {
   summary { cursor: pointer; min-height: 2.75rem; display: inline-flex; align-items: center; color: var(--evs-color-link); text-decoration: underline; }
@@ -26,11 +25,11 @@
   }
 }
 .evs-a11y-statement {
-  dl { display: grid; grid-template-columns: 1fr; gap: var(--evs-space-1) var(--evs-space-4); margin: var(--evs-space-3) 0; }
+  dl { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--evs-space-1) var(--evs-space-4); margin: var(--evs-space-3) 0; }
   dt { font-weight: 700; }
-  dd { margin: 0 0 var(--evs-space-2); }
+  dd { margin: 0 0 var(--evs-space-2); min-width: 0; overflow-wrap: anywhere; }
   @media (min-width: 640px) {
-    dl { grid-template-columns: max-content 1fr; }
+    dl { grid-template-columns: max-content minmax(0, 1fr); }
     dd { margin-bottom: 0; }
   }
 }

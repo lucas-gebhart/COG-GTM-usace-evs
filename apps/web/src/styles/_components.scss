@@ -70,7 +70,7 @@ html[data-theme="leadership"] .evs-chip { color: var(--evs-color-ink); }
   &__actions { display: flex; flex-wrap: wrap; gap: var(--evs-space-2); }
   // Leadership type at 320 px: a long title word ("Accessibility") breaks instead of widening the page.
   &__row > div { min-width: 0; }
-  h1 { margin-bottom: var(--evs-space-2); overflow-wrap: anywhere; }
+  h1 { margin-bottom: var(--evs-space-2); overflow-wrap: anywhere; hyphens: auto; }
 }
 
 // FilterBar

@@ -23,7 +23,7 @@ router = APIRouter(tags=["schedule"], dependencies=[Depends(require_viewer)])
     response_model=MilestoneList,
     summary="Milestones with slip (status=slipped for the late list)",
     openapi_extra={"x-apex-page": "4", "x-apex-authorization": "Authenticated User"},
-    responses={200: {"content": {"text/csv": {}}}},
+    responses={200: {"description": "JSON body; text/csv (same columns) when format=csv"}},
 )
 async def milestones(
     repos: Annotated[Repositories, Depends(get_repos)],

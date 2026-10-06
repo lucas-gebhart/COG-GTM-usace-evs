@@ -1330,14 +1330,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Successful Response */
+            /** @description JSON body; text/csv (same columns) when format=csv */
             200: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
                     "application/json": components["schemas"]["ProgramList"];
-                    "text/csv": unknown;
                 };
             };
             /** @description Validation Error */
@@ -1376,14 +1375,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Successful Response */
+            /** @description JSON body; text/csv (same columns) when format=csv */
             200: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
                     "application/json": components["schemas"]["ProjectList"];
-                    "text/csv": unknown;
                 };
             };
             /** @description Validation Error */
@@ -1621,14 +1619,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Successful Response */
+            /** @description JSON body; text/csv (same columns) when format=csv */
             200: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
                     "application/json": components["schemas"]["MilestoneList"];
-                    "text/csv": unknown;
                 };
             };
             /** @description Validation Error */
@@ -1725,14 +1722,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Successful Response */
+            /** @description JSON body; text/csv (same columns) when format=csv */
             200: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
                     "application/json": components["schemas"]["LaborSummary"];
-                    "text/csv": unknown;
                 };
             };
             /** @description Validation Error */
@@ -1769,14 +1765,13 @@ export interface operations {
         };
         requestBody?: never;
         responses: {
-            /** @description Successful Response */
+            /** @description JSON body; text/csv (same columns) when format=csv */
             200: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
                     "application/json": components["schemas"]["FacilitySummary"];
-                    "text/csv": unknown;
                 };
             };
             /** @description Validation Error */

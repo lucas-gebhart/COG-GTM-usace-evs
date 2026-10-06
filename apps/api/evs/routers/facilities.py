@@ -25,7 +25,7 @@ router = APIRouter(tags=["facilities"], dependencies=[Depends(require_viewer)])
     + ", ".join(FACILITY_COLUMNS.columns)
     + ".",
     openapi_extra={"x-apex-authorization": "Authenticated User"},
-    responses={200: {"content": {"text/csv": {}}}},
+    responses={200: {"description": "JSON body; text/csv (same columns) when format=csv"}},
 )
 async def condition(
     repos: Annotated[Repositories, Depends(get_repos)],

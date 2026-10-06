@@ -184,14 +184,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Response",
+            "description": "JSON body; text/csv (same columns) when format=csv",
             "content": {
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ProgramList"
                 }
-              },
-              "text/csv": {}
+              }
             }
           },
           "422": {
@@ -407,14 +406,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Response",
+            "description": "JSON body; text/csv (same columns) when format=csv",
             "content": {
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ProjectList"
                 }
-              },
-              "text/csv": {}
+              }
             }
           },
           "422": {
@@ -905,14 +903,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Response",
+            "description": "JSON body; text/csv (same columns) when format=csv",
             "content": {
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/MilestoneList"
                 }
-              },
-              "text/csv": {}
+              }
             }
           },
           "422": {
@@ -1147,14 +1144,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Response",
+            "description": "JSON body; text/csv (same columns) when format=csv",
             "content": {
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/LaborSummary"
                 }
-              },
-              "text/csv": {}
+              }
             }
           },
           "422": {
@@ -1324,14 +1320,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful Response",
+            "description": "JSON body; text/csv (same columns) when format=csv",
             "content": {
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/FacilitySummary"
                 }
-              },
-              "text/csv": {}
+              }
             }
           },
           "422": {
@@ -1768,6 +1763,11 @@
           "theme": {
             "type": "string",
             "title": "Theme"
+          },
+          "reduced_motion": {
+            "type": "boolean",
+            "title": "Reduced Motion",
+            "default": false
           },
           "violations": {
             "type": "integer",

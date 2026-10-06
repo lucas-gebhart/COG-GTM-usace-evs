@@ -34,7 +34,7 @@ IR_PARAMS = (
     summary="Programs (APEX Initiatives IR)",
     description=f"{IR_PARAMS} Columns: {', '.join(PROGRAM_COLUMNS.columns)}.",
     openapi_extra={"x-apex-page": "21", "x-apex-authorization": "Authenticated User"},
-    responses={200: {"content": {"text/csv": {}}}},
+    responses={200: {"description": "JSON body; text/csv (same columns) when format=csv"}},
 )
 async def list_programs(
     repos: Annotated[Repositories, Depends(get_repos)],
@@ -61,7 +61,7 @@ async def list_programs(
     summary="Projects (APEX Projects IR)",
     description=f"{IR_PARAMS} Columns: {', '.join(PROJECT_COLUMNS.columns)}.",
     openapi_extra={"x-apex-page": "86", "x-apex-authorization": "Authenticated User"},
-    responses={200: {"content": {"text/csv": {}}}},
+    responses={200: {"description": "JSON body; text/csv (same columns) when format=csv"}},
 )
 async def list_projects(
     repos: Annotated[Repositories, Depends(get_repos)],

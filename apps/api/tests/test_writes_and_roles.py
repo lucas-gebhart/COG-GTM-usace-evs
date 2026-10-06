@@ -77,4 +77,8 @@ def test_openapi_tags_processes_and_schemes(client):
     assert put["x-apex-authorization"] == "Contributor"
     assert spec["paths"]["/api/v1/admin/thresholds"]["put"]["x-apex-authorization"] == "Administration Rights"
     assert spec["paths"]["/api/v1/public/locks"]["get"]["x-apex-authorization"] == "none"
-    assert "text/csv" in spec["paths"]["/api/v1/projects"]["get"]["responses"]["200"]["content"]
+    projects_200 = spec["paths"]["/api/v1/projects"]["get"]["responses"]["200"]
+    # CSV is documented in the description only: a text/csv content entry would make openapi-fetch
+    # type the body as unknown for the web hooks (WP4a).
+    assert "format=csv" in projects_200["description"]
+    assert set(projects_200["content"]) == {"application/json"}

@@ -25,7 +25,7 @@ router = APIRouter(tags=["workforce"], dependencies=[Depends(require_viewer)])
     + ", ".join(LABOR_COLUMNS.columns)
     + ".",
     openapi_extra={"x-apex-page": "74", "x-apex-authorization": "Authenticated User"},
-    responses={200: {"content": {"text/csv": {}}}},
+    responses={200: {"description": "JSON body; text/csv (same columns) when format=csv"}},
 )
 async def labor(
     repos: Annotated[Repositories, Depends(get_repos)],

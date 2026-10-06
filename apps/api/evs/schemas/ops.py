@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Literal
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class FeedHealth(BaseModel):
@@ -17,6 +17,21 @@ class FeedHealth(BaseModel):
 class FeedHealthList(BaseModel):
     feeds: list[FeedHealth]
     generated_at: datetime
+
+
+class ThresholdUpdate(BaseModel):
+    """Status engine thresholds editable on `/admin` (APEX Administrator scheme)."""
+
+    stale_after_minutes: int = Field(ge=1, le=1440)
+    delay_yellow_minutes: int = Field(ge=1, le=1440)
+    delay_red_minutes: int = Field(ge=1, le=2880)
+    queue_yellow_vessels: int = Field(ge=1, le=100)
+
+
+class Thresholds(ThresholdUpdate):
+    source: Literal["settings", "db", "fixtures"] = "settings"
+    updated_at: datetime | None = None
+    updated_by: str | None = None
 
 
 class AxeRouteResult(BaseModel):

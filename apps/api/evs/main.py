@@ -1,9 +1,16 @@
+import logging
+from collections.abc import AsyncIterator
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from evs import __version__
+from evs.repositories import install
 from evs.routers import api_router
 from evs.settings import get_settings
+
+logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 
 DESCRIPTION = """USACE Enterprise Visibility Suite API.
 
@@ -12,15 +19,27 @@ traceability matrix (legacy/traceability.csv) can be regenerated from the contra
 """
 
 
+@asynccontextmanager
+async def lifespan(app: FastAPI) -> AsyncIterator[None]:
+    repos = await install(app, get_settings())
+    try:
+        yield
+    finally:
+        await repos.close()
+
+
 def create_app() -> FastAPI:
     settings = get_settings()
     app = FastAPI(
         title="EVS API",
+        lifespan=lifespan,
         version=__version__,
         description=DESCRIPTION,
         openapi_version="3.1.0",
         openapi_tags=[
-            {"name": "portfolio", "description": "Programs and P2 projects"},
+            {"name": "enterprise", "description": "Enterprise KPI tiles"},
+            {"name": "portfolio", "description": "Programs and P2 projects, Strategic Planner write slice"},
+            {"name": "schedule", "description": "Milestones and slip"},
             {"name": "financial", "description": "CEFMS execution (synthetic)"},
             {"name": "workforce", "description": "EMS labor (synthetic)"},
             {"name": "facilities", "description": "BUILDER SMS condition (synthetic)"},

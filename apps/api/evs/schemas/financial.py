@@ -1,8 +1,9 @@
 from datetime import date
+from typing import Literal
 
 from pydantic import BaseModel
 
-from evs.schemas.common import AsOf
+from evs.schemas.common import AsOf, Page
 
 
 class ExecutionPoint(BaseModel):
@@ -41,6 +42,7 @@ class LaborRow(BaseModel):
 class LaborSummary(BaseModel):
     fiscal_year: int
     rows: list[LaborRow]
+    page: Page | None = None
     as_of: AsOf
 
 
@@ -58,4 +60,51 @@ class FacilityRow(BaseModel):
 
 class FacilitySummary(BaseModel):
     rows: list[FacilityRow]
+    page: Page | None = None
+    as_of: AsOf
+
+
+class ProgramVariance(BaseModel):
+    program_code: str
+    name: str
+    business_line: str
+    division: str
+    funded_amount: float
+    obligated_amount: float
+    plan_to_date: float
+    variance_amount: float
+    variance_pct: float
+
+
+class VarianceByProgram(BaseModel):
+    """Diverging variance bars on `/programs` and `/financial`."""
+
+    fiscal_year: int
+    rows: list[ProgramVariance]
+    as_of: AsOf
+
+
+class CiBucket(BaseModel):
+    label: str
+    ci_min: float
+    ci_max: float
+    band: Literal["good", "fair", "poor"]
+    count: int
+    deficiency_cost: float
+
+
+class CiByInstallation(BaseModel):
+    installation: str
+    district: str
+    component_count: int
+    avg_ci: float
+    min_ci: float
+    deficiency_cost: float
+
+
+class CiDistribution(BaseModel):
+    """Histogram with BUILDER threshold bands (good 70 to 100, fair 40 to 69, poor 0 to 39)."""
+
+    buckets: list[CiBucket]
+    by_installation: list[CiByInstallation]
     as_of: AsOf

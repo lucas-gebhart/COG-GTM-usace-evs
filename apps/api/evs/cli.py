@@ -17,6 +17,16 @@ def migrate() -> None:
 
 
 @app.command()
+def seed(assumed_schema: bool = True) -> None:
+    """Load apps/api/fixtures into the synth and evs tables (WP2 replaces this with generators)."""
+    from evs.db.seed import run
+    from evs.settings import get_settings
+
+    for table, n in run(get_settings().database_url_sync, create_assumed_schema=assumed_schema).items():
+        typer.echo(f"seeded {table}: {n}")
+
+
+@app.command()
 def openapi(out: Path = Path("../../packages/contract/openapi.json")) -> None:
     """Write the OpenAPI 3.1 contract consumed by the web client generator."""
     from evs.main import create_app

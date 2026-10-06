@@ -29,3 +29,10 @@ class KpiTile(BaseModel):
     delta: float | None = None
     delta_label: str | None = None
     as_of: AsOf
+
+
+class KpiList(BaseModel):
+    """Enterprise overview tiles (route `/`)."""
+
+    tiles: list[KpiTile]
+    as_of: AsOf

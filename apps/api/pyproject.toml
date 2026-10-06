@@ -40,4 +40,5 @@ select = ["E", "F", "I", "B", "UP"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
+markers = ["db: needs a reachable PostGIS (skipped offline, required in the CI api-db job)"]
 testpaths = ["tests"]

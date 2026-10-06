@@ -29,14 +29,122 @@
         }
       }
     },
+    "/api/v1/enterprise/kpis": {
+      "get": {
+        "tags": [
+          "enterprise"
+        ],
+        "summary": "Enterprise KPI tiles",
+        "operationId": "kpis_api_v1_enterprise_kpis_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/KpiList"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-page": "1",
+        "x-apex-authorization": "Authenticated User"
+      }
+    },
     "/api/v1/programs": {
       "get": {
         "tags": [
           "portfolio"
         ],
-        "summary": "List Programs",
+        "summary": "Programs (APEX Initiatives IR)",
+        "description": "Interactive Report parameters: repeatable `filter=column:op:value` (op: eq, ne, gt, gte, lt, lte, like, in), `q` full text, `sort=-col,col2`, `limit`, `offset`, `format=csv`. Columns: program_code, name, business_line, division, funded_amount, obligated_amount, expended_amount, variance_pct, project_count, schedule_health.",
         "operationId": "list_programs_api_v1_programs_get",
         "parameters": [
+          {
+            "name": "division",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Division"
+            }
+          },
+          {
+            "name": "business_line",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Business Line"
+            }
+          },
+          {
+            "name": "schedule_health",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Schedule Health"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Comma separated columns, `-` prefix for descending",
+              "title": "Sort"
+            },
+            "description": "Comma separated columns, `-` prefix for descending"
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Free text search across text columns (IR search bar)",
+              "title": "Q"
+            },
+            "description": "Free text search across text columns (IR search bar)"
+          },
           {
             "name": "limit",
             "in": "query",
@@ -44,6 +152,7 @@
             "schema": {
               "type": "integer",
               "maximum": 500,
+              "minimum": 1,
               "default": 50,
               "title": "Limit"
             }
@@ -54,9 +163,23 @@
             "required": false,
             "schema": {
               "type": "integer",
+              "minimum": 0,
               "default": 0,
               "title": "Offset"
             }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^(json|csv)$",
+              "description": "`csv` streams the filtered rows",
+              "default": "json",
+              "title": "Format"
+            },
+            "description": "`csv` streams the filtered rows"
           }
         ],
         "responses": {
@@ -67,7 +190,8 @@
                 "schema": {
                   "$ref": "#/components/schemas/ProgramList"
                 }
-              }
+              },
+              "text/csv": {}
             }
           },
           "422": {
@@ -81,7 +205,8 @@
             }
           }
         },
-        "x-apex-page": "20"
+        "x-apex-page": "20",
+        "x-apex-authorization": "Authenticated User"
       }
     },
     "/api/v1/projects": {
@@ -89,7 +214,8 @@
         "tags": [
           "portfolio"
         ],
-        "summary": "List Projects",
+        "summary": "Projects (APEX Projects IR)",
+        "description": "Interactive Report parameters: repeatable `filter=column:op:value` (op: eq, ne, gt, gte, lt, lte, like, in), `q` full text, `sort=-col,col2`, `limit`, `offset`, `format=csv`. Columns: p2_project_no, name, program_code, district, division, business_line, phase, pdt_lead, baseline_finish, current_finish, pct_complete, funded_amount, obligated_amount, expended_amount, schedule_health.",
         "operationId": "list_projects_api_v1_projects_get",
         "parameters": [
           {
@@ -125,12 +251,131 @@
             }
           },
           {
+            "name": "division",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Division"
+            }
+          },
+          {
+            "name": "business_line",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Business Line"
+            }
+          },
+          {
+            "name": "phase",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Phase"
+            }
+          },
+          {
+            "name": "schedule_health",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Schedule Health"
+            }
+          },
+          {
+            "name": "min_pct_complete",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "maximum": 100,
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Min Pct Complete"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Comma separated columns, `-` prefix for descending",
+              "title": "Sort"
+            },
+            "description": "Comma separated columns, `-` prefix for descending"
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Free text search across text columns (IR search bar)",
+              "title": "Q"
+            },
+            "description": "Free text search across text columns (IR search bar)"
+          },
+          {
             "name": "limit",
             "in": "query",
             "required": false,
             "schema": {
               "type": "integer",
               "maximum": 500,
+              "minimum": 1,
               "default": 50,
               "title": "Limit"
             }
@@ -141,9 +386,23 @@
             "required": false,
             "schema": {
               "type": "integer",
+              "minimum": 0,
               "default": 0,
               "title": "Offset"
             }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^(json|csv)$",
+              "description": "`csv` streams the filtered rows",
+              "default": "json",
+              "title": "Format"
+            },
+            "description": "`csv` streams the filtered rows"
           }
         ],
         "responses": {
@@ -154,7 +413,8 @@
                 "schema": {
                   "$ref": "#/components/schemas/ProjectList"
                 }
-              }
+              },
+              "text/csv": {}
             }
           },
           "422": {
@@ -168,7 +428,8 @@
             }
           }
         },
-        "x-apex-page": "30"
+        "x-apex-page": "30",
+        "x-apex-authorization": "Authenticated User"
       }
     },
     "/api/v1/projects/{p2_project_no}": {
@@ -176,7 +437,7 @@
         "tags": [
           "portfolio"
         ],
-        "summary": "Get Project",
+        "summary": "Project detail (APEX Project Details)",
         "operationId": "get_project_api_v1_projects__p2_project_no__get",
         "parameters": [
           {
@@ -211,7 +472,462 @@
             }
           }
         },
-        "x-apex-page": "31"
+        "x-apex-page": "3",
+        "x-apex-process": "log",
+        "x-apex-authorization": "Authenticated User"
+      }
+    },
+    "/api/v1/projects/{p2_project_no}/status": {
+      "put": {
+        "tags": [
+          "portfolio"
+        ],
+        "summary": "Update project status (APEX Project form)",
+        "operationId": "put_project_status_api_v1_projects__p2_project_no__status_put",
+        "parameters": [
+          {
+            "name": "p2_project_no",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "P2 Project No"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectStatusUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectStatusResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-page": "24",
+        "x-apex-process": "Process form Project",
+        "x-apex-authorization": "Contributor"
+      }
+    },
+    "/api/v1/projects/{p2_project_no}/kanban/move": {
+      "post": {
+        "tags": [
+          "portfolio"
+        ],
+        "summary": "Move a Kanban card (APEX Kanban Board drop)",
+        "operationId": "kanban_move_api_v1_projects__p2_project_no__kanban_move_post",
+        "parameters": [
+          {
+            "name": "p2_project_no",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "P2 Project No"
+            }
+          },
+          {
+            "name": "column_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "maximum": 5,
+              "minimum": 1,
+              "description": "Target Kanban column (1 to 5)",
+              "title": "Column Id"
+            },
+            "description": "Target Kanban column (1 to 5)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectStatusResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-page": "4",
+        "x-apex-process": "Drop Item",
+        "x-apex-authorization": "Contributor"
+      }
+    },
+    "/api/v1/projects/{p2_project_no}/archive": {
+      "post": {
+        "tags": [
+          "portfolio"
+        ],
+        "summary": "Archive or un-archive a project",
+        "operationId": "archive_api_v1_projects__p2_project_no__archive_post",
+        "parameters": [
+          {
+            "name": "p2_project_no",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "P2 Project No"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectArchiveUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectStatusResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-page": "47",
+        "x-apex-process": "Archive project; unArchive project (page 52)",
+        "x-apex-authorization": "Contributor"
+      }
+    },
+    "/api/v1/projects/{p2_project_no}/milestones/{code}": {
+      "put": {
+        "tags": [
+          "portfolio"
+        ],
+        "summary": "Update a milestone (APEX Milestone form)",
+        "operationId": "put_milestone_api_v1_projects__p2_project_no__milestones__code__put",
+        "parameters": [
+          {
+            "name": "p2_project_no",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "P2 Project No"
+            }
+          },
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Code"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MilestoneUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Milestone"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-page": "508",
+        "x-apex-process": "Process form",
+        "x-apex-authorization": "Contributor"
+      }
+    },
+    "/api/v1/projects/{p2_project_no}/history": {
+      "get": {
+        "tags": [
+          "portfolio"
+        ],
+        "summary": "Project change history",
+        "operationId": "history_api_v1_projects__p2_project_no__history_get",
+        "parameters": [
+          {
+            "name": "p2_project_no",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "P2 Project No"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectHistoryList"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-page": "64",
+        "x-apex-authorization": "Authenticated User"
+      }
+    },
+    "/api/v1/schedule/milestones": {
+      "get": {
+        "tags": [
+          "schedule"
+        ],
+        "summary": "Milestones with slip (status=slipped for the late list)",
+        "operationId": "milestones_api_v1_schedule_milestones_get",
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "complete",
+                    "scheduled",
+                    "slipped"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Status"
+            }
+          },
+          {
+            "name": "district",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "District"
+            }
+          },
+          {
+            "name": "program_code",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Program Code"
+            }
+          },
+          {
+            "name": "p2_project_no",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "P2 Project No"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Comma separated columns, `-` prefix for descending",
+              "title": "Sort"
+            },
+            "description": "Comma separated columns, `-` prefix for descending"
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Free text search across text columns (IR search bar)",
+              "title": "Q"
+            },
+            "description": "Free text search across text columns (IR search bar)"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 500,
+              "minimum": 1,
+              "default": 50,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "Offset"
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^(json|csv)$",
+              "description": "`csv` streams the filtered rows",
+              "default": "json",
+              "title": "Format"
+            },
+            "description": "`csv` streams the filtered rows"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MilestoneList"
+                }
+              },
+              "text/csv": {}
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-page": "4",
+        "x-apex-authorization": "Authenticated User"
       }
     },
     "/api/v1/financial/summary": {
@@ -255,16 +971,18 @@
             }
           }
         },
-        "x-apex-page": "1"
+        "x-apex-page": "1",
+        "x-apex-authorization": "Authenticated User"
       }
     },
-    "/api/v1/workforce/labor": {
+    "/api/v1/financial/variance-by-program": {
       "get": {
         "tags": [
-          "workforce"
+          "financial"
         ],
-        "summary": "Labor",
-        "operationId": "labor_api_v1_workforce_labor_get",
+        "summary": "Obligation variance against plan to date, by program",
+        "description": "Plan to date is each program's funded amount scaled by the enterprise plan pace at the\nlatest CEFMS period (plan_cumulative at that period over the full-year plan).",
+        "operationId": "variance_by_program_api_v1_financial_variance_by_program_get",
         "parameters": [
           {
             "name": "fiscal_year",
@@ -283,7 +1001,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/LaborSummary"
+                  "$ref": "#/components/schemas/VarianceByProgram"
                 }
               }
             }
@@ -299,7 +1017,159 @@
             }
           }
         },
-        "x-apex-page": "40"
+        "x-apex-page": "1",
+        "x-apex-authorization": "Authenticated User"
+      }
+    },
+    "/api/v1/workforce/labor": {
+      "get": {
+        "tags": [
+          "workforce"
+        ],
+        "summary": "EMS labor by district and pay period (APEX People IR)",
+        "description": "Interactive Report parameters as on /projects. Columns: district, pay_period, hours_plan, hours_regular, hours_overtime, labor_cost.",
+        "operationId": "labor_api_v1_workforce_labor_get",
+        "parameters": [
+          {
+            "name": "fiscal_year",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 2026,
+              "title": "Fiscal Year"
+            }
+          },
+          {
+            "name": "district",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "District"
+            }
+          },
+          {
+            "name": "pay_period",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Pay Period"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Comma separated columns, `-` prefix for descending",
+              "title": "Sort"
+            },
+            "description": "Comma separated columns, `-` prefix for descending"
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Free text search across text columns (IR search bar)",
+              "title": "Q"
+            },
+            "description": "Free text search across text columns (IR search bar)"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 500,
+              "minimum": 1,
+              "default": 50,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "Offset"
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^(json|csv)$",
+              "description": "`csv` streams the filtered rows",
+              "default": "json",
+              "title": "Format"
+            },
+            "description": "`csv` streams the filtered rows"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LaborSummary"
+                }
+              },
+              "text/csv": {}
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-page": "40",
+        "x-apex-authorization": "Authenticated User"
       }
     },
     "/api/v1/facilities/condition": {
@@ -307,8 +1177,151 @@
         "tags": [
           "facilities"
         ],
-        "summary": "Condition",
+        "summary": "BUILDER component condition rows",
+        "description": "Interactive Report parameters as on /projects. Columns: building_id, installation, district, uniformat_section, component_type, ci, bci, deficiency_cost, work_plan_year.",
         "operationId": "condition_api_v1_facilities_condition_get",
+        "parameters": [
+          {
+            "name": "district",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "District"
+            }
+          },
+          {
+            "name": "installation",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Installation"
+            }
+          },
+          {
+            "name": "component_type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Component Type"
+            }
+          },
+          {
+            "name": "max_ci",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "maximum": 100,
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Only components at or below this CI",
+              "title": "Max Ci"
+            },
+            "description": "Only components at or below this CI"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Comma separated columns, `-` prefix for descending",
+              "title": "Sort"
+            },
+            "description": "Comma separated columns, `-` prefix for descending"
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Free text search across text columns (IR search bar)",
+              "title": "Q"
+            },
+            "description": "Free text search across text columns (IR search bar)"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 500,
+              "minimum": 1,
+              "default": 50,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "Offset"
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^(json|csv)$",
+              "description": "`csv` streams the filtered rows",
+              "default": "json",
+              "title": "Format"
+            },
+            "description": "`csv` streams the filtered rows"
+          }
+        ],
         "responses": {
           "200": {
             "description": "Successful Response",
@@ -317,10 +1330,44 @@
                 "schema": {
                   "$ref": "#/components/schemas/FacilitySummary"
                 }
+              },
+              "text/csv": {}
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
               }
             }
           }
-        }
+        },
+        "x-apex-authorization": "Authenticated User"
+      }
+    },
+    "/api/v1/facilities/ci-distribution": {
+      "get": {
+        "tags": [
+          "facilities"
+        ],
+        "summary": "Condition index histogram and worst installations",
+        "operationId": "ci_distribution_api_v1_facilities_ci_distribution_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CiDistribution"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-authorization": "Authenticated User"
       }
     },
     "/api/v1/public/locks": {
@@ -369,7 +1416,8 @@
               }
             }
           }
-        }
+        },
+        "x-apex-authorization": "none"
       }
     },
     "/api/v1/public/locks/{lock_id}": {
@@ -411,7 +1459,8 @@
               }
             }
           }
-        }
+        },
+        "x-apex-authorization": "none"
       }
     },
     "/api/v1/public/locks/stream/events": {
@@ -430,7 +1479,8 @@
               }
             }
           }
-        }
+        },
+        "x-apex-authorization": "none"
       }
     },
     "/api/v1/public/srp/coverage": {
@@ -451,7 +1501,8 @@
               }
             }
           }
-        }
+        },
+        "x-apex-authorization": "none"
       }
     },
     "/api/v1/accessibility/readout": {
@@ -510,14 +1561,53 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "additionalProperties": true,
-                  "type": "object",
-                  "title": "Response Thresholds Api V1 Admin Thresholds Get"
+                  "$ref": "#/components/schemas/Thresholds"
                 }
               }
             }
           }
-        }
+        },
+        "x-apex-authorization": "Administrator"
+      },
+      "put": {
+        "tags": [
+          "admin"
+        ],
+        "summary": "Persist status engine thresholds",
+        "operationId": "put_thresholds_api_v1_admin_thresholds_put",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThresholdUpdate"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Thresholds"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "x-apex-authorization": "Administrator"
       }
     }
   },
@@ -706,6 +1796,116 @@
         ],
         "title": "AxeRouteResult"
       },
+      "CiBucket": {
+        "properties": {
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "ci_min": {
+            "type": "number",
+            "title": "Ci Min"
+          },
+          "ci_max": {
+            "type": "number",
+            "title": "Ci Max"
+          },
+          "band": {
+            "type": "string",
+            "enum": [
+              "good",
+              "fair",
+              "poor"
+            ],
+            "title": "Band"
+          },
+          "count": {
+            "type": "integer",
+            "title": "Count"
+          },
+          "deficiency_cost": {
+            "type": "number",
+            "title": "Deficiency Cost"
+          }
+        },
+        "type": "object",
+        "required": [
+          "label",
+          "ci_min",
+          "ci_max",
+          "band",
+          "count",
+          "deficiency_cost"
+        ],
+        "title": "CiBucket"
+      },
+      "CiByInstallation": {
+        "properties": {
+          "installation": {
+            "type": "string",
+            "title": "Installation"
+          },
+          "district": {
+            "type": "string",
+            "title": "District"
+          },
+          "component_count": {
+            "type": "integer",
+            "title": "Component Count"
+          },
+          "avg_ci": {
+            "type": "number",
+            "title": "Avg Ci"
+          },
+          "min_ci": {
+            "type": "number",
+            "title": "Min Ci"
+          },
+          "deficiency_cost": {
+            "type": "number",
+            "title": "Deficiency Cost"
+          }
+        },
+        "type": "object",
+        "required": [
+          "installation",
+          "district",
+          "component_count",
+          "avg_ci",
+          "min_ci",
+          "deficiency_cost"
+        ],
+        "title": "CiByInstallation"
+      },
+      "CiDistribution": {
+        "properties": {
+          "buckets": {
+            "items": {
+              "$ref": "#/components/schemas/CiBucket"
+            },
+            "type": "array",
+            "title": "Buckets"
+          },
+          "by_installation": {
+            "items": {
+              "$ref": "#/components/schemas/CiByInstallation"
+            },
+            "type": "array",
+            "title": "By Installation"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "buckets",
+          "by_installation",
+          "as_of"
+        ],
+        "title": "CiDistribution",
+        "description": "Histogram with BUILDER threshold bands (good 70 to 100, fair 40 to 69, poor 0 to 39)."
+      },
       "CriterionStatus": {
         "properties": {
           "criterion": {
@@ -850,6 +2050,16 @@
             },
             "type": "array",
             "title": "Rows"
+          },
+          "page": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Page"
+              },
+              {
+                "type": "null"
+              }
+            ]
           },
           "as_of": {
             "$ref": "#/components/schemas/AsOf"
@@ -1002,6 +2212,105 @@
         "type": "object",
         "title": "HTTPValidationError"
       },
+      "KanbanColumn": {
+        "properties": {
+          "column_id": {
+            "type": "integer",
+            "title": "Column Id"
+          },
+          "heading": {
+            "type": "string",
+            "title": "Heading"
+          },
+          "pct_complete_range": {
+            "type": "string",
+            "title": "Pct Complete Range"
+          }
+        },
+        "type": "object",
+        "required": [
+          "column_id",
+          "heading",
+          "pct_complete_range"
+        ],
+        "title": "KanbanColumn",
+        "description": "Port of the Kanban Board column derivation (APEX page 4 region SQL)."
+      },
+      "KpiList": {
+        "properties": {
+          "tiles": {
+            "items": {
+              "$ref": "#/components/schemas/KpiTile"
+            },
+            "type": "array",
+            "title": "Tiles"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "tiles",
+          "as_of"
+        ],
+        "title": "KpiList",
+        "description": "Enterprise overview tiles (route `/`)."
+      },
+      "KpiTile": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "value": {
+            "type": "number",
+            "title": "Value"
+          },
+          "unit": {
+            "type": "string",
+            "title": "Unit",
+            "default": ""
+          },
+          "delta": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Delta"
+          },
+          "delta_label": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Delta Label"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "value",
+          "as_of"
+        ],
+        "title": "KpiTile"
+      },
       "LaborRow": {
         "properties": {
           "district": {
@@ -1052,6 +2361,16 @@
             },
             "type": "array",
             "title": "Rows"
+          },
+          "page": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Page"
+              },
+              {
+                "type": "null"
+              }
+            ]
           },
           "as_of": {
             "$ref": "#/components/schemas/AsOf"
@@ -1651,6 +2970,99 @@
         ],
         "title": "Milestone"
       },
+      "MilestoneList": {
+        "properties": {
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/ProjectMilestone"
+            },
+            "type": "array",
+            "title": "Items"
+          },
+          "page": {
+            "$ref": "#/components/schemas/Page"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "items",
+          "page",
+          "as_of"
+        ],
+        "title": "MilestoneList"
+      },
+      "MilestoneUpdate": {
+        "properties": {
+          "current_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Current Date"
+          },
+          "actual_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Actual Date"
+          },
+          "status": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "complete",
+                  "scheduled",
+                  "slipped"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Status"
+          },
+          "owner": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Owner"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Description"
+          }
+        },
+        "type": "object",
+        "title": "MilestoneUpdate",
+        "description": "Body of `PUT /projects/{p2_project_no}/milestones/{code}` (APEX page 508 Milestone form)."
+      },
       "Page": {
         "properties": {
           "total": {
@@ -1760,6 +3172,59 @@
           "as_of"
         ],
         "title": "ProgramList"
+      },
+      "ProgramVariance": {
+        "properties": {
+          "program_code": {
+            "type": "string",
+            "title": "Program Code"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "business_line": {
+            "type": "string",
+            "title": "Business Line"
+          },
+          "division": {
+            "type": "string",
+            "title": "Division"
+          },
+          "funded_amount": {
+            "type": "number",
+            "title": "Funded Amount"
+          },
+          "obligated_amount": {
+            "type": "number",
+            "title": "Obligated Amount"
+          },
+          "plan_to_date": {
+            "type": "number",
+            "title": "Plan To Date"
+          },
+          "variance_amount": {
+            "type": "number",
+            "title": "Variance Amount"
+          },
+          "variance_pct": {
+            "type": "number",
+            "title": "Variance Pct"
+          }
+        },
+        "type": "object",
+        "required": [
+          "program_code",
+          "name",
+          "business_line",
+          "division",
+          "funded_amount",
+          "obligated_amount",
+          "plan_to_date",
+          "variance_amount",
+          "variance_pct"
+        ],
+        "title": "ProgramVariance"
       },
       "Project": {
         "properties": {
@@ -1873,6 +3338,132 @@
         ],
         "title": "Project"
       },
+      "ProjectArchiveUpdate": {
+        "properties": {
+          "archived": {
+            "type": "boolean",
+            "title": "Archived"
+          },
+          "reason": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reason"
+          }
+        },
+        "type": "object",
+        "required": [
+          "archived"
+        ],
+        "title": "ProjectArchiveUpdate",
+        "description": "Body of `POST /projects/{p2_project_no}/archive` (APEX pages 47 and 52)."
+      },
+      "ProjectHistoryEvent": {
+        "properties": {
+          "id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Id"
+          },
+          "p2_project_no": {
+            "type": "string",
+            "title": "P2 Project No"
+          },
+          "attribute": {
+            "type": "string",
+            "title": "Attribute"
+          },
+          "change_type": {
+            "type": "string",
+            "enum": [
+              "CREATE",
+              "UPDATE",
+              "DELETE",
+              "ARCHIVE",
+              "UNARCHIVE",
+              "VIEW"
+            ],
+            "title": "Change Type"
+          },
+          "old_value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Old Value"
+          },
+          "new_value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "New Value"
+          },
+          "changed_on": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Changed On"
+          },
+          "changed_by": {
+            "type": "string",
+            "title": "Changed By"
+          }
+        },
+        "type": "object",
+        "required": [
+          "p2_project_no",
+          "attribute",
+          "change_type",
+          "changed_on",
+          "changed_by"
+        ],
+        "title": "ProjectHistoryEvent",
+        "description": "One row of the change history (APEX page 64 Project Change History, sp_project_history)."
+      },
+      "ProjectHistoryList": {
+        "properties": {
+          "p2_project_no": {
+            "type": "string",
+            "title": "P2 Project No"
+          },
+          "events": {
+            "items": {
+              "$ref": "#/components/schemas/ProjectHistoryEvent"
+            },
+            "type": "array",
+            "title": "Events"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "p2_project_no",
+          "events",
+          "as_of"
+        ],
+        "title": "ProjectHistoryList"
+      },
       "ProjectList": {
         "properties": {
           "items": {
@@ -1896,6 +3487,225 @@
           "as_of"
         ],
         "title": "ProjectList"
+      },
+      "ProjectMilestone": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "baseline_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Baseline Date"
+          },
+          "current_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Current Date"
+          },
+          "actual_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Actual Date"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "complete",
+              "scheduled",
+              "slipped"
+            ],
+            "title": "Status"
+          },
+          "p2_project_no": {
+            "type": "string",
+            "title": "P2 Project No"
+          },
+          "project_name": {
+            "type": "string",
+            "title": "Project Name"
+          },
+          "program_code": {
+            "type": "string",
+            "title": "Program Code"
+          },
+          "district": {
+            "type": "string",
+            "title": "District"
+          },
+          "slip_days": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Slip Days"
+          }
+        },
+        "type": "object",
+        "required": [
+          "code",
+          "name",
+          "baseline_date",
+          "current_date",
+          "actual_date",
+          "status",
+          "p2_project_no",
+          "project_name",
+          "program_code",
+          "district"
+        ],
+        "title": "ProjectMilestone",
+        "description": "Milestone row joined to its project, for the schedule page (route `/schedule`)."
+      },
+      "ProjectStatusResult": {
+        "properties": {
+          "project": {
+            "$ref": "#/components/schemas/Project"
+          },
+          "kanban": {
+            "$ref": "#/components/schemas/KanbanColumn"
+          },
+          "archived": {
+            "type": "boolean",
+            "title": "Archived",
+            "default": false
+          },
+          "history": {
+            "items": {
+              "$ref": "#/components/schemas/ProjectHistoryEvent"
+            },
+            "type": "array",
+            "title": "History"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "project",
+          "kanban",
+          "history",
+          "as_of"
+        ],
+        "title": "ProjectStatusResult"
+      },
+      "ProjectStatusUpdate": {
+        "properties": {
+          "pct_complete": {
+            "type": "integer",
+            "maximum": 100.0,
+            "minimum": 0.0,
+            "title": "Pct Complete",
+            "description": "Must be a multiple of 10 (sp_projects_pct_complete_ck)"
+          },
+          "phase": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Phase"
+          },
+          "current_finish": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Current Finish",
+            "description": "Target complete; required at 50 percent or more"
+          },
+          "status_scale": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 1,
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Status Scale"
+          },
+          "link_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Link Url"
+          },
+          "link_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Link Name"
+          },
+          "note": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Note"
+          }
+        },
+        "type": "object",
+        "required": [
+          "pct_complete"
+        ],
+        "title": "ProjectStatusUpdate",
+        "description": "Body of `PUT /projects/{p2_project_no}/status` (APEX page 24 Project form)."
       },
       "SrpCoverage": {
         "properties": {
@@ -2101,6 +3911,112 @@
         ],
         "title": "SrpSnapshot"
       },
+      "ThresholdUpdate": {
+        "properties": {
+          "stale_after_minutes": {
+            "type": "integer",
+            "maximum": 1440.0,
+            "minimum": 1.0,
+            "title": "Stale After Minutes"
+          },
+          "delay_yellow_minutes": {
+            "type": "integer",
+            "maximum": 1440.0,
+            "minimum": 1.0,
+            "title": "Delay Yellow Minutes"
+          },
+          "delay_red_minutes": {
+            "type": "integer",
+            "maximum": 2880.0,
+            "minimum": 1.0,
+            "title": "Delay Red Minutes"
+          },
+          "queue_yellow_vessels": {
+            "type": "integer",
+            "maximum": 100.0,
+            "minimum": 1.0,
+            "title": "Queue Yellow Vessels"
+          }
+        },
+        "type": "object",
+        "required": [
+          "stale_after_minutes",
+          "delay_yellow_minutes",
+          "delay_red_minutes",
+          "queue_yellow_vessels"
+        ],
+        "title": "ThresholdUpdate",
+        "description": "Status engine thresholds editable on `/admin` (APEX Administrator scheme)."
+      },
+      "Thresholds": {
+        "properties": {
+          "stale_after_minutes": {
+            "type": "integer",
+            "maximum": 1440.0,
+            "minimum": 1.0,
+            "title": "Stale After Minutes"
+          },
+          "delay_yellow_minutes": {
+            "type": "integer",
+            "maximum": 1440.0,
+            "minimum": 1.0,
+            "title": "Delay Yellow Minutes"
+          },
+          "delay_red_minutes": {
+            "type": "integer",
+            "maximum": 2880.0,
+            "minimum": 1.0,
+            "title": "Delay Red Minutes"
+          },
+          "queue_yellow_vessels": {
+            "type": "integer",
+            "maximum": 100.0,
+            "minimum": 1.0,
+            "title": "Queue Yellow Vessels"
+          },
+          "source": {
+            "type": "string",
+            "enum": [
+              "settings",
+              "db",
+              "fixtures"
+            ],
+            "title": "Source",
+            "default": "settings"
+          },
+          "updated_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Updated At"
+          },
+          "updated_by": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Updated By"
+          }
+        },
+        "type": "object",
+        "required": [
+          "stale_after_minutes",
+          "delay_yellow_minutes",
+          "delay_red_minutes",
+          "queue_yellow_vessels"
+        ],
+        "title": "Thresholds"
+      },
       "ValidationError": {
         "properties": {
           "loc": {
@@ -2140,13 +4056,47 @@
           "type"
         ],
         "title": "ValidationError"
+      },
+      "VarianceByProgram": {
+        "properties": {
+          "fiscal_year": {
+            "type": "integer",
+            "title": "Fiscal Year"
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/ProgramVariance"
+            },
+            "type": "array",
+            "title": "Rows"
+          },
+          "as_of": {
+            "$ref": "#/components/schemas/AsOf"
+          }
+        },
+        "type": "object",
+        "required": [
+          "fiscal_year",
+          "rows",
+          "as_of"
+        ],
+        "title": "VarianceByProgram",
+        "description": "Diverging variance bars on `/programs` and `/financial`."
       }
     }
   },
   "tags": [
     {
+      "name": "enterprise",
+      "description": "Enterprise KPI tiles"
+    },
+    {
       "name": "portfolio",
-      "description": "Programs and P2 projects"
+      "description": "Programs and P2 projects, Strategic Planner write slice"
+    },
+    {
+      "name": "schedule",
+      "description": "Milestones and slip"
     },
     {
       "name": "financial",

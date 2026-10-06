@@ -161,3 +161,15 @@ jobs:
       - run: pnpm test:storybook
       - uses: actions/upload-artifact@v4
         with: { name: storybook-static, path: apps/web/storybook-static }
+
+  terraform:
+    # Code only: the GovCloud reference architecture is validated, never planned or applied, in CI.
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: infra/terraform-govcloud } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+        with: { terraform_version: "1.9.8" }
+      - run: terraform fmt -check -recursive
+      - run: terraform init -backend=false -input=false
+      - run: terraform validate

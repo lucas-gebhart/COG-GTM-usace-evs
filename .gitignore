@@ -16,3 +16,6 @@ apps/web/public/uswds/
 db/ora2pg/*.zip
 apps/web/storybook-static/
 .lighthouseci/
+apps/web/public/tiles/*.pmtiles
+.terraform/
+*.tfstate*

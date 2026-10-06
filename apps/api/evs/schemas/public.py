@@ -18,6 +18,8 @@ class LockSummary(BaseModel):
     lock_no: str
     river_mile: float | None
     district: str | None
+    division: str | None = Field(default=None, description="USACE division code, e.g. LRD")
+    state: str | None = None
     chambers: int | None
     latitude: float | None
     longitude: float | None
@@ -40,6 +42,17 @@ class LockList(BaseModel):
     as_of: AsOf
 
 
+class StatusHistoryPoint(BaseModel):
+    """One status engine evaluation, newest last; the detail panel draws the 24-hour history from these."""
+
+    evaluated_at: datetime
+    status: LockStatus
+    status_reason: str
+    rule_no: int | None = None
+    source: str
+    freshness: str
+
+
 class LockDetail(LockSummary):
     lift_ft: float | None = None
     chamber_dimensions: str | None = None
@@ -53,6 +66,12 @@ class LockDetail(LockSummary):
         default_factory=list, description="Latest NOAA NWPS and USGS NWIS readings for the lock"
     )
     status_inputs: dict = Field(default_factory=dict, description="inputs_used by the status engine")
+    history: list[StatusHistoryPoint] = Field(
+        default_factory=list, description="Status evaluations from the last 24 hours, oldest first"
+    )
+    ntni_notices: list[dict] = Field(
+        default_factory=list, description="Notices to Navigation Interests that name this lock"
+    )
 
 
 class SrpSnapshot(BaseModel):
@@ -77,8 +96,21 @@ class SrpSite(BaseModel):
     source_url: str
 
 
+class SrpCitation(BaseModel):
+    """Provenance for one headline figure. The UI shows source and year next to every number."""
+
+    figure: str = Field(description="Key in `headline`, e.g. river_systems")
+    label: str
+    value_text: str = Field(description="The figure as the source states it, e.g. 'nearly 15,000 miles'")
+    source: str
+    source_url: str
+    year: int
+    note: str | None = None
+
+
 class SrpCoverage(BaseModel):
     snapshots: list[SrpSnapshot]
     sites: list[SrpSite]
     headline: dict[str, float | int | str]
+    citations: list[SrpCitation] = Field(default_factory=list)
     as_of: AsOf

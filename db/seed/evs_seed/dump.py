@@ -15,7 +15,7 @@ import psycopg
 from psycopg.rows import dict_row
 
 from evs_seed import FISCAL_YEAR, NOW
-from evs_seed.public import srp_rows
+from evs_seed.public import srp_citations, srp_rows
 from evs_seed.synth import APPROPRIATIONS
 
 SYNTH_AS_OF = {
@@ -121,7 +121,7 @@ def locks(conn) -> dict:
     rows = _rows(
         conn,
         """
-        SELECT lock_id, river_code, river_name, lock_name, lock_no, river_mile, district, chambers, latitude, longitude,
+        SELECT lock_id, river_code, river_name, lock_name, lock_no, river_mile, district, division, state, chambers, latitude, longitude,
                status, status_reason, vessels_queued, avg_delay_4h_min, avg_delay_24h_min, NULL::timestamptz AS last_lockage_at,
                gauge_stage_ft, NULL::text AS flood_category, active_stoppages, source_as_of, eval_source, freshness,
                lift_ft, chamber_dimensions, year_opened, owner, operator, inputs_used
@@ -168,6 +168,7 @@ def srp(conn) -> dict:
         "snapshots": snapshots,
         "sites": sites,
         "headline": headline,
+        "citations": srp_citations(),
         "as_of": {
             "source_as_of": "2026-10-06T00:00:00+00:00",
             "fetched_at": NOW.isoformat(),

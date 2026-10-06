@@ -11,6 +11,7 @@ export const routes = [
   { path: "/facilities", title: "Facilities (BUILDER SMS)", apexPage: null },
   { path: "/public/srp", title: "Sustainable Rivers Program", apexPage: null },
   { path: "/public/locks", title: "Lock status by river", apexPage: null },
+  { path: "/public/locks/:id", title: "Lock detail", apexPage: null },
   { path: "/accessibility", title: "Accessibility read-out", apexPage: null },
   { path: "/admin", title: "Data feeds and thresholds", apexPage: "10000" },
 ] as const;

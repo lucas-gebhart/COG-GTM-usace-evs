@@ -26,6 +26,8 @@ class Violation:
     nodes: int
     source: str  # axe | lighthouse | pa11y
     where: str  # cell or URL
+    help_url: str = ""
+    help: str = ""
 
 
 @dataclass
@@ -67,6 +69,7 @@ class LighthouseRun:
     score: float | None
     failing_audits: list[str]
     fetched_at: datetime | None
+    version: str | None = None
 
 
 @dataclass
@@ -77,6 +80,7 @@ class Pa11yReport:
     issues: list[Violation]
     urls: list[str]
     needs_review: int = 0
+    version: str | None = None
 
 
 @dataclass
@@ -115,6 +119,8 @@ def _violation(v: dict[str, Any], source: str, where: str) -> Violation:
         nodes=len(v.get("nodes", [])),
         source=source,
         where=where,
+        help_url=str(v.get("helpUrl") or ""),
+        help=str(v.get("help") or ""),
     )
 
 
@@ -210,6 +216,7 @@ def load_lighthouse(directory: Path | None) -> list[LighthouseRun]:
                 score=cat.get("score"),
                 failing_audits=failing,
                 fetched_at=_dt(lhr.get("fetchTime")),
+                version=lhr.get("lighthouseVersion"),
             )
         )
     return runs
@@ -262,6 +269,7 @@ def load_pa11y(path: Path | None) -> Pa11yReport | None:
         issues=issues,
         urls=list(results),
         needs_review=needs_review,
+        version=raw.get("pa11yVersion"),
     )
 
 

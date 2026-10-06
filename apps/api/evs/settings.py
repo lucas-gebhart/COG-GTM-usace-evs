@@ -1,4 +1,5 @@
 from functools import lru_cache
+from pathlib import Path
 from typing import Literal
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -50,6 +51,9 @@ class Settings(BaseSettings):
     )
     simulator_seed: int = 42
     samples_dir: str | None = None  # defaults to <repo>/legacy/data_samples or /legacy/data_samples
+
+    # Generated accessibility artefacts (OpenACR YAML, reports, axe bundle), see /accessibility/artifacts.
+    a11y_docs_dir: Path = Path(__file__).resolve().parents[3] / "docs" / "a11y"
 
     s3_endpoint: str | None = "http://localhost:9000"
     s3_bucket: str = "evs-raw"

@@ -68,7 +68,9 @@ html[data-theme="leadership"] .evs-chip { color: var(--evs-color-ink); }
   &__row { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: var(--evs-space-3); }
   &__intro { font-size: var(--evs-text-lg); color: var(--evs-color-ink-secondary); margin: 0; max-width: 75ch; }
   &__actions { display: flex; flex-wrap: wrap; gap: var(--evs-space-2); }
-  h1 { margin-bottom: var(--evs-space-2); }
+  // Leadership type at 320 px: a long title word ("Accessibility") breaks instead of widening the page.
+  &__row > div { min-width: 0; }
+  h1 { margin-bottom: var(--evs-space-2); overflow-wrap: anywhere; hyphens: auto; }
 }
 
 // FilterBar
@@ -144,11 +146,16 @@ html[data-theme="leadership"] .evs-chip { color: var(--evs-color-ink); }
   &__num { text-align: right; font-variant-numeric: tabular-nums; }
   &__footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--evs-space-2); margin-top: var(--evs-space-2); }
   &__footer .usa-pagination { margin: 0; }
+  // Leadership type is larger; let the page controls wrap at 320 to 400 px instead of forcing a horizontal page scroll.
+  &__footer .usa-pagination__list { flex-wrap: wrap; row-gap: var(--evs-space-1); }
   .usa-table--sticky-header thead th { position: sticky; top: 0; z-index: 1; background: var(--evs-color-panel); }
 }
 
 // Card mode under 640 px: each row renders as a labelled card (USWDS stacked-header pattern at a wider breakpoint).
 .evs-table--stacked {
+  // Cards never scroll sideways; without this the reserved scrollbar gutter leaves a few px of horizontal
+  // overflow and axe flags the tabindex=-1 region (scrollable-region-focusable) at 360 px.
+  .evs-table__wrap { overflow-x: visible; scrollbar-gutter: auto; }
   .usa-table caption { display: block; width: 100%; }
   .usa-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   .usa-table, .usa-table tbody, .usa-table tr, .usa-table td, .usa-table th { display: block; width: 100%; box-sizing: border-box; }

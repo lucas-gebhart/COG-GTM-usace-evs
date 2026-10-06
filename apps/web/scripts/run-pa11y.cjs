@@ -9,15 +9,19 @@ const out = resolve(__dirname, "..", "a11y-results");
 mkdirSync(out, { recursive: true });
 const run = spawnSync("pa11y-ci", ["--config", ".pa11yci.cjs", "--json"], { cwd: resolve(__dirname, ".."), encoding: "utf8", shell: process.platform === "win32" });
 if (run.error) throw run.error;
-writeFileSync(resolve(out, "pa11y.json"), run.stdout);
 process.stderr.write(run.stderr);
 let report;
 try {
   report = JSON.parse(run.stdout);
 } catch {
+  writeFileSync(resolve(out, "pa11y.json"), run.stdout);
   process.stdout.write(run.stdout);
   process.exit(run.status ?? 1);
 }
+// Record the tool version so evs-acr-gen can report it in the read-out.
+report.pa11yVersion = require("pa11y-ci/package.json").version;
+report.runAt = new Date().toISOString();
+writeFileSync(resolve(out, "pa11y.json"), JSON.stringify(report, null, 1));
 const results = report.results ?? {};
 let errors = 0;
 let warnings = 0;

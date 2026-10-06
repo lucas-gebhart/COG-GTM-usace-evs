@@ -1196,6 +1196,29 @@
             ],
             "title": "District"
           },
+          "division": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Division",
+            "description": "USACE division code, e.g. LRD"
+          },
+          "state": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "State"
+          },
           "chambers": {
             "anyOf": [
               {
@@ -1415,6 +1438,23 @@
             "type": "object",
             "title": "Status Inputs",
             "description": "inputs_used by the status engine"
+          },
+          "history": {
+            "items": {
+              "$ref": "#/components/schemas/StatusHistoryPoint"
+            },
+            "type": "array",
+            "title": "History",
+            "description": "Status evaluations from the last 24 hours, oldest first"
+          },
+          "ntni_notices": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Ntni Notices",
+            "description": "Notices to Navigation Interests that name this lock"
           }
         },
         "type": "object",
@@ -1531,6 +1571,29 @@
               }
             ],
             "title": "District"
+          },
+          "division": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Division",
+            "description": "USACE division code, e.g. LRD"
+          },
+          "state": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "State"
           },
           "chambers": {
             "anyOf": [
@@ -1992,6 +2055,58 @@
         ],
         "title": "ProjectList"
       },
+      "SrpCitation": {
+        "properties": {
+          "figure": {
+            "type": "string",
+            "title": "Figure",
+            "description": "Key in `headline`, e.g. river_systems"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "value_text": {
+            "type": "string",
+            "title": "Value Text",
+            "description": "The figure as the source states it, e.g. 'nearly 15,000 miles'"
+          },
+          "source": {
+            "type": "string",
+            "title": "Source"
+          },
+          "source_url": {
+            "type": "string",
+            "title": "Source Url"
+          },
+          "year": {
+            "type": "integer",
+            "title": "Year"
+          },
+          "note": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Note"
+          }
+        },
+        "type": "object",
+        "required": [
+          "figure",
+          "label",
+          "value_text",
+          "source",
+          "source_url",
+          "year"
+        ],
+        "title": "SrpCitation",
+        "description": "Provenance for one headline figure. The UI shows source and year next to every number."
+      },
       "SrpCoverage": {
         "properties": {
           "snapshots": {
@@ -2024,6 +2139,13 @@
             },
             "type": "object",
             "title": "Headline"
+          },
+          "citations": {
+            "items": {
+              "$ref": "#/components/schemas/SrpCitation"
+            },
+            "type": "array",
+            "title": "Citations"
           },
           "as_of": {
             "$ref": "#/components/schemas/AsOf"
@@ -2195,6 +2317,59 @@
           "source_url"
         ],
         "title": "SrpSnapshot"
+      },
+      "StatusHistoryPoint": {
+        "properties": {
+          "evaluated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Evaluated At"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "operating",
+              "delayed",
+              "closed",
+              "stale",
+              "unknown"
+            ],
+            "title": "Status"
+          },
+          "status_reason": {
+            "type": "string",
+            "title": "Status Reason"
+          },
+          "rule_no": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rule No"
+          },
+          "source": {
+            "type": "string",
+            "title": "Source"
+          },
+          "freshness": {
+            "type": "string",
+            "title": "Freshness"
+          }
+        },
+        "type": "object",
+        "required": [
+          "evaluated_at",
+          "status",
+          "status_reason",
+          "source",
+          "freshness"
+        ],
+        "title": "StatusHistoryPoint",
+        "description": "One status engine evaluation, newest last; the detail panel draws the 24-hour history from these."
       },
       "ValidationError": {
         "properties": {

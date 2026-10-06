@@ -9,6 +9,20 @@ function paginate<T>(items: T[], url: URL) {
   return { items: items.slice(offset, offset + limit), page: { total: items.length, limit, offset } };
 }
 
+/** Fixtures carry one evaluation per lock; the mock detail adds three evaluations over the last 24 hours ending at the fixture status. */
+function mockHistory(row: (typeof fixtures.locks.items)[number]) {
+  const end = new Date(row.as_of.source_as_of ?? Date.now()).getTime();
+  const point = (hoursAgo: number, status: string, reason: string) => ({
+    evaluated_at: new Date(end - hoursAgo * 3600000).toISOString(),
+    status,
+    status_reason: reason,
+    rule_no: null,
+    source: row.as_of.source,
+    freshness: row.as_of.freshness,
+  });
+  return [point(24, "operating", "Lockages within the last 4 hours and no stoppage"), point(12, row.status, row.status_reason), point(0, row.status, row.status_reason)];
+}
+
 /** Same filtering rules as apps/api/evs/routers so mock mode behaves like the API. */
 export const handlers: HttpHandler[] = [
   http.get(`${BASE}/health`, () => HttpResponse.json({ status: "ok", version: "mock", env: "mock", feed_source: "fixtures" })),
@@ -40,13 +54,30 @@ export const handlers: HttpHandler[] = [
     return HttpResponse.json(data);
   }),
 
+  // Mock stream: a `locks` event on connect and every 8 s with a fresh source_as_of so the as-of live region
+  // changes, plus a `lock` event that flips the first delayed lock between delayed and operating.
   http.get(`${BASE}/public/locks/stream/events`, () => {
     const encoder = new TextEncoder();
-    const payload = () => `event: locks\ndata: ${JSON.stringify({ counts: fixtures.locks.counts, as_of: fixtures.locks.as_of })}\n\n`;
+    let tick = 0;
+    const asOfNow = () => ({ ...fixtures.locks.as_of, source_as_of: new Date().toISOString(), fetched_at: new Date().toISOString() });
+    const locksEvent = () => `event: locks\nid: ${tick}\ndata: ${JSON.stringify({ counts: fixtures.locks.counts, as_of: asOfNow(), changed: [] })}\n\n`;
+    const lockEvent = () => {
+      const row = fixtures.locks.items.find((i) => i.status === "delayed") ?? fixtures.locks.items[0];
+      const flipped = tick % 2 === 0 ? row : { ...row, status: "operating", status_reason: "Mock stream: delay cleared", avg_delay_4h_min: 0, as_of: asOfNow() };
+      return `event: lock\nid: ${tick}-lock\ndata: ${JSON.stringify({ id: row.lock_id, ...flipped })}\n\n`;
+    };
     const stream = new ReadableStream({
       start(controller) {
-        controller.enqueue(encoder.encode(payload()));
-        const t = setInterval(() => controller.enqueue(encoder.encode(payload())), 30000);
+        controller.enqueue(encoder.encode(locksEvent()));
+        const t = setInterval(() => {
+          tick += 1;
+          try {
+            controller.enqueue(encoder.encode(locksEvent()));
+            controller.enqueue(encoder.encode(lockEvent()));
+          } catch {
+            clearInterval(t);
+          }
+        }, 8000);
         // @ts-expect-error timer kept for cancel
         controller.timer = t;
       },
@@ -60,7 +91,8 @@ export const handlers: HttpHandler[] = [
 
   http.get(`${BASE}/public/locks/:lockId`, ({ params }) => {
     const row = fixtures.locks.items.find((i) => i.lock_id === params.lockId);
-    return row ? HttpResponse.json(row) : HttpResponse.json({ detail: `Lock ${String(params.lockId)} not found` }, { status: 404 });
+    if (!row) return HttpResponse.json({ detail: `Lock ${String(params.lockId)} not found` }, { status: 404 });
+    return HttpResponse.json({ ...row, history: mockHistory(row), ntni_notices: [], queue: [], stoppages: [], recent_lockages: [], gauges: [], status_inputs: {} });
   }),
 
   http.get(`${BASE}/public/srp/coverage`, () => HttpResponse.json(fixtures.srp)),

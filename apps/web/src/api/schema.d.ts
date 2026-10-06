@@ -505,6 +505,13 @@ export interface components {
             river_mile: number | null;
             /** District */
             district: string | null;
+            /**
+             * Division
+             * @description USACE division code, e.g. LRD
+             */
+            division?: string | null;
+            /** State */
+            state?: string | null;
             /** Chambers */
             chambers: number | null;
             /** Latitude */
@@ -581,6 +588,18 @@ export interface components {
             status_inputs?: {
                 [key: string]: unknown;
             };
+            /**
+             * History
+             * @description Status evaluations from the last 24 hours, oldest first
+             */
+            history?: components["schemas"]["StatusHistoryPoint"][];
+            /**
+             * Ntni Notices
+             * @description Notices to Navigation Interests that name this lock
+             */
+            ntni_notices?: {
+                [key: string]: unknown;
+            }[];
         };
         /** LockList */
         LockList: {
@@ -618,6 +637,13 @@ export interface components {
             river_mile: number | null;
             /** District */
             district: string | null;
+            /**
+             * Division
+             * @description USACE division code, e.g. LRD
+             */
+            division?: string | null;
+            /** State */
+            state?: string | null;
             /** Chambers */
             chambers: number | null;
             /** Latitude */
@@ -758,6 +784,32 @@ export interface components {
             page: components["schemas"]["Page"];
             as_of: components["schemas"]["AsOf"];
         };
+        /**
+         * SrpCitation
+         * @description Provenance for one headline figure. The UI shows source and year next to every number.
+         */
+        SrpCitation: {
+            /**
+             * Figure
+             * @description Key in `headline`, e.g. river_systems
+             */
+            figure: string;
+            /** Label */
+            label: string;
+            /**
+             * Value Text
+             * @description The figure as the source states it, e.g. 'nearly 15,000 miles'
+             */
+            value_text: string;
+            /** Source */
+            source: string;
+            /** Source Url */
+            source_url: string;
+            /** Year */
+            year: number;
+            /** Note */
+            note?: string | null;
+        };
         /** SrpCoverage */
         SrpCoverage: {
             /** Snapshots */
@@ -768,6 +820,8 @@ export interface components {
             headline: {
                 [key: string]: number | string;
             };
+            /** Citations */
+            citations?: components["schemas"]["SrpCitation"][];
             as_of: components["schemas"]["AsOf"];
         };
         /** SrpSite */
@@ -807,6 +861,30 @@ export interface components {
             source: string;
             /** Source Url */
             source_url: string;
+        };
+        /**
+         * StatusHistoryPoint
+         * @description One status engine evaluation, newest last; the detail panel draws the 24-hour history from these.
+         */
+        StatusHistoryPoint: {
+            /**
+             * Evaluated At
+             * Format: date-time
+             */
+            evaluated_at: string;
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "operating" | "delayed" | "closed" | "stale" | "unknown";
+            /** Status Reason */
+            status_reason: string;
+            /** Rule No */
+            rule_no?: number | null;
+            /** Source */
+            source: string;
+            /** Freshness */
+            freshness: string;
         };
         /** ValidationError */
         ValidationError: {

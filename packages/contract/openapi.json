@@ -81,7 +81,7 @@
             }
           }
         },
-        "x-apex-page": "20"
+        "x-apex-page": "21"
       }
     },
     "/api/v1/projects": {
@@ -168,7 +168,7 @@
             }
           }
         },
-        "x-apex-page": "30"
+        "x-apex-page": "86"
       }
     },
     "/api/v1/projects/{p2_project_no}": {
@@ -211,7 +211,7 @@
             }
           }
         },
-        "x-apex-page": "31"
+        "x-apex-page": "3"
       }
     },
     "/api/v1/financial/summary": {
@@ -255,7 +255,7 @@
             }
           }
         },
-        "x-apex-page": "1"
+        "x-apex-page": "161"
       }
     },
     "/api/v1/workforce/labor": {
@@ -299,7 +299,7 @@
             }
           }
         },
-        "x-apex-page": "40"
+        "x-apex-page": "74"
       }
     },
     "/api/v1/facilities/condition": {
@@ -494,7 +494,8 @@
             }
           }
         },
-        "x-apex-authorization": "Administrator"
+        "x-apex-page": "10000",
+        "x-apex-authorization": "Administration Rights"
       }
     },
     "/api/v1/admin/thresholds": {
@@ -517,7 +518,9 @@
               }
             }
           }
-        }
+        },
+        "x-apex-page": "10000",
+        "x-apex-authorization": "Administration Rights"
       }
     }
   },

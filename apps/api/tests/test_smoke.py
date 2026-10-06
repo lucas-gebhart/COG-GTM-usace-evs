@@ -27,4 +27,4 @@ def test_public_endpoints_need_no_auth():
 def test_openapi_has_apex_traceability():
     spec = client.get("/openapi.json").json()
     assert spec["openapi"].startswith("3.1")
-    assert spec["paths"]["/api/v1/programs"]["get"]["x-apex-page"] == "20"
+    assert spec["paths"]["/api/v1/programs"]["get"]["x-apex-page"] == "21"

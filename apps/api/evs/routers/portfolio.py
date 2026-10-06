@@ -17,13 +17,13 @@ def _paginate(items: list, limit: int, offset: int):
     return items[offset : offset + limit], Page(total=len(items), limit=limit, offset=offset)
 
 
-@router.get("/programs", response_model=ProgramList, openapi_extra={"x-apex-page": "20"})
+@router.get("/programs", response_model=ProgramList, openapi_extra={"x-apex-page": "21"})
 def list_programs(limit: int = Query(50, le=500), offset: int = 0) -> ProgramList:
     items, page = _paginate(load("programs"), limit, offset)
     return ProgramList(items=items, page=page, as_of=AsOf(source="synthetic"))
 
 
-@router.get("/projects", response_model=ProjectList, openapi_extra={"x-apex-page": "30"})
+@router.get("/projects", response_model=ProjectList, openapi_extra={"x-apex-page": "86"})
 def list_projects(
     program_code: str | None = None,
     district: str | None = None,
@@ -39,7 +39,7 @@ def list_projects(
     return ProjectList(items=items, page=page, as_of=AsOf(source="synthetic"))
 
 
-@router.get("/projects/{p2_project_no}", response_model=Project, openapi_extra={"x-apex-page": "31"})
+@router.get("/projects/{p2_project_no}", response_model=Project, openapi_extra={"x-apex-page": "3"})
 def get_project(p2_project_no: str, principal: Annotated[Principal, Depends(current_principal)]) -> Project:
     for row in load("projects"):
         if row["p2_project_no"] == p2_project_no:

@@ -1,4 +1,7 @@
-"""Feed health and thresholds. Requires evs_admin (maps to the APEX Administrator authorization scheme)."""
+"""Feed health and thresholds.
+
+Requires evs_admin, which maps to the APEX "Administration Rights" authorization scheme (group Administrator).
+"""
 
 from datetime import UTC, datetime
 
@@ -12,12 +15,19 @@ from evs.settings import get_settings
 router = APIRouter(prefix="/admin", tags=["admin"], dependencies=[Depends(require_role("evs_admin"))])
 
 
-@router.get("/feeds", response_model=FeedHealthList, openapi_extra={"x-apex-authorization": "Administrator"})
+@router.get(
+    "/feeds",
+    response_model=FeedHealthList,
+    openapi_extra={"x-apex-page": "10000", "x-apex-authorization": "Administration Rights"},
+)
 def feeds() -> FeedHealthList:
     return FeedHealthList(feeds=load("feeds"), generated_at=datetime.now(UTC))
 
 
-@router.get("/thresholds")
+@router.get(
+    "/thresholds",
+    openapi_extra={"x-apex-page": "10000", "x-apex-authorization": "Administration Rights"},
+)
 def thresholds() -> dict:
     s = get_settings()
     return {

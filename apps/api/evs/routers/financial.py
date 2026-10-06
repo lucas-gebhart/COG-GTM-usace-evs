@@ -10,6 +10,6 @@ from evs.schemas.financial import FinancialSummary
 router = APIRouter(tags=["financial"], dependencies=[Depends(current_principal)])
 
 
-@router.get("/financial/summary", response_model=FinancialSummary, openapi_extra={"x-apex-page": "1"})
+@router.get("/financial/summary", response_model=FinancialSummary, openapi_extra={"x-apex-page": "161"})
 def financial_summary(fiscal_year: int = 2026) -> FinancialSummary:
     return FinancialSummary(**load("financial_summary"))

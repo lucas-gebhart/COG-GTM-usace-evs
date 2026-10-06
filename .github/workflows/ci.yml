@@ -16,6 +16,17 @@ jobs:
       - name: Contract is up to date
         run: uv run evs openapi --out /tmp/openapi.json && diff -q /tmp/openapi.json ../../packages/contract/openapi.json
 
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pytest "ruff==0.16.10"
+      - run: cd tools/apex-inventory && ruff check . && ruff format --check . && python -m pytest -q
+      - name: Inventory artifacts are up to date
+        run: make inventory && git diff --exit-code -- legacy
+
   web:
     runs-on: ubuntu-latest
     defaults: { run: { working-directory: apps/web } }

@@ -1,6 +1,6 @@
 import maplibregl, { type LngLatBoundsLike, type Map as MapLibreMap } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { useEffect, useId, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
+import { useEffect, useId, useLayoutEffect, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { useReducedMotion } from "../../hooks/useReducedMotion";
 import { chooseBasemap, type BasemapMode } from "../../lib/basemap";
@@ -188,7 +188,30 @@ interface MarkerButtonProps {
 function MarkerButton({ point, selected, onSelect, onKeyDown }: MarkerButtonProps) {
   const tipId = useId();
   const [tip, setTip] = useState(false);
+  const [placement, setPlacement] = useState("");
   const inner = useRef<HTMLDivElement>(null);
+  const tipBox = useRef<HTMLDivElement>(null);
+  // Keep the tooltip inside the map: flip below the marker near the top edge, hug the marker's side near the left or
+  // right edge. MapLibre clips anything that leaves the map container.
+  useLayoutEffect(() => {
+    if (!tip) {
+      setPlacement("");
+      return;
+    }
+    const button = inner.current?.querySelector("button");
+    const box = tipBox.current;
+    const host = inner.current?.closest(".maplibregl-map") ?? inner.current?.closest(".evs-map");
+    if (!button || !box || !host) return;
+    const b = button.getBoundingClientRect();
+    const h = host.getBoundingClientRect();
+    const t = box.getBoundingClientRect();
+    const classes: string[] = [];
+    if (b.top - h.top < t.height + 8) classes.push("evs-maptip--below");
+    const centre = b.left + b.width / 2;
+    if (centre + t.width / 2 > h.right - 4) classes.push("evs-maptip--end");
+    else if (centre - t.width / 2 < h.left + 4) classes.push("evs-maptip--start");
+    setPlacement(classes.join(" "));
+  }, [tip]);
   useEffect(() => {
     const wrap = inner.current?.parentElement;
     if (wrap) wrap.style.zIndex = tip || selected ? "5" : "";
@@ -227,7 +250,7 @@ function MarkerButton({ point, selected, onSelect, onKeyDown }: MarkerButtonProp
       >
         {point.shape}
       </button>
-      <div role="tooltip" id={tipId} className="evs-maptip" hidden={!tip}>
+      <div role="tooltip" id={tipId} ref={tipBox} className={["evs-maptip", placement].filter(Boolean).join(" ")} hidden={!tip}>
         <div className="evs-maptip__box">{point.tooltip}</div>
       </div>
     </div>

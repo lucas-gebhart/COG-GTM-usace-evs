@@ -64,6 +64,9 @@
   &__box { background: var(--evs-color-bg); color: var(--evs-color-ink); border: 1px solid var(--evs-color-hairline); border-radius: var(--evs-radius); box-shadow: var(--evs-shadow); padding: var(--evs-space-2); font-size: var(--evs-text-sm); text-align: left; }
   &__title { margin: 0 0 0.25rem; font-weight: 700; }
   p { margin: 0; }
+  &--below { bottom: auto; top: 100%; padding-bottom: 0; padding-top: 0.5rem; }
+  &--end { left: auto; right: 0; transform: none; }
+  &--start { left: 0; transform: none; }
   @media (forced-colors: active) { &__box { border: 2px solid CanvasText; } }
 }
 .evs-site-shape { display: block; width: 1.75rem; height: 1.75rem; overflow: visible; }
